@@ -1,6 +1,9 @@
 # RStarSolve - Spaghetti Code Experiment for System 2 Thinking
 
 Basically a complex, weird experiment to test an idea. What if we used GPT-4 to help small models through a solution space. Please keep in mind this can cost a lot in API costs.
+
+The goal of uplaoding the code had more to do with inspecting the code itself, and seeing the outputs than givign something people can run. I know most of it is spaghetti code, and mostly everyone will find this uselesss.
+
  
 ## Project Overview
 
@@ -16,7 +19,7 @@ It searches through a solution space and takes a long time to answer your questi
 Below is an example of how it navigates through a solutioin space.
 ![Sample Output](IMG_7845.jpg)
 
-For a clearer example, I would recommend checking out the Pdf, dot file and csv in the Example folder.
+For a clearer examples, I would recommend checking out the Example folder with Pdf, dot file and csv. More examples are included too, about a 100 I guess. 
 
 This was just an experiment. There is no real world application to this.
 
