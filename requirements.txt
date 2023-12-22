@@ -1,0 +1,28 @@
+anyio @ file:///Users/cbousseau/work/recipes/ci_py311/anyio_1677917528418/work/dist
+Bottleneck @ file:///Users/cbousseau/work/recipes/ci_py311/bottleneck_1677925122241/work
+certifi @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_35eq66o3mo/croot/certifi_1700501684871/work/certifi
+diskcache==5.6.3
+distro @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_10ye1wu827/croot/distro_1701455019085/work
+h11 @ file:///tmp/build/80754af9/h11_1620423447028/work
+h2 @ file:///Users/cbousseau/work/recipes/ci_py311/h2_1677937883230/work
+hpack==4.0.0
+httpcore @ file:///Users/cbousseau/work/recipes/ci_py311/httpcore_1677959591558/work
+httpx @ file:///Users/cbousseau/work/recipes/ci_py311/httpx_1677972267057/work
+hyperframe==6.0.1
+idna @ file:///Users/cbousseau/work/recipes/ci_py311/idna_1677906072337/work
+llama_cpp_python==0.2.24
+numexpr @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_45yefq0kt6/croot/numexpr_1696515289183/work
+numpy @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_c0s16d4ba1/croot/numpy_and_numpy_base_1701295077539/work/dist/numpy-1.26.2-cp311-cp311-macosx_11_0_arm64.whl#sha256=ad57efc6771f3537d8b9fb295f7221a98cd2cb60c7380e892e2624b41c9d3d1b
+openai @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_7fzpp0fc_y/croot/openai_1701456912926/work
+pandas @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_82r7p4atwy/croot/pandas_1702318000240/work/dist/pandas-2.1.4-cp311-cp311-macosx_11_0_arm64.whl#sha256=63b9f12c34b6c55958dc1c6d032dafd28dc982c5e3a7b0f2802ba7920c95f437
+pandas-stubs @ file:///Users/cbousseau/work/recipes/ci_py311/pandas-stubs_1678056910776/work
+pydantic @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_f5e9j7terp/croot/pydantic_1695798853988/work
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_6btwyyj8a1/croot/pytz_1695131592184/work
+rfc3986 @ file:///Users/ktietz/demo/mc3/conda-bld/rfc3986_1629478296451/work
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+sniffio @ file:///Users/cbousseau/work/recipes/ci_py311/sniffio_1677917188478/work
+tqdm @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ac7zic_tin/croot/tqdm_1679561870178/work
+types-pytz @ file:///Users/cbousseau/work/recipes/ci_py311/types-pytz_1677963479638/work
+typing_extensions @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1fdywrbp_3/croot/typing_extensions_1690297474455/work
+tzdata @ file:///croot/python-tzdata_1690578112552/work
