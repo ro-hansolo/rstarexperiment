@@ -16,7 +16,7 @@ The primary goal was to construct a meaningful answer path by:
 
 It searches through a solution space and takes a long time to answer your question. However, throughout testing, found that random temeratures, sampling one of n incomplete paths tend to give good answers.
 
-Below is an example of how it navigates through a solutioin space.
+Below is an example of how it navigates through a solution space.
 ![Sample Output](IMG_7845.jpg)
 
 For a clearer examples, I would recommend checking out the Example folder with Pdf, dot file and csv. More examples are included too, about a 100 I guess. 
