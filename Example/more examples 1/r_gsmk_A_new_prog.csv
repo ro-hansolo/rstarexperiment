@@ -1,0 +1,18 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens
+" 1. First month downloads: 60
+        2. Second",Node0,6,10,6,16,0.5344425450723727,15
+" 1. First month's downloads: 60
+        2. Second month's downloads (three times the first month):",Node1,6,10,6,16,0.6521131394912019,30
+" 1. Calculate the number of downloads for the second month: Three times the first-month downloads (60) is 3 * 60 = 180.
+        2. Calculate the reduced",Node2,4,8,4,12,0.6106156731600088,47
+" 1. In the first month, there were 60 downloads.
+        2. The second month had three times as many downloads as the first month (3 * 60 = 180).
+        3. In the third month, after a 30% reduction in downloads, we need to find",Node3,2,4,2,6,0.917378239725864,69
+" 1. First month: 60 downloads
+        2. Second month: 3 times more than the first month (60 * 3 = 180 downloads)
+        3. Third month: Reduced by 30% from the second month (180 - 180 *",Node4,2,4,2,6,0.11977261051868648,67
+" 1. Calculate the number of downloads for the second month. We are given that there were 60 downloads in the first month and the second month had 3 times as many as the first month. So, to find the second month's",Node5,6,10,6,16,0.6954017293683843,53
+" 1. First month: 60 downloads
+        2. Second month: 3 times more than the first month (60 * 3 = 180 downloads)
+        3. Third month: Reduced by 30% from the second month (180 - 180 * 0.3 = 126 downloads)
+        Now we add up these downloads for all three months to find the total number: 60 + 180 + 126 = 366 downloads",Node14,0,0,2,2,0.9315590840086676,50

@@ -1,0 +1,86 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Toula went to the bakery and bought various types of pastries. She bought 3 dozen donuts which cost $68 per dozen, 2 dozen mini cupcakes which cost $80 per dozen, and 6 dozen mini cheesecakes for $55 per dozen. How much was the total cost? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:5, Flag:False
+['1. First, we need to calculate the cost of each type of pastry separately.\n        2. For donuts, Toula bought 3 dozens at $68 per dozen, so we multiply 3 by $68 to', 51, 0.26853944703257693]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:0, H:2, Flag:False
+[\"1. First, let's calculate the cost of each type of pastry separately.\n           a. Donuts: 3 dozens * $68/dozen = $204\n           b. Mini cupcakes: 2 dozens * $80/dozen = $160\n           c. Mini cheesecakes: 6 dozens * $55/dozen = $330\n        2. Now, let's add\", 99, 0.010090487518341518]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:5, Flag:False
+[\"1. First, let's calculate the cost of each type of pastry separately.\n           a. Donuts: 3 dozen * $68/dozen = $204\n           b. Mini cupcakes:\", 49, 0.11243015804874834]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:3, H:8, Flag:False
+[\"1. First, let's calculate the cost of each type of pastry separately.\n           a. Donuts: 3 dozen * $68/dozen\", 35, 0.2926265649534916]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:8, H:10, Flag:False
+[\"1. First, let's calculate the cost of each type of pastry separately.\n           a. Donuts: 3 dozens * $\", 30, 0.043471282965526825]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:0, H:2, Flag:False
+['1. Firstly, we need to calculate the costs of each item separately.\n           a. Donuts: 3 dozens * $68 per dozen = $204\n           b. Mini cupcakes: 2 dozens * $80 per dozen = $160\n           c. Mini cheesecakes: 6 dozens * $55 per dozen = $330\n        \n        2. Next, we', 93, 0.7567970623411986]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:9, H:10, Flag:False
+[\"1. We have Toula's purchases of three kinds of\", 14, 0.9997670639479881]
+Path: StartNode6" color=black shape=box]
+	Start -> Node7 [label=StartNode7]
+	Node7 [label="V:2, H:5, Flag:False
+[\"1. First, let's calculate the cost of each type of pastry separately.\n           a. Donuts: 3 dozen * $68/dozen = $204\n           b. Mini cupcakes: 2 dozen * $80/do\", 58, 0.1032278179038032]
+Path: StartNode7" color=black shape=box]
+	Start -> Node8 [label=StartNode8]
+	Node8 [label="V:5, H:5, Flag:True
+[\"1. Firstly, let's calculate the costs of individual items. Donuts have a fixed cost of $68 per dozen and Toula bought 3 dozens. So, the cost of donuts is 3 * $68 = $204.\n        2. Mini cupcakes have a cost of $8\", 70, 0.8865068426107988]
+Path: StartNode8" color=red shape=box]
+	Start -> Node9 [label=StartNode9]
+	Node9 [label="V:10, H:9, Flag:True
+[\"1. First, let's calculate the cost of each type of pastry separately.\n           a. Donuts: 3 dozen * $68/dozen = $20\", 39, 0.11805177537673484]
+Path: StartNode9" color=red shape=box]
+	Node1 -> Node10 [label=Node1Node10]
+	Node10 [label="V:1, H:1, Flag:False
+['a + b + c to find the total cost of all pastries.\n        Total cost = $204 (donuts) + $160 (mini cupcakes) + $330 (mini che', 49, 0.23820329650741467]
+Path: Node1Node10" color=black shape=box]
+	Node1 -> Node11 [label=Node1Node11]
+	Node11 [label="V:1, H:1, Flag:False
+['a + b + c to find the total cost of all pastries.', 16, 0.7624720105244975]
+Path: Node1Node11" color=black shape=box]
+	Node1 -> Node12 [label=Node1Node12]
+	Node12 [label="V:0, H:0, Flag:False
+[\"a + b + c = $204 + $160 + $330\n        3. Finally, calculate the total cost by adding them up: $794\n\nThe total cost for Toula's purchases was $794.\", 67, 0.6385274244785895]
+Path: Node1Node12" color=green shape=box]
+	Node1 -> Node13 [label=Node1Node13]
+	Node13 [label="V:0, H:0, Flag:True
+['a + b + c = $204 + $160 + $330 = $704\n        3. The total cost for all pastries is $704.', 77, 0.7784331786083891]
+Path: Node1Node13" color=green shape=box]
+	Node1 -> Node14 [label=Node1Node14]
+	Node14 [label="V:0, H:0, Flag:False
+['a + b + c = $204 + $160 + $330 = $794\n        The total cost was $794 for the pastries Toula bought at the bakery.', 88, 0.06628350129081706]
+Path: Node1Node14" color=green shape=box]
+	Node1 -> Node15 [label=Node1Node15]
+	Node15 [label="V:0, H:0, Flag:False
+[\"a + b + c = $204 + $160 + $330 = $794\n        3. The total cost for Toula's purchases at the bakery is $794\", 49, 0.7383975034337827]
+Path: Node1Node15" color=green shape=box]
+	Node1 -> Node16 [label=Node1Node16]
+	Node16 [label="V:1, H:1, Flag:False
+['a. Donuts cost + Mini cupcakes cost + Mini cheesecakes cost = $204 + $160 + $330 = $794\n        So', 41, 0.49516852106063736]
+Path: Node1Node16" color=black shape=box]
+	Node1 -> Node17 [label=Node1Node17]
+	Node17 [label="V:1, H:1, Flag:False
+['Total cost = Donuts + Cupcakes + Cheesecakes', 14, 0.9207071777417827]
+Path: Node1Node17" color=black shape=box]
+	Node1 -> Node18 [label=Node1Node18]
+	Node18 [label="V:0, H:0, Flag:False
+[\"a. the cost of donuts: $204\n         b. the cost of mini cupcakes: $160\n         c. the cost of mini cheesecakes: $330\n           Total = $204 + $160 + $330 = $794\n        The total cost was $794 for Toula's pastries.\", 89, 0.9756531304409453]
+Path: Node1Node18" color=green shape=box]
+	Node1 -> Node19 [label=Node1Node19]
+	Node19 [label="V:0, H:0, Flag:True
+['a + b + c = $204 (donuts) + $160 (mini cupcakes) + $330 (mini cheesecakes) = $704\n        The total cost of the pastries was $704.', 59, 0.7802397846645567]
+Path: Node1Node19" color=green shape=box]
+}

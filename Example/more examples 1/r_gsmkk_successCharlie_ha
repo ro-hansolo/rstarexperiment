@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Charlie had 10 stickers. He bought 21 stickers from a store in the mall and got 23 stickers for his birthday. Then Charlie gave 9 of the stickers to his sister and used 28 to decorate a greeting card. How many stickers does Charlie have left? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:5, Flag:False
+['1. Start with the initial number of stickers Charlie had: 10 stickers.\n        2. Add the stickers he bought from the store: 10 + 21 = 31 stickers.\n        3. Add the stickers he received for his birthday: 31 + 23 = 54 stickers.\n        4. Give 9 stickers to his sister: 54 - 9 =', 96, 0.4386848025474953]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:8, Flag:False
+[\"1. First, we need to add all the stickers that Charlie had at the beginning (10) and the ones he got from various sources (21 from the store + 23 for his birthday = 44). Now, let's call this total number of stickers 'T'.\", 65, 0.4713262424816931]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:6, Flag:False
+[\"1. Let's start with the total number of stickers Charlie initially had: 10 (from home) + 21 (from the store) + 23 (for his birthday) = 54 stickers in total.\n        2. Next, he gave away 9 stickers to his sister. So\", 69, 0.5390546876043584]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:9, Flag:False
+[\"1. Let's start with Charlie's initial number of stickers, which is 10.\n        2. Next, he bought more stickers from the store and received them for his birthday. He had a total of 21 + 23 = 44 new stickers.\n        3. Comb\", 68, 0.8925018407919063]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:8, Flag:False
+[\"1. First, we need to understand the total number of stickers Charlie had initially, which were 10.\n        2. Next, let's add the new stickers Charlie bought and got - 21 from a store and 23 for his birthday - together (21 + 23 = 44).\", 70, 0.8710679588757937]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:2, Flag:False
+[\"1. First, let's add up all the stickers Charlie had initially: 10 (from home) + 21 (bought from store) + 23 (received for his birthday) = 54 stickers.\n        2. After giving 9 stickers to his sister and using 28 for decorating a greeting card, Charlie had used a total of 9 + 28 = 37 stickers.\n        3. To find out how many\", 106, 0.46384118409479913]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:7, Flag:False
+[\"1. First, let's add the number of stickers Charlie had initially (10) with the ones he bought from the store (21). This gives us 10 + 21 = 31 stickers.\n        2. Next, we need to account for the birthday gift of 23 stickers. So now, we have a\", 76, 0.3589022562422143]
+Path: StartNode6" color=black shape=box]
+	Node5 -> Node7 [label=Node5Node7]
+	Node7 [label="V:1, H:0, Flag:False
+['4. To find out how many stickers Charlie has left, subtract the number of used stickers from his initial total: 54 (initial total) - 37 (used stickers) = 17 stickers.\n        So, Charlie has 17 stickers left.', 115, 0.3380570900609088]
+Path: Node5Node7" color=green shape=box]
+	Node5 -> Node8 [label=Node5Node8]
+	Node8 [label="V:1, H:0, Flag:False
+['4. stickers Charlie has left, we need to subtract the used stickers from the initial total: 54 (initial total) - 37 (used stickers) = 17 stickers remaining.\n        So, Charlie has 17 stickers left.', 62, 0.2824520248908695]
+Path: Node5Node8" color=green shape=box]
+	Node5 -> Node9 [label=Node5Node9]
+	Node9 [label="V:1, H:0, Flag:False
+['4. Now subtract the used amount from the initial number of stickers: 54 (initial) - 37 (used) = 17 stickers left.\n        Charlie has 17 stickers left.', 78, 0.9807199272347661]
+Path: Node5Node9" color=green shape=box]
+	Node5 -> Node10 [label=Node5Node10]
+	Node10 [label="V:1, H:0, Flag:False
+['4. stickers Charlie has left, we subtract the number of stickers he used from the initial total: 54 (initial total) - 37 (used for giving and decorating) = 17 stickers.\n        So, Charlie has 17 stickers left.', 101, 0.2453195818603373]
+Path: Node5Node10" color=green shape=box]
+	Node5 -> Node11 [label=Node5Node11]
+	Node11 [label="V:1, H:0, Flag:False
+['4. stickers Charlie has left, we need to subtract the used stickers from the initial total: 54 (initial) - 37 (used) = 17 stickers.\n        5. Therefore, Charlie has 17 stickers left.', 76, 0.6769160380874968]
+Path: Node5Node11" color=green shape=box]
+	Node5 -> Node12 [label=Node5Node12]
+	Node12 [label="V:1, H:0, Flag:False
+['4. stickers are left, subtract the used stickers from the initial total: 54 (initial total) - 37 (used stickers) = 17 stickers.\n        Charlie has 17 stickers left.', 94, 0.141926025183162]
+Path: Node5Node12" color=green shape=box]
+	Node5 -> Node13 [label=Node5Node13]
+	Node13 [label="V:1, H:0, Flag:False
+['4. To find the remaining number of stickers, subtract the used ones from the initial count: 54 (initial) - 37 (used) = 17 stickers.\n        5. Charlie has 17 stickers left.', 105, 0.9700871141013245]
+Path: Node5Node13" color=green shape=box]
+}

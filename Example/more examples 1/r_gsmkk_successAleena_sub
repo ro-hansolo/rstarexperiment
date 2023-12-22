@@ -1,0 +1,118 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Aleena subscribed to a streaming service that charges her $140 per month. If the streaming company charged her the initial amount for the first half of the year and then charged her 10% less money on the other half of the year, calculate the total amount she had paid for the streaming service by the end of the year. Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:10, H:10, Flag:True
+['1. Calculate the cost for the first half of the year: Since Aleena pays $140 per month and there are two months in a half-year, we need to multiply the monthly charge by 2. So, $140 * 2 = $280.\n        Now, we know she paid $28', 73, 0.6147853382336453]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:9, Flag:False
+[\"1. Determine how many months there are in a half-year: Half-Year has 6 months (as it's a fraction of a full year with 12 months).\", 41, 0.878366065879097]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:4, Flag:False
+[\"1. First, we need to determine the cost per month for each half of the year. The initial amount is $140 per month, which will remain constant throughout the first half of the year. For the second half of the year, the company charges her 10% less money, so we'll calculate this reduction.\", 70, 0.321882581377252]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:2, Flag:False
+[\"1. Let's start with calculating the cost for the full year (12 months) at $140 per month. So, we multiply 12 months by $140/month to get the total amount: 12 * 140 = $1680.\n        2. Now, let's consider the first half of the year when she paid the initial amount. This means she will pay for 6 months at the full price ($140/month).\", 108, 0.4761498542770639]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:3, Flag:False
+[\"1. First, let's determine how much Aleena pays per month for the entire year. There are 12 months in a year, so she will pay $140 * 12 = $1680 for the whole year.\n        2. Now, we need to calculate the amount she paid during the first half of the year\", 74, 0.13559674854263526]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:7, Flag:False
+[\"1. First, let's find out how much Aleena pays per month, which is $140.\n        2. There are 12 months in a year, so we need to calculate the amount she pays for the entire year. To do\", 54, 0.7731786477955384]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:1, Flag:False
+[\"1. We have Aleena's monthly charges which is $140 per month.\n        2. To find her annual cost, we need to multiply this by 12 months in a year (since there are 12 months). So, the yearly charge would be $140 * 12 = $1680.\n        3. The first half\", 82, 0.7269190994296232]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:3, H:9, Flag:True
+['4. She is charged with the initial amount for the first half of the year ($1680), which means she paid this much in the first six months.\n        5. The second half\n        6. In the second half, they charge her 10% less money on the monthly basis. So, we', 67, 0.39936834539405053]
+Path: Node6Node7" color=red shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:3, H:9, Flag:True
+['4. We know that she will pay 10% less for the second half of the year. To calculate this, we need to find 10% of her initial annual cost ($1680). So, 10% of $1680 is 0.1 * $1680 = $', 69, 0.25665499944296577]
+Path: Node6Node8" color=red shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:3, H:9, Flag:True
+[\"4. We're given that she paid the initial amount for the first half of the year, which means she paid full price ($1680) for these six months. Therefore, her payments for this period are $1680.\n        5. The second half\n        6. For the other half of the year, she was charged 10% less money. We can calculate this amount by subtracting 10% from the full price\", 97, 0.4935656446808294]
+Path: Node6Node9" color=red shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:3, H:9, Flag:True
+['4. She paid this amount for the initial 6 months ($1680 / 2 = $840)\n        5. In the second half, she paid 10% less', 42, 0.5371826137580223]
+Path: Node6Node10" color=red shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:3, H:9, Flag:True
+['4. She is charged the initial amount for the first half of the year, which means she pays the full $1680 during this period.\n        5. The second half\n        6. For the other half of the year, she gets', 52, 0.12638495308544606]
+Path: Node6Node11" color=red shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:2, H:8, Flag:False
+['4. Half of a year is 6 months. To find how much she was charged for the first half, we need to multiply her monthly charges by the number of months in that period: $140 * 6 = $840.\n        5. The second half (with a 10', 66, 0.4906389064806206]
+Path: Node6Node12" color=black shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:2, H:8, Flag:False
+['4. She paid the initial amount for the first six months ($1680 / 2 = $840). This is her total payment during the first half of the year.\n        5. For the second half, they charged her 10% less money than before. To find this reduction, we calculate 10% of $140: (1', 79, 0.6292010100130003]
+Path: Node6Node13" color=black shape=box]
+	Node3 -> Node14 [label=Node3Node14]
+	Node14 [label="V:1, H:2, Flag:False
+['3. For the remaining 6 months (the second half), she pays 10% less than the full price ($140 * 90% = $126 per month). She will still pay for this reduced amount for the next 6', 54, 0.9513611395711604]
+Path: Node3Node14" color=black shape=box]
+	Node3 -> Node15 [label=Node3Node15]
+	Node15 [label="V:3, H:6, Flag:False
+['3. For the second half of the year (another 6 months), the cost will be 10% less than the initial amount, so we need to calculate this new cost first: $140 * (1 -', 48, 0.9208528243629881]
+Path: Node3Node15" color=black shape=box]
+	Node3 -> Node16 [label=Node3Node16]
+	Node16 [label="V:1, H:2, Flag:False
+['3. We need to calculate this total cost by multiplying the number of months (6) by the amount per month ($140): 6 * $140 = $840.\n        4. For the remaining half of the year, she will be charged at 10% less than the initial amount ($126). To find this amount, we need to reduce the price by 10%, so subtract 10% from $140: $', 103, 0.7852503066805315]
+Path: Node3Node16" color=black shape=box]
+	Node3 -> Node17 [label=Node3Node17]
+	Node17 [label="V:3, H:4, Flag:False
+['3. Calculate the cost for the first half of the year: 6 months * $140/month = $840.\n        4. For the second half of the year, they charged her 10% less money. To find out how much less she paid, we need to calculate 10% of the initial amount ($', 74, 0.21954628098552742]
+Path: Node3Node17" color=black shape=box]
+	Node3 -> Node18 [label=Node3Node18]
+	Node18 [label="V:3, H:6, Flag:False
+[\"3. To calculate the cost for the second half of the year, we need to reduce it by 10%. So, we'll take 90% of $140: 0\", 42, 0.4126249519671217]
+Path: Node3Node18" color=black shape=box]
+	Node3 -> Node19 [label=Node3Node19]
+	Node19 [label="V:3, H:6, Flag:False
+['3. For the other half of the year (6 months), she pays 10% less than the initial amount. To find out how much less, we calculate 10% of $140: 0.1 * 140', 53, 0.31909797823354724]
+Path: Node3Node19" color=black shape=box]
+	Node3 -> Node20 [label=Node3Node20]
+	Node20 [label="V:1, H:2, Flag:False
+['3. To find out how much she pays for those 6 months, we multiply 6 months by $140/month: 6 * 140 = $840.\n        4. The second half of the year will have a 10% discount on her monthly payment of $140. To find out', 73, 0.5187835253999603]
+Path: Node3Node20" color=black shape=box]
+	Node14 -> Node21 [label=Node14Node21]
+	Node21 [label="V:2, H:0, Flag:False
+['4. Calculate the total cost of the first half: 6 months * $140/month = $840.\n        5. Calculate the total cost of the second half: 6 months * ($126/month) = $756 (10% less than the full price).\n        6. Add up the costs', 76, 0.6321648083580138]
+Path: Node14Node21" color=green shape=box]
+	Node14 -> Node22 [label=Node14Node22]
+	Node22 [label="V:2, H:3, Flag:False
+['months. \n        To calculate the total cost for these 6 months, we multiply the number of months by the reduced monthly rate: 6 * 126 = $756.\n        4. Finally, to find the total amount she paid for the entire year, we add the costs from both halves: $1680 (full price for 12 months) + $756 (reduced price for', 94, 0.19671291322369067]
+Path: Node14Node22" color=black shape=box]
+	Node14 -> Node23 [label=Node14Node23]
+	Node23 [label="V:2, H:0, Flag:False
+['months.\n        4. Calculate the total cost for the first half of the year: 6 months * $140/month = $840.\n        5. Calculate the total cost for the second half of the year: 6 months * $126/month = $756.\n        6. Add up the costs from both halves to get the total amount she paid by the end of the year: $840 (first half) + $756 (second half) = $1696.', 118, 0.027937907868463396]
+Path: Node14Node23" color=green shape=box]
+	Node14 -> Node24 [label=Node14Node24]
+	Node24 [label="V:2, H:8, Flag:False
+['months.\n        4. To calculate the total cost for these 6 months, we multiply the number of months (6) by the respective amounts: 6 * $140/month (first half) + 6 * $126/month (second half).\n        Total payment =', 64, 0.5326339966553655]
+Path: Node14Node24" color=black shape=box]
+	Node14 -> Node25 [label=Node14Node25]
+	Node25 [label="V:8, H:8, Flag:True
+['months, since the total number of months is still 12. So, in the remaining half-year, she pays 6 * $126/month = $756.\n        4. Finally, to find the total amount paid by her throughout the year, we simply add up the costs from all parts: Initial full price for the first half of the year ($600), reduced payments in the second half of the year ($756), and the remaining', 100, 0.7226991271283499]
+Path: Node14Node25" color=red shape=box]
+	Node14 -> Node26 [label=Node14Node26]
+	Node26 [label="V:2, H:2, Flag:False
+['months, resulting in a total of 6 reduced payments.\n        So the cost breakdown looks like this: \n           - First half: 6 months * $140/month = $840\n           - Second half: 6 months * $126/month = $756\n        4. Combine these amounts to get the total amount she paid by the end', 83, 0.9433245353467042]
+Path: Node14Node26" color=black shape=box]
+	Node14 -> Node27 [label=Node14Node27]
+	Node27 [label="V:2, H:1, Flag:False
+['months.\n        4. To calculate her total payment for the year, we need to add up the payments from both halves of the year: (6 months at $140/month) + (6 months at $126/month).\n        So, 6 * 140 = $840 and 6 * 126 = $756.\n        5. Finally,', 89, 0.255612892707651]
+Path: Node14Node27" color=black shape=box]
+}

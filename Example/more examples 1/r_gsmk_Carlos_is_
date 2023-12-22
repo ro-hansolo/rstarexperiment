@@ -1,0 +1,86 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. How many years will it take before he starts earning money on the lemon tree? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:8, Flag:False
+[\"1. First, let's determine how much Carlos spends in total on planting the tree and maintaining it annually. The initial cost is $90 for planting, and each year, there are additional costs of $\", 46, 0.25767891673876997]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:8, Flag:False
+[\"1. First, let's determine the total cost of planting the lemon tree. The tree costs $90 to plant.\n        2. Next, we need to calculate the annual revenue from selling lemons. Each\", 46, 0.20296753151859293]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:7, Flag:False
+[\"1. First, let's determine the total cost of planting the lemon tree, which is $90.\n        2. Each year, we know the lemon tree will grow 7 lemons and earn him $1.5 per lemon. So, we can calculate the revenue from selling lemons by multiplying the number of le\", 70, 0.560659344072796]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:6, Flag:False
+['1. Calculate the total cost of planting the lemon tree: The tree costs $90 to plant.\n        2. Determine the annual profit: Each year, the lemon tree produces 7 lemons and sells them for $1.5 each. The income from selling these lemons is $1.5 * 7', 70, 0.6248523997413169]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:7, Flag:False
+[\"1. First, let's determine how much Carlos will earn from selling lemons in one year. He grows 7 lemons per year and sells them for $1.5 each. So, his earnings are 7 * $1.5 = $10.5 per year.\n        2. Now, we need\", 69, 0.36226195320983656]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:7, Flag:False
+[\"1. First, let's calculate the total cost of planting the lemon tree. The tree costs $90 to plant.\n        2. Next, we need to determine the annual income from selling lemons. Each year, the tree grows 7 lemons and sells them for $1.5 each. So, the annual income is 7 *\", 75, 0.018803723225871316]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:4, H:9, Flag:False
+[\"1. First, let's calculate the total cost of planting the lemon tree. The tree costs $90 to plant.\n        2. Next, we need to determine\", 37, 0.062365379421879474]
+Path: StartNode6" color=black shape=box]
+	Start -> Node7 [label=StartNode7]
+	Node7 [label="V:5, H:9, Flag:False
+[\"1. First, let's determine the annual income from the lemon tree. Carlos grows 7 lemons\", 22, 0.3945247846141565]
+Path: StartNode7" color=black shape=box]
+	Start -> Node8 [label=StartNode8]
+	Node8 [label="V:7, H:10, Flag:True
+[\"1. First, let's calculate the annual profit\", 11, 0.2755056020236356]
+Path: StartNode8" color=red shape=box]
+	Start -> Node9 [label=StartNode9]
+	Node9 [label="V:0, H:5, Flag:False
+['1. Calculate the annual income from selling lemons: 7 lemons * $1.5 per lemon = $10.5 per year.\n        2. Subtract the cost of watering and feeding the tree: $10.5 - $3 = $7.5 per year.\n        3. Find out how many years it will', 75, 0.4564721833001617]
+Path: StartNode9" color=black shape=box]
+	Node9 -> Node10 [label=Node9Node10]
+	Node10 [label="V:10, H:10, Flag:True
+[\"4. take for this amount to cover the initial cost of planting the lemon tree ($90): $7.5 / $90 = 0.0875 years (approximately 0.09 years).\n        5. Since we can't have a fraction of a year, round up to the nearest whole number: 1 year.\n        So\", 80, 0.42527101235202447]
+Path: Node9Node10" color=red shape=box]
+	Node9 -> Node11 [label=Node9Node11]
+	Node11 [label="V:10, H:10, Flag:True
+['4. take to reach a positive income after covering the planting costs ($90): $7.5 gain per year / $90 cost = 12/12.5 years (round up).\n        In this scenario, it will take approximately 12-13 years for Carlos to start earning money on his lemon tree', 71, 0.8188988334142177]
+Path: Node9Node11" color=red shape=box]
+	Node9 -> Node12 [label=Node9Node12]
+	Node12 [label="V:2, H:9, Flag:False
+['4. take to cover the initial planting cost ($90) by comparing the annual earnings with the initial', 22, 0.46557868605479225]
+Path: Node9Node12" color=black shape=box]
+	Node9 -> Node13 [label=Node9Node13]
+	Node13 [label="V:1, H:0, Flag:False
+['4. take for this income to cover the initial planting cost ($90): $90 / $7.5 per year = 12 years.', 35, 0.21399868721255821]
+Path: Node9Node13" color=green shape=box]
+	Node9 -> Node14 [label=Node9Node14]
+	Node14 [label="V:1, H:0, Flag:False
+['4. take for the annual income to cover the initial planting cost ($90): $90 / $7.5 per year = 12 years.\n        So, it will take Carlos 12 years before he starts earning money on the lemon tree.', 89, 0.07855286060084798]
+Path: Node9Node14" color=green shape=box]
+	Node9 -> Node15 [label=Node9Node15]
+	Node15 [label="V:2, H:9, Flag:False
+['take before he starts earning money by comparing this annual income to the planting cost: $90 (planting cost', 24, 0.8217250037351594]
+Path: Node9Node15" color=black shape=box]
+	Node9 -> Node16 [label=Node9Node16]
+	Node16 [label="V:2, H:9, Flag:False
+['4. take for him to start earning money, assuming he has spent $90 on planting the tree initially. The total cost is $90 (planting) + $3 (water & feed per year).\n        5. Add up', 51, 0.7251658650426299]
+Path: Node9Node16" color=black shape=box]
+	Node9 -> Node17 [label=Node9Node17]
+	Node17 [label="V:1, H:0, Flag:False
+['take to reach breakeven, when earnings equal the initial cost of planting: $90 / $7.5 per year = 12 years.\n\nSo, it will take Carlos 12 years before he starts earning money on the lemon tree after taking into account all expenses and potential income.', 80, 0.8143332168781816]
+Path: Node9Node17" color=green shape=box]
+	Node9 -> Node18 [label=Node9Node18]
+	Node18 [label="V:1, H:1, Flag:False
+['4. take for the annual income to cover the initial cost of planting the lemon tree ($90): $90 / $7.5 per year = 12 years.\n        So, it will take Carlos', 46, 0.10524256618815286]
+Path: Node9Node18" color=black shape=box]
+	Node9 -> Node19 [label=Node9Node19]
+	Node19 [label="V:2, H:9, Flag:False
+['take to cover the initial planting cost ($90): $90 / $7', 18, 0.6230536254229543]
+Path: Node9Node19" color=black shape=box]
+}

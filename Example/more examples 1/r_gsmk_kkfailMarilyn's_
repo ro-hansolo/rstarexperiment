@@ -1,0 +1,34 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Marilyn's first record sold 10 times as many copies as Harald's. If they sold 88,000 copies combined, how many copies did Harald sell? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:9, Flag:False
+[\"1. Let's find out the number of copies Marilyn and Harald sold individually by dividing the total number of copies between them (88,000).\n        Number of copies for Marilyn = Total copies / Factor for Marilyn (which is 10 times Harald) = 88,0\", 72, 0.8130282153291849]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:9, Flag:False
+[\"1. Let's first find the number of copies Marilyn sold. Since her first record sold 10 times as many copies as Harald's, and we know that Harald's sold some amount (let's call it H), then\", 54, 0.35289261521716453]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:8, Flag:False
+[\"1. We know that the ratio of Marilyn's to Harald's record sales is 10:1 (Marilyn's sold 10 times as many).\n        2. We also have information about their combined total, which is 88,000 copies sold in total.\n        3. To find out how many copies Harald sold, we need to first determine how many copies Marilyn sold. Since the ratio of their sales is 1\", 103, 0.3984757467371558]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:5, H:9, Flag:False
+[\"1. We know that Marilyn's first record sold 10 times as many copies as Harald's. Let's represent the number of copies Harald sold as H and the number of copies Marilyn\", 47, 0.0552759270476193]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:5, H:9, Flag:False
+[\"1. We know the ratio of copies sold between Marilyn and Harald is 10:1 (since Marilyn's sold 10 times more).\n        2. We want to find out how many\", 47, 0.9186066101393744]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:5, H:9, Flag:False
+[\"1. We know that Marilyn's first record sold 10 times more than Harald's. So, we can represent this relationship as: Marilyn's sales = 10 * Harald's sales.\n        2. We also\", 56, 0.07260939533243338]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:5, H:8, Flag:False
+[\"1. We know that Marilyn's first record sold 10 times as many copies as Harald's. Let's represent the number of copies Harald sold as H and the number of copies Marilyn sold as M (M = 10H).\n        2. We also have information that they sold a combined total of 88,000 copies. So, we can write this as H +\", 91, 0.060792184680321215]
+Path: StartNode6" color=black shape=box]
+}

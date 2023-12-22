@@ -1,0 +1,118 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Charlie wants to sell beeswax candles.  For every pound of beeswax, he can make 10 tapered candles.  One pound of beeswax and the wicks cost $10.00 in supplies.   If he sells each candle for $2.00 each, what is his net profit if he makes and sells 20 candles? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:6, Flag:False
+[\"1. First, let's determine how many pounds of beeswax Charlie needs to make 20 tapered candles. Since one pound of beeswax can make 10 tapered candles, we need to divide the total number of candles (20) by the number of candles per pound (10). So, 20 / 10 = 2 pounds of beeswax needed.\n        2. Now that\", 98, 0.3103613134596708]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:7, Flag:False
+['1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles: Charlie needs 20 candles / 10 candles per pound = 2 pounds of beeswax.\n        2. Determine the cost of supplies for making these candles: 2 pounds of beeswax * $10.00 per pound + wicks cost = $20.00 (assuming', 97, 0.0381420614623873]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:7, Flag:False
+['1. Determine how many pounds of beeswax needed to make 20 tapered candles: Since Charlie can make 10 tapered candles per pound of beeswax, we need 20 / 10 = 2 pounds of beeswax for these candles.\n        2. Calculate the cost of supplies for the 2 pounds of beeswax: The cost of supplies is $10.00 per pound of beeswax, so for', 108, 0.7385158226152081]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:9, Flag:False
+[\"1. Let's first determine how many pounds of beeswax Charlie needs to make the desired number of candles. He can make 10 tapered candles from every pound of beeswax, so we need to divide the total number of candles (20) by the number of candles per pound (10).\", 73, 0.5986268834223571]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:9, Flag:False
+['1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles. Since Charlie can make 10 tapered candles per pound of beeswax, we need to divide the total number of candles by the number', 57, 0.14731319464243986]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:8, Flag:False
+['1. Calculate the total number of beeswax candles Charlie can make from one pound of beeswax: He makes 10 tapered candles per pound of beeswax.\n        2. Determine the cost of supplies needed to make 20 candles', 61, 0.5426425229593842]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:9, Flag:False
+['1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles with 10 candles per pound: 20 candles / 1', 41, 0.5677546833729477]
+Path: StartNode6" color=black shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:4, H:7, Flag:False
+[\"3. Next, let's calculate the cost of supplies for these 2 pounds of beeswax and wicks. Since it costs $10.00 per pound of beeswax and the wicks, we need to multiply the total number of pounds (2) by their combined cost ($10.00). So, 2 * $1\", 78, 0.6398778969424159]
+Path: Node0Node7" color=black shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:3, H:5, Flag:False
+[\"3. Next, let's calculate the cost of the supplies for these 2 pounds of beeswax and wicks. The cost is $10.00 per pound, so we need to multiply this by the number of pounds used (2). So, $10.00 * 2 = $20.00 in supplies.\", 77, 0.23162948902490776]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:4, H:7, Flag:False
+['3. We know he needs 2 pounds of beeswax and wicks cost $10.00 in supplies. So the total cost for supplies is $10.00 (beeswax) + $10.00 (wicks) = $20.00.\n        4', 68, 0.40519360346567757]
+Path: Node0Node9" color=black shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:3, H:5, Flag:False
+[\"3. Next, let's calculate the cost of supplies for these 2 pounds of beeswax and wicks. The cost is $10.00 per pound of beeswax and wicks. So, 2 * $10.00 = $20.00 in total supply costs.\n        4. Now we need to determine the revenue from selling all 20 candles at a price of $2.00 each. To do this, multiply the number of candles (\", 111, 0.13221965289694626]
+Path: Node0Node10" color=black shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:5, H:6, Flag:False
+['3. The cost for all the materials is $10.00 in supplies. This includes a pound of beeswax and wicks for each candle. Since Charlie makes 20 candles, he will need to buy two pounds of beeswax (2 pounds needed / 1 pound per batch = 2 batches). So, the total cost for materials is $10.00 * 2', 88, 0.6615623621343805]
+Path: Node0Node11" color=black shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:3, H:5, Flag:False
+[\"3. Next, let's calculate the cost of the supplies for these 2 pounds of beeswax and wicks. The cost is $10.00 per pound of beeswax and wicks. So, 2 * $10.00 = $20.00 in total supply costs.\n        4. Now we need to determine the revenue from selling all 20 candles at a price of $2.00 each. To do this, multiply the number of candles (\", 112, 0.04765088725515143]
+Path: Node0Node12" color=black shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:3, H:6, Flag:False
+['3. We know it costs $10 for one pound of beeswax and wicks. Since Charlie needs 2 pounds of beeswax, the cost for beeswax alone will be 2 * $10 = $20.\n        4', 57, 0.39678130047940063]
+Path: Node0Node13" color=black shape=box]
+	Node1 -> Node14 [label=Node1Node14]
+	Node14 [label="V:2, H:1, Flag:False
+['2 pounds of beeswax and a separate cost for wicks).\n        3. Calculate the total revenue from selling the 20 candles: 20 candles * $2.00 each = $40.00.\n        4. Find his net profit after subtracting the cost of supplies and materials: Revenue - Cost = $40.00 (revenue) - $2', 90, 0.8410761781683986]
+Path: Node1Node14" color=black shape=box]
+	Node1 -> Node15 [label=Node1Node15]
+	Node15 [label="V:1, H:1, Flag:False
+['2 pounds of beeswax is enough to cover the wick cost).\n        3. Calculate the total revenue from selling all 20 candles: 20 candles * $2.00 each = $40.00.\n        4. Subtract the cost of supplies from the total revenue to find the net profit:', 74, 0.12671963474636105]
+Path: Node1Node15" color=black shape=box]
+	Node1 -> Node16 [label=Node1Node16]
+	Node16 [label="V:5, H:8, Flag:True
+['2.5 pounds of beeswax is needed to make 20 tapered candles, the cost would still be $20.00).\n        3. Calculate the total revenue from selling all 20 candles:', 51, 0.13356673019060616]
+Path: Node1Node16" color=red shape=box]
+	Node1 -> Node17 [label=Node1Node17]
+	Node17 [label="V:6, H:2, Flag:True
+['2.5 pounds of beeswax is needed to make 20 tapered candles, the cost would still be $20.00).\n        3. Calculate the total revenue from selling all 20 candles: 20 candles * $2.00 per candle = $40.00.', 72, 0.14439170739457852]
+Path: Node1Node17" color=red shape=box]
+	Node1 -> Node18 [label=Node1Node18]
+	Node18 [label="V:0, H:3, Flag:False
+['2 pounds of beeswax and wicks cost the same).\n        3. Calculate the total revenue from selling all 20 candles: 20 candles * $2.00 each = $40.00.\n        4. Subtract the cost of supplies from the total revenue to find the net profit: Net Profit =', 76, 0.1691049044127192]
+Path: Node1Node18" color=black shape=box]
+	Node1 -> Node19 [label=Node1Node19]
+	Node19 [label="V:1, H:1, Flag:False
+['20.00 is the combined cost).\n        3. Calculate the total revenue from selling 20 tapered candles: 20 candles * $2.00 each = $40.00.\n        4', 52, 0.8026135526115427]
+Path: Node1Node19" color=black shape=box]
+	Node1 -> Node20 [label=Node1Node20]
+	Node20 [label="V:0, H:3, Flag:False
+['2 pounds is enough to cover the wick cost).\n        3. Calculate the revenue from selling all 20 tapered candles at $2.00 each: 20 candles * $2.00 per candle = $40.00.\n        4. Subtract the cost of supplies from the total revenue to find the net profit: $40.00 (', 85, 0.6327830892707756]
+Path: Node1Node20" color=black shape=box]
+	Node15 -> Node21 [label=Node15Node21]
+	Node21 [label="V:1, H:0, Flag:False
+[\"4a. Revenue - Supply Cost = Total Revenue - Supply Cost = $40.00 - $20.00 = $20.00.\n        Charlie's net profit from making and selling 20 candles is $20.00.\", 96, 0.9520454609469489]
+Path: Node15Node21" color=green shape=box]
+	Node15 -> Node22 [label=Node15Node22]
+	Node22 [label="V:1, H:0, Flag:False
+[\"4.1 Net profit = Total revenue - Cost of supplies, which is $40.00 - $20.00 = $20.00.\n        Charlie's net profit will be $20.00 if he makes and sells 20 candles.\", 98, 0.7079529399019873]
+Path: Node15Node22" color=green shape=box]
+	Node15 -> Node23 [label=Node15Node23]
+	Node23 [label="V:1, H:0, Flag:False
+[\"4a. Net profit = Total Revenue - Cost of Supplies, so Net Profit = $40.00 - $20.00 = $20.00.\n        Charlie's net profit if he makes and sells 20 candles is $20.00.\", 100, 0.3731520730434621]
+Path: Node15Node23" color=green shape=box]
+	Node15 -> Node24 [label=Node15Node24]
+	Node24 [label="V:1, H:0, Flag:False
+['4a. Net Profit = Total Revenue - Cost of Supplies\n        4b. Net Profit = $40.00 - $20.00\n        4c. Net Profit = $20.', 50, 0.7822072431792689]
+Path: Node15Node24" color=green shape=box]
+	Node15 -> Node25 [label=Node15Node25]
+	Node25 [label="V:1, H:0, Flag:False
+[\"4a. Total Revenue - Cost of Supplies = $40.00 - $20.00 = $20.00.\n        So, Charlie's net profit will be $20.00 if he makes and sells 20 candles.\", 93, 0.9125399749962527]
+Path: Node15Node25" color=green shape=box]
+	Node15 -> Node26 [label=Node15Node26]
+	Node26 [label="V:1, H:0, Flag:False
+['Net Profit = Total Revenue - Cost of Supplies\n        Net Profit = $40.00 - $20.00 = $20.00\n        Charlie will make a net profit of $20.00 after making and selling 20 candles.', 87, 0.5061499121494821]
+Path: Node15Node26" color=green shape=box]
+	Node15 -> Node27 [label=Node15Node27]
+	Node27 [label="V:1, H:0, Flag:False
+[\"4a. Total Revenue - Cost of Supplies = $40.00 - $20.00 = $20.00.\n          Charlie's net profit is $20.00 when he makes and sells 20 candles.\", 103, 0.8525865818969526]
+Path: Node15Node27" color=green shape=box]
+}

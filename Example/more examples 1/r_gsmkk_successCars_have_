@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Cars have lined up on the motorway. Some of the cars drive through in the first 15 minutes of the traffic jam, then 20 more cars drive through in the remaining 15 minutes of the jam. 5 cars from the line take an exit so they don't have to drive through the traffic jam. If there were originally 30 cars on the motorway, how many cars drove through the traffic jam in the first 15 minutes? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:5, Flag:True
+[\"1. Let's break down the information we have. In the 15-minute window, some of the cars drive through which means that number of cars equals to the total number of cars (30) minus the remaining number of cars (25) after those 15 minutes passed. So, the first group of cars that drove through is: (30 - 25) = 5 cars.\n        2. These 5 cars represent the ones\", 99, 0.9257588781961438]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:4, Flag:False
+[\"1. First, let's determine the number of cars that drove through during the entire traffic jam. The total duration is 15 + 15 = 30 minutes and there were 20 cars that entered the clear section after the initial 15 minutes. So, 20 more cars (20) + the 5 who left early (5) equals 25 cars in total drove through without waiting for a significant time in the traffic jam.\", 98, 0.9467648279357125]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:5, Flag:False
+['1. We know that initially there are 30 cars on the motorway.\n        2. Some of them drive through during the first 15 minutes.\n        3. After this time, another 20 cars drive through in the remaining 15 minutes.\n        4. In total, 5 cars take an exit to avoid the traffic jam.\n        5. To find out how many cars', 86, 0.10782095201271602]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:8, H:9, Flag:True
+['1. We know there were initially 30 cars on the motorway.\n        2. Some of those cars drive through in the first 15 minutes of the traffic jam.\n        3. In total, 40 cars (the initial 30 + the remaining 10) drive through the traffic jam within the 30 minutes.\n        4. We are looking for the number of cars that drove through during the first 15 minutes.\n        5. To calculate this, we need to find out how many cars drove through', 115, 0.596209053905639]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:7, H:8, Flag:True
+['1. We know that initially there are 30 cars on the motorway.\n        2. Some of them drive through in the first 15 minutes.\n        3. After this, another 20 cars drive through in the remaining 15 minutes.\n        4. Finally, 5 cars take an exit to avoid the traffic jam.\n        5. To find out how many cars drove through in the first 15 minutes, we need to subtract the number of cars that took an exit from the initial number of cars on the', 115, 0.07348948501339969]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:6, Flag:False
+['1. We know that a total of 20 more cars drove through in the remaining 15 minutes of the jam.\n        2. We also know that there were originally 30 cars on the motorway and 5 of them took an exit to avoid the traffic jam', 58, 0.20021854688829654]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:5, Flag:False
+['1. We know that initially there were 30 cars on the motorway.\n        2. Some of the cars drive through in the first 15 minutes of the traffic jam.\n        3. After this, another 20 cars drove through during the remaining 15 minutes.\n        4. 5 cars from the line took an exit to avoid the traffic', 78, 0.4332257304135789]
+Path: StartNode6" color=black shape=box]
+	Node1 -> Node7 [label=Node1Node7]
+	Node7 [label="V:5, H:7, Flag:True
+['2. Now, we need to find out how many cars drove through during the first 15 minutes. Since there were 5 cars that left early, they did not drive through the initial part of the traffic jam. This means that only the remaining 30 - 5 = 25 cars (from the original 30) went through the first 15 minutes without any problems.\n        So, 25 cars drove through the traffic jam in the first 15 minutes.', 113, 0.5194857822755993]
+Path: Node1Node7" color=red shape=box]
+	Node1 -> Node8 [label=Node1Node8]
+	Node8 [label="V:5, H:6, Flag:True
+['2. Now, we need to find out how many cars drove through during the first 15 minutes. We know that there were 30 cars initially on the motorway and 5 of them took an exit before the traffic jam started. So, 30 - 5 = 25 cars remained on the motorway.\n        3. During the first 15 minutes, some cars drove through the traffic jam. We know that there were 20 more cars who entered the clear section after the', 106, 0.11283968778308273]
+Path: Node1Node8" color=red shape=box]
+	Node1 -> Node9 [label=Node1Node9]
+	Node9 [label="V:5, H:7, Flag:True
+['2. Now, we need to find out how many cars drove through during just the first 15 minutes of the traffic jam. We know that the initial 30 cars were on the motorway when it started and some cars managed to drive through before the traffic jam even started. Those are the cars driving through in the first 15 minutes', 71, 0.4969642630619968]
+Path: Node1Node9" color=red shape=box]
+	Node1 -> Node10 [label=Node1Node10]
+	Node10 [label="V:5, H:5, Flag:True
+[\"2. Now we need to find out how many cars drove through during the first 15 minutes of the traffic jam. Since there were already some cars driving through at that time, let's deduct these from the total number of cars who eventually drove through without waiting. So, 25 - 5 (these were the ones who exited early) = 20 cars drove through during the first 15 minutes of the traffic jam.\", 104, 0.6508632430698673]
+Path: Node1Node10" color=red shape=box]
+	Node1 -> Node11 [label=Node1Node11]
+	Node11 [label="V:5, H:7, Flag:True
+['2. Now, we need to find out how many cars drove through in the first 15 minutes. We are given that some cars drove through during this period and they were part of the original 30 cars. The remaining cars made up the 25 cars who went through in the other part of the traffic jam. To find the number of these early birds, we need to subtract the remaining part', 84, 0.7712274741691921]
+Path: Node1Node11" color=red shape=box]
+	Node1 -> Node12 [label=Node1Node12]
+	Node12 [label="V:5, H:7, Flag:True
+[\"2. Now we know how many cars drove through during the whole 30 minutes of the traffic jam. We have to figure out how many cars went through only in the first 15 minutes. Since there were originally 30 cars on the motorway, 5 of them left early and didn't wait for the clear section,\", 70, 0.6540323063004058]
+Path: Node1Node12" color=red shape=box]
+	Node1 -> Node13 [label=Node1Node13]
+	Node13 [label="V:5, H:6, Flag:True
+[\"2. Now, let's consider how many of these 25 cars actually entered during the first 15 minutes when there was no clear area. Out of these 25 cars, some left early to take an exit before the traffic jam cleared (5 cars), and some entered after the initial 15 minutes without any jam in front of them (the remaining 20 cars).\n        3. So, to determine the number of cars that drove through during the first 15 minutes of the traffic jam when there was no clear space, we have to sub\", 118, 0.8173182158010792]
+Path: Node1Node13" color=red shape=box]
+	Node2 -> Node14 [label=Node2Node14]
+	Node14 [label="V:9, H:10, Flag:True
+['drove through during the first 15 minutes, we need to consider the remaining number of cars after they drove through.\n        6. Since some cars drive through in the first 15 minutes and another 20 in the last 15 minutes, the total number of cars that have driven off is 15 + 20 = 35 cars.\n        7. We subtract these 35 cars from the initial 30', 94, 0.9477843907695613]
+Path: Node2Node14" color=red shape=box]
+	Node2 -> Node15 [label=Node2Node15]
+	Node15 [label="V:10, H:10, Flag:True
+[\"6. drove through during the first 15 minutes, we need to consider the ones that didn't take an exit and also those who drove through in the remaining time.\n\nStep by step calculation:\n1. Calculate the number of cars that went through during both time periods (\", 60, 0.6836712316301945]
+Path: Node2Node15" color=red shape=box]
+	Node2 -> Node16 [label=Node2Node16]
+	Node16 [label="V:0, H:0, Flag:False
+['6. drove through during the first 15 minutes, we need to subtract the number of cars that took an exit and those that drove through in the remaining 15 minutes from the initial total.\n        7. So, 30 (initial) - 5 (exits) - 20 (remaining 15 minutes) = 5 cars drove through during the first 15 minutes of the traffic jam.', 106, 0.08011821454454027]
+Path: Node2Node16" color=green shape=box]
+	Node2 -> Node17 [label=Node2Node17]
+	Node17 [label="V:10, H:10, Flag:True
+['6. drove through during the first 15 minutes, we need to consider the cars that drove through after this time (20) and the ones that took an exit (5).\n        7. We subtract these two numbers from the total number of cars on the motorway initially (30) to find out how many cars were left before the first 15 minutes passed. This will give us the number of cars that drove through during the initial 15 minutes.\n        8. So, 30 -', 110, 0.5932042253795847]
+Path: Node2Node17" color=red shape=box]
+	Node2 -> Node18 [label=Node2Node18]
+	Node18 [label="V:10, H:10, Flag:True
+['6. drove through during the first 15 minutes, we need to subtract the number of cars that took an exit and those who drove through in the remaining 15 minutes from the initial total.\n        7. So, 30', 51, 0.17412556529068202]
+Path: Node2Node18" color=red shape=box]
+	Node2 -> Node19 [label=Node2Node19]
+	Node19 [label="V:10, H:10, Flag:True
+['6. drove through during the first 15 minutes, we need to subtract the number of cars that took an exit and those that drove through in the remaining 15 minutes from the initial total.\n        7. So, 30 (initial) - 5 (exits) - 20 (remaining 1', 70, 0.25688806987380686]
+Path: Node2Node19" color=red shape=box]
+	Node2 -> Node20 [label=Node2Node20]
+	Node20 [label="V:9, H:10, Flag:True
+['6. drove through during the first 15 minutes, we subtract these numbers: \n           - 20 cars from the remaining part of 15 minutes (after the initial 15)\n           - 5 cars that take an exit to avoid the jam\n          So, 20 + 5 = 25 cars drove through', 74, 0.9810867385558715]
+Path: Node2Node20" color=red shape=box]
+}

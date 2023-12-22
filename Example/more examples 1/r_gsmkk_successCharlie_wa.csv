@@ -1,0 +1,55 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's determine how many pounds of beeswax Charlie needs to make 20 tapered candles. Since one pound of beeswax can make 10 tapered candles, we need to divide the total number of candles (20) by the number of candles per pound (10). So, 20 / 10 = 2 pounds of beeswax needed.
+        2. Now that",Node0,1,6,1,7,0.3103613134596708,98,False
+" 1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles: Charlie needs 20 candles / 10 candles per pound = 2 pounds of beeswax.
+        2. Determine the cost of supplies for making these candles: 2 pounds of beeswax * $10.00 per pound + wicks cost = $20.00 (assuming",Node1,1,7,1,8,0.0381420614623873,97,False
+" 1. Determine how many pounds of beeswax needed to make 20 tapered candles: Since Charlie can make 10 tapered candles per pound of beeswax, we need 20 / 10 = 2 pounds of beeswax for these candles.
+        2. Calculate the cost of supplies for the 2 pounds of beeswax: The cost of supplies is $10.00 per pound of beeswax, so for",Node2,1,7,1,8,0.7385158226152081,108,False
+" 1. Let's first determine how many pounds of beeswax Charlie needs to make the desired number of candles. He can make 10 tapered candles from every pound of beeswax, so we need to divide the total number of candles (20) by the number of candles per pound (10).",Node3,2,9,2,11,0.5986268834223571,73,False
+" 1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles. Since Charlie can make 10 tapered candles per pound of beeswax, we need to divide the total number of candles by the number",Node4,2,9,2,11,0.14731319464243986,57,False
+" 1. Calculate the total number of beeswax candles Charlie can make from one pound of beeswax: He makes 10 tapered candles per pound of beeswax.
+        2. Determine the cost of supplies needed to make 20 candles",Node5,2,8,2,10,0.5426425229593842,61,False
+ 1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles with 10 candles per pound: 20 candles / 1,Node6,2,9,2,11,0.5677546833729477,41,False
+" 1. First, let's determine how many pounds of beeswax Charlie needs to make 20 tapered candles. Since one pound of beeswax can make 10 tapered candles, we need to divide the total number of candles (20) by the number of candles per pound (10). So, 20 / 10 = 2 pounds of beeswax needed.
+        2. Now that 3. Next, let's calculate the cost of supplies for these 2 pounds of beeswax and wicks. Since it costs $10.00 per pound of beeswax and the wicks, we need to multiply the total number of pounds (2) by their combined cost ($10.00). So, 2 * $1",Node7,4,7,5,12,0.6398778969424159,78,False
+" 1. First, let's determine how many pounds of beeswax Charlie needs to make 20 tapered candles. Since one pound of beeswax can make 10 tapered candles, we need to divide the total number of candles (20) by the number of candles per pound (10). So, 20 / 10 = 2 pounds of beeswax needed.
+        2. Now that 3. Next, let's calculate the cost of the supplies for these 2 pounds of beeswax and wicks. The cost is $10.00 per pound, so we need to multiply this by the number of pounds used (2). So, $10.00 * 2 = $20.00 in supplies.",Node8,3,5,4,9,0.23162948902490776,77,False
+" 1. First, let's determine how many pounds of beeswax Charlie needs to make 20 tapered candles. Since one pound of beeswax can make 10 tapered candles, we need to divide the total number of candles (20) by the number of candles per pound (10). So, 20 / 10 = 2 pounds of beeswax needed.
+        2. Now that 3. We know he needs 2 pounds of beeswax and wicks cost $10.00 in supplies. So the total cost for supplies is $10.00 (beeswax) + $10.00 (wicks) = $20.00.
+        4",Node9,4,7,5,12,0.40519360346567757,68,False
+" 1. First, let's determine how many pounds of beeswax Charlie needs to make 20 tapered candles. Since one pound of beeswax can make 10 tapered candles, we need to divide the total number of candles (20) by the number of candles per pound (10). So, 20 / 10 = 2 pounds of beeswax needed.
+        2. Now that 3. Next, let's calculate the cost of supplies for these 2 pounds of beeswax and wicks. The cost is $10.00 per pound of beeswax and wicks. So, 2 * $10.00 = $20.00 in total supply costs.
+        4. Now we need to determine the revenue from selling all 20 candles at a price of $2.00 each. To do this, multiply the number of candles (",Node10,3,5,4,9,0.13221965289694626,111,False
+" 1. First, let's determine how many pounds of beeswax Charlie needs to make 20 tapered candles. Since one pound of beeswax can make 10 tapered candles, we need to divide the total number of candles (20) by the number of candles per pound (10). So, 20 / 10 = 2 pounds of beeswax needed.
+        2. Now that 3. The cost for all the materials is $10.00 in supplies. This includes a pound of beeswax and wicks for each candle. Since Charlie makes 20 candles, he will need to buy two pounds of beeswax (2 pounds needed / 1 pound per batch = 2 batches). So, the total cost for materials is $10.00 * 2",Node11,5,6,6,12,0.6615623621343805,88,False
+" 1. First, let's determine how many pounds of beeswax Charlie needs to make 20 tapered candles. Since one pound of beeswax can make 10 tapered candles, we need to divide the total number of candles (20) by the number of candles per pound (10). So, 20 / 10 = 2 pounds of beeswax needed.
+        2. Now that 3. Next, let's calculate the cost of the supplies for these 2 pounds of beeswax and wicks. The cost is $10.00 per pound of beeswax and wicks. So, 2 * $10.00 = $20.00 in total supply costs.
+        4. Now we need to determine the revenue from selling all 20 candles at a price of $2.00 each. To do this, multiply the number of candles (",Node12,3,5,4,9,0.04765088725515143,112,False
+" 1. First, let's determine how many pounds of beeswax Charlie needs to make 20 tapered candles. Since one pound of beeswax can make 10 tapered candles, we need to divide the total number of candles (20) by the number of candles per pound (10). So, 20 / 10 = 2 pounds of beeswax needed.
+        2. Now that 3. We know it costs $10 for one pound of beeswax and wicks. Since Charlie needs 2 pounds of beeswax, the cost for beeswax alone will be 2 * $10 = $20.
+        4",Node13,3,6,4,10,0.39678130047940063,57,False
+" 1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles: Charlie needs 20 candles / 10 candles per pound = 2 pounds of beeswax.
+        2. Determine the cost of supplies for making these candles: 2 pounds of beeswax * $10.00 per pound + wicks cost = $20.00 (assuming 2 pounds of beeswax and a separate cost for wicks).
+        3. Calculate the total revenue from selling the 20 candles: 20 candles * $2.00 each = $40.00.
+        4. Find his net profit after subtracting the cost of supplies and materials: Revenue - Cost = $40.00 (revenue) - $2",Node14,2,1,3,4,0.8410761781683986,90,False
+" 1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles: Charlie needs 20 candles / 10 candles per pound = 2 pounds of beeswax.
+        2. Determine the cost of supplies for making these candles: 2 pounds of beeswax * $10.00 per pound + wicks cost = $20.00 (assuming 2 pounds of beeswax is enough to cover the wick cost).
+        3. Calculate the total revenue from selling all 20 candles: 20 candles * $2.00 each = $40.00.
+        4. Subtract the cost of supplies from the total revenue to find the net profit:",Node15,1,1,2,3,0.12671963474636105,74,False
+" 1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles: Charlie needs 20 candles / 10 candles per pound = 2 pounds of beeswax.
+        2. Determine the cost of supplies for making these candles: 2 pounds of beeswax * $10.00 per pound + wicks cost = $20.00 (assuming 2 pounds of beeswax and wicks cost the same).
+        3. Calculate the total revenue from selling all 20 candles: 20 candles * $2.00 each = $40.00.
+        4. Subtract the cost of supplies from the total revenue to find the net profit: Net Profit =",Node18,0,3,1,4,0.1691049044127192,76,False
+" 1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles: Charlie needs 20 candles / 10 candles per pound = 2 pounds of beeswax.
+        2. Determine the cost of supplies for making these candles: 2 pounds of beeswax * $10.00 per pound + wicks cost = $20.00 (assuming 20.00 is the combined cost).
+        3. Calculate the total revenue from selling 20 tapered candles: 20 candles * $2.00 each = $40.00.
+        4",Node19,1,1,2,3,0.8026135526115427,52,False
+" 1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles: Charlie needs 20 candles / 10 candles per pound = 2 pounds of beeswax.
+        2. Determine the cost of supplies for making these candles: 2 pounds of beeswax * $10.00 per pound + wicks cost = $20.00 (assuming 2 pounds is enough to cover the wick cost).
+        3. Calculate the revenue from selling all 20 tapered candles at $2.00 each: 20 candles * $2.00 per candle = $40.00.
+        4. Subtract the cost of supplies from the total revenue to find the net profit: $40.00 (",Node20,0,3,1,4,0.6327830892707756,85,False
+" 1. Calculate the total number of pounds of beeswax needed to make 20 tapered candles: Charlie needs 20 candles / 10 candles per pound = 2 pounds of beeswax.
+        2. Determine the cost of supplies for making these candles: 2 pounds of beeswax * $10.00 per pound + wicks cost = $20.00 (assuming 2 pounds of beeswax is enough to cover the wick cost).
+        3. Calculate the total revenue from selling all 20 candles: 20 candles * $2.00 each = $40.00.
+        4. Subtract the cost of supplies from the total revenue to find the net profit: 4a. Revenue - Supply Cost = Total Revenue - Supply Cost = $40.00 - $20.00 = $20.00.
+        Charlie's net profit from making and selling 20 candles is $20.00.",Node21,1,0,3,3,0.9520454609469489,96,False

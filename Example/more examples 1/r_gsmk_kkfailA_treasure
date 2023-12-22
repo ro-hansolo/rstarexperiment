@@ -1,0 +1,34 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A treasure hunter found a buried treasure chest filled with gems. There were 175 diamonds, 35 fewer rubies than diamonds, and twice the number of emeralds than the rubies.   How many of the gems were there in the chest? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:5, Flag:False
+['1. First, we need to find out how many rubies there were. We know that there are 175 diamonds. Since there are 35 fewer rubies than diamonds, this means there are 175 - 35 = 140 rubies in the chest.\n        2. Next, we need to find out how many emeralds were present. We know that there are twice as many emeralds as rubies. So, we multiply', 103, 0.9015172547277379]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:5, Flag:False
+['1. We know that there are 175 diamonds.\n        2. There are 35 fewer rubies than diamonds, so we need to subtract 35 from the total number of diamonds to find the number of rubies: 175 - 35 = 140 rubies.\n        3. We know that there are twice', 80, 0.4711406192937284]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:8, Flag:True
+[\"1. We have information about different types of gems:\n          - Diamonds: 175\n          - Rubies: 130 (35 fewer than diamonds)\n          - Emeralds: Twice the number of rubies, so twice 130 which is 260.\n        2. Now, let's add up all the gems to find the total number:\n          175 diamonds +\", 97, 0.4330123449448786]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:6, Flag:False
+['1. We know there are 175 diamonds.\n        2. There are 35 fewer rubies compared to diamonds, so we need to subtract 35 from 175 to find the number of rubies: 175 - 35 = 140 rubies.', 69, 0.6915506563963462]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:5, Flag:False
+['1. We know there are 175 diamonds.\n        2. There are 35 fewer rubies than diamonds, so we can calculate this by subtracting 35 from the number of diamonds: 175 - 35 = 140 rubies.\n        3. We have twice as many emeralds as rubies.', 80, 0.5951780452806996]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:7, Flag:False
+['1. Firstly, we need to determine the number of rubies, as they are directly related to other gem types. We know that there are 35 fewer rubies than diamonds, which equal 175.', 47, 0.9151470681801473]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:5, Flag:False
+['1. We know that there were 175 diamonds.\n        2. There were 35 fewer rubies than diamonds, so there were 175 - 35 = 140 rubies.\n        3. Twice the number of emeralds than the rubies means that if we have x emeralds, then y emeralds = 2 * x * (the number of rubies) = 2 * x * 14', 102, 0.5122993164656038]
+Path: StartNode6" color=black shape=box]
+}

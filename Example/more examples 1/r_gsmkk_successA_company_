@@ -1,0 +1,398 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A company pays each of its employees $600 in a month. The company has a policy of increasing the salaries of each of its employees by 10% of the initial salary every year for those who've stayed in the company for five years. If Sylvie just clocked 5 years in the company last December, what's her annual salary after three more years of service? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:7, Flag:False
+[\"1. First, let's calculate Sylvie's current annual salary by multiplying her monthly salary by the number of months in a year (12). She earns $600 per month, so her current annual salary is $600 * 12 = $7200.\n        2. Now, let's consider the 10% increase after five years. This means she will\", 88, 0.3846105875432918]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:7, Flag:False
+[\"1. Determine Sylvie's current salary per month\nSylvie's current salary = $600 (per month)\n\n2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year\nYearly salary = Monthly salary * Number of months in a year\nInitial Yearly salary = $600 * 12 = $7200 (per year)\", 97, 0.9809285013133695]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:7, Flag:False
+[\"1. First, let's calculate Sylvie's current annual salary based on her initial monthly salary and the number of months in a year (12). Her monthly salary is $600, so her annual salary would be $600 * 12 = $7200.\n        2. Now, let's consider the policy change after five years. Sylvie will receive a 10% increase on her initial salary of $600. The increased salary is $600\", 108, 0.04724374398193487]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:7, Flag:False
+[\"1. Let's first understand the current situation: Sylvie has been working at this company for 5 years and she earns $600 per month. Her initial monthly salary is $600 and there's a 10% annual increment policy for employees who have worked for more than 5 years.\n        2. Let's calculate the annual salary after the first year of increment: After one year, the 10% increment will be applied to her initial monthly salary\", 103, 0.7625428945789107]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:7, Flag:False
+[\"1. First, let's calculate Sylvie's current annual salary before any increase due to her five-year milestone and 3 more years of service. Since she is paid $600 per month for a year (12 months), her annual salary is $600 * 12 = $7200.\n        2. Now, let's consider the increase in\", 84, 0.5325246521426028]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:7, Flag:False
+[\"1. Determine Sylvie's current monthly salary: $600 per month\n        2. Calculate her initial yearly salary: $600 * 12 = $7200 (assuming a standard 12-month calendar)\n        3. Apply the 10% increase for staying 5 years, which will be calculated on her initial salary ($7200): $\", 88, 0.49011092961004865]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:10, H:10, Flag:True
+[\"1. First, let's find out Sylvie's current annual salary before any increase. She gets paid $600 per month and there are 12 months in a year. So, her monthly salary is $600 * 12 = $7200. Her annual salary without the increase would be $7200 * 12 = $86400.\n        2. Now, let's calculate\", 96, 0.15485094046912484]
+Path: StartNode6" color=red shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:5, H:6, Flag:False
+['receive an additional 10% of her initial annual salary of $7200 (as this was her annual salary for the first five years). So, the 10% increase is calculated as $7200 * 0.1 = $720.\n        3. Add the', 64, 0.6896210701481357]
+Path: Node0Node7" color=black shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:5, H:6, Flag:False
+['get a 10% raise on her initial annual salary of $7200. To calculate this, we multiply $7200 by 0.1 (or 10/100). Her new annual salary after', 51, 0.8789128892042581]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:5, H:6, Flag:False
+['receive an additional $720 (10% of $7200) as a bonus to her salary. Her new annual salary after this increase will be $7200 + $720 = $8920.\n        3. After three more years, Sylvie will have', 64, 0.20419056450948847]
+Path: Node0Node9" color=black shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:5, H:6, Flag:False
+[\"receive an additional $720 (10% of $7200) to her current annual salary. Her new annual salary after the first increase would be $7200 + $720 = $8920.\n        3. After three more years, Sylvie will have been in the company for a total of 5 + 3 = 8 years. To calculate her annual salary after these additional 3 years, we'll apply another 10% increase to her current\", 107, 0.23393768261900416]
+Path: Node0Node10" color=black shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:5, H:7, Flag:False
+[\"receive an additional 10% of $7200 every year since reaching the milestone (5 years).\n        3. Let's calculate the annual salary increase for each of these three extra years:\n        First year - 10% of $7200 = $720\n        Second year - 10% of $8920 = $\", 81, 0.7447867016785947]
+Path: Node0Node11" color=black shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:6, H:8, Flag:True
+[\"receive an additional amount equal to 10% of her initial salary ($600) every year for the next three years (5 + 3 = 8 years in total). So, the extra salary per year is $600 * 0.10 = $60.\n        3. To determine the annual increase, we'll add this extra $60 to her\", 82, 0.44151983855491106]
+Path: Node0Node12" color=red shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:4, H:6, Flag:False
+[\"receive an additional $720 (10% of her initial annual salary) every year.\n        Since she's in her sixth year and we want to know her salary after three more years, we need to calculate this for two more years.\n        3. For the first year after the increase, Sylvie will have an\", 69, 0.595466142565534]
+Path: Node0Node13" color=black shape=box]
+	Node1 -> Node14 [label=Node1Node14]
+	Node14 [label="V:4, H:8, Flag:False
+[\"3. Calculate Sylvie's initial annual salary before her policy increase for the first five years\nTotal initial salary for first five years = Initial Yearly Salary * Number of Years in Policy El\", 42, 0.954050818770972]
+Path: Node1Node14" color=black shape=box]
+	Node1 -> Node15 [label=Node1Node15]
+	Node15 [label="V:2, H:7, Flag:False
+[\"3. Calculate the 10% increase in Sylvie's salary after her first five years\nIncrease = Initial Yearly salary * Increase percentage\nIncrease = $7200 * 10% = $7200 * 0.1 = $720 (for each year)\n        \n4. Calculate Sylvie's new yearly salary after the first increase\nNew Yearly salary = Initial Yearly salary + Increase\nNew Yearly salary = $7200 + $\", 116, 0.5739630400211518]
+Path: Node1Node15" color=black shape=box]
+	Node1 -> Node16 [label=Node1Node16]
+	Node16 [label="V:1, H:6, Flag:False
+[\"3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary\nAnnual increase = Initial Yearly salary * Increase percentage / 100\nAnnual increase = $7200 * 10 / 100 = $720 (per year)\n      \n4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary\nCurrent Yearly salary = Initial Yearly salary + Annual increase\nCurrent Yearly salary\", 114, 0.8351623434108107]
+Path: Node1Node16" color=black shape=box]
+	Node1 -> Node17 [label=Node1Node17]
+	Node17 [label="V:5, H:7, Flag:False
+[\"3. Calculate the increase in Sylvie's salary for the first five years after she's already received her initial salary increase\nIncrease per year = Initial Yearly salary * Increase percentage / 100\nIncrease for the first five years = $7200 * (10%/100) = $720\n\n4. Add the total increase to her initial\", 89, 0.42946102712037004]
+Path: Node1Node17" color=black shape=box]
+	Node1 -> Node18 [label=Node1Node18]
+	Node18 [label="V:3, H:7, Flag:False
+[\"3. Find the increase in Sylvie's salary after her first 5 years by applying a 10% increment to her initial annual salary\nIncreased Yearly salary = Initial Yearly salary + (Initial Yearly salary * Increase percentage)\", 55, 0.5656908801500364]
+Path: Node1Node18" color=black shape=box]
+	Node1 -> Node19 [label=Node1Node19]
+	Node19 [label="V:2, H:6, Flag:False
+[\"3. Calculate the 10% increase on Sylvie's initial yearly salary every year for staying five years\n10% increase per year = ($7200 * 0.1) = $720\n\n4. Add the annual increases to her initial salary after each of the three\", 67, 0.7710022322209777]
+Path: Node1Node19" color=black shape=box]
+	Node1 -> Node20 [label=Node1Node20]
+	Node20 [label="V:3, H:8, Flag:False
+['3. Determine the amount of increase Sylvie will receive after her five years tenure according to the company policy (10% of initial salary)\nIncrease = 10% of Initial Yearly Salary\nIncrease = 0.1 * $720', 61, 0.9689400813526178]
+Path: Node1Node20" color=black shape=box]
+	Node2 -> Node21 [label=Node2Node21]
+	Node21 [label="V:2, H:8, Flag:False
+[\"* (1 + 0.1) = $660.\n        3. After the increase, her monthly salary becomes $660. To find her annual salary after the increase, we multiply this by the number of months in a year: $660 * 12 = $7920.\n        4. Now, let's\", 78, 0.19874190488624455]
+Path: Node2Node21" color=black shape=box]
+	Node2 -> Node22 [label=Node2Node22]
+	Node22 [label="V:6, H:9, Flag:True
+['+ ($600 * 0.1) = $600 + $60 = $660 per month.\n        3. Calculate the new annual salary after the policy change: $660 * 12 = $8320.\n        4. After three more years, Sylvie will have spent a total of 5 (initial) + 3 (additional) = 8 years in the company.\n        5. Calculate her annual salary after eight years: $83', 111, 0.12396004121262738]
+Path: Node2Node22" color=red shape=box]
+	Node2 -> Node23 [label=Node2Node23]
+	Node23 [label="V:2, H:9, Flag:False
+['+ ($600 * 0.1) = $660.\n        3. After five years, her annual salary would be $660 * 12 = $8320.\n        4. For the next three years (after five years), we', 60, 0.5264116273961246]
+Path: Node2Node23" color=black shape=box]
+	Node2 -> Node24 [label=Node2Node24]
+	Node24 [label="V:2, H:9, Flag:False
+[\"* (1 + 0.1) = $660.\n        3. With this new monthly salary, we can calculate Sylvie's annual salary after the policy change: $660 * 12 = $7920.\n        4. In the\", 60, 0.6086114450456173]
+Path: Node2Node24" color=black shape=box]
+	Node2 -> Node25 [label=Node2Node25]
+	Node25 [label="V:2, H:9, Flag:False
+['* (1 + 0.1) = $660. This new monthly salary will be $660 from now on as she has stayed in the company for five years.\n        3. Now, we', 46, 0.9591210832470211]
+Path: Node2Node25" color=black shape=box]
+	Node2 -> Node26 [label=Node2Node26]
+	Node26 [label="V:3, H:9, Flag:False
+['* (1 + 0.1) = $660.\n        3. After the increase, her monthly salary becomes $660. To find her annual salary after this change, multiply her new monthly salary by the', 49, 0.20391631507148222]
+Path: Node2Node26" color=black shape=box]
+	Node2 -> Node27 [label=Node2Node27]
+	Node27 [label="V:3, H:9, Flag:False
+[\"* (1 + 0.1) = $660 per month.\n        So, her new monthly salary after 5 years would be $660.\n        3. To calculate Sylvie'\", 45, 0.5571586918286119]
+Path: Node2Node27" color=black shape=box]
+	Node3 -> Node28 [label=Node3Node28]
+	Node28 [label="V:2, H:5, Flag:False
+[\"($600 * 1.1 = $660 per month)\n        So, her new annual salary will be $660 * 12 = $7920.\n        3. Now, let's consider the next two years: We have to apply increments for these two years as well. For each year, a 10% increment is applied on the previous year's annual salary.\", 93, 0.3974084667588972]
+Path: Node3Node28" color=black shape=box]
+	Node3 -> Node29 [label=Node3Node29]
+	Node29 [label="V:4, H:9, Flag:True
+['(600 * 1.1) = 660 (600 * 1.1 = 660). So, her new monthly salary becomes $660 and the annual salary is', 46, 0.8470301528870109]
+Path: Node3Node29" color=red shape=box]
+	Node3 -> Node30 [label=Node3Node30]
+	Node30 [label="V:2, H:5, Flag:False
+['$600 * 1.1 = $660 per month\n        This means that in a year, her income will increase by $60. To calculate her annual salary after the first year, multiply this amount by 12 months:\n         $660 * 12 = $8,320', 72, 0.744007365467833]
+Path: Node3Node30" color=black shape=box]
+	Node3 -> Node31 [label=Node3Node31]
+	Node31 [label="V:3, H:8, Flag:True
+['$600 * (1 + 0.1) = $660 per month. So, her new monthly salary after the first year is $660. To find the annual salary, we simply multiply it by 12 (months in a year', 58, 0.7217814816615404]
+Path: Node3Node31" color=red shape=box]
+	Node3 -> Node32 [label=Node3Node32]
+	Node32 [label="V:4, H:9, Flag:True
+[\"$600 * (1 + 0.1) = $600 * 1.1 = $660 per month\n        Now, let's calculate the annual salary after converting this\", 45, 0.616570876610998]
+Path: Node3Node32" color=red shape=box]
+	Node3 -> Node33 [label=Node3Node33]
+	Node33 [label="V:6, H:9, Flag:True
+['(10% of $600) = ($600 * 0.1) = $60\n           Her annual salary in this new situation becomes $600/month + $60/month = $660 per year.\n\n       3. Now, let', 63, 0.88153111712834]
+Path: Node3Node33" color=red shape=box]
+	Node3 -> Node34 [label=Node3Node34]
+	Node34 [label="V:1, H:4, Flag:False
+[\"$600 * (1 + 0.1) = $660 per month\n        So, her new annual salary after the first year would be $660 * 12 = $7920.\n        3. Let's calculate the annual salary after the second year of increment: After two years\", 70, 0.20779762977387983]
+Path: Node3Node34" color=black shape=box]
+	Node34 -> Node35 [label=Node34Node35]
+	Node35 [label="V:5, H:4, Flag:True
+['4. Calculate the annual salary after three more years of service: After five years, Sylvie will receive her third increment which is another 10% increase on her second-year salary ($7920) = $8712 * (1 + 0.1) = $9583.', 67, 0.5260379286521111]
+Path: Node34Node35" color=red shape=box]
+	Node34 -> Node36 [label=Node34Node36]
+	Node36 [label="V:3, H:4, Flag:False
+[\"4. Let's calculate the annual salary after the third year of increment: After three years, the same process will be repeated as in the previous years. The 10% increment is applied to her new monthly salary from the previous year ($836).\n           $836 * (1 + 0.1) = $919.6 per month\n        5. Now let's calculate Sylvie's annual salary for this third year: Her new annual salary after the third increment will be $919.6 * 12 = $\", 120, 0.6369562433618862]
+Path: Node34Node36" color=black shape=box]
+	Node34 -> Node37 [label=Node34Node37]
+	Node37 [label="V:5, H:3, Flag:True
+[\"4. Let's calculate the annual salary after the third year of increment: After three years, we add another 10% increment to her new annual salary from the previous step $7920 * (1 + 0.1) = $8696.\n        So, her annual salary after 5 years and 3 more years of service will be $8696.\", 84, 0.8713209548371664]
+Path: Node34Node37" color=red shape=box]
+	Node34 -> Node38 [label=Node34Node38]
+	Node38 [label="V:2, H:4, Flag:False
+[\"4. Let's calculate the annual salary after the third year of increment: After three years, her new annual salary would be $8568. \n        So, Sylvie's annual salary after three more years of service will be $\", 52, 0.3252271390530618]
+Path: Node34Node38" color=black shape=box]
+	Node34 -> Node39 [label=Node34Node39]
+	Node39 [label="V:10, H:7, Flag:True
+[\"4. Let's calculate the annual salary after the third year of increment: After three years, we will apply another 10% increment to her current annual salary ($8672)\", 41, 0.37703612662101704]
+Path: Node34Node39" color=red shape=box]
+	Node34 -> Node40 [label=Node34Node40]
+	Node40 [label="V:5, H:2, Flag:True
+[\"4. Let's calculate the annual salary after the third year of increment: After three more years, Sylvie will have received a total of 5 + 1 + 1 = 7 increments (one for each year). So, her new monthly salary would be $600 * (1 + 0.1)^7 = $843.2 per\", 78, 0.035045651739790684]
+Path: Node34Node40" color=red shape=box]
+	Node34 -> Node41 [label=Node34Node41]
+	Node41 [label="V:0, H:10, Flag:True
+['4. Calculate the salary for each of the three years after the fifth year with increments (sixth, seventh and eighth years): For these three years, there will be no increment applied because Sylvie reached her five-year milestone at the start of the sixth year (the first year without any increment). Her annual salary would remain $7920 per year.\n        5', 81, 0.9770636343038219]
+Path: Node34Node41" color=red shape=box]
+	Node4 -> Node42 [label=Node4Node42]
+	Node42 [label="V:4, H:8, Flag:False
+['salaries after clocking 5 years. Her initial salary of $7200 will be increased by 10% as per the company policy. To find this increase, multiply her current annual salary ($7200) by 10%, which is 0.10. So, the increase in her salary due to reaching her 5-year milestone would be', 81, 0.7517005038304198]
+Path: Node4Node42" color=black shape=box]
+	Node4 -> Node43 [label=Node4Node43]
+	Node43 [label="V:5, H:10, Flag:False
+['salary after completing five years at the company. The policy states that salaries will be increased by 10% of the initial salary every year for those who have stayed for five years. So, her current annual salary ($7200) will get a 10% increase, which is $7200 * 0', 69, 0.06971293004915091]
+Path: Node4Node43" color=black shape=box]
+	Node4 -> Node44 [label=Node4Node44]
+	Node44 [label="V:7, H:7, Flag:True
+[\"salary after completing five years at the company. The policy states that salaries will be increased by 10% of the initial salary. So, Sylvie's current annual salary ($7200) will be multiplied by 1.1 (10% as a decimal). Her new annual salary after the first increase is $7200 * 1.1 = $8120.\n        3. After three more years of service, Sylvie will have been with\", 103, 0.017845995907034062]
+Path: Node4Node44" color=red shape=box]
+	Node4 -> Node45 [label=Node4Node45]
+	Node45 [label="V:5, H:10, Flag:False
+['3. Her initial annual salary is $7200. To find out how much she will get after increasing it by 10% for staying five years, we multiply her current annual salary', 41, 0.41027930819623404]
+Path: Node4Node45" color=black shape=box]
+	Node4 -> Node46 [label=Node4Node46]
+	Node46 [label="V:5, H:10, Flag:False
+['salary due to her five-year milestone. According to the company policy, each employee receives an additional 10% of their initial salary. So, Sylvie gets a bonus equal to $7200 * 0.1 =', 50, 0.6466495651920231]
+Path: Node4Node46" color=black shape=box]
+	Node4 -> Node47 [label=Node4Node47]
+	Node47 [label="V:3, H:5, Flag:False
+['salary for her five-year milestone. The company increases salaries by 10% of the initial salary every year, so for the first year after reaching her five-year mark, Sylvie will receive a $7200 * (1 + 0.1) = $7920 annual salary.\n        3. After three more years of service, her annual salary will be increased again by 10% of her new salary after the first year increase ($79', 102, 0.662930449836245]
+Path: Node4Node47" color=black shape=box]
+	Node4 -> Node48 [label=Node4Node48]
+	Node48 [label="V:5, H:10, Flag:False
+['3. her annual salary because of staying for five years. According to the policy, this increase will be 10% of her initial ($7200) salary, which is 10% of $7200 = 0.1 * $7200 = $720', 64, 0.7614779472928043]
+Path: Node4Node48" color=black shape=box]
+	Node5 -> Node49 [label=Node5Node49]
+	Node49 [label="V:2, H:9, Flag:False
+['4. Calculate the new yearly salary after the increase: $7200 * 1.1 = $8120 (rounded to two decimal places)\n        5. After three more years of service, Sylvie will have completed a total of 8 years in the company.\n        6. Repeat step 3 for her new yearly salary after staying 8 years: $8120 * 1.1 = $9032 (rounded to', 104, 0.29230590532571177]
+Path: Node5Node49" color=black shape=box]
+	Node5 -> Node50 [label=Node5Node50]
+	Node50 [label="V:2, H:10, Flag:False
+[\"4. Calculate Sylvie's new yearly salary after the 10% increase: $7200 * 1.1 = $8120 (rounded to two decimal places)\n        5. After three more years of service, we need to\", 58, 0.4025327715754289]
+Path: Node5Node50" color=black shape=box]
+	Node5 -> Node51 [label=Node5Node51]
+	Node51 [label="V:2, H:10, Flag:False
+['4. Increase her annual salary by the 10%: $7200 * 1.10 = $8040 (after five years)\n        5. Now that Sylvie has three more years of service, we need to apply another increase for those years, which will again be calculated on her initial salary ($8040): $8040 * 1.', 85, 0.8261602370745916]
+Path: Node5Node51" color=black shape=box]
+	Node5 -> Node52 [label=Node5Node52]
+	Node52 [label="V:4, H:10, Flag:False
+['4. Calculate the amount of increase: 10% of $7200 = 0.1 * $7200 = $720\n        5. Add the increase to her initial yearly salary to find her new yearly', 54, 0.5331624824995362]
+Path: Node5Node52" color=black shape=box]
+	Node5 -> Node53 [label=Node5Node53]
+	Node53 [label="V:2, H:10, Flag:False
+['4. Calculate the new yearly salary after the 10% increase: $7200 * 1.1 = $8120\n        5. After three more years of service (3 years * 12 months/year = 36 months), we need to calculate her monthly salary', 66, 0.03313391866970028]
+Path: Node5Node53" color=black shape=box]
+	Node5 -> Node54 [label=Node5Node54]
+	Node54 [label="V:2, H:10, Flag:False
+['4. Calculate the new yearly salary after the 10% increase: $7200 * 1.1 = $8120\n        5. After three more years of service (3 years * 12 months/year =', 54, 0.23814806981441405]
+Path: Node5Node54" color=black shape=box]
+	Node5 -> Node55 [label=Node5Node55]
+	Node55 [label="V:2, H:9, Flag:True
+['4. Calculate her new yearly salary after the first 5 years: $7200 + (10% of $7200) = $7200 + $720 = $7920\n        5. After 3 more years,', 60, 0.5256459848731225]
+Path: Node5Node55" color=red shape=box]
+	Node16 -> Node56 [label=Node16Node56]
+	Node56 [label="V:2, H:2, Flag:False
+[\"= $7200 (initial yearly salary) + $720 (annual increase for staying five years) = $7920 (per year after 5 years in the company)\n      \n5. Calculate Sylvie's annual salary for three more years, which will make it a total of eight years in the company (i.e., starting with her sixth year). To do this, we simply add three increases to her current salary, since they\", 100, 0.9911127571286027]
+Path: Node16Node56" color=black shape=box]
+	Node16 -> Node57 [label=Node16Node57]
+	Node57 [label="V:1, H:2, Flag:False
+[\"= $7200 + $720 = $8920 (per year)\n\n5. Calculate Sylvie's annual salary after three more years of service by adding the annual increases for those three years to her current annual salary\nNumber of years = 3\nAnnual increase per year = $720\nTotal annual increase = Number of years * Annual increase per year\nTotal annual increase = 3 * $720 = $2160\n\nFinal\", 105, 0.05270939014929288]
+Path: Node16Node57" color=black shape=box]
+	Node16 -> Node58 [label=Node16Node58]
+	Node58 [label="V:1, H:10, Flag:False
+[\"= $7200 + $720 = $8920 (per year)\n      \n5. Calculate Sylvie's salary three more years after the current year,\", 41, 0.7848041478830924]
+Path: Node16Node58" color=black shape=box]
+	Node16 -> Node59 [label=Node16Node59]
+	Node59 [label="V:1, H:2, Flag:False
+[\"= $7200 + $720 = $8920 (per year)\n\n5. Calculate Sylvie's annual salary after three more years of service by adding the annual increases for those three years to her current annual salary\nNumber of years = 3\nAnnual increase per year = $720\nTotal Annual increase = Number of years\", 79, 0.12853981314946605]
+Path: Node16Node59" color=black shape=box]
+	Node16 -> Node60 [label=Node16Node60]
+	Node60 [label="V:1, H:2, Flag:False
+[\"= $7200 + $720 = $8920 (per year)\n\n5. Calculate Sylvie's annual salary after three more years of service by adding the annual increases for those three years to her current annual salary\nNumber of years = 3\nAnnual increase per year = $720\nTotal annual increase = Number of years * Annual increase per year\nTotal annual increase = 3 * $720 = $2160\n\nFinal\", 105, 0.0742392426673607]
+Path: Node16Node60" color=black shape=box]
+	Node16 -> Node61 [label=Node16Node61]
+	Node61 [label="V:2, H:7, Flag:False
+['= $7200 (initial yearly salary) + $720 (annual increase)\n        = $7920 (per year) 5. After three more years of service, we want to find her annual salary for these years as well, so again add the annual increase to her current yearly salary\nFuture', 71, 0.8981933838778089]
+Path: Node16Node61" color=black shape=box]
+	Node16 -> Node62 [label=Node16Node62]
+	Node62 [label="V:1, H:10, Flag:False
+[\"= $7200 (initial) + $720 (annual increase) = $7920 (per year)\n\n5. Calculate Sylvie's annual salary after\", 42, 0.41952002215182016]
+Path: Node16Node62" color=black shape=box]
+	Node57 -> Node63 [label=Node57Node63]
+	Node63 [label="V:8, H:8, Flag:True
+[\"After three more years of service, Sylvie's annual salary will be her current annual salary plus the total annual increases:\nFinal Yearly salary = Current Yearly salary + Total annual increase\nFinal Yearly salary = $8920 + $2160 = $11080 (per year)\", 71, 0.3547290181766053]
+Path: Node57Node63" color=red shape=box]
+	Node57 -> Node64 [label=Node57Node64]
+	Node64 [label="V:8, H:10, Flag:True
+[\"After three more years of service, Sylvie's annual salary will be her current annual salary plus the total annual increases:\nAnnual salary after three more years = Current Yearly salary + Total annual increase\nAnnual salary after three more years\", 50, 0.0011959904202554217]
+Path: Node57Node64" color=red shape=box]
+	Node57 -> Node65 [label=Node57Node65]
+	Node65 [label="V:8, H:10, Flag:True
+[\"After three more years of service, Sylvie's annual salary will be her current yearly salary plus the total annual increases, which is:\nCurrent Yearly salary + Total annual increase = $892\", 43, 0.38700475322900707]
+Path: Node57Node65" color=red shape=box]
+	Node57 -> Node66 [label=Node57Node66]
+	Node66 [label="V:8, H:8, Flag:True
+[\"After these three more years, Sylvie's annual salary will be her current annual salary with the added annual increases:\nUpdated Yearly salary = Current Yearly salary + Total annual increase\nUpdated Yearly salary = $8920 + $2160 = $11080 (per year)\", 99, 0.9250642306189996]
+Path: Node57Node66" color=red shape=box]
+	Node57 -> Node67 [label=Node57Node67]
+	Node67 [label="V:8, H:8, Flag:True
+[\"After three more years of service, Sylvie's annual salary will be her current annual salary plus the total annual increases:\nNew Yearly salary = Current Yearly salary + Total annual increase\nNew Yearly salary = $8920 + $2160 = $11080 (per year)\", 100, 0.716791061220668]
+Path: Node57Node67" color=red shape=box]
+	Node57 -> Node68 [label=Node57Node68]
+	Node68 [label="V:8, H:8, Flag:True
+[\"After three more years of service, Sylvie's annual salary will be her current Yearly salary plus the total annual increases:\nNew Yearly salary = Current Yearly salary + Total annual increase\nNew Yearly salary = $8920 + $2160 = $11080 (per year)\", 78, 0.9014418763890951]
+Path: Node57Node68" color=red shape=box]
+	Node57 -> Node69 [label=Node57Node69]
+	Node69 [label="V:8, H:8, Flag:True
+[\"After three more years of service, Sylvie's annual salary will be her current annual salary plus the total annual increase:\nSylvie's final Yearly salary = Current Yearly salary + Total annual increase\nSylvie's final Yearly salary = $8920 + $2160 = $11\", 70, 0.46686056274443044]
+Path: Node57Node69" color=red shape=box]
+	Node59 -> Node70 [label=Node59Node70]
+	Node70 [label="V:6, H:9, Flag:True
+['* Annual increase per year\nTotal Annual increase = 3 * $720 = $2160 (per year)\n\nFinal Yearly salary after three more years = Current Yearly salary + Total Annual increase\nFinal Yearly salary after three more years = $8920 + $2160 = $', 69, 0.3364736191479466]
+Path: Node59Node70" color=red shape=box]
+	Node59 -> Node71 [label=Node59Node71]
+	Node71 [label="V:6, H:8, Flag:True
+['* Annual increase per year\nTotal Annual increase = 3 * $720 = $2160\nNew Yearly salary = Current Yearly salary + Total Annual increase\nNew Yearly salary = $8920 + $2160 = $11080 (per year)\n\nAfter three more years', 71, 0.9141155873790122]
+Path: Node59Node71" color=red shape=box]
+	Node59 -> Node72 [label=Node59Node72]
+	Node72 [label="V:6, H:9, Flag:True
+[\"* Annual increase per year\nTotal Annual increase = 3 * $720 = $2160 (per year)\n\n6. Add the total annual increase to Sylvie's current annual salary to find her new annual salary after three more years of service\nNew Yearly salary = Current Yearly salary + Total Annual increase\nNew Yearly salary = $8920 + $2160 = $11080 (per year)\n\n7. Convert the new annual salary back to a monthly salary by divid\", 114, 0.08550080009274508]
+Path: Node59Node72" color=red shape=box]
+	Node59 -> Node73 [label=Node59Node73]
+	Node73 [label="V:6, H:10, Flag:True
+[\"* Annual increase per year\nTotal Annual increase = 3 * $720 = $2160 (per year)\n\n6. Add the total annual increases to Sylvie's current annual salary to find her new annual salary after three more years of service\nNew Yearly salary =\", 62, 0.03130409503511877]
+Path: Node59Node73" color=red shape=box]
+	Node59 -> Node74 [label=Node59Node74]
+	Node74 [label="V:6, H:9, Flag:True
+[\"* Annual increase per year\nTotal Annual increase = 3 * $720 = $2160\n\n6. Calculate Sylvie's new annual salary after three more years by adding the total annual increases to her current annual salary\nNew Yearly salary = Current Yearly salary + Total Annual increase\nNew Yearly salary = $8920 + $2160 = $11,080 (per year)\n\n7. Convert Sylvie's new annual salary into a monthly salary by dividing her new yearly\", 117, 0.8186024514600269]
+Path: Node59Node74" color=red shape=box]
+	Node59 -> Node75 [label=Node59Node75]
+	Node75 [label="V:6, H:10, Flag:True
+['* Annual increase per year = Years * Increase amount per year\nTotal Annual increase = 3 * $720 = $2160\nNew Yearly salary = Current Yearly salary + Total Annual increases\nNew Yearly salary = $8920 + $2160 = $11080 (', 70, 0.9983364247373205]
+Path: Node59Node75" color=red shape=box]
+	Node59 -> Node76 [label=Node59Node76]
+	Node76 [label="V:6, H:9, Flag:True
+[\"* Annual increase per year\nTotal Annual increase = 3 * $720 = $2160 (for the next 3 years)\n\n6. Add the total annual increase to Sylvie's current annual salary to determine her annual salary after three more years of service\nAnnual salary after 3 more years = Current Yearly salary + Total Annual increase\nAnnual salary after 3 more years = $8920 + $2160 = $11080 (per year)\", 111, 0.5604807643888642]
+Path: Node59Node76" color=red shape=box]
+	Node60 -> Node77 [label=Node60Node77]
+	Node77 [label="V:4, H:9, Flag:True
+[\"After three more years of service, Sylvie's annual salary will be her current annual salary plus the total annual increases:\nNew Yearly salary = Current Yearly salary + Total annual increase\nNew Yearly salary = $8920 (Current yearly salary) + $2160 (Total annual increase) = $11\", 71, 0.6694537289216532]
+Path: Node60Node77" color=red shape=box]
+	Node60 -> Node78 [label=Node60Node78]
+	Node78 [label="V:4, H:9, Flag:True
+[\"After three more years of service, Sylvie's annual salary will be her current yearly salary plus the total annual increase:\nSylvie's final Yearly salary = Current Yearly salary + Total annual increase\nSylvie's final Yearly salary = $8920 + $2160 = $11080 (per year)\", 116, 0.4283817998545283]
+Path: Node60Node78" color=red shape=box]
+	Node60 -> Node79 [label=Node60Node79]
+	Node79 [label="V:4, H:9, Flag:True
+[\"After three more years, Sylvie's annual salary will be her current annual salary plus the total annual increase.\nNew Yearly salary = Current Yearly salary + Total annual increase\nNew Yearly salary = $8920 + $2160 = $11080 (per year)\", 102, 0.393583152357613]
+Path: Node60Node79" color=red shape=box]
+	Node60 -> Node80 [label=Node60Node80]
+	Node80 [label="V:4, H:9, Flag:True
+[\"After three more years, Sylvie's annual salary will be her current annual salary plus the total annual increases:\nAnnual salary after additional 3 years = Current Yearly salary + Total annual increase\nAnnual salary after additional 3 years = $8920 + $2160 = $11080 (per year)\", 94, 0.7534958642156415]
+Path: Node60Node80" color=red shape=box]
+	Node60 -> Node81 [label=Node60Node81]
+	Node81 [label="V:4, H:9, Flag:True
+[\"After three more years, Sylvie's annual salary will be $8920 (current yearly salary) + $2160 (total annual increases) = $11080 per year.\", 104, 0.6767061202551145]
+Path: Node60Node81" color=red shape=box]
+	Node60 -> Node82 [label=Node60Node82]
+	Node82 [label="V:4, H:9, Flag:True
+[\"After three more years of service, Sylvie's annual salary will be her current annual salary plus the total annual increases:\nAnnual salary after three more years = Current Yearly salary + Total annual increase\nAnnual salary after three more years = $8920 + $2160 = $11\", 66, 0.0028761075351205756]
+Path: Node60Node82" color=red shape=box]
+	Node60 -> Node83 [label=Node60Node83]
+	Node83 [label="V:4, H:9, Flag:True
+[\"After staying in the company for a total of 8 years (5 initial + 3 additional), Sylvie's annual salary will be her current annual salary plus the total annual increases:\nFinal Yearly salary = Current Yearly salary + Total annual increase\nFinal Yearly salary = $8920 + $2160 = $11080 (per year)\", 119, 0.7109451847173237]
+Path: Node60Node83" color=red shape=box]
+	Node56 -> Node84 [label=Node56Node84]
+	Node84 [label="V:8, H:9, Flag:True
+['occur every year after staying five years.\nAnnual increase per year = $720 (annual increase for staying five years)\nTotal annual increases = 3 (number of years from the sixth year to the eighth year) * Annual increase per year = 3 * $720 = $21', 66, 0.30638727664238463]
+Path: Node56Node84" color=red shape=box]
+	Node56 -> Node85 [label=Node56Node85]
+	Node85 [label="V:7, H:9, Flag:True
+['are all 10% of her initial salary.\nAnnual increase per year = Initial Yearly salary * Increase percentage / 100\nAnnual increase for each of the next three years = $7200 * 10 / 100 = $', 59, 0.07134872657872582]
+Path: Node56Node85" color=red shape=box]
+	Node56 -> Node86 [label=Node56Node86]
+	Node86 [label="V:4, H:4, Flag:False
+['are $720 per year.\nSixth-year increase = $720\nSeventh-year increase = $720\nEighth-year increase = $720\nTotal increase for the next three years = $720 * 3 = $2160\n        \n6. Add this total increase to', 75, 0.5196698955688549]
+Path: Node56Node86" color=black shape=box]
+	Node56 -> Node87 [label=Node56Node87]
+	Node87 [label="V:3, H:3, Flag:False
+['are all 10% of her initial salary.\nAnnual increase for each additional year = Initial Yearly salary * Increase percentage / 100\nAnnual increase for the next three years = $7200 (initial yearly salary) * 3 * 10 / 100 = $2160 (per year)\n      \n6. Add these annual increases to her', 87, 0.05930580839848765]
+Path: Node56Node87" color=black shape=box]
+	Node56 -> Node88 [label=Node56Node88]
+	Node88 [label="V:10, H:10, Flag:True
+[\"happen at each ending five-year mark.\nAdditional Annual increases = 10% * 3 increases\nAnnual increases for additional 3 years = 10% * 3 = 0.3 * $720 = $216 (per year)\n      \n6. Calculate Sylvie's annual salary after three more years\nEighth Year Annual Salary = Current Yearly\", 87, 0.9953419428429248]
+Path: Node56Node88" color=red shape=box]
+	Node56 -> Node89 [label=Node56Node89]
+	Node89 [label="V:7, H:9, Flag:True
+['are all 10% of her initial salary.\nAnnual increase per year = Initial Yearly salary * Increase percentage / 100\nTotal annual increase for three years = Annual increase * Number of years (3)\nTotal annual increase for three years = $', 57, 0.08437537881580637]
+Path: Node56Node89" color=red shape=box]
+	Node56 -> Node90 [label=Node56Node90]
+	Node90 [label="V:1, H:2, Flag:False
+[\"will be 10% each time.\nAdditional annual increase = Current Yearly salary * Increase percentage / 100\nEach additional annual increase = $7920 (current yearly salary) * 10 / 100 = $792 (per year)\n        \n6. Calculate Sylvie's annual salary after three more years in\", 81, 0.8202614683268185]
+Path: Node56Node90" color=black shape=box]
+	Node90 -> Node91 [label=Node90Node91]
+	Node91 [label="V:4, H:10, Flag:True
+['Total Yearly salary = Current Yearly salary + Three additional increases\nTotal Yearly salary = $7920 (initial yearly salary) + $720 (annual increase for staying five years', 43, 0.22005017364461188]
+Path: Node90Node91" color=red shape=box]
+	Node90 -> Node92 [label=Node90Node92]
+	Node92 [label="V:0, H:0, Flag:False
+['Total Yearly salary = Current Yearly salary + Three additional increases\nTotal Yearly salary = $7920 (current yearly salary) + ($792 * 3) = $7920 + $2376 = $10,296 (per year after eight years in the company)', 96, 0.41776983164543]
+Path: Node90Node92" color=green shape=box]
+	Node90 -> Node93 [label=Node90Node93]
+	Node93 [label="V:4, H:10, Flag:True
+['Total Yearly salary = Current Yearly salary + Three additional annual increases\nTotal Yearly salary = $7920 (initial yearly salary) + $792 (annual increase for staying six years) + $792 (annual increase for staying seven years) + $792 (annual increase for staying eight years)\nTotal Yearly salary = $7920 (initial yearly salary) + 3 * $792 (additional annual increases) = $8642 (per year after 8 years in the company', 120, 0.9260485992235831]
+Path: Node90Node93" color=red shape=box]
+	Node90 -> Node94 [label=Node90Node94]
+	Node94 [label="V:4, H:10, Flag:True
+['Total Yearly salary = Current Yearly salary + (3 * Additional annual increase)\nTotal Yearly salary = $7920 (initial yearly salary) + ($792 *', 40, 0.4623598319729094]
+Path: Node90Node94" color=red shape=box]
+	Node90 -> Node95 [label=Node90Node95]
+	Node95 [label="V:4, H:10, Flag:True
+['Final Yearly salary = Current Yearly salary + Three additional annual increases\nFinal Yearly salary = $7920 (initial yearly salary + 5 years increase) + $792 * 3 (three times the annual increase for staying eight years) = $8861 (per year after a total of eight years', 71, 0.9418543128268577]
+Path: Node90Node95" color=red shape=box]
+	Node90 -> Node96 [label=Node90Node96]
+	Node96 [label="V:5, H:2, Flag:True
+['Total Yearly salary = Current Yearly salary + 3 * Additional annual increase\nTotal Yearly salary = $7920 (current yearly salary) + 3 * $792 (additional annual increases for the next three years) = $8516 (per year after eight years in the company)', 90, 0.3299813638582664]
+Path: Node90Node96" color=red shape=box]
+	Node90 -> Node97 [label=Node90Node97]
+	Node97 [label="V:5, H:1, Flag:True
+['Total Yearly salary = Current Yearly salary + Three additional annual increases\nTotal Yearly salary = $7920 (current yearly salary) + 3 * $792 (each additional annual increase for the next three years) = $8514 (per year after', 60, 0.16924247836544992]
+Path: Node90Node97" color=red shape=box]
+}

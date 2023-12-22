@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A football team played 22 games. They won 8 more than they lost. How many did they win? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:4, H:8, Flag:False
+['1. We know the total number of games played was 22 games.\n        2. The team also won 8 more than they lost.\n        3. To find out how many games they won, we need to subtract the losses from their overall wins (wins - losses).\n        4. Since they won 8 more than they lost, this means there were equal', 80, 0.606524015311943]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:9, Flag:False
+['1. First, we need to find out how many games the team lost. Since they won 8 more than they lost, we can subtract 8 from their total wins (8 more) to get the number of losses. So, losses = total_games - 8_more.\n        2. We know that the football team played a total of 22 games.', 82, 0.05685678897737234]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:10, H:10, Flag:True
+['1. First, we need to find out how many games the football team lost. Since they won 8 more than they lost, we can subtract 8 from the total number of games (22) to get the number of losses.\n   22 - 8 = 14\n   So, they lost 14 games.\n   3. Now, we need to find out how many games they won by adding their wins to the losses. We know they', 99, 0.13076248580269423]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:10, H:10, Flag:True
+[\"1. First, let's determine the number of losses. Since they won 8 more than they lost, we can subtract those 8 from their total wins (which will be equal to their\", 41, 0.9988515218397014]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:9, H:10, Flag:True
+[\"1. First, let's identify the given information: The team played 22 games and lost an equal number of games (since they won 8 more than they lost).\n        2. Now, let's find the total number of losses for the team. They lost 8 fewer games than the ones they won, so their loss count is 8 less than their win count.\n        3. To determine the win count, we know that they won 8 more than they lost\", 102, 0.589357257515868]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:7, H:10, Flag:False
+[\"1. First, let's determine the number of losses for the football team. Since they have played 22 games in total and they won 8 more games than they lost, this implies that the sum\", 43, 0.8017494325458374]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:7, Flag:False
+[\"1. We know the total number of games played is 22.\n        2. The team won 8 more games than they lost, so we need to find a way to represent both won and lost games. Let's say they won W games and lost L games.\n        3. Since W games are 8 more than L games, the equation becomes W = L + 8.\n        4. Now we have two equations: total games = won games + lost games (22 = W\", 106, 0.7285237932297058]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:2, H:4, Flag:False
+['+ L), and won games = lost games + 8 (W = L + 8).\n        5. To find the number of wins, we need to solve these equations for W (won games', 42, 0.9565876929510596]
+Path: Node6Node7" color=black shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:1, H:2, Flag:False
+[\"+ L) and won games - lost games = 8 (W - L = 8).\n        5. We can solve these equations step by step. First, let's add the two equations together to eliminate L from both sides: (22 = W + L) + (W - L = 8) becomes 30 = 2W\", 75, 0.23996915208704972]
+Path: Node6Node8" color=black shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:2, H:4, Flag:False
+['+ L) and won games = lost games + 8 (W = L + 8). We can solve these equations simultaneously to find out the values of W and L.\n        5. First', 41, 0.2523836144707754]
+Path: Node6Node9" color=black shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:2, H:3, Flag:False
+['+ L), and also W = L + 8 (W - 8 = L).\n        5. We can combine these equations by substituting the expression for W from the second equation into the first one, making it 22 = (L + 8) + L.\n        6. Simplifying this gives us 22 = 2L + 8, which we can further', 85, 0.7588586315138232]
+Path: Node6Node10" color=black shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:9, H:9, Flag:True
+[\"+ L), and the relation between won and lost games which is W = L + 8.\n        5. To solve for W, let's add the two equations together: 22 = W + L + W - L + 8. This simplifies to 22 = 3W + 8.\n        6. Now we can find W by getting rid of the constant term (8) on the right side. We can do this by subtracting 8 from both sides: 22 - 8 = 3W, which is equal\", 120, 0.8828275526119264]
+Path: Node6Node11" color=red shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:3, H:6, Flag:False
+['+ L), and won games - lost games = 8 (W - L = 8).\n        5. We can solve for W by using the second equation to substitute W - L into the first one:', 44, 0.26099491979636613]
+Path: Node6Node12" color=black shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:2, H:2, Flag:False
+['+ L) and won games = lost games + 8 (W = L + 8).\n        5. We can solve for W by substituting the second equation into the first one: (L + 8) + L = 22, which is equivalent to 2L + 8 = 22.\n        6. Now we need to isolate L. Subtract 8 from both sides: 2L = 14.\n        7. Finally, divide by 2 to find the value of L: L =', 116, 0.3494723377094566]
+Path: Node6Node13" color=black shape=box]
+	Node8 -> Node14 [label=Node8Node14]
+	Node14 [label="V:1, H:0, Flag:False
+['6. Now we have a single equation with only one variable (W), so we can solve for W: W = 30 / 2, which results in W = 15.\n        7. Finally, since W represents the number of games won, they won 15 games.', 81, 0.3585574585962794]
+Path: Node8Node14" color=green shape=box]
+	Node8 -> Node15 [label=Node8Node15]
+	Node15 [label="V:10, H:10, Flag:True
+['6. Now we have a new equation with only one variable (W): 2W = 30. To find W, divide by 2 on both sides: W = 30 / 2 = 1', 46, 0.08649742002134919]
+Path: Node8Node15" color=red shape=box]
+	Node8 -> Node16 [label=Node8Node16]
+	Node16 [label="V:1, H:0, Flag:False
+['6. Now we have a new equation with only one variable (W): 2W = 30. To find W, divide both sides by 2: W = 30 / 2 = 15.\n        7. Finally, the football team won 15 games.', 99, 0.078273764041082]
+Path: Node8Node16" color=green shape=box]
+	Node8 -> Node17 [label=Node8Node17]
+	Node17 [label="V:1, H:0, Flag:False
+['6. Now we have a new equation with only one variable (W). We can solve for W by dividing each side of the equation by 2: 30 / 2 = 2W / 2, which simplifies to 15 = W.\n        7. Finally, we found that they won 15 games.', 84, 0.42102613533203015]
+Path: Node8Node17" color=green shape=box]
+	Node8 -> Node18 [label=Node8Node18]
+	Node18 [label="V:1, H:0, Flag:False
+['6. Now we can find the value of W by dividing both sides by 2: 30 / 2 = 15, so W = 15.\n        7. Finally, we found that they won 15 games.', 107, 0.5420039467251765]
+Path: Node8Node18" color=green shape=box]
+	Node8 -> Node19 [label=Node8Node19]
+	Node19 [label="V:1, H:0, Flag:False
+['6. Now we have only one equation with W: 2W = 30. To find W, we need to divide by 2: W = 30 / 2 = 15.\n        7. So the team won 15 games.', 105, 0.5749399561993745]
+Path: Node8Node19" color=green shape=box]
+	Node8 -> Node20 [label=Node8Node20]
+	Node20 [label="V:1, H:0, Flag:False
+['6. Now we have a new equation with only one variable (W). We can divide both sides by 2 to isolate W: 30 / 2 = 2W / 2, which simplifies to 15 = W.\n        7. Finally, we found that the team won', 64, 0.11250887898447803]
+Path: Node8Node20" color=green shape=box]
+}

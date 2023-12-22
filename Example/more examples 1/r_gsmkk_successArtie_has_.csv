@@ -1,0 +1,41 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's calculate the total earnings from each type of flower by rounding their prices to the nearest dollar.
+            Marigold price: $2.74 rounded to the nearest dollar is $3.00 per pot.
+            Petunia price: $1.87 rounded to the nearest dollar is $2.00 per pot.
+            Begonia price: $",Node0,2,7,2,9,0.38097380303365536,85,False
+" 1. First, let's calculate the total earnings from each type of flower by rounding their prices to the nearest dollar. We do this because Artie has no change today.
+           Marigolds: $2.74 rounded to the nearest dollar is $3.00.
+           Petunias: $1.87 rounded to the nearest dollar is $2.00.
+           Begonias: $2.12 rounded to the nearest dollar is $2.00.
+        
+        2. Next, we",Node1,2,7,2,9,0.41706940868732134,115,False
+" 1. Let's first determine what the rounded prices are for each type of flower. Marigolds are rounded to $3 (from $2.74), Petunias remain at $2 (as they end in .87 which is closer to $2 than to another dollar), and Begonias are also rounded to $2 (from $2.12).
+        2. Next, we need to find out how much Artie will make for each kind of flower. He sells",Node2,1,6,1,7,0.9167083380290653,105,False
+" 1. Let's first determine what the rounded prices are for each type of flower. Marigolds are rounded to $3 (from $2.74), Petunias remain at $2 (as they end in .87 which is closer to $2 than to another dollar), and Begonias are also rounded to $2 (from $2.12).
+        2. Next, we need to find out how much Artie will make for each kind of flower. He sells - 12 pots of marigolds at $3 per pot: 12 * $3 = $36
+         - 9 pots of petunias at $2 per pot: 9 * $2 = $18
+         - 17 pots",Node7,1,7,2,9,0.47546345527012224,60,False
+" 1. Let's first determine what the rounded prices are for each type of flower. Marigolds are rounded to $3 (from $2.74), Petunias remain at $2 (as they end in .87 which is closer to $2 than to another dollar), and Begonias are also rounded to $2 (from $2.12).
+        2. Next, we need to find out how much Artie will make for each kind of flower. He sells - 12 pots of marigolds at $3 per pot: 12 * $3 = $36
+         - 9 pots of petunias at $2 per pot: 9 * $2 = $18
+         - 17 pots of begonias at $2 per pot: 17 * $",Node8,1,8,2,10,0.6349069063504502,75,False
+" 1. Let's first determine what the rounded prices are for each type of flower. Marigolds are rounded to $3 (from $2.74), Petunias remain at $2 (as they end in .87 which is closer to $2 than to another dollar), and Begonias are also rounded to $2 (from $2.12).
+        2. Next, we need to find out how much Artie will make for each kind of flower. He sells - 12 pots of marigolds at $3 per pot: 12 * $3 = $36
+         - 9 pots of petunias at $2 per pot: 9 * $2 = $18
+         - 17 pots of begonias at $",Node9,1,9,2,11,0.3567475002455701,66,False
+" 1. Let's first determine what the rounded prices are for each type of flower. Marigolds are rounded to $3 (from $2.74), Petunias remain at $2 (as they end in .87 which is closer to $2 than to another dollar), and Begonias are also rounded to $2 (from $2.12).
+        2. Next, we need to find out how much Artie will make for each kind of flower. He sells - 12 pots of marigolds at a price of $3 per pot = 12 * $3 = $36
+         - 9 pots of petunias at a price",Node10,1,9,2,11,0.6495879049570346,43,False
+" 1. Let's first determine what the rounded prices are for each type of flower. Marigolds are rounded to $3 (from $2.74), Petunias remain at $2 (as they end in .87 which is closer to $2 than to another dollar), and Begonias are also rounded to $2 (from $2.12).
+        2. Next, we need to find out how much Artie will make for each kind of flower. He sells - 12 pots of marigolds at $3 per pot = 12 * 3 = $36
+         - 9 pots of petunias at $2 per pot = 9 * 2 = $18
+         - 17 p",Node11,1,8,2,10,0.8669983644770654,59,False
+" 1. Let's first determine what the rounded prices are for each type of flower. Marigolds are rounded to $3 (from $2.74), Petunias remain at $2 (as they end in .87 which is closer to $2 than to another dollar), and Begonias are also rounded to $2 (from $2.12).
+        2. Next, we need to find out how much Artie will make for each kind of flower. He sells - 12 marigolds at the new price ($3 per pot) which means he'll earn 12 * $3 = $36 from them
+         - 9 petunias at the same price ($2 per pot), so he'll make 9 * $2 =",Node12,1,8,2,10,0.6560057888128281,62,False
+" 1. Let's first determine what the rounded prices are for each type of flower. Marigolds are rounded to $3 (from $2.74), Petunias remain at $2 (as they end in .87 which is closer to $2 than to another dollar), and Begonias are also rounded to $2 (from $2.12).
+        2. Next, we need to find out how much Artie will make for each kind of flower. He sells - 12 pots of marigolds at $3 per pot = 12 * $3 = $36
+         - 9 pots of petunias at $2 per pot = 9 * $2 = $18
+         - 17 pots of begonias at $2 per pot = 17 * $2 = $34
+
+   3. Finally, to find the total amount Artie will make from selling all three types of flowers",Node13,0,0,1,1,0.9905348750208355,103,False

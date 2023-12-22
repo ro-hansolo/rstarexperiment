@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Billy sells DVDs. He has 8 customers on Tuesday. His first 3 customers buy one DVD each.  His next 2 customers buy 2 DVDs each.  His last 3 customers don't buy any DVDs. How many DVDs did Billy sell on Tuesday? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:2, Flag:False
+[\"1. Identify the number of DVDs sold by different customer groups in Billy's shop.\n           First group (3 customers) - 1 DVD each, so they bought a total of 1 * 3 = 3 DVDs.\n           Second group (2 customers) - 2 DVDs each, so they bought a total of 2 * 2 = 4 DVDs.\n           Last group (\", 88, 0.6239630017802326]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:3, H:8, Flag:True
+[\"1. First, let's find out how many DVDs were sold by the first 5 customers (3 + 2). They bought a total of 3 + 2 = 5 DVDs.\n        2. Now, we know that there are no sales for the last 3 customers. So, we can subtract this number from the total sales made by the first 5 customers to find out how many DVDs were sold in total. Total sales - No sales = 5 - 0\", 105, 0.02971262790580964]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:8, Flag:True
+['1. First, we need to find out how many DVDs were sold by the first 5 customers (3 + 2).\n           3 customers bought 1 DVD each, so they bought a total', 42, 0.12708291731652266]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:2, Flag:False
+['1. Identify the number of customers and the buying pattern for different groups.\n           - First 3 customers: 1 DVD each\n           - Next 2 customers: 2 DVDs each\n           - Last 3 customers: None\n\n        2. Calculate the total number of DVDs sold by each group.', 69, 0.645089180766909]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:4, H:6, Flag:True
+[\"1. First, let's find out how many DVDs were sold by the first 5 customers (3 + 2). They bought a total of 3 + 2 = 5 DVDs.\n        2. Now, we know that his last 3 customers didn't buy any DVDs. So, they didn't contribute to the total number of DVDs sold.\n        3. To find out the total number of DVDs sold on Tuesday, we need to add the DVDs sold by the first 5 customers and the ones not bought\", 117, 0.1574772166839309]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:10, Flag:False
+['1. Analyze the given information about Billy selling DVDs and his customers.\n        2. Break down the purchases of different groups of customers.\n           - Group 1 (3 customers):', 41, 0.31382194909326844]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:0, H:1, Flag:False
+[\"1. We know that Billy has 8 customers in total and the first 3 customers bought one DVD each. This means those 3 customers bought a total of 3 * 1 = 3 DVDs.\n        2. Then, there are 2 customers who purchased 2 DVDs each. So, these 2 customers bought 2 * 2 = 4 DVDs.\n        3. Lastly, the remaining 3 customers didn't buy any DVDs. There were no DVD sales for this group of people.\n        4. Now,\", 118, 0.8722609337246838]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:0, H:0, Flag:False
+['5. To find the total number of DVDs sold on Tuesday, we add up all the DVDs bought by each group: 3 (from the first 3 customers) + 4 (from the next 2 customers) + 0 (no sales from the last 3 customers).\n        6. So, Billy sold a total of 3 + 4 + 0 = 7 DVDs on Tuesday.', 95, 0.2900434426179148]
+Path: Node6Node7" color=green shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['5. To find the total number of DVDs sold on Tuesday, we need to add up all the DVDs bought by different groups: 3 from the first 3 customers + 4 from the next 2 customers + 0 from the last 3 customers = 3 + 4 + 0 = 7 DVDs.\n        Billy sold a total of 7 DVDs on Tuesday.', 88, 0.4806366752822855]
+Path: Node6Node8" color=green shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['5. To find the total number of DVDs sold on Tuesday, we add up all the DVDs bought by each group: 3 (from the first 3 customers) + 4 (from the next 2 customers) + 0 (from the last 3 customers).\n        6. So, Billy sold a total of 3 + 4 + 0 = 7 DVDs on Tuesday.', 96, 0.14598537725867455]
+Path: Node6Node9" color=green shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:0, H:9, Flag:False
+['5. To find out the total number of DVDs sold on Tuesday, we add up all the DVDs from each group: 3 (from the first 3 customers) + 4 (from the next 2 customers) =', 48, 0.6251320096981282]
+Path: Node6Node10" color=black shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['5. Add all the DVD sales together: 3 (from first 3 customers) + 4 (from next 2 customers) + 0 (from last 3 customers) = 7 DVDs in total.\n        So, Billy sold 7 DVDs on Tuesday.', 102, 0.2874680642284797]
+Path: Node6Node11" color=green shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['5. Adding up all the DVDs sold by Billy throughout the day, we get:\n         3 DVDs from the first 3 customers + 4 DVDs from the next 2 customers + 0 DVDs from the last 3 customers = 3+4+0 = 7 DVDs in total.', 68, 0.8072338166061993]
+Path: Node6Node12" color=green shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['5. To find the total number of DVDs sold on Tuesday, we add up all the DVDs bought by each group: 3 (from the first 3 customers) + 4 (from', 41, 0.19632053940005645]
+Path: Node6Node13" color=green shape=box]
+}

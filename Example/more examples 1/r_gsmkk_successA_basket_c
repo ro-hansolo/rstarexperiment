@@ -1,0 +1,286 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A basket contains 25 oranges among which 1 is bad, 20% are unripe, 2 are sour and the rest are good. How many oranges are good? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:7, Flag:False
+['1. We know there are a total of 25 oranges in the basket.\n        2. Out of these, 1 orange is bad, so we need to remove it from the count. This leaves us with 24 oranges.\n        3. Now, we have 20% of the oranges being unripe. To find out how many are unripe, we multiply 24 by 0.2 (20% as a decimal). So, 24 *', 108, 0.31998192455312546]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:8, Flag:False
+[\"1. First, let's find out how many oranges are not good (bad, unripe, and sour). We know there is 1 bad orange, 1/5 of them are unripe (20%), which equals to 20/100 * 25 = 5 unripe oranges, and there are 2 sour oranges. So, we have a total of 1 + 5 + 2 =\", 99, 0.3869057808767229]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:8, Flag:False
+[\"1. First, let's find out how many bad, unripe, and sour oranges we have in total. Bad = 1, Unripe = (0.2 * 25) = 5, Sour = 2.\n        2. Add these together: Bad + Unripe + Sour\", 70, 0.6855768023516929]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:10, H:10, Flag:True
+['1. Firstly, we need to find out the number of bad oranges in the basket. To do that, we can subtract the percentage of unripe oranges from the total number of oranges (25) and then add back the bad orange. So, 20% of 25 is (25 * 0.2) = 5, making it a total of 30 unripe oranges. Now we can subtract this number from the total to find bad oranges', 108, 0.8157414160882983]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:9, Flag:False
+[\"1. First, let's find out how many oranges are bad, unripe, and sour separately.\n        Bad orange = 1\n        Unripe oranges (as a percentage of total oranges) * Total oranges = Unripe oranges\n        Un\", 60, 0.5584145424504195]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:9, Flag:False
+[\"1. First, let's find out how many oranges are not good. We know there are 25 total oranges in the basket and we have a bad one, some unripe\", 41, 0.49706064834636376]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:5, H:6, Flag:False
+[\"1. First, let's identify the number of bad oranges: 25 oranges - 1 bad = 24 good oranges (assuming the bad orange is not counted as a good one).\n        2. Now, we need to find out how many unripe oranges there are: 24 good oranges * 0.2 (20% of them being unripe) = 4.8 unri\", 95, 0.34598329284946394]
+Path: StartNode6" color=black shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:7, H:10, Flag:True
+['0.2 = 4.8 oranges are unripe. We need to remove these from the count too. This leaves us with 24 - 4.8 = 19.2 oranges remaining.', 49, 0.03404418241349261]
+Path: Node0Node7" color=red shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:7, H:10, Flag:True
+['0.2 = 4.8 oranges are unripe. We need to remove these from the count too. This leaves us with 24 - 4.8 = 19.2 oranges left.', 49, 0.34556297266774505]
+Path: Node0Node8" color=red shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:4, H:9, Flag:True
+['0.2 = 4.8 oranges. We round this to the nearest whole number which is 5. This means there are 5 unripe oranges in the basket.', 40, 0.2879855768908952]
+Path: Node0Node9" color=red shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:2, H:3, Flag:False
+['0.2 = 4.8. Round this to the nearest whole number which is 5 unripe oranges.\n        4. We also have 2 sour oranges that need to be removed from the count. This leaves us with 24 - 2 (sour) = 22 remaining oranges.\n        5. Finally, we have the rest of the oranges which are good. Since we started with 25 oranges and after removing all the bad ones, we end up with 22 good ones.\n        So', 117, 0.5682178145078568]
+Path: Node0Node10" color=black shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:5, H:9, Flag:True
+['0.2 = 4.8 oranges are unripe. We need to remove these from the count too. This leaves us with 24 - 4.8 = 19.2 oranges remaining.\n        4. There are also 2 sour oranges, so we need to subtract them from the total as well. This leaves us with 19.2 - 2 = 17.2 oranges remaining.\n        5. Finally, we know', 103, 0.3592708512943449]
+Path: Node0Node11" color=red shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:7, H:10, Flag:True
+['0.2 = 4.8 oranges are unripe. We need to remove these from the count too. This leaves us with 24 - 4.8 = 19.2 oranges remaining.\n        4. There are 2 sour oranges, so we need to subtract them as well. This leaves us', 72, 0.03436089503580231]
+Path: Node0Node12" color=red shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:6, H:9, Flag:True
+['0.2 = 4.8 oranges are unripe. We need to remove these from the count too. This leaves us with 24 - 4.8 = 19.2 oranges remaining.\n        4. There are 2 sour oranges, which we also need to remove from the count. So, after removing', 73, 0.14220817589038548]
+Path: Node0Node13" color=red shape=box]
+	Node10 -> Node14 [label=Node10Node14]
+	Node14 [label="V:5, H:5, Flag:True
+['25 (total) - 1 (bad) - 2 (sour) + 20% (unripe) + 2 (sour) = 22 (good) oranges are good in the basket.', 90, 0.7257342286794248]
+Path: Node10Node14" color=red shape=box]
+	Node10 -> Node15 [label=Node10Node15]
+	Node15 [label="V:5, H:10, Flag:True
+['5 good oranges were left after accounting for the bad ones, unripe ones and sour ones.', 91, 0.9871880919022056]
+Path: Node10Node15" color=red shape=box]
+	Node10 -> Node16 [label=Node10Node16]
+	Node16 [label="V:2, H:1, Flag:False
+['6. There are a total of 22 good oranges in the basket.', 107, 0.7378156185106384]
+Path: Node10Node16" color=black shape=box]
+	Node10 -> Node17 [label=Node10Node17]
+	Node17 [label="V:2, H:1, Flag:False
+['22 good oranges are in the basket.', 78, 0.40040231104804125]
+Path: Node10Node17" color=black shape=box]
+	Node10 -> Node18 [label=Node10Node18]
+	Node18 [label="V:2, H:1, Flag:False
+['22 good oranges are in the basket.', 86, 0.36022202465151665]
+Path: Node10Node18" color=black shape=box]
+	Node10 -> Node19 [label=Node10Node19]
+	Node19 [label="V:2, H:1, Flag:False
+['22 oranges are good in the basket.', 113, 0.33663085152621297]
+Path: Node10Node19" color=black shape=box]
+	Node10 -> Node20 [label=Node10Node20]
+	Node20 [label="V:5, H:5, Flag:True
+['25 total oranges - 1 bad orange - 2 sour oranges + 4 unripe oranges = 22 good oranges.', 50, 0.9120805929180399]
+Path: Node10Node20" color=red shape=box]
+	Node16 -> Node21 [label=Node16Node21]
+	Node21 [label="V:6, H:9, Flag:True
+[\"7. It's important to remember that this calculation is based on the given information. If any additional information about unripe and sour oranges becomes available, these numbers might change.\", 105, 0.820608032137607]
+Path: Node16Node21" color=red shape=box]
+	Node16 -> Node22 [label=Node16Node22]
+	Node22 [label="V:6, H:9, Flag:True
+[\"7. Note that this count assumes there's no overlap between categories, meaning each orange can belong to only one category: it can either be bad, unripe, sour, or good but not all at once.\", 113, 0.9481895426214754]
+Path: Node16Node22" color=red shape=box]
+	Node16 -> Node23 [label=Node16Node23]
+	Node23 [label="V:6, H:9, Flag:True
+['7. To summarize, there is 1 bad orange, 5 unripe oranges, 2 sour oranges, and 22 good oranges in the basket.', 71, 0.6923071345252254]
+Path: Node16Node23" color=red shape=box]
+	Node16 -> Node24 [label=Node16Node24]
+	Node24 [label="V:6, H:9, Flag:True
+['7. To summarize, there are 1 bad orange, 4.8 unripe (rounded to 5), 2 sour, and 22 good oranges in the basket.', 51, 0.34097400465406047]
+Path: Node16Node24" color=red shape=box]
+	Node16 -> Node25 [label=Node16Node25]
+	Node25 [label="V:6, H:9, Flag:True
+['7. To summarize, there are 1 bad orange, 5 unripe, 2 sour, and 22 good oranges in the basket.', 67, 0.4438699644971802]
+Path: Node16Node25" color=red shape=box]
+	Node16 -> Node26 [label=Node16Node26]
+	Node26 [label="V:6, H:9, Flag:True
+['7. To summarize, there are 1 bad orange, 4 unripe, 2 sour, and 22 good oranges in the basket.', 80, 0.3549325670462101]
+Path: Node16Node26" color=red shape=box]
+	Node16 -> Node27 [label=Node16Node27]
+	Node27 [label="V:6, H:9, Flag:True
+['7. To summarize, there are 1 bad orange, 4.8 (rounded to 5) unripe oranges, 2 sour oranges, and 22 good or', 42, 0.20280414928081092]
+Path: Node16Node27" color=red shape=box]
+	Node17 -> Node28 [label=Node17Node28]
+	Node28 [label="V:3, H:2, Flag:True
+['6. To summarize, there is 1 bad orange, 5 unripe oranges, 2 sour oranges, and 22 good oranges in the basket.', 90, 0.8062595695530581]
+Path: Node17Node28" color=red shape=box]
+	Node17 -> Node29 [label=Node17Node29]
+	Node29 [label="V:3, H:2, Flag:True
+['', 89, 0.9455773394838873]
+Path: Node17Node29" color=red shape=box]
+	Node17 -> Node30 [label=Node17Node30]
+	Node30 [label="V:3, H:2, Flag:True
+['', 82, 0.5953879760434608]
+Path: Node17Node30" color=red shape=box]
+	Node17 -> Node31 [label=Node17Node31]
+	Node31 [label="V:3, H:2, Flag:True
+['', 49, 0.9263797667018369]
+Path: Node17Node31" color=red shape=box]
+	Node17 -> Node32 [label=Node17Node32]
+	Node32 [label="V:3, H:2, Flag:True
+['6. To summarize, there are 1 bad orange, 4.8 unripe (rounded to 5), 2 sour, and 22 good oranges in the basket.', 97, 0.0895142145010599]
+Path: Node17Node32" color=red shape=box]
+	Node17 -> Node33 [label=Node17Node33]
+	Node33 [label="V:3, H:2, Flag:True
+['6. To summarize, there were 1 bad orange, 4.8 unripe (rounded to 5), 2 sour, and 22 good oranges in the basket.', 78, 0.170410806218122]
+Path: Node17Node33" color=red shape=box]
+	Node17 -> Node34 [label=Node17Node34]
+	Node34 [label="V:4, H:2, Flag:True
+['Note that this answer assumes that there were no overlaps between different types of oranges (bad, unripe, sour, and good). If some oranges can belong to multiple categories, you might need to count them separately to get a more accurate result.', 119, 0.6497126932219164]
+Path: Node17Node34" color=red shape=box]
+	Node18 -> Node35 [label=Node18Node35]
+	Node35 [label="V:6, H:9, Flag:True
+['6. To summarize, there are 1 bad orange, 4.8 unripe (rounded to 5), 2 sour, and 22 good oranges in total.', 103, 0.38620090725146305]
+Path: Node18Node35" color=red shape=box]
+	Node18 -> Node36 [label=Node18Node36]
+	Node36 [label="V:6, H:9, Flag:True
+['6. To summarize, there are 1 bad orange, 5 unripe oranges, 2 sour oranges, and 22 good oranges in the basket.', 104, 0.39468657045983646]
+Path: Node18Node36" color=red shape=box]
+	Node18 -> Node37 [label=Node18Node37]
+	Node37 [label="V:6, H:9, Flag:True
+[\"6. It's important to note that some minor variations could occur due to rounding errors, but these values should give a close approximation of the numbers.\", 112, 0.6099604222052342]
+Path: Node18Node37" color=red shape=box]
+	Node18 -> Node38 [label=Node18Node38]
+	Node38 [label="V:6, H:9, Flag:True
+['6. To summarize: Bad orange - 1; Unripe oranges - 5; Sour oranges - 2; Good oranges - 22 (resting oranges).', 102, 0.5992981599889832]
+Path: Node18Node38" color=red shape=box]
+	Node18 -> Node39 [label=Node18Node39]
+	Node39 [label="V:6, H:9, Flag:True
+['', 98, 0.6977877140493557]
+Path: Node18Node39" color=red shape=box]
+	Node18 -> Node40 [label=Node18Node40]
+	Node40 [label="V:6, H:9, Flag:True
+['6. To summarize, there were initially 25 oranges. After removing 1 bad orange, 5 unripe oranges, and 2 sour oranges, we were left with 22 good oranges.', 57, 0.3106818938794994]
+Path: Node18Node40" color=red shape=box]
+	Node18 -> Node41 [label=Node18Node41]
+	Node41 [label="V:6, H:9, Flag:True
+['6. To reiterate, there are 1 bad orange, 4.8 (or 5) unripe oranges, 2 sour oranges, and 20 oranges being good (out of which we had to count 22).', 107, 0.7115399828462461]
+Path: Node18Node41" color=red shape=box]
+	Node19 -> Node42 [label=Node19Node42]
+	Node42 [label="V:6, H:6, Flag:True
+['', 101, 0.47361139025445265]
+Path: Node19Node42" color=red shape=box]
+	Node19 -> Node43 [label=Node19Node43]
+	Node43 [label="V:6, H:6, Flag:True
+['6. To make this answer more clear, we can summarize it as: In a basket of 25 oranges, 1 is bad, 1 is unripe, 2 are sour, and 22 are good.', 73, 0.4965261391787871]
+Path: Node19Node43" color=red shape=box]
+	Node19 -> Node44 [label=Node19Node44]
+	Node44 [label="V:6, H:6, Flag:True
+['6. To sum it up, there was 1 bad orange, 4.8 (rounded to 5) unripe oranges, 2 sour oranges, and 22 good ones, giving a total of 25 -', 53, 0.716588299170935]
+Path: Node19Node44" color=red shape=box]
+	Node19 -> Node45 [label=Node19Node45]
+	Node45 [label="V:6, H:6, Flag:True
+['', 78, 0.9743183544974073]
+Path: Node19Node45" color=red shape=box]
+	Node19 -> Node46 [label=Node19Node46]
+	Node46 [label="V:6, H:6, Flag:True
+['', 116, 0.3038139509625746]
+Path: Node19Node46" color=red shape=box]
+	Node19 -> Node47 [label=Node19Node47]
+	Node47 [label="V:8, H:8, Flag:True
+['6. To summarize: There were initially 25 oranges in the basket. After accounting for a bad one, 1 was removed. Then, removing the unripe and sour ones left us with 20 (initial total - bad - unripe - sour) = 20 + 1 + 4.8 + 2 = 27 oranges left. Finally, subtracting the 2 good ones from the remaining count of 27 leaves us with 25 - 2 = 23 good ones', 114, 0.5368577055118542]
+Path: Node19Node47" color=red shape=box]
+	Node19 -> Node48 [label=Node19Node48]
+	Node48 [label="V:6, H:6, Flag:True
+['6. Remember to consider the initial conditions carefully and work through each step systematically to ensure accuracy in the final result.', 118, 0.6420781378125383]
+Path: Node19Node48" color=red shape=box]
+	Node1 -> Node49 [label=Node1Node49]
+	Node49 [label="V:5, H:8, Flag:True
+[\"3 bad, unripe, and sour oranges that are not good.\n        2. Now, let's find out how many oranges are left after removing the non-good ones. There were initially 25 oranges\", 50, 0.32904283773632537]
+Path: Node1Node49" color=red shape=box]
+	Node1 -> Node50 [label=Node1Node50]
+	Node50 [label="V:5, H:9, Flag:True
+['3 bad, unripe, and sour oranges that are not good.\n        2. Now, to find the number of good oranges, subtract the number of not-good oranges from the total number of oranges in the basket: 25 (total) - 3 (not good) =', 68, 0.15833854112736157]
+Path: Node1Node50" color=red shape=box]
+	Node1 -> Node51 [label=Node1Node51]
+	Node51 [label="V:5, H:1, Flag:True
+['3 bad, unripe, and sour oranges that are not good.\n        2. Now, to find the number of good oranges, simply subtract the total of not-good oranges from the total number of oranges: 25 oranges - 3 oranges = 22 good oranges.\n        Therefore, there are 22 oranges that are good in this basket.', 87, 0.9803597680105849]
+Path: Node1Node51" color=red shape=box]
+	Node1 -> Node52 [label=Node1Node52]
+	Node52 [label="V:5, H:9, Flag:True
+[\"3 bad, unripe, and sour oranges that are not good.\n        2. Now, let's subtract this number from the total amount of oranges in the basket (25) to find out how many oranges are good. So, 25 -\", 60, 0.5358959733230744]
+Path: Node1Node52" color=red shape=box]
+	Node1 -> Node53 [label=Node1Node53]
+	Node53 [label="V:5, H:8, Flag:True
+['3 oranges that are not good.\n        2. Now we need to subtract these oranges from the initial number of oranges. We initially had 25 oranges, and we identified 3 as not good. So, we can calculate the remaining', 55, 0.795388323034791]
+Path: Node1Node53" color=red shape=box]
+	Node1 -> Node54 [label=Node1Node54]
+	Node54 [label="V:5, H:9, Flag:True
+[\"3 bad, unripe, and sour oranges that are not good.\n        2. Now, let's find out how many oranges are left after removing the not-good ones. We started with\", 45, 0.11336177272947445]
+Path: Node1Node54" color=red shape=box]
+	Node1 -> Node55 [label=Node1Node55]
+	Node55 [label="V:5, H:9, Flag:True
+[\"3 bad, unripe, and sour oranges that are not good.\n        2. Now, let's subtract the number of not-good oranges from the total number of oranges in the basket (25). We have 25 - 3 = 22 oranges remaining after removing bad,\", 69, 0.34636932019810907]
+Path: Node1Node55" color=red shape=box]
+	Node2 -> Node56 [label=Node2Node56]
+	Node56 [label="V:1, H:1, Flag:False
+['3. Bad + Unripe + Sour = 1 + 5 + 2 = 8\n        4. Now we have 25 oranges in total and 8 of them are not good (bad, unripe, sour). So to find the good oranges, subtract this number from the total: 25 - 8\n        5', 78, 0.8555470481343638]
+Path: Node2Node56" color=black shape=box]
+	Node2 -> Node57 [label=Node2Node57]
+	Node57 [label="V:2, H:3, Flag:False
+['3. Bad + Unripe + Sour = 1 + 5 + 2 = 8 oranges.\n        4. Now, we know there are 25 oranges in total and', 44, 0.017943286812998394]
+Path: Node2Node57" color=black shape=box]
+	Node2 -> Node58 [label=Node2Node58]
+	Node58 [label="V:2, H:3, Flag:False
+['3. Bad + Unripe + Sour = 1 + 5 + 2 = 8 oranges in total that are not good.\n        4. Now, we know there are 25 oranges in the', 48, 0.21272716417729787]
+Path: Node2Node58" color=black shape=box]
+	Node2 -> Node59 [label=Node2Node59]
+	Node59 [label="V:1, H:2, Flag:False
+['3. Bad + Unripe + Sour = 1 + 5 + 2 = 8 oranges.\n        4. Now, we know that there are 25 oranges in total and 8 of them are bad, unripe, or sour. To find the number of good oranges, subtract these from the total: Total - (Bad + Unripe + Sour) = 25 -', 91, 0.21063678793523533]
+Path: Node2Node59" color=black shape=box]
+	Node2 -> Node60 [label=Node2Node60]
+	Node60 [label="V:1, H:1, Flag:False
+['3. Bad + Unripe + Sour = 1 + 5 + 2 = 8 oranges\n        4. Now, we know there are 25 oranges in total and 8 are bad, unripe, or sour. To find the number of good oranges, subtract the bad ones from the total: Total - Bad = 25 - 8 =', 83, 0.47573895692434154]
+Path: Node2Node60" color=black shape=box]
+	Node2 -> Node61 [label=Node2Node61]
+	Node61 [label="V:1, H:1, Flag:False
+['3. We get the sum of all non-good oranges: 1 + 5 + 2 = 8.\n        4. To find out how many good oranges there are, we subtract this total from the initial number of oranges in the basket: Good = Total - Non-Good\n        5. Now, calculate Good = 25 - 8 =', 81, 0.42607444802657046]
+Path: Node2Node61" color=black shape=box]
+	Node2 -> Node62 [label=Node2Node62]
+	Node62 [label="V:1, H:2, Flag:False
+[\"3. Bad + Unripe + Sour = 1 + 5 + 2 = 8 oranges.\n        4. Now, we know there are 8 oranges that aren't good. To find the number of good oranges, subtract this from the total number of oranges: Total Oranges - Bad - Unripe - Sour.\n        5. Total Oranges = 25 (given), so Total Oranges - Bad - Unripe - Sour\", 106, 0.4033851167027409]
+Path: Node2Node62" color=black shape=box]
+	Node56 -> Node63 [label=Node56Node63]
+	Node63 [label="V:0, H:0, Flag:False
+['6. Good oranges = Total oranges - Not good oranges = 25 - 8 = 17\n        7. There are 17 good oranges among the basket of 25 oranges.', 102, 0.9361286527509114]
+Path: Node56Node63" color=green shape=box]
+	Node56 -> Node64 [label=Node56Node64]
+	Node64 [label="V:0, H:0, Flag:False
+['6. Good = Total - (Bad + Unripe + Sour) = 25 - 8 = 17\n        7. Therefore, there are 17 good oranges in the basket.', 117, 0.5591269953504612]
+Path: Node56Node64" color=green shape=box]
+	Node56 -> Node65 [label=Node56Node65]
+	Node65 [label="V:0, H:0, Flag:False
+['6. The answer is that there are 17 good oranges in the basket.', 91, 0.8164933692889456]
+Path: Node56Node65" color=green shape=box]
+	Node56 -> Node66 [label=Node56Node66]
+	Node66 [label="V:0, H:0, Flag:False
+['6. Good oranges = Total oranges - Not good oranges = 25 - 8 = 17\n        There are 17 good oranges in the basket.', 51, 0.06189710932544945]
+Path: Node56Node66" color=green shape=box]
+	Node56 -> Node67 [label=Node56Node67]
+	Node67 [label="V:0, H:0, Flag:False
+['6. The result is 17 good oranges.', 50, 0.6594245597830838]
+Path: Node56Node67" color=green shape=box]
+	Node56 -> Node68 [label=Node56Node68]
+	Node68 [label="V:0, H:0, Flag:False
+['6. The result is 17 oranges that are good.', 90, 0.39023116479304487]
+Path: Node56Node68" color=green shape=box]
+	Node56 -> Node69 [label=Node56Node69]
+	Node69 [label="V:0, H:0, Flag:False
+['6. Good oranges = 25 - 8 = 17\n        There are 17 good oranges in the basket.', 112, 0.48838536345425987]
+Path: Node56Node69" color=green shape=box]
+}

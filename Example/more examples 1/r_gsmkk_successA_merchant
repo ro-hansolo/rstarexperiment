@@ -1,0 +1,202 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or electronic gadgets worth $8,000. His financial advisor speculates that the jewelry market will go up 2.5% while the electronic gadgets market will rise 1.2% within the same month. If the merchant is looking to maximize profit at the end of this month by making a choice, how much profit would this be? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:8, Flag:False
+[\"1. Let's first determine the potential profit for each option based on their respective price increases.\n           a. For jewelry worth $5,000: 2.5% increase = (2.5/1\", 47, 0.7298042759274226]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:5, Flag:False
+[\"1. First, let's consider the current value and projected increase in value for both options.\n           - Jewelry worth $5,000 will have an increased value of $5,000 * 2.5% = $125. So, after the price rise, it would be worth $5,\", 71, 0.4771979484052522]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:5, Flag:False
+[\"1. First, we need to determine the initial value of each item and their respective price increases.\n           - Jewelry is worth $5,000, and its market will increase by 2.5%. So, after the increase, it'll be worth ($5,000 * 1.025) = $5,12\", 77, 0.6064698705056188]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:3, Flag:False
+['1. First, we need to determine the initial value of both purchase options. The jewelry costs $5,000 and the electronic gadgets cost $8,000.\n        2. Next, calculate the projected increase in value for each item based on their respective market growth rates. For jewelry, the 2.5% increase will be $5,000 * 0.025 = $125. So, the new value of jewelry would be $5,000 + $125 = $5,125', 120, 0.25967608672963083]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:7, H:9, Flag:False
+['1. Analyze the given choices and their respective prices and expected market growth rates.\n           - Option A: Jewelry worth $5,000, market expected to rise by 2.5%\n           - Option B', 50, 0.9721607387396762]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:4, H:9, Flag:False
+[\"1. First, let's consider the merchant's options and their potential profits without any market change. The jewelry costs $5,000 and has a potential profit margin. Electronic gadgets cost $8,000 and also have a certain profit margin. If these markets stay\", 62, 0.9734262425584355]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:3, H:9, Flag:False
+[\"1. Let's first understand the given information:\n           - Merchant can choose between jewelry worth $5,000 or electronic gadgets worth $8,000.\n           - Financial advisor predicts jewelry market will increase by 2.5% and electronic gadgets market will rise by 1.2%.\n           - The merchant wants\", 78, 0.4567145347417313]
+Path: StartNode6" color=black shape=box]
+	Node3 -> Node7 [label=Node3Node7]
+	Node7 [label="V:4, H:3, Flag:False
+['3. Similarly, for electronic gadgets, a 1.2% increase will result in an additional value of $8,000 * 0.012 = $96. The new value of the gadgets would be $8,000 + $96 = $8,096\n        4. Now that we have the projected values for both items after their respective market growth rates, we can compare them to determine which option will provide a higher profit.\n        5. The difference in', 111, 0.11791507515752264]
+Path: Node3Node7" color=black shape=box]
+	Node3 -> Node8 [label=Node3Node8]
+	Node8 [label="V:4, H:3, Flag:False
+['3. Similarly, for electronic gadgets, the 1.2% increase will be $8,000 * 0.012 = $96. So, the new value of electronic gadgets would be $8,000 + $96 = $8,096\n        4. Now that we have the projected values for both items after their respective market growth', 85, 0.23394143265226697]
+Path: Node3Node8" color=black shape=box]
+	Node3 -> Node9 [label=Node3Node9]
+	Node9 [label="V:4, H:3, Flag:False
+['3. Similarly, for electronic gadgets, a 1.2% increase will amount to $8,000 * 0.012 = $96. So, the new value of electronic gadgets would be $8,000 + $96 = $8,096\n        4. Now that we have the projected values for both items after market growth, we can compare them to determine which', 92, 0.21781256501756197]
+Path: Node3Node9" color=black shape=box]
+	Node3 -> Node10 [label=Node3Node10]
+	Node10 [label="V:4, H:3, Flag:False
+['3. Similarly, for electronic gadgets, a 1.2% increase will result in an additional value of $8,000 * 0.012 = $96. The new value of the electronic gadgets would be $8,000 + $96 = $8,096\n        4. Now that we have the projected values for both items after their respective market growth rates, we can compare them to determine which option has a higher profit', 103, 0.1575292964631021]
+Path: Node3Node10" color=black shape=box]
+	Node3 -> Node11 [label=Node3Node11]
+	Node11 [label="V:4, H:3, Flag:False
+['3. Similarly, for electronic gadgets, a 1.2% increase will result in an additional value of $8,000 * 0.012 = $96. The new value of the electronic gadgets would be $8,000 + $96 = $8,096\n        4. Now that we have the projected values for both items after their respective market growth rates, we can compare them to determine which one has a higher profit potential. Comparing $', 108, 0.2611662939323047]
+Path: Node3Node11" color=black shape=box]
+	Node3 -> Node12 [label=Node3Node12]
+	Node12 [label="V:4, H:3, Flag:False
+[\"3. Similarly for electronic gadgets, a 1.2% increase would be $8,000 * 0.012 = $96. The new value of the gadgets after the increase would be $8,000 + $96 = $8,096\n        4. Now that we have calculated the projected values, it's time to compare them to determine which option will yield more profit at the\", 96, 0.6652886704476819]
+Path: Node3Node12" color=black shape=box]
+	Node3 -> Node13 [label=Node3Node13]
+	Node13 [label="V:3, H:2, Flag:False
+[\"3. Similarly, for electronic gadgets, a 1.2% increase will result in an additional value of $8,000 * 0.012 = $96. The new value of the electronic gadgets would be $8,000 + $96 = $8,096\n        4. Now that we have the projected values for both items after their respective market growth rates, we can compare them to determine which option has a higher profit potential. In this case, the jewelry's increased value is $5,1\", 120, 0.18589460364140753]
+Path: Node3Node13" color=black shape=box]
+	Node13 -> Node14 [label=Node13Node14]
+	Node14 [label="V:3, H:2, Flag:False
+['5. Lastly, if the merchant chooses the more profitable option (jewelry), he will make an additional profit of $625 ($5,125 - $5,000) from his purchase plan at the end of this month.', 65, 0.7055399326309022]
+Path: Node13Node14" color=black shape=box]
+	Node13 -> Node15 [label=Node13Node15]
+	Node15 [label="V:1, H:2, Flag:False
+['25, while the electronic gadgets are worth $8,096.\n        5. Finally, subtract the initial purchase price from the projected value of each item to find the potential profit for each option. For jewelry, the profit would be $5,125 - $5,000 = $125. For electronic gadgets, the profit would be $8,096 - $8,000 = $96.\n        6. Since the merchant wants to maximize', 111, 0.36667061196079764]
+Path: Node13Node15" color=black shape=box]
+	Node13 -> Node16 [label=Node13Node16]
+	Node16 [label="V:3, H:2, Flag:False
+[\"25 while the electronic gadgets' increased value is $8,096.\n        5. Finally, calculate the profit for each item by subtracting their initial values from their new projected values. For jewelry, the profit would be $5,125 - $5,000 = $125. And for electronic gadgets, the profit would be $8,096 - $8,000 = $96.\n        6. Since the merchant wants to maximize profit within a month, he should choose\", 118, 0.5318868374712009]
+Path: Node13Node16" color=black shape=box]
+	Node13 -> Node17 [label=Node13Node17]
+	Node17 [label="V:8, H:8, Flag:True
+[\"25, while the electronic gadgets are worth $8,096. The difference in potential profits between these two options can be calculated as $5,125 (jewelry) - $8,096 (electronic gadgets) = $2,971.\n        5. Finally, the merchant's maximum profit at the end of this month by making a\", 86, 0.7465293940003146]
+Path: Node13Node17" color=red shape=box]
+	Node13 -> Node18 [label=Node13Node18]
+	Node18 [label="V:2, H:2, Flag:False
+[\"25 and electronic gadgets' increased value is $8,096. \n        5. Finally, to calculate the maximum profit for the merchant at the end of this month, he should choose the most profitable option based on its projected increase in value. In this case, the jewelry market has a higher growth rate\", 67, 0.7531865045450448]
+Path: Node13Node18" color=black shape=box]
+	Node13 -> Node19 [label=Node13Node19]
+	Node19 [label="V:2, H:2, Flag:False
+[\"25 and the electronic gadgets' increased value is $8,096.\n        5. The merchant should choose the purchase plan that maximizes profit at the end of the month. Since the jewelry market has a higher projected increase in value compared to the electronic gadgets market, the merchant would likely opt for purchasing the jewelry worth $5,125.\n        6. To find out how much profit this choice will bring, we need to calculate the difference between the initial and final values of the\", 107, 0.3241260874715104]
+Path: Node13Node19" color=black shape=box]
+	Node13 -> Node20 [label=Node13Node20]
+	Node20 [label="V:2, H:2, Flag:False
+['25, and the electronic gadgets are worth $8,096. The difference in potential profit is $8,096 - $5,125 = $3,071.\n        5. The merchant would choose to maximize his profit at the end of this month by purchasing jewelry, as it has a higher potential profit compared to electronic gadgets.', 113, 0.788976801715613]
+Path: Node13Node20" color=black shape=box]
+	Node1 -> Node21 [label=Node1Node21]
+	Node21 [label="V:3, H:4, Flag:False
+[\"1,125.\n        - Electronic gadgets worth $8,000 will have an increased value of $8,000 * 1.2% = $96. After the price rise, they'd be worth $8,096.\n\n      2\", 67, 0.706298553659435]
+Path: Node1Node21" color=black shape=box]
+	Node1 -> Node22 [label=Node1Node22]
+	Node22 [label="V:2, H:3, Flag:False
+[\"- Electronic gadgets worth $8,000 will have an increased value of $8,000 * 1.2% = $96. So, after the price rise, they would be worth $8,000 + $96 = $8,096.\n       \n   2. Now, let's calculate the\", 78, 0.24840876836639147]
+Path: Node1Node22" color=black shape=box]
+	Node1 -> Node23 [label=Node1Node23]
+	Node23 [label="V:6, H:6, Flag:True
+['2,000.\n           - Electronic gadgets worth $8,000 will have an increased value of $8,000 * 1.2% = $96. So, after the price rise, they would be worth $8,096.\n       \n        2. Compare the projected increase in values for both options and determine which has a greater profit', 86, 0.7062078811277218]
+Path: Node1Node23" color=black shape=box]
+	Node1 -> Node24 [label=Node1Node24]
+	Node24 [label="V:3, H:8, Flag:False
+['- Electronic gadgets worth $8,000 will have an increased value of $8,000 * 1.2% = $96. So, after the price rise, they would be worth', 47, 0.5461139537100681]
+Path: Node1Node24" color=black shape=box]
+	Node1 -> Node25 [label=Node1Node25]
+	Node25 [label="V:3, H:6, Flag:False
+[\"- Electronic gadgets worth $8,000 will have an increased value of $8,000 * 1.2% = $96. So, after the price rise, they would be worth $8,096.\n\n   2. Now, let's compare the profit potential for both options:\n      - Jewelry: Current value + Increase in value = $5,000 + $125\", 98, 0.013024658140653567]
+Path: Node1Node25" color=black shape=box]
+	Node1 -> Node26 [label=Node1Node26]
+	Node26 [label="V:1, H:3, Flag:False
+['- Electronic gadgets worth $8,000 will have an increased value of $8,000 * 1.2% = $96. So, after the price rise, it would be worth $8,000 + $96 = $8,096.\n\n   2. Now that we know the projected values for both options at the end', 83, 0.5791124407110669]
+Path: Node1Node26" color=black shape=box]
+	Node1 -> Node27 [label=Node1Node27]
+	Node27 [label="V:7, H:7, Flag:True
+[\"- Electronic gadgets worth $8,000 will have an increased value of $8,000 * 1.2% = $96. So, after the price rise, they would be worth $8,\n           960.\n       \n        2. Now let's calculate the potential profit for each option based on the current and projected values.\", 82, 0.4436150502782652]
+Path: Node1Node27" color=black shape=box]
+	Node2 -> Node28 [label=Node2Node28]
+	Node28 [label="V:8, H:3, Flag:True
+[\"- Electronic gadgets are worth $8,000, and their market will rise by 1.2%. After the increase, they'll be worth ($8,000 * 1.012) = $8,08\n       \n   2. Next, we need to calculate the profit\", 69, 0.815406292349762]
+Path: Node2Node28" color=red shape=box]
+	Node2 -> Node29 [label=Node2Node29]
+	Node29 [label="V:9, H:5, Flag:True
+[\"- Electronic gadgets are worth $8,000, and their market will rise by 1.2%. After the increase, they'll be worth ($8,000 * 1.012) = $8,08\", 55, 0.32882766705918476]
+Path: Node2Node29" color=red shape=box]
+	Node2 -> Node30 [label=Node2Node30]
+	Node30 [label="V:7, H:3, Flag:True
+[\"- Electronic gadgets are worth $8,000, and their market will rise by 1.2%. After the increase, they'll be worth ($8,000 * 1.012) = $8,088\n\n   2. Now that we have the new values after\", 69, 0.3577070992399939]
+Path: Node2Node30" color=red shape=box]
+	Node2 -> Node31 [label=Node2Node31]
+	Node31 [label="V:7, H:3, Flag:True
+[\"- Electronic gadgets are worth $8,000, and their market will rise by 1.2%, making them worth ($8,000 * 1.012) = $8,088 after the increase.\n       \n   2. We need to compare the profits from each item after a month's time. The merchant would earn profits equal to:\n      - Jewelry profit: Sell it at the increased price ($5,12) minus\", 107, 0.9507604947680444]
+Path: Node2Node31" color=red shape=box]
+	Node2 -> Node32 [label=Node2Node32]
+	Node32 [label="V:9, H:3, Flag:True
+[\"- Electronic gadgets are worth $8,000, and their market will rise by 1.2%. After this increase, they'll be worth ($8,000 * 1.012) = $8,16\n\n      2. Now, let's calculate the profit each option brings.\n         - Jewelry profit = Selling price - Purchase price = $5,12 - $5,000 = $0.12 (rounded up to two decimal\", 113, 0.8979266804645392]
+Path: Node2Node32" color=red shape=box]
+	Node2 -> Node33 [label=Node2Node33]
+	Node33 [label="V:8, H:4, Flag:True
+['- Electronic gadgets are worth $8,000, and their market will rise by 1.2%. After this increase, they would cost ($8,000 * 1.012) = $8,08\n\n    2. Now that we know the final value of each item', 68, 0.6728976777861648]
+Path: Node2Node33" color=red shape=box]
+	Node2 -> Node34 [label=Node2Node34]
+	Node34 [label="V:9, H:4, Flag:True
+[\"- Electronic gadgets are worth $8,000, and their market will increase by 1.2%. After this increase, they'll be worth ($8,000 * 1.012) = $8,096\n\n   2\", 60, 0.5993869366663203]
+Path: Node2Node34" color=red shape=box]
+	Node15 -> Node35 [label=Node15Node35]
+	Node35 [label="V:1, H:1, Flag:False
+[\"7. The highest potential profit can be achieved by purchasing the item with the largest profit. In this case, jewelry has a higher profit of $125 compared to electronic gadgets' profit of $96.\n        8. Therefore, if the merchant chooses to purchase the jewelry worth $5,000 and sell it for $5,125 at the end of the month, he will make a profit of $125.\", 112, 0.543858398090908]
+Path: Node15Node35" color=black shape=box]
+	Node15 -> Node36 [label=Node15Node36]
+	Node36 [label="V:1, H:1, Flag:False
+['7. profit at the end of this month, we can conclude that choosing jewelry for purchase will result in a higher potential profit of $125 compared to electronic gadgets with a potential profit of $96.', 89, 0.10959423653992573]
+Path: Node15Node36" color=black shape=box]
+	Node15 -> Node37 [label=Node15Node37]
+	Node37 [label="V:1, H:1, Flag:False
+['7. profit at the end of this month, he should choose the option that provides a higher potential profit. In this case, the jewelry purchase plan has a greater profit at $125 compared to $96 for electronic gadgets.', 80, 0.5496558707814495]
+Path: Node15Node37" color=black shape=box]
+	Node15 -> Node38 [label=Node15Node38]
+	Node38 [label="V:1, H:0, Flag:True
+['7. Therefore, the best choice for the merchant is to purchase electronic gadgets worth $8,000, as they have a higher potential profit of $96 compared to jewelry with a potential profit of $125.', 103, 0.9676504344294188]
+Path: Node15Node38" color=green shape=box]
+	Node15 -> Node39 [label=Node15Node39]
+	Node39 [label="V:1, H:1, Flag:False
+['7. the profit, he should choose between these two options by comparing the profits. The highest profit is from purchasing jewelry as it results in a larger gain of $125 compared to electronic gadgets at $96.', 64, 0.986835601170782]
+Path: Node15Node39" color=black shape=box]
+	Node15 -> Node40 [label=Node15Node40]
+	Node40 [label="V:1, H:2, Flag:False
+[\"7. his/her profit by making a choice between these two options, we choose the option with the highest potential profit. In this case, jewelry has the higher potential profit of $125 as compared to the electronic gadgets' potential profit of $96.\n        Therefore, if\", 61, 0.929786961405451]
+Path: Node15Node40" color=black shape=box]
+	Node15 -> Node41 [label=Node15Node41]
+	Node41 [label="V:1, H:1, Flag:False
+[\"7. profit at the end of this month, he should choose the option with a higher profit potential. In this case, the jewelry has a greater profit of $125 compared to the electronic gadgets' profit of $96. Therefore, the merchant should purchase the jewelry worth $5,000 to maximize his profit at the end of the month.\", 92, 0.4055722964525764]
+Path: Node15Node41" color=black shape=box]
+	Node35 -> Node42 [label=Node35Node42]
+	Node42 [label="V:0, H:0, Flag:False
+['9. It is important to note that this calculation assumes no other costs or external factors are involved in the decision-making process.', 110, 0.5555504218975068]
+Path: Node35Node42" color=green shape=box]
+	Node35 -> Node43 [label=Node35Node43]
+	Node43 [label="V:0, H:0, Flag:False
+['9. However, please note that this calculation assumes all factors remain constant during the specified time frame, which may not be true in real-life scenarios due to unforeseen market fluctuations or changes in demand.', 78, 0.5155725433706428]
+Path: Node35Node43" color=green shape=box]
+	Node35 -> Node44 [label=Node35Node44]
+	Node44 [label="V:0, H:0, Flag:False
+['9. Note that market conditions are subject to change and may not always lead to predicted results in actual scenarios, but these calculations provide a useful framework for comparing options and making decisions based on profit potential.', 117, 0.971742625164368]
+Path: Node35Node44" color=green shape=box]
+	Node35 -> Node45 [label=Node35Node45]
+	Node45 [label="V:0, H:0, Flag:False
+['9. However, remember that market fluctuations can be unpredictable, so actual profits may differ from these projected values.', 99, 0.502719703914066]
+Path: Node35Node45" color=green shape=box]
+	Node35 -> Node46 [label=Node35Node46]
+	Node46 [label="V:0, H:0, Flag:False
+['9. Note that this calculation assumes the market growth rates hold true throughout the month, but actual results may vary due to various factors affecting the markets.', 61, 0.49594429714357546]
+Path: Node35Node46" color=green shape=box]
+	Node35 -> Node47 [label=Node35Node47]
+	Node47 [label="V:0, H:0, Flag:False
+['9. If he chooses to purchase the electronic gadgets worth $8,000 and sell them for $8,096 at the end of the month, his profit will be $96.', 55, 0.48421259261301186]
+Path: Node35Node47" color=green shape=box]
+	Node35 -> Node48 [label=Node35Node48]
+	Node48 [label="V:1, H:0, Flag:False
+['By choosing jewelry, the merchant can potentially maximize his profit while still accounting for the projected market growth of each option.', 57, 0.9796105602895534]
+Path: Node35Node48" color=green shape=box]
+}

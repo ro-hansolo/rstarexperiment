@@ -1,0 +1,295 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Calculate the total revenue earned by the mechanic from repairing truck tires on Thursday.
+           The mechanic charges $60 for each truck tire repaired, and he repaired 6 truck tires.
+           Total revenue from truck tires on Thursday = 6 (truck tires) * $60 (per truck tire",Node0,5,9,5,14,0.5519151270083756,70,False
+" 1. First, let's determine the earnings from each type of tire repair for both days. 
+        Thursday: 6 truck tires * $60 = $360 and 4 car tires * $40 = $160 (total Thursday earnings)
+        Friday: 12 car tires * $40 = $480 (Friday earnings)
+        
+        2. Now, let's calculate the difference between the revenue on the two days to find out which one had a higher revenue.
+        Hig",Node1,2,3,2,5,0.8803398151242602,114,False
+" 1. Identify the given charges for truck and car tire repairs: Truck tire repair cost - $60; Car tire repair cost - $40.
+        2. Calculate the total earnings per",Node2,7,9,7,16,0.5647795774888213,43,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires):",Node3,1,2,1,3,0.03854406112075304,106,False
+" 1. Firstly, let's calculate the total revenue from Thursday's work. For truck tires: 6 * $60 = $360 and for car tires: 4",Node4,6,8,6,14,0.5446888003221825,40,False
+" 1. First, let's calculate the revenue earned by the mechanic for each type of tire repair on both days.
+           Thursday: Truck tires - 6 * $60 = $360; Car tires - 4 * $40 = $160
+           Friday: Car tires - 12 * $40 = $480 (no truck tires repaired, so no revenue from them)",Node5,2,2,2,4,0.3465013634366736,92,False
+" 1. Calculate the earnings for each type of tire repair on Thursday:
+           a. For truck tires: 6 * $60 = $360
+           b. For car tires: 4 * $40 = $160
+           c. Total revenue for Thursday: $360 + $160 = $520
+
+        2. Calculate the earnings for each type of tire repair on Friday:
+           a. For car tires:",Node6,1,1,1,2,0.5240023958082984,103,False
+" 1. Calculate the earnings for each type of tire repair on Thursday:
+           a. For truck tires: 6 * $60 = $360
+           b. For car tires: 4 * $40 = $160
+           c. Total revenue for Thursday: $360 + $160 = $520
+
+        2. Calculate the earnings for each type of tire repair on Friday:
+           a. For car tires: 12 * $40 = 12 * 40 = $480
+           b. No truck tires were repaired, so there is no revenue from them.
+           c. Total revenue for Friday: $480 (from car tires)
+
+        3. Compare the total revenues of both days to find the difference in earnings:
+          a. Difference in revenue: $520 (Thursday's revenue) - $480 (Friday's revenue) = $40
+           b",Node7,1,2,2,4,0.17124340028735408,116,False
+" 1. Calculate the earnings for each type of tire repair on Thursday:
+           a. For truck tires: 6 * $60 = $360
+           b. For car tires: 4 * $40 = $160
+           c. Total revenue for Thursday: $360 + $160 = $520
+
+        2. Calculate the earnings for each type of tire repair on Friday:
+           a. For car tires: - Repairing 12 car tires * $40 per tire = 12 * $40 = $480
+         b. For truck tires (no repairs were made): $0
+         c. Total revenue for Friday: $480 + $0 = $480
+
+        3. Calculate the difference in revenue between the two days:
+           a. Difference in revenue: Thursday's revenue ($520",Node8,1,2,2,4,0.8832670904755046,97,False
+" 1. Calculate the earnings for each type of tire repair on Thursday:
+           a. For truck tires: 6 * $60 = $360
+           b. For car tires: 4 * $40 = $160
+           c. Total revenue for Thursday: $360 + $160 = $520
+
+        2. Calculate the earnings for each type of tire repair on Friday:
+           a. For car tires: - 12 * $40 = $480 (since no truck tires were repaired, we only need to calculate the car tire revenue)
+
+        3. Compare the total revenue from Thursday and Friday:
+           a. Thursday's revenue: $520",Node9,1,2,2,4,0.2796335130569053,62,False
+" 1. Calculate the earnings for each type of tire repair on Thursday:
+           a. For truck tires: 6 * $60 = $360
+           b. For car tires: 4 * $40 = $160
+           c. Total revenue for Thursday: $360 + $160 = $520
+
+        2. Calculate the earnings for each type of tire repair on Friday:
+           a. For car tires: 12 * $40 = $480
+           b. No truck tires were repaired, so there is no revenue from that.
+
+        3. Calculate the total revenue for Friday:
+           c. Total revenue for Friday: $480 (from car tires)
+
+        4. Compare the revenues of Thursday and Friday to",Node10,1,1,2,3,0.45390875764611993,76,False
+" 1. Calculate the earnings for each type of tire repair on Thursday:
+           a. For truck tires: 6 * $60 = $360
+           b. For car tires: 4 * $40 = $160
+           c. Total revenue for Thursday: $360 + $160 = $520
+
+        2. Calculate the earnings for each type of tire repair on Friday:
+           a. For car tires: 12 * $40 = 12 * 40 = 480 (since there were no truck tires repaired, this is only for car tires)
+
+        3. Compare the total revenue of Thursday and Friday to determine which day had higher earnings:
+           a. Thursday'",Node11,1,1,2,3,0.7037468914033751,64,False
+" 1. Calculate the earnings for each type of tire repair on Thursday:
+           a. For truck tires: 6 * $60 = $360
+           b. For car tires: 4 * $40 = $160
+           c. Total revenue for Thursday: $360 + $160 = $520
+
+        2. Calculate the earnings for each type of tire repair on Friday:
+           a. For car tires: 12 * $40 = $480
+        (since there were no truck tires repaired, this revenue will only be from car tires)
+           b. Total revenue for Friday: $480
+
+        3. Compare the total revenues on Thursday and Friday to find out which day had higher revenue:
+          a. Higher revenue day: If $520 (Thursday's revenue) is greater than $480 (Friday's revenue).
+           b. Difference in revenue: $520",Node12,1,1,2,3,0.8490748361230286,117,False
+" 1. Calculate the earnings for each type of tire repair on Thursday:
+           a. For truck tires: 6 * $60 = $360
+           b. For car tires: 4 * $40 = $160
+           c. Total revenue for Thursday: $360 + $160 = $520
+
+        2. Calculate the earnings for each type of tire repair on Friday:
+           a. For car tires: - There are 12 car tires and the mechanic charges $40 per car tire, so the revenue from these repairs is 12 * $40 = $480
+           b. For truck tires, there were no repairs done, so there's no revenue earned for them on Friday.
+           c. Total revenue for Friday: $480 (from car tires)
+
+        3. Compare the total revenues from each day to find the difference in revenue:",Node13,1,1,2,3,0.4206486180246881,105,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, let's compare the total revenues for Thursday and Friday",Node14,0,2,1,3,0.6840441607693518,45,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, we need to compare the total revenues for both days to find out which day had higher revenue.
+
+Higher revenue day: Thursday ($520) > Friday ($480)
+
+3.",Node15,0,1,1,2,0.2976658583186521,78,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, let's compare the total revenues for both days to find out which day had a higher revenue.
+
+Thursday's revenue: $520
+Friday's revenue: $480
+
+3. Finally, we will calculate the difference in revenue between the two days.
+
+Difference in revenue",Node16,0,1,1,2,0.30829957446493794,101,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, let's compare the two days to find out which day had higher revenue and how much more revenue was earned during that day.
+
+Higher revenue day (Thursday): Revenue earned = $520
+Lower revenue day (Friday): Revenue earned = $480
+Difference in revenue: Higher",Node17,1,1,2,3,0.6920725229141561,102,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+Total revenue on Friday: $480
+
+2. Now, let's compare the total revenues from Thursday and Friday to find out which day had higher revenue.
+
+Thursday",Node20,0,2,1,3,0.16982367361840556,57,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, we need to compare the total revenues for both days to find out which day had higher revenue.
+
+Higher revenue day: Thursday ($520) > Friday ($480)
+
+3. The mechanic earned more revenue on Thursday, which is the day with higher revenue.",Node21,1,2,2,4,0.3766662469920399,109,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, we need to compare the total revenues for both days to find out which day had higher revenue.
+
+Higher revenue day: Thursday ($520) > Friday ($480)
+
+3. The mechanic earned more revenue on the day with higher revenue, which was Thursday. On Thursday, they made $520 in total compared to $480 on Friday.",Node23,1,2,2,4,0.9712340479220262,100,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, we need to compare the total revenues for both days to find out which day had higher revenue.
+
+Higher revenue day: Thursday ($520) > Friday ($480)
+
+3. The mechanic earned more revenue on the day with higher revenue, which was Thursday.",Node24,1,2,2,4,0.02620782506449748,64,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, we need to compare the total revenues for both days to find out which day had higher revenue.
+
+Higher revenue day: Thursday ($520) > Friday ($480)
+
+3. The mechanic earned more revenue on Thursday, which was the day with higher revenue.",Node25,1,2,2,4,0.1632414211107731,47,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, we need to compare the total revenues for both days to find out which day had higher revenue.
+
+Higher revenue day: Thursday ($520) > Friday ($480)
+
+3. The mechanic earned more revenue on Thursday, which is the day with a higher revenue compared to Friday.",Node26,1,2,2,4,0.5038239699719137,109,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, we need to compare the total revenues for both days to find out which day had higher revenue.
+
+Higher revenue day: Thursday ($520) > Friday ($480)
+
+3. The mechanic earned more revenue on the day with higher revenue, which was Thursday.",Node27,1,2,2,4,0.47000499411431007,108,False
+" 1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.
+
+Thursday (6 truck tires + 4 car tires):
+- Truck tires: 6 * $60 = $360
+- Car tires: 4 * $40 = $160
+Total revenue on Thursday: $360 + $160 = $520
+
+Friday (12 car tires): - Car tires: 12 * $40 = $480
+        Total revenue on Friday: $480
+
+2. Now, let's compare the total revenues for both days to find out which day had a higher revenue.
+
+Thursday's revenue: $520
+Friday's revenue: $480
+
+3. Finally, we will calculate the difference in revenue between the two days.
+
+Difference in revenue (Higher revenue - Lower revenue) = ($520 - $480) = $40
+
+The mechanic earned an additional $40 on the day with higher revenue.",Node28,0,0,1,1,0.17707710047225766,53,False

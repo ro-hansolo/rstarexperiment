@@ -1,0 +1,174 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical boxes, each weighing 15 pounds, will pass over the bridge. The combined weight of the driver and the empty truck is 3755 pounds. What is the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:8, Flag:False
+['1. We need to find out how much the truck will weigh with the maximum possible load of boxes.\n2. The driver and the empty truck weigh a total of 3755 pounds.\n3. Each box weighs 15 pounds, and we want', 56, 0.6699426360304815]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:8, H:9, Flag:True
+[\"1. Determine the total weight when all boxes are loaded on the truck. To do this, we'll calculate the combined weight of all the boxes and add it to the driver and empty truck weight. The weight per box is 15 pounds, and there will be a total of 5000 / 15 = 333.33 boxes (rounded down). So, the combined weight of just the boxes is 333\", 96, 0.919347775857109]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:7, Flag:False
+[\"1. First, let's identify the important variables we need to work with. We have the bridge's capacity (5000 pounds), the combined weight of the driver and truck (3755 pounds), and the box's individual weight (15 pounds).\n        2. Next, we want to determine how many boxes can be loaded before exceeding the bridge's capacity. We know that the current load on the bridge comes from the truck + driver + boxes.\n        3. Now, let's set up an equation\", 114, 0.7671607454091812]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:8, H:9, Flag:True
+[\"1. First, let's find out how much the truck weighs when it's fully loaded with all boxes. The total weight of one box is 15 pounds, and there are 5000 / 15 = 333.33 boxes in the truck (since the bridge can carry a maximum of 5000 pounds).\n        2. Now, add the weight of the driver and the empty truck to find out the total weight of the fully loaded truck: 3755 + 333.33\", 118, 0.5462212889756043]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:6, H:8, Flag:True
+[\"1. First, let's find out how much the truck weighs when it's fully loaded with boxes. The total weight of each box is 15 pounds and there are 5000 / 15 = 333.33 boxes (rounded down to whole numbers).\n        2. Now, let's calculate the combined weight of all the boxes: 333 * 15 = 5005 pounds.\n        3. Next, we need to find out how much\", 111, 0.13058157935297787]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:10, Flag:False
+[\"1. First, let's find out how much the truck weighs without any boxes or the driver. We know that the combined weight of the driver and the empty truck is 3755 pounds. So\", 44, 0.166341368558227]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:3, H:10, Flag:False
+['1. First, we need to find out the total weight of the boxes. We know that each box weighs 15 pounds and there are multiple boxes involved. To calculate this, multiply the weight per box by the number of boxes.\n           Total', 53, 0.4595834720606795]
+Path: StartNode6" color=black shape=box]
+	Node2 -> Node7 [label=Node2Node7]
+	Node7 [label="V:1, H:9, Flag:False
+['4. Weight of box = 15 pounds (each)\n        Total weight of boxes = Number of boxes * Weight per box\n\n        Let N represent the number of boxes to be loaded onto the truck. Then, the total weight of these boxes will be:\n        5000 pounds (bridge capacity) -', 68, 0.877294553159112]
+Path: Node2Node7" color=black shape=box]
+	Node2 -> Node8 [label=Node2Node8]
+	Node8 [label="V:1, H:9, Flag:False
+['4. \n        (Total_weight_on_bridge) = Bridge_capacity\n        ((Combined_driver_and_truck_weight) + (total_boxes * box_weight)) = 5000', 49, 0.7789958434660083]
+Path: Node2Node8" color=black shape=box]
+	Node2 -> Node9 [label=Node2Node9]
+	Node9 [label="V:2, H:8, Flag:False
+['4. (bridge weight limit - combined weight of the driver and empty truck) = weight of all the boxes\n         5000 - 3755 = total box weight\n         1245 = total box weight\n        6. Now, we need to divide the', 59, 0.9239128896154514]
+Path: Node2Node9" color=black shape=box]
+	Node2 -> Node10 [label=Node2Node10]
+	Node10 [label="V:2, H:9, Flag:False
+['4. The total weight of the truck + driver + boxes = 5000 pounds (bridge limit).\n        5. So, the combined weight of the truck and driver is given by 3755 pounds. We can rewrite this equation', 53, 0.6071119131163167]
+Path: Node2Node10" color=black shape=box]
+	Node2 -> Node11 [label=Node2Node11]
+	Node11 [label="V:2, H:8, Flag:False
+['4. The combined weight of the driver and truck (3755 pounds) + the total weight of all the boxes (x * 15 pounds per box) = the maximum load on the bridge (5000 pounds).\n        5. Let x be the number of boxes we want to add. We can rewrite this equation as: 3755', 78, 0.37291175484635963]
+Path: Node2Node11" color=black shape=box]
+	Node2 -> Node12 [label=Node2Node12]
+	Node12 [label="V:1, H:8, Flag:False
+[\"4. Total weight on the bridge = Bridge's capacity (5000 pounds)\n           = Weight of driver and empty truck + Weight of loaded boxes\n           = 3755 pounds (driver and truck) + Boxes * 15 pounds (each box weighs 15 pounds)\n        5. To find the maximum number of boxes, we need to solve for the number of boxes (let\", 88, 0.3890319779503947]
+Path: Node2Node12" color=black shape=box]
+	Node2 -> Node13 [label=Node2Node13]
+	Node13 [label="V:0, H:6, Flag:False
+['4. Total weight (bridge capacity) = (combined weight of truck and driver) + (total weight of loaded boxes)\n        5. 5000 pounds = 3755 pounds + (15 pounds/box) * number_of_boxes\n        6. Subtract the combined weight of the truck and driver from both sides to isolate the term with the box weight\n        7.', 87, 0.38119916967289835]
+Path: Node2Node13" color=black shape=box]
+	Node13 -> Node14 [label=Node13Node14]
+	Node14 [label="V:5, H:2, Flag:True
+[\"8. 4245 pounds = (15 pounds/box) * number_of_boxes\n        9. Now, we need to solve for the unknown variable 'number_of_boxes'. To do this, divide both sides by 15 (the weight of one box). This will give us the total weight of all boxes in terms of the number of boxes.\n        10. 4245 pounds / 15 = number_of_boxes\n        11. 283\", 109, 0.31734918506360554]
+Path: Node13Node14" color=red shape=box]
+	Node13 -> Node15 [label=Node13Node15]
+	Node15 [label="V:4, H:8, Flag:False
+['8. 5000 - 3755 = 1245 pounds = (15 pounds/box) * number_of_boxes\n        9. Now, divide by 15 to find the number of boxes\n        10. Number_of', 59, 0.6073138101073038]
+Path: Node13Node15" color=black shape=box]
+	Node13 -> Node16 [label=Node13Node16]
+	Node16 [label="V:2, H:1, Flag:True
+[\"8. 1245 pounds = (15 pounds/box) * number_of_boxes\n        9. To solve for the unknown, divide both sides by 15 (the constant representing the individual box weight)\n         10. Number of boxes = 1245 / 15\n         11. Rounding down to the nearest whole number, we find that the truck can carry a maximum of 83 boxes without exceeding the bridge's weight limit.\", 106, 0.8996449566772384]
+Path: Node13Node16" color=red shape=box]
+	Node13 -> Node17 [label=Node13Node17]
+	Node17 [label="V:3, H:9, Flag:False
+['8. 5000 - 3755 = 1245 + (15 pounds/box) * number_of_boxes\n        9. Rearrange the equation to isolate the number of boxes\n        10. (1245', 59, 0.9038694444235368]
+Path: Node13Node17" color=black shape=box]
+	Node13 -> Node18 [label=Node13Node18]
+	Node18 [label="V:3, H:5, Flag:False
+['8. 5000 - 3755 = 1245 pounds = (15 pounds/box) * number_of_boxes\n        9. To find the unknown variable, divide by 15\n        number_of_boxes = 1245 / 15\n        10. Now calculate the result\n        number_of_boxes =', 83, 0.9040939700073324]
+Path: Node13Node18" color=black shape=box]
+	Node13 -> Node19 [label=Node13Node19]
+	Node19 [label="V:1, H:2, Flag:False
+[\"8. 4245 pounds = (15 pounds/box) * number_of_boxes\n        9. To find the number of boxes, we need to divide the remaining weight by the individual box weight\n        10. Number_of_boxes = 4245 pounds / 15 pounds/box\n        11. Number_of_boxes = 283\n        12. Therefore, the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit is 2\", 116, 0.3435857966363247]
+Path: Node13Node19" color=black shape=box]
+	Node13 -> Node20 [label=Node13Node20]
+	Node20 [label="V:5, H:2, Flag:True
+['8. 4245 pounds = (15 pounds/box) * number_of_boxes\n        9. Now, we need to divide both sides by 15 to get the number of boxes\n        10. Number_of_boxes = 4245 / 15\n        11. Finally, calculate the result\n        12. Number_of_boxes ≈ 283\n\nSo, a maximum of 283 boxes can be loaded onto', 106, 0.4242663479830394]
+Path: Node13Node20" color=red shape=box]
+	Node19 -> Node21 [label=Node19Node21]
+	Node21 [label="V:7, H:10, Flag:True
+[\"13. This result assumes that all boxes are placed on the truck equally and evenly distributed. If the boxes aren't evenly distributed or some weigh more than others, this number might change.\", 44, 0.6139839818649407]
+Path: Node19Node21" color=red shape=box]
+	Node19 -> Node22 [label=Node19Node22]
+	Node22 [label="V:7, H:10, Flag:True
+[\"13. However, it's important to note that this assumes all boxes are identical in weight and are placed evenly on the truck. If there are variations in box weights or distribution, the actual number of boxes might change.\", 87, 0.17495446430797856]
+Path: Node19Node22" color=red shape=box]
+	Node19 -> Node23 [label=Node19Node23]
+	Node23 [label="V:7, H:10, Flag:True
+['13. Boxes are 283 in total, but with 2 boxes being reserved for the driver and empty truck, we can load only 281 boxes on the truck without going over the bridge limit.', 49, 0.7179895186217892]
+Path: Node19Node23" color=red shape=box]
+	Node19 -> Node24 [label=Node19Node24]
+	Node24 [label="V:7, H:10, Flag:True
+[\"13. However, it's important to note that this calculation assumes all boxes are identical and have a uniform weight of 15 pounds each. If there are different weights or sizes among the boxes, the actual number of boxes might change accordingly.\", 67, 0.019794220888492253]
+Path: Node19Node24" color=red shape=box]
+	Node19 -> Node25 [label=Node19Node25]
+	Node25 [label="V:7, H:10, Flag:True
+['13. We should ensure to have only this many boxes on the truck during its passage over the wooden bridge.', 68, 0.8388424608159077]
+Path: Node19Node25" color=red shape=box]
+	Node19 -> Node26 [label=Node19Node26]
+	Node26 [label="V:7, H:10, Flag:True
+['13. Remember that this calculation assumes all boxes are identical and have a weight of 15 pounds each. If there were different weights or sizes of boxes, the calculations would need to be adjusted accordingly.', 100, 0.1763381815897802]
+Path: Node19Node26" color=red shape=box]
+	Node19 -> Node27 [label=Node19Node27]
+	Node27 [label="V:7, H:10, Flag:True
+[\"13. This means that only 283 boxes can be loaded onto the truck without causing it to go over the bridge's capacity.\", 92, 0.40129785732323686]
+Path: Node19Node27" color=red shape=box]
+	Node0 -> Node28 [label=Node0Node28]
+	Node28 [label="V:3, H:1, Flag:False
+[\"to know the maximum number that can be loaded without exceeding the weight limit.\n4. The bridge's capacity is 5000 pounds, so we need to deduct the weight of the driver and truck from this amount to find out how much load is left for boxes.\n5. Available load for the boxes = Bridge Capacity - Weight of Driver + Truck Empty Weight = 5000 - 3755 + 0 = 1245 pounds.\", 105, 0.7900835182867443]
+Path: Node0Node28" color=black shape=box]
+	Node0 -> Node29 [label=Node0Node29]
+	Node29 [label="V:3, H:2, Flag:False
+[\"to know the maximum number of boxes that can be loaded while not exceeding the bridge's limit.\n4. A full truck would have all the 5000-pound limit from the bridge used for carrying the weight of the boxes only. The driver and the empty truck still need their share of the weight limit.\n5. If we subtract the combined weight of the driver and the empty truck (\", 86, 0.6735418352485135]
+Path: Node0Node29" color=black shape=box]
+	Node0 -> Node30 [label=Node0Node30]
+	Node30 [label="V:8, H:9, Flag:False
+[\"3.a. To calculate the weight of all the boxes: Number of boxes * Weight per box = (Total boxes) * 15\n4. We need to find out how many boxes can be loaded while still being under the bridge's weight limit of 5000 pounds.\n5. The current combined weight of driver, truck, and boxes is 375\", 80, 0.4594549884503566]
+Path: Node0Node30" color=black shape=box]
+	Node0 -> Node31 [label=Node0Node31]
+	Node31 [label="V:1, H:4, Flag:False
+[\"to know how many boxes can be put on the truck without exceeding the bridge's weight limit (5000 pounds).\n4. We need to add the weight of the boxes to the driver and empty truck's combined weight to get the total weight with maximum loaded boxes.\n5.\", 62, 0.9301691190372535]
+Path: Node0Node31" color=black shape=box]
+	Node0 -> Node32 [label=Node0Node32]
+	Node32 [label="V:10, H:10, Flag:True
+[\"to fill it up to the maximum without exceeding the bridge's limit.\n4. We need to find out how many boxes make up 5000 pounds.\n5. To do this, divide the total weight of the bridge (5000 pounds) by the weight of each box (15 pounds).\n6. 5000 / 15 = 333.33 (rounded to the nearest whole number)\n7. So, 333\", 106, 0.5328203587640169]
+Path: Node0Node32" color=red shape=box]
+	Node0 -> Node33 [label=Node0Node33]
+	Node33 [label="V:1, H:2, Flag:False
+[\"to fill it as much as possible without exceeding the bridge's limit.\n4. We know that the bridge can carry no more than 5000 pounds.\n5. To find out how many boxes we can load, we need to subtract the weight of the driver and empty truck from the bridge's limit: 5000 - 3755 = 1245 pounds remaining for the boxes.\n6. Now,\", 97, 0.26779820467983373]
+Path: Node0Node33" color=black shape=box]
+	Node0 -> Node34 [label=Node0Node34]
+	Node34 [label="V:2, H:1, Flag:False
+[\"to maximize the number of boxes on the truck without exceeding the bridge's weight limit.\n4. The bridge can carry up to 5000 pounds.\n5. To find out how much the truck will weigh with all boxes loaded, add the driver and empty truck weight (3755 pounds) to the combined weight of all boxes: \n         (3755 pounds + (number of boxes * 15 pounds)) <= 5000 pounds\n6. Let's assume a variable 'x'\", 114, 0.38911031338281366]
+Path: Node0Node34" color=black shape=box]
+	Node33 -> Node35 [label=Node33Node35]
+	Node35 [label="V:1, H:2, Flag:1
+['6a. Divide the remaining weight by the box weight: 1245 / 15 = 83 boxes.\n        6b. Round down to account for possible rounding errors when loading boxes onto the truck: 83 - 1 = 82 boxes.\n7', 63, 0.6089339716877592]
+Path: Node33Node35" color=red shape=box]
+	Node33 -> Node36 [label=Node33Node36]
+	Node36 [label="V:1, H:1, Flag:0
+[\"a. We know that each box weighs 15 pounds.\n         b. To find out how many boxes can be loaded without exceeding the bridge's limit, we need to divide the remaining weight by the weight of one box\", 49, 0.313735711407091]
+Path: Node33Node36" color=black shape=box]
+	Node33 -> Node37 [label=Node33Node37]
+	Node37 [label="V:1, H:1, Flag:0
+['- We know each box weighs 15 pounds, so to find out how many boxes we can load before reaching the weight limit, we need to divide the remaining weight by the weight of a single box', 42, 0.5158695455653952]
+Path: Node33Node37" color=black shape=box]
+	Node33 -> Node38 [label=Node33Node38]
+	Node38 [label="V:0, H:0, Flag:0
+['we know the box weighs 15 pounds each and the question is about how many boxes can be loaded without exceeding the weight limit on the bridge. Therefore, we need to divide the remaining weight by the weight of one box: 1245 / 15 = 83 boxes.\n7. So, we can load a maximum of 83 boxes', 78, 0.8136417850571799]
+Path: Node33Node38" color=green shape=box]
+	Node33 -> Node39 [label=Node33Node39]
+	Node39 [label="V:1, H:1, Flag:0
+[\"6a. We know each box weighs 15 pounds.\n        6b. To find out how many boxes can be loaded without exceeding the bridge's limit, we need to divide the remaining weight by the weight of one box: 1245 / 15 = 83 boxes.\n7. Therefore, the maximum number of boxes that can be loaded onto the truck while not exceeding the bridge's weight\", 92, 0.1621033990159444]
+Path: Node33Node39" color=black shape=box]
+	Node33 -> Node40 [label=Node33Node40]
+	Node40 [label="V:0, H:0, Flag:0
+[\"a. We know each box weighs 15 pounds.\n         b. To find out how many boxes can be loaded without exceeding the bridge's limit, we need to divide the remaining weight by the weight of one box: 1245 / 15 = 83 boxes.\n7. So, the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit is 83 boxes.\", 104, 0.029168169172891667]
+Path: Node33Node40" color=green shape=box]
+	Node33 -> Node41 [label=Node33Node41]
+	Node41 [label="V:0, H:0, Flag:0
+[\"6a. We know that each box weighs 15 pounds.\n        6b. To find out how many boxes can be loaded without exceeding the limit, we need to divide the remaining weight by the weight of one box: 1245 / 15 = 83 boxes.\n7. So, the maximum number of boxes that can be loaded onto the truck while not exceeding the bridge's weight limit is 83 boxes.\", 113, 0.18140852545543207]
+Path: Node33Node41" color=green shape=box]
+}

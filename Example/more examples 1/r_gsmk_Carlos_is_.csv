@@ -1,0 +1,24 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens
+" 1. First, let's determine how much Carlos spends in total on planting the tree and maintaining it annually. The initial cost is $90 for planting, and each year, there are additional costs of $",Node0,2,8,2,10,0.25767891673876997,46
+" 1. First, let's determine the total cost of planting the lemon tree. The tree costs $90 to plant.
+        2. Next, we need to calculate the annual revenue from selling lemons. Each",Node1,2,8,2,10,0.20296753151859293,46
+" 1. First, let's determine the total cost of planting the lemon tree, which is $90.
+        2. Each year, we know the lemon tree will grow 7 lemons and earn him $1.5 per lemon. So, we can calculate the revenue from selling lemons by multiplying the number of le",Node2,2,7,2,9,0.560659344072796,70
+" 1. Calculate the total cost of planting the lemon tree: The tree costs $90 to plant.
+        2. Determine the annual profit: Each year, the lemon tree produces 7 lemons and sells them for $1.5 each. The income from selling these lemons is $1.5 * 7",Node3,1,6,1,7,0.6248523997413169,70
+" 1. First, let's determine how much Carlos will earn from selling lemons in one year. He grows 7 lemons per year and sells them for $1.5 each. So, his earnings are 7 * $1.5 = $10.5 per year.
+        2. Now, we need",Node4,1,7,1,8,0.36226195320983656,69
+" 1. First, let's calculate the total cost of planting the lemon tree. The tree costs $90 to plant.
+        2. Next, we need to determine the annual income from selling lemons. Each year, the tree grows 7 lemons and sells them for $1.5 each. So, the annual income is 7 *",Node5,2,7,2,9,0.018803723225871316,75
+" 1. First, let's calculate the total cost of planting the lemon tree. The tree costs $90 to plant.
+        2. Next, we need to determine",Node6,4,9,4,13,0.062365379421879474,37
+" 1. First, let's determine the annual income from the lemon tree. Carlos grows 7 lemons",Node7,5,9,5,14,0.3945247846141565,22
+" 1. Calculate the annual income from selling lemons: 7 lemons * $1.5 per lemon = $10.5 per year.
+        2. Subtract the cost of watering and feeding the tree: $10.5 - $3 = $7.5 per year.
+        3. Find out how many years it will",Node9,0,5,0,5,0.4564721833001617,75
+" 1. Calculate the annual income from selling lemons: 7 lemons * $1.5 per lemon = $10.5 per year.
+        2. Subtract the cost of watering and feeding the tree: $10.5 - $3 = $7.5 per year.
+        3. Find out how many years it will 4. take to cover the initial planting cost ($90) by comparing the annual earnings with the initial",Node12,2,9,2,11,0.46557868605479225,22
+" 1. Calculate the annual income from selling lemons: 7 lemons * $1.5 per lemon = $10.5 per year.
+        2. Subtract the cost of watering and feeding the tree: $10.5 - $3 = $7.5 per year.
+        3. Find out how many years it will 4. take for this income to cover the initial planting cost ($90): $90 / $7.5 per year = 12 years.",Node13,1,0,1,1,0.21399868721255821,35

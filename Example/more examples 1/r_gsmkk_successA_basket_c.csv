@@ -1,0 +1,73 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We know there are a total of 25 oranges in the basket.
+        2. Out of these, 1 orange is bad, so we need to remove it from the count. This leaves us with 24 oranges.
+        3. Now, we have 20% of the oranges being unripe. To find out how many are unripe, we multiply 24 by 0.2 (20% as a decimal). So, 24 *",Node0,1,7,1,8,0.31998192455312546,108,False
+" 1. First, let's find out how many oranges are not good (bad, unripe, and sour). We know there is 1 bad orange, 1/5 of them are unripe (20%), which equals to 20/100 * 25 = 5 unripe oranges, and there are 2 sour oranges. So, we have a total of 1 + 5 + 2 =",Node1,1,8,1,9,0.3869057808767229,99,False
+" 1. First, let's find out how many bad, unripe, and sour oranges we have in total. Bad = 1, Unripe = (0.2 * 25) = 5, Sour = 2.
+        2. Add these together: Bad + Unripe + Sour",Node2,1,8,1,9,0.6855768023516929,70,False
+" 1. First, let's find out how many oranges are bad, unripe, and sour separately.
+        Bad orange = 1
+        Unripe oranges (as a percentage of total oranges) * Total oranges = Unripe oranges
+        Un",Node4,2,9,2,11,0.5584145424504195,60,False
+" 1. First, let's find out how many oranges are not good. We know there are 25 total oranges in the basket and we have a bad one, some unripe",Node5,2,9,2,11,0.49706064834636376,41,False
+" 1. First, let's identify the number of bad oranges: 25 oranges - 1 bad = 24 good oranges (assuming the bad orange is not counted as a good one).
+        2. Now, we need to find out how many unripe oranges there are: 24 good oranges * 0.2 (20% of them being unripe) = 4.8 unri",Node6,5,6,5,11,0.34598329284946394,95,False
+" 1. We know there are a total of 25 oranges in the basket.
+        2. Out of these, 1 orange is bad, so we need to remove it from the count. This leaves us with 24 oranges.
+        3. Now, we have 20% of the oranges being unripe. To find out how many are unripe, we multiply 24 by 0.2 (20% as a decimal). So, 24 * 0.2 = 4.8. Round this to the nearest whole number which is 5 unripe oranges.
+        4. We also have 2 sour oranges that need to be removed from the count. This leaves us with 24 - 2 (sour) = 22 remaining oranges.
+        5. Finally, we have the rest of the oranges which are good. Since we started with 25 oranges and after removing all the bad ones, we end up with 22 good ones.
+        So",Node10,2,3,3,6,0.5682178145078568,117,False
+" 1. We know there are a total of 25 oranges in the basket.
+        2. Out of these, 1 orange is bad, so we need to remove it from the count. This leaves us with 24 oranges.
+        3. Now, we have 20% of the oranges being unripe. To find out how many are unripe, we multiply 24 by 0.2 (20% as a decimal). So, 24 * 0.2 = 4.8. Round this to the nearest whole number which is 5 unripe oranges.
+        4. We also have 2 sour oranges that need to be removed from the count. This leaves us with 24 - 2 (sour) = 22 remaining oranges.
+        5. Finally, we have the rest of the oranges which are good. Since we started with 25 oranges and after removing all the bad ones, we end up with 22 good ones.
+        So 6. There are a total of 22 good oranges in the basket.",Node16,2,1,5,6,0.7378156185106384,107,False
+" 1. We know there are a total of 25 oranges in the basket.
+        2. Out of these, 1 orange is bad, so we need to remove it from the count. This leaves us with 24 oranges.
+        3. Now, we have 20% of the oranges being unripe. To find out how many are unripe, we multiply 24 by 0.2 (20% as a decimal). So, 24 * 0.2 = 4.8. Round this to the nearest whole number which is 5 unripe oranges.
+        4. We also have 2 sour oranges that need to be removed from the count. This leaves us with 24 - 2 (sour) = 22 remaining oranges.
+        5. Finally, we have the rest of the oranges which are good. Since we started with 25 oranges and after removing all the bad ones, we end up with 22 good ones.
+        So 22 good oranges are in the basket.",Node17,2,1,5,6,0.40040231104804125,78,False
+" 1. We know there are a total of 25 oranges in the basket.
+        2. Out of these, 1 orange is bad, so we need to remove it from the count. This leaves us with 24 oranges.
+        3. Now, we have 20% of the oranges being unripe. To find out how many are unripe, we multiply 24 by 0.2 (20% as a decimal). So, 24 * 0.2 = 4.8. Round this to the nearest whole number which is 5 unripe oranges.
+        4. We also have 2 sour oranges that need to be removed from the count. This leaves us with 24 - 2 (sour) = 22 remaining oranges.
+        5. Finally, we have the rest of the oranges which are good. Since we started with 25 oranges and after removing all the bad ones, we end up with 22 good ones.
+        So 22 good oranges are in the basket.",Node18,2,1,5,6,0.36022202465151665,86,False
+" 1. We know there are a total of 25 oranges in the basket.
+        2. Out of these, 1 orange is bad, so we need to remove it from the count. This leaves us with 24 oranges.
+        3. Now, we have 20% of the oranges being unripe. To find out how many are unripe, we multiply 24 by 0.2 (20% as a decimal). So, 24 * 0.2 = 4.8. Round this to the nearest whole number which is 5 unripe oranges.
+        4. We also have 2 sour oranges that need to be removed from the count. This leaves us with 24 - 2 (sour) = 22 remaining oranges.
+        5. Finally, we have the rest of the oranges which are good. Since we started with 25 oranges and after removing all the bad ones, we end up with 22 good ones.
+        So 22 oranges are good in the basket.",Node19,2,1,5,6,0.33663085152621297,113,False
+" 1. First, let's find out how many bad, unripe, and sour oranges we have in total. Bad = 1, Unripe = (0.2 * 25) = 5, Sour = 2.
+        2. Add these together: Bad + Unripe + Sour 3. Bad + Unripe + Sour = 1 + 5 + 2 = 8
+        4. Now we have 25 oranges in total and 8 of them are not good (bad, unripe, sour). So to find the good oranges, subtract this number from the total: 25 - 8
+        5",Node56,1,1,2,3,0.8555470481343638,78,False
+" 1. First, let's find out how many bad, unripe, and sour oranges we have in total. Bad = 1, Unripe = (0.2 * 25) = 5, Sour = 2.
+        2. Add these together: Bad + Unripe + Sour 3. Bad + Unripe + Sour = 1 + 5 + 2 = 8 oranges.
+        4. Now, we know there are 25 oranges in total and",Node57,2,3,3,6,0.017943286812998394,44,False
+" 1. First, let's find out how many bad, unripe, and sour oranges we have in total. Bad = 1, Unripe = (0.2 * 25) = 5, Sour = 2.
+        2. Add these together: Bad + Unripe + Sour 3. Bad + Unripe + Sour = 1 + 5 + 2 = 8 oranges in total that are not good.
+        4. Now, we know there are 25 oranges in the",Node58,2,3,3,6,0.21272716417729787,48,False
+" 1. First, let's find out how many bad, unripe, and sour oranges we have in total. Bad = 1, Unripe = (0.2 * 25) = 5, Sour = 2.
+        2. Add these together: Bad + Unripe + Sour 3. Bad + Unripe + Sour = 1 + 5 + 2 = 8 oranges.
+        4. Now, we know that there are 25 oranges in total and 8 of them are bad, unripe, or sour. To find the number of good oranges, subtract these from the total: Total - (Bad + Unripe + Sour) = 25 -",Node59,1,2,2,4,0.21063678793523533,91,False
+" 1. First, let's find out how many bad, unripe, and sour oranges we have in total. Bad = 1, Unripe = (0.2 * 25) = 5, Sour = 2.
+        2. Add these together: Bad + Unripe + Sour 3. Bad + Unripe + Sour = 1 + 5 + 2 = 8 oranges
+        4. Now, we know there are 25 oranges in total and 8 are bad, unripe, or sour. To find the number of good oranges, subtract the bad ones from the total: Total - Bad = 25 - 8 =",Node60,1,1,2,3,0.47573895692434154,83,False
+" 1. First, let's find out how many bad, unripe, and sour oranges we have in total. Bad = 1, Unripe = (0.2 * 25) = 5, Sour = 2.
+        2. Add these together: Bad + Unripe + Sour 3. We get the sum of all non-good oranges: 1 + 5 + 2 = 8.
+        4. To find out how many good oranges there are, we subtract this total from the initial number of oranges in the basket: Good = Total - Non-Good
+        5. Now, calculate Good = 25 - 8 =",Node61,1,1,2,3,0.42607444802657046,81,False
+" 1. First, let's find out how many bad, unripe, and sour oranges we have in total. Bad = 1, Unripe = (0.2 * 25) = 5, Sour = 2.
+        2. Add these together: Bad + Unripe + Sour 3. Bad + Unripe + Sour = 1 + 5 + 2 = 8 oranges.
+        4. Now, we know there are 8 oranges that aren't good. To find the number of good oranges, subtract this from the total number of oranges: Total Oranges - Bad - Unripe - Sour.
+        5. Total Oranges = 25 (given), so Total Oranges - Bad - Unripe - Sour",Node62,1,2,2,4,0.4033851167027409,106,False
+" 1. First, let's find out how many bad, unripe, and sour oranges we have in total. Bad = 1, Unripe = (0.2 * 25) = 5, Sour = 2.
+        2. Add these together: Bad + Unripe + Sour 3. Bad + Unripe + Sour = 1 + 5 + 2 = 8
+        4. Now we have 25 oranges in total and 8 of them are not good (bad, unripe, sour). So to find the good oranges, subtract this number from the total: 25 - 8
+        5 6. Good oranges = Total oranges - Not good oranges = 25 - 8 = 17
+        7. There are 17 good oranges among the basket of 25 oranges.",Node63,0,0,2,2,0.9361286527509114,102,False

@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A new program had 60 downloads in the first month. The number of downloads in the second month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:6, H:10, Flag:False
+['1. First month downloads: 60\n        2. Second', 15, 0.5344425450723727]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:6, H:10, Flag:False
+[\"1. First month's downloads: 60\n        2. Second month's downloads (three times the first month):\", 30, 0.6521131394912019]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:4, H:8, Flag:False
+['1. Calculate the number of downloads for the second month: Three times the first-month downloads (60) is 3 * 60 = 180.\n        2. Calculate the reduced', 47, 0.6106156731600088]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:4, Flag:False
+['1. In the first month, there were 60 downloads.\n        2. The second month had three times as many downloads as the first month (3 * 60 = 180).\n        3. In the third month, after a 30% reduction in downloads, we need to find', 69, 0.917378239725864]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:4, Flag:False
+['1. First month: 60 downloads\n        2. Second month: 3 times more than the first month (60 * 3 = 180 downloads)\n        3. Third month: Reduced by 30% from the second month (180 - 180 *', 67, 0.11977261051868648]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:6, H:10, Flag:False
+[\"1. Calculate the number of downloads for the second month. We are given that there were 60 downloads in the first month and the second month had 3 times as many as the first month. So, to find the second month's\", 53, 0.6954017293683843]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:10, H:10, Flag:True
+['1. In the first month, there were 60 downloads.\n        2. In the second month, there were three times as many downloads as in the first', 36, 0.3392040602977785]
+Path: StartNode6" color=red shape=box]
+	Node3 -> Node7 [label=Node3Node7]
+	Node7 [label="V:2, H:3, Flag:False
+['30% of 180 and then subtract it from 180. So, 0.3 * 180 = 54 and 180', 39, 0.16839034235599049]
+Path: Node3Node7" color=black shape=box]
+	Node3 -> Node8 [label=Node3Node8]
+	Node8 [label="V:10, H:10, Flag:True
+['30% of 180 (0.3 * 18', 16, 0.20348435547611732]
+Path: Node3Node8" color=black shape=box]
+	Node3 -> Node9 [label=Node3Node9]
+	Node9 [label="V:2, H:9, Flag:False
+[\"70% of the original number of downloads in the second month (180) to know the new number of downloads for this month (180 * 0.7 = 126). Then, we'll subtract 30\", 55, 0.9537346224611593]
+Path: Node3Node9" color=black shape=box]
+	Node3 -> Node10 [label=Node3Node10]
+	Node10 [label="V:6, H:5, Flag:True
+[\"90% of the second month's downloads: (1 - 0.3) * 180 = 126 downloads.\n        Now, let's\", 40, 0.4909814014210211]
+Path: Node3Node10" color=black shape=box]
+	Node3 -> Node11 [label=Node3Node11]
+	Node11 [label="V:1, H:1, Flag:False
+[\"30% of 180 (0.3 * 180 = 54) and then subtract it from the original number of downloads in the second month (180 - 54 = 126).\n        4. Now, let's add up all the downloads for each month\", 70, 0.19268244191165096]
+Path: Node3Node11" color=black shape=box]
+	Node3 -> Node12 [label=Node3Node12]
+	Node12 [label="V:4, H:10, Flag:True
+['30% of 180 and then subtract it from the original number: (180 * 0.3) = 54, so 1', 36, 0.33980699372820167]
+Path: Node3Node12" color=black shape=box]
+	Node3 -> Node13 [label=Node3Node13]
+	Node13 [label="V:9, H:10, Flag:True
+['30% of the total number of downloads in the second month (180), and then subtract it from the initial amount (0.3 *', 33, 0.5825578578215023]
+Path: Node3Node13" color=black shape=box]
+	Node4 -> Node14 [label=Node4Node14]
+	Node14 [label="V:0, H:0, Flag:False
+['0.3 = 126 downloads)\n        Now we add up these downloads for all three months to find the total number: 60 + 180 + 126 = 366 downloads', 50, 0.9315590840086676]
+Path: Node4Node14" color=green shape=box]
+	Node4 -> Node15 [label=Node4Node15]
+	Node15 [label="V:1, H:2, Flag:False
+['30% = 180 - 54 =', 14, 0.07796323663138072]
+Path: Node4Node15" color=black shape=box]
+	Node4 -> Node16 [label=Node4Node16]
+	Node16 [label="V:3, H:2, Flag:True
+['0.3 = 180 - 54 = 126 download', 18, 0.0423287359539789]
+Path: Node4Node16" color=red shape=box]
+	Node4 -> Node17 [label=Node4Node17]
+	Node17 [label="V:1, H:2, Flag:False
+['0.3 = 180 - 54 =', 13, 0.6733509467069312]
+Path: Node4Node17" color=black shape=box]
+	Node4 -> Node18 [label=Node4Node18]
+	Node18 [label="V:1, H:1, Flag:False
+[\"30/100 = 126 downloads)\n        Now, let's add up all these downloads for the three months:\n       First month + Second month + Third\", 41, 0.5496882980368645]
+Path: Node4Node18" color=black shape=box]
+	Node4 -> Node19 [label=Node4Node19]
+	Node19 [label="V:1, H:1, Flag:False
+[\"0.3 = 126 downloads)\n        Now, let's add all these downloads to\", 24, 0.6538969043402544]
+Path: Node4Node19" color=black shape=box]
+	Node4 -> Node20 [label=Node4Node20]
+	Node20 [label="V:4, H:2, Flag:True
+[\"0.3 = 126 downloads)\n        Now, let's add the total downloads for all three months together:\n        First month + Second month + Third month = 60 + 180 + 126 = 36\", 57, 0.5935457287593516]
+Path: Node4Node20" color=red shape=box]
+}

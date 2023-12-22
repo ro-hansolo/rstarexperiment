@@ -1,0 +1,146 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A mechanic charges different rates to repair the tires of trucks and cars.  For each truck tire that is repaired, the mechanic will charge $60 and for each car tire that is repaired, the mechanic will charge $40.  On Thursday, the mechanic repairs 6 truck tires and 4 car tires.  On Friday, the mechanic repairs 12 car tries and doesn't repair any truck tires.  How much more revenue did the mechanic earn on the day with higher revenue? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:9, Flag:False
+['1. Calculate the total revenue earned by the mechanic from repairing truck tires on Thursday.\n           The mechanic charges $60 for each truck tire repaired, and he repaired 6 truck tires.\n           Total revenue from truck tires on Thursday = 6 (truck tires) * $60 (per truck tire', 70, 0.5519151270083756]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:3, Flag:False
+[\"1. First, let's determine the earnings from each type of tire repair for both days. \n        Thursday: 6 truck tires * $60 = $360 and 4 car tires * $40 = $160 (total Thursday earnings)\n        Friday: 12 car tires * $40 = $480 (Friday earnings)\n        \n        2. Now, let's calculate the difference between the revenue on the two days to find out which one had a higher revenue.\n        Hig\", 114, 0.8803398151242602]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:7, H:9, Flag:False
+['1. Identify the given charges for truck and car tire repairs: Truck tire repair cost - $60; Car tire repair cost - $40.\n        2. Calculate the total earnings per', 43, 0.5647795774888213]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:2, Flag:False
+[\"1. First, let's calculate the total revenue earned by the mechanic for each type of tire repair on Thursday and Friday separately.\n\nThursday (6 truck tires + 4 car tires):\n- Truck tires: 6 * $60 = $360\n- Car tires: 4 * $40 = $160\nTotal revenue on Thursday: $360 + $160 = $520\n\nFriday (12 car tires):\", 106, 0.03854406112075304]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:6, H:8, Flag:False
+[\"1. Firstly, let's calculate the total revenue from Thursday's work. For truck tires: 6 * $60 = $360 and for car tires: 4\", 40, 0.5446888003221825]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:2, Flag:False
+[\"1. First, let's calculate the revenue earned by the mechanic for each type of tire repair on both days.\n           Thursday: Truck tires - 6 * $60 = $360; Car tires - 4 * $40 = $160\n           Friday: Car tires - 12 * $40 = $480 (no truck tires repaired, so no revenue from them)\", 92, 0.3465013634366736]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:1, Flag:False
+['1. Calculate the earnings for each type of tire repair on Thursday:\n           a. For truck tires: 6 * $60 = $360\n           b. For car tires: 4 * $40 = $160\n           c. Total revenue for Thursday: $360 + $160 = $520\n\n        2. Calculate the earnings for each type of tire repair on Friday:\n           a. For car tires:', 103, 0.5240023958082984]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:1, H:2, Flag:False
+[\"12 * $40 = 12 * 40 = $480\n           b. No truck tires were repaired, so there is no revenue from them.\n           c. Total revenue for Friday: $480 (from car tires)\n\n        3. Compare the total revenues of both days to find the difference in earnings:\n          a. Difference in revenue: $520 (Thursday's revenue) - $480 (Friday's revenue) = $40\n           b\", 116, 0.17124340028735408]
+Path: Node6Node7" color=black shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:1, H:2, Flag:False
+[\"- Repairing 12 car tires * $40 per tire = 12 * $40 = $480\n         b. For truck tires (no repairs were made): $0\n         c. Total revenue for Friday: $480 + $0 = $480\n\n        3. Calculate the difference in revenue between the two days:\n           a. Difference in revenue: Thursday's revenue ($520\", 97, 0.8832670904755046]
+Path: Node6Node8" color=black shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:1, H:2, Flag:False
+[\"- 12 * $40 = $480 (since no truck tires were repaired, we only need to calculate the car tire revenue)\n\n        3. Compare the total revenue from Thursday and Friday:\n           a. Thursday's revenue: $520\", 62, 0.2796335130569053]
+Path: Node6Node9" color=black shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:1, H:1, Flag:False
+['12 * $40 = $480\n           b. No truck tires were repaired, so there is no revenue from that.\n\n        3. Calculate the total revenue for Friday:\n           c. Total revenue for Friday: $480 (from car tires)\n\n        4. Compare the revenues of Thursday and Friday to', 76, 0.45390875764611993]
+Path: Node6Node10" color=black shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:1, H:1, Flag:False
+[\"12 * $40 = 12 * 40 = 480 (since there were no truck tires repaired, this is only for car tires)\n\n        3. Compare the total revenue of Thursday and Friday to determine which day had higher earnings:\n           a. Thursday'\", 64, 0.7037468914033751]
+Path: Node6Node11" color=black shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:1, H:1, Flag:False
+[\"12 * $40 = $480\n        (since there were no truck tires repaired, this revenue will only be from car tires)\n           b. Total revenue for Friday: $480\n\n        3. Compare the total revenues on Thursday and Friday to find out which day had higher revenue:\n          a. Higher revenue day: If $520 (Thursday's revenue) is greater than $480 (Friday's revenue).\n           b. Difference in revenue: $520\", 117, 0.8490748361230286]
+Path: Node6Node12" color=black shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:1, H:1, Flag:False
+[\"- There are 12 car tires and the mechanic charges $40 per car tire, so the revenue from these repairs is 12 * $40 = $480\n           b. For truck tires, there were no repairs done, so there's no revenue earned for them on Friday.\n           c. Total revenue for Friday: $480 (from car tires)\n\n        3. Compare the total revenues from each day to find the difference in revenue:\", 105, 0.4206486180246881]
+Path: Node6Node13" color=black shape=box]
+	Node3 -> Node14 [label=Node3Node14]
+	Node14 [label="V:0, H:2, Flag:False
+[\"- Car tires: 12 * $40 = $480\n        Total revenue on Friday: $480\n\n2. Now, let's compare the total revenues for Thursday and Friday\", 45, 0.6840441607693518]
+Path: Node3Node14" color=black shape=box]
+	Node3 -> Node15 [label=Node3Node15]
+	Node15 [label="V:0, H:1, Flag:False
+['- Car tires: 12 * $40 = $480\n        Total revenue on Friday: $480\n\n2. Now, we need to compare the total revenues for both days to find out which day had higher revenue.\n\nHigher revenue day: Thursday ($520) > Friday ($480)\n\n3.', 78, 0.2976658583186521]
+Path: Node3Node15" color=black shape=box]
+	Node3 -> Node16 [label=Node3Node16]
+	Node16 [label="V:0, H:1, Flag:False
+[\"- Car tires: 12 * $40 = $480\n        Total revenue on Friday: $480\n\n2. Now, let's compare the total revenues for both days to find out which day had a higher revenue.\n\nThursday's revenue: $520\nFriday's revenue: $480\n\n3. Finally, we will calculate the difference in revenue between the two days.\n\nDifference in revenue\", 101, 0.30829957446493794]
+Path: Node3Node16" color=black shape=box]
+	Node3 -> Node17 [label=Node3Node17]
+	Node17 [label="V:1, H:1, Flag:False
+[\"- Car tires: 12 * $40 = $480\n        Total revenue on Friday: $480\n\n2. Now, let's compare the two days to find out which day had higher revenue and how much more revenue was earned during that day.\n\nHigher revenue day (Thursday): Revenue earned = $520\nLower revenue day (Friday): Revenue earned = $480\nDifference in revenue: Higher\", 102, 0.6920725229141561]
+Path: Node3Node17" color=black shape=box]
+	Node3 -> Node18 [label=Node3Node18]
+	Node18 [label="V:8, H:10, Flag:True
+[\"- Car tires: 12 * $40 = $480\nTotal revenue on Friday: $480\n\n2. Now, let's find the difference in revenue between the two days with higher revenue.\nDifference in revenue: Higher revenue day (Friday) total revenue - Lower revenue day (Thursday) total revenue\nDifference in revenue = $480 - $520 = -$40\n\n3. The mechanic earned $40 less on the day with higher revenue, which is Friday\", 116, 0.4333267457457354]
+Path: Node3Node18" color=red shape=box]
+	Node3 -> Node19 [label=Node3Node19]
+	Node19 [label="V:5, H:9, Flag:True
+['- Car tires: 12 * $40 = $480\n        Total revenue on Friday: $480\n\n2. Now, we need to find the difference in revenue between these two days with higher revenue.\n\nDifference in revenue = Revenue on day with higher revenue - Rev', 65, 0.4655567614704501]
+Path: Node3Node19" color=red shape=box]
+	Node3 -> Node20 [label=Node3Node20]
+	Node20 [label="V:0, H:2, Flag:False
+[\"- Car tires: 12 * $40 = $480\nTotal revenue on Friday: $480\n\n2. Now, let's compare the total revenues from Thursday and Friday to find out which day had higher revenue.\n\nThursday\", 57, 0.16982367361840556]
+Path: Node3Node20" color=black shape=box]
+	Node15 -> Node21 [label=Node15Node21]
+	Node21 [label="V:1, H:2, Flag:False
+['The mechanic earned more revenue on Thursday, which is the day with higher revenue.', 109, 0.3766662469920399]
+Path: Node15Node21" color=black shape=box]
+	Node15 -> Node22 [label=Node15Node22]
+	Node22 [label="V:7, H:9, Flag:True
+['The mechanic earned an additional $40 on the day with higher revenue (Thursday).', 98, 0.3135993936804464]
+Path: Node15Node22" color=red shape=box]
+	Node15 -> Node23 [label=Node15Node23]
+	Node23 [label="V:1, H:2, Flag:False
+['The mechanic earned more revenue on the day with higher revenue, which was Thursday. On Thursday, they made $520 in total compared to $480 on Friday.', 100, 0.9712340479220262]
+Path: Node15Node23" color=black shape=box]
+	Node15 -> Node24 [label=Node15Node24]
+	Node24 [label="V:1, H:2, Flag:False
+['The mechanic earned more revenue on the day with higher revenue, which was Thursday.', 64, 0.02620782506449748]
+Path: Node15Node24" color=black shape=box]
+	Node15 -> Node25 [label=Node15Node25]
+	Node25 [label="V:1, H:2, Flag:False
+['The mechanic earned more revenue on Thursday, which was the day with higher revenue.', 47, 0.1632414211107731]
+Path: Node15Node25" color=black shape=box]
+	Node15 -> Node26 [label=Node15Node26]
+	Node26 [label="V:1, H:2, Flag:False
+['The mechanic earned more revenue on Thursday, which is the day with a higher revenue compared to Friday.', 109, 0.5038239699719137]
+Path: Node15Node26" color=black shape=box]
+	Node15 -> Node27 [label=Node15Node27]
+	Node27 [label="V:1, H:2, Flag:False
+['The mechanic earned more revenue on the day with higher revenue, which was Thursday.', 108, 0.47000499411431007]
+Path: Node15Node27" color=black shape=box]
+	Node16 -> Node28 [label=Node16Node28]
+	Node28 [label="V:0, H:0, Flag:False
+['(Higher revenue - Lower revenue) = ($520 - $480) = $40\n\nThe mechanic earned an additional $40 on the day with higher revenue.', 53, 0.17707710047225766]
+Path: Node16Node28" color=green shape=box]
+	Node16 -> Node29 [label=Node16Node29]
+	Node29 [label="V:0, H:0, Flag:False
+['(Higher revenue day - Lower revenue day) = ($520 - $480) = $40\n\nThe mechanic earned an additional $40 on the day with higher revenue.', 63, 0.05807045786672316]
+Path: Node16Node29" color=green shape=box]
+	Node16 -> Node30 [label=Node16Node30]
+	Node30 [label="V:0, H:0, Flag:False
+['Higher revenue day - Lower revenue day = $520 - $480 = $40\n\nThe mechanic earned an additional $40 more on the day with higher revenue.', 47, 0.48565742035280346]
+Path: Node16Node30" color=green shape=box]
+	Node16 -> Node31 [label=Node16Node31]
+	Node31 [label="V:0, H:0, Flag:False
+[\"Thursday's revenue - Friday's revenue = $520 - $480 = $40\n\nSo, the mechanic earned $40 more on the day with higher revenue, which was on Thursday.\", 59, 0.9379944222902061]
+Path: Node16Node31" color=green shape=box]
+	Node16 -> Node32 [label=Node16Node32]
+	Node32 [label="V:0, H:0, Flag:False
+['(Higher revenue day - Lower revenue day) = ($520 - $480) = $40\n\nThe mechanic earned an additional $40 on the day with higher', 42, 0.15688032515523798]
+Path: Node16Node32" color=green shape=box]
+	Node16 -> Node33 [label=Node16Node33]
+	Node33 [label="V:0, H:0, Flag:False
+['(Thursday - Friday) = ($520 - $480) = $40\n\nThe mechanic earned an additional $40 on Thursday, which was the day with higher revenue compared to Friday.', 100, 0.8073450956743603]
+Path: Node16Node33" color=green shape=box]
+	Node16 -> Node34 [label=Node16Node34]
+	Node34 [label="V:0, H:0, Flag:False
+['(Thursday - Friday) = $520 - $480 = $40\n\nThe mechanic earned an additional $40 on the day with higher revenue, which was Thursday.', 49, 0.5653246807174456]
+Path: Node16Node34" color=green shape=box]
+}

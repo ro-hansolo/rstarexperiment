@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Artie has a flower stand at the Farmers Market. He sells three kinds of flowers: marigolds, petunias and begonias. He usually sells marigolds for $2.74 per pot, petunias for $1.87 per pot and begonias for $2.12 per pot. Artie has no change today, so he has decided to round all his prices to the nearest dollar. If Artie sells 12 pots of marigolds, 9 pots of petunias and 17 pots of begonias, how much will he make? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:7, Flag:False
+[\"1. First, let's calculate the total earnings from each type of flower by rounding their prices to the nearest dollar.\n            Marigold price: $2.74 rounded to the nearest dollar is $3.00 per pot.\n            Petunia price: $1.87 rounded to the nearest dollar is $2.00 per pot.\n            Begonia price: $\", 85, 0.38097380303365536]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:7, Flag:False
+[\"1. First, let's calculate the total earnings from each type of flower by rounding their prices to the nearest dollar. We do this because Artie has no change today.\n           Marigolds: $2.74 rounded to the nearest dollar is $3.00.\n           Petunias: $1.87 rounded to the nearest dollar is $2.00.\n           Begonias: $2.12 rounded to the nearest dollar is $2.00.\n        \n        2. Next, we\", 115, 0.41706940868732134]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:6, Flag:False
+[\"1. Let's first determine what the rounded prices are for each type of flower. Marigolds are rounded to $3 (from $2.74), Petunias remain at $2 (as they end in .87 which is closer to $2 than to another dollar), and Begonias are also rounded to $2 (from $2.12).\n        2. Next, we need to find out how much Artie will make for each kind of flower. He sells\", 105, 0.9167083380290653]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:6, H:9, Flag:True
+[\"1. First, let's calculate the total revenue from each type of flower by multiplying the number of pots sold by their respective prices.\n           Marigolds: 12 * $2.74 = $32.88\n           Petunias: 9 * $1.87 = $16.83\n           Begonias: 17 * $2\", 85, 0.14801328744465692]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:7, H:10, Flag:True
+['1. First, we need to calculate the total earnings from each type of flower. For this, multiply the number of pots sold by the respective price per pot for each kind of flower:\n          a. Marigolds: 12 pots', 53, 0.4089847606946114]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:7, H:10, Flag:True
+['1. We need to first find out the new rounded prices for each type of flower: marigolds, petunias, and begonias. Round all prices to the nearest dollar.\n        2', 42, 0.9224085145096439]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:9, H:9, Flag:True
+[\"1. Let's first calculate the total earnings from each type of flower by rounding their prices to the nearest dollar. Marigold price is $2.74, so we round it down to $2. Petunia price is $1.87, which rounds up to $2. Begonia price is $2.12, and it rounds down to $2 as well.\n        2. Now, let's find\", 93, 0.4933251642552796]
+Path: StartNode6" color=red shape=box]
+	Node2 -> Node7 [label=Node2Node7]
+	Node7 [label="V:1, H:7, Flag:False
+['- 12 pots of marigolds at $3 per pot: 12 * $3 = $36\n         - 9 pots of petunias at $2 per pot: 9 * $2 = $18\n         - 17 pots', 60, 0.47546345527012224]
+Path: Node2Node7" color=black shape=box]
+	Node2 -> Node8 [label=Node2Node8]
+	Node8 [label="V:1, H:8, Flag:False
+['- 12 pots of marigolds at $3 per pot: 12 * $3 = $36\n         - 9 pots of petunias at $2 per pot: 9 * $2 = $18\n         - 17 pots of begonias at $2 per pot: 17 * $', 75, 0.6349069063504502]
+Path: Node2Node8" color=black shape=box]
+	Node2 -> Node9 [label=Node2Node9]
+	Node9 [label="V:1, H:9, Flag:False
+['- 12 pots of marigolds at $3 per pot: 12 * $3 = $36\n         - 9 pots of petunias at $2 per pot: 9 * $2 = $18\n         - 17 pots of begonias at $', 66, 0.3567475002455701]
+Path: Node2Node9" color=black shape=box]
+	Node2 -> Node10 [label=Node2Node10]
+	Node10 [label="V:1, H:9, Flag:False
+['- 12 pots of marigolds at a price of $3 per pot = 12 * $3 = $36\n         - 9 pots of petunias at a price', 43, 0.6495879049570346]
+Path: Node2Node10" color=black shape=box]
+	Node2 -> Node11 [label=Node2Node11]
+	Node11 [label="V:1, H:8, Flag:False
+['- 12 pots of marigolds at $3 per pot = 12 * 3 = $36\n         - 9 pots of petunias at $2 per pot = 9 * 2 = $18\n         - 17 p', 59, 0.8669983644770654]
+Path: Node2Node11" color=black shape=box]
+	Node2 -> Node12 [label=Node2Node12]
+	Node12 [label="V:1, H:8, Flag:False
+[\"- 12 marigolds at the new price ($3 per pot) which means he'll earn 12 * $3 = $36 from them\n         - 9 petunias at the same price ($2 per pot), so he'll make 9 * $2 =\", 62, 0.6560057888128281]
+Path: Node2Node12" color=black shape=box]
+	Node2 -> Node13 [label=Node2Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['- 12 pots of marigolds at $3 per pot = 12 * $3 = $36\n         - 9 pots of petunias at $2 per pot = 9 * $2 = $18\n         - 17 pots of begonias at $2 per pot = 17 * $2 = $34\n\n   3. Finally, to find the total amount Artie will make from selling all three types of flowers', 103, 0.9905348750208355]
+Path: Node2Node13" color=green shape=box]
+}

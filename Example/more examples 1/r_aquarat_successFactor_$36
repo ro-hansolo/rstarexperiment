@@ -1,0 +1,246 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Factor $36-4x^2$ completely. Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:8, H:9, Flag:True
+['First, we need to find the factors of 36 and also isolate the term containing x. For this, we can do the following steps:\n\n1. Write down the prime factorization of 36: 36', 50, 0.6026495880242354]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:10, H:10, Flag:True
+[\"First, let's rewrite the expression as $36+4x^2$. Now we want to factor out the greatest common factor (GCF) of both terms. In this case, the GCF is 4. So\", 50, 0.15675319683548106]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:10, H:10, Flag:True
+['1. We can start by rewriting the given expression as $36 = 36 - 0\\times x^2$.\n        2. Now, we have a constant term (36) and the term without variable (0', 50, 0.6796789176433531]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:10, H:10, Flag:True
+['First, we want to isolate the variable term. To do this, we need to get rid of the constant term 36. We can achieve this by adding its negative counterpart: \n\n$36 - 4x', 50, 0.5625131621929513]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:10, H:10, Flag:True
+[\"1st, let's look for the terms that don't have any variable (in this case, x). We have only one such term, which is 36. Next, let's rewrite our expression as $36\", 50, 0.5638307777508728]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:8, H:9, Flag:True
+['First, we need to find the factors of 36 and then factor out the term containing x.\n\nStep 1: Find the prime factors of 36.\n36 = 2 * 2 * 3 *', 50, 0.12493260418882446]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:9, H:10, Flag:True
+[\"First, we need to identify the term that we want to factor out from the equation. In this case, it's the $4x^2$. To do this, we will find two numbers whose product is the same as the coefficient\", 50, 0.8681112156532844]
+Path: StartNode6" color=red shape=box]
+	Start -> Node7 [label=StartNode7]
+	Node7 [label="V:2, H:2, Flag:False
+[\"First, let's break down the expression into simpler parts to make it easier to factorize. We have $36 - 4x^2$. Now we will deal with each part separately.\n\nStep 1: Factor\", 50, 0.6008595972254245]
+Path: StartNode7" color=black shape=box]
+	Start -> Node8 [label=StartNode8]
+	Node8 [label="V:10, H:10, Flag:True
+['First, we need to isolate the term without the variable (in this case, x) so that it only depends on constants. We want to bring all powers of x to one side. To do that, we should try to cancel out', 50, 0.7716550455567417]
+Path: StartNode8" color=red shape=box]
+	Start -> Node9 [label=StartNode9]
+	Node9 [label="V:10, H:10, Flag:True
+['First, we need to isolate the term with the variable x. To do this, we can move the constant term (36) to the other side of the equation by adding its opposite. The opposite of 36 is -3', 50, 0.20885719385822965]
+Path: StartNode9" color=red shape=box]
+	Start -> Node10 [label=StartNode10]
+	Node10 [label="V:10, H:10, Flag:True
+[\"First, let's factor out the term 4x^2 from 36 - 4x^2. To do this, we need to subtract the constant term (36) and the variable part (4x^\", 50, 0.7589987974323645]
+Path: StartNode10" color=red shape=box]
+	Start -> Node11 [label=StartNode11]
+	Node11 [label="V:10, H:10, Flag:True
+[\"First, we need to isolate the term containing x. To do this, let's move the constant term (36) to the other side of the equation by adding its opposite, which is -36. This gives us:\", 50, 0.10188760205477854]
+Path: StartNode11" color=red shape=box]
+	Node7 -> Node12 [label=Node7Node12]
+	Node12 [label="V:5, H:10, Flag:True
+['36 can be factored as $36 = 6 \\times 6$. So, now our expression becomes $6 \\times 6 - 4x^2$.\n\nStep 2: Combine like', 46, 0.28908842153631054]
+Path: Node7Node12" color=red shape=box]
+	Node7 -> Node13 [label=Node7Node13]
+	Node13 [label="V:5, H:10, Flag:True
+['36 can be factored as $36 = 6 \\times 6$\n        So, the expression becomes $6 \\times 6 - 4x^2$.\n\nStep 2: Combine like terms\n        We have two terms with different variables. The first term has no variable and the second term has a variable ($x^2$). To combine these terms, we need to find a common factor that can be applied to both of them. In this', 99, 0.16815093693319727]
+Path: Node7Node13" color=red shape=box]
+	Node7 -> Node14 [label=Node7Node14]
+	Node14 [label="V:5, H:10, Flag:True
+['36 can be factored as $36 = 6 \\times 6$, so now our expression becomes $6 \\times 6 - 4x^2$.\n\nStep 2: Combine like terms\n        We have two terms that are constants, which means they can be combined. So, we will combine the coefficients of these constants. The coefficient of $6 \\times 6$ is 12 and the coefficient of $-4x^2', 97, 0.201949550546623]
+Path: Node7Node14" color=red shape=box]
+	Node7 -> Node15 [label=Node7Node15]
+	Node15 [label="V:5, H:10, Flag:True
+['36 can be factored as $36 = 6 \\times 6$\n        So, $36 - 4x^2 = (6 \\times 6) - 4x^2$\n\nStep 2: Combine like terms\n        Since both parts have a common', 64, 0.3673989028509095]
+Path: Node7Node15" color=red shape=box]
+	Node7 -> Node16 [label=Node7Node16]
+	Node16 [label="V:5, H:10, Flag:True
+['36 = 6 * 6\n        So now our expression becomes: 6 * 6 - 4x^2\n\nStep 2: Combine like terms\n        We have two terms that can be combined, which are the constants. The constant term is 6 * 6', 62, 0.3151135533882736]
+Path: Node7Node16" color=red shape=box]
+	Node7 -> Node17 [label=Node7Node17]
+	Node17 [label="V:10, H:10, Flag:True
+[\"36 is already a prime number and has no further factors that can be found, so it remains as it is in the expression.\n\nStep 2: Solve for x\n        As we need to factor $4x^2$, let's find two numbers multiplied together that give us this value. In our case, those numbers are 2 and 2 (since 2 * 2\", 84, 0.8899668341710303]
+Path: Node7Node17" color=red shape=box]
+	Node7 -> Node18 [label=Node7Node18]
+	Node18 [label="V:5, H:10, Flag:True
+[\"36 can be factored as $36 = 6 * 6$ (a perfect square)\n        So, after this step, it remains $6*6 - 4x^2$.\n\nStep 2: Combine like terms\n        We're left with a term consisting of two numbers ($6*6$) and an expression containing\", 75, 0.9560801005966162]
+Path: Node7Node18" color=red shape=box]
+	Node7 -> Node19 [label=Node7Node19]
+	Node19 [label="V:5, H:10, Flag:True
+['36 = 6 * 6 which is a perfect square of 6\n        So, 36 can be factored as 6*6.\n\nStep 2: Deal with the term containing x\n        -4x^2 = (-1) * 4 * (x^2)\n        4 has no factors other than itself and its reciprocal, so it will remain the', 85, 0.5238182596696055]
+Path: Node7Node19" color=red shape=box]
+	Node7 -> Node20 [label=Node7Node20]
+	Node20 [label="V:5, H:10, Flag:True
+['36 can be written as $4*9$, and it remains the same after factoring, so nothing changes here.\n        Step 2: Factor $4x^2$\n        To factorize this term, we need', 49, 0.6706077162295794]
+Path: Node7Node20" color=red shape=box]
+	Node7 -> Node21 [label=Node7Node21]
+	Node21 [label="V:5, H:10, Flag:True
+['36 can be factored as $36 = 6 * 6$\n        So, our expression becomes $6 * 6 - 4x^2$\n\nStep 2: Combine like terms', 46, 0.3213856406949901]
+Path: Node7Node21" color=red shape=box]
+	Node7 -> Node22 [label=Node7Node22]
+	Node22 [label="V:2, H:5, Flag:False
+['36 can be factored as $36 = 4 * 9$, so this is $4(9-x^2)$.\n        Step 2: Move the constants and change their order to match.\n        So now, we get', 52, 0.9736252472862487]
+Path: Node7Node22" color=black shape=box]
+	Node7 -> Node23 [label=Node7Node23]
+	Node23 [label="V:7, H:10, Flag:True
+['36 can be factored as $36 = 2 * 18$, and $18$ is prime, so it cannot be further factored.\n        Step 2: Factor the term with x^2\n        We have $-4x^2$. To factor this, we need to find two numbers that when multiplied together give us -4 and whose sum gives us 0', 84, 0.23697285238992405]
+Path: Node7Node23" color=red shape=box]
+	Node22 -> Node24 [label=Node22Node24]
+	Node24 [label="V:8, H:9, Flag:True
+['4*(9 - x^2)\n\nStep 3: Factor out the greatest common factor (GCF), which in this case is 4. To do this, divide each term by 4.\n        We have $4 * \\frac{9}{4} * (\\frac{9}{4} - x', 68, 0.4829237750060126]
+Path: Node22Node24" color=red shape=box]
+	Node22 -> Node25 [label=Node22Node25]
+	Node25 [label="V:2, H:1, Flag:False
+['4(9 - x^2) = 4(3^2 - x^2).\n\nStep 3: Factorize the remaining part, which is $3^2 - x^2$. We can use the difference of', 50, 0.14909804538670346]
+Path: Node22Node25" color=black shape=box]
+	Node22 -> Node26 [label=Node22Node26]
+	Node26 [label="V:5, H:8, Flag:True
+['4(9 - x^2) = 4 * (3^2 - x^2).\n\nStep 3: Factorize the remaining part of the expression, which is $3^2 - x^2$. We can do this by finding two numbers that multiply to give 3 and add up to give 9. These numbers', 73, 0.0624357068646586]
+Path: Node22Node26" color=red shape=box]
+	Node22 -> Node27 [label=Node22Node27]
+	Node27 [label="V:7, H:9, Flag:True
+['4(x^2 - 9)\n        Which is completely factored.', 100, 0.7401360891465352]
+Path: Node22Node27" color=red shape=box]
+	Node22 -> Node28 [label=Node22Node28]
+	Node28 [label="V:8, H:9, Flag:True
+['4(9 - x^2)\n\nStep 3: Factor out the largest term in the parentheses which is 9. The factorization will be $4(9 - x^2) = 4(', 48, 0.7117360972256739]
+Path: Node22Node28" color=red shape=box]
+	Node22 -> Node29 [label=Node22Node29]
+	Node29 [label="V:10, H:10, Flag:True
+['4(9 - x^2) = 4 * (3 + 6)(3 - 6)(1 - x^2).\n\nStep 3: Factor out the common factors in the brackets.\n        4(9 - x^2) = 4 * (3 + 6)(3 - 6)(1 - x^2) = 4 * (-3)(-', 86, 0.2053854888043286]
+Path: Node22Node29" color=red shape=box]
+	Node22 -> Node30 [label=Node22Node30]
+	Node30 [label="V:10, H:10, Flag:True
+['4*(9-x^2) = 4(9) - 4*x^2 = 36 - 4x^2\n        \n        The final expression with the given factorization is $36 - 4x^2 = 4(9-x^2)$. This result', 65, 0.956506028519912]
+Path: Node22Node30" color=red shape=box]
+	Node22 -> Node31 [label=Node22Node31]
+	Node31 [label="V:4, H:8, Flag:False
+['4(9 - x^2) = 4(3^2 - x^2), where 3^2 means 3 squared or 3 multiplied by itself.\n\nStep 3: We can factor out the common factors of 4 and (3^2 - x^2).\n        To do this, we need to find two numbers', 76, 0.4216701502872735]
+Path: Node22Node31" color=black shape=box]
+	Node22 -> Node32 [label=Node22Node32]
+	Node32 [label="V:10, H:10, Flag:True
+['4 * (9 - x^2)\n\nStep 3: Find factors of 9 that will give us a difference in square form. Since $9 = (-3)^2$, the expression can be written as $(-3)(3)(1+x^2)$.\n        The factorized form of $36-4x^2$ is $4*(-3*(1+x^2))$.', 89, 0.8413047007230094]
+Path: Node22Node32" color=red shape=box]
+	Node22 -> Node33 [label=Node22Node33]
+	Node33 [label="V:10, H:10, Flag:True
+['4(9 - x^2) = 4(3^2 - x^2).\n\nStep 3: Factorize the remaining part of the expression which is $3^2 - x^2$. We can do this by finding two numbers that when multiplied together give us 3^2 and when added together give us x^2. These numbers are +1 and -3, so we have (1+3)(1-3) = 4', 99, 0.0005150381481504596]
+Path: Node22Node33" color=red shape=box]
+	Node22 -> Node34 [label=Node22Node34]
+	Node34 [label="V:8, H:9, Flag:True
+[\"4(9-x^2) -> 4*9 - x^2 * 4 (since multiplying by a number doesn't affect its position in parenthesis).\n\nStep 3: Now factor out the largest number common between both terms (which is 4). So finally,\", 62, 0.9363442410534314]
+Path: Node22Node34" color=red shape=box]
+	Node22 -> Node35 [label=Node22Node35]
+	Node35 [label="V:6, H:9, Flag:True
+['4(9 - x^2) = (4*9 - 4x^2).\n\nStep 3: Factor out 4 from this new expression. To do that, we need to find two numbers that when multiplied together give us 9 and their difference is -1. These numbers are 3 and -3. So the factorization of $4(9-x^2)$ is $(4', 88, 0.4300801417301632]
+Path: Node22Node35" color=red shape=box]
+	Node25 -> Node36 [label=Node25Node36]
+	Node36 [label="V:1, H:6, Flag:False
+['squares formula to factor this. The formula states that if a^2 - b^2 = (a + b)(a - b), then we can apply it here. So, \n        $3^2 - x^', 48, 0.0481382502935398]
+Path: Node25Node36" color=black shape=box]
+	Node25 -> Node37 [label=Node25Node37]
+	Node37 [label="V:1, H:6, Flag:False
+['squares formula to factor this. The formula states that if a^2 - b^2 = (a + b)(a - b), then we can apply it here with a = 3 and b = x.\n        So,', 49, 0.22412452520362502]
+Path: Node25Node37" color=black shape=box]
+	Node25 -> Node38 [label=Node25Node38]
+	Node38 [label="V:1, H:2, Flag:False
+['squares formula to factor this. The formula states that if a^2 - b^2 = (a + b)(a - b), then we can apply it here. So, \n        $3^2 - x^2$ becomes $(3+x)(3-x)$.\n\nStep 4: Combine the factors from Step 1 and Step 3 to get the final', 82, 0.010286531582395453]
+Path: Node25Node38" color=black shape=box]
+	Node25 -> Node39 [label=Node25Node39]
+	Node39 [label="V:1, H:2, Flag:False
+['squares formula to factor this. The formula states that if $a^2 - b^2 = (a+b)(a-b)$, we can apply it here with a=3 and b=x. So, $3^2 - x^2$ becomes $(3+x)(3-x)$.\n\nStep 4: Combine the results from Steps 1 to 3. We now have 4(9 - x', 93, 0.2693958391432023]
+Path: Node25Node39" color=black shape=box]
+	Node25 -> Node40 [label=Node25Node40]
+	Node40 [label="V:1, H:6, Flag:False
+[\"squares property to factor it. The difference of two squares is a^2 - b^2 = (a+b)(a-b), where a and b are any real numbers. In our case, we have 'a\", 48, 0.4221438108513895]
+Path: Node25Node40" color=black shape=box]
+	Node25 -> Node41 [label=Node25Node41]
+	Node41 [label="V:2, H:3, Flag:False
+[\"squares formula to factor this. The formula states that $a^2 - b^2 = (a + b)(a - b)$ where 'a' and 'b' are numbers. \n        In our case, we have a=3 and b=x. So now the expression becomes: $4(3+x)(3-x\", 73, 0.7739086745158922]
+Path: Node25Node41" color=black shape=box]
+	Node25 -> Node42 [label=Node25Node42]
+	Node42 [label="V:1, H:2, Flag:False
+['squares formula to factor this. The formula is (a+b)(a-b) = a^2 - b^2. In our case, we have a = 3 and b = x. So, we get (3 + x)(3 - x).\n\nStep 4: Combine the results from steps 1 to 3.', 74, 0.30930489661109817]
+Path: Node25Node42" color=black shape=box]
+	Node25 -> Node43 [label=Node25Node43]
+	Node43 [label="V:1, H:1, Flag:False
+['squares to factor this. The difference of two squares can be factored as $(a+b)(a-b)$. In our case, we have a = 3 and b = x. So, $3^2 - x^2 = (3 + x)(3 - x)$.\n\nStep 4: Combine the factors from Step 1 and Step 3 to get the final result.', 87, 0.3520199493514158]
+Path: Node25Node43" color=black shape=box]
+	Node25 -> Node44 [label=Node25Node44]
+	Node44 [label="V:1, H:2, Flag:False
+['squares formula to factor this. The formula states that if a^2 - b^2 = (a + b)(a - b), then we can apply it here with a = 3 and b = x.\n        So, $3^2 - x^2 = (3+x)(3-x)$.\n\nStep 4: Combine the results', 77, 0.2592286213424746]
+Path: Node25Node44" color=black shape=box]
+	Node25 -> Node45 [label=Node25Node45]
+	Node45 [label="V:1, H:1, Flag:False
+['squares formula to factor this. The formula states that if a^2 - b^2 = (a + b)(a - b), then we can apply it here. So, \n        $3^2 - x^2$ becomes $(3+x)(3-x)$.\n\nStep 4: Combine the factors from Step 1 and Step 3 to get the final expression.', 86, 0.04671701657619909]
+Path: Node25Node45" color=black shape=box]
+	Node25 -> Node46 [label=Node25Node46]
+	Node46 [label="V:1, H:3, Flag:False
+['squares formula to factor this. The formula is (a + b)(a - b) = a^2 - b^2. In our case, we have a = 3 and b = x. So, our expression becomes (3 + x)(3 -', 55, 0.25629227639958707]
+Path: Node25Node46" color=black shape=box]
+	Node25 -> Node47 [label=Node25Node47]
+	Node47 [label="V:2, H:3, Flag:False
+[\"two squares property to factorize this. Let's say $a = 3$ and $b=x$, so we have $a^2 - b^2 = (a+b)(a-b)$. Now, $3^2 = 9$ and $x^2$ are the powers of our values 'a' and 'b'. Therefore, we\", 78, 0.9863505750977734]
+Path: Node25Node47" color=black shape=box]
+	Node43 -> Node48 [label=Node43Node48]
+	Node48 [label="V:0, H:0, Flag:False
+['Final Answer: $4(3+x)(3-x)$', 60, 0.48211217470777945]
+Path: Node43Node48" color=green shape=box]
+	Node43 -> Node49 [label=Node43Node49]
+	Node49 [label="V:0, H:0, Flag:False
+['4(3 + x)(3 - x) is our completely factored form of the given expression $36-4x^2$.', 80, 0.822309925329458]
+Path: Node43Node49" color=green shape=box]
+	Node43 -> Node50 [label=Node43Node50]
+	Node50 [label="V:0, H:0, Flag:False
+['4(9 - x^2) = 4(3^2 - x^2) = 4(3 + x)(3 - x).', 71, 0.4353345575430122]
+Path: Node43Node50" color=green shape=box]
+	Node43 -> Node51 [label=Node43Node51]
+	Node51 [label="V:0, H:0, Flag:False
+['4(9 - x^2) = 4(3^2 - x^2) = 4(3 + x)(3 - x).', 65, 0.0915108155897898]
+Path: Node43Node51" color=green shape=box]
+	Node43 -> Node52 [label=Node43Node52]
+	Node52 [label="V:0, H:0, Flag:False
+['The completely factored form of $36 - 4x^2$ is $4(9 - x^2) = 4(3 + x)(3 - x)$.', 82, 0.980464143578597]
+Path: Node43Node52" color=green shape=box]
+	Node43 -> Node53 [label=Node43Node53]
+	Node53 [label="V:0, H:0, Flag:False
+['4(3 + x)(3 - x) is the completely factored form of $36-4x^2$.', 58, 0.584414741359291]
+Path: Node43Node53" color=green shape=box]
+	Node43 -> Node54 [label=Node43Node54]
+	Node54 [label="V:0, H:0, Flag:False
+['4(9 - x^2) = 4(3^2 - x^2) = 4(3 + x)(3 - x).\n        This is the completely factored form of $36 - 4x^2$.', 91, 0.594975571481061]
+Path: Node43Node54" color=green shape=box]
+	Node43 -> Node55 [label=Node43Node55]
+	Node55 [label="V:0, H:0, Flag:False
+['4(3+x)(3-x) is our factored form of $36-4x^2$.', 62, 0.6305809599719808]
+Path: Node43Node55" color=green shape=box]
+	Node43 -> Node56 [label=Node43Node56]
+	Node56 [label="V:0, H:0, Flag:False
+['So, the factorized expression is $4(9-x^2) = 4(3^2 - x^2) = 4(3 + x)(3 - x)$.', 81, 0.55883612222898]
+Path: Node43Node56" color=green shape=box]
+	Node43 -> Node57 [label=Node43Node57]
+	Node57 [label="V:0, H:0, Flag:False
+['4(9-x^2) = 4(3^2 - x^2) = 4(3+x)(3-x). This is the complete factorization of $36 - 4x^2$.', 99, 0.7071717799086932]
+Path: Node43Node57" color=green shape=box]
+	Node43 -> Node58 [label=Node43Node58]
+	Node58 [label="V:1, H:0, Flag:True
+['4(9 - x^2) = 4((3+x)(3-x)) = 12(3+x)(x-3). This is the completely factored form of $36 - 4x^2$.', 100, 0.9862284586992648]
+Path: Node43Node58" color=green shape=box]
+	Node43 -> Node59 [label=Node43Node59]
+	Node59 [label="V:1, H:0, Flag:True
+['4(9-x^2) = 4(3^2 - x^2) => 4[(3 + x)(3 - x)]\n\nSo, $36 - 4x^2$ can be factorized as $4[(3+x)(3-x)]$.', 97, 0.9200563884573346]
+Path: Node43Node59" color=green shape=box]
+}

@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A new program had 60 downloads in the first month. The number of downloads in the second month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:0, H:6, Flag:False
+[\"1. Calculate the number of downloads in the second month: This is three times the first month's downloads (60) so we multiply it by 3, which gives us 60 * 3 = 180 downloads.\n        2. Reduce the downloads from the second month by 30%: To do this, we first calculate 30%\", 85, 0.6098501534051107]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:5, Flag:True
+[\"1. First month: There were 60 downloads.\n        2. Second month: Three times as many downloads compared to the first month, so it was 3 * 60 = 180 downloads.\n        3. Third month: Reduced by 30% from the second month's 180 downloads, making it 180 - (180 * 0.3) = 180 - 54 = 1\", 105, 0.6581897011817895]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:0, H:6, Flag:False
+[\"1. Calculate the number of downloads in the second month: 60 downloads (first month) * 3 = 180 downloads (second month)\n        2. Add the first and second month's downloads together: 60 + 180 = 240 total downloads for the first two months\n        3. Calculate the number of downloads in the third month after a\", 92, 0.46654606377757557]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:10, Flag:False
+['1. In the first month, there were 60 downloads.\n        2. In the second month, the number of downloads was three times as many as the first month, so it would be 3 * 60 =', 50, 0.3707680142743043]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:3, H:10, Flag:False
+['1. First month (60 downloads)\n        2. Second month (three times more than first month: 60 * 3 = 180 downloads)\n        3. Third month', 44, 0.7834838947516398]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:0, H:3, Flag:False
+[\"1. First month's downloads: 60\n        2. Second month's downloads (three times as many): 60 * 3 = 180\n        3. Third month's downloads (reduced by 30%): 180 * 0.7 = 126\n        Now, let's add the total downloads over the three months:\n        First month: 60\n        Second month: 180\n        Third month: 126\n        Total\", 118, 0.5333832474743845]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:5, H:5, Flag:True
+[\"1. First month: 60 downloads\n        2. Second month: 3 times the first month's downloads = 3 * 60 = 180 downloads\n        3. Third month: Reduced by 30% from the second month, so 180 - (180 * 0.3) = 1\", 79, 0.08437801340943618]
+Path: StartNode6" color=red shape=box]
+	Node5 -> Node7 [label=Node5Node7]
+	Node7 [label="V:0, H:0, Flag:False
+['60 + 180 + 126 = 366\n        So, the program had a total of 366 downloads over the three months.', 120, 0.005694239793795575]
+Path: Node5Node7" color=green shape=box]
+	Node5 -> Node8 [label=Node5Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['60 + 180 + 126 = 366\n        So, the program had a total of 366 downloads over the three months.', 79, 0.11925562171651305]
+Path: Node5Node8" color=green shape=box]
+	Node5 -> Node9 [label=Node5Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['60 + 180 + 126 = 366\n\n        So, the program had a total of 366 downloads over the three months.', 70, 0.7848650999124124]
+Path: Node5Node9" color=green shape=box]
+	Node5 -> Node10 [label=Node5Node10]
+	Node10 [label="V:0, H:0, Flag:False
+['60 + 180 + 126 = 366\n        So, the program had a total of 366 downloads over the three months.', 66, 0.6430089003033246]
+Path: Node5Node10" color=green shape=box]
+	Node5 -> Node11 [label=Node5Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['60 + 180 + 126 = 366\n        So, the program had a total of 366 downloads over the three months.', 61, 0.5881060292649339]
+Path: Node5Node11" color=green shape=box]
+	Node5 -> Node12 [label=Node5Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['60 + 180 + 126 = 366\n        So, there were a total of 366 downloads over the three months.', 43, 0.7781228647536196]
+Path: Node5Node12" color=green shape=box]
+	Node5 -> Node13 [label=Node5Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['60 + 180 + 126 = 366 downloads', 117, 0.8281961488558983]
+Path: Node5Node13" color=green shape=box]
+}

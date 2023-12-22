@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A raspberry bush has 6 clusters of 20 fruit each and 67 individual fruit scattered across the bush. How many raspberries are there total? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:1, Flag:False
+[\"1. We need to find the total number of raspberries from both clusters and individual fruits.\n        2. First, let's count the raspberries in the clusters. There are 6 clusters with 20 fruit each, so we multiply 6 by 20.\n           6 * 20 = 120 raspberries from the clusters\n        3. Now, add the individual fruits to that total: 120 (from clusters) + 67 (individual fruits)\", 112, 0.9232360752584322]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:1, Flag:False
+[\"1. First, let's find out how many fruits are in the clusters. There are 6 clusters with 20 fruits each, so we multiply 6 by 20 to get the total number of fruits from these clusters: 6 * 20 = 120 raspberries.\n        2. Now, we need to consider the individual berries scattered around the bush. There are 67 such fruits.\n        3. To find the total amount of raspberries, add up the number of fruits from clusters (120)\", 119, 0.6705085120479221]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:3, H:9, Flag:False
+['1. Identify the number of clusters - There are 6 clusters of raspberry fruits.\n        2. Calculate the total number of fruits in these clusters - Each cluster has 20 fruits, so multiply the number of clusters by the number of fruits per cluster: 6 * 20', 64, 0.6624692957244196]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:8, Flag:False
+[\"1. First, let's find out how many fruits are in the clusters. We have 6 clusters with 20 fruits each, so we multiply 6 by 20 to get the total number of fruits from the clusters.\n           6 * 20 = 120 raspberries from the clusters\n        2. Now, let's add the individual\", 80, 0.013018258286474182]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:4, H:10, Flag:False
+[\"1. First, let's find out how many fruits are in the clusters. We have 6 clusters with 20 fruits each, so we multiply these two numbers together: 6 * 20 =\", 46, 0.1439733846102701]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:3, Flag:False
+[\"1. First, let's find the total number of fruits from the clusters. We have 6 clusters with 20 fruits in each cluster. So, we multiply the number of clusters by the number of fruits per cluster: 6 * 20 = 120 raspberries from the clusters.\n        2. Now, let's add the individual scattered fruits\", 80, 0.06630049126310378]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:2, Flag:False
+[\"1. First, let's find the total number of fruits from the clusters. For this, we need to multiply the number of clusters by the number of fruits in each cluster. So, 6 clusters * 20 fruits per cluster = 120 fruits.\n        2. Now, add the individual scattered raspberries to the total number of fruits from the clusters. We have 120 fruits (from clusters) +\", 93, 0.46301505438048973]
+Path: StartNode6" color=black shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:0, H:0, Flag:False
+['4. Combine these two numbers to get the final result.\n           120 + 67 = 187 raspberries\n        There are a total of 187 raspberries on the raspberry bush.', 85, 0.7965542782811148]
+Path: Node0Node7" color=green shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:0, H:1, Flag:False
+['4. Finally, we get the sum of all raspberries: 120 + 67 = 187 raspberries\n        There are a total of 187', 41, 0.9529126779954041]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['4. After adding them up, we get a final total of 187 raspberries on the bush.', 86, 0.4641078653935048]
+Path: Node0Node9" color=green shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:0, H:1, Flag:False
+['4. Calculate the sum of the two numbers.\n           Total number of raspberries = 120 + 67 = 187 raspberries\n        So, there are a total', 44, 0.5557654434072676]
+Path: Node0Node10" color=black shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['4. The sum of all the raspberries is 187.\n        So, there are a total of 187 raspberries on the bush.', 119, 0.8043020355772711]
+Path: Node0Node11" color=green shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['4. The final sum is the total number of raspberries on the bush.\n           120 + 67 = 187 raspberries\n\n        There are a total of 187 raspberries', 49, 0.585810333117572]
+Path: Node0Node12" color=green shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['4. Calculate the sum: 120 + 67 = 187 raspberries\n        So, there are a total of 187 raspberries on the raspberry bush.', 111, 0.27621374666123877]
+Path: Node0Node13" color=green shape=box]
+}

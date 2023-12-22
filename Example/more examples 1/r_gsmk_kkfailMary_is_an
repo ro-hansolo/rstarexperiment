@@ -1,0 +1,34 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Mary is an avid gardener. Yesterday, she received 18 new potted plants from her favorite plant nursery. She already has 2 potted plants on each of the 40 window ledges of her large country home. Feeling generous, she has decided that she will give 1 potted plant from each ledge to friends and family tomorrow. How many potted plants will Mary remain with? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:3, Flag:False
+['1. Start with the initial number of potted plants: Mary received 18 new ones + her existing ones (2 on each window ledge, which is a total of 40 ledges) = 18 + 2 * 40 = 18 + 80 = 98 potted plants.', 71, 0.9868077965014624]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:4, Flag:False
+['1. First, we need to find out how many potted plants Mary currently has on her window ledges. She has 2 potted plants per ledge, and there are 40 ledges in total. So, the number of potted plants she has now is 2 (plants per ledge) * 40 (ledges) = 80 plants.', 82, 0.24156675898276803]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:8, H:10, Flag:True
+[\"1. First, let's find out how many potted plants Mary already had on her window ledges before receiving the new ones. She has 2 potted plants per window ledge and there are 40 window ledges in total. So, this gives\", 55, 0.27094728333712137]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:5, H:4, Flag:False
+['1. First, we need to find out how many potted plants Mary currently has on her window ledges. She has 2 potted plants per ledge, and there are 40 ledges in total. So, 2 * 40 = 80 potted plants are already on the window ledges.\n        2. Next, we need to consider the new plants Mary received yesterday. She got 18 new potted plants from her favorite', 97, 0.1498513073628479]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:5, H:4, Flag:False
+[\"1. First, let's find out how many potted plants Mary currently has in total on her window ledges. She has 2 potted plants per ledge and there are 40 ledges. So, 2 (plants/ledge) * 40 (ledges) = 80 (total potted plants on ledges).\n        2. Mary got 18 new potted plants from the nursery yesterday. We need to add these to her existing collection of plants. So, 80\", 112, 0.6394761140766998]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:3, H:1, Flag:False
+['1. Mary initially had 2 potted plants on each of the 40 window ledges, so she had a total of 2 * 40 = 80 potted plants.\n        2. Yesterday, she received 18 new potted plants from her favorite plant nursery, increasing her collection to 80 + 18 = 98 potted plants.\n        3. She plans to give away 1 potted plant from each of the 40 window ledges tomorrow, which', 111, 0.2361540129522296]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:5, H:3, Flag:False
+['1. Mary currently has 2 potted plants on each of the 40 window ledges. This means there are a total of 2 * 40 = 80 potted plants on her window ledges.\n        2. Yesterday, she received an additional 18 new potted plants from her favorite nursery.', 72, 0.6413789945996778]
+Path: StartNode6" color=black shape=box]
+}

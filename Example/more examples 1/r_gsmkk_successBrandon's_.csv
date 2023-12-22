@@ -1,0 +1,43 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Let's first find out the age of Ben's and Brandon's iPhones by using the given information:
+            a. Brandon's iPhone is four times as old as Ben's iPhone.
+            b. Ben's iPhone is two times older than Suzy's iPhone, which is 1 year old.
+        2. Since Suzy's iPhone is 1 year old,",Node0,5,9,5,14,0.6995186696145544,90,False
+ 1. We know that Brandon's iPhone is four times as old as Ben's iPhone. Since Ben's iPhone is two times older than Suzy's iPhone (which is,Node1,5,9,5,14,0.26513134990940423,40,False
+" 1. We know that Brandon's iPhone is four times as old as Ben's iPhone. So, if Ben's iPhone is twice older than Suzy's iPhone, then we can calculate the age of Brandon's iPhone in relation to Suzy's iPhone. We know that Brandon's iPhone = 4 * Ben's iPhone and Ben's iPhone = 2 * Suzy",Node2,5,9,5,14,0.7728110367089142,86,False
+" 1. We know that Brandon's iPhone is four times as old as Ben's iPhone.
+        2. Ben's iPhone is two times older than Suzy's iPhone which is 1 year old.
+        3. To find the age of Ben's iPhone, we need to multiply Suzy's iPhone's age (1 year) by 2: 1 * 2 = 2 years.
+        4. Now that we know Ben's iPhone is",Node3,2,1,2,3,0.05823722654822272,104,False
+" 1. We know that Brandon's iPhone is four times as old as Ben's iPhone.
+        2. We also know that Ben's iPhone is two times older than Suzy'",Node4,6,9,6,15,0.1580603589816182,41,False
+" 1. First, we need to find out the age of Ben's iPhone. Since it's two times older than Suzy's (which is 1 year old), its age will be 2 * 1 = 2 years old.
+        2. Next, let's calculate the age of Brandon's iPhone, which is four times as old as Ben's. So, to find this age, we",Node5,3,2,3,5,0.664144981651053,90,False
+" 1. We know that Brandon's iPhone is four times as old as Ben's iPhone.
+        2. Ben's iPhone is two times older than Suzy's iPhone which is 1 year old.
+        3. To find the age of Ben's iPhone, we multiply Suzy's by 2: 1 *",Node6,6,9,6,15,0.4753715788986099,74,False
+" 1. We know that Brandon's iPhone is four times as old as Ben's iPhone.
+        2. Ben's iPhone is two times older than Suzy's iPhone which is 1 year old.
+        3. To find the age of Ben's iPhone, we need to multiply Suzy's iPhone's age (1 year) by 2: 1 * 2 = 2 years.
+        4. Now that we know Ben's iPhone is 5. We can use this information to calculate Brandon's iPhone's age by multiplying Ben's iPhone's age (2 years) by 4: 2 * 4 = 8 years.
+        6. So, Brandon's iPhone is 8 years old.",Node7,2,2,4,6,0.2693458821581626,113,False
+" 1. We know that Brandon's iPhone is four times as old as Ben's iPhone.
+        2. Ben's iPhone is two times older than Suzy's iPhone which is 1 year old.
+        3. To find the age of Ben's iPhone, we need to multiply Suzy's iPhone's age (1 year) by 2: 1 * 2 = 2 years.
+        4. Now that we know Ben's iPhone is 5. Brandon's iPhone is 4 times older than Ben's iPhone, so we need to multiply Ben's iPhone's age (which is now 2 years) by 4: 2 * 4 = 8 years.
+        Therefore, Brandon's iPhone is 8 years old.",Node8,1,1,3,4,0.8068887217393946,74,False
+" 1. We know that Brandon's iPhone is four times as old as Ben's iPhone.
+        2. Ben's iPhone is two times older than Suzy's iPhone which is 1 year old.
+        3. To find the age of Ben's iPhone, we need to multiply Suzy's iPhone's age (1 year) by 2: 1 * 2 = 2 years.
+        4. Now that we know Ben's iPhone is 5. We can calculate Brandon's iPhone's age by multiplying Ben's iPhone's age (2 years) by 4: 2 * 4 = 8 years.
+        So, Brandon's iPhone is 8 years old.",Node11,2,2,4,6,0.023595729584580782,64,False
+" 1. We know that Brandon's iPhone is four times as old as Ben's iPhone.
+        2. Ben's iPhone is two times older than Suzy's iPhone which is 1 year old.
+        3. To find the age of Ben's iPhone, we need to multiply Suzy's iPhone's age (1 year) by 2: 1 * 2 = 2 years.
+        4. Now that we know Ben's iPhone is 5. To find Brandon's iPhone's age, we need to multiply Ben's iPhone's age (2 years) by 4: 2 * 4 = 8 years.
+        6. Therefore, Brandon's iPhone is 8 years old.",Node12,2,2,4,6,0.5171988519030098,108,False
+" 1. We know that Brandon's iPhone is four times as old as Ben's iPhone.
+        2. Ben's iPhone is two times older than Suzy's iPhone which is 1 year old.
+        3. To find the age of Ben's iPhone, we need to multiply Suzy's iPhone's age (1 year) by 2: 1 * 2 = 2 years.
+        4. Now that we know Ben's iPhone is 5. Brandon's iPhone is 4 times older than Ben's iPhone, so we need to multiply Ben's iPhone's age (which is now 2 years) by 4: 2 * 4 = 8 years.
+        Therefore, Brandon's iPhone is 8 years old. In this scenario, the process involved breaking down each individual relationship between the ages of the iPhones belonging to Ben, Suzy, and Brandon. We then worked backward from the known information about the youngest iPhone to determine the age of the oldest one.",Node14,2,0,5,5,0.8497378443908301,115,False

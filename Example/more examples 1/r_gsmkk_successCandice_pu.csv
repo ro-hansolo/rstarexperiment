@@ -1,0 +1,9 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Let's first determine the total number of Post-it notes Candice used on the coffee cups. She placed one note on each of 220 cups and had 80 in her purse initially, so we can find this sum by adding these two quantities together. 
+        Total Post-it notes on coffee = Initial Post-it notes (80) + Notes for cups (220) = 80 + 220 = 300 Post-it notes",Node4,5,7,5,12,0.5900769488526221,108,False
+" 1. First, let's find out how many Post-it notes Candice had initially: 80 from her purse + (the number of Post-it notes from the store package - 23 remaining) = 80 + (number_from_store_package - 23).
+        2. Next, we know that she used 220 Post-it notes on coffee cups and had 23 remaining. To find out how many Post-it notes were consumed for the coffee cups, we subtract these remaining 23 from the",Node6,3,4,3,7,0.6240871954362863,119,False
+" 1. First, let's find out how many Post-it notes Candice had initially: 80 from her purse + (the number of Post-it notes from the store package - 23 remaining) = 80 + (number_from_store_package - 23).
+        2. Next, we know that she used 220 Post-it notes on coffee cups and had 23 remaining. To find out how many Post-it notes were consumed for the coffee cups, we subtract these remaining 23 from the 220 used: 220 - 23 = 197.
+        3. Now, we can calculate the number of Post-it notes in the store package by adding the initial amount (80) and the remaining ones after using them on coffee cups (197): 80 + 197 = 277.
+        So, there were 277 Post-it notes in the package that Candice purchased at the store.",Node13,0,0,3,3,0.2858729248918265,113,False

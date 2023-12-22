@@ -1,0 +1,34 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Lloyd has an egg farm. His chickens produce 252 eggs per day and he sells them for $2 per dozen. How much does Lloyd make on eggs per week? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:6, Flag:False
+['1. First, we need to determine the number of eggs Lloyd gets per day. He has 252 eggs produced by his chickens.\n        2. Next, we need to convert these daily eggs into dozens. There are 12 eggs in a dozen. So, divide the total number of eggs (252) by 12', 73, 0.4273342773957043]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:3, H:7, Flag:False
+[\"1. First, let's calculate the number of dozens of eggs produced daily by the chickens. To do this, we need to divide the total number of eggs (252) by the number of\", 43, 0.7557761566384531]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:5, Flag:False
+['1. First, we need to determine how many dozens of eggs are produced daily. To do this, divide the total number of eggs (252) by a dozen (12): 252 / 12 = 21 dozens of eggs per', 55, 0.4044123308721894]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:4, Flag:False
+[\"1. First, let's find out how many dozens of eggs are produced daily by the chickens. To do this, we need to divide the total number of eggs (252) by the number of eggs in a dozen (12). So, 252 / 12 = 21 dozens per day.\n        2. Now that we know how many dozens are produced daily, we can calculate the revenue from selling these eggs.\", 95, 0.08945113497678414]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:5, H:6, Flag:True
+[\"1. First, we need to determine the number of eggs produced daily by Lloyd's chickens. They produce 252 eggs per day.\n        2. Next, we need to convert these daily eggs into dozens. There are 12 eggs in a dozen. So, 252 eggs / 12 = 20.833333333333332 dozen eggs produced daily.\n        3. Now, we know that Lloyd sells each dozen of eggs for $2. To find out how\", 117, 0.0481111642872295]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:4, H:7, Flag:True
+['1. Calculate the total number of eggs produced daily.\n           Eggs per day = Chickens producing 252 eggs/day\n\n        2. Calculate the amount he would make in a day assuming he sells them all.\n           Revenue per day = Eggs per day * Price per dozen (which is $2 per dozen)\n\n        3. Determine how many dozens he can get from that many eggs.\n           Dozens = Eggs per day / 12 (since there are 12 eggs', 117, 0.9602732807977089]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:4, H:7, Flag:True
+['1. First, we need to convert the daily number of eggs produced into a weekly amount by multiplying it by the number of days in a week (7 days). So, 252 eggs/day * 7 days = 1764 eggs/week.\n        2. Then, since each dozen eggs contains 12, we need to find out how many dozens can be made from', 84, 0.6411116711336577]
+Path: StartNode6" color=black shape=box]
+}

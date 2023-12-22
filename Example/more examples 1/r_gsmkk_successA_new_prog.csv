@@ -1,0 +1,28 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Calculate the number of downloads in the second month: This is three times the first month's downloads (60) so we multiply it by 3, which gives us 60 * 3 = 180 downloads.
+        2. Reduce the downloads from the second month by 30%: To do this, we first calculate 30%",Node0,0,6,0,6,0.6098501534051107,85,False
+" 1. Calculate the number of downloads in the second month: 60 downloads (first month) * 3 = 180 downloads (second month)
+        2. Add the first and second month's downloads together: 60 + 180 = 240 total downloads for the first two months
+        3. Calculate the number of downloads in the third month after a",Node2,0,6,0,6,0.46654606377757557,92,False
+" 1. In the first month, there were 60 downloads.
+        2. In the second month, the number of downloads was three times as many as the first month, so it would be 3 * 60 =",Node3,2,10,2,12,0.3707680142743043,50,False
+" 1. First month (60 downloads)
+        2. Second month (three times more than first month: 60 * 3 = 180 downloads)
+        3. Third month",Node4,3,10,3,13,0.7834838947516398,44,False
+" 1. First month's downloads: 60
+        2. Second month's downloads (three times as many): 60 * 3 = 180
+        3. Third month's downloads (reduced by 30%): 180 * 0.7 = 126
+        Now, let's add the total downloads over the three months:
+        First month: 60
+        Second month: 180
+        Third month: 126
+        Total",Node5,0,3,0,3,0.5333832474743845,118,False
+" 1. First month's downloads: 60
+        2. Second month's downloads (three times as many): 60 * 3 = 180
+        3. Third month's downloads (reduced by 30%): 180 * 0.7 = 126
+        Now, let's add the total downloads over the three months:
+        First month: 60
+        Second month: 180
+        Third month: 126
+        Total 60 + 180 + 126 = 366
+        So, the program had a total of 366 downloads over the three months.",Node7,0,0,0,0,0.005694239793795575,120,False

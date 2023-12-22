@@ -1,0 +1,34 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: A candle melts by 2 centimeters every hour that it burns. How many centimeters shorter will a candle be after burning from 1:00 PM to 5:00 PM? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:7, Flag:False
+[\"1. First, we need to determine the duration of the candle burning which is from 1:00 PM to 5:00 PM. To do that, we'll convert this time frame into hours.\n           1:00 PM to 2:00 PM - 1 hour (60 minutes)\n           2:00 PM to 3:00 PM - 1 hour (60 minutes)\n           3:00 PM to 4:00 PM\", 105, 0.8311513899328339]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:8, Flag:False
+['1. First, we need to determine the total time the candle is burning. The given time range is from 1:00 PM to 5:00 PM. To convert this to hours, we can consider that there are 24 hours in a day and then divide the time difference by 60 minutes per hour.', 70, 0.21076612317990862]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:8, Flag:False
+['1. First, we need to determine the total time the candle is burning. The given time range is from 1:00 PM to 5:00 PM. To find the difference in hours, subtract the starting hour (1) from the ending', 54, 0.25192968852451725]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:4, H:9, Flag:True
+[\"1. First, let's identify the time between 1:00 PM and 5:00 PM. To do this, we need to convert both times into hours. Since there are 24 hours in a day, 5:00 PM minus 1:00 PM is equal to 4 (hours) - 1 (hour) = 3 hours.\n        2. Now that we know the candle burns at a rate of 2\", 101, 0.6677684544561692]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:0, Flag:False
+[\"1. First, we need to determine the duration of time between 1:00 PM and 5:00 PM. We know that there are 24 hours in a day, so we can calculate the difference in hours by subtracting one time from the other.\n           5:00 PM - 1:00 PM = 4 hours\n        Since there's 1 hour in each of these 4 hours, a candle will melt for 2 centimeters * 4 hours = 8 centimeters per day when it burns from\", 120, 0.8691113210176971]
+Path: StartNode4" color=green shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:0, H:0, Flag:False
+['1. First, we need to find the duration of the time period between 1:00 PM and 5:00 PM. To do this, subtract 13 (for 1:00 PM) from 17 (for 5:00 PM). The result will be 4 hours.\n        2. Since a candle melts by 2 centimeters every hour', 85, 0.8023767084557207]
+Path: StartNode5" color=green shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:7, Flag:False
+['1. First, we need to understand the given information and convert it into a mathematical form. A candle melts by 2 cm per hour, so this is equivalent to 2 cm/hour * 1 hour = 2 cm in one hour.\n        2. Now, we need to know how many hours are between 1:00 PM and 5:00 PM. To convert these times to', 86, 0.5404312129788608]
+Path: StartNode6" color=black shape=box]
+}

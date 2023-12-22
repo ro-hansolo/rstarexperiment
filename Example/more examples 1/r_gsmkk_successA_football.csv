@@ -1,0 +1,51 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We know the total number of games played was 22 games.
+        2. The team also won 8 more than they lost.
+        3. To find out how many games they won, we need to subtract the losses from their overall wins (wins - losses).
+        4. Since they won 8 more than they lost, this means there were equal",Node0,4,8,4,12,0.606524015311943,80,False
+" 1. First, we need to find out how many games the team lost. Since they won 8 more than they lost, we can subtract 8 from their total wins (8 more) to get the number of losses. So, losses = total_games - 8_more.
+        2. We know that the football team played a total of 22 games.",Node1,5,9,5,14,0.05685678897737234,82,False
+" 1. First, let's determine the number of losses for the football team. Since they have played 22 games in total and they won 8 more games than they lost, this implies that the sum",Node5,7,10,7,17,0.8017494325458374,43,False
+" 1. We know the total number of games played is 22.
+        2. The team won 8 more games than they lost, so we need to find a way to represent both won and lost games. Let's say they won W games and lost L games.
+        3. Since W games are 8 more than L games, the equation becomes W = L + 8.
+        4. Now we have two equations: total games = won games + lost games (22 = W",Node6,2,7,2,9,0.7285237932297058,106,False
+" 1. We know the total number of games played is 22.
+        2. The team won 8 more games than they lost, so we need to find a way to represent both won and lost games. Let's say they won W games and lost L games.
+        3. Since W games are 8 more than L games, the equation becomes W = L + 8.
+        4. Now we have two equations: total games = won games + lost games (22 = W + L), and won games = lost games + 8 (W = L + 8).
+        5. To find the number of wins, we need to solve these equations for W (won games",Node7,2,4,4,8,0.9565876929510596,42,False
+" 1. We know the total number of games played is 22.
+        2. The team won 8 more games than they lost, so we need to find a way to represent both won and lost games. Let's say they won W games and lost L games.
+        3. Since W games are 8 more than L games, the equation becomes W = L + 8.
+        4. Now we have two equations: total games = won games + lost games (22 = W + L) and won games - lost games = 8 (W - L = 8).
+        5. We can solve these equations step by step. First, let's add the two equations together to eliminate L from both sides: (22 = W + L) + (W - L = 8) becomes 30 = 2W",Node8,1,2,3,5,0.23996915208704972,75,False
+" 1. We know the total number of games played is 22.
+        2. The team won 8 more games than they lost, so we need to find a way to represent both won and lost games. Let's say they won W games and lost L games.
+        3. Since W games are 8 more than L games, the equation becomes W = L + 8.
+        4. Now we have two equations: total games = won games + lost games (22 = W + L) and won games = lost games + 8 (W = L + 8). We can solve these equations simultaneously to find out the values of W and L.
+        5. First",Node9,2,4,4,8,0.2523836144707754,41,False
+" 1. We know the total number of games played is 22.
+        2. The team won 8 more games than they lost, so we need to find a way to represent both won and lost games. Let's say they won W games and lost L games.
+        3. Since W games are 8 more than L games, the equation becomes W = L + 8.
+        4. Now we have two equations: total games = won games + lost games (22 = W + L), and also W = L + 8 (W - 8 = L).
+        5. We can combine these equations by substituting the expression for W from the second equation into the first one, making it 22 = (L + 8) + L.
+        6. Simplifying this gives us 22 = 2L + 8, which we can further",Node10,2,3,4,7,0.7588586315138232,85,False
+" 1. We know the total number of games played is 22.
+        2. The team won 8 more games than they lost, so we need to find a way to represent both won and lost games. Let's say they won W games and lost L games.
+        3. Since W games are 8 more than L games, the equation becomes W = L + 8.
+        4. Now we have two equations: total games = won games + lost games (22 = W + L), and won games - lost games = 8 (W - L = 8).
+        5. We can solve for W by using the second equation to substitute W - L into the first one:",Node12,3,6,5,11,0.26099491979636613,44,False
+" 1. We know the total number of games played is 22.
+        2. The team won 8 more games than they lost, so we need to find a way to represent both won and lost games. Let's say they won W games and lost L games.
+        3. Since W games are 8 more than L games, the equation becomes W = L + 8.
+        4. Now we have two equations: total games = won games + lost games (22 = W + L) and won games = lost games + 8 (W = L + 8).
+        5. We can solve for W by substituting the second equation into the first one: (L + 8) + L = 22, which is equivalent to 2L + 8 = 22.
+        6. Now we need to isolate L. Subtract 8 from both sides: 2L = 14.
+        7. Finally, divide by 2 to find the value of L: L =",Node13,2,2,4,6,0.3494723377094566,116,False
+" 1. We know the total number of games played is 22.
+        2. The team won 8 more games than they lost, so we need to find a way to represent both won and lost games. Let's say they won W games and lost L games.
+        3. Since W games are 8 more than L games, the equation becomes W = L + 8.
+        4. Now we have two equations: total games = won games + lost games (22 = W + L) and won games - lost games = 8 (W - L = 8).
+        5. We can solve these equations step by step. First, let's add the two equations together to eliminate L from both sides: (22 = W + L) + (W - L = 8) becomes 30 = 2W 6. Now we have a single equation with only one variable (W), so we can solve for W: W = 30 / 2, which results in W = 15.
+        7. Finally, since W represents the number of games won, they won 15 games.",Node14,1,0,4,4,0.3585574585962794,81,False

@@ -1,0 +1,374 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's calculate Sylvie's current annual salary by multiplying her monthly salary by the number of months in a year (12). She earns $600 per month, so her current annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the 10% increase after five years. This means she will",Node0,2,7,2,9,0.3846105875432918,88,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year)",Node1,2,7,2,9,0.9809285013133695,97,False
+" 1. First, let's calculate Sylvie's current annual salary based on her initial monthly salary and the number of months in a year (12). Her monthly salary is $600, so her annual salary would be $600 * 12 = $7200.
+        2. Now, let's consider the policy change after five years. Sylvie will receive a 10% increase on her initial salary of $600. The increased salary is $600",Node2,2,7,2,9,0.04724374398193487,108,False
+" 1. Let's first understand the current situation: Sylvie has been working at this company for 5 years and she earns $600 per month. Her initial monthly salary is $600 and there's a 10% annual increment policy for employees who have worked for more than 5 years.
+        2. Let's calculate the annual salary after the first year of increment: After one year, the 10% increment will be applied to her initial monthly salary",Node3,2,7,2,9,0.7625428945789107,103,False
+" 1. First, let's calculate Sylvie's current annual salary before any increase due to her five-year milestone and 3 more years of service. Since she is paid $600 per month for a year (12 months), her annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the increase in",Node4,2,7,2,9,0.5325246521426028,84,False
+" 1. Determine Sylvie's current monthly salary: $600 per month
+        2. Calculate her initial yearly salary: $600 * 12 = $7200 (assuming a standard 12-month calendar)
+        3. Apply the 10% increase for staying 5 years, which will be calculated on her initial salary ($7200): $",Node5,2,7,2,9,0.49011092961004865,88,False
+" 1. First, let's calculate Sylvie's current annual salary by multiplying her monthly salary by the number of months in a year (12). She earns $600 per month, so her current annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the 10% increase after five years. This means she will receive an additional 10% of her initial annual salary of $7200 (as this was her annual salary for the first five years). So, the 10% increase is calculated as $7200 * 0.1 = $720.
+        3. Add the",Node7,5,6,7,13,0.6896210701481357,64,False
+" 1. First, let's calculate Sylvie's current annual salary by multiplying her monthly salary by the number of months in a year (12). She earns $600 per month, so her current annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the 10% increase after five years. This means she will get a 10% raise on her initial annual salary of $7200. To calculate this, we multiply $7200 by 0.1 (or 10/100). Her new annual salary after",Node8,5,6,7,13,0.8789128892042581,51,False
+" 1. First, let's calculate Sylvie's current annual salary by multiplying her monthly salary by the number of months in a year (12). She earns $600 per month, so her current annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the 10% increase after five years. This means she will receive an additional $720 (10% of $7200) as a bonus to her salary. Her new annual salary after this increase will be $7200 + $720 = $8920.
+        3. After three more years, Sylvie will have",Node9,5,6,7,13,0.20419056450948847,64,False
+" 1. First, let's calculate Sylvie's current annual salary by multiplying her monthly salary by the number of months in a year (12). She earns $600 per month, so her current annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the 10% increase after five years. This means she will receive an additional $720 (10% of $7200) to her current annual salary. Her new annual salary after the first increase would be $7200 + $720 = $8920.
+        3. After three more years, Sylvie will have been in the company for a total of 5 + 3 = 8 years. To calculate her annual salary after these additional 3 years, we'll apply another 10% increase to her current",Node10,5,6,7,13,0.23393768261900416,107,False
+" 1. First, let's calculate Sylvie's current annual salary by multiplying her monthly salary by the number of months in a year (12). She earns $600 per month, so her current annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the 10% increase after five years. This means she will receive an additional 10% of $7200 every year since reaching the milestone (5 years).
+        3. Let's calculate the annual salary increase for each of these three extra years:
+        First year - 10% of $7200 = $720
+        Second year - 10% of $8920 = $",Node11,5,7,7,14,0.7447867016785947,81,False
+" 1. First, let's calculate Sylvie's current annual salary by multiplying her monthly salary by the number of months in a year (12). She earns $600 per month, so her current annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the 10% increase after five years. This means she will receive an additional $720 (10% of her initial annual salary) every year.
+        Since she's in her sixth year and we want to know her salary after three more years, we need to calculate this for two more years.
+        3. For the first year after the increase, Sylvie will have an",Node13,4,6,6,12,0.595466142565534,69,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate Sylvie's initial annual salary before her policy increase for the first five years
+Total initial salary for first five years = Initial Yearly Salary * Number of Years in Policy El",Node14,4,8,6,14,0.954050818770972,42,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the 10% increase in Sylvie's salary after her first five years
+Increase = Initial Yearly salary * Increase percentage
+Increase = $7200 * 10% = $7200 * 0.1 = $720 (for each year)
+        
+4. Calculate Sylvie's new yearly salary after the first increase
+New Yearly salary = Initial Yearly salary + Increase
+New Yearly salary = $7200 + $",Node15,2,7,4,11,0.5739630400211518,116,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary",Node16,1,6,3,9,0.8351623434108107,114,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the increase in Sylvie's salary for the first five years after she's already received her initial salary increase
+Increase per year = Initial Yearly salary * Increase percentage / 100
+Increase for the first five years = $7200 * (10%/100) = $720
+
+4. Add the total increase to her initial",Node17,5,7,7,14,0.42946102712037004,89,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Find the increase in Sylvie's salary after her first 5 years by applying a 10% increment to her initial annual salary
+Increased Yearly salary = Initial Yearly salary + (Initial Yearly salary * Increase percentage)",Node18,3,7,5,12,0.5656908801500364,55,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the 10% increase on Sylvie's initial yearly salary every year for staying five years
+10% increase per year = ($7200 * 0.1) = $720
+
+4. Add the annual increases to her initial salary after each of the three",Node19,2,6,4,10,0.7710022322209777,67,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Determine the amount of increase Sylvie will receive after her five years tenure according to the company policy (10% of initial salary)
+Increase = 10% of Initial Yearly Salary
+Increase = 0.1 * $720",Node20,3,8,5,13,0.9689400813526178,61,False
+" 1. First, let's calculate Sylvie's current annual salary based on her initial monthly salary and the number of months in a year (12). Her monthly salary is $600, so her annual salary would be $600 * 12 = $7200.
+        2. Now, let's consider the policy change after five years. Sylvie will receive a 10% increase on her initial salary of $600. The increased salary is $600 * (1 + 0.1) = $660.
+        3. After the increase, her monthly salary becomes $660. To find her annual salary after the increase, we multiply this by the number of months in a year: $660 * 12 = $7920.
+        4. Now, let's",Node21,2,8,4,12,0.19874190488624455,78,False
+" 1. First, let's calculate Sylvie's current annual salary based on her initial monthly salary and the number of months in a year (12). Her monthly salary is $600, so her annual salary would be $600 * 12 = $7200.
+        2. Now, let's consider the policy change after five years. Sylvie will receive a 10% increase on her initial salary of $600. The increased salary is $600 + ($600 * 0.1) = $660.
+        3. After five years, her annual salary would be $660 * 12 = $8320.
+        4. For the next three years (after five years), we",Node23,2,9,4,13,0.5264116273961246,60,False
+" 1. First, let's calculate Sylvie's current annual salary based on her initial monthly salary and the number of months in a year (12). Her monthly salary is $600, so her annual salary would be $600 * 12 = $7200.
+        2. Now, let's consider the policy change after five years. Sylvie will receive a 10% increase on her initial salary of $600. The increased salary is $600 * (1 + 0.1) = $660.
+        3. With this new monthly salary, we can calculate Sylvie's annual salary after the policy change: $660 * 12 = $7920.
+        4. In the",Node24,2,9,4,13,0.6086114450456173,60,False
+" 1. First, let's calculate Sylvie's current annual salary based on her initial monthly salary and the number of months in a year (12). Her monthly salary is $600, so her annual salary would be $600 * 12 = $7200.
+        2. Now, let's consider the policy change after five years. Sylvie will receive a 10% increase on her initial salary of $600. The increased salary is $600 * (1 + 0.1) = $660. This new monthly salary will be $660 from now on as she has stayed in the company for five years.
+        3. Now, we",Node25,2,9,4,13,0.9591210832470211,46,False
+" 1. First, let's calculate Sylvie's current annual salary based on her initial monthly salary and the number of months in a year (12). Her monthly salary is $600, so her annual salary would be $600 * 12 = $7200.
+        2. Now, let's consider the policy change after five years. Sylvie will receive a 10% increase on her initial salary of $600. The increased salary is $600 * (1 + 0.1) = $660.
+        3. After the increase, her monthly salary becomes $660. To find her annual salary after this change, multiply her new monthly salary by the",Node26,3,9,5,14,0.20391631507148222,49,False
+" 1. First, let's calculate Sylvie's current annual salary based on her initial monthly salary and the number of months in a year (12). Her monthly salary is $600, so her annual salary would be $600 * 12 = $7200.
+        2. Now, let's consider the policy change after five years. Sylvie will receive a 10% increase on her initial salary of $600. The increased salary is $600 * (1 + 0.1) = $660 per month.
+        So, her new monthly salary after 5 years would be $660.
+        3. To calculate Sylvie'",Node27,3,9,5,14,0.5571586918286119,45,False
+" 1. Let's first understand the current situation: Sylvie has been working at this company for 5 years and she earns $600 per month. Her initial monthly salary is $600 and there's a 10% annual increment policy for employees who have worked for more than 5 years.
+        2. Let's calculate the annual salary after the first year of increment: After one year, the 10% increment will be applied to her initial monthly salary ($600 * 1.1 = $660 per month)
+        So, her new annual salary will be $660 * 12 = $7920.
+        3. Now, let's consider the next two years: We have to apply increments for these two years as well. For each year, a 10% increment is applied on the previous year's annual salary.",Node28,2,5,4,9,0.3974084667588972,93,False
+" 1. Let's first understand the current situation: Sylvie has been working at this company for 5 years and she earns $600 per month. Her initial monthly salary is $600 and there's a 10% annual increment policy for employees who have worked for more than 5 years.
+        2. Let's calculate the annual salary after the first year of increment: After one year, the 10% increment will be applied to her initial monthly salary $600 * 1.1 = $660 per month
+        This means that in a year, her income will increase by $60. To calculate her annual salary after the first year, multiply this amount by 12 months:
+         $660 * 12 = $8,320",Node30,2,5,4,9,0.744007365467833,72,False
+" 1. Let's first understand the current situation: Sylvie has been working at this company for 5 years and she earns $600 per month. Her initial monthly salary is $600 and there's a 10% annual increment policy for employees who have worked for more than 5 years.
+        2. Let's calculate the annual salary after the first year of increment: After one year, the 10% increment will be applied to her initial monthly salary $600 * (1 + 0.1) = $660 per month
+        So, her new annual salary after the first year would be $660 * 12 = $7920.
+        3. Let's calculate the annual salary after the second year of increment: After two years",Node34,1,4,3,7,0.20779762977387983,70,False
+" 1. Let's first understand the current situation: Sylvie has been working at this company for 5 years and she earns $600 per month. Her initial monthly salary is $600 and there's a 10% annual increment policy for employees who have worked for more than 5 years.
+        2. Let's calculate the annual salary after the first year of increment: After one year, the 10% increment will be applied to her initial monthly salary $600 * (1 + 0.1) = $660 per month
+        So, her new annual salary after the first year would be $660 * 12 = $7920.
+        3. Let's calculate the annual salary after the second year of increment: After two years 4. Let's calculate the annual salary after the third year of increment: After three years, the same process will be repeated as in the previous years. The 10% increment is applied to her new monthly salary from the previous year ($836).
+           $836 * (1 + 0.1) = $919.6 per month
+        5. Now let's calculate Sylvie's annual salary for this third year: Her new annual salary after the third increment will be $919.6 * 12 = $",Node36,3,4,6,10,0.6369562433618862,120,False
+" 1. Let's first understand the current situation: Sylvie has been working at this company for 5 years and she earns $600 per month. Her initial monthly salary is $600 and there's a 10% annual increment policy for employees who have worked for more than 5 years.
+        2. Let's calculate the annual salary after the first year of increment: After one year, the 10% increment will be applied to her initial monthly salary $600 * (1 + 0.1) = $660 per month
+        So, her new annual salary after the first year would be $660 * 12 = $7920.
+        3. Let's calculate the annual salary after the second year of increment: After two years 4. Let's calculate the annual salary after the third year of increment: After three years, her new annual salary would be $8568. 
+        So, Sylvie's annual salary after three more years of service will be $",Node38,2,4,5,9,0.3252271390530618,52,False
+" 1. First, let's calculate Sylvie's current annual salary before any increase due to her five-year milestone and 3 more years of service. Since she is paid $600 per month for a year (12 months), her annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the increase in salaries after clocking 5 years. Her initial salary of $7200 will be increased by 10% as per the company policy. To find this increase, multiply her current annual salary ($7200) by 10%, which is 0.10. So, the increase in her salary due to reaching her 5-year milestone would be",Node42,4,8,6,14,0.7517005038304198,81,False
+" 1. First, let's calculate Sylvie's current annual salary before any increase due to her five-year milestone and 3 more years of service. Since she is paid $600 per month for a year (12 months), her annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the increase in salary after completing five years at the company. The policy states that salaries will be increased by 10% of the initial salary every year for those who have stayed for five years. So, her current annual salary ($7200) will get a 10% increase, which is $7200 * 0",Node43,5,10,7,17,0.06971293004915091,69,False
+" 1. First, let's calculate Sylvie's current annual salary before any increase due to her five-year milestone and 3 more years of service. Since she is paid $600 per month for a year (12 months), her annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the increase in 3. Her initial annual salary is $7200. To find out how much she will get after increasing it by 10% for staying five years, we multiply her current annual salary",Node45,5,10,7,17,0.41027930819623404,41,False
+" 1. First, let's calculate Sylvie's current annual salary before any increase due to her five-year milestone and 3 more years of service. Since she is paid $600 per month for a year (12 months), her annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the increase in salary due to her five-year milestone. According to the company policy, each employee receives an additional 10% of their initial salary. So, Sylvie gets a bonus equal to $7200 * 0.1 =",Node46,5,10,7,17,0.6466495651920231,50,False
+" 1. First, let's calculate Sylvie's current annual salary before any increase due to her five-year milestone and 3 more years of service. Since she is paid $600 per month for a year (12 months), her annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the increase in salary for her five-year milestone. The company increases salaries by 10% of the initial salary every year, so for the first year after reaching her five-year mark, Sylvie will receive a $7200 * (1 + 0.1) = $7920 annual salary.
+        3. After three more years of service, her annual salary will be increased again by 10% of her new salary after the first year increase ($79",Node47,3,5,5,10,0.662930449836245,102,False
+" 1. First, let's calculate Sylvie's current annual salary before any increase due to her five-year milestone and 3 more years of service. Since she is paid $600 per month for a year (12 months), her annual salary is $600 * 12 = $7200.
+        2. Now, let's consider the increase in 3. her annual salary because of staying for five years. According to the policy, this increase will be 10% of her initial ($7200) salary, which is 10% of $7200 = 0.1 * $7200 = $720",Node48,5,10,7,17,0.7614779472928043,64,False
+" 1. Determine Sylvie's current monthly salary: $600 per month
+        2. Calculate her initial yearly salary: $600 * 12 = $7200 (assuming a standard 12-month calendar)
+        3. Apply the 10% increase for staying 5 years, which will be calculated on her initial salary ($7200): $ 4. Calculate the new yearly salary after the increase: $7200 * 1.1 = $8120 (rounded to two decimal places)
+        5. After three more years of service, Sylvie will have completed a total of 8 years in the company.
+        6. Repeat step 3 for her new yearly salary after staying 8 years: $8120 * 1.1 = $9032 (rounded to",Node49,2,9,4,13,0.29230590532571177,104,False
+" 1. Determine Sylvie's current monthly salary: $600 per month
+        2. Calculate her initial yearly salary: $600 * 12 = $7200 (assuming a standard 12-month calendar)
+        3. Apply the 10% increase for staying 5 years, which will be calculated on her initial salary ($7200): $ 4. Calculate Sylvie's new yearly salary after the 10% increase: $7200 * 1.1 = $8120 (rounded to two decimal places)
+        5. After three more years of service, we need to",Node50,2,10,4,14,0.4025327715754289,58,False
+" 1. Determine Sylvie's current monthly salary: $600 per month
+        2. Calculate her initial yearly salary: $600 * 12 = $7200 (assuming a standard 12-month calendar)
+        3. Apply the 10% increase for staying 5 years, which will be calculated on her initial salary ($7200): $ 4. Increase her annual salary by the 10%: $7200 * 1.10 = $8040 (after five years)
+        5. Now that Sylvie has three more years of service, we need to apply another increase for those years, which will again be calculated on her initial salary ($8040): $8040 * 1.",Node51,2,10,4,14,0.8261602370745916,85,False
+" 1. Determine Sylvie's current monthly salary: $600 per month
+        2. Calculate her initial yearly salary: $600 * 12 = $7200 (assuming a standard 12-month calendar)
+        3. Apply the 10% increase for staying 5 years, which will be calculated on her initial salary ($7200): $ 4. Calculate the amount of increase: 10% of $7200 = 0.1 * $7200 = $720
+        5. Add the increase to her initial yearly salary to find her new yearly",Node52,4,10,6,16,0.5331624824995362,54,False
+" 1. Determine Sylvie's current monthly salary: $600 per month
+        2. Calculate her initial yearly salary: $600 * 12 = $7200 (assuming a standard 12-month calendar)
+        3. Apply the 10% increase for staying 5 years, which will be calculated on her initial salary ($7200): $ 4. Calculate the new yearly salary after the 10% increase: $7200 * 1.1 = $8120
+        5. After three more years of service (3 years * 12 months/year = 36 months), we need to calculate her monthly salary",Node53,2,10,4,14,0.03313391866970028,66,False
+" 1. Determine Sylvie's current monthly salary: $600 per month
+        2. Calculate her initial yearly salary: $600 * 12 = $7200 (assuming a standard 12-month calendar)
+        3. Apply the 10% increase for staying 5 years, which will be calculated on her initial salary ($7200): $ 4. Calculate the new yearly salary after the 10% increase: $7200 * 1.1 = $8120
+        5. After three more years of service (3 years * 12 months/year =",Node54,2,10,4,14,0.23814806981441405,54,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 (initial yearly salary) + $720 (annual increase for staying five years) = $7920 (per year after 5 years in the company)
+      
+5. Calculate Sylvie's annual salary for three more years, which will make it a total of eight years in the company (i.e., starting with her sixth year). To do this, we simply add three increases to her current salary, since they",Node56,2,2,5,7,0.9911127571286027,100,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 + $720 = $8920 (per year)
+
+5. Calculate Sylvie's annual salary after three more years of service by adding the annual increases for those three years to her current annual salary
+Number of years = 3
+Annual increase per year = $720
+Total annual increase = Number of years * Annual increase per year
+Total annual increase = 3 * $720 = $2160
+
+Final",Node57,1,2,4,6,0.05270939014929288,105,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 + $720 = $8920 (per year)
+      
+5. Calculate Sylvie's salary three more years after the current year,",Node58,1,10,4,14,0.7848041478830924,41,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 + $720 = $8920 (per year)
+
+5. Calculate Sylvie's annual salary after three more years of service by adding the annual increases for those three years to her current annual salary
+Number of years = 3
+Annual increase per year = $720
+Total Annual increase = Number of years",Node59,1,2,4,6,0.12853981314946605,79,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 + $720 = $8920 (per year)
+
+5. Calculate Sylvie's annual salary after three more years of service by adding the annual increases for those three years to her current annual salary
+Number of years = 3
+Annual increase per year = $720
+Total annual increase = Number of years * Annual increase per year
+Total annual increase = 3 * $720 = $2160
+
+Final",Node60,1,2,4,6,0.0742392426673607,105,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 (initial yearly salary) + $720 (annual increase)
+        = $7920 (per year) 5. After three more years of service, we want to find her annual salary for these years as well, so again add the annual increase to her current yearly salary
+Future",Node61,2,7,5,12,0.8981933838778089,71,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 (initial) + $720 (annual increase) = $7920 (per year)
+
+5. Calculate Sylvie's annual salary after",Node62,1,10,4,14,0.41952002215182016,42,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 (initial yearly salary) + $720 (annual increase for staying five years) = $7920 (per year after 5 years in the company)
+      
+5. Calculate Sylvie's annual salary for three more years, which will make it a total of eight years in the company (i.e., starting with her sixth year). To do this, we simply add three increases to her current salary, since they are $720 per year.
+Sixth-year increase = $720
+Seventh-year increase = $720
+Eighth-year increase = $720
+Total increase for the next three years = $720 * 3 = $2160
+        
+6. Add this total increase to",Node86,4,4,9,13,0.5196698955688549,75,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 (initial yearly salary) + $720 (annual increase for staying five years) = $7920 (per year after 5 years in the company)
+      
+5. Calculate Sylvie's annual salary for three more years, which will make it a total of eight years in the company (i.e., starting with her sixth year). To do this, we simply add three increases to her current salary, since they are all 10% of her initial salary.
+Annual increase for each additional year = Initial Yearly salary * Increase percentage / 100
+Annual increase for the next three years = $7200 (initial yearly salary) * 3 * 10 / 100 = $2160 (per year)
+      
+6. Add these annual increases to her",Node87,3,3,8,11,0.05930580839848765,87,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 (initial yearly salary) + $720 (annual increase for staying five years) = $7920 (per year after 5 years in the company)
+      
+5. Calculate Sylvie's annual salary for three more years, which will make it a total of eight years in the company (i.e., starting with her sixth year). To do this, we simply add three increases to her current salary, since they will be 10% each time.
+Additional annual increase = Current Yearly salary * Increase percentage / 100
+Each additional annual increase = $7920 (current yearly salary) * 10 / 100 = $792 (per year)
+        
+6. Calculate Sylvie's annual salary after three more years in",Node90,1,2,6,8,0.8202614683268185,81,False
+" 1. Determine Sylvie's current salary per month
+Sylvie's current salary = $600 (per month)
+
+2. Calculate Sylvie's initial yearly salary by multiplying her monthly salary by 12 months in a year
+Yearly salary = Monthly salary * Number of months in a year
+Initial Yearly salary = $600 * 12 = $7200 (per year) 3. Calculate the annual salary increase after staying for five years, which is 10% of her initial salary
+Annual increase = Initial Yearly salary * Increase percentage / 100
+Annual increase = $7200 * 10 / 100 = $720 (per year)
+      
+4. Determine Sylvie's current annual salary by adding the annual increase to her initial yearly salary
+Current Yearly salary = Initial Yearly salary + Annual increase
+Current Yearly salary = $7200 (initial yearly salary) + $720 (annual increase for staying five years) = $7920 (per year after 5 years in the company)
+      
+5. Calculate Sylvie's annual salary for three more years, which will make it a total of eight years in the company (i.e., starting with her sixth year). To do this, we simply add three increases to her current salary, since they will be 10% each time.
+Additional annual increase = Current Yearly salary * Increase percentage / 100
+Each additional annual increase = $7920 (current yearly salary) * 10 / 100 = $792 (per year)
+        
+6. Calculate Sylvie's annual salary after three more years in Total Yearly salary = Current Yearly salary + Three additional increases
+Total Yearly salary = $7920 (current yearly salary) + ($792 * 3) = $7920 + $2376 = $10,296 (per year after eight years in the company)",Node92,0,0,6,6,0.41776983164543,96,False

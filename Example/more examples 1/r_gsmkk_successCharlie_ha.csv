@@ -1,0 +1,22 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Start with the initial number of stickers Charlie had: 10 stickers.
+        2. Add the stickers he bought from the store: 10 + 21 = 31 stickers.
+        3. Add the stickers he received for his birthday: 31 + 23 = 54 stickers.
+        4. Give 9 stickers to his sister: 54 - 9 =",Node0,1,5,1,6,0.4386848025474953,96,False
+" 1. First, we need to add all the stickers that Charlie had at the beginning (10) and the ones he got from various sources (21 from the store + 23 for his birthday = 44). Now, let's call this total number of stickers 'T'.",Node1,5,8,5,13,0.4713262424816931,65,False
+" 1. Let's start with the total number of stickers Charlie initially had: 10 (from home) + 21 (from the store) + 23 (for his birthday) = 54 stickers in total.
+        2. Next, he gave away 9 stickers to his sister. So",Node2,1,6,1,7,0.5390546876043584,69,False
+" 1. Let's start with Charlie's initial number of stickers, which is 10.
+        2. Next, he bought more stickers from the store and received them for his birthday. He had a total of 21 + 23 = 44 new stickers.
+        3. Comb",Node3,1,9,1,10,0.8925018407919063,68,False
+" 1. First, we need to understand the total number of stickers Charlie had initially, which were 10.
+        2. Next, let's add the new stickers Charlie bought and got - 21 from a store and 23 for his birthday - together (21 + 23 = 44).",Node4,2,8,2,10,0.8710679588757937,70,False
+" 1. First, let's add up all the stickers Charlie had initially: 10 (from home) + 21 (bought from store) + 23 (received for his birthday) = 54 stickers.
+        2. After giving 9 stickers to his sister and using 28 for decorating a greeting card, Charlie had used a total of 9 + 28 = 37 stickers.
+        3. To find out how many",Node5,1,2,1,3,0.46384118409479913,106,False
+" 1. First, let's add the number of stickers Charlie had initially (10) with the ones he bought from the store (21). This gives us 10 + 21 = 31 stickers.
+        2. Next, we need to account for the birthday gift of 23 stickers. So now, we have a",Node6,1,7,1,8,0.3589022562422143,76,False
+" 1. First, let's add up all the stickers Charlie had initially: 10 (from home) + 21 (bought from store) + 23 (received for his birthday) = 54 stickers.
+        2. After giving 9 stickers to his sister and using 28 for decorating a greeting card, Charlie had used a total of 9 + 28 = 37 stickers.
+        3. To find out how many 4. To find out how many stickers Charlie has left, subtract the number of used stickers from his initial total: 54 (initial total) - 37 (used stickers) = 17 stickers.
+        So, Charlie has 17 stickers left.",Node7,1,0,2,2,0.3380570900609088,115,False

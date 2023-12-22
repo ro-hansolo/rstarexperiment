@@ -1,0 +1,1070 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. How many years will it take before he starts earning money on the lemon tree? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:4, H:9, Flag:False
+[\"1. First, let's calculate the total cost of planting the lemon tree. The tree costs $90 to plant.\n        2. Next, we need to determine the annual profit from selling lemons. Each year, the tree produces 7 lemons and sells them for $\", 61, 0.22008115481174018]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:8, Flag:False
+[\"1. First, let's calculate the total cost of planting the lemon tree. The tree costs $90 to plant.\n        2. Now, we need to determine how much Carlos earns each year from selling lemons. He grows 7 lemons per year and sells them for $1.5 each. So, he makes 7 * $1.5 = $10.5 from the lemons.\n        3. We also need to account\", 99, 0.2766574762919136]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:7, Flag:False
+[\"1. First, let's determine how much Carlos earns from selling the lemons annually. He grows 7 lemons each year and sells them for $1.5 each. So, he earns 7 * $1.5 = $10.5 per year.\n        2. Now, let's consider the total cost of planting and maintaining the tree. The initial cost to plant is $90, and it costs $3 a year for watering and feeding. So, the total cost over the years is $90 + (\", 118, 0.45266601564870956]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:5, H:8, Flag:False
+[\"1. First, let's calculate the annual income from selling the lemons. Carlos grows 7 lemons per year and sells them for $1.5 each. So, his annual income is 7 * $1.5 = $10.5.\n        2. Now, we need to consider the cost of watering and feeding the tree. This\", 77, 0.1872775811516324]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:3, H:7, Flag:False
+['1. Calculate the total cost of planting and annual maintenance: $90 (planting) + $3 (yearly cost) = $93 per year\n        2. Calculate the profit each year after considering lemon sales: 7 lemons * $1.5/lemon = $10.5 income\n        3. Subtract annual costs from annual income to find the net profit: $10.5', 91, 0.9561027630501653]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:4, H:9, Flag:False
+[\"1. First, let's calculate the total cost of planting the lemon tree. The tree costs $90 to plant.\n        2. Next, we need to determine the annual income from selling lemons. Each year, the tree grows 7 lemons and sells them for $1.5 each. So, the annual income is 7 * $1.5 = $10.5 per lemon.\", 89, 0.0805707869933251]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:10, H:10, Flag:True
+[\"1. First, let's analyze Carlos' expenses and income related to the lemon tree. The tree cost is a one-time expense, so we can ignore it in this case. His yearly income from selling lemons will be 7 lemons * $1\", 55, 0.8899899492345896]
+Path: StartNode6" color=red shape=box]
+	Node2 -> Node7 [label=Node2Node7]
+	Node7 [label="V:2, H:9, Flag:False
+[\"3. To find out when Carlos starts earning money, we need to compare his earnings with the total cost of planting and maintaining the tree. We will do this by adding up his annual earnings until they equal or exceed the total cost.\n        4. Let's start calculating the years: In year 1, he earn\", 68, 0.15676301241940405]
+Path: Node2Node7" color=black shape=box]
+	Node2 -> Node8 [label=Node2Node8]
+	Node8 [label="V:2, H:9, Flag:False
+['3. Next, we need to find out when Carlos starts earning money from the lemon tree. This happens when his earnings from selling lemons are equal to or greater than the annual cost of planting and maintaining the tree.\n        4. To determine this point', 53, 0.07955266911043779]
+Path: Node2Node8" color=black shape=box]
+	Node2 -> Node9 [label=Node2Node9]
+	Node9 [label="V:2, H:9, Flag:False
+[\"3. To find out when Carlos starts earning money, we need to compare his earnings with the total cost of planting and maintaining the tree. We'll do this by calculating how many years it takes for his annual earnings to cover the initial cost ($90) and then continue covering the yearly maintenance costs ($3).\n        4. Let's assume that Carlos starts earning money in a particular year, which we will call 'year 1'. In year 1, he earns $10.5 from selling lemons.\", 112, 0.11537616127565475]
+Path: Node2Node9" color=black shape=box]
+	Node2 -> Node10 [label=Node2Node10]
+	Node10 [label="V:2, H:9, Flag:False
+[\"3. Let's also take into account the earnings from selling lemons. We know that the annual profit per year is $10.5 from selling lemons and there are no profits in the first year due to initial expenses. \n        Therefore,\", 53, 0.7174952829616316]
+Path: Node2Node10" color=black shape=box]
+	Node2 -> Node11 [label=Node2Node11]
+	Node11 [label="V:2, H:9, Flag:False
+[\"3. To find out when Carlos starts earning money, we need to compare his annual earnings with the total cost of the tree. As long as he doesn't earn enough each year to cover all the expenses, he will keep losing money. Once his earnings exceed the total cost, he will start making a profit.\", 64, 0.43089324326956957]
+Path: Node2Node11" color=black shape=box]
+	Node2 -> Node12 [label=Node2Node12]
+	Node12 [label="V:4, H:9, Flag:True
+['3. To find out when Carlos starts earning money, we need to compare his earnings with the total cost. We will do this by adding the annual earnings from selling lemons and subtracting the annual costs of planting and maintaining the tree.\n        a. In the first year, he earns $10.5, but spends $3 on water and feeding. So, his net income in the first year is $10.', 92, 0.3595797664562915]
+Path: Node2Node12" color=red shape=box]
+	Node2 -> Node13 [label=Node2Node13]
+	Node13 [label="V:2, H:9, Flag:False
+[\"3. To find out when Carlos starts earning money, we need to compare his earnings with the total cost of the lemon tree. We'll do this by calculating how many years it takes for his annual earnings to cover the initial planting cost and maintenance costs.\n        4. Let's assume that after a certain number of years (let's call it 'x'), Carlos starts earning money from the lemon tree. In these x years, he earns $10.5 per year. So, his total earnings in those\", 110, 0.1018759831316225]
+Path: Node2Node13" color=black shape=box]
+	Node1 -> Node14 [label=Node1Node14]
+	Node14 [label="V:2, H:3, Flag:False
+['4. We also need to account for the annual maintenance cost of watering and feeding the tree which is $3 per year.\n        5. To find out how many years it will take before Carlos starts earning money, we need to determine when his earnings from lemon sales are greater than or equal to the combined costs of planting the tree initially and maintaining it each year.\n\nWe can write down', 82, 0.776283364278189]
+Path: Node1Node14" color=black shape=box]
+	Node1 -> Node15 [label=Node1Node15]
+	Node15 [label="V:2, H:4, Flag:False
+[\"4. for the annual expenses of watering and feeding the tree. This costs him $3 per year.\n        5. To find out when Carlos starts earning money, we'll have to compare his earnings from selling lemons with the total cost of\", 52, 0.41915925326988845]
+Path: Node1Node15" color=black shape=box]
+	Node1 -> Node16 [label=Node1Node16]
+	Node16 [label="V:2, H:4, Flag:False
+[\"4. for the annual expenses of watering and feeding the tree, which amounts to $3 per year.\n        5. To find out how many years it will take before Carlos starts earning money on the lemon tree, we'll compare his\", 50, 0.5985037821469364]
+Path: Node1Node16" color=black shape=box]
+	Node1 -> Node17 [label=Node1Node17]
+	Node17 [label="V:2, H:3, Flag:False
+['3. We also need to account for the annual expenses of watering and feeding the tree which cost $3 per year.\n        4. To calculate how long it takes before Carlos starts earning money, we will compare his earnings (from selling lemons', 51, 0.8955533410596549]
+Path: Node1Node17" color=black shape=box]
+	Node1 -> Node18 [label=Node1Node18]
+	Node18 [label="V:2, H:3, Flag:False
+['4. for the annual expenses of watering and feeding the tree. This costs him $3 per year.\n        5. To find out when Carlos starts earning money, we need to compare his earnings with the total cost of planting the tree. The break-even point is', 57, 0.267011062006132]
+Path: Node1Node18" color=black shape=box]
+	Node1 -> Node19 [label=Node1Node19]
+	Node19 [label="V:2, H:3, Flag:False
+[\"4. for the cost of watering and feeding the tree every year. This costs $3 per year.\n        5. To find out when Carlos starts earning, we need to compare the annual revenue (lemon sales minus tree maintenance) with the initial planting cost. Let's set up an equation: earnings in the first year = lemon sales - tree maintenance cost - planting cost\", 83, 0.7749703147054023]
+Path: Node1Node19" color=black shape=box]
+	Node1 -> Node20 [label=Node1Node20]
+	Node20 [label="V:2, H:3, Flag:False
+['3. We also need to account for the cost of watering and feeding the lemon tree every year, which is $3 per year.\n        4. To find out when Carlos starts earning money, we must compare his earnings with his expenses (planting cost + annual expenses). Initially, he will not earn any money', 66, 0.656933777197196]
+Path: Node1Node20" color=black shape=box]
+	Node14 -> Node21 [label=Node14Node21]
+	Node21 [label="V:2, H:4, Flag:False
+['6. Earnings per year = (Profit from lemon sale) + (Money spent on maintenance). So, in this case: $10.5 + $3 = $13.5\n        7. Now, to determine the number of', 54, 0.9550609672145226]
+Path: Node14Node21" color=black shape=box]
+	Node14 -> Node22 [label=Node14Node22]
+	Node22 [label="V:2, H:4, Flag:False
+[\"6. Initial cost = $90\n        7. Annual earnings = $10.5 (from selling lemons) + $3 (maintenance cost) = $13.5\n        8. We need to find the number of years 'n' when the sum of n * annual earnings is equal or greater than the\", 69, 0.32194067965863415]
+Path: Node14Node22" color=black shape=box]
+	Node14 -> Node23 [label=Node14Node23]
+	Node23 [label="V:2, H:4, Flag:False
+[\"6. Earnings per year = (price per lemon * number of lemons) - annual maintenance cost\n        7. First, we'll find out when Carlos starts breaking even, which is when his earnings are equal to all the costs. In this case, it will be \n          Earnings\", 64, 0.8872867055381163]
+Path: Node14Node23" color=black shape=box]
+	Node14 -> Node24 [label=Node14Node24]
+	Node24 [label="V:2, H:5, Flag:False
+[\"6. Initial cost = $90 (planting)\n        7. Annual revenue = $10.5 (lemon sales)\n        8. Annual maintenance cost = $3 (watering & feeding)\n\nNow we need to find the break-even point, which is when earnings from lemon sales equal the total costs. To do this, we'll set up an equation:\n        Earnings_from_lemons = Initial_cost + (Annual_maintenance_cost * Number_of_years)\n\n        9. Re\", 119, 0.44049547897731167]
+Path: Node14Node24" color=black shape=box]
+	Node14 -> Node25 [label=Node14Node25]
+	Node25 [label="V:5, H:5, Flag:True
+[\"6. Initial cost (planting) + Annual maintenance cost = Earnings from lemon sales\n        $90 + ($3 * Years) = $10.5 * Years\n\nNow, we need to solve for 'Years' which represents the number of years it will take before Carlos starts earning money.\n        7. First, we can rearrange the equation to get 'Years' on one side:\n        $90 + ($3 * Years) - $10.5 * Years = 0\", 111, 0.22208556656953737]
+Path: Node14Node25" color=red shape=box]
+	Node14 -> Node26 [label=Node14Node26]
+	Node26 [label="V:3, H:5, Flag:False
+['6. Initial cost (planting) + Annual maintenance cost = Earnings from selling lemons\n        $90 + ($3 * Years) = $10.5 * Years', 41, 0.20176815745226684]
+Path: Node14Node26" color=black shape=box]
+	Node14 -> Node27 [label=Node14Node27]
+	Node27 [label="V:3, H:5, Flag:False
+[\"6. Initial cost + (Annual maintenance * Years) >= Earnings per Year\n        $90 + ($3 * Years) >= $10.5\n\n        7. Now, we need to solve for 'Years' which represents the number of years it will take before Carlos starts earning money. Let's isolate 'Y\", 73, 0.43949316884486145]
+Path: Node14Node27" color=black shape=box]
+	Node17 -> Node28 [label=Node17Node28]
+	Node28 [label="V:3, H:3, Flag:False
+[\"5. and covering the costs) with the initial planting cost ($90). We need to find the number of years when the cumulative earnings from selling lemons and covering expenses are equal to or greater than the initial planting cost.\n        6. Let's start by calculating Carlos' earnings for each year: $10.5 (from selling lemons) - $3 (watering/feeding costs) = $7.5 per year.\n        7. Now, let's calculate how much\", 109, 0.03782989235111944]
+Path: Node17Node28" color=black shape=box]
+	Node17 -> Node29 [label=Node17Node29]
+	Node29 [label="V:7, H:7, Flag:True
+[\"5. and covering the costs) with the initial investment ($90). We need to find the number of years when the cumulative earnings equal or exceed the initial cost.\n        6. Let's start by calculating the total earnings per year: $10.5 from lemon sales + $3 for watering/feeding = $13.5 per year.\n        7. Now, let's calculate how many years it takes to cover the initial investment of $90. We can do this by dividing the initial cost ($90) by\", 118, 0.19358255505698974]
+Path: Node17Node29" color=red shape=box]
+	Node17 -> Node30 [label=Node17Node30]
+	Node30 [label="V:3, H:4, Flag:False
+[\"5. and covering the costs) with the initial planting cost ($90). We can do this by adding up all his annual earnings from selling lemons and subtracting the yearly expenses for watering and feeding.\n        6. Let's start calculating Carlos' earnings each year:\n           - Year 1: $10.5 (from selling lemons) - $3 (watering/feeding cost) =\", 92, 0.13654208518310762]
+Path: Node17Node30" color=black shape=box]
+	Node17 -> Node31 [label=Node17Node31]
+	Node31 [label="V:3, H:7, Flag:False
+[\"5. and after covering expenses) with the initial investment ($90). We'll keep track of the cumulative earnings each year and subtract the annual cost from the planting cost.\n        6. In the first year\", 47, 0.4248476263865921]
+Path: Node17Node31" color=black shape=box]
+	Node17 -> Node32 [label=Node17Node32]
+	Node32 [label="V:9, H:8, Flag:True
+[\"5. Let's add up all the costs: planting cost ($90), annual expenses ($3) and lemon sales ($10.5). So far, we have a total of $90 + $3 + $10.5 = $103.5.\n        6. Now, let's subtract this amount from the earnings when he starts earning money to find out how many years it takes for him to break even. Since he earns $10.5 each year and his total expenses are $103.5, he needs\", 120, 0.5901146641291116]
+Path: Node17Node32" color=red shape=box]
+	Node17 -> Node33 [label=Node17Node33]
+	Node33 [label="V:2, H:3, Flag:False
+[\"5. and covering the expenses) with the initial investment in the lemon tree. We can use this formula to find out how many years it will take: (Initial cost - Earnings per year + Expenses per year) / (Earnings per year - Expenses per year). In our case, it's: ($90 - $10.5 + $3) / ($10.5 - $3).\n        6. Now let's calculate the\", 100, 0.6691756296376499]
+Path: Node17Node33" color=black shape=box]
+	Node17 -> Node34 [label=Node17Node34]
+	Node34 [label="V:8, H:8, Flag:True
+[\"5. First, let's add up all costs: initial planting cost ($90) + annual expenses ($3 per year), which totals to $103. We will keep this number in mind when comparing it to the yearly profits later.\n        6. Now we want to find out how many years it would take for him\", 72, 0.9850660123024733]
+Path: Node17Node34" color=red shape=box]
+	Node18 -> Node35 [label=Node18Node35]
+	Node35 [label="V:6, H:9, Flag:True
+[\"6. when the sum of his earnings from selling lemons and covering annual expenses equals the initial cost of planting the tree. So, we can write this as: $10.5 (earnings per year) + $3 (annual expenses) = $90 (initial cost).\n        7. Now, let's solve for the number of years it takes to\", 79, 0.09191343972187216]
+Path: Node18Node35" color=red shape=box]
+	Node18 -> Node36 [label=Node18Node36]
+	Node36 [label="V:6, H:9, Flag:True
+[\"6. when the sum of his earnings from selling lemons and covering annual expenses equals the initial cost of planting the lemon tree.\n        7. So, we can write this as: $10.5 (earnings per year) + $3 (annual expenses) = $90 (initial cost).\n        8. Now, let's solve for the number of\", 80, 0.08367231502787242]
+Path: Node18Node36" color=red shape=box]
+	Node18 -> Node37 [label=Node18Node37]
+	Node37 [label="V:5, H:8, Flag:True
+[\"6. when the sum of his earnings from selling lemons and covering annual expenses equals the initial cost of planting the tree. So, we can write this as: $10.5 (earnings) + $3 (annual expenses) = $90 (initial cost).\n        7. Now, let's solve for the number of years it takes to reach the break-even point: $10.5 + $3 * x = $90.\n        8. We can re\", 106, 0.14563167864575566]
+Path: Node18Node37" color=red shape=box]
+	Node18 -> Node38 [label=Node18Node38]
+	Node38 [label="V:7, H:9, Flag:True
+[\"6. When the sum of his earnings from selling lemons and the money he saves on annual expenses equals the initial cost of planting the tree ($90).\n        7. Let's calculate this step\", 43, 0.2527698504620508]
+Path: Node18Node38" color=red shape=box]
+	Node18 -> Node39 [label=Node18Node39]
+	Node39 [label="V:6, H:9, Flag:True
+['6. When the sum of earnings from lemon sales ($10.5) and annual expenses ($3) is equal to or greater than the initial investment ($90), he starts making a profit. We can represent this as an equation: $10.5 +', 55, 0.4967366432041028]
+Path: Node18Node39" color=red shape=box]
+	Node18 -> Node40 [label=Node18Node40]
+	Node40 [label="V:7, H:9, Flag:True
+[\"6. where the earnings from selling lemons cover all expenses (planting cost + annual expenses).\n        7. So, let's calculate the break-even point: Earnings from selling lemons = $10.5 per year - Annual expenses of $3 per year. This means he will start earning money when his earnings from lemon sales are equal to or greater than the cost of planting and maintaining the tree.\n        8. Let's find out how many years it takes to reach this point:\", 108, 0.4595344947815514]
+Path: Node18Node40" color=red shape=box]
+	Node18 -> Node41 [label=Node18Node41]
+	Node41 [label="V:6, H:9, Flag:True
+['6. when the earnings from selling lemons equal or exceed the initial investment ($90) plus annual expenses ($3). So, it will be $10.5 (earnings from lemon sales) >= $90', 46, 0.8524016386292862]
+Path: Node18Node41" color=red shape=box]
+	Node19 -> Node42 [label=Node19Node42]
+	Node42 [label="V:4, H:6, Flag:True
+[\"6. In the first year, lemons are growing but no money is earned yet due to the tree not being mature enough to bear fruit. So, we need to consider the second year onwards when he starts earning from selling lemons.\n        7. Now, let's look at the second and following years: earnings = lemon sales - tree maintenance cost (the planting cost is already paid off). We know\", 86, 0.651658423107812]
+Path: Node19Node42" color=red shape=box]
+	Node19 -> Node43 [label=Node19Node43]
+	Node43 [label="V:6, H:4, Flag:True
+[\"6. We plug in the values: $10.5 (lemons sold) - $3 (maintenance) - $90 (planting cost). This gives us earnings in the first year of -$82.5 ($97.5 loss).\n        7. In the next years, he earns more as planting is a one-time cost and it doesn't decrease his annual profits\", 87, 0.9695347492181272]
+Path: Node19Node43" color=red shape=box]
+	Node19 -> Node44 [label=Node19Node44]
+	Node44 [label="V:6, H:4, Flag:True
+['6. Plug in the known values into the equation: $10.5 (lemon sales) - $3 (tree maintenance cost) - $90 (planting cost). This simplifies to -$82.5.\n        7. Since this value is negative, it means Carlos los', 64, 0.8222124902245007]
+Path: Node19Node44" color=red shape=box]
+	Node19 -> Node45 [label=Node19Node45]
+	Node45 [label="V:6, H:4, Flag:True
+['6. Plugging in the values from steps 2 and 3, we get earnings in the first year = $10.5 - $3 - $90 = -$80.5. This means Carlos is still losing money in the first year.\n        7. To', 61, 0.6304557724941345]
+Path: Node19Node45" color=red shape=box]
+	Node19 -> Node46 [label=Node19Node46]
+	Node46 [label="V:7, H:8, Flag:True
+['6. We have already calculated the lemon sales, water and feed costs for one year. So now we just need to add the $90 planting cost which was not included in any previous calculation', 40, 0.8442180867387509]
+Path: Node19Node46" color=red shape=box]
+	Node19 -> Node47 [label=Node19Node47]
+	Node47 [label="V:6, H:4, Flag:True
+['6. Plugging in the values from our earlier calculations into this equation, we have: $10.5 (lemon sales) - $3 (maintenance) - $90 (planting cost) = net earnings of the first year.\n        7. Substitute the numbers into the equation and solve for it: $10.5 - $3 - $90 = -$86.5. This means Carlos lost money during his first year with the lemon tree.\n        8. To figure out', 111, 0.7633927528893061]
+Path: Node19Node47" color=red shape=box]
+	Node19 -> Node48 [label=Node19Node48]
+	Node48 [label="V:6, H:4, Flag:True
+[\"6. Plug in the values for the first year: $10.5 (from selling lemons) - $3 (tree maintenance) - $90 (planting cost). This equals -$80.5. Since Carlos is spending more money than he's earning, it doesn't count as starting to\", 68, 0.8365686058867611]
+Path: Node19Node48" color=red shape=box]
+	Node20 -> Node49 [label=Node20Node49]
+	Node49 [label="V:1, H:9, Flag:False
+['5. We can start calculating from the second year, as by this time he has already incurred planting costs and would have grown some lemons. In the second year, his total earnings =', 42, 0.791373634954824]
+Path: Node20Node49" color=black shape=box]
+	Node20 -> Node50 [label=Node20Node50]
+	Node50 [label="V:1, H:9, Flag:False
+[\"5. We can now calculate how many years it takes for the lemon tree to start generating a profit. Let's assume that after each year, he continues this process of planting, growing lemons, and watering/feeding the tree.\n        6. To find out when\", 59, 0.22770209797023055]
+Path: Node20Node50" color=black shape=box]
+	Node20 -> Node51 [label=Node20Node51]
+	Node51 [label="V:1, H:9, Flag:False
+[\"5. After planting, each year he will start to make a profit by subtracting the cost of watering and feeding from the total amount earned from selling lemons.\n        6. To find out how many years it takes for him to start earning money, we must keep track of the difference between his earnings and expenses. We'll do this in a loop until he starts making a profit.\n           a. Let's assume we are at year 1, so Carlos has spent $90 (planting cost) + $3\", 113, 0.5993777021201856]
+Path: Node20Node51" color=black shape=box]
+	Node20 -> Node52 [label=Node20Node52]
+	Node52 [label="V:1, H:9, Flag:False
+['5. Each year, he will have a net income of $10.5 - $3 = $7.5 from the lemon tree.\n        6. To determine when Carlos starts earning money, we need to find', 46, 0.11247396882487015]
+Path: Node20Node52" color=black shape=box]
+	Node20 -> Node53 [label=Node20Node53]
+	Node53 [label="V:2, H:9, Flag:False
+['5. Add up all his earnings for each year until he starts making a profit: $10.5 per year plus the initial planting cost of $90, and add the annual expense', 40, 0.6825153900131803]
+Path: Node20Node53" color=black shape=box]
+	Node20 -> Node54 [label=Node20Node54]
+	Node54 [label="V:2, H:9, Flag:False
+[\"5. So, let's set up an equation to track earnings: earnings from lemons = (7 * $1.5) - ($3 watering and feeding cost per year)\", 40, 0.6928796514396448]
+Path: Node20Node54" color=black shape=box]
+	Node20 -> Node55 [label=Node20Node55]
+	Node55 [label="V:3, H:9, Flag:False
+[\"5. We can now calculate how many years it takes for the lemon tree to start generating a profit. Let's assume that after each year, he continues to plant and maintain the lemon tree.\n        6. In the first year, Carlos spends $90 (planting cost) + $3 (watering/feeding) = $93 in total. He earns nothing from selling lemons because there are no lemons yet. So, he loses $93 - $10.5 = $82.5 in the first year.\", 119, 0.004190575767226479]
+Path: Node20Node55" color=black shape=box]
+	Node15 -> Node56 [label=Node15Node56]
+	Node56 [label="V:2, H:4, Flag:False
+[\"6. planting the tree and the annual expenses. We can do this by adding up all the earnings he gets from selling lemons and subtracting the total cost and annual expenses.\n        7. Let's calculate the earnings: $10.5 (from 7\", 58, 0.22825420242164474]
+Path: Node15Node56" color=black shape=box]
+	Node15 -> Node57 [label=Node15Node57]
+	Node57 [label="V:3, H:6, Flag:True
+['6. planting and maintaining the lemon tree each year. We can do this by setting up an equation: Earnings = (Cost of Planting + Annual Expenses) - Earnings from Lemons', 43, 0.6410253764823378]
+Path: Node15Node57" color=red shape=box]
+	Node15 -> Node58 [label=Node15Node58]
+	Node58 [label="V:2, H:7, Flag:False
+[\"6. planting the tree and the annual expenses. We can do this by adding all the earnings he makes each year from selling lemons and subtracting the total cost and annual expenses.\n        7. Let's calculate the earnings for 10 years\", 54, 0.31733656688201295]
+Path: Node15Node58" color=black shape=box]
+	Node15 -> Node59 [label=Node15Node59]
+	Node59 [label="V:2, H:3, Flag:False
+[\"6. planting the tree and the annual expenses. We can do this by creating a simple equation that represents the situation: (Earnings from selling lemons - Annual Expenses) >= Cost of planting the lemon tree.\n        7. In our case, we'll have to check if ($10.5 - $3) >= $90 for each year until it holds true.\n        a. For the first year, ($10.5 - $3\", 100, 0.7533701539798512]
+Path: Node15Node59" color=black shape=box]
+	Node15 -> Node60 [label=Node15Node60]
+	Node60 [label="V:3, H:8, Flag:False
+[\"6. planting and maintaining the lemon tree. We do this by summing up the annual expenses over all the years. This will look like: $3 (Year 1) + $3 (Year 2) + ... = $3 * n where 'n' represents the number of\", 60, 0.8982694561830966]
+Path: Node15Node60" color=black shape=box]
+	Node15 -> Node61 [label=Node15Node61]
+	Node61 [label="V:2, H:4, Flag:False
+[\"6. planting the tree and the expenses he has every year. We can do this by summing up his lemon-related earnings each year and see how long it takes for that sum to equal or exceed $90 (the planting cost).\n        7. Let's keep a variable for Carlos' earnings from selling lemons, and call it 'earnings'. After the first year, his 'earnings' will be equal to $10.5. In the second year, this\", 103, 0.9696311991171673]
+Path: Node15Node61" color=black shape=box]
+	Node15 -> Node62 [label=Node15Node62]
+	Node62 [label="V:2, H:4, Flag:False
+[\"6. planting and maintaining the lemon tree. We need to know how many years it takes for his earnings to be equal to or greater than the cumulative expenses.\n        7. Let's calculate the cumulative\", 45, 0.5933847954257926]
+Path: Node15Node62" color=black shape=box]
+	Node16 -> Node63 [label=Node16Node63]
+	Node63 [label="V:2, H:6, Flag:False
+[\"6. earnings (from selling lemons) with his expenses (planting cost + annual expenses). We need the point when earnings are equal or greater than the total costs.\n        Let's set up an equation to represent this: InitialCost + AnnualExpenses = EarningsEachYear * NumberOfYears + InitialCost\n        Here, InitialCost is $90 (planting\", 81, 0.6442717636666291]
+Path: Node16Node63" color=black shape=box]
+	Node16 -> Node64 [label=Node16Node64]
+	Node64 [label="V:2, H:5, Flag:False
+[\"6. earnings from selling lemons and lemon profits with the expenses: ($10.5 - $3) vs $90 (planting cost). In other words, we want to determine when his yearly income covers the initial investment in the lemon tree.\n        7. Now, let's perform some calculations\", 66, 0.8496395078821873]
+Path: Node16Node64" color=black shape=box]
+	Node16 -> Node65 [label=Node16Node65]
+	Node65 [label="V:1, H:10, Flag:True
+[\"6. earnings from selling lemons and covering the costs with the initial investment cost. We need to make sure that the total amount earned from selling lemons and covering expenses is greater than or equal to the $90 planting cost.\n        7. Let's calculate the earnings per year: $10.5 (from lemons) + $3 (watering/feeding) = $13.5.\n        8. Now, let's\", 97, 0.13646144863094245]
+Path: Node16Node65" color=red shape=box]
+	Node16 -> Node66 [label=Node16Node66]
+	Node66 [label="V:2, H:8, Flag:False
+[\"6. earnings from selling lemons and covering the costs with the initial cost of planting the tree. We want the total amount earned from selling lemons to be greater than or equal to the planting cost.\n        7. To do this, let's set up an equation: (Earnings from selling lemons + Earnings from covering annual\", 74, 0.3448244048262533]
+Path: Node16Node66" color=black shape=box]
+	Node16 -> Node67 [label=Node16Node67]
+	Node67 [label="V:1, H:8, Flag:False
+[\"6. earnings from selling lemons and the total cost of planting and maintaining the tree. When the difference between these two values becomes positive (meaning he earns more than the expenses), then he'll start making a profit.\n        To calculate this, we can subtract the annual expenses ($3) from the money earned from selling lemons\", 72, 0.512280220207582]
+Path: Node16Node67" color=black shape=box]
+	Node16 -> Node68 [label=Node16Node68]
+	Node68 [label="V:2, H:6, Flag:False
+[\"6. earnings from selling lemons and covering the costs with the initial investment cost. We need to make sure that the cumulative earnings from selling lemons and covering annual expenses are greater than or equal to the $90 planting cost.\n        7. Let's calculate the cumulative earnings over each year:\n           a. Year 1: Earnings = $10.5 (from selling lemons) - $3 (watering/feeding costs) = $7.5\n           b. Year 2: Earnings = $10\", 119, 0.02802030094544028]
+Path: Node16Node68" color=black shape=box]
+	Node16 -> Node69 [label=Node16Node69]
+	Node69 [label="V:5, H:10, Flag:True
+[\"6. earnings from selling lemons and the costs associated with planting and maintaining the tree. We need to make sure that the earnings from selling lemons are more than the combined costs of planting and maintenance.\n        7. Let's calculate how many years it takes for Carlos to earn back the initial $9\", 65, 0.36095932454463486]
+Path: Node16Node69" color=red shape=box]
+	Node33 -> Node70 [label=Node33Node70]
+	Node70 [label="V:2, H:3, Flag:False
+['7. The result is approximately 8 years. It will take Carlos around 8 years before he starts earning money on his lemon tree after considering all costs and earnings.', 107, 0.02072949395466328]
+Path: Node33Node70" color=black shape=box]
+	Node33 -> Node71 [label=Node33Node71]
+	Node71 [label="V:1, H:3, Flag:False
+['7. ($86.5 + $3) / ($7.5) = 90 / 7.5 = 12 years.\n\nSo, it will take 12 years for Carlos to start earning money from his lemon tree.', 64, 0.887493766129555]
+Path: Node33Node71" color=black shape=box]
+	Node33 -> Node72 [label=Node33Node72]
+	Node72 [label="V:2, H:2, Flag:False
+['7. ($90 - $10.5 + $3) is equal to $84. This means he needs an extra $84 before starting to earn money from this lemon tree.\n         8. To find out how many years it will take, we divide the additional cost by his earnings minus expenses: $84 / ($10.5 - $3).\n         9. The final calculation is ($8', 90, 0.7638377259860553]
+Path: Node33Node72" color=black shape=box]
+	Node33 -> Node73 [label=Node33Node73]
+	Node73 [label="V:2, H:3, Flag:False
+['7. It takes 8 years before Carlos starts earning money on the lemon tree.', 100, 0.405850452611878]
+Path: Node33Node73" color=black shape=box]
+	Node33 -> Node74 [label=Node33Node74]
+	Node74 [label="V:1, H:3, Flag:False
+['7. So, ($90 - $10.5 + $3) = $87, and ($10.5 - $3) equals $7.5. Plugging these values into our formula: $87 / $7.5 = 11.6 years', 62, 0.7554813652062932]
+Path: Node33Node74" color=black shape=box]
+	Node33 -> Node75 [label=Node33Node75]
+	Node75 [label="V:1, H:1, Flag:False
+['7. ($86.5 / $7.5) = 11.4666...\n        8. Rounding down to an entire year, it will take approximately 11 years before Carlos starts earning money from the lemon tree.', 77, 0.8257283708063269]
+Path: Node33Node75" color=black shape=box]
+	Node33 -> Node76 [label=Node33Node76]
+	Node76 [label="V:1, H:1, Flag:False
+['7. ($90 - $10.5 + $3) = $84, which is the amount Carlos must cover from earnings every year to eventually break even (or start earning money).\n        8. ($10.5 - $3) = $7.5 represents the remaining net profit he makes each year once expenses are covered.\n        9. To find how many years it takes for him to reach this balance, we can divide the initial cost by the net profit:', 102, 0.7843377066439704]
+Path: Node33Node76" color=black shape=box]
+	Node75 -> Node77 [label=Node75Node77]
+	Node77 [label="V:3, H:1, Flag:1
+['9. Remember that this is an estimation and may vary depending on factors like weather conditions, tree health, and market prices for lemons.', 76, 0.670294800986327]
+Path: Node75Node77" color=red shape=box]
+	Node75 -> Node78 [label=Node75Node78]
+	Node78 [label="V:3, H:1, Flag:1
+['9. Please note that this estimation does not account for potential fluctuations in costs, income, or other variables over time.', 73, 0.7416615024306297]
+Path: Node75Node78" color=red shape=box]
+	Node75 -> Node79 [label=Node75Node79]
+	Node79 [label="V:3, H:1, Flag:1
+['9. Keep in mind that these figures can be affected by factors like inflation and may not be completely accurate due to uncertainties related to lemon growth and market conditions.', 43, 0.8846548064350566]
+Path: Node75Node79" color=red shape=box]
+	Node75 -> Node80 [label=Node75Node80]
+	Node80 [label="V:3, H:1, Flag:1
+['9. However, this calculation assumes that the expenses and earnings remain constant throughout those 11 years. In reality, there might be fluctuations in costs or market prices which could affect the actual time frame.', 112, 0.028882015598130084]
+Path: Node75Node80" color=red shape=box]
+	Node75 -> Node81 [label=Node75Node81]
+	Node81 [label="V:3, H:1, Flag:1
+['9. However, this calculation assumes that the expenses and earnings remain constant throughout those 11 years. In reality, there may be fluctuations in costs or market prices which could affect the actual time frame.', 68, 0.08444293221676746]
+Path: Node75Node81" color=red shape=box]
+	Node75 -> Node82 [label=Node75Node82]
+	Node82 [label="V:3, H:1, Flag:1
+[\"9. However, note that this doesn't account for the growth of the lemon tree in the later years or any unexpected expenses that may arise. So this is a general estimate and actual time might vary.\", 106, 0.9150323040970689]
+Path: Node75Node82" color=red shape=box]
+	Node75 -> Node83 [label=Node75Node83]
+	Node83 [label="V:3, H:1, Flag:1
+[\"9. It's important to note that this calculation assumes Carlos consistently plants one lemon tree and doesn't change his approach during these 11 years.\", 41, 0.8485958947150013]
+Path: Node75Node83" color=red shape=box]
+	Node76 -> Node84 [label=Node76Node84]
+	Node84 [label="V:6, H:2, Flag:True
+['10. ($84 / $7.5) ≈ 11.33 years.\n        So, it will take approximately 11.33 years before Carlos starts earning', 41, 0.18970532438597987]
+Path: Node76Node84" color=red shape=box]
+	Node76 -> Node85 [label=Node76Node85]
+	Node85 [label="V:2, H:2, Flag:False
+['10. Years = ($84 / $7.5). In this case, it will take roughly 11.5 years before Carlos starts earning money on his lemon tree.', 112, 0.6299032399417085]
+Path: Node76Node85" color=black shape=box]
+	Node76 -> Node86 [label=Node76Node86]
+	Node86 [label="V:2, H:2, Flag:False
+['10. ($84 / $7.5) ≈ 11.33. So, it will take approximately 11.33 years before Carlos starts earning money on his lemon tree.', 51, 0.22281434740439676]
+Path: Node76Node86" color=black shape=box]
+	Node76 -> Node87 [label=Node76Node87]
+	Node87 [label="V:2, H:2, Flag:False
+['10. ($84 / $7.5) ≈ 11 years. It will take approximately 11 years before Carlos starts earning money on the lemon tree.', 80, 0.7063740040954846]
+Path: Node76Node87" color=black shape=box]
+	Node76 -> Node88 [label=Node76Node88]
+	Node88 [label="V:7, H:2, Flag:True
+['10. $84 / $7.5 ≈ 11.1 years. It will take around 11.1 years before Carlos starts earning money on his lemon tree.', 50, 0.5351889682027483]
+Path: Node76Node88" color=red shape=box]
+	Node76 -> Node89 [label=Node76Node89]
+	Node89 [label="V:1, H:1, Flag:False
+['10. ($84 / $7.5) ≈ 11.33 which is approximately 11 years and 3 months (since a year has 12 months).\n        So, it will take around 11 years and 3 months before Carlos starts earning money from the lemon tree after accounting for all expenses.', 102, 0.37410218088419567]
+Path: Node76Node89" color=black shape=box]
+	Node76 -> Node90 [label=Node76Node90]
+	Node90 [label="V:7, H:2, Flag:True
+['10. ($84 / $7.5) ≈ 11.3 (rounding up) - So, it will approximately take 12 years before Carlos starts earning money on his lemon tree.', 46, 0.837421132806943]
+Path: Node76Node90" color=red shape=box]
+	Node59 -> Node91 [label=Node59Node91]
+	Node91 [label="V:3, H:7, Flag:False
+[\"8. $7.5 < $90, so Carlos doesn't start earning money in the first year.\n        b. For the second year, ($10.5 - $3) >= $90, since ($7.5\", 52, 0.2772897151424272]
+Path: Node59Node91" color=black shape=box]
+	Node59 -> Node92 [label=Node59Node92]
+	Node92 [label="V:1, H:1, Flag:False
+[\"8. For the second year, ($10.5 - $3) >= $90 still doesn't hold true.\n        b. For the third year, ($10.5 - $3) >= $90 holds true.\n        c. So, it will take Carlos 3 years before he starts earning money on the lemon tree.\", 76, 0.034135112529972034]
+Path: Node59Node92" color=black shape=box]
+	Node59 -> Node93 [label=Node59Node93]
+	Node93 [label="V:2, H:5, Flag:False
+[\"8. For the second year, ($10.5 - $3) + ($10.5 - $3)\n        9. Continue this process for each subsequent year until we get the first time it's true. The earliest year will be when Carlos starts earning money\", 59, 0.777060956818178]
+Path: Node59Node93" color=black shape=box]
+	Node59 -> Node94 [label=Node59Node94]
+	Node94 [label="V:3, H:9, Flag:True
+[\"8. After calculating for the first year, we find that it doesn't meet the condition. It only gets us ($7.5 < $90), so Carlos won't start earning money\", 42, 0.785225931910871]
+Path: Node59Node94" color=black shape=box]
+	Node59 -> Node95 [label=Node59Node95]
+	Node95 [label="V:2, H:8, Flag:True
+[\"8. $7.5 < $90, so Carlos doesn't start earning money in this year.\n        9. Let's check for the second year: ($10.5 - $3) >= $90\n        a. For the second year, ($10.5 - $3\n        10. $7.5 < $90, so Carlos doesn't start earning money in this year either.\n        11. Let's check\", 102, 0.40450612303055533]
+Path: Node59Node95" color=black shape=box]
+	Node59 -> Node96 [label=Node59Node96]
+	Node96 [label="V:2, H:5, Flag:False
+['8. Continue this process for all subsequent years (remembering that earnings and expenses remain constant).\n        9. If you find a year where the condition is met, then Carlos starts earning money from that year onwards.', 68, 0.4867013013256125]
+Path: Node59Node96" color=black shape=box]
+	Node59 -> Node97 [label=Node59Node97]
+	Node97 [label="V:2, H:3, Flag:False
+['8. For the second year, ($10.5 - $3) >= $90 will be ($10.5 - $6) >= $90, which is still not true.\n        9. For the third year, ($10.5 - $9) >= $90 will be ($10.5 - $9) >= $90, which is almost true', 84, 0.3960655889878151]
+Path: Node59Node97" color=black shape=box]
+	Node89 -> Node98 [label=Node89Node98]
+	Node98 [label="V:9, H:9, Flag:True
+['11. This calculation assumes that no other variables change over time such as the price of lemons or the cost of watering and feeding the tree.', 69, 0.5839061647830553]
+Path: Node89Node98" color=red shape=box]
+	Node89 -> Node99 [label=Node89Node99]
+	Node99 [label="V:9, H:9, Flag:True
+['Note: This calculation assumes that the costs, earnings, and growth rate remain constant throughout the given period. In reality, there might be fluctuations in these factors which could change the actual time it takes to start earning money.', 110, 0.16069040324412254]
+Path: Node89Node99" color=red shape=box]
+	Node89 -> Node100 [label=Node89Node100]
+	Node100 [label="V:9, H:9, Flag:True
+[\"11. It's important to note that this calculation is based on constant variables like lemon growth rate, price of lemons, watering & feeding costs per year. Actual earnings might vary depending on real-world conditions and market fluctuations.\", 115, 0.7440033721898812]
+Path: Node89Node100" color=red shape=box]
+	Node89 -> Node101 [label=Node89Node101]
+	Node101 [label="V:9, H:9, Flag:True
+['Note that this calculation assumes no further expenses or changes in lemon production over time, and that Carlos continues to sell lemons at $1.5 each.', 96, 0.44321325948315937]
+Path: Node89Node101" color=red shape=box]
+	Node89 -> Node102 [label=Node89Node102]
+	Node102 [label="V:9, H:9, Flag:True
+['Note: This calculation assumes that the costs and earnings remain constant throughout the years. In reality, there might be fluctuations in these values due to various factors such as inflation or changes in market conditions.', 66, 0.05618059758196137]
+Path: Node89Node102" color=red shape=box]
+	Node89 -> Node103 [label=Node89Node103]
+	Node103 [label="V:9, H:9, Flag:True
+['This process involved calculating initial costs, annual earnings, expenses, and comparing them to determine when the balance would be reached.', 43, 0.5044854565676963]
+Path: Node89Node103" color=red shape=box]
+	Node89 -> Node104 [label=Node89Node104]
+	Node104 [label="V:9, H:9, Flag:True
+['Note: This calculation assumes that the costs and earnings remain constant throughout the years. In reality, there might be fluctuations in these values due to various factors such as weather conditions, market prices, etc.', 42, 0.10253310263403326]
+Path: Node89Node104" color=red shape=box]
+	Node4 -> Node105 [label=Node4Node105]
+	Node105 [label="V:3, H:6, Flag:True
+['4. To start earning money, the net profit should be positive. So, we need to find when the cumulative net profit becomes positive.\n        5. Calculate the cumulative net profit after', 41, 0.06834160830674696]
+Path: Node4Node105" color=red shape=box]
+	Node4 -> Node106 [label=Node4Node106]
+	Node106 [label="V:3, H:6, Flag:True
+['4. To start earning money, the net profit should be positive (greater than zero). So, we need to find when the cumulative net profit becomes positive.\n        5. Calculate the cumulative net profit after each year by adding the annual net profits: \n           Year 1: $10.5 - $93 = -$82.5\n           Year 2: (-$82.5) +', 92, 0.03968646618263272]
+Path: Node4Node106" color=red shape=box]
+	Node4 -> Node107 [label=Node4Node107]
+	Node107 [label="V:3, H:6, Flag:True
+['4. Since Carlos wants to earn money, the net profit needs to be positive. Wait for the year when the net profit becomes greater than zero.\n        To determine how many years it takes before earning money, we can use an iterative approach starting from the first year and calculate net profits until reaching a positive value:\n        5. First year (year 1): -$93 (planting cost) + $10.5 (lemon profit) = -$82.5\n          This means Carlos loses money in the first year', 115, 0.7147341185127533]
+Path: Node4Node107" color=red shape=box]
+	Node4 -> Node108 [label=Node4Node108]
+	Node108 [label="V:3, H:7, Flag:True
+['4. To start earning money, net profit must be positive, so we need to compare it with annual cost: $93 (total cost) > $10.5 (net profit)\n        5. Since', 45, 0.4749526764752693]
+Path: Node4Node108" color=red shape=box]
+	Node4 -> Node109 [label=Node4Node109]
+	Node109 [label="V:1, H:3, Flag:False
+['4. Since we want to know when Carlos starts earning, set this as 0 (he is not earning yet) and compare it with the net profits each year.\n        5. We need to determine the number of years needed for the cumulative net profit to be equal or greater than zero.\n        6. To find the number of years, divide the total cost by the annual net profit: $93 / $10.5 ≈ 9 years\n        So it will take around 9 years before Carlos starts earning money on the lemon tree.', 116, 0.5544141627887538]
+Path: Node4Node109" color=black shape=box]
+	Node4 -> Node110 [label=Node4Node110]
+	Node110 [label="V:3, H:4, Flag:True
+['4. To start earning money, Carlos needs a positive net profit: Net profit > 0\n        5. Divide the total cost of planting and maintenance by the yearly net profit to find how many years it will take before he starts earning money', 52, 0.22387529037827936]
+Path: Node4Node110" color=red shape=box]
+	Node4 -> Node111 [label=Node4Node111]
+	Node111 [label="V:3, H:6, Flag:True
+['4. To start earning money, net profit should be positive or equal to zero. So, we need to determine when the cumulative sum of net profits is equal to or greater than 0.\n        5. Calculate the cumulative net profit after each year: Year 1: $93 (total cost) - $10.5 (net', 74, 0.21824746540756512]
+Path: Node4Node111" color=red shape=box]
+	Node109 -> Node112 [label=Node109Node112]
+	Node112 [label="V:3, H:2, Flag:True
+['7. Remember that this estimation assumes constant costs and yields for all those years, which might not be entirely accurate in real life.', 40, 0.5891935250289126]
+Path: Node109Node112" color=red shape=box]
+	Node109 -> Node113 [label=Node109Node113]
+	Node113 [label="V:3, H:2, Flag:True
+['7. It is important to note that this estimate assumes steady growth and income; real-life results might vary due to factors such as weather, pests, and market conditions.', 117, 0.88184825087065]
+Path: Node109Node113" color=red shape=box]
+	Node109 -> Node114 [label=Node109Node114]
+	Node114 [label="V:3, H:2, Flag:True
+['7. Note that these estimates might change due to fluctuations in costs and market conditions over time.', 60, 0.8395339407001182]
+Path: Node109Node114" color=red shape=box]
+	Node109 -> Node115 [label=Node109Node115]
+	Node115 [label="V:3, H:2, Flag:True
+[\"7. It's important to note that this estimation does not account for factors like potential fluctuations in prices, unexpected tree illnesses, or other unforeseen events which might affect the actual timeline of earning profits.\", 80, 0.8474900429987684]
+Path: Node109Node115" color=red shape=box]
+	Node109 -> Node116 [label=Node109Node116]
+	Node116 [label="V:3, H:2, Flag:True
+['7. Please note that this calculation assumes a constant annual growth rate and does not account for potential fluctuations in costs, sales prices, or other factors that might affect the actual earnings timeline.', 79, 0.5209199901695786]
+Path: Node109Node116" color=red shape=box]
+	Node109 -> Node117 [label=Node109Node117]
+	Node117 [label="V:3, H:2, Flag:True
+['7. Note that this is an approximation as it depends on factors like weather, tree health, and market conditions. Actual earnings may vary.', 94, 0.554295979776654]
+Path: Node109Node117" color=red shape=box]
+	Node109 -> Node118 [label=Node109Node118]
+	Node118 [label="V:3, H:2, Flag:True
+['7. Remember that this is an approximation due to the simplified calculations and may not account for all factors like inflation, unexpected expenses, or changes in demand for lemons.', 83, 0.11963281965878003]
+Path: Node109Node118" color=red shape=box]
+	Node21 -> Node119 [label=Node21Node119]
+	Node119 [label="V:4, H:9, Flag:True
+[\"8. years needed, we want to find out when the earnings become positive or greater than zero. Since there's a balance between earnings and costs after 6. years, it means Carlos will start earning money\", 43, 0.6377754280640822]
+Path: Node21Node119" color=red shape=box]
+	Node21 -> Node120 [label=Node21Node120]
+	Node120 [label="V:3, H:8, Flag:True
+['8. years, we can set up an equation: Initial cost + Maintenance cost per year = Earnings per year * Number of years. In our case, it will be: $90 + $3 * X = $13.5 * X\n        9. Solving for X (the number of years), we get X = 7. So, it will take 7 years before Carlos starts earning money on the lemon tree.', 99, 0.454697385744837]
+Path: Node21Node120" color=red shape=box]
+	Node21 -> Node121 [label=Node21Node121]
+	Node121 [label="V:4, H:9, Flag:True
+['8. years, we need to find out when our earnings become greater than or equal to zero (when costs are covered by earnings)\n        9. To cover the initial cost of planting ($90), we can subtract it from the earnings per year', 53, 0.5385145980068482]
+Path: Node21Node121" color=red shape=box]
+	Node21 -> Node122 [label=Node21Node122]
+	Node122 [label="V:4, H:9, Flag:True
+[\"8. years it will take for Carlos to start earning money, we can compare this value ($13.5) with the initial cost of planting the tree ($90). If the earnings per year are greater than or equal to the initial cost, then he starts making a profit.\n        9. In our case, $13.5 is less than $90. So, Carlos will need to wait for more years before starting to earn money from his lemon tree. We can't determine an\", 105, 0.0951055251564209]
+Path: Node21Node122" color=red shape=box]
+	Node21 -> Node123 [label=Node21Node123]
+	Node123 [label="V:3, H:8, Flag:True
+['8. years when earnings become equal or greater than expenses ($90 initial cost), we can set up an equation where earnings from all sources will be equal to the sum of the planting and maintenance costs: $13.5 * n = $90 + $3 * (n -', 61, 0.5986645908398739]
+Path: Node21Node123" color=red shape=box]
+	Node21 -> Node124 [label=Node21Node124]
+	Node124 [label="V:4, H:9, Flag:True
+['8. years when his earnings will be greater than or equal to $90 (the cost of planting the tree), we can compare it to the earnings per year. If his earnings are equal to or more than the initial planting cost ($90) within x number of years, then he starts making a profit from that point', 68, 0.7252780873907477]
+Path: Node21Node124" color=red shape=box]
+	Node21 -> Node125 [label=Node21Node125]
+	Node125 [label="V:2, H:3, Flag:False
+['8. years until Carlos starts earning money, we can compare this sum with the initial cost of planting the tree ($90): if $13.5 > $90, then it will take less than 90/13.5 = 6.67 years to start making a profit. Since we cannot have a fraction of a year, we can round this up to 7 years before he starts earning money from his lemon tree.', 104, 0.6757163985192105]
+Path: Node21Node125" color=black shape=box]
+	Node22 -> Node126 [label=Node22Node126]
+	Node126 [label="V:5, H:10, Flag:True
+[\"9. Initial cost: n * ($13.5) >= $90\n        10. Solving for 'n', we get n >= $90 / $13.5 which equals to n >= 6.71428571428571. Since it's not possible to have a non-integer number of years, let's round this up to the nearest whole number, which is 7.\n        1\", 100, 0.42778535173703147]
+Path: Node22Node126" color=red shape=box]
+	Node22 -> Node127 [label=Node22Node127]
+	Node127 [label="V:5, H:10, Flag:True
+[\"9. Initial cost. So, we can write this as: n * ($10.5 + $3) ≥ $90\n        10. Simplify the equation by combining like terms: n * $13.5 ≥ $90\n        11. Now, divide both sides of the inequality by $13.5 to isolate 'n': n ≥ $90 / $13.5\n        12. Calculate the result: n ≥ 6.67 (rounded up)\", 117, 0.044095176116579315]
+Path: Node22Node127" color=red shape=box]
+	Node22 -> Node128 [label=Node22Node128]
+	Node128 [label="V:1, H:10, Flag:True
+[\"9. initial cost: n * $13.5 ≥ $90\n        10. Solving for 'n', we get n ≥ $90 / $13.5 ≈ 6.67, which can be rounded to 7 years.\n        So, it will take about 7 years before Carlos starts earning money on the lemon tree.\", 101, 0.5787203585936642]
+Path: Node22Node128" color=red shape=box]
+	Node22 -> Node129 [label=Node22Node129]
+	Node129 [label="V:1, H:10, Flag:True
+[\"9. initial cost, which is $90. So, we can represent this using an equation: n * $13.5 ≥ $90\n\n        10. Now let's solve for 'n' to find out how many years it will take before Carlos starts earning money on the lemon tree: n = ($90 / $13.5) ≈ 6.7\n        11.\", 90, 0.7601346056051788]
+Path: Node22Node129" color=red shape=box]
+	Node22 -> Node130 [label=Node22Node130]
+	Node130 [label="V:1, H:10, Flag:True
+[\"9. Initial cost: n * ($13.5) ≥ $90\n        10. Solving for 'n', we get n ≥ $90 / $13.5 ≈ 6.67 years\n\nCarlos will start earning money on his lemon tree after approximately 6.67 years,\", 73, 0.35348626287204943]
+Path: Node22Node130" color=red shape=box]
+	Node22 -> Node131 [label=Node22Node131]
+	Node131 [label="V:5, H:10, Flag:True
+[\"9. Initial cost. So, we can write this as: n * ($10.5 + $3) ≥ $90\n        10. Simplify the equation by combining the constants: n * $13.5 ≥ $90\n        11. Now, divide both sides of the inequality by $13.5 to isolate 'n': n ≥ $90 / $13.5\n        12. Calculate the result: n ≥ 6.67 (rounded up)\", 118, 0.009782379045233602]
+Path: Node22Node131" color=red shape=box]
+	Node22 -> Node132 [label=Node22Node132]
+	Node132 [label="V:1, H:10, Flag:True
+['9. Initial cost. So, we have the equation: n * $13.5 >= $90 and then n >= $90 / $13.5 = 6.67. This means it will take at least 7 years for Carlos to start earning money from his lemon tree. However, because the exact number of', 71, 0.7873561312455608]
+Path: Node22Node132" color=red shape=box]
+	Node23 -> Node133 [label=Node23Node133]
+	Node133 [label="V:3, H:8, Flag:False
+[\"= ($1.5 * 7) - $3\n         = $10.5 - $3\n         = $7.5\n\n        8. Since Carlos's earnings from selling lemons are still less than the initial cost\", 51, 0.7962028784660157]
+Path: Node23Node133" color=black shape=box]
+	Node23 -> Node134 [label=Node23Node134]
+	Node134 [label="V:4, H:8, Flag:False
+['= ($1.5 * 7) - $3 (planting cost + annual maintenance cost)\n         = $10.5 - $6\n         = $4.5\n        8. Now we need to find out how many years it takes for his earnings to be greater than or equal to the combined costs, which means he starts earning money. We can do this by dividing the', 83, 0.3003058077745169]
+Path: Node23Node134" color=black shape=box]
+	Node23 -> Node135 [label=Node23Node135]
+	Node135 [label="V:3, H:8, Flag:False
+[\"= (Price per lemon * Number of lemons) - Annual maintenance cost\n         = ($1.5 * 7) - $3\n         = $10.5 - $3\n         = $7.5\n\n        8. Now, we need to find out when he starts earning a profit. This will happen when his earnings are greater than or equal to all the costs. So, we'll compare this value with the total cost of plant\", 96, 0.43175888447200605]
+Path: Node23Node135" color=black shape=box]
+	Node23 -> Node136 [label=Node23Node136]
+	Node136 [label="V:3, H:8, Flag:False
+[\"= (1.5 * 7) - 3\n         = $10.5 - $3\n         = $7.5\n        8. Now, we need to find out how many years it takes for Carlos's earnings to surpass the initial cost of planting the tree ($90). This happens when his earnings are greater than or equal to this initial cost (and also accounting for maintenance costs each year). So,\n          Years = Number\", 97, 0.48414728425184295]
+Path: Node23Node136" color=black shape=box]
+	Node23 -> Node137 [label=Node23Node137]
+	Node137 [label="V:10, H:10, Flag:True
+['8. At this point, he has covered all costs and has started earning a profit. Therefore, it will take one more year for Carlos to start profiting from his lemon tree project.', 101, 0.9541003530467076]
+Path: Node23Node137" color=black shape=box]
+	Node23 -> Node138 [label=Node23Node138]
+	Node138 [label="V:8, H:9, Flag:True
+['= ($1.5 * 7) - $3\n         = $10.5 - $3\n         = $7.5\n        This means he starts breaking even after 7.5 years.\n        8. Since we need to consider the initial cost of planting the tree, we should', 65, 0.7256424667457875]
+Path: Node23Node138" color=black shape=box]
+	Node23 -> Node139 [label=Node23Node139]
+	Node139 [label="V:3, H:8, Flag:False
+[\"= (7 * $1.5) - $3\n         = $10.5 - $3\n         = $7.5\n        8. Next, we'll find out when Carlos starts earning a profit, which is when his earnings are greater than the total costs (planting and maintenance). In this case, it will be \n          Earnings\n         > ($90 + $3 * number of years)\n         > ($90 + $3 * (years to start\", 107, 0.39424106729536934]
+Path: Node23Node139" color=black shape=box]
+	Node28 -> Node140 [label=Node28Node140]
+	Node140 [label="V:2, H:7, Flag:False
+['8. To find out when he starts earning money, we need to determine the number of years it takes for his cumulative earnings to be equal or greater than the initial planting cost ($90). We can do this by adding up his annual earnings and comparing them with $90.', 59, 0.12838372235474604]
+Path: Node28Node140" color=black shape=box]
+	Node28 -> Node141 [label=Node28Node141]
+	Node141 [label="V:2, H:8, Flag:False
+[\"8. The first year will have no previous earnings, so the cumulative earnings are just the earnings from that year: $7.5 (from year 1). This is still less than the planting cost ($90), so after one year, Carlos isn't earning yet.\n        9. We'll continue calculating cumulative earnings for each following year by adding the earnings from the next year to the cumulative total. For example:\n           - After 2 years: $7.5\", 105, 0.6742473271911116]
+Path: Node28Node141" color=black shape=box]
+	Node28 -> Node142 [label=Node28Node142]
+	Node142 [label="V:4, H:9, Flag:False
+['8. he earns over the first 2 years: ($7.5 * 2) + $10.5 (from selling lemons in the 3rd year). This equals to $15 + $10.5 = $25.5.\n        9. Over the next 3 years, his cumulative earnings will be: $25.5 (from years 2 and', 87, 0.6763364584820158]
+Path: Node28Node142" color=black shape=box]
+	Node28 -> Node143 [label=Node28Node143]
+	Node143 [label="V:2, H:8, Flag:False
+['8. For example, if it takes 2 years to earn that amount, we would have 2 * $7.5 = $15 from selling lemons and covering expenses each year, which is still less than the initial planting cost of $90.\n        9. We continue this process by incrementing the years and calculating the cumulative earnings until we reach or surpass the', 82, 0.8767126975037285]
+Path: Node28Node143" color=black shape=box]
+	Node28 -> Node144 [label=Node28Node144]
+	Node144 [label="V:2, H:7, Flag:False
+['8. To determine the number of years needed, we need to find when their cumulative earnings are equal or greater than the initial planting cost ($90). We can do this by summing up Carlos', 42, 0.46008409812622497]
+Path: Node28Node144" color=black shape=box]
+	Node28 -> Node145 [label=Node28Node145]
+	Node145 [label="V:2, H:6, Flag:False
+[\"8. To determine the number of years it takes, we will start subtracting this value from the initial cost ($90) each year and keep track of when it equals or surpasses zero. Let's initialize a counter for the years. If the counter is negative or zero, then it means Carlos starts earning money on the lemon tree\", 71, 0.8235996898473351]
+Path: Node28Node145" color=black shape=box]
+	Node28 -> Node146 [label=Node28Node146]
+	Node146 [label="V:2, H:7, Flag:False
+['8. Next, we can sum these annual earnings over the years to see when they become equal to or greater than the initial planting cost of $90. We can do this by adding them up using the formula: Sum = (Amount per year) * (Number of years). So, for 1 year, it will be $7.5 * 1 = $7.5; for 2 years, it will be $7.5 *', 94, 0.6546636728456744]
+Path: Node28Node146" color=black shape=box]
+	Node56 -> Node147 [label=Node56Node147]
+	Node147 [label="V:2, H:3, Flag:False
+['8. lemons) * number of years = $10.5 * number of years\n        9. Now we need to find out how many years it will take for his earnings to be equal or greater than the total cost of planting and annual expenses. We can do this by setting up an equation: $10.5 * number_of_years = $90 (planting cost) + $3 (annual expenses) * number_of_years', 100, 0.5065972122910063]
+Path: Node56Node147" color=black shape=box]
+	Node56 -> Node148 [label=Node56Node148]
+	Node148 [label="V:1, H:5, Flag:False
+[\"8. lemons) * number of years = $10.5 * x\n        9. Now, let's add up all the costs: $90 (planting cost) + ($3 * x) (annual expenses) = $90 + $3x\n        10. Finally, we can find\", 69, 0.12872015329344644]
+Path: Node56Node148" color=black shape=box]
+	Node56 -> Node149 [label=Node56Node149]
+	Node149 [label="V:6, H:10, Flag:True
+[\"8. Now, let's find the break-even point when his earnings equal the total planting cost and annual expenses. The total cost is $90 for the tree + $3 per year (for 2 years) = $90 + ($3 * 2) = $90 + $6 = $96\n        9. Comparing his earnings to the total costs, we find that it will take Carlos 10 - 96 = -86 years before he starts earning money on the\", 108, 0.5994779464221988]
+Path: Node56Node149" color=red shape=box]
+	Node56 -> Node150 [label=Node56Node150]
+	Node150 [label="V:4, H:10, Flag:True
+[\"8. Now let's add the earnings for each year and include the annual expenses, making sure to add in the initial planting cost as well. This would be a summation of: $\", 41, 0.89215665130268]
+Path: Node56Node150" color=red shape=box]
+	Node56 -> Node151 [label=Node56Node151]
+	Node151 [label="V:7, H:10, Flag:True
+[\"8. Now, let's add up the earnings for each year: $10.5 + $10.5 + $10.5 + ... = $10.5 * infinity (since we don't know how many years it will take). This is an infinite sum and doesn't have a specific value.\n        9. However, we can find the point at which Carlos starts earning money by comparing his earnings to the total cost of planting the tree and annual expenses. We\", 106, 0.13401913516292974]
+Path: Node56Node151" color=red shape=box]
+	Node56 -> Node152 [label=Node56Node152]
+	Node152 [label="V:3, H:8, Flag:False
+[\"8. lemons) per year for the next n years. So, we get earnings = $10.5 * n years.\n        9. Now, let's find out when Carlos starts earning money by equating the total expenses with earnings. The total expenses are $90 (planting cost) + 7 * $3 (annual expenses). We can write this as a sum of earnings over some number of years: $10.\", 95, 0.7166093524162372]
+Path: Node56Node152" color=black shape=box]
+	Node56 -> Node153 [label=Node56Node153]
+	Node153 [label="V:5, H:7, Flag:True
+[\"8. Now, let's add up the earnings over each year: $10.5 + $10.5 = $21\n        9. The total costs are $90 (planting) and $12 (annual expenses) for a total of $102.\n        10. To determine when he starts earning money, we\", 77, 0.7457383231940263]
+Path: Node56Node153" color=red shape=box]
+	Node61 -> Node154 [label=Node61Node154]
+	Node154 [label="V:5, H:6, Flag:False
+[\"8. will increase by another $10.5 (since he grows 7 more lemons), so 'earnings' becomes $10.5 + $10.5 = $21.\n        9. In the third year, his 'earnings' will be $21 + $10.5 = $31.5.\n        Continuing this pattern, we can calculate his earnings for each subsequent year:\n           Year 4: $31.5 + $10.5 = $42\", 114, 0.007530072662089715]
+Path: Node61Node154" color=black shape=box]
+	Node61 -> Node155 [label=Node61Node155]
+	Node155 [label="V:8, H:10, Flag:True
+[\"8. will increase to (first year's earnings) + new lemons * new price = ($10.5) + 7 * $1.5 = $19.\n        9\", 42, 0.6680325162656637]
+Path: Node61Node155" color=red shape=box]
+	Node61 -> Node156 [label=Node61Node156]
+	Node156 [label="V:5, H:8, Flag:False
+['8. will increase to 10.5 + 10.5 = $21 (7 new lemons * $1.5 each). The third year, it becomes 21 + 10.5 = $31.5 (7 new lemons * $1.5 each), and so on.\n        9. Keep track of his earnings over the years: Year 1 - $10.5, Year 2 - $21, Year 3 - $31', 107, 0.25579685636547567]
+Path: Node61Node156" color=black shape=box]
+	Node61 -> Node157 [label=Node61Node157]
+	Node157 [label="V:5, H:7, Flag:False
+[\"8. continues to grow as he sells more lemons: 'earnings' = $10.5 + $10.5 = $21.\n        9. Keep in mind that in years 3 and beyond, 'earnings' will still increase by selling an additional 7 lemons each year ($10.5 x 7 = $73.5 for the third year), but it won't quite\", 91, 0.9518400442986693]
+Path: Node61Node157" color=black shape=box]
+	Node61 -> Node158 [label=Node61Node158]
+	Node158 [label="V:5, H:8, Flag:False
+[\"8. 'earnings' will increase by another $10.5 (since he grows 7 more lemons), so now it becomes $10.5 + $10.5 = $21.\n        9. In the third year, his 'earnings' will be $21 + $10.5 = $31.5.\", 78, 0.2840040624641672]
+Path: Node61Node158" color=black shape=box]
+	Node61 -> Node159 [label=Node61Node159]
+	Node159 [label="V:4, H:8, Flag:False
+[\"8. increases by another $10.5 (since he grows 7 more lemons), so at the end of two years, his total earnings would be $21 (1st year's earnings + 2nd year's earnings).\n        9. Keep\", 57, 0.5696868439751064]
+Path: Node61Node159" color=black shape=box]
+	Node61 -> Node160 [label=Node61Node160]
+	Node160 [label="V:5, H:8, Flag:False
+[\"8. sum will increase by another $10.5 (from growing 7 more lemons and selling them at $1.5 each). This makes his total earnings after two years equal to $21 (first year's earnings\", 49, 0.6677135670705933]
+Path: Node61Node160" color=black shape=box]
+	Node62 -> Node161 [label=Node62Node161]
+	Node161 [label="V:2, H:8, Flag:False
+[\"8. First, we add the costs for planting ($90) and watering/feeding for one year ($3). This amounts to $90 + $3 = $93.\n        9. Now, let's calculate how much Carlos earns in his second year from\", 61, 0.8874294644049912]
+Path: Node62Node161" color=black shape=box]
+	Node62 -> Node162 [label=Node62Node162]
+	Node162 [label="V:2, H:8, Flag:False
+['8. To do this, we can break it into two parts - the initial cost of planting the tree and the annual costs of maintenance. So, the total initial cost is $90, and each yearly cost adds up to $3.\n        The cumulative expenses for the first year will be $90 + $3 = $93.\n        9. For the second year, the cumulative expense will include', 89, 0.7907583075056701]
+Path: Node62Node162" color=black shape=box]
+	Node62 -> Node163 [label=Node62Node163]
+	Node163 [label="V:2, H:8, Flag:False
+['8. The first year, Carlos will spend $90 on planting the tree (one-time expense) and $3 on maintenance. So, the total cost this year is $90 + $3 = $93. After selling 7 lemons for $10.5, he earned $10.5 - $3 (since he needs to spend money on watering and feeding). His net earnings', 87, 0.6669092388186949]
+Path: Node62Node163" color=black shape=box]
+	Node62 -> Node164 [label=Node62Node164]
+	Node164 [label="V:2, H:8, Flag:False
+['8. expenses first: $90 (planting) + ($3 per year * number of years) + ($10.5 per year * number of years).\n        9. Now, we can set up an equation to find the number of years when Carlos', 55, 0.23833142572483912]
+Path: Node62Node164" color=black shape=box]
+	Node62 -> Node165 [label=Node62Node165]
+	Node165 [label="V:2, H:7, Flag:False
+[\"8. expenses first, which will include the initial planting cost ($90) and annual maintenance costs ($3 per year). So, total cumulative expenses = $90 + $3 * (years - 1) where years is the number of years we are calculating for.\n        9. Now, let's find out when Carlos starts earning money by setting his earnings equal to the cumulative expenses. We can write this as: $10.5 * years = $90 + $3 * (years -\", 112, 0.37539268900095224]
+Path: Node62Node165" color=black shape=box]
+	Node62 -> Node166 [label=Node62Node166]
+	Node166 [label="V:1, H:7, Flag:False
+['8. expenses. In the first year, the total expense is $90 (planting) + $3 (water and feed) = $93.\n        9. In the second year, the total expense is $105 ($93 from last year plus $3 for water and feed).', 66, 0.5886335260703138]
+Path: Node62Node166" color=black shape=box]
+	Node62 -> Node167 [label=Node62Node167]
+	Node167 [label="V:2, H:8, Flag:False
+['8. For year 1, the expense is $3 for watering and feeding and there are no lemons sold, so the net cost is $3.\n         8. For year 2, we add the earnings from selling the first batch of lemons ($10.5) to the total expenses, which now becomes $3 (year 1 costs) + $3 (watering and feeding year 2) + $10.5 (lemon sales from year 2).', 103, 0.9425589812363937]
+Path: Node62Node167" color=black shape=box]
+	Node71 -> Node168 [label=Node71Node168]
+	Node168 [label="V:4, H:1, Flag:False
+['7. We should also remember that this is just an estimation and there are factors like lemon market fluctuations, health of the tree, etc., that may impact the actual timeline.', 55, 0.7736113273974623]
+Path: Node71Node168" color=black shape=box]
+	Node71 -> Node169 [label=Node71Node169]
+	Node169 [label="V:4, H:1, Flag:False
+['8. Remember that this calculation assumes no other factors affecting the growth or profitability of the lemon tree.', 86, 0.039938985118049164]
+Path: Node71Node169" color=black shape=box]
+	Node71 -> Node170 [label=Node71Node170]
+	Node170 [label="V:4, H:1, Flag:False
+[\"8. However, this is a simplified calculation because we have not considered factors such as potential increases or decreases in lemon prices, the growth rate of the lemon tree, maintenance expenses outside of water and feeding, or unexpected circumstances that might impact Carlos' earnings and expenses over time. A more accurate prediction would require taking into account these additional variables.\", 70, 0.9011553896438625]
+Path: Node71Node170" color=black shape=box]
+	Node71 -> Node171 [label=Node71Node171]
+	Node171 [label="V:4, H:1, Flag:False
+[\"8. However, we should keep in mind that this is an approximation and may not account for other factors like disease prevention or unexpected expenses. It's essential to monitor the progress of the tree over time\", 41, 0.7163659258763017]
+Path: Node71Node171" color=black shape=box]
+	Node71 -> Node172 [label=Node71Node172]
+	Node172 [label="V:4, H:1, Flag:False
+['8. Please note that this calculation is based on the given assumptions and does not consider potential fluctuations in the number of lemons grown or market prices.', 62, 0.6807634044745998]
+Path: Node71Node172" color=black shape=box]
+	Node71 -> Node173 [label=Node71Node173]
+	Node173 [label="V:4, H:1, Flag:False
+['7. Remember that this calculation assumes no unexpected changes or expenses and the lemon production stays constant throughout the years.', 59, 0.8111419508863968]
+Path: Node71Node173" color=black shape=box]
+	Node71 -> Node174 [label=Node71Node174]
+	Node174 [label="V:4, H:1, Flag:False
+['7. Keep in mind that this calculation only takes into account the mentioned expenses and earnings. The timeframe might vary based on additional factors like inflation or changes in market value.', 109, 0.8047890765965794]
+Path: Node71Node174" color=black shape=box]
+	Node72 -> Node175 [label=Node72Node175]
+	Node175 [label="V:9, H:10, Flag:True
+['10. It will take 7 years for Carlos to start earning money on the lemon tree after considering all costs and earnings.', 85, 0.03072036004258627]
+Path: Node72Node175" color=red shape=box]
+	Node72 -> Node176 [label=Node72Node176]
+	Node176 [label="V:9, H:10, Flag:True
+['10. It will take about 7 years for Carlos to start earning money on the lemon tree after considering all costs and revenues.', 98, 0.40291542648964007]
+Path: Node72Node176" color=red shape=box]
+	Node72 -> Node177 [label=Node72Node177]
+	Node177 [label="V:9, H:10, Flag:True
+['10. It will take Carlos 7 years before he starts earning money on the lemon tree.', 62, 0.16387496063340035]
+Path: Node72Node177" color=red shape=box]
+	Node72 -> Node178 [label=Node72Node178]
+	Node178 [label="V:9, H:10, Flag:True
+['10. Therefore, it will take 7 years before Carlos starts earning money from this lemon tree after planting it and covering its initial costs plus annual expenses.', 65, 0.9149552434268984]
+Path: Node72Node178" color=red shape=box]
+	Node72 -> Node179 [label=Node72Node179]
+	Node179 [label="V:9, H:10, Flag:True
+['10. So, it will take 7 years before Carlos starts earning money on the lemon tree.', 57, 0.10727072691965478]
+Path: Node72Node179" color=red shape=box]
+	Node72 -> Node180 [label=Node72Node180]
+	Node180 [label="V:9, H:10, Flag:True
+['10. Therefore, Carlos needs 7 years to start earning money on his lemon tree.', 119, 0.8154355915164212]
+Path: Node72Node180" color=red shape=box]
+	Node72 -> Node181 [label=Node72Node181]
+	Node181 [label="V:9, H:10, Flag:True
+['10. It will take Carlos approximately 7 years before he starts earning money on the lemon tree.', 46, 0.468595800570639]
+Path: Node72Node181" color=red shape=box]
+	Node74 -> Node182 [label=Node74Node182]
+	Node182 [label="V:10, H:10, Flag:True
+['8. Therefore, it will take approximately 11.6 years before Carlos starts earning money on the lemon tree.', 50, 0.04480052654558542]
+Path: Node74Node182" color=red shape=box]
+	Node74 -> Node183 [label=Node74Node183]
+	Node183 [label="V:10, H:10, Flag:True
+['8. Therefore, it will take approximately 11.6 years before Carlos starts earning money on the lemon tree.', 85, 0.3313825641170266]
+Path: Node74Node183" color=red shape=box]
+	Node74 -> Node184 [label=Node74Node184]
+	Node184 [label="V:10, H:10, Flag:True
+['8. Thus, it will take approximately 11.6 years before Carlos starts earning money from the lemon tree after considering planting costs, selling lemons, and yearly expenses related to watering and feeding.', 115, 0.6995832832823075]
+Path: Node74Node184" color=red shape=box]
+	Node74 -> Node185 [label=Node74Node185]
+	Node185 [label="V:10, H:10, Flag:True
+['7. Finally, we can conclude that it will take roughly 12 years (rounded up from the 11.6) for Carlos to start earning money on the lemon tree.', 119, 0.6941230751182152]
+Path: Node74Node185" color=red shape=box]
+	Node74 -> Node186 [label=Node74Node186]
+	Node186 [label="V:10, H:10, Flag:True
+['8. Therefore, it will take approximately 11.6 years before Carlos starts earning money on the lemon tree.', 44, 0.02199923593121622]
+Path: Node74Node186" color=red shape=box]
+	Node74 -> Node187 [label=Node74Node187]
+	Node187 [label="V:10, H:10, Flag:True
+['8. Therefore, it will take approximately 11.6 years before Carlos starts earning money on the lemon tree.', 117, 0.09478383129588241]
+Path: Node74Node187" color=red shape=box]
+	Node74 -> Node188 [label=Node74Node188]
+	Node188 [label="V:10, H:10, Flag:True
+['8. Finally, rounding up to the nearest whole number, it will take approximately 12 years before Carlos starts earning money on the lemon tree.', 101, 0.30771948414250405]
+Path: Node74Node188" color=red shape=box]
+	Node24 -> Node189 [label=Node24Node189]
+	Node189 [label="V:8, H:10, Flag:True
+['10. Solving for Number_of_years gives us: Number_of_years = (Initial_cost - Earnings_from_lemons) / Annual_maintenance_cost\n         11. Plugging in the values we found earlier, we get: Number_of_years = ($90 - $10.5) / $3\n        12. Calculating', 89, 0.6630066144861478]
+Path: Node24Node189" color=red shape=box]
+	Node24 -> Node190 [label=Node24Node190]
+	Node190 [label="V:3, H:8, Flag:True
+['10. Plug in the values: $10.5 = $90 + ($3 * Number_of_years)\n\nSolve for Number_of_years:\n        First, isolate the term with Number_of_years by subtracting $90 from both sides of the equation:\n        $10.5 - $90 = $3 * Number_of_years\n\n        11. Simplify the left side:\n        -$79.5 = $3 * Number_', 118, 0.5247617129045243]
+Path: Node24Node190" color=red shape=box]
+	Node24 -> Node191 [label=Node24Node191]
+	Node191 [label="V:9, H:10, Flag:True
+['10. Rearrange the equation to solve for Number_of_years:\n           Number_of_years = (Initial_cost - Earnings_from_lemons) / Annual_maintenance_cost + 1\n        In our case, we have:\n           Number_of_years = ($90 - $10.5) / $3 + 1\n\n        11. Cal', 92, 0.4452339517644335]
+Path: Node24Node191" color=red shape=box]
+	Node24 -> Node192 [label=Node24Node192]
+	Node192 [label="V:10, H:10, Flag:True
+[\"10. Solving for Number_of_years, we get the equation: \n          Number_of_years = ($90 + $3 * x) / $3 - $90 / $3 where 'x' is the\", 53, 0.9394306598666659]
+Path: Node24Node192" color=red shape=box]
+	Node24 -> Node193 [label=Node24Node193]
+	Node193 [label="V:8, H:10, Flag:True
+['10. Rearrange the equation to solve for Number_of_years:\n            Number_of_years = (Earnings_from_lemons - Initial_cost) / Annual_maintenance_cost\n\n        11. Plug in our values into the equation:\n            Number_of_years = ($10.', 76, 0.3173140930780908]
+Path: Node24Node193" color=red shape=box]
+	Node24 -> Node194 [label=Node24Node194]
+	Node194 [label="V:3, H:8, Flag:True
+['10. Rearrange the equation to find the number of years: Number_of_years = (Earnings_from_lemons - Initial_cost) / Annual_maintenance_cost\n         11. Plug in the values from steps 6-8 into the equation: Number_of_years = ($10.5 - $90) / $3\n        12. Calculate the value of Number_of_years: Number_of_years = (-79.5) /', 115, 0.2698379895525169]
+Path: Node24Node194" color=red shape=box]
+	Node24 -> Node195 [label=Node24Node195]
+	Node195 [label="V:10, H:10, Flag:True
+['10. Solving for Number_of_years, we get: Number_of_years = (Initial_cost - Earnings_from_lemons) / Annual_maintenance_cost\n        In our case, this becomes: Number_of_years = ($90 - $10.5) / $3\n\n        11. Calculating the value of Number_of_years: Number_of_years ≈', 101, 0.10817107595674391]
+Path: Node24Node195" color=red shape=box]
+	Node30 -> Node196 [label=Node30Node196]
+	Node196 [label="V:2, H:5, Flag:False
+[\"7. Now, let's add up the earnings from all years before he starts earning money:\n           - Up to Year 1: $10.5\n           \n           We will continue this pattern of adding up the earnings while subtracting expenses each year until the total sum covers the initial planting cost ($9\", 67, 0.9185492499488608]
+Path: Node30Node196" color=black shape=box]
+	Node30 -> Node197 [label=Node30Node197]
+	Node197 [label="V:1, H:4, Flag:False
+['7. $7.5 is the net profit in Year 1.\n        8. Continue calculating his earnings for additional years:\n           - Year 2: $10.5 (from selling lemons) - $3 (watering/feeding cost) = $7.5\n           - Year 3: $10.5 (from selling lemons) - $3 (watering/feeding cost) = $7.5\n           - ... (same pattern repeats for all years)', 110, 0.6148429690295422]
+Path: Node30Node197" color=black shape=box]
+	Node30 -> Node198 [label=Node30Node198]
+	Node198 [label="V:2, H:5, Flag:False
+['7. Continue this process until the cumulative earnings from years 1 to n equal or exceed the initial planting cost ($90):\n           - Year 2: $10.5 + $10.5 - $3 = $20 (from selling lemons) - $3 (watering/feeding cost) = $17', 76, 0.639212068043685]
+Path: Node30Node198" color=black shape=box]
+	Node30 -> Node199 [label=Node30Node199]
+	Node199 [label="V:3, H:6, Flag:False
+['7. Continue this process for the remaining years, adding up the earnings and subtracting expenses, until we reach a total amount equal to or greater than the planting cost ($90).\n        Year 1: $10.5 - $3 = $7.5\n        Year 2: $10.5 + $7.5 = $18 - $3 = $15\n        Year 3: $18', 95, 0.7607324924689269]
+Path: Node30Node199" color=black shape=box]
+	Node30 -> Node200 [label=Node30Node200]
+	Node200 [label="V:2, H:8, Flag:True
+[\"7. Continue this process for all the years to find the point when his earnings exceed the initial planting cost of $90.\n        8. It will take approximately 9 years before Carlos starts earning money on the lemon tree, considering he's making a profit after covering costs in year 10.\", 97, 0.5440394818773554]
+Path: Node30Node200" color=red shape=box]
+	Node30 -> Node201 [label=Node30Node201]
+	Node201 [label="V:3, H:7, Flag:False
+['7. Continue this process for all other years until his earnings surpass the planting costs of $90.\n            - Year 2: $18.0 ($10.5 * 1 + $10.5) - $6 (2 * $3 watering/feeding cost) =\n            - Year 3: $25.5 ($18.0 + $7.5) - $', 92, 0.8640981951718226]
+Path: Node30Node201" color=black shape=box]
+	Node30 -> Node202 [label=Node30Node202]
+	Node202 [label="V:2, H:5, Flag:False
+[\"7. Now, let's continue calculating this for the remaining years. For simplicity, we can assume his earnings and costs remain constant for all years, so we won't need to recalculate them\", 43, 0.9120084184513191]
+Path: Node30Node202" color=black shape=box]
+	Node64 -> Node203 [label=Node64Node203]
+	Node203 [label="V:1, H:10, Flag:False
+['8. In the first year, his earnings are $10.5, and the lemon profits are -$89.5 (planting cost - ($10.5 - $3)). He loses money in this year.\n        9. After 2 years, his earnings are $21 (2 * $10.5) and lemon profits are -$', 79, 0.9862385025548903]
+Path: Node64Node203" color=black shape=box]
+	Node64 -> Node204 [label=Node64Node204]
+	Node204 [label="V:1, H:5, Flag:False
+['8. First, subtract the annual expenses from the earnings: $10.5 - $3 = $7.5. This is the money Carlos earns after covering the watering and feeding costs.\n        9. Next, we need to', 52, 0.28710407183327935]
+Path: Node64Node204" color=black shape=box]
+	Node64 -> Node205 [label=Node64Node205]
+	Node205 [label="V:0, H:0, Flag:True
+['8. For one year, Carlos earns $10.5 - $3 = $7.5 from lemons and spending on watering and feeding the tree.\n        9. It will take Carlos 90 / 7.5 = 12 years to recover the initial investment in planting the lemon tree and start making a profit.', 85, 0.7019154384048479]
+Path: Node64Node205" color=green shape=box]
+	Node64 -> Node206 [label=Node64Node206]
+	Node206 [label="V:1, H:5, Flag:False
+['8. First, subtract the annual expenses from the earnings: $10.5 - $3 = $7.5. This is how much Carlos earns after covering the watering and feeding costs.\n        9. Next, we need to find out when this amount equals the planting cost of $90. To do that,', 71, 0.03738530334002221]
+Path: Node64Node206" color=black shape=box]
+	Node64 -> Node207 [label=Node64Node207]
+	Node207 [label="V:1, H:10, Flag:False
+['8. First, subtract the annual expenses from the earnings: $10.5 - $3 = $7.5. This is how much Carlos earns after covering the watering and feeding costs.\n        9. Next, we need to find out when this amount equals the initial investment of $', 63, 0.15290772093356264]
+Path: Node64Node207" color=black shape=box]
+	Node64 -> Node208 [label=Node64Node208]
+	Node208 [label="V:0, H:0, Flag:True
+[\"8. First, let's find out how much Carlos earns from selling lemons and covering expenses: $10.5 - $3 = $7.5. This is his net profit per year.\n        9. To cover the initial investment of $90, he needs to make this amount in profits. So, we'll divide $90 by his annual net profit ($7.5): $90 / $7.5 ≈ 1\", 98, 0.3617258261325689]
+Path: Node64Node208" color=green shape=box]
+	Node64 -> Node209 [label=Node64Node209]
+	Node209 [label="V:1, H:5, Flag:False
+['8. First, subtract the annual expenses from the earnings: $10.5 - $3 = $7.5 (Carlos earns $7.5 more than what he spends on watering and feeding each year', 49, 0.44369227183075355]
+Path: Node64Node209" color=black shape=box]
+	Node70 -> Node210 [label=Node70Node210]
+	Node210 [label="V:10, H:10, Flag:True
+['8. Please note that this calculation assumes no other factors affecting the growth or sale of lemons, such as weather conditions, pests, or market fluctuations.', 47, 0.08632045834789348]
+Path: Node70Node210" color=red shape=box]
+	Node70 -> Node211 [label=Node70Node211]
+	Node211 [label="V:10, H:10, Flag:True
+[\"8. Please note that this calculation doesn't account for potential increases in expenses or decreases in lemon production over time, which may affect the actual time frame required to start earning a profit.\", 110, 0.4249586764278497]
+Path: Node70Node211" color=red shape=box]
+	Node70 -> Node212 [label=Node70Node212]
+	Node212 [label="V:10, H:10, Flag:True
+['8. Please note that this calculation assumes no other factors affecting the growth or sale of lemons, such as disease, pests, or market fluctuations.', 85, 0.04444471735699751]
+Path: Node70Node212" color=red shape=box]
+	Node70 -> Node213 [label=Node70Node213]
+	Node213 [label="V:10, H:10, Flag:True
+['8. Please note that this calculation assumes no other factors affecting the growth or sale of lemons, such as weather conditions or market fluctuations.', 46, 0.17785375148838145]
+Path: Node70Node213" color=red shape=box]
+	Node70 -> Node214 [label=Node70Node214]
+	Node214 [label="V:10, H:10, Flag:True
+['7. Please note that this calculation assumes constant growth, selling price, and expenses over time. Actual results may vary depending on various factors.', 46, 0.4050771547487797]
+Path: Node70Node214" color=red shape=box]
+	Node70 -> Node215 [label=Node70Node215]
+	Node215 [label="V:10, H:10, Flag:True
+['8. This calculation assumes a constant growth in lemons, expenses, and prices throughout those years. In reality, these values might fluctuate over time, so actual results may vary.', 75, 0.5994909391488794]
+Path: Node70Node215" color=red shape=box]
+	Node70 -> Node216 [label=Node70Node216]
+	Node216 [label="V:10, H:10, Flag:True
+[\"8. However, it's important to note that this calculation assumes constant growth in lemons, watering, and feeding expenses. Actual results may vary depending on the environment, tree health, market conditions, etc.\", 96, 0.39791827465664065]
+Path: Node70Node216" color=red shape=box]
+	Node73 -> Node217 [label=Node73Node217]
+	Node217 [label="V:10, H:10, Flag:True
+['8. Finally, we can say that it will take approximately 8 years for him to break even and start generating a profit from his lemon tree.', 68, 0.9921266435123948]
+Path: Node73Node217" color=red shape=box]
+	Node73 -> Node218 [label=Node73Node218]
+	Node218 [label="V:10, H:10, Flag:True
+['8. So, after planting and taking care of the lemon tree for 8 years, he will finally start generating a profit from his investment.', 92, 0.4720951067241187]
+Path: Node73Node218" color=red shape=box]
+	Node73 -> Node219 [label=Node73Node219]
+	Node219 [label="V:10, H:10, Flag:True
+['8. So, after planting and taking care of the lemon tree for 8 years, he will finally start making a profit from it.', 40, 0.16696190260498445]
+Path: Node73Node219" color=red shape=box]
+	Node73 -> Node220 [label=Node73Node220]
+	Node220 [label="V:10, H:10, Flag:True
+['8. So, after planting a lemon tree that costs $90 to grow and selling its lemons while spending $3 per year for watering and feeding, it will take 8 years before he can start making profits from his investment.', 71, 0.5049607676564997]
+Path: Node73Node220" color=red shape=box]
+	Node73 -> Node221 [label=Node73Node221]
+	Node221 [label="V:10, H:10, Flag:True
+['8. So, after planting the lemon tree and considering its costs, it will take 8 years for Carlos to start making a profit from his investment.', 98, 0.0808635013750395]
+Path: Node73Node221" color=red shape=box]
+	Node73 -> Node222 [label=Node73Node222]
+	Node222 [label="V:10, H:10, Flag:True
+['8. So, after planting the lemon tree and considering all costs and earnings, it will take 8 years for Carlos to start making a profit from his investment.', 106, 0.3270760624245891]
+Path: Node73Node222" color=red shape=box]
+	Node73 -> Node223 [label=Node73Node223]
+	Node223 [label="V:10, H:10, Flag:True
+['7. This is the final answer considering planting the tree, selling lemons, watering and feeding it, and when he starts earning back from his investment.', 72, 0.9081402401826116]
+Path: Node73Node223" color=red shape=box]
+	Node85 -> Node224 [label=Node85Node224]
+	Node224 [label="V:7, H:9, Flag:True
+[\"11. However, it is essential to note that this estimate doesn't consider factors like inflation or unexpected expenses. In reality, the actual time needed may vary depending on those variables.\", 70, 0.9487004403416414]
+Path: Node85Node224" color=red shape=box]
+	Node85 -> Node225 [label=Node85Node225]
+	Node225 [label="V:7, H:9, Flag:True
+['11. Please note that this calculation assumes no additional expenses or changes in earnings over time.', 65, 0.027873564947684337]
+Path: Node85Node225" color=red shape=box]
+	Node85 -> Node226 [label=Node85Node226]
+	Node226 [label="V:7, H:9, Flag:True
+['11. Remember that these calculations are estimates and may vary depending on actual costs and yield.', 79, 0.6130044759574249]
+Path: Node85Node226" color=red shape=box]
+	Node85 -> Node227 [label=Node85Node227]
+	Node227 [label="V:7, H:9, Flag:True
+['11. However, this calculation assumes that the expenses and earnings remain constant throughout these years. In reality, there might be fluctuations in costs and profits due to various factors such as weather conditions or market prices.', 72, 0.3993004957518511]
+Path: Node85Node227" color=red shape=box]
+	Node85 -> Node228 [label=Node85Node228]
+	Node228 [label="V:7, H:9, Flag:True
+[\"11. Please note that this calculation assumes a constant growth rate and expenses over time, which may not always be accurate due to various factors affecting the lemon tree's growth and market conditions.\", 71, 0.1373769322997095]
+Path: Node85Node228" color=red shape=box]
+	Node85 -> Node229 [label=Node85Node229]
+	Node229 [label="V:7, H:9, Flag:True
+[\"11. It's important to note that this calculation assumes a constant growth rate and cost of watering/feeding the tree every year. Actual earnings may vary depending on factors like weather conditions and market fluctuations.\", 74, 0.22407969144776985]
+Path: Node85Node229" color=red shape=box]
+	Node85 -> Node230 [label=Node85Node230]
+	Node230 [label="V:7, H:9, Flag:True
+[\"12. It's important to note that this estimate assumes the costs and earnings remain constant throughout those years. Actual results may vary based on unforeseen factors like climate change, diseases, or market conditions.\", 46, 0.7005022635901281]
+Path: Node85Node230" color=red shape=box]
+	Node86 -> Node231 [label=Node86Node231]
+	Node231 [label="V:2, H:10, Flag:True
+[\"11. It's important to note that this calculation assumes no changes in the costs or earnings over time and also doesn't account for inflation or other factors that may influence the situation.\", 42, 0.4768888968470457]
+Path: Node86Node231" color=red shape=box]
+	Node86 -> Node232 [label=Node86Node232]
+	Node232 [label="V:2, H:10, Flag:True
+['11. Keep in mind that this calculation is based on assumptions, and actual results may vary depending on factors such as the number of lemons grown per year, lemon prices, or other unforeseen expenses related to tree maintenance.', 63, 0.9926367106504624]
+Path: Node86Node232" color=red shape=box]
+	Node86 -> Node233 [label=Node86Node233]
+	Node233 [label="V:2, H:10, Flag:True
+[\"11. It's important to note that this calculation assumes a constant price for lemons and watering/feeding expenses, but in reality, these values may vary over time.\", 64, 0.4397187488457629]
+Path: Node86Node233" color=red shape=box]
+	Node86 -> Node234 [label=Node86Node234]
+	Node234 [label="V:2, H:10, Flag:True
+[\"11. It's important to note that this is an approximate answer because the profit and expenses may vary slightly each year due to factors like weather, market conditions, etc.\", 120, 0.5222980930293744]
+Path: Node86Node234" color=red shape=box]
+	Node86 -> Node235 [label=Node86Node235]
+	Node235 [label="V:2, H:10, Flag:True
+['Note that this calculation is based on the given information and assumptions about the growth, selling price, and expenses of planting a lemon tree. Actual results may vary depending on real-world conditions and factors not considered here.', 84, 0.4389213405351392]
+Path: Node86Node235" color=red shape=box]
+	Node86 -> Node236 [label=Node86Node236]
+	Node236 [label="V:2, H:10, Flag:True
+['11. Please note that this is an approximation due to rounding and the fact that earnings may vary slightly each year depending on factors like weather conditions and market demand for lemons.', 117, 0.33510682274761106]
+Path: Node86Node236" color=red shape=box]
+	Node86 -> Node237 [label=Node86Node237]
+	Node237 [label="V:2, H:10, Flag:True
+['11. Keep in mind that this calculation assumes no other expenses or factors might come up, and does not account for inflation or changes in market prices over time.', 71, 0.6715833329930639]
+Path: Node86Node237" color=red shape=box]
+	Node87 -> Node238 [label=Node87Node238]
+	Node238 [label="V:5, H:2, Flag:True
+['11. Please note that these calculations are based on the assumption that the costs and earnings remain constant throughout the years, which might not be accurate in reality due to various factors such as inflation or changes in market conditions.', 62, 0.3751326464637377]
+Path: Node87Node238" color=red shape=box]
+	Node87 -> Node239 [label=Node87Node239]
+	Node239 [label="V:5, H:2, Flag:True
+['11. Please note that these calculations are based on assumptions and may vary depending on actual costs, growth rates, and market conditions.', 73, 0.02903014963930406]
+Path: Node87Node239" color=red shape=box]
+	Node87 -> Node240 [label=Node87Node240]
+	Node240 [label="V:5, H:2, Flag:True
+['11. Please note that this is a simplified estimation as there are other factors to consider for long-term sustainability of the tree, such as potential variations in growth or market demands.', 91, 0.8595252822457718]
+Path: Node87Node240" color=red shape=box]
+	Node87 -> Node241 [label=Node87Node241]
+	Node241 [label="V:5, H:2, Flag:True
+['11. However, it is important to note that this calculation assumes a constant growth rate and expenses, which may not be accurate in reality due to various factors such as weather conditions, pests, or changes in market demand.', 46, 0.3205545101694969]
+Path: Node87Node241" color=red shape=box]
+	Node87 -> Node242 [label=Node87Node242]
+	Node242 [label="V:5, H:2, Flag:True
+['11. Please note that these calculations are based on assumptions and may vary depending on actual costs, growth rates, and other factors.', 81, 0.1977269836164003]
+Path: Node87Node242" color=red shape=box]
+	Node87 -> Node243 [label=Node87Node243]
+	Node243 [label="V:5, H:2, Flag:True
+['11. Please note that these calculations are based on the given information and may vary depending on factors like inflation, maintenance costs, or changes in the market.', 94, 0.5269150496850101]
+Path: Node87Node243" color=red shape=box]
+	Node87 -> Node244 [label=Node87Node244]
+	Node244 [label="V:5, H:2, Flag:True
+[\"11. However, it's important to consider that this timeframe may vary due to factors not included in the calculation like potential fluctuations in growth rates, price of lemons, or other unexpected costs.\", 60, 0.8256079373016367]
+Path: Node87Node244" color=red shape=box]
+	Node125 -> Node245 [label=Node125Node245]
+	Node245 [label="V:8, H:10, Flag:True
+['9. So, in summary, Carlos will need to wait for 7 years before starting to earn money on the lemon tree.', 95, 0.423385981552834]
+Path: Node125Node245" color=red shape=box]
+	Node125 -> Node246 [label=Node125Node246]
+	Node246 [label="V:8, H:10, Flag:True
+['9. Therefore, it will take 7 years for Carlos to start earning money on the lemon tree.', 110, 0.42406339810901783]
+Path: Node125Node246" color=red shape=box]
+	Node125 -> Node247 [label=Node125Node247]
+	Node247 [label="V:8, H:10, Flag:True
+['9. In conclusion, Carlos needs to wait for 7 years before starting to earn money on the lemon tree.', 67, 0.569704119673179]
+Path: Node125Node247" color=red shape=box]
+	Node125 -> Node248 [label=Node125Node248]
+	Node248 [label="V:8, H:10, Flag:True
+['9. So, in summary, it will take 7 years for Carlos to start earning money on the lemon tree.', 83, 0.4287853382766471]
+Path: Node125Node248" color=red shape=box]
+	Node125 -> Node249 [label=Node125Node249]
+	Node249 [label="V:8, H:10, Flag:True
+['9. So, it will take 7 years for Carlos to begin earning money on the lemon tree.', 73, 0.5130322146930925]
+Path: Node125Node249" color=red shape=box]
+	Node125 -> Node250 [label=Node125Node250]
+	Node250 [label="V:8, H:10, Flag:True
+['9. In conclusion, it will take Carlos 7 years for him to start earning money on the lemon tree once all expenses are accounted for.', 116, 0.6585059980411483]
+Path: Node125Node250" color=red shape=box]
+	Node125 -> Node251 [label=Node125Node251]
+	Node251 [label="V:8, H:10, Flag:True
+['9. In summary, it will take Carlos about 7 years to start earning money from the lemon tree after considering planting costs and annual maintenance expenses.', 48, 0.6568833051145845]
+Path: Node125Node251" color=red shape=box]
+	Node147 -> Node252 [label=Node147Node252]
+	Node252 [label="V:3, H:3, Flag:False
+['10. Simplify the equation: $10.5 * number_of_years - $3 * number_of_years = $90\n        11. Subtract $3 from both sides of the equation: $7 * number_of_years = $90\n        12. Divide by 7 on both sides', 77, 0.8993182373009487]
+Path: Node147Node252" color=black shape=box]
+	Node147 -> Node253 [label=Node147Node253]
+	Node253 [label="V:3, H:3, Flag:False
+['10. Solve for the number of years: number_of_years = ($90 + $3 * number_of_years) / $10.5\n        11. Simplify and solve for the number of years: number_of_years = 20.18\n        12. Rounding', 74, 0.3537461504115371]
+Path: Node147Node253" color=black shape=box]
+	Node147 -> Node254 [label=Node147Node254]
+	Node254 [label="V:3, H:3, Flag:False
+['11. Solve for the unknown variable, which is the number of years: number_of_years = ($90 + $3 * number_of_years) / $10.5\n        12. Simplify the equation by factoring out the common term in the denominator:', 66, 0.6371908053836285]
+Path: Node147Node254" color=black shape=box]
+	Node147 -> Node255 [label=Node147Node255]
+	Node255 [label="V:3, H:3, Flag:False
+['11. Solving for the number of years, we get: number_of_years = ($90 + $3 * number_of_years) / $10.5\n        12', 45, 0.5023449587317133]
+Path: Node147Node255" color=black shape=box]
+	Node147 -> Node256 [label=Node147Node256]
+	Node256 [label="V:3, H:3, Flag:False
+[\"10. To solve for the number of years, we need to divide both sides of the equation by $10.5: number_of_years = ($90 + $3 * number_of_years) / $10.5\n        11. Now, let's simplify the equation and solve for the unknown variable (number_of_years): number_of_years = ($90 + $3 * number_of_years - $90) / $10.5 =>\", 114, 0.5818483791407789]
+Path: Node147Node256" color=black shape=box]
+	Node147 -> Node257 [label=Node147Node257]
+	Node257 [label="V:4, H:4, Flag:False
+['10. Solving for the number of years, we get: number_of_years = ($90 + $3 * number_of_years) / $10.5\n        11. To find the exact value, we can use a calculator or solve this equation algebraically (which may involve trial and error). After doing so, it takes approximately 1', 81, 0.4125041017251756]
+Path: Node147Node257" color=black shape=box]
+	Node147 -> Node258 [label=Node147Node258]
+	Node258 [label="V:3, H:3, Flag:False
+['10. Solve for the number of years: number_of_years = ($10.5 * number_of_years - $3 * number_of_years - $90) / $10.', 50, 0.9806549942426199]
+Path: Node147Node258" color=black shape=box]
+	Node26 -> Node259 [label=Node26Node259]
+	Node259 [label="V:5, H:8, Flag:True
+['90 + 3Years = 10.5Years\n        87 + 3Years = 10.5Years - 87\n        3Years =', 42, 0.22686406475158072]
+Path: Node26Node259" color=red shape=box]
+	Node26 -> Node260 [label=Node26Node260]
+	Node260 [label="V:5, H:6, Flag:True
+['90 + 3Years = 10.5Years\n\nNow, we can solve for the number of years:\n        To find out how many years it takes before Carlos starts earning money, we need to divide both sides by 10.5', 56, 0.20384962067623402]
+Path: Node26Node260" color=red shape=box]
+	Node26 -> Node261 [label=Node26Node261]
+	Node261 [label="V:2, H:2, Flag:False
+['90 + 3Years = 10.5Years\n\n7. Now, we can solve for the number of years it will take to start earning money:\n        (90 - 10.5) / 3 = Years\n        80 / 3 = Years\n        Years = 26.67 (approximately)\n        It will approximately take 27 years before Carlos starts earning money on the lemon tree.', 115, 0.5527270746138516]
+Path: Node26Node261" color=black shape=box]
+	Node26 -> Node262 [label=Node26Node262]
+	Node262 [label="V:9, H:10, Flag:True
+['90 + 3Years = 10.5Years\n        87 = 7.5Years\n        7.5Years is the number of years it will take before Carlos starts earning money from the lemon tree.', 57, 0.6491698763565379]
+Path: Node26Node262" color=red shape=box]
+	Node26 -> Node263 [label=Node26Node263]
+	Node263 [label="V:10, H:10, Flag:True
+['90 + 3Years - 2.5Years = 10.5 * Years\n        97.5Years - 2.5Years = 8.5 * Years\n        So, after 8.5 years, Carlos starts earning money on the lemon tree.', 96, 0.978443088282817]
+Path: Node26Node263" color=red shape=box]
+	Node26 -> Node264 [label=Node26Node264]
+	Node264 [label="V:2, H:2, Flag:True
+['90 + 3Years = 10.5Years\n        Y = (90 - 10.5) / 3\n        Y ≈ 23.5 years\n\nSo, it will take about 23.5 years before Carlos', 59, 0.9878607664843729]
+Path: Node26Node264" color=red shape=box]
+	Node26 -> Node265 [label=Node26Node265]
+	Node265 [label="V:0, H:0, Flag:False
+['90 + 3Years = 10.5Years * 7\n        3Years = 70.5Years - 90\n        Y = 21 years\n\nIt will take', 48, 0.836942506526527]
+Path: Node26Node265" color=green shape=box]
+}

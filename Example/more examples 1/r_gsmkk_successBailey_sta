@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Bailey starts with a certain amount of money. Then she receives a weekly allowance of $5 for 8 weeks. At the end of the 8 weeks, if she has a total of $100, how much money did Bailey start with? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:0, H:2, Flag:False
+[\"1. First, let's find out how much money Bailey received from her weekly allowances in total. To do this, we multiply the amount per week ($5) by the number of weeks (8). So, $5 * 8 = $40.\n        2. Now, we know that at the end of the 8 weeks, she has a total of $100. This means her initial money plus the allowance money equals $\", 97, 0.0013411729391367144]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:4, H:8, Flag:False
+[\"1. First, let's find out how much Bailey received in total from her weekly allowance. To do this, we multiply the amount per week ($5) by the number of weeks\", 41, 0.12447387373770502]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:3, Flag:False
+['1. First, we need to find out how much money Bailey received from her weekly allowances in those 8 weeks. To do this, we multiply the weekly allowance by the number of weeks. So, $5 * 8 = $40.\n        2. Now, we know that Bailey has a total of $100 at the end of the 8 weeks. This includes her initial amount plus the money she received from her allowances. To find out how much she started with, we need to subtract the', 113, 0.25783865701583253]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:5, H:9, Flag:False
+[\"1. First, let's find out how much money Bailey received from her weekly allowances in total. To do this, we multiply the amount per week ($5) by the number\", 40, 0.12227177726246952]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:3, Flag:False
+[\"1. We know that Bailey starts with a certain amount of money which we'll call A.\n        2. She then receives a weekly allowance of $5 for 8 weeks. This means she gets 5 * 8 = $40 from the allowance.\n        3. After this period, she has a total of $100 (A + 40).\n        4. We want to find out\", 91, 0.8440532623377599]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:4, H:7, Flag:False
+['1. We need to find out the amount of money Bailey started with before her weekly allowance.\n        2. Currently we know her total amount after 8 weeks is $100, including all the weekly allowances', 47, 0.938570759822221]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:5, H:6, Flag:False
+[\"1. Let's first find out Bailey's total income during those 8 weeks by adding her weekly allowance.\n           Weekly allowance = $5\n           8 weeks = Total weeks\n           Total weekly income = Weekly allowance * Total weeks\n           Total income = $5 * 8\", 65, 0.8245840834398315]
+Path: StartNode6" color=black shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:2, H:0, Flag:False
+['3. To find out how much Bailey started with, we simply subtract the amount received from her allowances ($40) from her final total ($100). So, $100 - $40 = $60.\n        Therefore, Bailey started with $60.', 112, 0.7790697643021843]
+Path: Node0Node7" color=green shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:2, H:2, Flag:False
+['100. Therefore, $100 = Initial Money + $40 (allowances).\n        3. To find out how much Bailey started with, we need to subtract the amount she received from her allowances ($40) from the total amount', 56, 0.36988254766259754]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:2, H:0, Flag:False
+['3. To find out how much Bailey started with, subtract the amount from allowances ($40) from the final total ($100). So, $100 - $40 = $60.\n        4. Therefore, Bailey initially had $60 when she began.', 101, 0.8038999699015057]
+Path: Node0Node9" color=green shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:2, H:0, Flag:False
+['3. To find out how much Bailey started with, we need to subtract the amount from her allowances ($40) from the final total ($100). So, $100 - $40 = $60.\n        Therefore, Bailey started with $60.', 119, 0.2590901553065327]
+Path: Node0Node10" color=green shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:2, H:0, Flag:False
+['3. To find out how much Bailey started with, subtract the amount of allowance money from the final total ($100). So, $100 - $40 = $60.\n        Therefore, Bailey started with $60.', 101, 0.3181887135759891]
+Path: Node0Node11" color=green shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:1, H:0, Flag:False
+['100.\n        3. To find out how much Bailey started with, subtract the amount she received from the allowances from the final amount. So, $100 - $40 = $60.\n        Therefore, Bailey started with $60.', 77, 0.8726231535676452]
+Path: Node0Node12" color=green shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:2, H:0, Flag:False
+['3. To find out how much Bailey started with, subtract the amount she received from her allowances ($40) from the total amount she had at the end ($100). So, $100 - $40 = $60.\n        Bailey started with $60.', 99, 0.28533378321221203]
+Path: Node0Node13" color=green shape=box]
+}

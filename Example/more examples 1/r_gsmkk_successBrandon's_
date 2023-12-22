@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Brandon's iPhone is four times as old as Ben's iPhone. Ben's iPhone is two times older than Suzy's iPhone. If Suzy’s iPhone is 1 year old, how old is Brandon’s iPhone? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:9, Flag:False
+[\"1. Let's first find out the age of Ben's and Brandon's iPhones by using the given information:\n            a. Brandon's iPhone is four times as old as Ben's iPhone.\n            b. Ben's iPhone is two times older than Suzy's iPhone, which is 1 year old.\n        2. Since Suzy's iPhone is 1 year old,\", 90, 0.6995186696145544]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:9, Flag:False
+[\"1. We know that Brandon's iPhone is four times as old as Ben's iPhone. Since Ben's iPhone is two times older than Suzy's iPhone (which is\", 40, 0.26513134990940423]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:9, Flag:False
+[\"1. We know that Brandon's iPhone is four times as old as Ben's iPhone. So, if Ben's iPhone is twice older than Suzy's iPhone, then we can calculate the age of Brandon's iPhone in relation to Suzy's iPhone. We know that Brandon's iPhone = 4 * Ben's iPhone and Ben's iPhone = 2 * Suzy\", 86, 0.7728110367089142]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:1, Flag:False
+[\"1. We know that Brandon's iPhone is four times as old as Ben's iPhone.\n        2. Ben's iPhone is two times older than Suzy's iPhone which is 1 year old.\n        3. To find the age of Ben's iPhone, we need to multiply Suzy's iPhone's age (1 year) by 2: 1 * 2 = 2 years.\n        4. Now that we know Ben's iPhone is\", 104, 0.05823722654822272]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:6, H:9, Flag:False
+[\"1. We know that Brandon's iPhone is four times as old as Ben's iPhone.\n        2. We also know that Ben's iPhone is two times older than Suzy'\", 41, 0.1580603589816182]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:3, H:2, Flag:False
+[\"1. First, we need to find out the age of Ben's iPhone. Since it's two times older than Suzy's (which is 1 year old), its age will be 2 * 1 = 2 years old.\n        2. Next, let's calculate the age of Brandon's iPhone, which is four times as old as Ben's. So, to find this age, we\", 90, 0.664144981651053]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:6, H:9, Flag:False
+[\"1. We know that Brandon's iPhone is four times as old as Ben's iPhone.\n        2. Ben's iPhone is two times older than Suzy's iPhone which is 1 year old.\n        3. To find the age of Ben's iPhone, we multiply Suzy's by 2: 1 *\", 74, 0.4753715788986099]
+Path: StartNode6" color=black shape=box]
+	Node3 -> Node7 [label=Node3Node7]
+	Node7 [label="V:2, H:2, Flag:False
+[\"5. We can use this information to calculate Brandon's iPhone's age by multiplying Ben's iPhone's age (2 years) by 4: 2 * 4 = 8 years.\n        6. So, Brandon's iPhone is 8 years old.\", 113, 0.2693458821581626]
+Path: Node3Node7" color=black shape=box]
+	Node3 -> Node8 [label=Node3Node8]
+	Node8 [label="V:1, H:1, Flag:False
+[\"5. Brandon's iPhone is 4 times older than Ben's iPhone, so we need to multiply Ben's iPhone's age (which is now 2 years) by 4: 2 * 4 = 8 years.\n        Therefore, Brandon's iPhone is 8 years old.\", 74, 0.8068887217393946]
+Path: Node3Node8" color=black shape=box]
+	Node3 -> Node9 [label=Node3Node9]
+	Node9 [label="V:2, H:9, Flag:True
+[\"2 years old and it's two times older than Brandon's iPhone, we multiply this by 2 to get Brandon's iPhone age: 2 * 2 = 4 years.\n        So, Brandon's iPhone is 4 years old.\", 97, 0.8822250753876502]
+Path: Node3Node9" color=red shape=box]
+	Node3 -> Node10 [label=Node3Node10]
+	Node10 [label="V:9, H:10, Flag:True
+[\"4 years old (twice as old as Suzy's), we can find the age of Brandon's iPhone by multiplying Ben's iPhone's age (4 years) by 4: 4 * 4 = 16 years.\n        So, Brandon'\", 61, 0.46311819483380623]
+Path: Node3Node10" color=red shape=box]
+	Node3 -> Node11 [label=Node3Node11]
+	Node11 [label="V:2, H:2, Flag:False
+[\"5. We can calculate Brandon's iPhone's age by multiplying Ben's iPhone's age (2 years) by 4: 2 * 4 = 8 years.\n        So, Brandon's iPhone is 8 years old.\", 64, 0.023595729584580782]
+Path: Node3Node11" color=black shape=box]
+	Node3 -> Node12 [label=Node3Node12]
+	Node12 [label="V:2, H:2, Flag:False
+[\"5. To find Brandon's iPhone's age, we need to multiply Ben's iPhone's age (2 years) by 4: 2 * 4 = 8 years.\n        6. Therefore, Brandon's iPhone is 8 years old.\", 108, 0.5171988519030098]
+Path: Node3Node12" color=black shape=box]
+	Node3 -> Node13 [label=Node3Node13]
+	Node13 [label="V:10, H:10, Flag:True
+[\"5. We need to figure out how many times younger Brandon's iPhone is compared to Ben's. This can be achieved by dividing the age of Ben's iPhone (2 years) by the ratio of Brandon's iPhone being four times as old: 2 / 4 = 1/2\n        6. Multiply that fraction with the original age of Ben's iPhone to find out how many times younger it is: (1/2) * 2 = 1 year difference.\", 108, 0.7718703374940327]
+Path: Node3Node13" color=red shape=box]
+	Node8 -> Node14 [label=Node8Node14]
+	Node14 [label="V:2, H:0, Flag:False
+['In this scenario, the process involved breaking down each individual relationship between the ages of the iPhones belonging to Ben, Suzy, and Brandon. We then worked backward from the known information about the youngest iPhone to determine the age of the oldest one.', 115, 0.8497378443908301]
+Path: Node8Node14" color=green shape=box]
+	Node8 -> Node15 [label=Node8Node15]
+	Node15 [label="V:2, H:0, Flag:False
+['', 51, 0.4749809134384556]
+Path: Node8Node15" color=green shape=box]
+	Node8 -> Node16 [label=Node8Node16]
+	Node16 [label="V:2, H:0, Flag:False
+['Note that these calculations are based on the given relationships and assumptions between the different iPhones involved in the problem, which might not be entirely accurate in real-world situations.', 51, 0.6942698539599421]
+Path: Node8Node16" color=green shape=box]
+	Node8 -> Node17 [label=Node8Node17]
+	Node17 [label="V:2, H:0, Flag:False
+['', 88, 0.28973512580650573]
+Path: Node8Node17" color=green shape=box]
+	Node8 -> Node18 [label=Node8Node18]
+	Node18 [label="V:2, H:0, Flag:False
+['', 64, 0.08706872175015246]
+Path: Node8Node18" color=green shape=box]
+	Node8 -> Node19 [label=Node8Node19]
+	Node19 [label="V:2, H:0, Flag:False
+['Note that the ages provided in this scenario are approximate and should not be directly related to real-life situations or Apple products. This conversation illustrates the process of solving a mathematical problem step by step using given information and logical reasoning.', 48, 0.9010537331310695]
+Path: Node8Node19" color=green shape=box]
+	Node8 -> Node20 [label=Node8Node20]
+	Node20 [label="V:2, H:0, Flag:False
+['', 54, 0.38228593747472006]
+Path: Node8Node20" color=green shape=box]
+}

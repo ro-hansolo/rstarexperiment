@@ -1,0 +1,21 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's find out how much money Bailey received from her weekly allowances in total. To do this, we multiply the amount per week ($5) by the number of weeks (8). So, $5 * 8 = $40.
+        2. Now, we know that at the end of the 8 weeks, she has a total of $100. This means her initial money plus the allowance money equals $",Node0,0,2,0,2,0.0013411729391367144,97,False
+" 1. First, let's find out how much Bailey received in total from her weekly allowance. To do this, we multiply the amount per week ($5) by the number of weeks",Node1,4,8,4,12,0.12447387373770502,41,False
+" 1. First, we need to find out how much money Bailey received from her weekly allowances in those 8 weeks. To do this, we multiply the weekly allowance by the number of weeks. So, $5 * 8 = $40.
+        2. Now, we know that Bailey has a total of $100 at the end of the 8 weeks. This includes her initial amount plus the money she received from her allowances. To find out how much she started with, we need to subtract the",Node2,1,3,1,4,0.25783865701583253,113,False
+" 1. First, let's find out how much money Bailey received from her weekly allowances in total. To do this, we multiply the amount per week ($5) by the number",Node3,5,9,5,14,0.12227177726246952,40,False
+" 1. We know that Bailey starts with a certain amount of money which we'll call A.
+        2. She then receives a weekly allowance of $5 for 8 weeks. This means she gets 5 * 8 = $40 from the allowance.
+        3. After this period, she has a total of $100 (A + 40).
+        4. We want to find out",Node4,1,3,1,4,0.8440532623377599,91,False
+" 1. We need to find out the amount of money Bailey started with before her weekly allowance.
+        2. Currently we know her total amount after 8 weeks is $100, including all the weekly allowances",Node5,4,7,4,11,0.938570759822221,47,False
+" 1. Let's first find out Bailey's total income during those 8 weeks by adding her weekly allowance.
+           Weekly allowance = $5
+           8 weeks = Total weeks
+           Total weekly income = Weekly allowance * Total weeks
+           Total income = $5 * 8",Node6,5,6,5,11,0.8245840834398315,65,False
+" 1. First, let's find out how much money Bailey received from her weekly allowances in total. To do this, we multiply the amount per week ($5) by the number of weeks (8). So, $5 * 8 = $40.
+        2. Now, we know that at the end of the 8 weeks, she has a total of $100. This means her initial money plus the allowance money equals $ 3. To find out how much Bailey started with, we simply subtract the amount received from her allowances ($40) from her final total ($100). So, $100 - $40 = $60.
+        Therefore, Bailey started with $60.",Node7,2,0,2,2,0.7790697643021843,112,False

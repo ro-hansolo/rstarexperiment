@@ -1,0 +1,314 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: According to its nutritional info, a bag of chips has 250 calories per serving. If a 300g bag has 5 servings, how many grams can you eat if your daily calorie target is 2000 and you have already consumed 1800 calories? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:8, Flag:False
+[\"1. First, let's find out the total calories in the 300g bag of chips by multiplying the number of servings (5) by the calories per serving (250).\n            Total\", 46, 0.3206665331756897]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:8, Flag:False
+['1. We need to determine the calories from the entire 300g bag before dividing it into servings. To do this, multiply 250 calories per serving by 5 servings in one 300g bag.\n            Total calories for the whole 300g bag = 250 calories/serving * 5 servings = 1', 82, 0.8905989808023136]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:4, Flag:False
+[\"1. First, let's find out the total number of calories in a 300g bag of chips. We know there are 5 servings with 250 calories each, so we multiply the serving size by the number of servings: 250 * 5 = 1250 calories per 300g bag.\n        2. Now, let's determine how many grams you can eat from this bag to reach your daily calorie target of 2000. You have already consumed 1800\", 120, 0.07678467146310164]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:4, Flag:False
+[\"1. First, let's find the total number of calories in a 300g bag of chips by multiplying the calories per serving (250) by the number of servings (5).\n            Total calories = 250 * 5 = 1250 calories\n        2\", 66, 0.49721246453299117]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:4, Flag:False
+[\"1. Firstly, let's figure out the total number of calories in a 300g bag of chips by multiplying the servings size per bag (which we know to be 250 calories) with the number of servings available in the bag (5). So, 250 * 5 = 1250 calories.\n        2. You've already consumed 1800 calories and your daily target\", 95, 0.783997866713156]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:4, Flag:False
+[\"1. First, let's determine the total calories in the whole bag of chips. To do this, we multiply the number of servings by the calories per serving. So, 5 servings * 250 calories/serving = 1250 calories.\n        2. Now\", 64, 0.3612415572397597]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:5, H:9, Flag:True
+['1. First, we need to determine the number of calories in one gram of chips. To do this, divide the total calories by the weight of the bag (in grams). So, 250 calories / 300g = 0.833 calories per gram.\n        2. Next, we need to find out how many calories are left for you to consume in your daily target. Subtract the already consumed calories from the total calorie goal: 200', 103, 0.2786791580570065]
+Path: StartNode6" color=red shape=box]
+	Node2 -> Node7 [label=Node2Node7]
+	Node7 [label="V:2, H:3, Flag:False
+[\"calories and want to consume an additional 200 calories to reach the target. So we subtract the consumed calories from the desired daily intake: 2000 - 1800 = 200 calories remaining.\n        3. Next, let's find out how many grams you can eat to get those remaining 200 calories. We know there are 1250 calories in a 3\", 92, 0.6744595159048179]
+Path: Node2Node7" color=black shape=box]
+	Node2 -> Node8 [label=Node2Node8]
+	Node8 [label="V:2, H:3, Flag:False
+['calories and need an additional 200 calories for the whole day (2000 - 1800 = 200 calories).\n        3. We know there are 1250 calories in a 300g bag, so we divide your calorie goal of 200 by this number to find out how many grams you can eat: 200 /', 87, 0.8468717752976652]
+Path: Node2Node8" color=black shape=box]
+	Node2 -> Node9 [label=Node2Node9]
+	Node9 [label="V:3, H:5, Flag:True
+['calories, so you need to consume an additional 200 calories (2000 - 1800 = 200).\n        3. To find out how many grams of chips will give you these extra 200 calories, we divide the total calories in a serving by the number of calories needed: 250 / 200 = 1.25 servings.\n        4. Finally,', 94, 0.06418221756423348]
+Path: Node2Node9" color=red shape=box]
+	Node2 -> Node10 [label=Node2Node10]
+	Node10 [label="V:2, H:7, Flag:False
+['calories, so we need to subtract that from the total daily goal: 2000 - 1800 = 200 calories remaining for the day.\n        3.', 41, 0.4374447273859309]
+Path: Node2Node10" color=black shape=box]
+	Node2 -> Node11 [label=Node2Node11]
+	Node11 [label="V:2, H:3, Flag:False
+['calories and have 2000 - 1800 = 200 calories left to consume before reaching your daily calorie goal. We know that there are 250 calories per serving and the total calories in a 300g bag are 1250. To calculate how many servings give you those extra 200 calories, divide the target number of calories (200) by the calories per serving (250): 200 /', 105, 0.9556799820235339]
+Path: Node2Node11" color=black shape=box]
+	Node2 -> Node12 [label=Node2Node12]
+	Node12 [label="V:2, H:3, Flag:False
+['calories. To reach the desired intake, subtract the total number of calories you have consumed so far: 2000 - 1800 = 200 calories left to consume for the day.\n        3. Calculate how much of the 1250', 61, 0.8505845330846825]
+Path: Node2Node12" color=black shape=box]
+	Node2 -> Node13 [label=Node2Node13]
+	Node13 [label="V:3, H:4, Flag:True
+['calories, so you need to consume an additional 200 calories (2000 - 1800 = 200).\n        3. To find out how many grams of chips will give you these extra 200 calories, we divide the total number of calories in a serving by the calorie difference: 250', 75, 0.07302413004355457]
+Path: Node2Node13" color=red shape=box]
+	Node3 -> Node14 [label=Node3Node14]
+	Node14 [label="V:1, H:5, Flag:True
+['2. Next, find out how many calories are left for your daily target (2000 - 1800) = 200 calories.\n           Remaining calories = 200\n        3. Now, we need to find the grams of chips you can eat by dividing the remaining calories by the calories per gram of chips (1250/250).\n            Gr', 88, 0.5972696676203147]
+Path: Node3Node14" color=red shape=box]
+	Node3 -> Node15 [label=Node3Node15]
+	Node15 [label="V:1, H:8, Flag:False
+['2. Next, calculate your calorie budget for the rest of the day, which is the difference between your daily target (2000 calories) and what you have already consumed (1800 calories).\n            Remaining daily calorie budget = Daily target - Cons', 57, 0.9256780144771981]
+Path: Node3Node15" color=black shape=box]
+	Node3 -> Node16 [label=Node3Node16]
+	Node16 [label="V:1, H:5, Flag:True
+['2. Next, we need to know how many calories are left for you after consuming 1800 calories from other food or beverages.\n           Remaining calories = Daily calorie target - Calories consumed (1800) = 2000 - 1800 = 200 calories\n        3. Now, we can determine the remaining number of servings by dividing the remaining', 90, 0.7975410400223573]
+Path: Node3Node16" color=red shape=box]
+	Node3 -> Node17 [label=Node3Node17]
+	Node17 [label="V:1, H:8, Flag:False
+['2. Now, we need to find out how many grams you can eat from the bag based on your daily calorie target and the remaining calories you have. Your daily calorie target is 2000, and after consuming 1800 calories, you have 200 remaining calories.\n            Remaining calories = Daily target - Consumed calories =', 78, 0.5386285861145127]
+Path: Node3Node17" color=black shape=box]
+	Node3 -> Node18 [label=Node3Node18]
+	Node18 [label="V:3, H:9, Flag:True
+['2. Now, we need to calculate the remaining calories for our daily target (2000 - 1800 = 200 calories left) and add it to the total calories of the bag (1250 + 200 = 14', 58, 0.5185861192292383]
+Path: Node3Node18" color=red shape=box]
+	Node3 -> Node19 [label=Node3Node19]
+	Node19 [label="V:1, H:5, Flag:True
+['2. Next, we need to determine how many grams you can eat without going over your daily calorie target of 2000. To do this, subtract the calories you have already consumed (1800) from your total daily calorie goal (2000).\n            Remaining calories = 2000 - 1800 = 200 calories\n        3. Now that we know how many remaining calories you can consume, let', 101, 0.2328677490194071]
+Path: Node3Node19" color=red shape=box]
+	Node3 -> Node20 [label=Node3Node20]
+	Node20 [label="V:1, H:9, Flag:True
+[\"2. Now, we need to find out how many grams you can consume to reach your daily calorie target of 2000 with 1800 calories already consumed. To do this, subtract the calories you've already eaten from your\", 54, 0.5906769349764329]
+Path: Node3Node20" color=red shape=box]
+	Node4 -> Node21 [label=Node4Node21]
+	Node21 [label="V:2, H:3, Flag:False
+['is 2000 calories. To find out how many more calories you can consume before reaching your daily limit of 2000, subtract the calories consumed from your daily target: 2000 - 1800 = 200 calories remaining for the day.\n        3. Now, we need to determine how many grams of chips you can eat without exceeding your remaining calorie limit of 200 calories. We know that each gram of chips has a fixed number of calories (which is', 113, 0.8432878304870417]
+Path: Node4Node21" color=black shape=box]
+	Node4 -> Node22 [label=Node4Node22]
+	Node22 [label="V:2, H:3, Flag:False
+[\"is 2000 calories. To find out how many more calories you can consume to reach your daily goal, subtract the calories you've already had from your daily target: 2000 - 1800 = 200 calories remaining.\n        3. Now, we need to\", 66, 0.0876361646334981]
+Path: Node4Node22" color=black shape=box]
+	Node4 -> Node23 [label=Node4Node23]
+	Node23 [label="V:2, H:3, Flag:False
+['is 2000 calories. To calculate how many more you can consume without exceeding your daily intake, subtract the total calories you have consumed from your total calorie goal: 2000 - 1800 = 200 remaining calories.\n        3. Now, we know there are 1250 calories', 74, 0.8379851215991402]
+Path: Node4Node23" color=black shape=box]
+	Node4 -> Node24 [label=Node4Node24]
+	Node24 [label="V:2, H:3, Flag:False
+[\"is 2000 calories. To find out how many more calories you can consume, subtract the calories you've already had from your daily target: 2000 - 1800 = 200 calories remaining for today.\n        3. Now we need to determine how many grams of chips you can eat while staying within your cal\", 77, 0.06249515162823205]
+Path: Node4Node24" color=black shape=box]
+	Node4 -> Node25 [label=Node4Node25]
+	Node25 [label="V:1, H:3, Flag:False
+[\"is 2000 calories, so you have 2000 - 1800 = 200 calories left to consume in the day.\n        3. Now let's find out how much you can eat from this bag of chips using the remaining 200 calories available. To do that, divide the total number of calories in one serving (250) by the remaining calories you\", 88, 0.7451818217627331]
+Path: Node4Node25" color=black shape=box]
+	Node4 -> Node26 [label=Node4Node26]
+	Node26 [label="V:2, H:3, Flag:False
+[\"is set at 2000 calories. To find out how many more calories you can consume before reaching the daily limit, subtract the current calories from your target: 2000 - 1800 = 200 calories.\n        3. Now we know that you're allowed an additional 200 calories for today and have a 300g bag of chips with 1250 calories per serving. To determine how many servings\", 101, 0.7738061651939255]
+Path: Node4Node26" color=black shape=box]
+	Node4 -> Node27 [label=Node4Node27]
+	Node27 [label="V:2, H:3, Flag:False
+[\"is 2000 calories. To find out how many more calories you can consume, subtract the calories you've already had from the target: 2000 - 1800 = 200 calories remaining for today.\n        3. Now we need to determine how many grams of chips\", 68, 0.4186678803739865]
+Path: Node4Node27" color=black shape=box]
+	Node5 -> Node28 [label=Node5Node28]
+	Node28 [label="V:2, H:8, Flag:False
+[\"3. Next, let's find out how many grams are in one serving. To do this, we divide the total weight of the bag by the number of servings. So, 300g / 5 servings = 60g per serving.\n        4. Since you have already consumed 1800 calories and your daily target\", 76, 0.41222571307764255]
+Path: Node5Node28" color=black shape=box]
+	Node5 -> Node29 [label=Node5Node29]
+	Node29 [label="V:2, H:8, Flag:False
+[\"3. Next, let's find out how many grams are in a single serving. To do this, we divide the total weight of the bag by the number of servings. So, 300g / 5 servings = 60g per serving.\n        4. Now that we know the calories and grams per serving, let's calculate how many calories are left for you to consume in your daily target of 2000\", 97, 0.11867485973615133]
+Path: Node5Node29" color=black shape=box]
+	Node5 -> Node30 [label=Node5Node30]
+	Node30 [label="V:1, H:7, Flag:False
+['3. We know that you have a daily calorie target of 2000 and you have consumed 1800 calories so far. To find out how many more calories are left, subtract the consumed calories from your target: 2000 - 1800 = 200 remaining calories.\n        4. Next, we need to convert the remaining calories into grams of chips to eat. Since there are 125', 97, 0.8250285126164366]
+Path: Node5Node30" color=black shape=box]
+	Node5 -> Node31 [label=Node5Node31]
+	Node31 [label="V:2, H:8, Flag:False
+[\"3. you know that you need to consume another 200 calories (your daily target is 2000, and you've already consumed 1800) before reaching your goal for the day.\n        4. Next, let's find out how many of these remaining 200 calories can be provided by eating the chips. To do this, we'll\", 82, 0.981145502062662]
+Path: Node5Node31" color=black shape=box]
+	Node5 -> Node32 [label=Node5Node32]
+	Node32 [label="V:1, H:6, Flag:False
+['3. We need to find out how many grams you can eat from the bag of chips while staying within your daily calorie target. Your remaining calorie intake is 2000 - 1800 = 200 calories.\n        4. Divide the remaining calories by the total calories in the whole', 69, 0.38167287052366683]
+Path: Node5Node32" color=black shape=box]
+	Node5 -> Node33 [label=Node5Node33]
+	Node33 [label="V:2, H:8, Flag:False
+[\"3. Next, we need to find out how many grams you can eat from the bag without going over your daily calorie target of 2000. To do this, subtract the calories you've already consumed (1800) from your daily calorie target (20\", 62, 0.36371834928290525]
+Path: Node5Node33" color=black shape=box]
+	Node5 -> Node34 [label=Node5Node34]
+	Node34 [label="V:4, H:8, Flag:True
+[\"3. Next, let's find out how many grams are in a single calorie. Since there are 250 calories in a serving and 1000g in a kilogram (kg), we can calculate the number of grams per calorie by dividing the total weight of a serving by its caloric content: 1000g/250 calories = 4g/cal.\n        4. Now, let's determine how many\", 101, 0.30426080402427547]
+Path: Node5Node34" color=red shape=box]
+	Node25 -> Node35 [label=Node25Node35]
+	Node35 [label="V:10, H:10, Flag:True
+['4. want to consume (200). So, 250 / 200 = 1.25. This means each calorie consumed from a single serving is worth 1.25 times the weight of that serving.\n        5. Finally, multiply this ratio by the number of servings in the bag (5) to find out how many grams you can eat while staying within your daily calorie limit: 1.25 * 5 = 6.25. This means you can eat about 6', 116, 0.5412319263977476]
+Path: Node25Node35" color=red shape=box]
+	Node25 -> Node36 [label=Node25Node36]
+	Node36 [label="V:8, H:10, Flag:True
+['4. have left to consume (200). So, 250 / 200 = 1.25 servings.\n        5. Finally, multiply this result with the grams per serving (300g) to find out how many grams of chips you can eat while staying within your daily calorie target. So, 1.25 * 300 = 375 grams. You can eat up to 375 grams of chips from this bag without exceeding your daily calorie intake.', 120, 0.09027065404494838]
+Path: Node25Node36" color=red shape=box]
+	Node25 -> Node37 [label=Node25Node37]
+	Node37 [label="V:10, H:10, Flag:True
+['4. want to consume (200). So, 250 / 200 = 1.25 servings. This means you can have 1.25 times the size of a single serving which is equivalent to 1.25 * 300g (total weight) = 375g.\n        5. Therefore, you can eat approximately 375 grams', 89, 0.9250829435904234]
+Path: Node25Node37" color=red shape=box]
+	Node25 -> Node38 [label=Node25Node38]
+	Node38 [label="V:7, H:10, Flag:True
+['4. have left for the day (200). So, 250 / 200 = 1.25 servings.\n        5. Finally, to find out how many grams you can eat from this bag of chips, multiply the number of', 59, 0.41224647760449173]
+Path: Node25Node38" color=red shape=box]
+	Node25 -> Node39 [label=Node25Node39]
+	Node39 [label="V:10, H:10, Flag:True
+['4. have left to consume (200). So, 250 / 200 = 1.25 servings.\n        5. Finally, multiply this result (1.25 servings) by the number of servings in one bag (5), which will give you the grams of chips you can eat from that particular bag. So, 1.25 * 5 = 6.25 servings.', 98, 0.5797795557137918]
+Path: Node25Node39" color=red shape=box]
+	Node25 -> Node40 [label=Node25Node40]
+	Node40 [label="V:10, H:9, Flag:True
+['4. need to consume (200). So, 250 / 200 = 1.25 servings.\n        5. Finally, we need to convert this value back into grams. Since there are', 51, 0.43465891610509577]
+Path: Node25Node40" color=red shape=box]
+	Node25 -> Node41 [label=Node25Node41]
+	Node41 [label="V:8, H:9, Flag:True
+['4. have left (200). So, 250 / 200 = 1.25 servings.\n        5. Finally, to find out how many grams you can eat from this bag of chips, multiply', 53, 0.03588333060275162]
+Path: Node25Node41" color=red shape=box]
+	Node7 -> Node42 [label=Node7Node42]
+	Node42 [label="V:10, H:10, Flag:True
+['4. Finally, we divide the total number of calories in one serving (250) by the total number of calories needed to reach your daily calorie target: 200/250 = 0.8 grams per serving. This means that you can eat 0.8g from one serving of chips to get the remaining 200 calories needed for your daily intake.\n        Since there are 5 servings in a 300g bag, we can now calculate how many', 108, 0.7865997885752456]
+Path: Node7Node42" color=red shape=box]
+	Node7 -> Node43 [label=Node7Node43]
+	Node43 [label="V:2, H:1, Flag:False
+['4. Finally, divide the remaining calories by the number of calories per gram: 200 / 1250 = 0.16. This means that you can eat approximately 0.16 * 300g (since there are 300 grams in a bag) or around 48 grams of chips from this bag to reach your daily calorie target while staying within the recommended', 89, 0.2769745143825997]
+Path: Node7Node43" color=black shape=box]
+	Node7 -> Node44 [label=Node7Node44]
+	Node44 [label="V:9, H:9, Flag:True
+['4. Finally, we divide the remaining calorie amount by the calories per gram of chips: 200 / 1250 = 0.16 grams. This means you can eat approximately 0.16 grams (or about 16 milligrams) from this bag to', 66, 0.09518976363116805]
+Path: Node7Node44" color=red shape=box]
+	Node7 -> Node45 [label=Node7Node45]
+	Node45 [label="V:10, H:10, Flag:True
+['4. Finally, divide the total calorie consumption from the bag (1250) by the number of grams needed per calorie (given as 1): 1250 / 1 = 1250 grams. You can eat', 56, 0.9541148931479204]
+Path: Node7Node45" color=red shape=box]
+	Node7 -> Node46 [label=Node7Node46]
+	Node46 [label="V:7, H:7, Flag:True
+['4. Finally, divide the remaining calories by the calorie value per gram to determine the number of grams: 200 / 1250 = 0.16 grams.\n          So you can eat around 0.1', 53, 0.7768693082717301]
+Path: Node7Node46" color=red shape=box]
+	Node7 -> Node47 [label=Node7Node47]
+	Node47 [label="V:7, H:7, Flag:True
+['4. Finally, we calculate the remaining grams by dividing the desired calorie amount (200) by the calories per gram (1250): 200 / 1250 = 0.16 grams.\n        So you can eat about 0.16 grams of chips from this bag to reach your daily calorie target without going over it.', 119, 0.45531525793083405]
+Path: Node7Node47" color=red shape=box]
+	Node7 -> Node48 [label=Node7Node48]
+	Node48 [label="V:3, H:2, Flag:False
+['4. Lastly, we need to divide the remaining calorie amount by the calories per gram of chips (1250) and then multiply that result by the serving size (250): (200', 46, 0.693721569691925]
+Path: Node7Node48" color=black shape=box]
+	Node8 -> Node49 [label=Node8Node49]
+	Node49 [label="V:1, H:1, Flag:False
+['1250 = 0.16 grams per calorie from the bag (approximately).\n        4. To convert this back into grams, multiply it by 300g, which is the weight of a single bag: 0.16 * 300 = 48 grams. You can eat up to 48 grams from the 300g bag of chips without going over your daily calorie target.', 116, 0.6519630076221308]
+Path: Node8Node49" color=black shape=box]
+	Node8 -> Node50 [label=Node8Node50]
+	Node50 [label="V:1, H:1, Flag:False
+['1250 = 0.16 g per calorie.\n        4. Finally, multiply this fraction by the weight of a single serving (300g) to determine the amount you can safely consume: 0.16 * 300g = 48 g.\n\nYou can eat up to 48 grams from the bag while keeping within your daily calorie target, given your current consumption and the nutritional information about the chips.', 108, 0.971217331669159]
+Path: Node8Node50" color=black shape=box]
+	Node8 -> Node51 [label=Node8Node51]
+	Node51 [label="V:5, H:9, Flag:True
+[\"1250 = 0.16. This means that for every gram you consume from the chips, it will provide 0.16 calories.\n        4. Now let's convert this percentage into a ratio to find out the equivalent grams needed. To do this, multiply the decimal value (0.16) by 100: 0.16 * 100 = 16%.\n        5.\", 96, 0.9585537218225847]
+Path: Node8Node51" color=red shape=box]
+	Node8 -> Node52 [label=Node8Node52]
+	Node52 [label="V:6, H:10, Flag:True
+['1250 = 0.16 g (rounded down to the nearest gram) per calorie.\n        4. Finally, multiply the result from step 3 by the remaining calories you need (200): 0.16 * 200 = 32 grams. You can eat 32 grams of chips from this bag without going over your daily calorie target.', 99, 0.4348845046088339]
+Path: Node8Node52" color=red shape=box]
+	Node8 -> Node53 [label=Node8Node53]
+	Node53 [label="V:5, H:9, Flag:True
+['1250 = 0.16 grams per calorie.\n        4. Finally, multiply the result from step 3 (0.16) by the total calories in a bag of chips (1250) to find out how many grams you can eat: 0.1', 66, 0.17382827882059582]
+Path: Node8Node53" color=red shape=box]
+	Node8 -> Node54 [label=Node8Node54]
+	Node54 [label="V:5, H:9, Flag:True
+['1250 = 0.16 grams per calorie from the chip bag.\n        4. Finally, we need to convert this ratio into grams instead of calories. Since there are 1000 milligrams (mg) in a gram (g), we can multiply the fraction by 1000: 0.16 * 1000 = 160 mg per gram. This means', 95, 0.5815013046684876]
+Path: Node8Node54" color=red shape=box]
+	Node8 -> Node55 [label=Node8Node55]
+	Node55 [label="V:1, H:1, Flag:False
+['1250 = 0.16. This means you can eat approximately 16% (rounded to two decimal places) of the whole bag or 48 grams (0.16 * 3', 47, 0.736509848775575]
+Path: Node8Node55" color=black shape=box]
+	Node49 -> Node56 [label=Node49Node56]
+	Node56 [label="V:9, H:2, Flag:True
+['5. Remember that this calculation assumes no other food is consumed during the day, and you should also consider other nutritional aspects while making food choices.', 68, 0.5483294410387415]
+Path: Node49Node56" color=red shape=box]
+	Node49 -> Node57 [label=Node49Node57]
+	Node57 [label="V:9, H:2, Flag:True
+['5. Remember that this calculation assumes all calories in the chip bag are equal and contribute equally to your daily calorie intake, which may not be entirely accurate due to variations in nutritional content among different brands or types of chips.', 96, 0.26474557676886334]
+Path: Node49Node57" color=red shape=box]
+	Node49 -> Node58 [label=Node49Node58]
+	Node58 [label="V:9, H:2, Flag:True
+[\"5. Remember that this only considers calories, and it's important to keep other nutritional aspects in mind as well while making dietary choices.\", 119, 0.9134116171884782]
+Path: Node49Node58" color=red shape=box]
+	Node49 -> Node59 [label=Node49Node59]
+	Node59 [label="V:9, H:2, Flag:True
+['5. Remember that this calculation assumes all calories come from the chips and no other foods are consumed throughout the day. Adjust accordingly if you have eaten or plan to eat additional food before reaching your daily calorie goal.', 100, 0.4323161486941981]
+Path: Node49Node59" color=red shape=box]
+	Node49 -> Node60 [label=Node49Node60]
+	Node60 [label="V:9, H:2, Flag:True
+[\"5. Remember that this calculation assumes you don't consume any other foods throughout the day, and it doesn't account for potential variations in nutritional information or individual energy needs.\", 79, 0.16777187292563556]
+Path: Node49Node60" color=red shape=box]
+	Node49 -> Node61 [label=Node49Node61]
+	Node61 [label="V:9, H:2, Flag:True
+['5. Remember that this calculation assumes you have no other food intake for the rest of the day and does not account for any other calories consumed before or after eating the chips.', 93, 0.2703609241003221]
+Path: Node49Node61" color=red shape=box]
+	Node49 -> Node62 [label=Node49Node62]
+	Node62 [label="V:9, H:2, Flag:True
+['5. Remember that this calculation assumes all calories in the chip bag are equal, which may not be entirely accurate due to variations in ingredients and serving sizes.', 47, 0.21628345381784375]
+Path: Node49Node62" color=red shape=box]
+	Node50 -> Node63 [label=Node50Node63]
+	Node63 [label="V:6, H:4, Flag:True
+['', 78, 0.7071888538261801]
+Path: Node50Node63" color=red shape=box]
+	Node50 -> Node64 [label=Node50Node64]
+	Node64 [label="V:6, H:4, Flag:True
+[\"Remember that these calculations are based on your specific needs and dietary preferences. It's important to consider other factors such as your overall health, physical activity levels, and personal energy requirements when making food choices.\", 48, 0.682618595835624]
+Path: Node50Node64" color=red shape=box]
+	Node50 -> Node65 [label=Node50Node65]
+	Node65 [label="V:6, H:4, Flag:True
+['5. Remember that this calculation is based on several assumptions (you consume the remaining calories equally throughout the day) and might not be perfectly accurate due to factors like body type, activity level, or metabolism. Consult a dietician for personalized advice if needed.', 97, 0.772420703073687]
+Path: Node50Node65" color=red shape=box]
+	Node50 -> Node66 [label=Node50Node66]
+	Node66 [label="V:6, H:4, Flag:True
+['', 77, 0.6199646880751026]
+Path: Node50Node66" color=red shape=box]
+	Node50 -> Node67 [label=Node50Node67]
+	Node67 [label="V:6, H:4, Flag:True
+['Note that this calculation assumes all calories in the chip bag are equal to the calories of a single serving. In reality, there might be some variation due to different ingredients or manufacturing processes.', 65, 0.3986024064640743]
+Path: Node50Node67" color=red shape=box]
+	Node50 -> Node68 [label=Node50Node68]
+	Node68 [label="V:6, H:4, Flag:True
+['Note that this calculation assumes you have no other food intake for the rest of the day. If you plan on eating more, adjust accordingly.', 106, 0.12373712587822261]
+Path: Node50Node68" color=red shape=box]
+	Node50 -> Node69 [label=Node50Node69]
+	Node69 [label="V:6, H:4, Flag:True
+['Note that this calculation assumes you will not consume any other calories during the day and that the nutritional value of the chips only applies to their energy content (calories).', 87, 0.7712639351623016]
+Path: Node50Node69" color=red shape=box]
+	Node55 -> Node70 [label=Node55Node70]
+	Node70 [label="V:2, H:0, Flag:False
+['00g).', 69, 0.09152320102928224]
+Path: Node55Node70" color=green shape=box]
+	Node55 -> Node71 [label=Node55Node71]
+	Node71 [label="V:4, H:2, Flag:False
+['4. To be more precise, we could consider any remaining calories from your current intake to add to this 48g of chips, if you have any. For instance, if you have consumed 50 calories before the chips and your daily calorie target is still at 2000 (with no further calorie intakes), then your remaining calorie need for chips', 79, 0.9710313854472452]
+Path: Node55Node71" color=black shape=box]
+	Node55 -> Node72 [label=Node55Node72]
+	Node72 [label="V:5, H:8, Flag:False
+['4. To summarize, if your daily calorie target is 2000 and you have already consumed 1800 calories, you can eat a 300g bag of chips with 5 servings that has 250 calories per', 55, 0.016051400853080433]
+Path: Node55Node72" color=black shape=box]
+	Node55 -> Node73 [label=Node55Node73]
+	Node73 [label="V:5, H:8, Flag:False
+['4. To summarize, if you have a daily calorie target of 2000 and have already consumed 1800 calories, you can eat roughly 48 grams from a 300g bag', 48, 0.5203176853218524]
+Path: Node55Node73" color=black shape=box]
+	Node55 -> Node74 [label=Node55Node74]
+	Node74 [label="V:2, H:0, Flag:False
+['00g).', 55, 0.23248335343113102]
+Path: Node55Node74" color=green shape=box]
+	Node55 -> Node75 [label=Node55Node75]
+	Node75 [label="V:2, H:0, Flag:False
+['00g).', 120, 0.35099527916207274]
+Path: Node55Node75" color=green shape=box]
+	Node55 -> Node76 [label=Node55Node76]
+	Node76 [label="V:4, H:1, Flag:False
+['4. To summarize, if you aim for a daily calorie target of 2000 and have already consumed 1800 calories from a 300g bag with 5 servings having 250 calories each, you can eat roughly 48 grams worth of chips to meet the remaining 200 calories needed.', 105, 0.9083652577474376]
+Path: Node55Node76" color=black shape=box]
+}

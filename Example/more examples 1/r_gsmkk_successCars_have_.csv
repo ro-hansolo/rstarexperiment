@@ -1,0 +1,19 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's determine the number of cars that drove through during the entire traffic jam. The total duration is 15 + 15 = 30 minutes and there were 20 cars that entered the clear section after the initial 15 minutes. So, 20 more cars (20) + the 5 who left early (5) equals 25 cars in total drove through without waiting for a significant time in the traffic jam.",Node1,2,4,2,6,0.9467648279357125,98,False
+" 1. We know that initially there are 30 cars on the motorway.
+        2. Some of them drive through during the first 15 minutes.
+        3. After this time, another 20 cars drive through in the remaining 15 minutes.
+        4. In total, 5 cars take an exit to avoid the traffic jam.
+        5. To find out how many cars",Node2,1,5,1,6,0.10782095201271602,86,False
+" 1. We know that a total of 20 more cars drove through in the remaining 15 minutes of the jam.
+        2. We also know that there were originally 30 cars on the motorway and 5 of them took an exit to avoid the traffic jam",Node5,2,6,2,8,0.20021854688829654,58,False
+" 1. We know that initially there were 30 cars on the motorway.
+        2. Some of the cars drive through in the first 15 minutes of the traffic jam.
+        3. After this, another 20 cars drove through during the remaining 15 minutes.
+        4. 5 cars from the line took an exit to avoid the traffic",Node6,1,5,1,6,0.4332257304135789,78,False
+" 1. We know that initially there are 30 cars on the motorway.
+        2. Some of them drive through during the first 15 minutes.
+        3. After this time, another 20 cars drive through in the remaining 15 minutes.
+        4. In total, 5 cars take an exit to avoid the traffic jam.
+        5. To find out how many cars 6. drove through during the first 15 minutes, we need to subtract the number of cars that took an exit and those that drove through in the remaining 15 minutes from the initial total.
+        7. So, 30 (initial) - 5 (exits) - 20 (remaining 15 minutes) = 5 cars drove through during the first 15 minutes of the traffic jam.",Node16,0,0,1,1,0.08011821454454027,106,False
