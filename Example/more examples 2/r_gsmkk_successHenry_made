@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His second stop was 15 miles before the end of the trip. How many miles did he travel between his first and second stops? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:10, H:10, Flag:True
+['1. To find out how many miles Henry traveled between the first and second stops, we need to consider the total distance of his bike trip (60 miles), which includes the distances from the first stop to the second stop (15 miles) and from the end point back to the beginning of his journey. \n        2. The total distance can be represented as follows: distance_bike_trip = distance_first_stop + distance_from_first_to_second + distance_', 103, 0.9563192665583522]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:7, H:9, Flag:True
+['1. We know that the total distance Henry traveled is 60 miles.\n        2. He made two stops, one after 20 miles and another 15 miles before the end of the trip (which', 45, 0.6036646064644738]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:4, H:6, Flag:True
+[\"1. First, let's determine the distance Henry traveled from the first stop to the second stop. He made a total of two stops during his 60-mile bike trip. His first stop was after 20 miles, and his second stop was 15 miles before the end of the trip (which means it was at 45 miles).\n        2. Now, let's calculate the distance between these two points. The total distance is the sum of the distances from the first stop to the end point and then back to the second stop\", 115, 0.19024365474059746]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:8, H:10, Flag:True
+[\"1. To find the distance traveled between Henry's first and second stops, we need to determine the distance from his first stop (20 miles) to the midpoint between that stop and his final destination before stopping again (60 miles).\", 51, 0.8273689543410984]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:3, H:3, Flag:False
+[\"1. Let's identify the distances of each part of the trip. The total distance is 60 miles, and we have two stops at 20 miles and another one 15 miles from the end (which means it is also 15 miles before the end).\n        2. To find the distance between the first and second stops, we need to calculate the remaining distance after the first stop until the second stop. The total distance is the sum of each part's distances: 60 = 20 + ?\", 111, 0.6639636088672844]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:10, H:9, Flag:True
+[\"1. Let's identify the distances Henry traveled between each stop.\n        2. From the beginning to the first stop, he traveled 20 miles.\n        3. From the first stop to the second stop, he traveled 45 miles (since the total trip distance is 60 miles and he had already covered 20 miles from the start).\n        4. Now, we need to find the distance between his first and second stops.\n        5. To do this, subtract the distance from the first stop to the end of the trip (which is\", 120, 0.14819218307125637]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:10, Flag:True
+[\"1. Let's identify the distances for each part of the journey.\n           a. From start to first stop (20 miles)\n           b. From first stop to second stop (15 miles)\n           c. From second stop to end (remaining distance - 6\", 60, 0.09790307664579923]
+Path: StartNode6" color=red shape=box]
+	Node4 -> Node7 [label=Node4Node7]
+	Node7 [label="V:2, H:5, Flag:False
+['3. We know that the second stop is 15 miles before the end of the trip. To find its position relative to the starting point, we need to subtract this from the total distance (since it is 15 miles closer to the starting point than the end): 60 - 15 = 45 miles\n        4. Now, to calculate the remaining distance after the first stop at 20 miles until the second stop, we', 95, 0.8277573559039716]
+Path: Node4Node7" color=black shape=box]
+	Node4 -> Node8 [label=Node4Node8]
+	Node8 [label="V:2, H:6, Flag:False
+[\"3. Now let's solve for the unknown distance (remaining distance between stops). Since Henry has traveled a total of 60 miles and stopped at 20 miles, he covered a certain distance after\", 43, 0.9487518324103401]
+Path: Node4Node8" color=black shape=box]
+	Node4 -> Node9 [label=Node4Node9]
+	Node9 [label="V:0, H:3, Flag:True
+[\"3. Now let's solve for the missing part by subtracting the two known distances: 60 - 20 = 40 miles\n        4. So, Henry traveled a remaining 40 miles between his first and second stops during his 60-mile bike trip.\", 89, 0.8769030258191948]
+Path: Node4Node9" color=red shape=box]
+	Node4 -> Node10 [label=Node4Node10]
+	Node10 [label="V:8, H:10, Flag:True
+['3. We know that the second stop is 15 miles before the end, so we can subtract this distance from the total distance to find out how far he traveled after the first stop until the second one. 60 - 15 = 45 miles.\n        4. Now, we have the remaining distance (45 miles) between the first and second stops. So, Henry traveled 45 miles between his first and second stops during his bike trip.', 118, 0.20748955321435913]
+Path: Node4Node10" color=red shape=box]
+	Node4 -> Node11 [label=Node4Node11]
+	Node11 [label="V:8, H:10, Flag:True
+['3. We know that the distance from the beginning to the first stop is 20 miles, so we can subtract this from the total distance to find the remaining distance after the first stop: 60 - 20 = 40 miles.\n        4. Now, we need to find the distance between the second stop and the end of the trip. The second stop is 15 miles before the end, so we can add this distance to the remaining distance (40) to get the total distance from the first stop to the end: 40', 118, 0.19865775493486149]
+Path: Node4Node11" color=red shape=box]
+	Node4 -> Node12 [label=Node4Node12]
+	Node12 [label="V:2, H:7, Flag:False
+[\"3. We know that there are two unknown parts of the trip (the first part after the first stop and the last 15 miles from the end). To find the remaining distance, we can subtract the known distances: 60 - 20 = 40 miles left between the stops after the first one.\n        4. Now, there are still two unknown parts of the trip (the last part before the second stop and the last 15 miles). To find this distance, we can subtract the known distances from what's left: 40 -\", 120, 0.6633157243870332]
+Path: Node4Node12" color=black shape=box]
+	Node4 -> Node13 [label=Node4Node13]
+	Node13 [label="V:0, H:3, Flag:True
+[\"3. Now, let's solve for the unknown distance (remaining after the first stop): 60 - 20 = 40 miles\n        4. So, Henry traveled 40 miles between his first and second stops during the bike trip.\", 61, 0.2851790783403306]
+Path: Node4Node13" color=red shape=box]
+	Node7 -> Node14 [label=Node7Node14]
+	Node14 [label="V:1, H:1, Flag:False
+['5. need to subtract the distance of the first stop from the total remaining distance: 45 - 20 = 25 miles\n        6. So, Henry traveled 25 miles between his first', 45, 0.4165051647174134]
+Path: Node7Node14" color=black shape=box]
+	Node7 -> Node15 [label=Node7Node15]
+	Node15 [label="V:0, H:0, Flag:False
+['5. subtract the distance of the first part (20 miles) from the remaining distance (45 miles): 45 - 20 = 25 miles\n        So, Henry traveled 25 miles between his first and second stops during his bike trip.', 108, 0.010802192807268685]
+Path: Node7Node15" color=green shape=box]
+	Node7 -> Node16 [label=Node7Node16]
+	Node16 [label="V:0, H:0, Flag:False
+['5. can subtract this value from the distance after the first stop: 45 - 20 = 25 miles\n        6. So, Henry traveled 25 miles between his first and second stops during his bike trip', 49, 0.7615460157943679]
+Path: Node7Node16" color=green shape=box]
+	Node7 -> Node17 [label=Node7Node17]
+	Node17 [label="V:0, H:0, Flag:False
+['5. subtract the distance traveled from the first stop (20 miles) from the position of the second stop relative to the starting point (45 miles): 45 - 20 = 25 miles\n\nSo, Henry traveled 25 miles between his first and second stops during his bike trip.', 98, 0.3576979701577806]
+Path: Node7Node17" color=green shape=box]
+	Node7 -> Node18 [label=Node7Node18]
+	Node18 [label="V:9, H:10, Flag:True
+['5. subtract the distance of the first stop from the total distance (since it is closer to the starting point than the end): 60 - 20 = 40 miles\n        6. Finally, we can find the distance between the first and second stops by subtracting this remaining distance from the distance calculated in step 3: 45 - 40 = 5 miles\n        Henry traveled 5 miles between his first and second stops during his 60-mile bike', 104, 0.5193960411006301]
+Path: Node7Node18" color=red shape=box]
+	Node7 -> Node19 [label=Node7Node19]
+	Node19 [label="V:1, H:1, Flag:False
+['5. subtract this value from the total distance covered before the second stop: 45 - 20 = 25 miles\n        6. So, Henry traveled a distance of 25 miles between his first and second stops during', 50, 0.5109890057310672]
+Path: Node7Node19" color=black shape=box]
+	Node7 -> Node20 [label=Node7Node20]
+	Node20 [label="V:0, H:0, Flag:False
+['5. subtract the distance of the first part (20 miles) from the remaining distance (45 miles): 45 - 20 = 25 miles\n        6. Therefore, Henry traveled 25 miles between his first and second stops during his bike trip.', 82, 0.225316824138156]
+Path: Node7Node20" color=green shape=box]
+}

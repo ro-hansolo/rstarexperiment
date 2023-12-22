@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: If Raymond does half as much laundry as Sarah, and Sarah does 4 times as much laundry as David, calculate the difference in the amount of laundry Raymond and David do if Sarah does 400 pounds of laundry. Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:0, H:5, Flag:False
+[\"1. Let's first determine how much laundry David does: Since Sarah does 4 times as much laundry as David, we can rewrite that relationship as follows - David's laundry = (Sarah's laundry) / 4. We know that Sarah does 400 pounds of laundry. So, David's laundry = 400 / 4 = 100 pounds.\", 85, 0.7106363135512272]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:9, Flag:False
+[\"1. First, let's find out how much laundry David does. We know that Sarah does 4 times more than David. Since Sarah does 400 pounds of laundry, we can calculate the amount of laundry David does by divid\", 49, 0.4231846450478757]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:9, Flag:False
+[\"1. We know that Sarah does 400 pounds of laundry.\n        2. Sarah does 4 times as much laundry as David, so we can represent this relationship as: Sarah's laundry = 4 * David's laundry.\n        3. If Raymond does half as much laundry as Sarah, then his laundry will be equal to: Raymond's laundry = (1/2) * Sarah's laundry.\n        4. Now we need to find the amount of laundry Raymond and David do individually.\n           a. First,\", 114, 0.23701293560954528]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:10, H:10, Flag:True
+[\"1. First, let's find out how much laundry Sarah does compared to David by dividing her amount (400 pounds) by the ratio (David's laundry is 1/4th of Sarah's). This can be done as follows: 400 / (1/4) = 40\", 68, 0.7703043585694633]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:5, Flag:False
+[\"1. We know that Sarah does 400 pounds of laundry.\n        2. Sarah also does 4 times as much laundry as David.\n        3. So, we need to find out how many pounds of laundry David does in order to have the same amount as Sarah's. To do this, divide Sarah's 400 pounds by 4: 400 / 4 = 100 pounds (David does 100 pounds of laundry).\n        4. Raymond does\", 108, 0.6634498500542143]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:10, H:10, Flag:True
+[\"1. Let's set a common factor to compare the workloads of each person. Let this factor be the amount Sarah does (which is 400 pounds).\n        2. Now, we know that Raymond does half as much as Sarah and David does 4 times as much as Sarah. This gives us:\n           - Raymond's workload = (1/2) * Sarah'\", 83, 0.9529092817178464]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:8, Flag:False
+['1. We are given that Raymond does half as much as Sarah. So if Sarah does 400 pounds of laundry, then Raymond does 400 / 2 = 200', 41, 0.7361764180611517]
+Path: StartNode6" color=black shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:1, H:3, Flag:False
+[\"2. Now, we need to find out how much laundry Raymond does: According to the given information, Raymond does half as much laundry as Sarah. So, Raymond's laundry = (Sarah's laundry) / 2 = (400) / 2 = 200 pounds.\n        3. Finally, let's calculate the difference in the amount of laundry Raymond and David do: Difference = (Raymond's laundry - David's laundry) = (200 -\", 107, 0.7941397438018624]
+Path: Node0Node7" color=black shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:1, H:3, Flag:False
+[\"2. Next, let's calculate how much laundry Raymond does: If Raymond does half as much as Sarah, and we established that Sarah does 400 pounds, then Raymond will do 400 * (1/2) = 200 pounds of laundry.\n        3. Finally, find the difference between their laundry amounts: The difference in the amount of laundry Raymond and David do is - Difference = (Raymond's laundry) - (David's laundry) = 200 - 100 =\", 113, 0.751402942004092]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:1, H:3, Flag:False
+[\"2. Now let's find out how much laundry Raymond does: Raymond does half as much laundry as Sarah. Since we already know that Sarah does 400 pounds of laundry, we can calculate the amount of laundry Raymond does by dividing Sarah's laundry by 2 - Raymond's laundry = (Sarah's laundry) / 2 = 400\", 79, 0.01805368597668855]
+Path: Node0Node9" color=black shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:1, H:3, Flag:False
+[\"2. Now let's find out how much laundry Raymond does: He does half as much laundry as Sarah. Since we already know that Sarah does 400 pounds of laundry, we can calculate the amount of laundry Raymond does by dividing Sarah's laundry by 2 - Raymond's\", 61, 0.1683530279111195]
+Path: Node0Node10" color=black shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:9, H:9, Flag:True
+[\"2. Now we need to find out how much laundry Raymond does: He does half as much laundry as Sarah. Since Sarah does 400 pounds of laundry, Raymond's laundry will be (Sarah's laundry) / 2 = 40\", 55, 0.21028749999927132]
+Path: Node0Node11" color=red shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:9, H:9, Flag:True
+[\"2. Next, let's figure out how much laundry Raymond does: Half as much as Sarah means Raymond's laundry is equal to a quarter of Sarah's (because half of an amount equals to its one quarter). So, Raymond's laundry can be calculated as follows - Raymond's laundry = (Sarah's laundry) / 4. Since Sarah does 400 pounds\", 83, 0.9812830816144278]
+Path: Node0Node12" color=red shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:1, H:4, Flag:False
+[\"2. Now let's find out how much laundry Raymond does: Raymond does half as much laundry as Sarah. Since we already know Sarah does 400 pounds of laundry, we can calculate the amount of laundry\", 44, 0.0953013195556861]
+Path: Node0Node13" color=black shape=box]
+	Node7 -> Node14 [label=Node7Node14]
+	Node14 [label="V:0, H:0, Flag:False
+['100) = 100 pounds. So, Raymond does 100 more pounds of laundry than David in this scenario.', 47, 0.48939660391767026]
+Path: Node7Node14" color=green shape=box]
+	Node7 -> Node15 [label=Node7Node15]
+	Node15 [label="V:0, H:0, Flag:False
+['100) = 100 pounds. So, there is a 100-pound difference between the amount of laundry Raymond and David do in this scenario.', 96, 0.18141160218744568]
+Path: Node7Node15" color=green shape=box]
+	Node7 -> Node16 [label=Node7Node16]
+	Node16 [label="V:0, H:0, Flag:False
+['100) = 100 pounds. So, Raymond does 100 more pounds of laundry than David.', 47, 0.4274164322279894]
+Path: Node7Node16" color=green shape=box]
+	Node7 -> Node17 [label=Node7Node17]
+	Node17 [label="V:0, H:0, Flag:False
+['100) = 100 pounds. So, Raymond does 100 more pounds of laundry than David.', 77, 0.4419245516982715]
+Path: Node7Node17" color=green shape=box]
+	Node7 -> Node18 [label=Node7Node18]
+	Node18 [label="V:0, H:0, Flag:False
+['100) = 100 pounds. So, the difference between the amount of laundry Raymond and David do is 100 pounds.', 58, 0.06596574926808951]
+Path: Node7Node18" color=green shape=box]
+	Node7 -> Node19 [label=Node7Node19]
+	Node19 [label="V:0, H:0, Flag:False
+['100) pounds = 100 pounds. So, Raymond does 100 more pounds of laundry than David when it comes to doing half as much as Sarah who did 4 times as much as David.', 50, 0.9275012069150489]
+Path: Node7Node19" color=green shape=box]
+	Node7 -> Node20 [label=Node7Node20]
+	Node20 [label="V:0, H:0, Flag:False
+['100) = 100 pounds. So, the difference is that Raymond does 100 more pounds of laundry compared to David.', 49, 0.6966649394622011]
+Path: Node7Node20" color=green shape=box]
+}

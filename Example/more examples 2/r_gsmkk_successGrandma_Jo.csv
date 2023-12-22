@@ -1,0 +1,26 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Grandma Jones baked 5 apple pies and each one was cut into 8 pieces. To find out how many pieces were made in total, multiply the number of pies by the number of pieces per pie: 5 pies * 8 pieces/pie = 40 pieces in total.
+        2. After the guests had taken and eaten their pieces, there were 14 pieces remaining on the table. To find",Node0,1,8,1,9,0.6485321027841773,93,False
+" 1. First, we need to find out how many total pieces of apple pies were available before the event started. To do this, multiply the number of pies (5) by the number of slices per pie (8). So, 5 * 8 =",Node1,2,8,2,10,0.07691730189653234,58,False
+" 1. First, let's find out how many total pieces of apple pies were available before any guest took a piece. To do this, we multiply the number of pies (5) by the number of slices per pie (8). So, 5 * 8 = 40 total pieces.",Node2,2,8,2,10,0.18078682100900223,67,False
+" 1. First, we need to find out how many total pieces of apple pies Grandma Jones baked. She made 5 apple pies and each was cut into 8 pieces. So, 5 pies * 8 pieces per pie = 40 total pieces.
+        2. Next, we know that there were 14 remaining pieces after the guests had taken their share. To find",Node3,1,8,1,9,0.12479862815432063,84,False
+" 1. Firstly, we need to know how many total pieces were available on the table initially. So, multiply the number of pies (5) by the number of pieces per pie (8). This will give us 40 pieces in total on the table.
+        2. Then, we find out how many pieces were left after guests took their portions. There were 14 remaining pieces from the initial 40.
+        3. To calculate how many pieces were taken by the guests, we simply",Node4,1,4,1,5,0.6187865903258496,107,False
+" 1. Grandma Jones baked 5 apple pies. Each pie is cut into 8 slices.
+        2. So in total, she had (5 pies * 8 slices per pie) = 40 initial slices of apple pie.
+        3. The remaining 14 slices were left after the guests took pieces from the buffet table.
+        4. To find out how many slices were taken by the guests, we can subtract these",Node5,0,2,0,2,0.7475391115096025,102,False
+" 1. We know that Grandma baked 5 apple pies in total.
+        2. She cut each pie into 8 pieces, so there are 5 * 8 = 40 pieces per pie.
+        3. Now, consider the initial number of slices before the guests took any: 40 (pieces per pie) * 5",Node6,2,8,2,10,0.5197785486267282,77,False
+" 1. Grandma Jones baked 5 apple pies. Each pie is cut into 8 slices.
+        2. So in total, she had (5 pies * 8 slices per pie) = 40 initial slices of apple pie.
+        3. The remaining 14 slices were left after the guests took pieces from the buffet table.
+        4. To find out how many slices were taken by the guests, we can subtract these 14 remaining slices from the total of 40 initial slices: 40 - 14 = 26 slices.",Node7,0,1,0,1,0.6840945611084077,67,False
+" 1. Grandma Jones baked 5 apple pies. Each pie is cut into 8 slices.
+        2. So in total, she had (5 pies * 8 slices per pie) = 40 initial slices of apple pie.
+        3. The remaining 14 slices were left after the guests took pieces from the buffet table.
+        4. To find out how many slices were taken by the guests, we can subtract these 40 initial slices from the remaining 14 slices: 40 - 14 = 26 slices.
+        Therefore, the guests took 26 pieces of apple pie during the fireman's luncheon.",Node8,0,0,0,0,0.468457709139813,62,False

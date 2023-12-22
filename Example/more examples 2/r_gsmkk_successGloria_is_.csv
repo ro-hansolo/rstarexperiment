@@ -1,0 +1,25 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, we need to find out the total cost for both high heels. Since one pair costs $33 and the other pair costs twice as much, it will be $33 * 2 = $66.
+        2. Now, the total cost of both heels together is $66, which is five dollars less than the boots. To find",Node0,1,5,1,6,0.8149626942872736,76,False
+" 1. Let's denote the cost of the first pair of high heels as H1, the second pair of high heels as H2, and the cost of the boots as B.
+        2. We know that H1 + H2 = B - $5 (since they together cost five dollars less than the boots).
+        3. H2 is twice the cost of H1, so H2 = 2 * H1.
+        4. Plugging this expression into our previous equation: H",Node1,1,3,1,4,0.7422638374847059,106,False
+" 1. We know there are three shoe options: the boots, one pair of high heels with a price of $33, and another pair of high heels that cost twice as much as the first pair (which is twice $",Node2,4,9,4,13,0.7766969152302365,46,False
+" 1. We know that Gloria's shoe budget is for the boots.
+        2. The two pairs of high heels cost five dollars less than the boots.
+        3. One pair of heels costs $33 and the other costs twice as much, so the",Node5,3,8,3,11,0.2844873686165743,56,False
+" 1. We know that Gloria's budget for shoes is enough to buy the boots.
+        2. The two pairs of high heels together cost five dollars less than the boots.
+        3. One pair of heels costs $33 and the other costs twice as much, so the second pair costs $33 * 2 = $66.
+        4. Now we have the total cost for both pairs of heels: $33 + $66 = $99",Node6,0,1,0,1,0.19813059869239003,101,False
+" 1. We know that Gloria's budget for shoes is enough to buy the boots.
+        2. The two pairs of high heels together cost five dollars less than the boots.
+        3. One pair of heels costs $33 and the other costs twice as much, so the second pair costs $33 * 2 = $66.
+        4. Now we have the total cost for both pairs of heels: $33 + $66 = $99 5. We want to find out how many dollars the boots are worth. To do this, we need to subtract the combined cost of the two pairs of high heels from the boots' price. So, the difference is: Boots' price - ($99) = (Boots' price) - $99
+        6. Solve for the boots' price by adding $99",Node7,3,1,3,4,0.18818771220910002,82,False
+" 1. We know that Gloria's budget for shoes is enough to buy the boots.
+        2. The two pairs of high heels together cost five dollars less than the boots.
+        3. One pair of heels costs $33 and the other costs twice as much, so the second pair costs $33 * 2 = $66.
+        4. Now we have the total cost for both pairs of heels: $33 + $66 = $99 5. To find out how many dollars the boots are worth, add the difference in price between the boots and the combined cost of the heels to the total cost of the heels: ($99 - $5) + $99 = $104
+        So, the boots cost $104.",Node9,0,0,0,0,0.4170630413563269,119,False

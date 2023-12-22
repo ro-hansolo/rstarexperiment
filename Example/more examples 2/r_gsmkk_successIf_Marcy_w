@@ -1,0 +1,398 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: If Marcy works for the same company for 40 years, she gets an annual pension of $50,000/year. Starting after 20 years, she becomes entitled to 5% of the value of the pension per year. If she quits after 30 years, what will her annual pension be? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:3, H:8, Flag:False
+[\"1. Calculate Marcy's total working years (40 - 20 = 20 years)\n        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years)\", 58, 0.45740272814581173]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:10, Flag:False
+[\"1. First, let's calculate Marcy's total pension amount for the first 20 years (before she gets the extra 5%). She works for 40 years and starts getting an annual pension of $50,000/year after 20 years, so her total pension for these 20 years is 20 * $50,000 = $1,0\", 88, 0.05361480965057053]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:4, H:7, Flag:False
+[\"1. First, let's determine how many years Marcy actually worked after becoming entitled for the extra pension percentage (20 + 10 = 30).\n        2. Now, we know Marcy has spent 30 out of 40 total years at the company, working for half of her complete tenure with the extra benefit.\n        3. To calculate what portion of her full entitlement she receives in her final 10-year pension, we'll divide 5\", 106, 0.9962502365621302]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:10, H:10, Flag:True
+['1. First, we need to calculate the total amount Marcy earned in pension benefits for the first 20 years. She gets $50,000/year from year 1 to year 20 and nothing from year 21 onward due to her eligibility starting after 20 years. So, we add up all those payments:\n           Total_pension_benefits = (Yearly_payment * Years_eligible)\n           Total_pension_benefits = ($50,000 * 20', 120, 0.708343247268774]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:10, H:10, Flag:True
+[\"1. First, let's calculate Marcy's total pension amount for the first 20 years (before she gets the extra 5%). She works for 40 years and starts getting the full $50,000/year after 20 years, so her annual pension for these 20 years is $50\", 73, 0.08187010897712133]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:10, H:10, Flag:True
+[\"1. First, let's calculate Marcy's total pension amount for the first 20 years (before the extra 5% bonus). She works for 40 years and starts getting an annual pension of $50,000/year after 2\", 57, 0.16616529422097825]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:6, Flag:False
+[\"1. First, let's understand that Marcy gets an annual pension of $50,000/year for the entire 40-year duration.\n        2. After working for 20 years, she becomes eligible for a\", 52, 0.9000836016932524]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:8, H:9, Flag:True
+[\"3.5% (5%/2 = 10% / 2 years) increase in her pension amount every year until retirement.\n        Now, let's calculate the incremental p\", 41, 0.8642478952524758]
+Path: Node6Node7" color=red shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:2, H:6, Flag:False
+['5% increase in her pension per year.\n        3. She quits after 30 years, which means she has worked for 10 more years (30 - 20 = 1', 43, 0.10294320998052398]
+Path: Node6Node8" color=black shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:6, H:9, Flag:True
+[\"3. 5% increase in her pension every year. This means her pension will grow by this percentage each year from then on.\n        4. Now, Marcy quits the job after completing 30 years of work. We need to consider how much pension she accumulated during these years and calculate the final annual amount.\n        5. To do that, let's break down the time into parts:\n            a. The first 20 years (eligible for an additional 5% increase in pension per year)\n            b\", 114, 0.6564397292685471]
+Path: Node6Node9" color=red shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:8, H:6, Flag:True
+['3. 5% increase in the value of her pension per year. This means every year after the 20th year, her annual pension will grow by $50,000 * 0.05 = $2,500.\n        4. She quits after working for 30 years.', 69, 0.501361237231953]
+Path: Node6Node10" color=red shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:2, H:5, Flag:False
+['5% increase in her pension per year.\n        3. She quits after 30 years of work.\n        4. To calculate her annual pension after 30 years, we need to consider the 10-year period (from year 21 to year', 58, 0.11151455450413306]
+Path: Node6Node11" color=black shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:1, H:3, Flag:False
+[\"5% increase in her pension amount every year (we need to apply this increase only after the 20th year).\n        We'll calculate the new annual pension amounts with the added bonus from year 21 onwards:\n          - From year 21 to 30, she gets a 5% increase each year.\n          - This means we need to find the total 5% increase (or cumulative) in her pension amount over these years and then add it to her base annual pension of $50,000/year from the first\", 120, 0.8693506858869868]
+Path: Node6Node12" color=black shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:1, H:1, Flag:False
+['5% increment per year on her pension starting from that point.\n        3. She quits after 30 years of service.\n        4. To calculate her final annual pension amount, we need to consider the additional pension increase she has received over the last 10 years (from year 21 to 30).\n       \n        5. From year 21 to 30 (10 years), Marcy gets a 5% increment on the initial $50,000/year annually:', 111, 0.5703300508620397]
+Path: Node6Node13" color=black shape=box]
+	Node13 -> Node14 [label=Node13Node14]
+	Node14 [label="V:5, H:5, Flag:False
+['- First year (Year 21): $50,000 * 1.05 = $52,500\n         - Second year (Year 22): $52,500 * 1.05 = $55,250\n         - Third year (Year 23): $55,250 * 1.05 = $58,075\n         - Fourth year (Year', 102, 0.862595947979646]
+Path: Node13Node14" color=black shape=box]
+	Node13 -> Node15 [label=Node13Node15]
+	Node15 [label="V:4, H:4, Flag:False
+['5a. First year (year 21): $50,000 * 1.05 = $52,500\n        5b. Second year (year 22): $52,500 * 1.05 = $55,375\n        ...\n        5c. Tenth year (year 30): $64,987.50 * 1.05 = $', 101, 0.05618259848003326]
+Path: Node13Node15" color=black shape=box]
+	Node13 -> Node16 [label=Node13Node16]
+	Node16 [label="V:5, H:5, Flag:True
+['- Year 21: $50,000 * 1.05 = $52,500\n         - Year 22: $52,500 * 1.05 = $54,962.50\n         - Year 23: $54,962.50 * 1.05 = $57,538.75\n         - Year 24: $57,538', 109, 0.6884961797885254]
+Path: Node13Node16" color=red shape=box]
+	Node13 -> Node17 [label=Node13Node17]
+	Node17 [label="V:6, H:7, Flag:True
+['- Year 21: $50,000 * 1.05 = $52,500\n         - Year 22: $52,500 *', 43, 0.3705556056787157]
+Path: Node13Node17" color=red shape=box]
+	Node13 -> Node18 [label=Node13Node18]
+	Node18 [label="V:5, H:4, Flag:True
+['5.1. First year (year 21): $50,000 * 1.05 = $52,500\n        5.2. Second year (year 22): $52,500 * 1.05 = $54,975\n        ...\n        5.10. Tenth year (year 30):', 87, 0.015966142418691986]
+Path: Node13Node18" color=red shape=box]
+	Node13 -> Node19 [label=Node13Node19]
+	Node19 [label="V:4, H:5, Flag:True
+['- Year 21: $50,000 * 1.05 = $52,500\n         - Year 22: $52,500 * 1.05 = $54,962.50\n         - Year 23: $54,962.50 * 1.05 = $57,538.75\n         - Year 2', 100, 0.6022626305020433]
+Path: Node13Node19" color=red shape=box]
+	Node13 -> Node20 [label=Node13Node20]
+	Node20 [label="V:7, H:8, Flag:True
+['5.1. Year 21 - $50,000 * 1.05 = $52,500\n        5.2. Year 22 - $52,500 * 1.', 52, 0.30355205588058154]
+Path: Node13Node20" color=red shape=box]
+	Node12 -> Node21 [label=Node12Node21]
+	Node21 [label="V:5, H:9, Flag:True
+['20 years.\n        To calculate the cumulative increase:\n          1. From year 21 to 30, there are 9 years with a 5% increase each year.\n          2. Calculate', 47, 0.13857381788580014]
+Path: Node12Node21" color=red shape=box]
+	Node12 -> Node22 [label=Node12Node22]
+	Node22 [label="V:5, H:9, Flag:True
+[\"20 years.\n        To calculate this cumulative increase, let's start with year 21:\n            Year 21: Base amount ($50,000) * 5% increase = $50,000 * (5/100) = $2,500.\n            Year 22: Add the previous year's increase to the base amount ($50,000 + $\", 96, 0.6996422895908525]
+Path: Node12Node22" color=red shape=box]
+	Node12 -> Node23 [label=Node12Node23]
+	Node23 [label="V:5, H:9, Flag:True
+['20 years.\n           a. Calculate 5% increase for each year: 5% = 5/100 = 0.05\n           5% increase per year = 0.05\n          b. Add these increases for the remaining 10 years (years 21 to 30):\n             Total increase = 10 * 0.05 = 0.5\n           c. Combine her base annual pension with the cumulative increase:\n            New annual pension from year 21 on', 118, 0.543967699073833]
+Path: Node12Node23" color=red shape=box]
+	Node12 -> Node24 [label=Node12Node24]
+	Node24 [label="V:3, H:8, Flag:True
+[\"20 years.\n\n        Let's calculate this step by step:\n        From year 21: $50,000 * (1 + 0.05) = $50,000 * 1.05 = $52,500/year\n        From year 22: $52,500 * (1 + 0.05) = $52,500 * 1.\", 102, 0.9220688805472459]
+Path: Node12Node24" color=red shape=box]
+	Node12 -> Node25 [label=Node12Node25]
+	Node25 [label="V:5, H:9, Flag:True
+[\"20 years.\n        To calculate the total increase:\n          1st year's increase = 5% of $50,000 = 0.05 * $50,000 = $2,500\n          Each subsequent year's increase is equal to the previous year's increase plus another 5%.\n        \n        So, let's\", 84, 0.46347079982258943]
+Path: Node12Node25" color=red shape=box]
+	Node12 -> Node26 [label=Node12Node26]
+	Node26 [label="V:5, H:9, Flag:True
+['20 years.\n           a. For year 21, the new annual pension is $50,000 * (1 + 5%) = $53,000.\n           b. For year 22, the', 53, 0.6239034719439941]
+Path: Node12Node26" color=red shape=box]
+	Node12 -> Node27 [label=Node12Node27]
+	Node27 [label="V:5, H:9, Flag:True
+['20 years.\n        3. The calculation for finding the total 5% increase:\n          - 5% * (30-21 years) = 5% * 9 years', 42, 0.97485871055379]
+Path: Node12Node27" color=red shape=box]
+	Node11 -> Node28 [label=Node11Node28]
+	Node28 [label="V:4, H:9, Flag:True
+['30) where she gets the additional 5% increase in her pension per year.\n        5. For each of these 10 years, her pension increases by 5%. So, for the first year (year 21), it becomes $50,000 * 1.05 = $52,500.\n        6. For the second year (year 22),', 88, 0.2035376221930556]
+Path: Node11Node28" color=red shape=box]
+	Node11 -> Node29 [label=Node11Node29]
+	Node29 [label="V:2, H:7, Flag:True
+['30) when she is eligible for the incremental increase.\n        5. For each of those 10 years, her pension will be increased by $50,000 * 5% = $2,500/year.\n        6. Add these increments together: $2,500 (for year 21) + $2,500 (for year 22) + ... + $2,500 (for year 30).\n        7. The result will be her increased annual pension for the', 120, 0.9281876041621786]
+Path: Node11Node29" color=red shape=box]
+	Node11 -> Node30 [label=Node11Node30]
+	Node30 [label="V:5, H:10, Flag:True
+[\"30) during which she receives the additional 5% increase.\n\n        Now let's break down the calculations:\n        \n        a. For the first 20 years of work, Marcy gets her base pension of $50,000/year. There are no increases or decreases in this period. So for these 20 years, she receives a total of 20 * $50\", 90, 0.6304409941506991]
+Path: Node11Node30" color=red shape=box]
+	Node11 -> Node31 [label=Node11Node31]
+	Node31 [label="V:6, H:10, Flag:True
+['30) when she gets a 5% increase in her pension per year.\n        5. For this 10-year period, we can calculate the total increase by multiplying the initial pension amount ($50,000/year) with', 54, 0.17826608115041942]
+Path: Node11Node31" color=red shape=box]
+	Node11 -> Node32 [label=Node11Node32]
+	Node32 [label="V:6, H:10, Flag:True
+[\"30) when she gets the 5% increase in her pension value.\n\n        Now, let's break down her annual pension for each phase:\n        1. From year 1 to year 20 (40 - 20 = 20 years): She receives $50,000 per year without the 5\", 74, 0.7566876384777567]
+Path: Node11Node32" color=red shape=box]
+	Node11 -> Node33 [label=Node11Node33]
+	Node33 [label="V:2, H:7, Flag:True
+[\"30) when she receives the additional 5% increase in her pension.\n        5. From year 21 to year 30, there are 10 years of incremental increases.\n        6. To find out how much extra she gets each year during this period, we can calculate 5% of $50,000 (which is the base pension). This gives us $2,500 per year as an additional increase.\n        7. Now, let's add this incremental amount to her base annual pension\", 116, 0.24989251723449168]
+Path: Node11Node33" color=red shape=box]
+	Node11 -> Node34 [label=Node11Node34]
+	Node34 [label="V:6, H:10, Flag:True
+[\"30) where she gets an additional 5% increase per year on top of the base $50,000/year pension.\n        5. To calculate the total annual pension for these 10 years with increments, we'll multiply the base pension\", 58, 0.5551496384987316]
+Path: Node11Node34" color=red shape=box]
+	Node8 -> Node35 [label=Node8Node35]
+	Node35 [label="V:7, H:5, Flag:True
+[\"4. To calculate the additional amount of pension she gets due to the 5% increase, we need to multiply her base annual pension ($50,000) by the percentage (5%) and then multiply that result by the number of years she received the increase (10). So, it's $50,000 * 0.05 * 10 = $25,000.\n        5. Now, we need to\", 101, 0.10314996169644064]
+Path: Node8Node35" color=red shape=box]
+	Node8 -> Node36 [label=Node8Node36]
+	Node36 [label="V:6, H:4, Flag:True
+['4. To calculate the total increase in her annual pension due to the 5% increments over those 10 years, we need to multiply the increment percentage by the base pension amount and then apply it on the base pension for 10 years.\n           a. (0.05 * $50,000) = $2,500\n           b. Adding this increment per year over the 10-year', 95, 0.640972517245068]
+Path: Node8Node36" color=red shape=box]
+	Node8 -> Node37 [label=Node8Node37]
+	Node37 [label="V:7, H:5, Flag:True
+['3. To calculate the additional amount of pension she gets due to the 5% increase, we need to find out how much her pension increases per year. So, $50,000 * 0.05 = $2,500 (5% of the', 59, 0.5098445734567914]
+Path: Node8Node37" color=red shape=box]
+	Node8 -> Node38 [label=Node8Node38]
+	Node38 [label="V:5, H:3, Flag:True
+[\"4. Since we have to add the annual increase to her pension starting from when she became eligible, the first year of increase is after 20 years. Therefore, there are a total of 10 years in which this increase happens.\n        5. Now let's calculate the increased amount per year: $50,000 * 0.05 = $2,500. This is her annual increase.\n        6. To find the total increased amount for those 10 years, we multiply this by the number of years\", 117, 0.6591780031614098]
+Path: Node8Node38" color=red shape=box]
+	Node8 -> Node39 [label=Node8Node39]
+	Node39 [label="V:10, H:10, Flag:True
+[\"4. To calculate the total amount of pension she will receive during those extra 10 years, we need to multiply her annual pension by the number of years: $50,000 * 10 = $500,000.\n        5. Now, let's add this additional pension amount to her base annual pension of $50,000/year for the first 20 years: $50,000 + $500,000 = $550,\", 114, 0.11222441719013354]
+Path: Node8Node39" color=red shape=box]
+	Node8 -> Node40 [label=Node8Node40]
+	Node40 [label="V:5, H:3, Flag:True
+[\"4. To calculate the increased amount, let's multiply her base annual pension ($50,000) by the increase percentage (5%). This will be $50,000 * 5/100 = $2,500 extra per year.\n        5. Adding this amount to the initial base annual pension of $50,000, we get her new pension amount after the increase: $\", 95, 0.9418366678621417]
+Path: Node8Node40" color=red shape=box]
+	Node8 -> Node41 [label=Node8Node41]
+	Node41 [label="V:5, H:3, Flag:True
+[\"4. To calculate the annual pension after 30 years, we need to consider the extra 10 years with a 5% increase in her pension per year.\n        5. For these additional 10 years, her pension increases by $50,000 * 5% = $2,500 annually.\n        6. Now, let's calculate her total annual pension after the extra 10 years: Her\", 94, 0.46197869659061774]
+Path: Node8Node41" color=red shape=box]
+	Node15 -> Node42 [label=Node15Node42]
+	Node42 [label="V:6, H:8, Flag:True
+['67,040.625\n        6. Add the final amount ($67,040.625) to her initial annual pension of $50,000/year: Total Annual Pension = $50,000 + $67,', 63, 0.4588614806313588]
+Path: Node15Node42" color=red shape=box]
+	Node15 -> Node43 [label=Node15Node43]
+	Node43 [label="V:7, H:8, Flag:True
+['6. Calculate the final pension amount for the last year before she quits: $64,987.50 + $50,000 (initial annual pension) = $114,987.50\n        7. Considering that she works for 30 years and receives a total of $114,987.50 per year as her final annual', 88, 0.48992199331683484]
+Path: Node15Node43" color=red shape=box]
+	Node15 -> Node44 [label=Node15Node44]
+	Node44 [label="V:5, H:4, Flag:True
+[\"5d. The final annual pension amount after the 10-year increment is $66,482.50.\n       \n        6. Now, add this increased amount to her initial annual pension of $50,000/year: $50,000 + $66,482.50 = $116,482.50.\n       \n        Marcy's final annual pension after quitting after 30 years will be $116,482.5\", 118, 0.20641380842691004]
+Path: Node15Node44" color=red shape=box]
+	Node15 -> Node45 [label=Node15Node45]
+	Node45 [label="V:9, H:9, Flag:True
+['6. To find the final annual pension amount after 30 years of service, we add the initial $50,000/year to the increased amounts from years 21-30: $50,000 + $52,500 + $55,375 + ... + $64,987.50 = $308,957.50\n        7. Mar', 96, 0.21611067070924095]
+Path: Node15Node45" color=red shape=box]
+	Node15 -> Node46 [label=Node15Node46]
+	Node46 [label="V:7, H:8, Flag:True
+[\"6d. Final annual pension after the 10-year increment: $66,486.25\n\n        6. Now, let's add this final amount to her initial annual pension of $50,000/year.\n        Final Annual Pension = Initial Annual Pension + Incremental Annual Pension\n        Final Annual Pension = $50,000 + $6\", 90, 0.3575402838460209]
+Path: Node15Node46" color=red shape=box]
+	Node15 -> Node47 [label=Node15Node47]
+	Node47 [label="V:4, H:5, Flag:True
+[\"5d. Sum of the incremental increases over 10 years: $64,987.50 - $50,000 = $14,987.50\n\n        6. Now add this sum to Marcy's initial annual pension of $50,000/year for the entire 30-year period: $50,000 + $14,987.50 = $64,987.\", 109, 0.8460733535906309]
+Path: Node15Node47" color=red shape=box]
+	Node15 -> Node48 [label=Node15Node48]
+	Node48 [label="V:4, H:5, Flag:True
+[\"6d. Total increment over the last 10 years: $64,987.50 - $50,000 = $14,987.50\n       \n        6. Now, add this total increment to her initial annual pension of $50,000/year: $50,000 + $14,987.50 = $64,987.50\n       \n        7. Marcy's final annual pension after\", 113, 0.03840687791767006]
+Path: Node15Node48" color=red shape=box]
+	Node0 -> Node49 [label=Node0Node49]
+	Node49 [label="V:6, H:5, Flag:True
+['3. Find out the value of her pension before any extra payment (50,000/year * 10 years = 500,000)\n        4. Compute her extra annual pension after working for 10 years with 5% entitlement (5%, or 0.05, of the value of the pension is added to her yearly', 83, 0.9278407586078361]
+Path: Node0Node49" color=red shape=box]
+	Node0 -> Node50 [label=Node0Node50]
+	Node50 [label="V:3, H:4, Flag:True
+['3. Find out her annual pension without any extra benefits ($50,000/year)\n        4. Calculate the additional pension due to entitlement (10 years x 5% x $50,000/year = $25,000/year)\n        5. Add the', 70, 0.8545243373321479]
+Path: Node0Node50" color=red shape=box]
+	Node0 -> Node51 [label=Node0Node51]
+	Node51 [label="V:3, H:4, Flag:True
+['3. Calculate her annual pension without any entitlement: $50,000/year\n        4. Calculate the additional amount she becomes entitled to after working for 5% of the value per year: (10 *', 51, 0.5743484142885753]
+Path: Node0Node51" color=red shape=box]
+	Node0 -> Node52 [label=Node0Node52]
+	Node52 [label="V:2, H:2, Flag:False
+['3. Calculate her regular annual pension ($50,000/year)\n        4. Find the additional amount from the 5% entitlement per year (5% of $50,000 = $2,500)\n        5. Multiply this extra amount by the number of years she received it (10 years * $2,500/year = $25,000)\n        6. Add the additional amount to her regular annual pension ($50,0', 113, 0.4176321555706669]
+Path: Node0Node52" color=black shape=box]
+	Node0 -> Node53 [label=Node0Node53]
+	Node53 [label="V:2, H:3, Flag:False
+['3. Calculate her annual pension without any entitlement ($50,000/year)\n        4. Find the amount of extra pension Marcy gets due to the 5% entitlement (5% * $50,000 = $2,500 per year for 10 years)', 70, 0.5361313400766334]
+Path: Node0Node53" color=black shape=box]
+	Node0 -> Node54 [label=Node0Node54]
+	Node54 [label="V:6, H:7, Flag:True
+['3. Find half of the entitlement period (10 / 2 = 5 years)\n        4. Calculate her full pension after 40 years: $50,000/year\n        5. Determine her annual pension increase for 5% per year from year 20: $50,000 * (5/100) =', 83, 0.9936554382144573]
+Path: Node0Node54" color=red shape=box]
+	Node0 -> Node55 [label=Node0Node55]
+	Node55 [label="V:2, H:3, Flag:False
+['3. Find out her annual pension without any additional entitlements ($50,000/year)\n        4. Calculate the extra amount she gets due to the 5% entitlement for the last 10 years', 51, 0.1998557310120479]
+Path: Node0Node55" color=black shape=box]
+	Node52 -> Node56 [label=Node52Node56]
+	Node56 [label="V:8, H:10, Flag:True
+[\"7. Calculate Marcy's total annual pension after 30 years ($50,000 + $25,000 = $75,000/year)\n        So, if Marcy quits after 30 years, her annual pension will be $75,000.\", 96, 0.2975152902035221]
+Path: Node52Node56" color=red shape=box]
+	Node52 -> Node57 [label=Node52Node57]
+	Node57 [label="V:8, H:10, Flag:True
+[\"7. After working for 30 years and quitting, Marcy's annual pension will be $75,000\", 72, 0.8964228536210003]
+Path: Node52Node57" color=red shape=box]
+	Node52 -> Node58 [label=Node52Node58]
+	Node58 [label="V:8, H:10, Flag:True
+[\"7. Final result: Marcy's annual pension after 30 years will be $50,000 + $25,000 = $75,000\", 41, 0.8554503513727475]
+Path: Node52Node58" color=red shape=box]
+	Node52 -> Node59 [label=Node52Node59]
+	Node59 [label="V:8, H:10, Flag:True
+[\"7. Calculate Marcy's total annual pension after 30 years ($50,000 + $25,000 = $75,000/year)\n        So, if she quits after 30 years, her annual pension will be $75,000.\", 79, 0.23068251143242668]
+Path: Node52Node59" color=red shape=box]
+	Node52 -> Node60 [label=Node52Node60]
+	Node60 [label="V:8, H:10, Flag:True
+[\"7. Calculate Marcy's total annual pension after 30 years ($50,000 + $25,000 = $75,000/year).\n        So, if she quits after 30 years, her annual pension will be $75,0\", 66, 0.43188129361059246]
+Path: Node52Node60" color=red shape=box]
+	Node52 -> Node61 [label=Node52Node61]
+	Node61 [label="V:8, H:10, Flag:True
+[\"7. Marcy's annual pension after 30 years will be $75,000/year.\", 93, 0.8326819195012131]
+Path: Node52Node61" color=red shape=box]
+	Node52 -> Node62 [label=Node52Node62]
+	Node62 [label="V:8, H:10, Flag:True
+[\"7. Calculate Marcy's final annual pension after 30 years ($50,000 + $25,000 = $75,000/year)\", 45, 0.8159290197708912]
+Path: Node52Node62" color=red shape=box]
+	Node53 -> Node63 [label=Node53Node63]
+	Node63 [label="V:8, H:9, Flag:True
+['5. Add the extra pension to her annual pension without any entitlement ($50,000 + $2,500 = $52,500/year)\n        After Marcy quits after 30 years, her annual pension will be $52,500/year due to the combination', 71, 0.9812824658603144]
+Path: Node53Node63" color=red shape=box]
+	Node53 -> Node64 [label=Node53Node64]
+	Node64 [label="V:8, H:9, Flag:True
+[\"5. Add the extra pension amount to her base annual pension ($50,000 + $2,500 = $52,500/year)\n        Marcy's annual pension after quitting after 30 years will be $52,500 per year.\", 70, 0.28089695514817214]
+Path: Node53Node64" color=red shape=box]
+	Node53 -> Node65 [label=Node53Node65]
+	Node65 [label="V:8, H:9, Flag:True
+[\"5. Add the extra pension from step 4 to her base annual pension in step 3 ($50,000 + $2,500 = $52,500/year)\n        After 30 years, Marcy's annual pension will be $52,500.\", 118, 0.4645525786935377]
+Path: Node53Node65" color=red shape=box]
+	Node53 -> Node66 [label=Node53Node66]
+	Node66 [label="V:8, H:9, Flag:True
+['5. Calculate her total pension without any additional pension from the company ($50,000 + $2,500 = $52,500/year)\n         6. Add the annual pension she gets from her employer (due to 5% entitlement after 10 years) for those final 10 years of work ($50,000 + $2,500 = $52,500 per year)\n        7. Det', 106, 0.9524627493508327]
+Path: Node53Node66" color=red shape=box]
+	Node53 -> Node67 [label=Node53Node67]
+	Node67 [label="V:8, H:9, Flag:True
+[\"5. Add the extra pension to her base annual pension ($50,000 + $2,500 = $52,500/year)\n        Marcy's annual pension after quitting after 30 years will be $52,500 per year.\", 64, 0.15313586778761545]
+Path: Node53Node67" color=red shape=box]
+	Node53 -> Node68 [label=Node53Node68]
+	Node68 [label="V:10, H:9, Flag:True
+[\"5. Add the extra pension to her base annual pension ($50,000 + $2,500 = $52,500/year)\n        Marcy's annual pension after quitting at 30 years will be $52\", 57, 0.28538807210857353]
+Path: Node53Node68" color=red shape=box]
+	Node53 -> Node69 [label=Node53Node69]
+	Node69 [label="V:8, H:9, Flag:True
+['5. Add the extra pension from step 4 to her base annual pension in step 3 ($50,000 + $2,500 = $52,500/year)\n        So, if Marcy quits after 30 years, she will receive an annual pension of $52,500.', 87, 0.5258701876709022]
+Path: Node53Node69" color=red shape=box]
+	Node55 -> Node70 [label=Node55Node70]
+	Node70 [label="V:10, H:10, Flag:True
+['4a. Multiply the number of years (10) by her full annual pension ($50,000) to find the total value of these extra earnings: $10 * $50,000 = $500,000\n        4b. Now, divide this amount by the 5% multiplier (which is a fraction equal to 0.05) to get the annual payment for these entitlement years: $500,000 / 0.05 = $10,', 118, 0.9831880200348813]
+Path: Node55Node70" color=red shape=box]
+	Node55 -> Node71 [label=Node55Node71]
+	Node71 [label="V:9, H:8, Flag:True
+['5. Add this extra amount to her original annual pension to find her final annual pension after quitting.\n\nStep by step calculations:\n1. Total working years = 20 years (entitled to 5% of pension per year)\n2. Years with full entitlement = 10 years\n3. Annual pension without any additional entitlements = $5', 80, 0.1805639951413447]
+Path: Node55Node71" color=red shape=box]
+	Node55 -> Node72 [label=Node55Node72]
+	Node72 [label="V:4, H:5, Flag:False
+['5. Add this extra amount to her initial $50,000/year pension\n\nStep by step calculations:\n1. Total working years = 20 years\n2. Years with full 5% entitlement = 10 years\n3. Initial annual pension without additional entitlements = $50,000/year\n4. Extra amount due to the 5% entitlement for 10 years = 5% of $50,000 *', 109, 0.45918980029288337]
+Path: Node55Node72" color=black shape=box]
+	Node55 -> Node73 [label=Node55Node73]
+	Node73 [label="V:4, H:5, Flag:False
+['5. Add this extra amount to her regular annual pension to find her final annual pension after quitting.\n\nStep by step calculations:\n1. Total working years = 20 years (entitled to 5% of pension per year)\n2. Years with full entitlement = 10 years\n3. Regular annual pension = $50,000/year\n4. Extra amount due to 5% entitlement for the last 10 years = 5% *', 106, 0.14460443125389144]
+Path: Node55Node73" color=black shape=box]
+	Node55 -> Node74 [label=Node55Node74]
+	Node74 [label="V:6, H:5, Flag:False
+['5. Add this amount to her original annual pension\n\nStep 1: Total working years = 20 years with 5% entitlement for 10 years (from year 21-30)\nStep 2: Calculate the extra amount she gets due to the 5% entitlement for the last 10 years ($50,000 * 5% = $2', 88, 0.5239971588198038]
+Path: Node55Node74" color=black shape=box]
+	Node55 -> Node75 [label=Node55Node75]
+	Node75 [label="V:4, H:5, Flag:False
+['5. Add this extra amount to her base annual pension to find her final annual pension after quitting\n\nStep 1: Total working years = 20 years with 5% entitlement\nStep 2: Years with full 5% entitlement = 10 years\nStep 3: Annual pension without any additional entitlements = $50,000/year\nStep 4: Calculate extra amount due to the 5% entit', 101, 0.41074849218421106]
+Path: Node55Node75" color=black shape=box]
+	Node55 -> Node76 [label=Node55Node76]
+	Node76 [label="V:4, H:5, Flag:False
+['5. Add this extra amount to her base annual pension to find her final annual pension.\n\nStep 1 result: Marcy worked for 20 years with full 5% entitlement and 10 more years without it.\nStep 3 result: Her base annual pension is $50,000/year.\nStep 4 result: For the last 10 years (without any additional entitlements), she gets 5%', 98, 0.41624470448589]
+Path: Node55Node76" color=black shape=box]
+	Node2 -> Node77 [label=Node2Node77]
+	Node77 [label="V:7, H:8, Flag:True
+[\"4. Marcy's annual pension after 20 years is $50,000/year, and this amount will increase by 5% every year from that point on.\n        5. To find out the additional amount she gets each year for her last decade of work, we multiply the extra benefit percentage (\", 69, 0.6388350626810929]
+Path: Node2Node77" color=red shape=box]
+	Node2 -> Node78 [label=Node2Node78]
+	Node78 [label="V:7, H:7, Flag:True
+['4. After that, multiply that fraction by $50,000 (her total annual pension) to find out how much extra she gets: (3/4) * $50,000 = $37,500\n        5. Now, add the amount from her regular annual pension of $50,000 and the extra portion of $37,500 to get', 89, 0.7006163680050409]
+Path: Node2Node78" color=red shape=box]
+	Node2 -> Node79 [label=Node2Node79]
+	Node79 [label="V:5, H:6, Flag:False
+[\"(the percentage increase) by 2 (since it's half the time). This gives us 5/2 = 2.5%.\n        4. Now, let's calculate the value of Marcy's annual pension after 30 years. She gets her base $50,000 per year plus an extra 2.5% of that amount for the last 10 years. So, we add 2.5% to the base pension: $\", 102, 0.2459521653332314]
+Path: Node2Node79" color=black shape=box]
+	Node2 -> Node80 [label=Node2Node80]
+	Node80 [label="V:5, H:6, Flag:False
+[\"(the extra percentage) by 2 (since it covers half of her total time). This gives us 5/2 = 2.5%.\n        4. Now that we know Marcy's annual pension of $50,000 is increased by 2\", 58, 0.48751554771527084]
+Path: Node2Node80" color=black shape=box]
+	Node2 -> Node81 [label=Node2Node81]
+	Node81 [label="V:5, H:6, Flag:False
+[\"(the percentage increase) by 2 (since it applies to only half of her total years). This gives us 5/2 = 2.5%.\n        4. Now, let's calculate the extra amount she gets per year due to this additional benefit: $50,000 * 2.5% = $1,25\", 75, 0.06868120182800286]
+Path: Node2Node81" color=black shape=box]
+	Node2 -> Node82 [label=Node2Node82]
+	Node82 [label="V:10, H:9, Flag:True
+[\"by 10 (1/2) to get the fraction of entitlement for those years. This gives us a value of 0.5.\n        4. Next, we'll multiply this fraction by the annual pension she receives without any extra\", 54, 0.8509724741123808]
+Path: Node2Node82" color=red shape=box]
+	Node2 -> Node83 [label=Node2Node83]
+	Node83 [label="V:5, H:6, Flag:False
+['4. Her annual pension will be $50,000/year (basic) + $2,500/year (extra benefit for the last 10 years).\n        5. Multiply this amount by the number of years she gets it ($50,000 + $2,500 = $5', 73, 0.6569854734058486]
+Path: Node2Node83" color=black shape=box]
+	Node14 -> Node84 [label=Node14Node84]
+	Node84 [label="V:5, H:8, Flag:True
+['24): $58,075 * 1.05 = $61,092.50\n         - Fifth year (Year 25): $61,092.50 * 1.05 = $64,301.25\n         - Sixth year (Year 26): $64,301.25 * 1', 90, 0.055902054554294534]
+Path: Node14Node84" color=red shape=box]
+	Node14 -> Node85 [label=Node14Node85]
+	Node85 [label="V:5, H:8, Flag:True
+['24): $58,075 * 1.05 = $60,942.50\n         - Fifth year (Year 25): $60,942.50 * 1.05 = $63,837.25\n         - Sixth year (Year 26): $63,837.25 * 1.05 = $66,7', 99, 0.21621700397138244]
+Path: Node14Node85" color=red shape=box]
+	Node14 -> Node86 [label=Node14Node86]
+	Node86 [label="V:5, H:8, Flag:True
+['24): $58,075 * 1.05 = $61,092.50\n         - Fifth year (Year 25): $61,092.50 * 1.05 = $64,303.75\n         - Sixth year (Year 26): $64,303.75 * 1.05 = $67,', 98, 0.14943308338125472]
+Path: Node14Node86" color=red shape=box]
+	Node14 -> Node87 [label=Node14Node87]
+	Node87 [label="V:5, H:8, Flag:True
+['24): $58,075 * 1.05 = $60,912.50\n          - Fifth year (Year 25): $60,912.50 * 1.05 =', 55, 0.8955074040488311]
+Path: Node14Node87" color=red shape=box]
+	Node14 -> Node88 [label=Node14Node88]
+	Node88 [label="V:5, H:8, Flag:True
+['24): $58,075 * 1.05 = $61,092.50\n         - Fifth year (Year 25): $61,092.50 * 1.05 = $64,301.25\n         - Sixth year (Year 26): $64,301', 84, 0.06530150557567671]
+Path: Node14Node88" color=red shape=box]
+	Node14 -> Node89 [label=Node14Node89]
+	Node89 [label="V:3, H:7, Flag:True
+['24): $58,075 * 1.05 = $60,940.50\n         - Fifth year (Year 25): $60,940.50 * 1.05 = $63,905.95\n         - Sixth year (Year 26): $63,905.95 * 1.05 = $67,008.475\n         - S', 109, 0.3924926149355654]
+Path: Node14Node89" color=red shape=box]
+	Node14 -> Node90 [label=Node14Node90]
+	Node90 [label="V:3, H:7, Flag:True
+['24): $58,075 * 1.05 = $61,092.50\n         - Fifth year (Year 25): $61,092.50 * 1.05 = $64,301.25\n         - Sixth year (Year 26): $64,301.25 * 1.05 = $67,686.375\n         -', 108, 0.03627447593534827]
+Path: Node14Node90" color=red shape=box]
+	Node72 -> Node91 [label=Node72Node91]
+	Node91 [label="V:6, H:3, Flag:True
+['(10 / 20) = (5/20) * $50,000 = $12,500/year\n5. Final annual pension with the additional entitlements = Initial annual pension + Extra amount ($50,000/year + $12,500/year) = $62,500/year\n\nMarcy will get an annual pension of $62,500 after quitting her job at the age of 30', 112, 0.7887453261991509]
+Path: Node72Node91" color=red shape=box]
+	Node72 -> Node92 [label=Node72Node92]
+	Node92 [label="V:2, H:1, Flag:False
+['10 years = 0.05 * $50,000 * 10 = $2,500 (annual)\n5. Calculate her final annual pension by adding the extra entitlement amount to her initial pension: $50,000/year + $2,500/year = $52,500/year\n\nAnswer: After 30 years, Marcy', 95, 0.8678658471940169]
+Path: Node72Node92" color=black shape=box]
+	Node72 -> Node93 [label=Node72Node93]
+	Node93 [label="V:10, H:4, Flag:True
+['10 years = (5/100) * $50,000 * 10 = $2,500 * 10 = $25,000\n5. Add this extra amount to her initial pension', 53, 0.5348135095284645]
+Path: Node72Node93" color=red shape=box]
+	Node72 -> Node94 [label=Node72Node94]
+	Node94 [label="V:2, H:0, Flag:False
+[\"10 years = (5/100) * $50,000 * 10 = $2,500\n5. Add this extra amount to her initial pension: $50,000 + $2,500 = $52,500/year\n\nAfter working for 30 years and quitting, Marcy's annual pension will be $52,500/year.\", 106, 0.3504017876201996]
+Path: Node72Node94" color=green shape=box]
+	Node72 -> Node95 [label=Node72Node95]
+	Node95 [label="V:10, H:10, Flag:True
+['10 years = (5/100) * $50,000 * 10 = $25,000\n5. Final annual pension after considering the additional entitlements = Initial annual pension + Extra amount = $50,000/year + $25,000/year = $75,000/year\n\nSo, if Marcy quits after 30 years of working for the same', 101, 0.2191241529813608]
+Path: Node72Node95" color=red shape=box]
+	Node72 -> Node96 [label=Node72Node96]
+	Node96 [label="V:10, H:10, Flag:True
+['(Number of years with full entitlement) = 0.05 * $50,000 * 10 = $25,000\n5. Final annual pension with additional entitlements = Initial pension without extra entitlements + Extra amount from 5% entitlements = $50,000/year + $25,000 = $75,000/year\n\nMar', 99, 0.5758010880876862]
+Path: Node72Node96" color=red shape=box]
+	Node72 -> Node97 [label=Node72Node97]
+	Node97 [label="V:2, H:0, Flag:False
+['(10 years) = 0.05 * $50,000 * 10 = $2,500/year\n5. Final annual pension after adding the extra amount = $50,000 + $2,500 = $52,500/year\n\nSo, if Marcy quits after 30 years, her annual pension will be $52,500/year.', 100, 0.4004083208440019]
+Path: Node72Node97" color=green shape=box]
+}

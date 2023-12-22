@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: John runs 60 miles a week. He runs 3 days a week.  He runs 3 hours the first day and half as much the other two days he runs.  How fast does he run? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:10, H:10, Flag:True
+[\"1. First, let's find out how many hours he spends running in total per week.\n           Total hours = Hours on the first day + (Hours on the second day / 2) + (Hours on\", 49, 0.29192622791613143]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:3, Flag:False
+[\"1. Let's analyze the given information.\n        - John covers 60 miles in a week.\n        - He runs 3 times per week, with different running durations each day (different hours).\n          - First day, he runs for 3 hours.\n          - Other two days, he runs half of what he did on the first day, which is 3/2 hours.\n\n        2. We need to find how fast he runs per mile\", 101, 0.983935881116908]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:4, H:7, Flag:False
+[\"1. First, let's find out how many miles John runs per day on average. To do this, we need to divide his total weekly mileage by the number of days he runs in a week. So, 60 miles / 3 days = 20 miles per day (on average).\", 64, 0.16461138354796756]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:10, H:10, Flag:True
+[\"1. First, let's find out how many total hours John spends running per week.\n           Total hours = (3 hours for the first day) + (1.5 hours for each of\", 42, 0.17226747842736245]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:2, Flag:False
+[\"1. First, let's find out how many hours John spends running in total per week.\n           Total hours = Hours on first day + (Hours on second day / 2) + (Hours on third day / 2)\n           Total hours = 3 + (3 / 2) + (3 / 2)\n           Total hours = 3 + 1.5 + 1.5\n           Total hours = 6\n        \n        2. Now, we need\", 108, 0.1912885153318824]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:6, H:8, Flag:True
+[\"1. First, let's find out how many total hours John spends running per week.\n           60 miles / 7 days = 8.57 miles/day (since there are 60 miles and 3 days of running)\n           Miles per day can be divided into hours by considering John's running pace. Let's assume he runs at a consistent pace.\n\n        2. Now, let's\", 92, 0.46608012060595005]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:10, H:10, Flag:True
+[\"1. First, let's find out how many hours John spends running in total each week. He runs for 3 hours on the first day and half as much on the other two days. So, he runs\", 45, 0.3680635022196985]
+Path: StartNode6" color=red shape=box]
+	Node4 -> Node7 [label=Node4Node7]
+	Node7 [label="V:0, H:0, Flag:False
+['60 miles per week / Total hours = Miles per hour\n        60 miles / 6 hours = Miles per hour\n        60 miles / 6 hours = 10 miles per hour\n\n        John runs at a speed of approximately', 52, 0.4450007279279591]
+Path: Node4Node7" color=green shape=box]
+	Node4 -> Node8 [label=Node4Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['60 miles (total distance per week) = speed * total hours\n        Speed = (Total distance) / (Total hours)\n        Speed = 60 / 6\n        Speed = 10 miles per hour\n\nJohn runs at a rate of 10 miles per hour.', 81, 0.9482793208645582]
+Path: Node4Node8" color=green shape=box]
+	Node4 -> Node9 [label=Node4Node9]
+	Node9 [label="V:5, H:9, Flag:False
+['60 miles (his total weekly distance) divided by the total hours he spends running in a week to find his speed.\n          Speed = Distance / Time\n          Speed = 60 miles', 42, 0.6703286382933639]
+Path: Node4Node9" color=black shape=box]
+	Node4 -> Node10 [label=Node4Node10]
+	Node10 [label="V:5, H:8, Flag:False
+['60 miles per week / 6 hours of running = Miles per hour\n        \n        3. Calculate the result:\n          Miles per hour = 60 miles / 6 hours\n          Miles', 43, 0.3019809837987708]
+Path: Node4Node10" color=black shape=box]
+	Node4 -> Node11 [label=Node4Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['60 miles / Total hours = Speed\n         60 miles / 6 hours = 10 miles per hour\n\nJohn runs at a speed of 10 miles per hour.', 90, 0.22799211458314117]
+Path: Node4Node11" color=green shape=box]
+	Node4 -> Node12 [label=Node4Node12]
+	Node12 [label="V:1, H:0, Flag:False
+['60 miles per week / 6 hours per week = Miles per hour\n         60 / 6 = 10 miles per hour\n        John runs at a speed of approximately 10 miles per hour.', 45, 0.39862885417301086]
+Path: Node4Node12" color=green shape=box]
+	Node4 -> Node13 [label=Node4Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['60 miles / 6 hours = Miles per hour John runs\n        60 miles / 6 hours = 10 miles per hour\n        So, John runs at a speed of approximately 10 miles per hour.', 68, 0.4310622185225086]
+Path: Node4Node13" color=green shape=box]
+}

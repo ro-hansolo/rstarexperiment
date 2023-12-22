@@ -1,0 +1,21 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, we need to determine the original cost of the grooming service without any discounts. John pays $100 for the dog's grooming.
+        2. Next, we need to calculate the discount amount. The groomer offers a 30% discount, so we will subtract this percentage from the original cost.",Node0,1,5,1,6,0.1209947453082727,72,False
+" 1. First, we need to find out the original cost of the grooming service without any discounts. John pays $100 for the grooming service.
+        2. Now, let's calculate the discount amount. The groomer offers a 30% discount, so we need to find 30% of $100. To do this, multiply 30 by 100 and then divide by 100: (30",Node1,2,5,2,7,0.11424343150327798,100,False
+" 1. First, we need to find out the original cost of the grooming service without any discounts. John pays $100 for grooming his dog.
+        2. Next, we need to calculate",Node2,1,6,1,7,0.10949288055017703,44,False
+" 1. First, we need to find out how much John would have paid without any discounts. He takes his dog to the groomer and it costs $100.
+        2. Now, let's calculate the discount amount. The groomer offers a 30% discount for being a new customer. To find 30% of $100, we multiply by 0.3 (since 30%",Node4,2,3,2,5,0.11755736039491771,92,False
+" 1. We know that John's dog grooming costs $100 initially.
+        2. The groomer offers a 30% discount, so we need to calculate this amount. To do so, multiply the initial cost by the discount percentage (30%).
+           30% of $100 = 0.3 * $100 = $30
+        3. Now, sub",Node5,0,4,0,4,0.37126878223916626,90,False
+" 1. First, let's determine the original cost of John's grooming appointment without any discounts. He pays $100 for the service.
+        2. Next, we need to apply the 30% discount to this amount. To do that, we can calculate 30% of $100 by multiplying the",Node6,1,5,1,6,0.5502064832628799,73,False
+" 1. We know that John's dog grooming costs $100 initially.
+        2. The groomer offers a 30% discount, so we need to calculate this amount. To do so, multiply the initial cost by the discount percentage (30%).
+           30% of $100 = 0.3 * $100 = $30
+        3. Now, sub 4. Finally, subtract the discount from the original cost to find out how much John has to pay after the discount.
+           $100 - $30 = $70
+        So, the grooming costs $70 after the 30% discount for being a new customer.",Node7,0,0,0,0,0.5764695554624794,91,False

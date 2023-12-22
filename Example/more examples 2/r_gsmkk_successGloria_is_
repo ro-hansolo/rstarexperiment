@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Gloria is shoe shopping when she comes across a pair of boots that fit her shoe budget. However, she has to choose between the boots and two pairs of high heels that together cost five dollars less than the boots. If one pair of heels costs $33 and the other costs twice as much, how many dollars are the boots? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:5, Flag:False
+['1. First, we need to find out the total cost for both high heels. Since one pair costs $33 and the other pair costs twice as much, it will be $33 * 2 = $66.\n        2. Now, the total cost of both heels together is $66, which is five dollars less than the boots. To find', 76, 0.8149626942872736]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:3, Flag:False
+[\"1. Let's denote the cost of the first pair of high heels as H1, the second pair of high heels as H2, and the cost of the boots as B.\n        2. We know that H1 + H2 = B - $5 (since they together cost five dollars less than the boots).\n        3. H2 is twice the cost of H1, so H2 = 2 * H1.\n        4. Plugging this expression into our previous equation: H\", 106, 0.7422638374847059]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:4, H:9, Flag:False
+['1. We know there are three shoe options: the boots, one pair of high heels with a price of $33, and another pair of high heels that cost twice as much as the first pair (which is twice $', 46, 0.7766969152302365]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:7, H:9, Flag:True
+['1. We know that there are three types of shoes with different prices. Gloria has to choose between them.\n        2. The shoe budget is for the boots.\n        3. The two pairs of high heels cost $5 less than the boots, so we need to find out the difference in price between the boots', 66, 0.5698902811855963]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:7, H:9, Flag:True
+['1. We have three types of shoes: a pair of boots, one pair of high heels costing $33, and another pair of high heels costing twice as much as the first pair.\n        2. The total cost of all three pairs of shoes is given by the budget limit: $ (cost of', 65, 0.5714176976851058]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:3, H:8, Flag:False
+[\"1. We know that Gloria's shoe budget is for the boots.\n        2. The two pairs of high heels cost five dollars less than the boots.\n        3. One pair of heels costs $33 and the other costs twice as much, so the\", 56, 0.2844873686165743]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:0, H:1, Flag:False
+[\"1. We know that Gloria's budget for shoes is enough to buy the boots.\n        2. The two pairs of high heels together cost five dollars less than the boots.\n        3. One pair of heels costs $33 and the other costs twice as much, so the second pair costs $33 * 2 = $66.\n        4. Now we have the total cost for both pairs of heels: $33 + $66 = $99\", 101, 0.19813059869239003]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:3, H:1, Flag:False
+[\"5. We want to find out how many dollars the boots are worth. To do this, we need to subtract the combined cost of the two pairs of high heels from the boots' price. So, the difference is: Boots' price - ($99) = (Boots' price) - $99\n        6. Solve for the boots' price by adding $99\", 82, 0.18818771220910002]
+Path: Node6Node7" color=black shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:7, H:9, Flag:True
+[\"5. To find out how many dollars are the boots, we need to subtract the combined cost of the heels from the budget for shoes: Budget - Heels = Boots\n        6. Gloria's shoe budget is not mentioned explicitly in the text, but we can assume her budget is equal to\", 64, 0.7647600209420234]
+Path: Node6Node8" color=red shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['5. To find out how many dollars the boots are worth, add the difference in price between the boots and the combined cost of the heels to the total cost of the heels: ($99 - $5) + $99 = $104\n        So, the boots cost $104.', 119, 0.4170630413563269]
+Path: Node6Node9" color=green shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:10, H:10, Flag:True
+['5. Since the boots cost the same amount as the two pairs of high heels together, the boots also cost $99.', 58, 0.6758974544102726]
+Path: Node6Node10" color=red shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:2, H:1, Flag:False
+['5. The boots are the only shoes that cost more than the two pairs of high heels combined, so their cost is $99 + $5 = $104\n        6. Therefore, the boots Gloria found', 46, 0.563493429665661]
+Path: Node6Node11" color=black shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:8, H:9, Flag:True
+[\"5. To find out how many dollars the boots are worth, we need to subtract the combined cost of the two pairs of high heels from Gloria's shoe budget. So, the cost of the boots is her budget - $99 = (cost of boots) - $99.\", 120, 0.2600301484713202]
+Path: Node6Node12" color=red shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:7, H:9, Flag:True
+['5. To find the difference between the boots and the total cost of the two pairs of high heels, subtract $99 from the price of the boots: Price_of_boots - $99 = Difference\n        6. Solving for the price of the boots: Price_of_', 63, 0.549891799946848]
+Path: Node6Node13" color=red shape=box]
+}

@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Gretchen has 110 coins. There are 30 more gold coins than silver coins. How many gold coins does Gretchen have? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:9, H:9, Flag:True
+['1. First, we need to find the total number of both types of coins. Gretchen has 110 coins in total.\n        2. She has 30 more gold coins than silver coins. To find out how many silver coins she has, subtract 30 from the total count (110). So, there are 80 silver coins.\n        3. Now that we know Gretchen has 80 silver coins and 30 more gold coins than silver, we can find the number of gold', 113, 0.7428837311942819]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:10, H:10, Flag:True
+[\"1. We know the total number of coins, which is 110.\n        2. We also know that there are 30 more gold coins compared to silver coins.\n        3. To find out how many gold and silver coins are present, we'll divide the total number of coins by 30 (since there are 30 more gold). This gives us: (110 / 30) = 3.\", 94, 0.6822405621909889]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:9, H:9, Flag:True
+['1. We know the number of total coins is 110.\n        2. 30 more gold coins than silver coins implies that there are equal amounts of each type or 30 silver coins.\n        3. To find out how many gold coins Gretchen has, we need to subtract the number of silver coins from the total coins (110).\n           This leaves us with 110 - 30 = 80 gold coins.\n        So, Gretchen has 80 gold', 112, 0.6337389306132261]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:8, H:8, Flag:True
+[\"1. We know the total number of coins Gretchen has, which is 110.\n        2. We're given that there are 30 more gold coins than silver coins.\n        3. To find out how many gold coins there are, we need to first determine the number of silver coins and then add 30 more.\n        4\", 77, 0.4807658723620716]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:8, H:8, Flag:True
+[\"1. First, we need to determine the number of silver coins. Gretchen has a total of 110 coins, which must be split between gold and silver. We're given that there are 30 more gold coins than silver coins. So, if we have 30 extra gold coins, the number of silver coins will be equal to (total coins - number of gold coins).\n        Silver coins = Total coins - Gold coins = 110 - 30 = 80 silver coins\", 108, 0.6945362580434038]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:10, H:10, Flag:True
+[\"1. We know Gretchen has 110 coins in total.\n        2. There are 30 more gold coins than silver coins, so we need to find the number of silver coins first. Let's assume there\", 49, 0.04565046059955025]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:1, Flag:False
+[\"1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.\n        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.\n        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110\", 119, 0.7979921586974282]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:5, H:9, Flag:False
+['4. We can say that Gretchen has a combination of both types of coins in equal parts because there are 110 coins and they have 2 types of coins (gold and silver', 40, 0.8700490550454826]
+Path: Node6Node7" color=black shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:4, H:7, Flag:False
+['4. We know that Gretchen has 110 coins in total, so 110 = S + G. Substitute the expression for G from step 2: 110 = S + (S + 30).\n        5.', 57, 0.007185012815856373]
+Path: Node6Node8" color=black shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:2, H:4, Flag:False
+[\"4. We know that the sum of gold and silver coins is equal to the total coins, so G + S = 110.\n        5. Substitute the expression for G from step 2 into this equation: (S + 30) + S = 110\n        6. Combine like terms on the left side of the equation: 2S + 30 = 110\n        7. Now, we need to isolate 'S' by\", 105, 0.4793477277363415]
+Path: Node6Node9" color=black shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:5, H:9, Flag:False
+['4. We know that Gretchen has 110 coins in total, which is composed of both gold and silver coins. So, the sum of gold and silver coins should be equal to 110: S + G = 110.\n        5. Substitute the relationship between gold and silver coins from', 69, 0.4369511011410452]
+Path: Node6Node10" color=black shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:1, H:1, Flag:False
+[\"4. We know that S + G = 110 (total coins). Substitute our expression for G from step 2: (S + 30) + S = 110.\n        5. Simplify the equation to find out how many silver coins there are: 2S + 30 = 110.\n        6. Now, isolate 'S' by subtracting 30 from both sides of the equation: 2S = 80\", 108, 0.6678214437467198]
+Path: Node6Node11" color=black shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:2, H:2, Flag:False
+[\"4. We know that Gretchen has 110 coins in total, so G + S = 110. We can substitute our equation from step 2 into this equation: (S + 30) + S = 110.\n        5. Combine the terms with 'S' on both sides: 2S + 30 = 110. This simplifies to 2S = 80 because 110 - 30 = 80.\", 111, 0.5441115064893444]
+Path: Node6Node12" color=black shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:1, H:1, Flag:False
+['4. We know that Gretchen has 110 coins in total, so we can write this as 110 = G + S.\n        5. Combining the two equations from step 2 and 4, we get G = S + 30 and 110 = G + S,', 68, 0.2960084161598625]
+Path: Node6Node13" color=black shape=box]
+	Node11 -> Node14 [label=Node11Node14]
+	Node14 [label="V:1, H:1, Flag:False
+['7. Finally, divide both sides by 2 to find the number of silver coins: S = 40\n        8. We know that G = S + 30 from step 2 and substituting the value of S we found in step 7: G = 40 + 30 = 70.\n        So, Gretchen has 7', 80, 0.7201560438817598]
+Path: Node11Node14" color=black shape=box]
+	Node11 -> Node15 [label=Node11Node15]
+	Node15 [label="V:0, H:0, Flag:False
+['7. Finally, divide both sides by 2 to find the number of silver coins (S): S = 40\n        8. We now know there are 40 silver coins. Using our expression for G in step 2, we can calculate how many gold coins there are: G = S + 30 = 40 + 30 = 70\n        9. So, Gretchen has 70 gold coins.', 117, 0.6867070566097062]
+Path: Node11Node15" color=green shape=box]
+	Node11 -> Node16 [label=Node11Node16]
+	Node16 [label="V:0, H:0, Flag:False
+[\"7. Divide both sides of the equation by 2 to find the number of silver coins: S = 40\n        8. We know G = S + 30. Substitute the value of 'S' we found: G = 40 + 30. This simplifies to G = 70 gold coins.\n        So, Gretchen has 70 gold coins.\", 90, 0.9683562268740743]
+Path: Node11Node16" color=green shape=box]
+	Node11 -> Node17 [label=Node11Node17]
+	Node17 [label="V:1, H:2, Flag:False
+['7. Finally, divide both sides by 2 to find the number of silver coins: S = 40\n        8. We know that G = S + 30, so substitute the value of S (40) into this expression: G', 53, 0.17023914295702414]
+Path: Node11Node17" color=black shape=box]
+	Node11 -> Node18 [label=Node11Node18]
+	Node18 [label="V:0, H:0, Flag:False
+['7. Finally, divide both sides of the equation by 2 to find the number of silver coins: S = 40\n        8. We know that G = S + 30 and S = 40. So we can substitute this value for S in our expression for G: G = 40 + 30 = 70\n        There are 70 gold coins that Gretchen has.', 103, 0.7373202650466739]
+Path: Node11Node18" color=green shape=box]
+	Node11 -> Node19 [label=Node11Node19]
+	Node19 [label="V:0, H:0, Flag:False
+['7. Divide both sides by 2 to find the value of S: S = 40\n        8. Since there are 30 more gold coins than silver coins, we can now find the number of gold coins (G) by using our expression G = S + 30 from step 2 and replacing S with its value (40): G = 40 + 30 = 70\n        9. So, Gretchen has 70 gold coins.', 116, 0.6795889273019065]
+Path: Node11Node19" color=green shape=box]
+	Node11 -> Node20 [label=Node11Node20]
+	Node20 [label="V:0, H:0, Flag:False
+[\"7. Finally, divide both sides by 2 to find the number of silver coins: S = 40\n        8. We know that G = S + 30, so now we can substitute our value for 'S' (\", 50, 0.08759764644174772]
+Path: Node11Node20" color=green shape=box]
+}

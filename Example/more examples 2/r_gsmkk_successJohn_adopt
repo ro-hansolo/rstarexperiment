@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: John adopts a dog.  He takes the dog to the groomer, which costs $100.  The groomer offers him a 30% discount for being a new customer.  How much does the grooming cost? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:5, Flag:False
+[\"1. First, we need to determine the original cost of the grooming service without any discounts. John pays $100 for the dog's grooming.\n        2. Next, we need to calculate the discount amount. The groomer offers a 30% discount, so we will subtract this percentage from the original cost.\", 72, 0.1209947453082727]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:5, Flag:False
+[\"1. First, we need to find out the original cost of the grooming service without any discounts. John pays $100 for the grooming service.\n        2. Now, let's calculate the discount amount. The groomer offers a 30% discount, so we need to find 30% of $100. To do this, multiply 30 by 100 and then divide by 100: (30\", 100, 0.11424343150327798]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:6, Flag:False
+['1. First, we need to find out the original cost of the grooming service without any discounts. John pays $100 for grooming his dog.\n        2. Next, we need to calculate', 44, 0.10949288055017703]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:6, H:6, Flag:True
+[\"1. First, we need to find out the total cost before any discounts are applied. John pays $100 for his dog's grooming service.\n        2. Next, let's calculate the discount amount. The groomer offers a 30% discount, so we need to find 30% of $10\", 72, 0.4584705567715639]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:3, Flag:False
+[\"1. First, we need to find out how much John would have paid without any discounts. He takes his dog to the groomer and it costs $100.\n        2. Now, let's calculate the discount amount. The groomer offers a 30% discount for being a new customer. To find 30% of $100, we multiply by 0.3 (since 30%\", 92, 0.11755736039491771]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:0, H:4, Flag:False
+[\"1. We know that John's dog grooming costs $100 initially.\n        2. The groomer offers a 30% discount, so we need to calculate this amount. To do so, multiply the initial cost by the discount percentage (30%).\n           30% of $100 = 0.3 * $100 = $30\n        3. Now, sub\", 90, 0.37126878223916626]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:5, Flag:False
+[\"1. First, let's determine the original cost of John's grooming appointment without any discounts. He pays $100 for the service.\n        2. Next, we need to apply the 30% discount to this amount. To do that, we can calculate 30% of $100 by multiplying the\", 73, 0.5502064832628799]
+Path: StartNode6" color=black shape=box]
+	Node5 -> Node7 [label=Node5Node7]
+	Node7 [label="V:0, H:0, Flag:False
+['4. Finally, subtract the discount from the original cost to find out how much John has to pay after the discount.\n           $100 - $30 = $70\n        So, the grooming costs $70 after the 30% discount for being a new customer.', 91, 0.5764695554624794]
+Path: Node5Node7" color=green shape=box]
+	Node5 -> Node8 [label=Node5Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['4. Finally, subtract the discounted amount from the original grooming fee to find out how much John pays after applying the discount:\n           $100 - $30 = $70\n        The grooming cost for John after receiving a 30% discount is $70.', 89, 0.6991223088752139]
+Path: Node5Node8" color=green shape=box]
+	Node5 -> Node9 [label=Node5Node9]
+	Node9 [label="V:10, H:10, Flag:True
+['4. Finally, we have the new grooming cost after applying the discount: $70 - $30 = $40. The grooming costs $40 for John and his dog.', 66, 0.32448429599175077]
+Path: Node5Node9" color=red shape=box]
+	Node5 -> Node10 [label=Node5Node10]
+	Node10 [label="V:0, H:0, Flag:False
+['4. Calculate the new, discounted price after applying the 30% discount:\n          $100 - $30 = $70\n        The grooming cost is $70 after applying the discount.', 100, 0.8469908135809816]
+Path: Node5Node10" color=green shape=box]
+	Node5 -> Node11 [label=Node5Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['4. Finally, deduct the discounted amount from the original cost to find out how much John has to pay after the discount.\n          $100 - $30 = $70\n        The grooming cost for John is $70 after the 30% discount as a new customer.', 71, 0.9447550271194324]
+Path: Node5Node11" color=green shape=box]
+	Node5 -> Node12 [label=Node5Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['4. Finally, subtract the discounted amount from the original cost to find out the final grooming cost after the discount.\n           $100 - $30 = $70\n\nThe dog grooming cost after a 30% discount for being a new customer is $70.', 102, 0.9288662687582119]
+Path: Node5Node12" color=green shape=box]
+	Node5 -> Node13 [label=Node5Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['4. Subtract the discount from the original grooming cost to find out how much John has to pay after receiving the offer:\n           Cost after discount = Initial_cost - Discount\n           $100 - $30 = $70\n        So,', 56, 0.9397842549676344]
+Path: Node5Node13" color=green shape=box]
+}

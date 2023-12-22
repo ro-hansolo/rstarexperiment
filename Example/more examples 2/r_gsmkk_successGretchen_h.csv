@@ -1,0 +1,48 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.
+        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.
+        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110",Node6,1,1,1,2,0.7979921586974282,119,False
+" 1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.
+        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.
+        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110 4. We can say that Gretchen has a combination of both types of coins in equal parts because there are 110 coins and they have 2 types of coins (gold and silver",Node7,5,9,6,15,0.8700490550454826,40,False
+" 1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.
+        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.
+        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110 4. We know that Gretchen has 110 coins in total, so 110 = S + G. Substitute the expression for G from step 2: 110 = S + (S + 30).
+        5.",Node8,4,7,5,12,0.007185012815856373,57,False
+" 1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.
+        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.
+        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110 4. We know that the sum of gold and silver coins is equal to the total coins, so G + S = 110.
+        5. Substitute the expression for G from step 2 into this equation: (S + 30) + S = 110
+        6. Combine like terms on the left side of the equation: 2S + 30 = 110
+        7. Now, we need to isolate 'S' by",Node9,2,4,3,7,0.4793477277363415,105,False
+" 1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.
+        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.
+        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110 4. We know that Gretchen has 110 coins in total, which is composed of both gold and silver coins. So, the sum of gold and silver coins should be equal to 110: S + G = 110.
+        5. Substitute the relationship between gold and silver coins from",Node10,5,9,6,15,0.4369511011410452,69,False
+" 1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.
+        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.
+        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110 4. We know that S + G = 110 (total coins). Substitute our expression for G from step 2: (S + 30) + S = 110.
+        5. Simplify the equation to find out how many silver coins there are: 2S + 30 = 110.
+        6. Now, isolate 'S' by subtracting 30 from both sides of the equation: 2S = 80",Node11,1,1,2,3,0.6678214437467198,108,False
+" 1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.
+        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.
+        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110 4. We know that Gretchen has 110 coins in total, so G + S = 110. We can substitute our equation from step 2 into this equation: (S + 30) + S = 110.
+        5. Combine the terms with 'S' on both sides: 2S + 30 = 110. This simplifies to 2S = 80 because 110 - 30 = 80.",Node12,2,2,3,5,0.5441115064893444,111,False
+" 1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.
+        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.
+        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110 4. We know that Gretchen has 110 coins in total, so we can write this as 110 = G + S.
+        5. Combining the two equations from step 2 and 4, we get G = S + 30 and 110 = G + S,",Node13,1,1,2,3,0.2960084161598625,68,False
+" 1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.
+        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.
+        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110 4. We know that S + G = 110 (total coins). Substitute our expression for G from step 2: (S + 30) + S = 110.
+        5. Simplify the equation to find out how many silver coins there are: 2S + 30 = 110.
+        6. Now, isolate 'S' by subtracting 30 from both sides of the equation: 2S = 80 7. Finally, divide both sides by 2 to find the number of silver coins: S = 40
+        8. We know that G = S + 30 from step 2 and substituting the value of S we found in step 7: G = 40 + 30 = 70.
+        So, Gretchen has 7",Node14,1,1,3,4,0.7201560438817598,80,False
+" 1. First, we know Gretchen has a total of 110 coins and there are 30 more gold coins than silver coins. We need to find the number of gold coins.
+        2. Let's represent the number of gold coins as 'G' and the number of silver coins as 'S'. Since there are 30 more gold coins, this can be expressed as G = S + 30.
+        3. Now we need to find a relationship between the number of silver coins (S) and the total coins (110 4. We know that S + G = 110 (total coins). Substitute our expression for G from step 2: (S + 30) + S = 110.
+        5. Simplify the equation to find out how many silver coins there are: 2S + 30 = 110.
+        6. Now, isolate 'S' by subtracting 30 from both sides of the equation: 2S = 80 7. Finally, divide both sides by 2 to find the number of silver coins (S): S = 40
+        8. We now know there are 40 silver coins. Using our expression for G in step 2, we can calculate how many gold coins there are: G = S + 30 = 40 + 30 = 70
+        9. So, Gretchen has 70 gold coins.",Node15,0,0,2,2,0.6867070566097062,117,False

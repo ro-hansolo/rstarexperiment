@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Kyle bought last year's best-selling book for $19.50. This is with a 25% discount from the original price. What was the original price of the book? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:4, H:7, Flag:False
+['1. We know that Kyle paid $19.50 after the discount.\n        2. The discount was 25%, so we need to find 25% of $19.50 to calculate how much the discount was.\n        3. To find 25% of any number, multiply it by', 71, 0.5982995577688922]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:6, H:8, Flag:True
+['1. We know the discount rate (25%) and the current price ($19.50) after applying the discount.\n        2. To find the original price, we need to undo the effect of the discount, which means we will divide the current price by the discount percentage to get the original price without the discount.\n        3. Doing that calculation: $19.50 / 25% = 19.5', 95, 0.8476434426985201]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:7, Flag:False
+['1. First, we know the current price with a 25% discount: $19.50 = x - 0.25x (where x represents the original price)\n        So, 1.75x = $19.50\n\n        2. To find the value of', 67, 0.8756065868477934]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:4, H:10, Flag:False
+['1. We know that Kyle bought the book at a 25% discounted price of $19.50.\n        2. To find the original price, we need to reverse the discount and add it back to the current price.\n        3.', 55, 0.1314400863747629]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:5, H:6, Flag:False
+[\"1. We know that Kyle paid $19.50 after a 25% discount.\n        2. To find the original price, we need to undo the discount.\n        3. Discounts are usually applied as a percentage of the original price. In this case, it's 25%.\n        4. We can use the formula: Original Price = (Discounted Price * (1 + Discount Percentage)) / (1 - Discount Percentage).\n        5. Plug in the given values\", 116, 0.4429570730588551]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:4, H:7, Flag:False
+['1. We know that Kyle bought the book at a 25% discount, so we need to find out how much it would have cost without the discount. To do this, we can divide the current price by 1 minus the discount percentage.\n        Current price = $19.50\n        Discount percentage = 25%\n        \n        2. Convert the discount percentage to a decimal: 25/100 = 0.25\n        \n        3. Calculate the discount', 110, 0.3343192719160978]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:6, H:8, Flag:True
+['1. We know the current price after the discount, which is $19.50.\n        2. The discount percentage is given as 25%.\n        3. To find the original price, we need to undo the effect of the discount.\n        4. To undo a discount, we can divide the current price by (', 73, 0.25411273680947544]
+Path: StartNode6" color=red shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:10, H:10, Flag:True
+['4. So, 25% of $19.50 is (25/100) * $19.50 = $4.875.\n        5. Now that we know the discount amount, subtract it from the final price to find the original price.\n        6. The original price was $19.50 - $4.875 = $14.625.', 102, 0.6334796657064429]
+Path: Node0Node7" color=red shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['4. So, 25% of $19.50 is 0.25 * $19.50 = $4.875. This amount represents the difference between the original price and the discounted price.\n        5. Now we know that the original price was equal to the discounted price plus the discount amount, which is $19.50 + $4.875 = $24.375.\n        The original price of the book was $24.375.', 120, 0.6230324080047793]
+Path: Node0Node8" color=green shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:5, H:10, Flag:True
+['4. So, 25% of $19.50 is (25/100) * $19.50 = $4.875.\n        5.', 43, 0.05553413542639596]
+Path: Node0Node9" color=red shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:5, H:10, Flag:True
+['4. So, 25% of $19.50 is (25/100) * $19.50 = $4.875.\n        5. Now we know that the discount was $4.875. To find the original price, we need to add this back to the discounted price.\n        6. Adding the discount back', 84, 0.09286064447348474]
+Path: Node0Node10" color=red shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:5, H:10, Flag:True
+['4. So, 25% of $19.50 is (25/100) * $19.50 = $4.875.\n        5. Now we know', 46, 0.1927888022874248]
+Path: Node0Node11" color=red shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:5, H:10, Flag:True
+['4. So, 25% of $19.50 is (25/100) * $19.50 = 0.25 * $19.50 = $4.875.\n        5. Now we know the discount amount was $4.875', 69, 0.600315782912482]
+Path: Node0Node12" color=red shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:5, H:10, Flag:True
+['4. So, 25% of $19.50 is (25/100) * $19.50 = $4.875.\n        5. Now we know that the discount was $4.875.', 58, 0.1972075987997567]
+Path: Node0Node13" color=red shape=box]
+}

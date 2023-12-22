@@ -1,0 +1,28 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's find out the age of Corey based on James' age. Since James is 1 year younger than Corey, we can deduce that Corey is 1 year older than James. So, Corey is 10 + 1 = 11 years old.
+        2. Now, let's find out the age of Amy using her relationship to Jackson and Corey. Amy is 5 years older than Jackson and 2 years younger than Corey. We know that",Node0,5,5,5,10,0.6566473166763672,108,False
+" 1. Firstly, let's find out the age of Corey. Since James is 1 year younger than Corey and he is 10 years old, Corey must be 11 years old (James + 1 = 11).
+        2. Next, we know that Amy is 5 years older than Jackson. We also have the age difference between Amy and Jackson's siblings: Amy - 2 (Age gap with",Node1,5,5,5,10,0.8452507928445107,96,False
+" 1. Let's first determine the relationship between the ages of Emily's kids.
+           - Amy (5 years older than Jackson)
+           - Jackson
+           - Corey (2 years younger than Amy, who is 5 years older than Jackson)
+           - James (1 year younger than Corey)",Node2,7,9,7,16,0.6336942100754589,67,False
+" 1. We know that Emily has 4 kids named Amy, Jackson, Corey, and James.
+        2. Amy is 5 years older than Jackson and 2 years younger than Corey.
+        3. James is 10 years old and is 1 year younger than Corey.
+        4. We need to find the age of Jackson.
+
+Now let",Node3,7,9,7,16,0.2801403475193087,80,False
+" 1. We know that James is 10 years old and 1 year younger than Corey. Since Corey is 1 year older than James, we can add 1 to James' age to find Corey's age: 10 + 1 = 11.
+        2. Now that we have the age of Corey, we know that Amy is 2 years younger than Corey. So, we subtract 2 from Corey's age to find Amy's age: 11 - 2 =",Node4,5,5,5,10,0.4136362816695539,114,False
+" 1. We know that Jackson's age can be found from the relationship with other children's ages. First, let's find out Corey's age. Since James is 1 year younger than Corey and James",Node5,5,5,5,10,0.6283440030262643,47,False
+" 1. First, let's find out the age of Corey based on James' age. Since James is 1 year younger than Corey, we can deduce that Corey is 1 year older than James. So, Corey is 10 + 1 = 11 years old.
+        2. Now, let's find out the age of Amy using her relationship to Jackson and Corey. Amy is 5 years older than Jackson and 2 years younger than Corey. We know that - Jackson is younger than James by 1 year (James = 10, Jackson < 10)
+         - Jackson is 5 years younger than Amy (Amy = Jackson + 5)",Node8,2,4,7,11,0.3894015847701999,45,False
+" 1. First, let's find out the age of Corey based on James' age. Since James is 1 year younger than Corey, we can deduce that Corey is 1 year older than James. So, Corey is 10 + 1 = 11 years old.
+        2. Now, let's find out the age of Amy using her relationship to Jackson and Corey. Amy is 5 years older than Jackson and 2 years younger than Corey. We know that 2.1. Jackson is 5 years younger than Amy, so Jackson's age = Amy's age - 5.
+        2.2. Amy's age - 5 = Amy's age - Corey's age + 2, since Amy is 2 years younger than Corey.
+          So, Amy's age - Corey'",Node11,5,6,10,16,0.9776468433483738,78,False
+" 1. First, let's find out the age of Corey based on James' age. Since James is 1 year younger than Corey, we can deduce that Corey is 1 year older than James. So, Corey is 10 + 1 = 11 years old.
+        2. Now, let's find out the age of Amy using her relationship to Jackson and Corey. Amy is 5 years older than Jackson and 2 years younger than Corey. We know that Corey is 11 years old. So, Amy's age can be calculated as follows: Amy's age = Corey's age - 2 (Amy's age gap with Corey) + Jackson's age gap with Amy (5 years). Amy's age = 11 - 2 + 5 = 10",Node12,0,0,5,5,0.608493119594961,75,False

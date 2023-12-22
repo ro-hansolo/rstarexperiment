@@ -1,0 +1,25 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Let's start with the total number of lollipops, which is 30. Jean eats 2 out of these. So, she has 30 - 2 = 28 remaining lollipops now.
+        2. Now,",Node0,2,8,2,10,0.9774946593998878,58,False
+" 1. We know that initially Jean has 30 lollipops.
+        2. After eating 2 of them, she is left with 30 - 2 = 28 loll",Node1,2,8,2,10,0.4826527405391686,43,False
+" 1. We know that Jean initially has 30 lollipops.
+        2. After eating 2 of them, she is left with 30 - 2 = 28 lollipops.
+        3. Now, Jean wants to package 2 lollipops in each bag. To find out how many bags can be filled, we need to divide the remaining number of lollipops (28",Node2,1,5,1,6,0.46861138188672147,91,False
+" 1. Start with the total number of lollipops Jean has: 30 lollipops.
+        2. Subtract the number of lollipops Jean eats: 30 - 2 = 28 lollipops remaining.
+        3. Determine how many",Node3,2,7,2,9,0.03069371541470678,64,False
+" 1. Start with the total number of lollipops Jean has: 30 lollipops.
+        2. Subtract the number of lollipops Jean eats: 30 - 2 = 28 lollipops remaining.
+        3",Node4,3,7,3,10,0.37298561814136033,59,False
+" 1. Jean initially has 30 lollipops.
+        2. After eating 2 lollipops, she has 30 - 2 = 28 lollipops left.
+        3. She wants to package",Node5,2,7,2,9,0.22293287707599552,52,False
+" 1. Start with the total number of lollipops: 30 lollipops.
+        2. Subtract the ones eaten by Jean: 30 - 2 = 28 remaining lollipops.
+        3. Now, each bag should contain 2 lollipops for packaging.
+        4. Divide the",Node6,1,6,1,7,0.9336280479308999,75,False
+" 1. We know that Jean initially has 30 lollipops.
+        2. After eating 2 of them, she is left with 30 - 2 = 28 lollipops.
+        3. Now, Jean wants to package 2 lollipops in each bag. To find out how many bags can be filled, we need to divide the remaining number of lollipops (28 4. by the number of lollipops per bag (2). So, 28 / 2 = 14 bags.
+        Jean can fill 14 bags with the remaining lollipops.",Node7,0,0,1,1,0.2592032083790813,118,False

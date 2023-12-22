@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:6, Flag:False
+[\"1. First, let's calculate Jill's earnings from teaching for the whole year. She works 50 weeks at 35 hours per week, so she spends 50 * 35 = 1750 hours teaching in a year. At $20 per hour, her total earnings from teaching are 1750 * 20 = $35,000.\n        2. Next, let'\", 96, 0.11962277917878217]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:7, Flag:False
+['1. First, we need to find out how much Jill earns weekly for each job.\n           For teaching: $20 per hour * 35 hours per week = $700 per week\n           For coaching: $30 per hour * 15 hours', 59, 0.9770754747604474]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:3, H:8, Flag:False
+['1. First, we need to calculate the earnings from each job separately.\n            - Teaching hours per week * Teacher hourly pay = Earnings from teaching job\n            - Coaching hours per week * Coach hourly pay = Earnings from coaching job\n              35 teaching hours', 62, 0.6141198324868974]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:6, Flag:False
+[\"1. First, let's calculate Jill's earnings from teaching for one week. She gets paid $20 per hour and works 35 hours a week. So, we multiply the hourly rate by the number of hours worked: $20 * 35 = $700.\n        2. Next, let's calculate her earnings from coaching for one week. She gets paid $30 per hour and works 15 hours a week as a coach. So, we multiply the hourly rate by the number of\", 116, 0.19848173828597504]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:7, Flag:False
+[\"1. First, let's calculate Jill's earnings per hour for each job. She gets paid $20/hour as a teacher and $30/hour as a cheerleading coach.\n        2. Next, we need to find out how many hours she works in total per week. She works 35 hours as a teacher and 15 hours as a coach, so 35 + 15 = 50 hours per week combined.\n        3.\", 102, 0.3239347923090671]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:5, Flag:False
+[\"1. Calculate Jill's weekly earnings for teaching: $20 per hour * 35 hours = $700 per week\n        2. Calculate Jill's weekly earnings for coaching: $30 per hour * 15 hours = $450 per week\n        3. Calculate her total weekly earnings: $700 (teaching) + $450 (coaching) = $1150 per week\n        4. Calculate Jill's annual salary by multiplying her weekly earnings by the\", 118, 0.4078398228222526]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:5, H:9, Flag:False
+[\"1. First, let's calculate Jill's earnings from teaching per week. She gets paid $20 per hour and works for 35 hours a week. So, \n           Teaching income per week = Hourly rate * Hours worked = $20/hour *\", 62, 0.23715651868575904]
+Path: StartNode6" color=black shape=box]
+	Node5 -> Node7 [label=Node5Node7]
+	Node7 [label="V:0, H:0, Flag:False
+[\"number of weeks she works per year: $1150 per week * 50 weeks = $57,500 per year\n        So, Jill's annual salary is $57,500.\", 74, 0.4451991391439798]
+Path: Node5Node7" color=green shape=box]
+	Node5 -> Node8 [label=Node5Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['number of weeks she works in a year: $1150 per week * 50 weeks = $57,500\n        So, her annual salary is $57,500.', 74, 0.9944255351074585]
+Path: Node5Node8" color=green shape=box]
+	Node5 -> Node9 [label=Node5Node9]
+	Node9 [label="V:0, H:0, Flag:False
+[\"number of weeks she works in a year (50 weeks): $1150 per week * 50 weeks = $57,500\n        So, Jill's annual salary is $57,500.\", 70, 0.44792611132881155]
+Path: Node5Node9" color=green shape=box]
+	Node5 -> Node10 [label=Node5Node10]
+	Node10 [label="V:0, H:0, Flag:False
+['number of weeks in a year: $1150 per week * 50 weeks per year = $57,500\n        Her annual salary is $57,500.', 109, 0.9822284262201816]
+Path: Node5Node10" color=green shape=box]
+	Node5 -> Node11 [label=Node5Node11]
+	Node11 [label="V:0, H:0, Flag:False
+[\"number of weeks she works in a year: $1150 per week * 50 weeks = $57,500\n        So, Jill's annual salary is $57,500.\", 58, 0.6323759654902231]
+Path: Node5Node11" color=green shape=box]
+	Node5 -> Node12 [label=Node5Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['5. number of weeks she works in a year: $1150 per week * 50 weeks = $57,500\n        6. Announce her annual salary: Jill earns $57,500 per year.', 67, 0.7117090604754684]
+Path: Node5Node12" color=green shape=box]
+	Node5 -> Node13 [label=Node5Node13]
+	Node13 [label="V:0, H:0, Flag:False
+[\"number of weeks she works in a year: $1150 per week * 50 weeks = $57,500 per year\n        So, Jill's annual salary is $57,500.\", 62, 0.058076583440254126]
+Path: Node5Node13" color=green shape=box]
+}

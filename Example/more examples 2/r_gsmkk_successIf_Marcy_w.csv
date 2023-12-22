@@ -1,0 +1,135 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years)",Node0,3,8,3,11,0.45740272814581173,58,False
+" 1. First, let's calculate Marcy's total pension amount for the first 20 years (before she gets the extra 5%). She works for 40 years and starts getting an annual pension of $50,000/year after 20 years, so her total pension for these 20 years is 20 * $50,000 = $1,0",Node1,5,10,5,15,0.05361480965057053,88,False
+" 1. First, let's determine how many years Marcy actually worked after becoming entitled for the extra pension percentage (20 + 10 = 30).
+        2. Now, we know Marcy has spent 30 out of 40 total years at the company, working for half of her complete tenure with the extra benefit.
+        3. To calculate what portion of her full entitlement she receives in her final 10-year pension, we'll divide 5",Node2,4,7,4,11,0.9962502365621302,106,False
+" 1. First, let's understand that Marcy gets an annual pension of $50,000/year for the entire 40-year duration.
+        2. After working for 20 years, she becomes eligible for a",Node6,1,6,1,7,0.9000836016932524,52,False
+" 1. First, let's understand that Marcy gets an annual pension of $50,000/year for the entire 40-year duration.
+        2. After working for 20 years, she becomes eligible for a 5% increase in her pension per year.
+        3. She quits after 30 years, which means she has worked for 10 more years (30 - 20 = 1",Node8,2,6,3,9,0.10294320998052398,43,False
+" 1. First, let's understand that Marcy gets an annual pension of $50,000/year for the entire 40-year duration.
+        2. After working for 20 years, she becomes eligible for a 5% increase in her pension per year.
+        3. She quits after 30 years of work.
+        4. To calculate her annual pension after 30 years, we need to consider the 10-year period (from year 21 to year",Node11,2,5,3,8,0.11151455450413306,58,False
+" 1. First, let's understand that Marcy gets an annual pension of $50,000/year for the entire 40-year duration.
+        2. After working for 20 years, she becomes eligible for a 5% increase in her pension amount every year (we need to apply this increase only after the 20th year).
+        We'll calculate the new annual pension amounts with the added bonus from year 21 onwards:
+          - From year 21 to 30, she gets a 5% increase each year.
+          - This means we need to find the total 5% increase (or cumulative) in her pension amount over these years and then add it to her base annual pension of $50,000/year from the first",Node12,1,3,2,5,0.8693506858869868,120,False
+" 1. First, let's understand that Marcy gets an annual pension of $50,000/year for the entire 40-year duration.
+        2. After working for 20 years, she becomes eligible for a 5% increment per year on her pension starting from that point.
+        3. She quits after 30 years of service.
+        4. To calculate her final annual pension amount, we need to consider the additional pension increase she has received over the last 10 years (from year 21 to 30).
+       
+        5. From year 21 to 30 (10 years), Marcy gets a 5% increment on the initial $50,000/year annually:",Node13,1,1,2,3,0.5703300508620397,111,False
+" 1. First, let's understand that Marcy gets an annual pension of $50,000/year for the entire 40-year duration.
+        2. After working for 20 years, she becomes eligible for a 5% increment per year on her pension starting from that point.
+        3. She quits after 30 years of service.
+        4. To calculate her final annual pension amount, we need to consider the additional pension increase she has received over the last 10 years (from year 21 to 30).
+       
+        5. From year 21 to 30 (10 years), Marcy gets a 5% increment on the initial $50,000/year annually: - First year (Year 21): $50,000 * 1.05 = $52,500
+         - Second year (Year 22): $52,500 * 1.05 = $55,250
+         - Third year (Year 23): $55,250 * 1.05 = $58,075
+         - Fourth year (Year",Node14,5,5,7,12,0.862595947979646,102,False
+" 1. First, let's understand that Marcy gets an annual pension of $50,000/year for the entire 40-year duration.
+        2. After working for 20 years, she becomes eligible for a 5% increment per year on her pension starting from that point.
+        3. She quits after 30 years of service.
+        4. To calculate her final annual pension amount, we need to consider the additional pension increase she has received over the last 10 years (from year 21 to 30).
+       
+        5. From year 21 to 30 (10 years), Marcy gets a 5% increment on the initial $50,000/year annually: 5a. First year (year 21): $50,000 * 1.05 = $52,500
+        5b. Second year (year 22): $52,500 * 1.05 = $55,375
+        ...
+        5c. Tenth year (year 30): $64,987.50 * 1.05 = $",Node15,4,4,6,10,0.05618259848003326,101,False
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years) 3. Calculate her regular annual pension ($50,000/year)
+        4. Find the additional amount from the 5% entitlement per year (5% of $50,000 = $2,500)
+        5. Multiply this extra amount by the number of years she received it (10 years * $2,500/year = $25,000)
+        6. Add the additional amount to her regular annual pension ($50,0",Node52,2,2,5,7,0.4176321555706669,113,False
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years) 3. Calculate her annual pension without any entitlement ($50,000/year)
+        4. Find the amount of extra pension Marcy gets due to the 5% entitlement (5% * $50,000 = $2,500 per year for 10 years)",Node53,2,3,5,8,0.5361313400766334,70,False
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years) 3. Find out her annual pension without any additional entitlements ($50,000/year)
+        4. Calculate the extra amount she gets due to the 5% entitlement for the last 10 years",Node55,2,3,5,8,0.1998557310120479,51,False
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years) 3. Find out her annual pension without any additional entitlements ($50,000/year)
+        4. Calculate the extra amount she gets due to the 5% entitlement for the last 10 years 5. Add this extra amount to her initial $50,000/year pension
+
+Step by step calculations:
+1. Total working years = 20 years
+2. Years with full 5% entitlement = 10 years
+3. Initial annual pension without additional entitlements = $50,000/year
+4. Extra amount due to the 5% entitlement for 10 years = 5% of $50,000 *",Node72,4,5,9,14,0.45918980029288337,109,False
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years) 3. Find out her annual pension without any additional entitlements ($50,000/year)
+        4. Calculate the extra amount she gets due to the 5% entitlement for the last 10 years 5. Add this extra amount to her regular annual pension to find her final annual pension after quitting.
+
+Step by step calculations:
+1. Total working years = 20 years (entitled to 5% of pension per year)
+2. Years with full entitlement = 10 years
+3. Regular annual pension = $50,000/year
+4. Extra amount due to 5% entitlement for the last 10 years = 5% *",Node73,4,5,9,14,0.14460443125389144,106,False
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years) 3. Find out her annual pension without any additional entitlements ($50,000/year)
+        4. Calculate the extra amount she gets due to the 5% entitlement for the last 10 years 5. Add this amount to her original annual pension
+
+Step 1: Total working years = 20 years with 5% entitlement for 10 years (from year 21-30)
+Step 2: Calculate the extra amount she gets due to the 5% entitlement for the last 10 years ($50,000 * 5% = $2",Node74,6,5,11,16,0.5239971588198038,88,False
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years) 3. Find out her annual pension without any additional entitlements ($50,000/year)
+        4. Calculate the extra amount she gets due to the 5% entitlement for the last 10 years 5. Add this extra amount to her base annual pension to find her final annual pension after quitting
+
+Step 1: Total working years = 20 years with 5% entitlement
+Step 2: Years with full 5% entitlement = 10 years
+Step 3: Annual pension without any additional entitlements = $50,000/year
+Step 4: Calculate extra amount due to the 5% entit",Node75,4,5,9,14,0.41074849218421106,101,False
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years) 3. Find out her annual pension without any additional entitlements ($50,000/year)
+        4. Calculate the extra amount she gets due to the 5% entitlement for the last 10 years 5. Add this extra amount to her base annual pension to find her final annual pension.
+
+Step 1 result: Marcy worked for 20 years with full 5% entitlement and 10 more years without it.
+Step 3 result: Her base annual pension is $50,000/year.
+Step 4 result: For the last 10 years (without any additional entitlements), she gets 5%",Node76,4,5,9,14,0.41624470448589,98,False
+" 1. First, let's determine how many years Marcy actually worked after becoming entitled for the extra pension percentage (20 + 10 = 30).
+        2. Now, we know Marcy has spent 30 out of 40 total years at the company, working for half of her complete tenure with the extra benefit.
+        3. To calculate what portion of her full entitlement she receives in her final 10-year pension, we'll divide 5 (the percentage increase) by 2 (since it's half the time). This gives us 5/2 = 2.5%.
+        4. Now, let's calculate the value of Marcy's annual pension after 30 years. She gets her base $50,000 per year plus an extra 2.5% of that amount for the last 10 years. So, we add 2.5% to the base pension: $",Node79,5,6,9,15,0.2459521653332314,102,False
+" 1. First, let's determine how many years Marcy actually worked after becoming entitled for the extra pension percentage (20 + 10 = 30).
+        2. Now, we know Marcy has spent 30 out of 40 total years at the company, working for half of her complete tenure with the extra benefit.
+        3. To calculate what portion of her full entitlement she receives in her final 10-year pension, we'll divide 5 (the extra percentage) by 2 (since it covers half of her total time). This gives us 5/2 = 2.5%.
+        4. Now that we know Marcy's annual pension of $50,000 is increased by 2",Node80,5,6,9,15,0.48751554771527084,58,False
+" 1. First, let's determine how many years Marcy actually worked after becoming entitled for the extra pension percentage (20 + 10 = 30).
+        2. Now, we know Marcy has spent 30 out of 40 total years at the company, working for half of her complete tenure with the extra benefit.
+        3. To calculate what portion of her full entitlement she receives in her final 10-year pension, we'll divide 5 (the percentage increase) by 2 (since it applies to only half of her total years). This gives us 5/2 = 2.5%.
+        4. Now, let's calculate the extra amount she gets per year due to this additional benefit: $50,000 * 2.5% = $1,25",Node81,5,6,9,15,0.06868120182800286,75,False
+" 1. First, let's determine how many years Marcy actually worked after becoming entitled for the extra pension percentage (20 + 10 = 30).
+        2. Now, we know Marcy has spent 30 out of 40 total years at the company, working for half of her complete tenure with the extra benefit.
+        3. To calculate what portion of her full entitlement she receives in her final 10-year pension, we'll divide 5 4. Her annual pension will be $50,000/year (basic) + $2,500/year (extra benefit for the last 10 years).
+        5. Multiply this amount by the number of years she gets it ($50,000 + $2,500 = $5",Node83,5,6,9,15,0.6569854734058486,73,False
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years) 3. Find out her annual pension without any additional entitlements ($50,000/year)
+        4. Calculate the extra amount she gets due to the 5% entitlement for the last 10 years 5. Add this extra amount to her initial $50,000/year pension
+
+Step by step calculations:
+1. Total working years = 20 years
+2. Years with full 5% entitlement = 10 years
+3. Initial annual pension without additional entitlements = $50,000/year
+4. Extra amount due to the 5% entitlement for 10 years = 5% of $50,000 * 10 years = 0.05 * $50,000 * 10 = $2,500 (annual)
+5. Calculate her final annual pension by adding the extra entitlement amount to her initial pension: $50,000/year + $2,500/year = $52,500/year
+
+Answer: After 30 years, Marcy",Node92,2,1,11,12,0.8678658471940169,95,False
+" 1. Calculate Marcy's total working years (40 - 20 = 20 years)
+        2. Determine the number of years she worked for the full 5% entitlement (30 - 20 = 10 years) 3. Find out her annual pension without any additional entitlements ($50,000/year)
+        4. Calculate the extra amount she gets due to the 5% entitlement for the last 10 years 5. Add this extra amount to her initial $50,000/year pension
+
+Step by step calculations:
+1. Total working years = 20 years
+2. Years with full 5% entitlement = 10 years
+3. Initial annual pension without additional entitlements = $50,000/year
+4. Extra amount due to the 5% entitlement for 10 years = 5% of $50,000 * 10 years = (5/100) * $50,000 * 10 = $2,500
+5. Add this extra amount to her initial pension: $50,000 + $2,500 = $52,500/year
+
+After working for 30 years and quitting, Marcy's annual pension will be $52,500/year.",Node94,2,0,11,11,0.3504017876201996,106,False

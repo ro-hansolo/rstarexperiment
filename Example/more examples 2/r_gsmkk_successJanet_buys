@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Janet buys a brooch for her daughter.  She pays $500 for the material to make it and then another $800 for the jeweler to construct it.  After that, she pays 10% of that to get it insured.  How much did she pay? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:6, Flag:False
+['1. Calculate the total cost of materials and construction. To do this, add the cost of materials ($500) and construction ($800).\n           Total_cost = Materials_cost + Construction_cost\n           Total_cost = $500 + $800\n           Total_cost = $1300\n        2. Calculate the cost of insurance. To do this, multiply the total cost by 10% (which is 0.1 as a decimal) to find out how', 113, 0.7221752957047989]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:7, Flag:False
+[\"1. Janet spends $500 on materials.\n        2. She spends another $800 for the jeweler's construction work.\n        3. Finally,\", 40, 0.40157830515679827]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:7, Flag:False
+[\"1. Janet spends $500 on materials.\n        2. She spends another $800 for the jeweler's work.\n        3. To insure the brooch\", 43, 0.2700214986964855]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:5, Flag:False
+['1. First, we need to calculate the total cost before insurance. Janet paid $500 for materials and another $800 for construction. So, the sum is $500 + $800 = $1300.\n        2. Next, she pays 10% of that amount for insurance. To find this, we need to calculate', 79, 0.279233782272693]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:7, Flag:False
+[\"1. First, let's calculate the total cost of purchasing materials and hiring a jeweler. Janet spent $500 on materials and $800 for the construction. So, we add them together: $5\", 47, 0.5482956724636417]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:6, Flag:False
+[\"1. Janet spends $500 on materials.\n        2. She spends another $800 for the jeweler's work.\n        3. Then, she pays an additional 10% of the total cost (materials + jeweler) to insure it.\", 65, 0.35841154360386274]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:5, Flag:False
+[\"1. Janet spends $500 on materials.\n        2. She spends another $800 for the jeweler's work.\n        3. Adding the material cost and the jeweler's fee, we get a total of $500 + $800 = $1300.\", 72, 0.24550714370163207]
+Path: StartNode6" color=black shape=box]
+	Node3 -> Node7 [label=Node3Node7]
+	Node7 [label="V:1, H:1, Flag:False
+['10% of $1300. To do this, multiply by 0.1 (since 10% is equal to 0.1). So, 0.1 * $1300 = $130.\n        3. Finally, add the cost before insurance and the insurance', 67, 0.31224097842651377]
+Path: Node3Node7" color=black shape=box]
+	Node3 -> Node8 [label=Node3Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['10% of $1300: (10/100) * $1300 = 0.1 * $1300 = $130.\n        3. Finally, add the cost before insurance and the insurance fee together to find the total amount Janet paid. So, $1300 + $130 = $1430.', 117, 0.034860797065264904]
+Path: Node3Node8" color=green shape=box]
+	Node3 -> Node9 [label=Node3Node9]
+	Node9 [label="V:1, H:1, Flag:False
+[\"10% of $1300, which is (10/100) * $1300 = $130.\n        3. Finally, we add the cost of insurance to the total before insurance to get the final amount Janet paid. So, it's $1300 + $130 = $\", 75, 0.618222319967196]
+Path: Node3Node9" color=black shape=box]
+	Node3 -> Node10 [label=Node3Node10]
+	Node10 [label="V:1, H:1, Flag:False
+['10% of $1300. To do this, multiply by 0.1 (which is 10%). So, 10% of $1300 = $1300 * 0.1 = $130.\n        3. Finally, we add the insurance cost to the total cost before insurance to get the final amount Janet paid. So, $1300 (before insurance) + $1', 98, 0.7847995280015495]
+Path: Node3Node10" color=black shape=box]
+	Node3 -> Node11 [label=Node3Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['10% of $1300, which is (10/100) * $1300 = $130.\n        3. Now, we can add the cost of insurance to the total cost before insurance. So, Janet paid $1300 + $130 = $1430 in total.', 100, 0.46318216498841136]
+Path: Node3Node11" color=green shape=box]
+	Node3 -> Node12 [label=Node3Node12]
+	Node12 [label="V:10, H:10, Flag:True
+['10% of $1300 as a decimal: (10/100) * $1300 = $130.\n        Then, multiply it by the total cost before insurance: $130 * $1300 = $16400.\n        3. Finally, to find the total amount Janet paid, we add up all the costs: materials, construction, and insurance - $500 + $800 + $16400', 110, 0.8166927458949651]
+Path: Node3Node12" color=red shape=box]
+	Node3 -> Node13 [label=Node3Node13]
+	Node13 [label="V:5, H:5, Flag:False
+['10% * $1300 = 0.10 * $1300 = $130 (rounded down since the exact fraction cannot be represented with whole dollars)\n        3. Finally, add the cost of insurance to the total before insurance. The overall cost is $1300 (before insurance) + $130 (for insurance) = $1430.', 89, 0.8003355146637657]
+Path: Node3Node13" color=black shape=box]
+}

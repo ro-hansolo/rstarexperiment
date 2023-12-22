@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Jan has three times the number of pets as Marcia. Marcia has two more pets than Cindy. If Cindy has four pets, how many total pets do the three have? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:10, Flag:False
+[\"1. First, let's find out how many pets Marcia has. Since Marcia has two more pets than Cindy who has four pets, we can calculate this by adding 2 to Cindy's number of pets: 4 (\", 53, 0.023395707611018945]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:10, Flag:False
+[\"1. First, let's find out how many pets Marcia has. Since Marcia has two more pets than Cindy who has four pets, we can calculate this by adding 2 to Cindy's number of pets: 4 (Cindy's pets) + 2 =\", 65, 0.0860700708260076]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:0, H:7, Flag:False
+['1. First, we need to find out how many pets Marcia has. Since Marcia has two more pets than Cindy who has four pets, Marcia has 4 + 2 = 6 pets.\n        2. Now that we know Marcia has 6 pets, we can', 62, 0.16284265742433346]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:0, H:7, Flag:False
+[\"1. We know that Jan's number of pets is equal to 3 times the number of Marcia's pets. We'll first find out Marcia's number of pets and then Jan's.\n        a. Since Marcia has two more pets than Cindy, who has 4 pets, we calculate: Marcia's pets = Cindy's pets + 2 (pets) = 4 + 2 = 6\", 98, 0.83612259725605]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:0, H:7, Flag:False
+['1. We know that Jan has three times the number of pets as Marcia. So if Marcia has X pets, Jan will have 3X pets.\n        2. Marcia has two more pets than Cindy, who has four pets. This means Marcia has 4 + 2 = 6 pets.', 68, 0.22612176622639413]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:0, H:7, Flag:False
+[\"1. First, let's find out how many pets Marcia has. Since she has two more pets than Cindy who has four pets, we can calculate this by adding 2 to Cindy's number of pets (4 + 2 = 6). So, Marcia has 6 pets\", 65, 0.2873906524042359]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:10, Flag:False
+[\"1. We know that Jan has three times the number of pets as Marcia.\n           To find the number of pets Jan has, we need to multiply Marcia's number of pets by 3.\n            Let's call Marcia's pet count 'M'.\n            Jan's pet count = M * 3.\n        2. Now, we know that Marcia has two more pets than Cindy.\n           To find out how many pets Marcia has, we need to\", 107, 0.7280736087758791]
+Path: StartNode6" color=black shape=box]
+	Node2 -> Node7 [label=Node2Node7]
+	Node7 [label="V:0, H:0, Flag:False
+[\"3. calculate the number of pets Jan has by multiplying Marcia's number by three: 6 * 3 = 18 pets for Jan.\n        Combining all the pets, there are 4 + 6 + 18 = 28 total pets among Jan, Marcia, and Cindy.\", 94, 0.8905108073669076]
+Path: Node2Node7" color=green shape=box]
+	Node2 -> Node8 [label=Node2Node8]
+	Node8 [label="V:0, H:2, Flag:False
+['3. calculate the number of pets Jan has. Since Jan has three times the number of pets as Marcia, and Marcia has 6 pets, Jan will have 6 * 3 = 18 pets.\n        4. Finally, to find out the total number of pets for all three people (Jan, Marcia, and C', 71, 0.8946808667934549]
+Path: Node2Node8" color=black shape=box]
+	Node2 -> Node9 [label=Node2Node9]
+	Node9 [label="V:0, H:0, Flag:False
+[\"3. Calculate the number of pets Jan has. Jan has three times the number of pets as Marcia, so Jan's pets = 3 * 6 = 18 pets.\n        4. Finally, to find the total number of pets for all three people (Jan, Marcia, and Cindy), we add up their individual pet counts: Total pets = Jan's pets + Marcia's pets + Cindy's pets = 18 + 6 + 4 = 28 pets\", 111, 0.4615052029432919]
+Path: Node2Node9" color=green shape=box]
+	Node2 -> Node10 [label=Node2Node10]
+	Node10 [label="V:0, H:2, Flag:False
+[\"3. determine the number of pets Jan has by multiplying Marcia's pet count (6) by three since Jan has three times more pets than Marcia. So, Jan has 6 * 3 = 18 pets.\n        4. Finally, we add up\", 58, 0.6332582998487317]
+Path: Node2Node10" color=black shape=box]
+	Node2 -> Node11 [label=Node2Node11]
+	Node11 [label="V:0, H:2, Flag:False
+[\"3. Calculate the number of pets Jan has by multiplying Marcia's number of pets (6) by 3 since Jan has three times as many pets as Marcia. So, Jan has 6 * 3 = 18 pets.\n        4. Finally, to find out the total number of pets for all three people (Jan, Marcia, and Cindy), we add their respective pet counts: \n           Cindy's\", 97, 0.36081273431297656]
+Path: Node2Node11" color=black shape=box]
+	Node2 -> Node12 [label=Node2Node12]
+	Node12 [label="V:0, H:3, Flag:False
+[\"3. determine the number of pets Jan has by multiplying Marcia's pet count by three. So, Jan has 6 * 3 = 18 pets.\n        4. To\", 41, 0.6836763725247762]
+Path: Node2Node12" color=black shape=box]
+	Node2 -> Node13 [label=Node2Node13]
+	Node13 [label="V:0, H:2, Flag:False
+[\"3. calculate the number of pets Jan has by multiplying Marcia's pet count (6) by three since Jan has three times as many pets as Marcia. So, Jan has 6 * 3 = 18 pets.\n        4. Finally\", 55, 0.36109367418548277]
+Path: Node2Node13" color=black shape=box]
+}

@@ -1,0 +1,27 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Let's analyze the given information.
+        - John covers 60 miles in a week.
+        - He runs 3 times per week, with different running durations each day (different hours).
+          - First day, he runs for 3 hours.
+          - Other two days, he runs half of what he did on the first day, which is 3/2 hours.
+
+        2. We need to find how fast he runs per mile",Node1,2,3,2,5,0.983935881116908,101,False
+" 1. First, let's find out how many miles John runs per day on average. To do this, we need to divide his total weekly mileage by the number of days he runs in a week. So, 60 miles / 3 days = 20 miles per day (on average).",Node2,4,7,4,11,0.16461138354796756,64,False
+" 1. First, let's find out how many hours John spends running in total per week.
+           Total hours = Hours on first day + (Hours on second day / 2) + (Hours on third day / 2)
+           Total hours = 3 + (3 / 2) + (3 / 2)
+           Total hours = 3 + 1.5 + 1.5
+           Total hours = 6
+        
+        2. Now, we need",Node4,1,2,1,3,0.1912885153318824,108,False
+" 1. First, let's find out how many hours John spends running in total per week.
+           Total hours = Hours on first day + (Hours on second day / 2) + (Hours on third day / 2)
+           Total hours = 3 + (3 / 2) + (3 / 2)
+           Total hours = 3 + 1.5 + 1.5
+           Total hours = 6
+        
+        2. Now, we need 60 miles per week / Total hours = Miles per hour
+        60 miles / 6 hours = Miles per hour
+        60 miles / 6 hours = 10 miles per hour
+
+        John runs at a speed of approximately",Node7,0,0,1,1,0.4450007279279591,52,False

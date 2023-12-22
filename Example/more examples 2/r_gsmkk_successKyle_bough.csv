@@ -1,0 +1,28 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We know that Kyle paid $19.50 after the discount.
+        2. The discount was 25%, so we need to find 25% of $19.50 to calculate how much the discount was.
+        3. To find 25% of any number, multiply it by",Node0,4,7,4,11,0.5982995577688922,71,False
+" 1. First, we know the current price with a 25% discount: $19.50 = x - 0.25x (where x represents the original price)
+        So, 1.75x = $19.50
+
+        2. To find the value of",Node2,5,7,5,12,0.8756065868477934,67,False
+" 1. We know that Kyle bought the book at a 25% discounted price of $19.50.
+        2. To find the original price, we need to reverse the discount and add it back to the current price.
+        3.",Node3,4,10,4,14,0.1314400863747629,55,False
+" 1. We know that Kyle paid $19.50 after a 25% discount.
+        2. To find the original price, we need to undo the discount.
+        3. Discounts are usually applied as a percentage of the original price. In this case, it's 25%.
+        4. We can use the formula: Original Price = (Discounted Price * (1 + Discount Percentage)) / (1 - Discount Percentage).
+        5. Plug in the given values",Node4,5,6,5,11,0.4429570730588551,116,False
+" 1. We know that Kyle bought the book at a 25% discount, so we need to find out how much it would have cost without the discount. To do this, we can divide the current price by 1 minus the discount percentage.
+        Current price = $19.50
+        Discount percentage = 25%
+        
+        2. Convert the discount percentage to a decimal: 25/100 = 0.25
+        
+        3. Calculate the discount",Node5,4,7,4,11,0.3343192719160978,110,False
+" 1. We know that Kyle paid $19.50 after the discount.
+        2. The discount was 25%, so we need to find 25% of $19.50 to calculate how much the discount was.
+        3. To find 25% of any number, multiply it by 4. So, 25% of $19.50 is 0.25 * $19.50 = $4.875. This amount represents the difference between the original price and the discounted price.
+        5. Now we know that the original price was equal to the discounted price plus the discount amount, which is $19.50 + $4.875 = $24.375.
+        The original price of the book was $24.375.",Node8,0,0,4,4,0.6230324080047793,120,False

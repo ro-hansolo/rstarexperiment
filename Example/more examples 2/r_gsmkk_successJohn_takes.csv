@@ -1,0 +1,15 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, we need to find out the total time each dog takes for walking and taking care of its needs daily. To do that, multiply the time taken by each dog (0.5 hours) with the number of dogs (10). So, 0.5 * 10 = 5 hours per day.
+        2. Now we know that he spends a total of 5 hours every day taking care of the",Node0,3,6,3,9,0.6423319984849519,92,False
+" 1. First, let's find the total time spent on walking and taking care of their business for all dogs daily. John has 10 dogs, and each dog needs 0.5 hours. So, we multiply the number of dogs by the time required per dog: 10 * 0.5 = 5 hours a day.
+        2. Now, let's calculate how many days are in a week. There are 7 days in one week.
+        3. To find out",Node1,2,3,2,5,0.3872268850836126,107,False
+" 1. First, let's calculate the total time spent on each dog per day. We have 10 dogs and they need 0.5 hours each for walking and taking care of their business. So, 10 dogs * 0.5 hours/dog = 5 hours/day.
+        2. Now, we want to find out the total time spent on all dogs per week. There are 7 days in a week. So, 5 hours/day * 7 days/week = 35",Node2,1,1,1,2,0.21407062711318947,110,False
+" 1. First, we need to find the total time spent on each dog's daily routine. We know that each dog needs 0.5 hours per day.
+        2. Since John has 10 dogs, multiply the time spent on one dog by the number of dogs (0.",Node3,2,8,2,10,0.4163626235465092,62,False
+" 1. First, we need to find out how many total hours are spent on walking and taking care of the dogs' needs daily. To do this, multiply the number of dogs (10) by the time each dog takes (0.5 hours). This gives us 10 * 0.",Node4,3,9,3,12,0.2272709695870483,63,False
+" 1. First, we need to find the total time spent on walking and taking care of business for all dogs daily. To do this, multiply the number of dogs (10) by the time each dog takes (0.5 hours). So, 10 * 0.5 = 5 hours per day.",Node5,3,9,3,12,0.1361537997547465,67,False
+" 1. First, we need to find out the total time spent on walking and taking care of the dogs' business daily. To do this, multiply the number of dogs (10) by the time each dog takes (0",Node6,5,9,5,14,0.468730878570635,47,False
+" 1. First, let's calculate the total time spent on each dog per day. We have 10 dogs and they need 0.5 hours each for walking and taking care of their business. So, 10 dogs * 0.5 hours/dog = 5 hours/day.
+        2. Now, we want to find out the total time spent on all dogs per week. There are 7 days in a week. So, 5 hours/day * 7 days/week = 35 3. Finally, we have the result which is the number of hours John spends taking care of his dogs every week: 35 hours.",Node7,0,0,1,1,0.46323787890127643,67,False

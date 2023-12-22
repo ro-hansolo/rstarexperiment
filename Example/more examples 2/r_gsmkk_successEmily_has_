@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Emily has 4 kids named Amy, Jackson, Corey, and James. Amy is 5 years older than Jackson and 2 years younger than Corey. If James is 10 and is 1 year younger than Corey, how old is Jackson? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:5, Flag:False
+[\"1. First, let's find out the age of Corey based on James' age. Since James is 1 year younger than Corey, we can deduce that Corey is 1 year older than James. So, Corey is 10 + 1 = 11 years old.\n        2. Now, let's find out the age of Amy using her relationship to Jackson and Corey. Amy is 5 years older than Jackson and 2 years younger than Corey. We know that\", 108, 0.6566473166763672]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:5, Flag:False
+[\"1. Firstly, let's find out the age of Corey. Since James is 1 year younger than Corey and he is 10 years old, Corey must be 11 years old (James + 1 = 11).\n        2. Next, we know that Amy is 5 years older than Jackson. We also have the age difference between Amy and Jackson's siblings: Amy - 2 (Age gap with\", 96, 0.8452507928445107]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:7, H:9, Flag:False
+[\"1. Let's first determine the relationship between the ages of Emily's kids.\n           - Amy (5 years older than Jackson)\n           - Jackson\n           - Corey (2 years younger than Amy, who is 5 years older than Jackson)\n           - James (1 year younger than Corey)\", 67, 0.6336942100754589]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:7, H:9, Flag:False
+['1. We know that Emily has 4 kids named Amy, Jackson, Corey, and James.\n        2. Amy is 5 years older than Jackson and 2 years younger than Corey.\n        3. James is 10 years old and is 1 year younger than Corey.\n        4. We need to find the age of Jackson.\n\nNow let', 80, 0.2801403475193087]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:5, H:5, Flag:False
+[\"1. We know that James is 10 years old and 1 year younger than Corey. Since Corey is 1 year older than James, we can add 1 to James' age to find Corey's age: 10 + 1 = 11.\n        2. Now that we have the age of Corey, we know that Amy is 2 years younger than Corey. So, we subtract 2 from Corey's age to find Amy's age: 11 - 2 =\", 114, 0.4136362816695539]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:5, H:5, Flag:False
+[\"1. We know that Jackson's age can be found from the relationship with other children's ages. First, let's find out Corey's age. Since James is 1 year younger than Corey and James\", 47, 0.6283440030262643]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:6, H:6, Flag:True
+[\"1. We know that Emily's kids are Amy, Jackson, Corey, and James in age order.\n        2. Amy is 5 years older than Jackson and 2 years younger than Corey.\n        3. Corey is 1 year older than James.\n        4. James is 10 years old and 1 year younger than Corey.\n        5. We need to find the age of Jackson.\n\nNow\", 94, 0.2162315451233241]
+Path: StartNode6" color=red shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:5, H:2, Flag:True
+[\"Corey is 11 years old, so Amy should be 11 + 5 = 16 years old.\n        3. Finally, we need to find the age of Jackson using his relationship with Amy. Jackson is 5 years younger than Amy, who is 16 years old. So, Jackson's age can be calculated as 16 - 5 = 11 years old.\n        Jackson is 11 years old.\", 100, 0.40813922348917]
+Path: Node0Node7" color=red shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:2, H:4, Flag:False
+['- Jackson is younger than James by 1 year (James = 10, Jackson < 10)\n         - Jackson is 5 years younger than Amy (Amy = Jackson + 5)', 45, 0.3894015847701999]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:8, H:9, Flag:True
+[\"- Jackson is younger than Amy by 5 years (since she is 5 years older)\n         - Jackson is also younger than Corey by 1 year (since he is 1 year younger than Corey)\n        3. Let's find out the age of Jackson using his relationship to Amy and Corey. Since Jackson is 2 years younger than Corey, we can deduce that Jackson is 11 - 2 = 9 years old.\", 97, 0.17117873139511575]
+Path: Node0Node9" color=red shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:10, H:8, Flag:True
+[\"3. Jackson is 5 years younger than Amy (since Amy is 5 years older than Jackson). So, Jackson is 10 - 5 = 5 years old.\n        4. Finally, we want to find out the age of Jackson. We know Jackson's relationship with other siblings and their ages. We can deduce his age using the information given in steps\", 79, 0.4977050182826659]
+Path: Node0Node10" color=red shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:5, H:6, Flag:False
+[\"2.1. Jackson is 5 years younger than Amy, so Jackson's age = Amy's age - 5.\n        2.2. Amy's age - 5 = Amy's age - Corey's age + 2, since Amy is 2 years younger than Corey.\n          So, Amy's age - Corey'\", 78, 0.9776468433483738]
+Path: Node0Node11" color=black shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:0, H:0, Flag:False
+[\"Corey is 11 years old. So, Amy's age can be calculated as follows: Amy's age = Corey's age - 2 (Amy's age gap with Corey) + Jackson's age gap with Amy (5 years). Amy's age = 11 - 2 + 5 = 10\", 75, 0.608493119594961]
+Path: Node0Node12" color=green shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:10, H:10, Flag:True
+['- Corey is 11 years old and Amy is 2 years younger than Corey, which means Amy is 11 - 2 = 9 years old.\n        Also, we know that Amy is 5 years older than Jackson, so if Amy is 9, then Jackson must be 9 - 5 = 4 years old.', 75, 0.6228132190637847]
+Path: Node0Node13" color=red shape=box]
+}

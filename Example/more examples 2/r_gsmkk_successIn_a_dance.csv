@@ -1,0 +1,108 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's find out how many students are left after choosing contemporary dance. To do this, we need to calculate 20% of 20 students. So, (20 * 0.2) = 4 students enrolled in contemporary dance.
+        2. Now,",Node1,2,7,2,9,0.20692021372145164,64,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since there are 20 students in total and 20% enrolled in contemporary dance, we can calculate this as follows: 
+           (20 * 20%) = 4 students
+        2. Now, let's find out how many students remain after considering both the",Node2,2,7,2,9,0.19931202712614904,82,False
+" 1. First, find out how many students were not enrolled in contemporary dance. Since there are 20 students in total and 20% enrolled in contemporary dance, we can calculate this by subtracting that percentage from 100%. So, 100% - 20%",Node3,6,9,6,15,0.49494720839184014,65,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is",Node4,1,5,1,6,0.33152138052197055,109,False
+" 1. Let's first find out how many students enrolled for different categories.
+           Contemporary: 20% of 20 = 4
+           Jazz: 25% of remaining (20 - 4) = 25% of",Node5,2,7,2,9,0.8780614896944028,56,False
+" 1. First, let's find out how many students are left after choosing contemporary dance. Since there were 20% of them who chose it, we can calculate this by multiplying the total number of students (20) by 20%.
+           20 * 0.2",Node6,2,7,2,9,0.07843222799319383,62,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students remaining who haven't enrolled in any type of dance yet. These are the ones who will enroll in hip-hop dance.
+        5. Finally, we need to calculate the percentage of these 12",Node7,0,3,1,4,0.5880968200509088,81,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students left who haven't enrolled in any type of dance yet.
+        5. Finally, let's find out how many students enrolled in hip",Node8,0,3,1,4,0.10269934861128438,68,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students left who haven't enrolled in any type of dance yet.
+        5. Finally, let's find out how many students enrolled in hip-hop dance. This is the remaining number of students (12) after considering contemporary and jazz dancers.
+        So, 100% of the entire students",Node9,0,2,1,3,0.07511119062422122,104,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students (16 * 0.25 = 4)
+        4. Finally, we need to subtract the number of students who enrolled in contemporary and",Node10,0,3,1,4,0.5564245021044091,44,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students, so (16 * 0.25 = 4) students joined jazz dance.
+        4. Now, we have 12 students left who haven't enrolled in any type of dance yet. These are the",Node12,0,3,1,4,0.30375264437501126,59,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students left who haven't enrolled in any type of dance yet.
+        5. Finally, let's find out how many students enrolled in hip-hop dance. This is the remaining number of students (12) after considering contemporary and jazz dancers.
+        So, 100% of the entire students 6. To calculate the percentage of these students who enrolled in hip-hop dance, we need to divide the number of students enrolled in hip-hop by the total number of students (20) and multiply it by 100%. (12 / 20 * 100 = 60%)
+        Therefore, 60% of the entire students enrolled in hip-hop dance.",Node14,3,1,4,5,0.17977779983676034,102,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students left who haven't enrolled in any type of dance yet.
+        5. Finally, let's find out how many students enrolled in hip-hop dance. This is the remaining number of students (12) after considering contemporary and jazz dancers.
+        So, 100% of the entire students 6. To calculate the percentage of these students who enrolled in hip-hop dance, we need to divide the number of hip-hop dancers by the total number of students and multiply it by 100. (12 / 20 * 100 = 60%)
+        Therefore, 60% of",Node20,3,1,4,5,0.351587200927751,72,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students remaining who haven't enrolled in any type of dance yet. These are the ones who will enroll in hip-hop dance.
+        5. Finally, we need to calculate the percentage of these 12 6. To do this, we divide the number of students enrolled in hip-hop (12) by the total number of students (20). (12 / 20 = 0.6)
+        7. Multiply the result by 100 to get the percentage. (0.6 * 100 = 60%)
+        So, 60% of the entire students",Node21,1,1,2,3,0.09923457009635284,90,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students remaining who haven't enrolled in any type of dance yet. These are the ones who will enroll in hip-hop dance.
+        5. Finally, we need to calculate the percentage of these 12 6. students who are part of the entire class (20 students). To do this, we can divide the number of students in the hip-hop group (12) by the total number of students (20). (12/20 = 0.6)
+        7. Multiply the result by 100 to convert it into a percentage. (0.6 * 100 = 60%)
+        So, 60% of the entire students enrolled in hip-hop dance.",Node22,1,1,2,3,0.8473346313375949,113,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students remaining who haven't enrolled in any type of dance yet. These are the ones who will enroll in hip-hop dance.
+        5. Finally, we need to calculate the percentage of these 12 6. To do this, we can divide the number of students in hip-hop (12) by the total number of students (20). So, (12 / 20 = 0.6)
+        7. Multiply this result by 100 to get it as a percentage: 0.6 * 100 = 60%
+
+Therefore,",Node23,1,1,2,3,0.9953042634804113,86,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students remaining who haven't enrolled in any type of dance yet. These are the ones who will enroll in hip-hop dance.
+        5. Finally, we need to calculate the percentage of these 12 6. To do this, divide the number of students in hip-hop by the total number of students and multiply by 100%. (12 / 20 * 100% = 60%)
+        So, 60% of the entire student population enrolled in hip-hop dance.",Node24,1,1,2,3,0.7721766698787923,120,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students remaining who haven't enrolled in any type of dance yet. These are the ones who will enroll in hip-hop dance.
+        5. Finally, we need to calculate the percentage of these 12 6. To find the percentage, divide the number by the total number of students (20) and multiply by 100%. (12/20 * 100 = 60%)
+
+        So, 60% of the entire students enrolled in hip-hop dance.",Node25,1,1,2,3,0.8516985987521459,76,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students remaining who haven't enrolled in any type of dance yet. These are the ones who will enroll in hip-hop dance.
+        5. Finally, we need to calculate the percentage of these 12 6. To do this, we divide the number of students enrolling in hip-hop (12) by the total number of students (20). (12/20 = 0.6)
+        7. Multiply the result by 100 to get a percentage. (0.6 * 100 = 60%)
+        So, 60% of the entire students enrolled in hip-hop",Node26,1,1,2,3,0.23200200862543185,95,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students remaining who haven't enrolled in any type of dance yet. These are the ones who will enroll in hip-hop dance.
+        5. Finally, we need to calculate the percentage of these 12 6. To find the percentage, divide the number of students (12) by the total number of students (20) and multiply by 100. (12 / 20 * 100 = 60%)
+        So, 60% of the entire students enrolled in hip-hop dance.",Node27,1,1,2,3,0.22594913462262745,80,False
+" 1. First, let's find out how many students are left after considering the contemporary dance group. Since 20% of the class enrolled in contemporary dance, we need to calculate 20% of 20 students. (20 * 0.2 = 4)
+        2. Now, there are 16 students remaining who haven't enrolled in any type of dance yet.
+        3. Next, let's find out how many students enrolled in jazz dance. This is 25% of the remaining 16 students. (16 * 0.25 = 4)
+        4. Now, there are 12 students remaining who haven't enrolled in any type of dance yet. These are the ones who will enroll in hip-hop dance.
+        5. Finally, we need to calculate the percentage of these 12 6. To do this, we divide the number of students enrolled in hip-hop (12) by the total number of students (20). (12 / 20 = 0.6)
+        7. Multiply the result by 100 to get the percentage. (0.6 * 100 = 60%)
+        So, 60% of the entire students enrolled in hip-hop dance.",Node28,0,0,2,2,0.3872272763587177,73,False

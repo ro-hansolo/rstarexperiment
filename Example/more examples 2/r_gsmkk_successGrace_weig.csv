@@ -1,0 +1,47 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We know Grace's weight is 125 pounds, and we need to find Alex's weight.
+        2. We have been given a relation for Alex's weight: It is 2 pounds less than 4 times what Grace weighs. So, (4 * Grace's weight) - 2 = Alex's weight.
+        3. Let's substitute the known value of Grace's weight to find Alex's weight: (4 * 125) - 2",Node0,1,5,1,6,0.9619031611504896,109,False
+" 1. First, let's find out how much Alex weighs. We know that he weighs 2 pounds less than 4 times what Grace weighs. So, we can write this as: Alex's weight = (4 * Grace's weight)",Node2,3,9,3,12,0.15941929481684602,55,False
+" 1. First, let's find out how much Alex weighs. We know that he weighs 2 pounds less than 4 times what Grace weighs. So, we can write this",Node3,3,10,3,13,0.05603195805807759,40,False
+" 1. First, let's find out how much Alex weighs. We know that Alex weighs 2 pounds less than 4 times what Grace weighs. So, we can write this as: Alex's weight = (4 * Grace's weight) - 2.
+        2. Plug in the value of Grace's weight: Alex's weight = (4 * 125) - 2.
+        3. Calculate the result for Alex's weight: Alex's weight = 500 - 2",Node4,1,5,1,6,0.04789721964939897,117,False
+" 1. First, let's find out how much Alex weighs. We know that he weighs 2 pounds less than 4 times what Grace weighs. So, we need to calculate 4",Node6,3,10,3,13,0.3140199071846539,42,False
+" 1. We know Grace's weight is 125 pounds, and we need to find Alex's weight.
+        2. We have been given a relation for Alex's weight: It is 2 pounds less than 4 times what Grace weighs. So, (4 * Grace's weight) - 2 = Alex's weight.
+        3. Let's substitute the known value of Grace's weight to find Alex's weight: (4 * 125) - 2 4. Now calculate the result: (4 * 125) - 2 = 500 - 2 = 498 pounds
+        5. Finally, we need to find their combined weights. To do this, simply add Grace's weight and Alex",Node7,1,1,2,3,0.15617592530194424,58,False
+" 1. We know Grace's weight is 125 pounds, and we need to find Alex's weight.
+        2. We have been given a relation for Alex's weight: It is 2 pounds less than 4 times what Grace weighs. So, (4 * Grace's weight) - 2 = Alex's weight.
+        3. Let's substitute the known value of Grace's weight to find Alex's weight: (4 * 125) - 2 4. Calculate the result: (4 * 125) - 2 = 500 - 2 = 498 pounds
+        5. Now, we have both their weights: Grace weighs 125 pounds and Alex weighs 498 pounds.
+        6. To",Node8,1,1,2,3,0.1864749155454145,67,False
+" 1. We know Grace's weight is 125 pounds, and we need to find Alex's weight.
+        2. We have been given a relation for Alex's weight: It is 2 pounds less than 4 times what Grace weighs. So, (4 * Grace's weight) - 2 = Alex's weight.
+        3. Let's substitute the known value of Grace's weight to find Alex's weight: (4 * 125) - 2 4. Now let's calculate this expression: (500 - 2) = 498 pounds
+        5. So, Alex weighs 498 pounds.
+        6. To find their combined weights, we simply add Grace's weight and Alex's weight together: 125 + 498 =",Node9,1,1,2,3,0.3195964619734679,73,False
+" 1. We know Grace's weight is 125 pounds, and we need to find Alex's weight.
+        2. We have been given a relation for Alex's weight: It is 2 pounds less than 4 times what Grace weighs. So, (4 * Grace's weight) - 2 = Alex's weight.
+        3. Let's substitute the known value of Grace's weight to find Alex's weight: (4 * 125) - 2 4. Calculate the result: (4 * 125) - 2 = 500 - 2 = 498 pounds
+        5. Now, we have both their weights: Grace weighs 125 pounds and Alex weighs 498 pounds.
+        6. To find their combined weight, simply add their individual weights together: 125 + 498 =",Node10,1,1,2,3,0.2555698938030654,89,False
+" 1. We know Grace's weight is 125 pounds, and we need to find Alex's weight.
+        2. We have been given a relation for Alex's weight: It is 2 pounds less than 4 times what Grace weighs. So, (4 * Grace's weight) - 2 = Alex's weight.
+        3. Let's substitute the known value of Grace's weight to find Alex's weight: (4 * 125) - 2 4. Calculate the result: (4 * 125) - 2 = 500 - 2 = 498 pounds
+        5. Now, we know both Grace and Alex's weights individually, so to find their combined weight, simply add them together: Grace's weight + Alex's",Node11,1,1,2,3,0.422009033001311,69,False
+" 1. We know Grace's weight is 125 pounds, and we need to find Alex's weight.
+        2. We have been given a relation for Alex's weight: It is 2 pounds less than 4 times what Grace weighs. So, (4 * Grace's weight) - 2 = Alex's weight.
+        3. Let's substitute the known value of Grace's weight to find Alex's weight: (4 * 125) - 2 4. Now calculate the result: 4 * 125 is 500, so 500 - 2 = 498 pounds. Therefore, Alex weighs 498 pounds.
+        5. Finally, we need to find their combined weight. To do this, simply add Grace's and Alex's weights together: 125 (Grace",Node12,1,1,2,3,0.4775521167932294,83,False
+" 1. We know Grace's weight is 125 pounds, and we need to find Alex's weight.
+        2. We have been given a relation for Alex's weight: It is 2 pounds less than 4 times what Grace weighs. So, (4 * Grace's weight) - 2 = Alex's weight.
+        3. Let's substitute the known value of Grace's weight to find Alex's weight: (4 * 125) - 2 4. Calculate the result: 500 - 2 = 498 pounds
+        5. Now, we know both individuals' weights. To find their combined total weight, simply add them together: Grace's weight + Alex's weight
+        6. Add Grace's weight (125 pounds) and Alex's weight (498 pounds): 125 + 49",Node13,1,1,2,3,0.5100666746559688,88,False
+" 1. We know Grace's weight is 125 pounds, and we need to find Alex's weight.
+        2. We have been given a relation for Alex's weight: It is 2 pounds less than 4 times what Grace weighs. So, (4 * Grace's weight) - 2 = Alex's weight.
+        3. Let's substitute the known value of Grace's weight to find Alex's weight: (4 * 125) - 2 4. Now calculate the result: (4 * 125) - 2 = 500 - 2 = 498 pounds
+        5. Finally, we need to find their combined weights. To do this, simply add Grace's weight and Alex 6. Combined weight = Grace's weight + Alex's weight = 125 + 498 = 623 pounds
+        So, the combined weight of Grace and Alex is 623 pounds.",Node14,0,0,2,2,0.08335051468902455,104,False

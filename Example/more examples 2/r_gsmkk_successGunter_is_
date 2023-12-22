@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Gunter is trying to count the jelly beans in a jar. He asks his friends how many they think are in the jar. One says 80. Another says 20 more than half the first one. A third says 25% more than the first one. What is their average guess? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:2, Flag:False
+[\"1. First, let's find out the values of the three answers given by Gunter's friends:\n           a) Friend 1 says 80 jelly beans.\n           b) Friend 2 says 20 more than half the first one (80). To find this value, we need to calculate half of 80 and then add 20 more: (80 / 2) + 20 = 40 + 20 =\", 101, 0.5631564460292453]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:4, H:2, Flag:False
+[\"1. First, let's find out what each friend's guess means in terms of jelly beans.\n        2. Friend 1 thinks there are 80 jelly beans.\n        3. Friend 2 says 20 more than half the first one, which is (80 / 2) + 20 = 40 + 20 = 60 jelly beans.\n        4. Friend 3 says 25% more than the first one, which is 8\", 109, 0.02575718448042541]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:6, Flag:True
+[\"1. Gunter's friends gave three different estimates: 80, (20 more than half of 80) = 60 + 20 = 80, and (25% more than the\", 48, 0.9114017929727225]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:10, H:10, Flag:True
+[\"1. First, let's identify the three different ways of counting jelly beans.\n           a. One friend counts 80.\n           b. Another friend counts 20 more than half of the first one (which is 40). So, they count 80 + 20 = 100.\n           c. The third friend counts 25% more than the first one, which means they add 25% of\", 98, 0.2473041467736391]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:2, Flag:False
+[\"1. First, let's calculate the guesses of each friend.\n        2. Friend 1 thinks there are 80 jelly beans in the jar.\n        3. Friend 2 calculates 20 more than half of the first one. So, (80 / 2) + 20 = 40 +\", 73, 0.6097533404604963]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:4, H:2, Flag:False
+[\"1. First, let's find out what each friend's guess means in terms of jelly beans.\n        2. Friend 1 thinks there are 80 jelly beans.\n        3. Friend 2 says 20 more than half the first one (Friend 1). So, we need to calculate half of 80 and then add 20 to it: (8\", 84, 0.09205393681185325]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:3, H:8, Flag:True
+[\"1. First, let's find out the number of jelly beans according to each friend's guess.\n           a. Gunter's friend 1 says 80.\n           b. Gunter's friend 2 says\", 52, 0.12279519651089432]
+Path: StartNode6" color=red shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:2, H:2, Flag:False
+['60 jelly beans.\n           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to the original value: (25 / 100) * 80 + 80 = 0.25 * 80 + 80 =\n        20 + 80 = 100 jelly beans', 101, 0.04642558621727311]
+Path: Node0Node7" color=black shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:3, H:3, Flag:False
+['40 + 20 = 60. So Friend 2 guesses there are 60 jelly beans in the jar.\n           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to 80: (80 * 0.25) + 80 = 20 + 80 =\n        20 + 80 = 100. So Friend 3', 117, 0.7450740120803353]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:4, H:4, Flag:False
+['40 + 20 = 60 jelly beans.\n           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to the original 80: (25 / 100)', 72, 0.351237397567732]
+Path: Node0Node9" color=black shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:8, H:5, Flag:False
+['40 jelly beans.\n           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to the initial number: 0.25 * 80 = 20; 80 + 20 =\n        100', 80, 0.4676619108361081]
+Path: Node0Node10" color=black shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:6, H:6, Flag:False
+['40 + 20 = 60 jelly beans.\n           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and', 53, 0.50698871381049]
+Path: Node0Node11" color=black shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:2, H:2, Flag:False
+['60 jelly beans.\n           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to the original number: (25 / 100) * 80 + 80 = 0.25 * 80 + 80 =\n        20 + 80 = 100 jelly beans', 101, 0.016763112847485773]
+Path: Node0Node12" color=black shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:2, H:3, Flag:False
+['60 jelly beans.\n           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to the initial number: (0.25 * 8', 61, 0.5812457357263845]
+Path: Node0Node13" color=black shape=box]
+	Node4 -> Node14 [label=Node4Node14]
+	Node14 [label="V:2, H:7, Flag:False
+[\"20 = 60.\n        4. Friend 3 thinks there are 25% more than the first guess. So, 80 * 1.25 = 100.\n\n        5. Now, let's find the average of their guesses by adding them together and dividing by\", 70, 0.3672402068594861]
+Path: Node4Node14" color=black shape=box]
+	Node4 -> Node15 [label=Node4Node15]
+	Node15 [label="V:2, H:5, Flag:False
+[\"20 = 60.\n        4. Friend 3 thinks there are 25% more than the first one. That's 80 * 1.25 = 100.\n        5. Now, we have three guesses: 80, 60, and 100. We need to find their average by adding them together and dividing by the number of friends (3).\n        6. Average = (80\", 101, 0.38118282595984154]
+Path: Node4Node15" color=black shape=box]
+	Node4 -> Node16 [label=Node4Node16]
+	Node16 [label="V:0, H:0, Flag:False
+[\"20 = 60 jelly beans.\n        4. Friend 3 thinks there are 25% more than the first one. So, 80 * 1.25 = 100 jelly beans.\n        5. Now, let's find the average of these guesses by adding them together and dividing by the number of friends (3).\n        Average guess = (80 + 60 + 100) / 3 = 240 / 3 = 80 jelly beans.\", 119, 0.2817629255420663]
+Path: Node4Node16" color=green shape=box]
+	Node4 -> Node17 [label=Node4Node17]
+	Node17 [label="V:2, H:9, Flag:False
+[\"20 = 60. Therefore, Friend 2 guesses there are 60 jelly beans in the jar.\n        4. Friend 3 believes that it is 25% more than the first one'\", 47, 0.8030537486235039]
+Path: Node4Node17" color=black shape=box]
+	Node4 -> Node18 [label=Node4Node18]
+	Node18 [label="V:2, H:8, Flag:False
+['20 = 60 jelly beans.\n        4. Friend 3 thinks there are 25% more than the first one. So, 80 * 1.25 = 100', 46, 0.016938809114329212]
+Path: Node4Node18" color=black shape=box]
+	Node4 -> Node19 [label=Node4Node19]
+	Node19 [label="V:1, H:1, Flag:False
+[\"20 = 60 jelly beans.\n        4. Friend 3 thinks there are 25% more than the first one. So, 80 * 1.25 = 100 jelly beans.\n        5. Now that we have their guesses, let's find the average by adding them together and dividing by the number of friends (3).\n        Average guess = (80 + 60 + 100) / 3 = 240 / 3 = 80 j\", 117, 0.18039160696414813]
+Path: Node4Node19" color=black shape=box]
+	Node4 -> Node20 [label=Node4Node20]
+	Node20 [label="V:0, H:1, Flag:False
+[\"20 = 60 jelly beans.\n        4. Friend 3 thinks there are 25% more than the first one. To find this, we multiply the number of jelly beans by 1.25: 80 * 1.25 = 100 jelly beans.\n        5. Now that we have their guesses, let's find the average. The average is calculated by summing all the numbers and then dividing by the number of people (3 friends in this case\", 112, 0.6588339137830874]
+Path: Node4Node20" color=black shape=box]
+}

@@ -1,0 +1,49 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We know the ratio of their ages is 7 (Darrell) to 11 (Allen). So, their combined ages are in the ratio of 7+11 = 18.
+        2. Their current total age is 162 years old. To find Darrell's and Allen's individual ages, we need to break down that combined ratio into two separate ratios: 7",Node0,1,10,1,11,0.7251451777495882,90,False
+" 1. First, let's find the sum of their current ages (Darrell + Allen).
+           Darrell's age = 7/24 * 162 = 35
+           Allen's age = 162 - 35 = 127
+        2. Now, let'",Node1,2,6,2,8,0.6584355087314209,71,False
+" 1. We need to find the sum of Darrell and Allen's current ages first. The ratio of their ages is given as 7:11. To find this sum, we will add up these two numbers together and then multiply by a common factor (in this case, the L",Node2,1,10,1,11,0.6316543571302013,61,False
+" 1. First, we need to find the sum of their current ages (Darrell's and Allen's). We have a ratio of 7:11 and a total age of 162. To do this, we can multiply each part of the ratio by the total age and then add them",Node3,1,10,1,11,0.4173997813772573,66,False
+" 1. First, let's understand the ratio of ages between Darrell and Allen as 7:11. This means that Darrell's age is 7 parts out of a total of 18 (7+11) parts, and Allen's age makes",Node4,1,10,1,11,0.8771317924107607,58,False
+" 1. First, we need to find the combined age of Darrell and Allen. They have a 7:11 ratio, so let's denote it as (7x):(11x), where x is some common factor for both numbers. To do this, we multiply each",Node6,1,8,1,9,0.7169336110222672,61,False
+" 1. First, let's find the sum of their current ages (Darrell + Allen).
+           Darrell's age = 7/24 * 162 = 35
+           Allen's age = 162 - 35 = 127
+        2. Now, let' 3. Next, we need to find the ratio of their ages in 10 years from now (Darrell + Allen).
+           Darrell's age in 10 years = 35 + 10 = 45
+           Allen's age in 10 years = 127 + 10 =",Node7,2,8,4,12,0.09226985143698252,73,False
+" 1. First, let's find the sum of their current ages (Darrell + Allen).
+           Darrell's age = 7/24 * 162 = 35
+           Allen's age = 162 - 35 = 127
+        2. Now, let' 3. Next, we need to find the ratio of their ages in 10 years from now (Darrell's age + 10 / Allen's age + 10).
+           Darrell's age in 10 years = 35 + 10 = 45
+           Allen's age in 10 years = 127 + 10 = 137
+        4. Calculate the",Node8,2,2,4,6,0.0941684626766861,97,False
+" 1. First, let's find the sum of their current ages (Darrell + Allen).
+           Darrell's age = 7/24 * 162 = 35
+           Allen's age = 162 - 35 = 127
+        2. Now, let' 3. Calculate the ratio of their ages in 10 years from now (Darrell + Allen).
+           Darrell's age in 10 years = 35 + 10 = 45
+           Allen's age in 10 years = 127 + 10 = 137
+        4. Find the ratio of their ages",Node10,2,2,4,6,0.10955606190831857,82,False
+" 1. First, let's find the sum of their current ages (Darrell + Allen).
+           Darrell's age = 7/24 * 162 = 35
+           Allen's age = 162 - 35 = 127
+        2. Now, let' 3. We want to find Allen's age in 10 years from now, so we need to add 10 more years to his current age:
+            Allen's age after 10 years = 127 + 10 = 137
+           So, Allen will be",Node11,1,1,3,4,0.993312821202579,66,False
+" 1. First, let's find the sum of their current ages (Darrell + Allen).
+           Darrell's age = 7/24 * 162 = 35
+           Allen's age = 162 - 35 = 127
+        2. Now, let' 3. To find Allen's age after 10 years, we need to add 10 years to his current age.
+            Allen's age (after 10 years) = 127 + 10 = 137
+        So, Allen will be",Node13,1,1,3,4,0.9727232310271966,62,False
+" 1. First, let's find the sum of their current ages (Darrell + Allen).
+           Darrell's age = 7/24 * 162 = 35
+           Allen's age = 162 - 35 = 127
+        2. Now, let' 3. We want to find Allen's age in 10 years from now, so we need to add 10 more years to his current age:
+            Allen's age after 10 years = 127 + 10 = 137
+           So, Allen will be 4. 137 years old in 10 years from now.",Node14,1,0,4,4,0.846058134345642,82,False

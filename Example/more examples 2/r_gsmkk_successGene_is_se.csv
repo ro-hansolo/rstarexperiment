@@ -1,0 +1,17 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Calculate the number of years Gene has been vacationing: Since Gene started at age 23, and he is currently 34 years old, that's a difference of 34 - 23 = 11 years.
+
+2. Determine how many vacations he had per year: He goes on four vacations a year.
+
+3.",Node0,0,2,0,2,0.8677487847784079,80,False
+" 1. First, let's determine the number of years Gene has been vacationing. He started at age 23 and is currently 34 years old. So, there are 34 - 23 = 11 years of vacations.
+        2. Next, we need to find out how many vacations he goes on each year. He goes on four vacations per year.
+        3. Now, let's calculate the total number of vacations he has",Node1,0,2,0,2,0.28613598666643814,102,False
+" 1. First, we need to know how many years Gene has been vacationing. Since he is currently 34 years old and started at age 23, he has been on vacations for 34 - 23 = 11 years.
+        2. Next, let's calculate the total number of vacations he went on during those 1",Node2,0,2,0,2,0.38649530153556677,77,False
+" 1. First, let's determine how many years Gene has been vacationing for. He started at 23 years old and is now 34 years old. So the number of years are 34 - 23 = 11 years.
+        2. We know that he goes on four vacations a year, so in those 11 years he has gone on a total of 11 years * 4 vacations per year = 44 vac",Node3,0,1,0,1,0.8411087510220107,100,False
+" 1. First, let's find out how many years Gene has been vacationing. He started at age 23 and is currently 34 years old. So, the number of years = 34 - 23 = 11 years.
+        2. Gene goes on four vacations a year. To calculate the total number of vacations he's had, multiply the number of years by the number of vacations per year: 11 years *",Node6,0,2,0,2,0.2965901802107819,100,False
+" 1. First, let's determine how many years Gene has been vacationing for. He started at 23 years old and is now 34 years old. So the number of years are 34 - 23 = 11 years.
+        2. We know that he goes on four vacations a year, so in those 11 years he has gone on a total of 11 years * 4 vacations per year = 44 vac 3. Each vacation results in one shirt, which is a quilt block. So, Gene has 44 quilt blocks from his vacations.",Node7,0,0,0,0,0.07534649145241734,60,False

@@ -1,0 +1,146 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: In a neighborhood, the number of rabbits pets is twelve less than the combined number of pet dogs and cats. If there are two cats for every dog, and the number of dogs is 60, how many pets in total are in the neighborhood? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:9, Flag:False
+['1. We know that there are 60 dogs and twice as many cats (2 * 60 = 120).\n        2. The combined number of pet dogs and cats is 60 + 1', 47, 0.3370393632769736]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:3, H:8, Flag:False
+[\"1. Let's first define variables to make it easier to work with the problem. We have 'rabbits', 'dogs', 'cats', 'total_pets'.\n        2. We know that rabbits = dogs + cats - 12, where\", 57, 0.28090722965157366]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:3, H:7, Flag:False
+[\"1. Let's define some variables to make it easier to work with the given information. We have 'rabbits', 'dogs', 'cats', and 'total_pets'. The number of rabbits is twelve less than the combined number of dogs and cats, which means we can write this as: rabbits = (dogs + cats) - 12\n        2. Since there are two cats for every dog, we can represent the relationship between dogs and cats as: cats = 2 * dogs\", 110, 0.25102690684974516]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:7, H:9, Flag:True
+['1. Let\'s represent the number of pet dogs as \"D\" and the number of pet cats as \"C\". So, we know D/2 = C.\n        2. We also have R (rabbits) = D + C - 12.\n        3. Since there are two cats for every dog, we can substitute D into this expression: R = (D+D)+(C-D) - 12.\n        4.', 98, 0.8816583534680715]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:6, H:8, Flag:False
+['1. We know that the difference between the number of rabbits and the sum of dogs and cats is twelve. So let\'s call the number of rabbits \"r\", the sum of dogs and cats as \"d+c\" (where d = dogs and c = cats). Our equation looks like this: r = d+c - 12', 73, 0.8372360238184015]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:9, Flag:False
+[\"1. Let's denote the number of pet dogs as D, the number of pet cats as C, and the number of rabbits as R. We know that there are twelve fewer rabbits than the combined number of dogs and cats\", 48, 0.6104766042194123]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:6, Flag:False
+[\"1. Let's first find out the number of cats by multiplying the number of dogs (60) by the ratio of cats per dog (2). So, 60 * 2 = 120 cats.\", 50, 0.3351000896380346]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:7, H:2, Flag:True
+[\"2. Now we know there are 120 cats and 60 dogs in the neighborhood. The combined number of pet dogs and cats is 60 + 120 = 180.\n        3. We're given that the number of rabbits pets is twelve less than the combined number of dog and cat pets, so we need to subtract 12 from the total (180). So, 180 - 12 = 168 rabbits.\n        4. Finally, to find the total\", 117, 0.07257179808632375]
+Path: Node6Node7" color=red shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:7, H:2, Flag:True
+[\"2. Now we know there are 120 cats and 60 dogs. The combined total of dog and cat pets is 120 + 60 = 180 pets.\n        3. We're given that the number of rabbits is twelve less than this combined number, so to find the number of rabbits, we subtract twelve from 180: 180\", 87, 0.7603320841807059]
+Path: Node6Node8" color=red shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:7, H:3, Flag:True
+['2. Next, we need to add the number of cats and dogs together: 60 dogs + 120 cats = 180 pets.\n        3. Now, we know there are twelve less rabbits than this combined total', 51, 0.25794144137622443]
+Path: Node6Node9" color=red shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:8, H:6, Flag:True
+[\"2. Now we know there are 60 dogs and 120 cats in the neighborhood. Since the combined number of pet dogs and cats is twelve less than the rabbits, let's represent this as an equation: (dogs + cats) - rabbits = 1\", 59, 0.40358225557217764]
+Path: Node6Node10" color=red shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:7, H:6, Flag:True
+['2. Now we know there are 120 cats and 60 dogs in the neighborhood. Combining them, we have a total of 60 + 120 = 180 pets (', 45, 0.479456026855802]
+Path: Node6Node11" color=red shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:2, H:1, Flag:False
+[\"2. Now we know there are 120 cats and 60 dogs in total. We also have information that the combined number of pet dogs and cats is 12 less than the number of rabbits pets. Let's denote this unknown number as '\", 55, 0.2819792810183367]
+Path: Node6Node12" color=black shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:7, H:2, Flag:True
+[\"2. Next, we have the combined total of pet dogs and cats which is the sum of dogs' and cats' quantities: 60 (dogs) + 120 (cats) = 180 pets in total.\n        3. Now, we need to find the number of rabbits which is 12 less than this combined\", 75, 0.709276868929353]
+Path: Node6Node13" color=red shape=box]
+	Node12 -> Node14 [label=Node12Node14]
+	Node14 [label="V:7, H:9, Flag:False
+['3. Rewrite the equation: Number of rabbit pets = Combined number of dog & cat pets + 12. 4. Add the known values from previous steps: Number of', 40, 0.6348244639612292]
+Path: Node12Node14" color=black shape=box]
+	Node12 -> Node15 [label=Node12Node15]
+	Node15 [label="V:4, H:6, Flag:True
+['3. To find out the number of rabbit pets, we can add the number of cats and dogs together (120 + 60 = 180) and then subtract the 12 difference to get the number of rabbits (180 - 12 = 168). 4. Finally, since there are 12 less rabbit pets than the', 83, 0.21183937323971924]
+Path: Node12Node15" color=red shape=box]
+	Node12 -> Node16 [label=Node12Node16]
+	Node16 [label="V:4, H:4, Flag:True
+['3. To find out the number of rabbit pets, we can add the number of dogs and cats together (60 + 120 = 180) and then subtract the 12 difference to get the number of rabbits (180 - 12 = 168). 4. Finally, to find out the total number of', 78, 0.09233167541463805]
+Path: Node12Node16" color=red shape=box]
+	Node12 -> Node17 [label=Node12Node17]
+	Node17 [label="V:10, H:10, Flag:True
+['3. Since there are twelve fewer rabbit pets compared to the combined count of dog and cat pets, we need to add twelve to the total count of dogs and cats (60 + 120 + 12). This gives us a new sum of 212. 4. Now that we know the number of rabbits is 212 less than this sum, we can find out the number of rabbits by subtracting 212 from our total (21', 104, 0.42925733132298094]
+Path: Node12Node17" color=red shape=box]
+	Node12 -> Node18 [label=Node12Node18]
+	Node18 [label="V:7, H:9, Flag:False
+['3. Add the number of dogs (60) and cats (120) to find the combined number of dog and cat pets: 60 + 120 = 180.', 44, 0.20591752425345022]
+Path: Node12Node18" color=black shape=box]
+	Node12 -> Node19 [label=Node12Node19]
+	Node19 [label="V:10, H:10, Flag:True
+['3. To find the total number of rabbit pets, we need to add the known numbers of dogs (60) and cats (120) and then subtract 12 from that sum. So, 60 + 120 - 12 = 198 rabbits. 4. Finally, to find the total number of pets in the', 79, 0.4338791729446073]
+Path: Node12Node19" color=red shape=box]
+	Node12 -> Node20 [label=Node12Node20]
+	Node20 [label="V:5, H:3, Flag:True
+['3. To find out how many rabbit pets there are, we need to add the number of dogs and cats together (60 + 120 = 180). Then, subtract 12 from that total to get the number of rabbits pets: 180 - 12 = 168 rabbit pets.\n        So, in total, there are 60 dogs + 120 cats + 168 rabbits = 34', 104, 0.36914100706811726]
+Path: Node12Node20" color=red shape=box]
+	Node2 -> Node21 [label=Node2Node21]
+	Node21 [label="V:1, H:5, Flag:False
+['3. We know that the number of dogs is 60, so now we can find the number of cats with the equation from step 2: cats = 2 * 60 -> cats = 120\n        4. Now that we have both the number of dogs', 59, 0.980005070446636]
+Path: Node2Node21" color=black shape=box]
+	Node2 -> Node22 [label=Node2Node22]
+	Node22 [label="V:1, H:5, Flag:False
+[\"3. Now we know that there are 60 dogs in the neighborhood. So, we can find the number of cats using our equation from step 2: cats = 2 * 60 = 120\n        4. We have all the information necessary to calculate the total number of pets. First, let's use the given relationship between rabbits and dogs & cats to find out how many rabbits there are: rabbits = (dog\", 95, 0.4552126860441761]
+Path: Node2Node22" color=black shape=box]
+	Node2 -> Node23 [label=Node2Node23]
+	Node23 [label="V:1, H:4, Flag:False
+[\"3. Now that we have a relationship between dogs and cats, we can substitute it into our equation for rabbits to get rid of 'cats': rabbits = (dogs + 2 * dogs) - 12\n        4. Combine the terms with dogs: rabbits = 3 * dogs - 12\n        5.\", 73, 0.21002595702412807]
+Path: Node2Node23" color=black shape=box]
+	Node2 -> Node24 [label=Node2Node24]
+	Node24 [label="V:1, H:3, Flag:False
+[\"3. Now, we have three equations to solve for the unknown variables: rabbits = (60 + 2 * 60) - 12, cats = 2 * 60, total_pets = rabbits + dogs + cats\n        4. Let's substitute the values from step 3 into the first equation and simplify it: rabbits = (6\", 82, 0.19793692633206028]
+Path: Node2Node24" color=black shape=box]
+	Node2 -> Node25 [label=Node2Node25]
+	Node25 [label="V:2, H:5, Flag:False
+['3. Now we have enough information to find the total number of pets in the neighborhood. We know that there are 60 dogs, so we can calculate the number of cats and rabbits based on our defined relationships: cats = 2 * 60 = 120, rabbits = (', 63, 0.5119476375032186]
+Path: Node2Node25" color=black shape=box]
+	Node2 -> Node26 [label=Node2Node26]
+	Node26 [label="V:1, H:5, Flag:False
+['3. We know that the number of dogs is 60. So now we have: cats = 2 * 60 (dogs) = 120 (cats)\n        4. Now, let', 47, 0.34084742060734696]
+Path: Node2Node26" color=black shape=box]
+	Node2 -> Node27 [label=Node2Node27]
+	Node27 [label="V:1, H:2, Flag:False
+[\"3. We know that the number of dogs is 60. So, using our equation from step 2, we get the number of cats: cats = 2 * 60 = 120\n        4. Now, let's find the combined number of dogs and cats: total_dogs_and_cats = dogs + cats = 60 + 120 = 180\n        5. We know that rabbits are twelve less than the combined number of dogs and cats, so we can calculate the number of rab\", 118, 0.15395236776397225]
+Path: Node2Node27" color=black shape=box]
+	Node27 -> Node28 [label=Node27Node28]
+	Node28 [label="V:3, H:8, Flag:False
+['6. rabbits = (total_dogs_and_cats) - 12 = 180 - 12 = 168\n        7. Finally, to find the total number of pets in the neighborhood, we add up all the individual numbers: total_pets = dogs + cats + rabbits = 60 + 120 + 1', 82, 0.35707991700515707]
+Path: Node27Node28" color=black shape=box]
+	Node27 -> Node29 [label=Node27Node29]
+	Node29 [label="V:3, H:8, Flag:False
+['6. rabbits = (total_dogs_and_cats) - 12 = 180 - 12 = 168\n        7. Finally, to find the total number of pets in the neighborhood,', 51, 0.6781843704182487]
+Path: Node27Node29" color=black shape=box]
+	Node27 -> Node30 [label=Node27Node30]
+	Node30 [label="V:4, H:7, Flag:False
+[\"5. We know that rabbits are twelve less than the combined number of dogs and cats, so we can calculate the number of rabbits: rabbits = total_dogs_and_cats - 12 = 180 - 12 = 168\n        6. Finally, let's find the total number of pets in the neighborhood by adding all three types together: total_p\", 87, 0.9017433962814031]
+Path: Node27Node30" color=black shape=box]
+	Node27 -> Node31 [label=Node27Node31]
+	Node31 [label="V:1, H:8, Flag:True
+['6. rabbits = (total_dogs_and_cats - 12) = 180 - 12 = 168\n        7. Finally, to find the total number of pets in the neighborhood, we add up the number of each pet type: total_pets = rabbits + dogs + cats = 16', 76, 0.9663913088950914]
+Path: Node27Node31" color=red shape=box]
+	Node27 -> Node32 [label=Node27Node32]
+	Node32 [label="V:0, H:0, Flag:False
+['6. rabbits = (total_dogs_and_cats) - 12 = 180 - 12 = 168\n        7. Finally, to find the total number of pets in the neighborhood, we add up all the individual numbers of pets: total_pets = dogs + cats + rabbits = 60 + 120 + 168 = 348', 91, 0.12531857153672465]
+Path: Node27Node32" color=green shape=box]
+	Node27 -> Node33 [label=Node27Node33]
+	Node33 [label="V:3, H:8, Flag:False
+['6. Using our equation from step 1 with all the known values, we get the number of rabbits: rabbits = (dogs + cats) - 12 = (180) - 12 = 168', 51, 0.9313416529917925]
+Path: Node27Node33" color=black shape=box]
+	Node27 -> Node34 [label=Node27Node34]
+	Node34 [label="V:2, H:8, Flag:False
+['6. rabbits = (total_dogs_and_cats - 12) = 180 - 12 = 168\n        7. Finally, to find the total number of pets in the neighborhood,', 51, 0.4607945021398915]
+Path: Node27Node34" color=black shape=box]
+}

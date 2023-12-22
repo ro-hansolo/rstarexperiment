@@ -1,0 +1,159 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50%",Node0,1,4,1,5,0.7863372459101626,66,False
+" 1. Let's first find out how many blue and red ties John bought. Since he buys twice as many red ties, we can represent the number of red ties as 2 times the number of blue ties (Red ties = 2 * Blue ties).
+        2. Now that we know the relationship between the two types of ties, let's find out how much red ties cost. Since",Node1,0,6,0,6,0.8391084784322344,83,False
+" 1. First, let's find out how many blue and red ties John bought. Since he buys twice as many red ties as blue ties, we can represent this relationship with a ratio:",Node2,0,7,0,7,0.5095502012624878,41,False
+" 1. We know the ratio of red to blue ties is 2:1 (twice as many red ties).
+        2. The red ties cost more, specifically 50% more than blue ties.
+        3. John spent $200 on blue ties that cost $40 each.
+        4. To find the cost of one blue tie, divide the total amount ($20",Node4,3,2,3,5,0.4687695855869849,84,False
+" 1. Let's first analyze the given information step by step. We have some quantities and costs related to red and blue ties.
+        2. John buys twice as many red ties as blue ties, which",Node5,0,7,0,7,0.485318124926126,44,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each. So, the total cost for blue ties is 200 / 40 = 5 blue ties.
+        4. Now we need to find out how much John spent on red ties. Since the cost of red ties is 50% more than blue ties, we can calculate this by adding 50% of the blue tie's cost to the blue tie's cost itself. So, the cost",Node7,1,3,2,5,0.032799192794669474,108,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. To find the cost of a single red tie, we need to add this extra cost to that of a blue tie: (1 + 0.5) * $40 = $60 per red tie.
+        4. Since John bought twice as many red ties, he spent 2 * $6",Node8,5,10,6,16,0.7571575953767157,66,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each, so there are 200 / 40 = 5 blue ties.
+        4. Now we need to find the cost of one red tie. Since it costs 50% more than a blue tie, its cost will",Node9,1,3,2,5,0.2250244737424565,70,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties, which cost $40 each. So, the total cost for blue ties is 200 / 40 = 5 blue ties.
+        4. Now we need to find out how much John spent on red ties. Since the cost difference between red and blue ties is 50%, we can calculate the cost of a single red tie as (1 + 0.5) * 40 = 60 dollars.",Node10,1,3,2,5,0.17289206774972654,106,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We are given that John spent $200 on blue ties at a price of $40 each. To find out how many blue ties he bought, we can divide the total amount spent by the unit price: B = $200 / $40
+          B = 5
+          So, there are 5 blue ties and twice that number of red ties, which is 2 * 5 = 10 red ties.
+        4. Now, we need to determine the cost of red ties. We know that",Node11,1,3,2,5,0.5371937890487744,113,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. Red ties are 50% more expensive than blue ties, so their price per unit can be found by multiplying the cost of a blue tie ($40) with an additional increment of 50%. (1.5 * $40 = $60)
+        4. Now we have information about both types of ties' prices and their respective number: Blue Ties - Price per unit is $40, Number",Node12,5,10,6,16,0.7817698790757917,91,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each. So, the total cost for blue ties is 200 / 40 = 5 blue ties.
+        4. Now we need to find out how much John spent on red ties. Since the red ties cost 50% more than blue ties, their cost will be 1.5 * $40 (the cost of a blue tie). So, the cost for one red tie is 1.5 * 40 = $60.",Node13,1,3,2,5,0.1215803725125787,118,False
+" 1. We know the ratio of red to blue ties is 2:1 (twice as many red ties).
+        2. The red ties cost more, specifically 50% more than blue ties.
+        3. John spent $200 on blue ties that cost $40 each.
+        4. To find the cost of one blue tie, divide the total amount ($20 0) by the number of blue ties (5): $200 / 5 = $40 per blue tie.
+        5. Now we know the ratio of red to blue ties is 2:1 and the cost difference is 50% more for red ties, so let's find the cost of one red tie by multiplying the cost of a blue tie ($40) with 1.5 (since it costs 50% more). $40 * 1.5 = $60",Node18,3,4,6,10,0.49974752990354554,110,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each. So, the total cost for blue ties is 200 / 40 = 5 blue ties.
+        4. Now we need to find out how much John spent on red ties. Since the cost of red ties is 50% more than blue ties, we can calculate this by adding 50% of the blue tie's cost to the blue tie's cost itself. So, the cost 4. of a single red tie would be 40 + (1/2) * 40 = 60.
+        5. We know John bought twice as many red ties as blue ties, so he spent 2 * (cost of 1 red tie) * B on red ties. This is equal to 2 * 60 * B.
+        6. Adding the total cost for both types",Node25,5,9,7,16,0.6816846579250122,89,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each, so there are 200 / 40 = 5 blue ties.
+        4. Now we need to find the cost of one red tie. Since it costs 50% more than a blue tie, its cost will 5. be 1.5 * 40 (blue tie cost) = $60 per red tie.
+        6. John has bought twice as many red ties as blue ones, so he has",Node28,1,7,3,10,0.8278143590514433,43,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each, so there are 200 / 40 = 5 blue ties.
+        4. Now we need to find the cost of one red tie. Since it costs 50% more than a blue tie, its cost will 5. be (1 + 0.5) * $40 = $60 per red tie.
+        6. To find out how many red ties he bought, we can use the",Node29,1,7,3,10,0.5360764758372973,41,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each, so there are 200 / 40 = 5 blue ties.
+        4. Now we need to find the cost of one red tie. Since it costs 50% more than a blue tie, its cost will 5. be (1 + 0.5) * $40 = $60 per red tie.
+        6. We know that John bought twice as many red ties as blue ties, so he has 2B red ties.
+        7. To find the total amount spent on red",Node30,1,6,3,9,0.00040167520075395924,62,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each, so there are 200 / 40 = 5 blue ties.
+        4. Now we need to find the cost of one red tie. Since it costs 50% more than a blue tie, its cost will 4.1 be (1 + 0.5) * $40 = $60 per red tie.
+        5. We know that there are twice as many red ties as blue ones, so the number of red ties is 2 * B. To find out how much John spent on red ties, we need to multiply their cost by the number of red ties: (2B) * $60 = 120B
+        6. Finally, to find the total amount he spent on both types of ties, we",Node31,1,5,3,8,0.4677840723195783,113,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each, so there are 200 / 40 = 5 blue ties.
+        4. Now we need to find the cost of one red tie. Since it costs 50% more than a blue tie, its cost will 4a. be 1.5 * $40 (for one blue tie), which equals $60 per red tie.
+        5. The total number of red ties is 2 * B, so their combined cost will be 2 * B * $60.
+        6. To find the total spending on both types of ties, we add up the costs for each type: (B",Node32,1,5,3,8,0.4680448269192914,84,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each, so there are 200 / 40 = 5 blue ties.
+        4. Now we need to find the cost of one red tie. Since it costs 50% more than a blue tie, its cost will 5. be (1 + 0.5) * $40 = $60 per red tie.
+        6. We know that John bought twice as many red ties as blue ties, so he has 2B red ties.
+        7. To find the total amount spent on red ties, we multiply the number of red ties by their",Node33,1,6,3,9,0.031955509804110105,74,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties which cost $40 each, so there are 200 / 40 = 5 blue ties.
+        4. Now we need to find the cost of one red tie. Since it costs 50% more than a blue tie, its cost will 5. be 1.5 * $40 (cost of a blue tie). So, the cost of one red tie is $60.
+        6. We know that John bought twice as many red ties as blue ones, so he bought",Node34,1,7,3,10,0.11220789855498514,53,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties, which cost $40 each. So, the total cost for blue ties is 200 / 40 = 5 blue ties.
+        4. Now we need to find out how much John spent on red ties. Since the cost difference between red and blue ties is 50%, we can calculate the cost of a single red tie as (1 + 0.5) * 40 = 60 dollars. 5. Given that there are 2 * B red ties, we multiply the number of red ties by their cost to find out how much John spent on them: (2 * B) * 60 dollars/red tie.
+        6. Combining all this information, we can now calculate the total amount he spent on both types of ties: (5 blue ties * $40/blue tie + (2 * B) *",Node35,2,7,4,11,0.8469673878185462,91,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties, which cost $40 each. So, the total cost for blue ties is 200 / 40 = 5 blue ties.
+        4. Now we need to find out how much John spent on red ties. Since the cost difference between red and blue ties is 50%, we can calculate the cost of a single red tie as (1 + 0.5) * 40 = 60 dollars. 5. The number of red ties is 2 * B, so to find out how much he spent on red ties, multiply the total number of red ties by their cost per tie: 2 * B * 60 dollars.
+        6. To sum up the total amount spent on both types of ties, add the costs for blue and red ties: (5 * 40) + (2 * B * 60).
+        7. Finally, substitute the known values from steps 1-3 into this equation to find out",Node36,2,6,4,10,0.21847893676926478,114,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties, which cost $40 each. So, the total cost for blue ties is 200 / 40 = 5 blue ties.
+        4. Now we need to find out how much John spent on red ties. Since the cost difference between red and blue ties is 50%, we can calculate the cost of a single red tie as (1 + 0.5) * 40 = 60 dollars. 5. The number of red ties is 2B, so the total cost for red ties will be 60 * 2B.
+        6. To find out the combined cost of both types of ties, we add the costs of blue and red ties: (5 * 40) + (60 * 2",Node37,2,7,4,11,0.12087179908346357,69,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties, which cost $40 each. So, the total cost for blue ties is 200 / 40 = 5 blue ties.
+        4. Now we need to find out how much John spent on red ties. Since the cost difference between red and blue ties is 50%, we can calculate the cost of a single red tie as (1 + 0.5) * 40 = 60 dollars. 5. With twice as many red ties as blue ones, there are 2 * B red ties. So, the total cost for red ties is 60 * 2B dollars.
+        6. To find out the combined cost of both types of",Node38,2,7,4,11,0.09728062812171778,53,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties, which cost $40 each. So, the total cost for blue ties is 200 / 40 = 5 blue ties.
+        4. Now we need to find out how much John spent on red ties. Since the cost difference between red and blue ties is 50%, we can calculate the cost of a single red tie as (1 + 0.5) * 40 = 60 dollars. 5. Finally, we know that there are twice as many red ties compared to blue ties, so the total number of red ties is 2 * B. The total cost for red ties would be 60 * 2",Node39,2,7,4,11,0.39405395047738667,46,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We know that he spent $200 on blue ties, which cost $40 each. So, the total cost for blue ties is 200 / 40 = 5 blue ties.
+        4. Now we need to find out how much John spent on red ties. Since the cost difference between red and blue ties is 50%, we can calculate the cost of a single red tie as (1 + 0.5) * 40 = 60 dollars. 5. Now, the number of red ties is 2 * B and each one costs 60 dollars. So, to find out how much John spent on red ties, we can multiply these two values: 2 * B * 60.
+        6. Finally, add the cost for both blue and red ties together to",Node41,2,7,4,11,0.7552108646027212,70,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We are given that John spent $200 on blue ties at a price of $40 each. To find out how many blue ties he bought, we can divide the total amount spent by the unit price: B = $200 / $40
+          B = 5
+          So, there are 5 blue ties and twice that number of red ties, which is 2 * 5 = 10 red ties.
+        4. Now, we need to determine the cost of red ties. We know that a. The cost of one blue tie is $40.
+         b. Red ties are 50% more expensive than blue ties. So, the cost of one red tie will be 1.5 * $40 = $60.",Node42,2,2,4,6,0.2862502351059413,55,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We are given that John spent $200 on blue ties at a price of $40 each. To find out how many blue ties he bought, we can divide the total amount spent by the unit price: B = $200 / $40
+          B = 5
+          So, there are 5 blue ties and twice that number of red ties, which is 2 * 5 = 10 red ties.
+        4. Now, we need to determine the cost of red ties. We know that - The cost difference between red and blue ties is 50%
+         - Blue ties cost $40 each
+         - Red ties cost 50% more than blue ties
+           So, the cost of",Node43,4,8,6,14,0.1292624102833687,45,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We are given that John spent $200 on blue ties at a price of $40 each. To find out how many blue ties he bought, we can divide the total amount spent by the unit price: B = $200 / $40
+          B = 5
+          So, there are 5 blue ties and twice that number of red ties, which is 2 * 5 = 10 red ties.
+        4. Now, we need to determine the cost of red ties. We know that a. Red ties' unit price is $40 + (50% of $40) = $40 + $20 = $60 per tie.
+          b. He bought 10 red ties at this cost, so we can calculate the total amount spent on red ties: 10 * $60 = $600.
+        5. Finally, to find the total amount spent on all ties, we need to add the cost of both blue and red ties: Total Spent = Cost of",Node44,1,1,3,4,0.7898751099530806,111,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We are given that John spent $200 on blue ties at a price of $40 each. To find out how many blue ties he bought, we can divide the total amount spent by the unit price: B = $200 / $40
+          B = 5
+          So, there are 5 blue ties and twice that number of red ties, which is 2 * 5 = 10 red ties.
+        4. Now, we need to determine the cost of red ties. We know that a. The cost of one blue tie is $40.
+         b. Red ties cost 50% more than blue ties.
+         c. Therefore, the cost of one red tie will be $40 + (50/100) * $40 = $40 + $20 = $",Node45,4,8,6,14,0.3263407759670607,69,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We are given that John spent $200 on blue ties at a price of $40 each. To find out how many blue ties he bought, we can divide the total amount spent by the unit price: B = $200 / $40
+          B = 5
+          So, there are 5 blue ties and twice that number of red ties, which is 2 * 5 = 10 red ties.
+        4. Now, we need to determine the cost of red ties. We know that 5. The cost difference between red and blue ties is given as 50%, so if a blue tie costs $40, then a red tie will cost 50% more than that: Red tie cost = $40 + (50/100) * $40 = $40 + $20 = $60
+        6. Finally, to find out the total amount spent on ties, we add up the costs of both blue and red ties: Total amount spent = Cost of",Node46,2,1,4,5,0.33710024825402596,107,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We are given that John spent $200 on blue ties at a price of $40 each. To find out how many blue ties he bought, we can divide the total amount spent by the unit price: B = $200 / $40
+          B = 5
+          So, there are 5 blue ties and twice that number of red ties, which is 2 * 5 = 10 red ties.
+        4. Now, we need to determine the cost of red ties. We know that - Each blue tie costs $40
+         - Red ties cost 50% more than blue ties
+         - Therefore, each red tie costs (1 + 0.5) * $40 = 1.5 * $40 = $60
+        5. Since John bought 10 red ties, the total amount spent on red ties can be calculated as: Red ties cost",Node47,1,1,3,4,0.5829505537627241,84,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We are given that John spent $200 on blue ties at a price of $40 each. To find out how many blue ties he bought, we can divide the total amount spent by the unit price: B = $200 / $40
+          B = 5
+          So, there are 5 blue ties and twice that number of red ties, which is 2 * 5 = 10 red ties.
+        4. Now, we need to determine the cost of red ties. We know that a. The cost difference between red and blue ties is 50%.
+         b. The unit price for blue ties is $40.
+         c. The unit price for blue ties equals the base price for red ties (as red ties are more expensive than blue ones).
+       So, to find the base price of red ties, we can calculate it",Node48,4,9,6,15,0.922426777535318,75,False
+" 1. We know that John bought twice as many red ties compared to the number of blue ties. Let's denote the number of blue ties as 'B'. Therefore, the number of red ties will be 2 * B.
+        2. The cost difference between red and blue ties is given as 50% 3. We are given that John spent $200 on blue ties at a price of $40 each. To find out how many blue ties he bought, we can divide the total amount spent by the unit price: B = $200 / $40
+          B = 5
+          So, there are 5 blue ties and twice that number of red ties, which is 2 * 5 = 10 red ties.
+        4. Now, we need to determine the cost of red ties. We know that a. Red ties' unit price is $40 + (50% of $40) = $40 + $20 = $60 per tie.
+          b. He bought 10 red ties at this cost, so we can calculate the total amount spent on red ties: 10 * $60 = $600.
+        5. Finally, to find the total amount spent on all ties, we need to add the cost of both blue and red ties: Total Spent = Cost of Blue Ties + Cost of Red Ties = $200 + $600 = $800.
+        John spent a total of $800 on ties.",Node49,0,0,3,3,0.8994283373508136,50,False

@@ -1,0 +1,64 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's find out the values of the three answers given by Gunter's friends:
+           a) Friend 1 says 80 jelly beans.
+           b) Friend 2 says 20 more than half the first one (80). To find this value, we need to calculate half of 80 and then add 20 more: (80 / 2) + 20 = 40 + 20 =",Node0,1,2,1,3,0.5631564460292453,101,False
+" 1. First, let's find out what each friend's guess means in terms of jelly beans.
+        2. Friend 1 thinks there are 80 jelly beans.
+        3. Friend 2 says 20 more than half the first one, which is (80 / 2) + 20 = 40 + 20 = 60 jelly beans.
+        4. Friend 3 says 25% more than the first one, which is 8",Node1,4,2,4,6,0.02575718448042541,109,False
+" 1. First, let's calculate the guesses of each friend.
+        2. Friend 1 thinks there are 80 jelly beans in the jar.
+        3. Friend 2 calculates 20 more than half of the first one. So, (80 / 2) + 20 = 40 +",Node4,1,2,1,3,0.6097533404604963,73,False
+" 1. First, let's find out what each friend's guess means in terms of jelly beans.
+        2. Friend 1 thinks there are 80 jelly beans.
+        3. Friend 2 says 20 more than half the first one (Friend 1). So, we need to calculate half of 80 and then add 20 to it: (8",Node5,4,2,4,6,0.09205393681185325,84,False
+" 1. First, let's find out the values of the three answers given by Gunter's friends:
+           a) Friend 1 says 80 jelly beans.
+           b) Friend 2 says 20 more than half the first one (80). To find this value, we need to calculate half of 80 and then add 20 more: (80 / 2) + 20 = 40 + 20 = 60 jelly beans.
+           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to the original value: (25 / 100) * 80 + 80 = 0.25 * 80 + 80 =
+        20 + 80 = 100 jelly beans",Node7,2,2,3,5,0.04642558621727311,101,False
+" 1. First, let's find out the values of the three answers given by Gunter's friends:
+           a) Friend 1 says 80 jelly beans.
+           b) Friend 2 says 20 more than half the first one (80). To find this value, we need to calculate half of 80 and then add 20 more: (80 / 2) + 20 = 40 + 20 = 40 + 20 = 60. So Friend 2 guesses there are 60 jelly beans in the jar.
+           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to 80: (80 * 0.25) + 80 = 20 + 80 =
+        20 + 80 = 100. So Friend 3",Node8,3,3,4,7,0.7450740120803353,117,False
+" 1. First, let's find out the values of the three answers given by Gunter's friends:
+           a) Friend 1 says 80 jelly beans.
+           b) Friend 2 says 20 more than half the first one (80). To find this value, we need to calculate half of 80 and then add 20 more: (80 / 2) + 20 = 40 + 20 = 40 + 20 = 60 jelly beans.
+           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to the original 80: (25 / 100)",Node9,4,4,5,9,0.351237397567732,72,False
+" 1. First, let's find out the values of the three answers given by Gunter's friends:
+           a) Friend 1 says 80 jelly beans.
+           b) Friend 2 says 20 more than half the first one (80). To find this value, we need to calculate half of 80 and then add 20 more: (80 / 2) + 20 = 40 + 20 = 40 jelly beans.
+           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to the initial number: 0.25 * 80 = 20; 80 + 20 =
+        100",Node10,8,5,9,14,0.4676619108361081,80,False
+" 1. First, let's find out the values of the three answers given by Gunter's friends:
+           a) Friend 1 says 80 jelly beans.
+           b) Friend 2 says 20 more than half the first one (80). To find this value, we need to calculate half of 80 and then add 20 more: (80 / 2) + 20 = 40 + 20 = 40 + 20 = 60 jelly beans.
+           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and",Node11,6,6,7,13,0.50698871381049,53,False
+" 1. First, let's find out the values of the three answers given by Gunter's friends:
+           a) Friend 1 says 80 jelly beans.
+           b) Friend 2 says 20 more than half the first one (80). To find this value, we need to calculate half of 80 and then add 20 more: (80 / 2) + 20 = 40 + 20 = 60 jelly beans.
+           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to the original number: (25 / 100) * 80 + 80 = 0.25 * 80 + 80 =
+        20 + 80 = 100 jelly beans",Node12,2,2,3,5,0.016763112847485773,101,False
+" 1. First, let's find out the values of the three answers given by Gunter's friends:
+           a) Friend 1 says 80 jelly beans.
+           b) Friend 2 says 20 more than half the first one (80). To find this value, we need to calculate half of 80 and then add 20 more: (80 / 2) + 20 = 40 + 20 = 60 jelly beans.
+           c) Friend 3 says 25% more than the first one (80). To find this value, we need to calculate 25% of 80 and then add it to the initial number: (0.25 * 8",Node13,2,3,3,6,0.5812457357263845,61,False
+" 1. First, let's calculate the guesses of each friend.
+        2. Friend 1 thinks there are 80 jelly beans in the jar.
+        3. Friend 2 calculates 20 more than half of the first one. So, (80 / 2) + 20 = 40 + 20 = 60.
+        4. Friend 3 thinks there are 25% more than the first guess. So, 80 * 1.25 = 100.
+
+        5. Now, let's find the average of their guesses by adding them together and dividing by",Node14,2,7,3,10,0.3672402068594861,70,False
+" 1. First, let's calculate the guesses of each friend.
+        2. Friend 1 thinks there are 80 jelly beans in the jar.
+        3. Friend 2 calculates 20 more than half of the first one. So, (80 / 2) + 20 = 40 + 20 = 60.
+        4. Friend 3 thinks there are 25% more than the first one. That's 80 * 1.25 = 100.
+        5. Now, we have three guesses: 80, 60, and 100. We need to find their average by adding them together and dividing by the number of friends (3).
+        6. Average = (80",Node15,2,5,3,8,0.38118282595984154,101,False
+" 1. First, let's calculate the guesses of each friend.
+        2. Friend 1 thinks there are 80 jelly beans in the jar.
+        3. Friend 2 calculates 20 more than half of the first one. So, (80 / 2) + 20 = 40 + 20 = 60 jelly beans.
+        4. Friend 3 thinks there are 25% more than the first one. So, 80 * 1.25 = 100 jelly beans.
+        5. Now, let's find the average of these guesses by adding them together and dividing by the number of friends (3).
+        Average guess = (80 + 60 + 100) / 3 = 240 / 3 = 80 jelly beans.",Node16,0,0,1,1,0.2817629255420663,119,False

@@ -1,0 +1,27 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Calculate the total cost of materials and construction. To do this, add the cost of materials ($500) and construction ($800).
+           Total_cost = Materials_cost + Construction_cost
+           Total_cost = $500 + $800
+           Total_cost = $1300
+        2. Calculate the cost of insurance. To do this, multiply the total cost by 10% (which is 0.1 as a decimal) to find out how",Node0,1,6,1,7,0.7221752957047989,113,False
+" 1. Janet spends $500 on materials.
+        2. She spends another $800 for the jeweler's construction work.
+        3. Finally,",Node1,2,7,2,9,0.40157830515679827,40,False
+" 1. Janet spends $500 on materials.
+        2. She spends another $800 for the jeweler's work.
+        3. To insure the brooch",Node2,2,7,2,9,0.2700214986964855,43,False
+" 1. First, we need to calculate the total cost before insurance. Janet paid $500 for materials and another $800 for construction. So, the sum is $500 + $800 = $1300.
+        2. Next, she pays 10% of that amount for insurance. To find this, we need to calculate",Node3,1,5,1,6,0.279233782272693,79,False
+" 1. First, let's calculate the total cost of purchasing materials and hiring a jeweler. Janet spent $500 on materials and $800 for the construction. So, we add them together: $5",Node4,2,7,2,9,0.5482956724636417,47,False
+" 1. Janet spends $500 on materials.
+        2. She spends another $800 for the jeweler's work.
+        3. Then, she pays an additional 10% of the total cost (materials + jeweler) to insure it.",Node5,1,6,1,7,0.35841154360386274,65,False
+" 1. Janet spends $500 on materials.
+        2. She spends another $800 for the jeweler's work.
+        3. Adding the material cost and the jeweler's fee, we get a total of $500 + $800 = $1300.",Node6,1,5,1,6,0.24550714370163207,72,False
+" 1. First, we need to calculate the total cost before insurance. Janet paid $500 for materials and another $800 for construction. So, the sum is $500 + $800 = $1300.
+        2. Next, she pays 10% of that amount for insurance. To find this, we need to calculate 10% of $1300. To do this, multiply by 0.1 (since 10% is equal to 0.1). So, 0.1 * $1300 = $130.
+        3. Finally, add the cost before insurance and the insurance",Node7,1,1,2,3,0.31224097842651377,67,False
+" 1. First, we need to calculate the total cost before insurance. Janet paid $500 for materials and another $800 for construction. So, the sum is $500 + $800 = $1300.
+        2. Next, she pays 10% of that amount for insurance. To find this, we need to calculate 10% of $1300: (10/100) * $1300 = 0.1 * $1300 = $130.
+        3. Finally, add the cost before insurance and the insurance fee together to find the total amount Janet paid. So, $1300 + $130 = $1430.",Node8,0,0,1,1,0.034860797065264904,117,False

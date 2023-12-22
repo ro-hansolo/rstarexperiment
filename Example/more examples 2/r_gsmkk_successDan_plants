@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Dan plants 3 rose bushes. Each rose bush has 25 roses. Each rose has 8 thorns. How many thorns are there total? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:5, Flag:False
+['1. We know that Dan planted 3 rose bushes and each has 25 roses. So to find the total number of roses, we multiply the number of rose bushes by the number of roses per bush: 3 * 25 = 75 roses.', 63, 0.7259185503681731]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:5, Flag:False
+['1. First, we need to find the total number of roses by multiplying the number of rose bushes (3) by the number of roses per bush (25). So, 3 * 25 = 75 roses', 52, 0.7423291658972088]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:4, Flag:False
+['1. First, we need to calculate the number of roses in total by multiplying the number of rose bushes (3) with the amount of roses per bush (25).\n        2. So, 3 * 25 = 75 roses.\n        3. Next, we want to find out how many thorns all the roses have combined', 80, 0.9634722572149096]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:4, Flag:False
+[\"1. First, let's find the total number of roses from all the rose bushes. Dan planted 3 rose bushes and each one had 25 roses. So, we multiply 3 by 25 to get the total number of roses.\n        Total number of roses = 3 * 25 = 75 roses\n        2. Now that we know there are 75 roses in total, let's find\", 100, 0.2822273299528859]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:3, Flag:False
+[\"1. Let's first find out the total number of roses. We have 3 rose bushes, and each one has 25 roses. So, we multiply 3 by 25: 3 * 25 = 75 roses in total.\n        2. Now, let's calculate how many thorns are on these 75 roses. Each rose has 8 thorns. We multiply the number of roses (75) by the number of thorns\", 112, 0.8543840589572197]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:3, Flag:False
+['1. First, we need to find the total number of roses from all the rose bushes. Since Dan plants 3 rose bushes and each one has 25 roses, we multiply these two numbers together: 3 * 25 = 75 roses in total.\n        2. Next, we need to find the total number of thorns from all the roses. Each rose has 8 thorns, and there are 75', 100, 0.021770807954067162]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:2, Flag:False
+['1. We need to calculate the number of thorns from each aspect.\n        2. There are a total of 3 rose bushes, so we multiply their count by the number of roses per bush. This gives us 3 * 25 = 75 roses in total.\n        3. Each rose has 8 thorns, so we need to calculate the sum of these thorns by multiplying the total number of roses (75) by the number of thorns per rose (8). This', 115, 0.7489446937017264]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:1, H:1, Flag:False
+['gives us 75 * 8 = 600 thorns in total.', 43, 0.9061752980862424]
+Path: Node6Node7" color=black shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:1, H:0, Flag:False
+['4. gives us 75 * 8 = 600 thorns in total.\n        So, there are a total of 600 thorns among all the roses and bushes.', 114, 0.19736434516906431]
+Path: Node6Node8" color=green shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:1, H:0, Flag:False
+['gives us 75 * 8 = 600 thorns.\n        So, there are a total of 600 thorns across all the plants.', 116, 0.9519261995903563]
+Path: Node6Node9" color=green shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:1, H:0, Flag:False
+['4. gives us 75 * 8 = 600 thorns in total.\n        So, there are 600 thorns from all the plants combined.', 102, 0.8293178984722951]
+Path: Node6Node10" color=green shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:0, H:2, Flag:False
+['4. gives us 75 * 8 = 600 thorns in total.', 119, 0.45042110775795263]
+Path: Node6Node11" color=black shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:1, H:0, Flag:False
+['4. gives us 75 * 8 = 600 thorns in total.\n        So, there are a total of 600 thorns from all the plants and roses combined.', 60, 0.4251559663520349]
+Path: Node6Node12" color=green shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['4. gives us 75 * 8 = 600 thorns in total.\n        So, there are a total of 600 thorns from these 3 rose bushes.', 116, 0.31036166279217914]
+Path: Node6Node13" color=green shape=box]
+}

@@ -1,0 +1,174 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Judy teaches 5 dance classes, every day, on the weekdays and 8 classes on Saturday.  If each class has 15 students and she charges $15.00 per student, how much money does she make in 1 week? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:3, Flag:False
+[\"1. First, let's calculate the total number of dance classes Judy teaches during the weekdays (Monday to Friday). She teaches 5 classes every day for 5 days, so that's 5 * 5 = 25 classes in total.\n        2. Now, we need to find out how many students attend these classes. Since there are 15 students per class and she has 25 classes during the weekdays, the total number of students attending these classes is 15 * 25 =\", 114, 0.03412124931307925]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:10, H:10, Flag:True
+['1. First, we need to calculate the total number of dance classes Judy teaches per week. She teaches 5 classes on weekdays (Monday through Friday) and 8 classes on Saturday. So, 5 + 8 = 13 classes in total for the week.\n        2. Next, we need to find out how many students attend these classes. Since each class has 15 students, multiply the number of classes by the number of students per class:', 101, 0.21469437474224384]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:5, Flag:False
+[\"1. First, let's calculate the total number of dance classes Judy teaches during the weekdays (Monday to Friday). She teaches 5 classes every day for 5 days, so that's 5 * 5 = 25 classes in total.\n        2. Now, we need to find out how many students attend these classes. Since there are 15 students per class and\", 85, 0.018622961111281477]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:10, H:10, Flag:True
+['1. Determine the number of classes Judy teaches daily during the week (Monday to Friday). This is 5 dance classes + 8 dance classes on Saturday = 13 dance classes.\n        2. Multiply this by the number of students attending each class (15 students) and get the total number of students per day. So, 13 classes * 15 students/class = 195 students.', 94, 0.8543307043445104]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:10, H:10, Flag:True
+[\"1. First, let's calculate the total number of dance classes Judy teaches per week. She teaches 5 classes on weekdays (Monday to Friday) and 8 classes on Saturday. So, 5 + 8 = 13 classes in total for the week.\n        2. Next, we need to find out how many students attend her classes in a week. Since each class has 15 students, she will have\", 93, 0.05100779868428018]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:8, Flag:False
+[\"1. First, let's calculate the total number of dance classes Judy teaches during the weekdays (Monday to Friday). She teaches 5 classes daily for 5 days, so that's 5 * 5 = 25 classes\", 53, 0.37604247805102853]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:3, Flag:False
+['1. Identify the number of classes per weekday: There are 5 dance classes daily, which totals 5 * 5 = 25 classes from Monday to Friday.\n        2. Calculate the total number of students attending on weekdays: Each class has 15 students, so for 25 classes, there will be 25 * 15 = 375 students', 85, 0.857008759720803]
+Path: StartNode6" color=black shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:10, H:8, Flag:True
+[\"75 students.\n        3. Next, let's calculate the earnings from these weekday classes by multiplying the number of students by the cost per student: 75 * $15.00 = $1125.00.\n        4. Now we need to include the additional 8 classes she teaches on Saturday\", 72, 0.5410299030543827]
+Path: Node0Node7" color=red shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:10, H:9, Flag:True
+[\"75 students.\n        3. Next, let's calculate the amount of money made from these students attending the weekday classes. With each student paying $15.00, the revenue generated during the weekdays is 75 * $15.00 = $1,125.00.\", 69, 0.8592118260046304]
+Path: Node0Node8" color=red shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:10, H:8, Flag:True
+[\"75 students.\n        3. Next, let's calculate the revenue from these 25 weekday classes by multiplying the number of students (75) with the cost per student ($15.00). So, the revenue is 75 * $15.00 = $1125.\n        4. Now, we have to consider the Saturday\", 81, 0.17893383889177883]
+Path: Node0Node9" color=red shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:10, H:9, Flag:True
+['75 students.\n        3. To calculate her earnings from teaching on weekdays, we multiply the number of students by her per-student fee: $15.00/student * 75', 44, 0.6383993833460391]
+Path: Node0Node10" color=red shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:10, H:8, Flag:True
+[\"75 students.\n        3. Next, let's calculate the revenue from these weekday classes by multiplying the number of students (75) by her fee per student ($15.00). So, the revenue is 75 * $15.00 = $1125.00.\n        4\", 72, 0.21137074521433663]
+Path: Node0Node11" color=red shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:10, H:8, Flag:True
+[\"75 students.\n        3. Next, let's calculate the money Judy makes from teaching these weekday classes. She charges $15.00 per student and there are 75 students in these classes, so she makes 75 * $15.00 = $1125.00 during the weekdays.\n        4. Now, we need to consider the additional 8 dance classes Judy teaches on Saturday. We'll follow the same process\", 103, 0.3759035202808191]
+Path: Node0Node12" color=red shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:10, H:8, Flag:True
+[\"75 students.\n        3. Next, let's calculate the earnings for her weekday dance classes. She charges $15.00 per student, so she makes 75 students * $15.00/student = $1125.00 from\", 60, 0.5273468188824907]
+Path: Node0Node13" color=red shape=box]
+	Node6 -> Node14 [label=Node6Node14]
+	Node14 [label="V:2, H:4, Flag:False
+['3. Calculate the revenue from weekday classes: Revenue is calculated by multiplying the number of students by the cost per student. So, 375 students * $15.00/student = $5625.00\n        4', 56, 0.29040886736697624]
+Path: Node6Node14" color=black shape=box]
+	Node6 -> Node15 [label=Node6Node15]
+	Node15 [label="V:2, H:4, Flag:False
+['3. Determine the cost per student on weekdays: She charges $15.00 per student.\n        4. Calculate the revenue from weekday classes: Revenue from weekday classes equals the total number of students multiplied by the cost per student, so 375 * $15 = $5625.', 73, 0.5479873154389614]
+Path: Node6Node15" color=black shape=box]
+	Node6 -> Node16 [label=Node6Node16]
+	Node16 [label="V:2, H:3, Flag:False
+[\"3. Calculate the revenue generated by these students on weekdays: Revenue = Number of Students * Cost per Student, which is 375 * $15.00 = $5625\n        4. Add Saturday's revenue to the total: There are 8 classes on Saturday\", 64, 0.38237407115593314]
+Path: Node6Node16" color=black shape=box]
+	Node6 -> Node17 [label=Node6Node17]
+	Node17 [label="V:2, H:4, Flag:False
+['3. Calculate the revenue generated from weekday classes: The revenue per student is $15.00, so for 375 students, the total revenue would be 375 * $15.00 = $5625.00', 57, 0.0707373302602955]
+Path: Node6Node17" color=black shape=box]
+	Node6 -> Node18 [label=Node6Node18]
+	Node18 [label="V:2, H:3, Flag:False
+['3. Determine the revenue from those weekday classes: The cost per student is $15.00, so the total revenue would be 375 students * $15.00/student = $5625.00\n        4. Calculate the number of classes on Saturday:', 66, 0.9937450793373844]
+Path: Node6Node18" color=black shape=box]
+	Node6 -> Node19 [label=Node6Node19]
+	Node19 [label="V:5, H:4, Flag:True
+['3. Calculate the revenue generated from weekday classes: The cost per student is $15.00, so the total revenue from these 25 classes would be 375 students * $1', 44, 0.08063994671521646]
+Path: Node6Node19" color=red shape=box]
+	Node6 -> Node20 [label=Node6Node20]
+	Node20 [label="V:2, H:3, Flag:False
+['3. Calculate the revenue generated from weekday classes: The cost per student is $15.00, so the total revenue from weekday classes would be 375 students * $15.00/student = $5625.00\n        4. Identify the number of Saturday classes: There are 8 dance classes on Saturday.', 78, 0.24321849639664572]
+Path: Node6Node20" color=black shape=box]
+	Node2 -> Node21 [label=Node2Node21]
+	Node21 [label="V:2, H:4, Flag:False
+[\"25 dance classes during the weekdays, we can multiply them: 15 students/class * 25 classes = 375 students in total for weekday classes.\n        3. Next, let's calculate the revenue from these weekday classes. We know each student pays $15.00 and there are 375 students attending these classes. So, we can multiply them: 375 students * $15.00/student = $5625.00 earned from weekday classes.\", 119, 0.5906592808864808]
+Path: Node2Node21" color=black shape=box]
+	Node2 -> Node22 [label=Node2Node22]
+	Node22 [label="V:8, H:9, Flag:True
+[\"25 classes in total during weekdays, we multiply them: 15 * 25 = 375 students attending on weekdays.\n        3. Next, we'll calculate the earnings from these weekday classes. The charge is $15.00 per student, so we multiply the number of students by the cost per student: 375 * $15.00 = $5\", 90, 0.7829273071819638]
+Path: Node2Node22" color=red shape=box]
+	Node2 -> Node23 [label=Node2Node23]
+	Node23 [label="V:1, H:3, Flag:False
+['25 dance classes during the weekdays, that makes a total of 25 * 15 = 375 students attending the weekday classes.\n        3. Calculate the revenue from weekday classes. We know Judy charges $15.00 per student. So for 375 students, she earns 375 * 15 = $5625.00 during the weekdays.\n        4. For Saturday, Judy teaches 8 dance classes with', 108, 0.5313585764032975]
+Path: Node2Node23" color=black shape=box]
+	Node2 -> Node24 [label=Node2Node24]
+	Node24 [label="V:1, H:3, Flag:False
+['25 classes, the number of students attending weekday classes is 15 * 25 = 375 students.\n        3. To calculate the earnings from weekday classes, multiply the number of students by the cost per student: 375 students * $15.00 per student = $5625.00.\n        4. Moving on to Saturday, we know she teaches 8 dance classes with', 95, 0.7161572704431416]
+Path: Node2Node24" color=black shape=box]
+	Node2 -> Node25 [label=Node2Node25]
+	Node25 [label="V:8, H:9, Flag:True
+['25 classes, the total number of students attending weekday classes is 15 * 25 = 375 students.\n        3. To calculate the revenue from weekday classes, we multiply the number of students by the cost per student: 375 * $15.00 = $5', 68, 0.2372228087204552]
+Path: Node2Node25" color=red shape=box]
+	Node2 -> Node26 [label=Node2Node26]
+	Node26 [label="V:7, H:8, Flag:True
+['25 dance classes on weekdays, the number of students who attend weekday classes is 25 * 15 = 375 students.\n        3. Calculate the total revenue generated from weekday classes by multiplying the number of students (375) with the cost per student ($15.', 67, 0.8813981303350351]
+Path: Node2Node26" color=red shape=box]
+	Node2 -> Node27 [label=Node2Node27]
+	Node27 [label="V:2, H:4, Flag:False
+['25 dance classes, this gives us a total of 25 * 15 = 375 students attending the weekday classes.\n        3. Calculate the total income from the weekday classes by multiplying the number of students by the price per student: 375 students * $15.00/student = $5,625.00.\n        4. On Saturday, Judy teaches 8 additional dance', 96, 0.9227034118780223]
+Path: Node2Node27" color=black shape=box]
+	Node23 -> Node28 [label=Node23Node28]
+	Node28 [label="V:6, H:4, Flag:True
+[\"40 students in each class (15 students/class * 8 classes). That makes a total of 8 * 40 = 320 students attending the Saturday classes.\n        5. Calculate the revenue from Saturday's classes. Again, she charges $15.00 per student and has\", 68, 0.9457974575922052]
+Path: Node23Node28" color=red shape=box]
+	Node23 -> Node29 [label=Node23Node29]
+	Node29 [label="V:1, H:1, Flag:False
+[\"15 students in each class. This gives us a total of 8 * 15 = 120 students attending the Saturday classes.\n        5. Calculate the revenue from Saturday's classes. Using the same charge per student (i.e., $15.00), Judy earns 120 * 15 = $1800.00 from Saturday's classes.\n        6. Now, let's add up the revenues from both weekdays and Saturdays to find out her\", 115, 0.7396963396189699]
+Path: Node23Node29" color=black shape=box]
+	Node23 -> Node30 [label=Node23Node30]
+	Node30 [label="V:1, H:2, Flag:False
+[\"5. the same number of students attending each class (15). So, there are a total of 8 * 15 = 120 students attending the Saturday classes.\n        6. Calculate the revenue from Saturday's classes. Again, she charges $15.00 per student. Therefore, for these 120 students, she earn\", 77, 0.23103965888216815]
+Path: Node23Node30" color=black shape=box]
+	Node23 -> Node31 [label=Node23Node31]
+	Node31 [label="V:1, H:2, Flag:False
+[\"5. The same number of students attending each class (15 per class). So for these 8 classes, there are a total of 8 * 15 = 120 students attending on Saturday.\n        6. Calculate the revenue from Saturday's classes. Again, she charges $15.00 per student. For 120 students, she earns 120 * 15 = $\", 91, 0.021398731041669894]
+Path: Node23Node31" color=black shape=box]
+	Node23 -> Node32 [label=Node23Node32]
+	Node32 [label="V:1, H:1, Flag:False
+['5. The same number of students attending each class (15 per class), so there are a total of 8 * 15 = 120 students attending the Saturday classes.\n        6. Calculate the revenue from Saturday classes. Since she charges $15.00 per student, Judy earns 120 * 15 = $1800.00 on that day.\n        7. Finally, to find out her total', 99, 0.40400228298033525]
+Path: Node23Node32" color=black shape=box]
+	Node23 -> Node33 [label=Node23Node33]
+	Node33 [label="V:1, H:2, Flag:False
+[\"4.5. As there are still 15 students attending each class, that makes a total of 8 * 15 = 120 students in attendance on Saturday.\n        4.6. Now calculate the revenue from Saturday's classes by multiplying the number of students by the fee per student: 120 students * $15.00 = $1800\", 84, 0.6504207441328927]
+Path: Node23Node33" color=black shape=box]
+	Node23 -> Node34 [label=Node23Node34]
+	Node34 [label="V:1, H:1, Flag:False
+['15 students in each class, which results in a total of 8 * 15 = 120 students attending these Saturday classes.\n        5. Calculate the revenue from Saturday classes: 120 students * $15.00 per student = $1800.00.\n        6. Finally, we need to add up the revenue from both weekdays and Saturdays to find the total amount Judy makes in a week. So, $5625.00 (from weekday classes) + $18', 119, 0.47208207041632233]
+Path: Node23Node34" color=black shape=box]
+	Node29 -> Node35 [label=Node29Node35]
+	Node35 [label="V:0, H:0, Flag:False
+['7. total earnings for the entire week. So, $5625.00 (weekday revenue) + $1800.00 (Saturday revenue) = $7425.00.\n        Judy makes a total of $7425.00 in 1 week from teaching dance classes.', 111, 0.3127577689573212]
+Path: Node29Node35" color=green shape=box]
+	Node29 -> Node36 [label=Node29Node36]
+	Node36 [label="V:1, H:1, Flag:False
+['7. total earnings for the entire week. So, $5625.00 (weekday revenue) + $1800.00 (Saturday revenue) = $7425.00.\n        Judy', 52, 0.6362256648681229]
+Path: Node29Node36" color=black shape=box]
+	Node29 -> Node37 [label=Node29Node37]
+	Node37 [label="V:0, H:0, Flag:False
+['7. total earnings for the whole week. So, we have $5625.00 (weekday revenue) + $1800.00 (Saturday revenue) = $7425.00.\n        Judy makes a total of $7425.00 in 1 week from teaching dance classes.', 75, 0.20577775363008488]
+Path: Node29Node37" color=green shape=box]
+	Node29 -> Node38 [label=Node29Node38]
+	Node38 [label="V:1, H:1, Flag:False
+['7. total earnings for 1 week. We have $5625.00 earned during weekdays and $1800.00 earned on Saturday, so the combined earnings are $5625 + $1800 = $7425.00 in 1 week.\n        So, Judy makes a total of', 76, 0.9484237416530484]
+Path: Node29Node38" color=black shape=box]
+	Node29 -> Node39 [label=Node29Node39]
+	Node39 [label="V:0, H:0, Flag:False
+['weekly earnings. The total amount she makes is $5625.00 (weekday revenue) + $1800.00 (Saturday revenue) = $7425.00 for 1 week.', 71, 0.8326266640425907]
+Path: Node29Node39" color=green shape=box]
+	Node29 -> Node40 [label=Node29Node40]
+	Node40 [label="V:1, H:1, Flag:False
+[\"7. total earnings for the entire week. So, the revenue from weekday classes is $5625.00 + the revenue from Saturday's classes ($1800.00) equals $5625.00 + $1800.00 = $7425.00.\n        8. Therefore, Judy makes a total of $7425.00 in\", 92, 0.22964309180611286]
+Path: Node29Node40" color=black shape=box]
+	Node29 -> Node41 [label=Node29Node41]
+	Node41 [label="V:0, H:0, Flag:False
+['7. total earnings for the whole week. So, we have $5625.00 (weekday revenue) + $1800.00 (Saturday revenue) = $7425.00.\n        Judy makes a total of $7425', 63, 0.4934253267356554]
+Path: Node29Node41" color=green shape=box]
+}

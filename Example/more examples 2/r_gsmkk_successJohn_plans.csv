@@ -1,0 +1,35 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Let's first calculate the total amount John gets from selling the Lego sets. He sells 13 sets at a price of $15 each, so we multiply 13 by 15: 13 * 15 = 195.
+        2. Next, let's find out how much money he spends on video games.",Node0,1,6,1,7,0.44625698826585736,81,False
+" 1. First, let's calculate the total amount John gets from selling his Lego sets. He sells 13 sets at $15 each, so 13 * $15 = $195.
+        2. Next, we",Node1,1,7,1,8,0.11014692560848649,54,False
+" 1. John starts with 13 Lego sets to sell.
+        2. Each set is sold for $15. So, he gets 13 * $15 = $195 from selling all the Legos.
+        3. Now that he bought 8 video games cost",Node2,1,5,1,6,0.997661451465762,63,False
+" 1. Calculate the total earnings from selling John's Lego sets.
+           Number of Lego sets = 13
+           Selling price per set = $15
+           Total Earnings = (Number of Lego Sets) * (Selling Price per Set)
+           Total Earnings =",Node3,1,6,1,7,0.6278816088607515,67,False
+" 1. Let's first calculate the total amount John gets from selling his lego sets. Since there are 13 lego sets, and he sells them at a price of $15 each, we multiply the number of",Node4,1,7,1,8,0.7079997235494293,49,False
+" 1. First, let's calculate how much money John gets from selling all his Lego sets. He sold 13 Lego sets at $15 each, so the total earnings are 13 * $15 = $195.
+        2. Next, we need to determine how many video games he could have bought if he had the entire amount of money",Node5,2,6,2,8,0.8424195354670775,79,False
+" 1. John starts with 13 Lego sets.
+        2. He sells each set for $15, which gives him the profit from selling them: 13 sets * $15/set = $195.
+        3. He then buys 8 video games at $20 each, costing him a total of 8 *",Node6,1,3,1,4,0.7324757259467342,78,False
+" 1. John starts with 13 Lego sets to sell.
+        2. Each set is sold for $15. So, he gets 13 * $15 = $195 from selling all the Legos.
+        3. Now that he bought 8 video games cost 4. At $20 each, the total cost of those video games is 8 * $20 = $160.
+        5. After buying the video games, John has $5 left from his earnings.
+        6.",Node14,5,8,6,14,0.40938920372477994,51,False
+" 1. John starts with 13 Lego sets to sell.
+        2. Each set is sold for $15. So, he gets 13 * $15 = $195 from selling all the Legos.
+        3. Now that he bought 8 video games cost 4. The total cost of the video games is 8 * $20 = $160.
+        5. After buying these video games, John has $5 left.
+        6. To find out how many Lego sets are still remaining after buying the video games,",Node15,5,8,6,14,0.6591455220122234,59,False
+" 1. John starts with 13 Lego sets to sell.
+        2. Each set is sold for $15. So, he gets 13 * $15 = $195 from selling all the Legos.
+        3. Now that he bought 8 video games cost 4. He paid a total of $8 * $20 = $160 for these video games.
+        5. John has $5 left from the money earned by selling toys after buying video games.
+        6. We need to find out how many Legos he still owns. Since he initially had 13 and sold them all, we subtract this amount from the number he started with: 13 - 13 = 0.
+        John still has 0 Lego sets left",Node16,1,0,2,2,0.7671353067421656,107,False

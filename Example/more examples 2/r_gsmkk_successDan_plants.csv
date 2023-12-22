@@ -1,0 +1,23 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We know that Dan planted 3 rose bushes and each has 25 roses. So to find the total number of roses, we multiply the number of rose bushes by the number of roses per bush: 3 * 25 = 75 roses.",Node0,2,5,2,7,0.7259185503681731,63,False
+" 1. First, we need to find the total number of roses by multiplying the number of rose bushes (3) by the number of roses per bush (25). So, 3 * 25 = 75 roses",Node1,2,5,2,7,0.7423291658972088,52,False
+" 1. First, we need to calculate the number of roses in total by multiplying the number of rose bushes (3) with the amount of roses per bush (25).
+        2. So, 3 * 25 = 75 roses.
+        3. Next, we want to find out how many thorns all the roses have combined",Node2,2,4,2,6,0.9634722572149096,80,False
+" 1. First, let's find the total number of roses from all the rose bushes. Dan planted 3 rose bushes and each one had 25 roses. So, we multiply 3 by 25 to get the total number of roses.
+        Total number of roses = 3 * 25 = 75 roses
+        2. Now that we know there are 75 roses in total, let's find",Node3,2,4,2,6,0.2822273299528859,100,False
+" 1. Let's first find out the total number of roses. We have 3 rose bushes, and each one has 25 roses. So, we multiply 3 by 25: 3 * 25 = 75 roses in total.
+        2. Now, let's calculate how many thorns are on these 75 roses. Each rose has 8 thorns. We multiply the number of roses (75) by the number of thorns",Node4,1,3,1,4,0.8543840589572197,112,False
+" 1. First, we need to find the total number of roses from all the rose bushes. Since Dan plants 3 rose bushes and each one has 25 roses, we multiply these two numbers together: 3 * 25 = 75 roses in total.
+        2. Next, we need to find the total number of thorns from all the roses. Each rose has 8 thorns, and there are 75",Node5,1,3,1,4,0.021770807954067162,100,False
+" 1. We need to calculate the number of thorns from each aspect.
+        2. There are a total of 3 rose bushes, so we multiply their count by the number of roses per bush. This gives us 3 * 25 = 75 roses in total.
+        3. Each rose has 8 thorns, so we need to calculate the sum of these thorns by multiplying the total number of roses (75) by the number of thorns per rose (8). This",Node6,1,2,1,3,0.7489446937017264,115,False
+" 1. We need to calculate the number of thorns from each aspect.
+        2. There are a total of 3 rose bushes, so we multiply their count by the number of roses per bush. This gives us 3 * 25 = 75 roses in total.
+        3. Each rose has 8 thorns, so we need to calculate the sum of these thorns by multiplying the total number of roses (75) by the number of thorns per rose (8). This gives us 75 * 8 = 600 thorns in total.",Node7,1,1,2,3,0.9061752980862424,43,False
+" 1. We need to calculate the number of thorns from each aspect.
+        2. There are a total of 3 rose bushes, so we multiply their count by the number of roses per bush. This gives us 3 * 25 = 75 roses in total.
+        3. Each rose has 8 thorns, so we need to calculate the sum of these thorns by multiplying the total number of roses (75) by the number of thorns per rose (8). This 4. gives us 75 * 8 = 600 thorns in total.
+        So, there are a total of 600 thorns among all the roses and bushes.",Node8,1,0,2,2,0.19736434516906431,114,False

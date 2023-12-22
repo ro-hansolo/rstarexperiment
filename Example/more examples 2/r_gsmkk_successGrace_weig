@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Grace weighs 125 pounds. Alex weighs 2 pounds less than 4 times what Grace weighs. What are their combined weights in pounds? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:5, Flag:False
+[\"1. We know Grace's weight is 125 pounds, and we need to find Alex's weight.\n        2. We have been given a relation for Alex's weight: It is 2 pounds less than 4 times what Grace weighs. So, (4 * Grace's weight) - 2 = Alex's weight.\n        3. Let's substitute the known value of Grace's weight to find Alex's weight: (4 * 125) - 2\", 109, 0.9619031611504896]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:8, H:8, Flag:True
+[\"1. First, let's find out how much Alex weighs. We know that he weighs 2 pounds less than 4 times what Grace weighs. So, we need to calculate 4 * Grace's weight and then subtract 2 from it.\n           4 * Grace's weight = 4 * 125 = 500 pounds\n           Alex's weight = 500 - 2 = 4\", 95, 0.13321333386423528]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:3, H:9, Flag:False
+[\"1. First, let's find out how much Alex weighs. We know that he weighs 2 pounds less than 4 times what Grace weighs. So, we can write this as: Alex's weight = (4 * Grace's weight)\", 55, 0.15941929481684602]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:3, H:10, Flag:False
+[\"1. First, let's find out how much Alex weighs. We know that he weighs 2 pounds less than 4 times what Grace weighs. So, we can write this\", 40, 0.05603195805807759]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:5, Flag:False
+[\"1. First, let's find out how much Alex weighs. We know that Alex weighs 2 pounds less than 4 times what Grace weighs. So, we can write this as: Alex's weight = (4 * Grace's weight) - 2.\n        2. Plug in the value of Grace's weight: Alex's weight = (4 * 125) - 2.\n        3. Calculate the result for Alex's weight: Alex's weight = 500 - 2\", 117, 0.04789721964939897]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:8, H:8, Flag:True
+[\"1. First, we need to calculate what Alex weighs. This is done by multiplying Grace's weight (125) by 4 and then subtracting 2 from the result. So, (4 * 125) - 2 = 400 - 2 = 398 pounds for Alex's weight.\n        2. Now that\", 81, 0.7219350931559555]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:3, H:10, Flag:False
+[\"1. First, let's find out how much Alex weighs. We know that he weighs 2 pounds less than 4 times what Grace weighs. So, we need to calculate 4\", 42, 0.3140199071846539]
+Path: StartNode6" color=black shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:1, H:1, Flag:False
+[\"4. Now calculate the result: (4 * 125) - 2 = 500 - 2 = 498 pounds\n        5. Finally, we need to find their combined weights. To do this, simply add Grace's weight and Alex\", 58, 0.15617592530194424]
+Path: Node0Node7" color=black shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:1, H:1, Flag:False
+['4. Calculate the result: (4 * 125) - 2 = 500 - 2 = 498 pounds\n        5. Now, we have both their weights: Grace weighs 125 pounds and Alex weighs 498 pounds.\n        6. To', 67, 0.1864749155454145]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:1, H:1, Flag:False
+[\"4. Now let's calculate this expression: (500 - 2) = 498 pounds\n        5. So, Alex weighs 498 pounds.\n        6. To find their combined weights, we simply add Grace's weight and Alex's weight together: 125 + 498 =\", 73, 0.3195964619734679]
+Path: Node0Node9" color=black shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:1, H:1, Flag:False
+['4. Calculate the result: (4 * 125) - 2 = 500 - 2 = 498 pounds\n        5. Now, we have both their weights: Grace weighs 125 pounds and Alex weighs 498 pounds.\n        6. To find their combined weight, simply add their individual weights together: 125 + 498 =', 89, 0.2555698938030654]
+Path: Node0Node10" color=black shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:1, H:1, Flag:False
+[\"4. Calculate the result: (4 * 125) - 2 = 500 - 2 = 498 pounds\n        5. Now, we know both Grace and Alex's weights individually, so to find their combined weight, simply add them together: Grace's weight + Alex's\", 69, 0.422009033001311]
+Path: Node0Node11" color=black shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:1, H:1, Flag:False
+[\"4. Now calculate the result: 4 * 125 is 500, so 500 - 2 = 498 pounds. Therefore, Alex weighs 498 pounds.\n        5. Finally, we need to find their combined weight. To do this, simply add Grace's and Alex's weights together: 125 (Grace\", 83, 0.4775521167932294]
+Path: Node0Node12" color=black shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:1, H:1, Flag:False
+[\"4. Calculate the result: 500 - 2 = 498 pounds\n        5. Now, we know both individuals' weights. To find their combined total weight, simply add them together: Grace's weight + Alex's weight\n        6. Add Grace's weight (125 pounds) and Alex's weight (498 pounds): 125 + 49\", 88, 0.5100666746559688]
+Path: Node0Node13" color=black shape=box]
+	Node7 -> Node14 [label=Node7Node14]
+	Node14 [label="V:0, H:0, Flag:False
+[\"6. Combined weight = Grace's weight + Alex's weight = 125 + 498 = 623 pounds\n        So, the combined weight of Grace and Alex is 623 pounds.\", 104, 0.08335051468902455]
+Path: Node7Node14" color=green shape=box]
+	Node7 -> Node15 [label=Node7Node15]
+	Node15 [label="V:0, H:0, Flag:False
+[\"6. Combined weight = Grace's weight + Alex's weight = 125 pounds (Grace) + 498 pounds (Alex) = 125 + 498 = 623 pounds\n        So, their combined weights are 623 pounds.\", 80, 0.002548310302380452]
+Path: Node7Node15" color=green shape=box]
+	Node7 -> Node16 [label=Node7Node16]
+	Node16 [label="V:1, H:1, Flag:False
+[\"6. Combined weight = Grace's weight + Alex's weight = 125 pounds (Grace) + 498 pounds (Alex) = 125 + 498 = 623 pounds\n        Their combined weights are 62\", 59, 0.49614073543659487]
+Path: Node7Node16" color=black shape=box]
+	Node7 -> Node17 [label=Node7Node17]
+	Node17 [label="V:1, H:1, Flag:False
+[\"6. Combined weight = Grace's weight + Alex's weight = 125 + 498 = 623 pounds\", 104, 0.930777098753198]
+Path: Node7Node17" color=black shape=box]
+	Node7 -> Node18 [label=Node7Node18]
+	Node18 [label="V:1, H:1, Flag:False
+[\"6. Combined weight = Grace's weight + Alex's weight = 125 pounds (Grace) + 498 pounds (Alex) = 125 + 498 = 623 pounds\n        So\", 53, 0.7721516499572132]
+Path: Node7Node18" color=black shape=box]
+	Node7 -> Node19 [label=Node7Node19]
+	Node19 [label="V:0, H:0, Flag:False
+[\"6. Combined weight = Grace's weight + Alex's weight = 125 pounds (Grace) + 498 pounds (Alex) = 125 + 498 = 623 pounds\n        So, their combined weights are 623 pounds.\", 103, 0.21457362035218952]
+Path: Node7Node19" color=green shape=box]
+	Node7 -> Node20 [label=Node7Node20]
+	Node20 [label="V:0, H:0, Flag:False
+[\"6. Combined weight = Grace's weight + Alex's weight = 125 pounds (Grace) + 498 pounds (Alex) = 125 + 498 = 623 pounds\n        So, their combined weights are\", 58, 0.03629721962371446]
+Path: Node7Node20" color=green shape=box]
+}

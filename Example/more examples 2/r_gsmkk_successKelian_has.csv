@@ -1,0 +1,38 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We know that Kelian's first recipe has 20 instructions.
+        2. The second recipe has twice as many instructions as the first one, so we need to find how many times 20 is multiplied by 2.
+           2 * 20 = 40 (The second recipe has 40 instructions.)
+        Now, let'",Node0,1,8,1,9,0.5497000766952231,79,False
+" 1. First, let's find out how many instructions are in the second recipe. Since it has twice as many instructions as the first one (20), we can multiply 20 by 2 to get the number of instructions in the second recipe. So, 20 * 2 = 40 instructions for the second recipe.
+        2. Now, we need",Node1,1,8,1,9,0.3182998459406938,80,False
+" 1. Let's break down the given information:
+           - Recipe A has 20 instructions.
+           - Recipe B has double the number of instructions in Recipe A, which is twice as many as 20.
+
+        2. To find out how many instructions are in both recipes combined, we need to add the number of instructions from each recipe:
+          Recipe A + Recipe B = 2",Node2,2,8,2,10,0.3858083324686059,91,False
+" 1. First, let's understand the number of instructions in each recipe. The first recipe has 20 instructions, and the second one has twice as many instructions as the first one, so it has 2 * 20 = 40 instructions.
+        2. Now, we need to find out how many total instructions Kelian needs for both dishes. To do this, we simply add the number of instructions from each recipe:",Node3,1,8,1,9,0.48635140384513675,91,False
+" 1. We know there are two recipes involved - one with 20 instructions and another one with double the number of instructions compared to the first one.
+        2. The second recipe has twice",Node4,3,9,3,12,0.8693140805261178,40,False
+" 1. First, let's find out how many instructions are in the second recipe. Since it has twice as many instructions as the first one with 20 instructions, we multiply 20 by 2.
+   20 * 2 = 40 instructions
+   
+   2. Now, to prepare both dishes, Kelian needs to read all the instructions from both recipes. So, we add the",Node5,1,8,1,9,0.011557841170772631,87,False
+" 1. To find out how many instructions are in each recipe, we first need to understand that one recipe has 20 instructions.
+        2. The second recipe has twice as many instructions as the first one, which means it will have 2 * 20 = 40 instructions.
+        3. Now, to prepare",Node6,1,7,1,8,0.7536704836942958,69,False
+" 1. To find out how many instructions are in each recipe, we first need to understand that one recipe has 20 instructions.
+        2. The second recipe has twice as many instructions as the first one, which means it will have 2 * 20 = 40 instructions.
+        3. Now, to prepare 4. both dishes, Kelian needs to read all the instructions from both recipes.
+        5. So, we need to add the number of instructions in each recipe: 20 (from the first recipe) + 40 (from the second recipe).
+        6. Finally, the total number of instructions Kelian has to read is 60.",Node7,1,1,2,3,0.4025851894028032,118,False
+" 1. To find out how many instructions are in each recipe, we first need to understand that one recipe has 20 instructions.
+        2. The second recipe has twice as many instructions as the first one, which means it will have 2 * 20 = 40 instructions.
+        3. Now, to prepare 4. both dishes, Kelian must read and follow all the given instructions for both recipes combined.
+        5. So, the total number of instructions Kelian has to read is 20 (first recipe) + 40 (second recipe) = 60 instructions.",Node8,1,1,2,3,0.7487481432179329,76,False
+" 1. To find out how many instructions are in each recipe, we first need to understand that one recipe has 20 instructions.
+        2. The second recipe has twice as many instructions as the first one, which means it will have 2 * 20 = 40 instructions.
+        3. Now, to prepare both dishes, Kelian needs to read all the instructions for both recipes combined.
+        4. So, the total number of instructions is 20 (from the first recipe) + 40 (from the second recipe) = 60 instructions.
+        5. Therefore, Kelian has to read 60 instructions to prepare the two dishes",Node9,0,0,1,1,0.2349847666977044,73,False

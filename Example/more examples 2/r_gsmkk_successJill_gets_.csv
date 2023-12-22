@@ -1,0 +1,26 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's calculate Jill's earnings from teaching for the whole year. She works 50 weeks at 35 hours per week, so she spends 50 * 35 = 1750 hours teaching in a year. At $20 per hour, her total earnings from teaching are 1750 * 20 = $35,000.
+        2. Next, let'",Node0,2,6,2,8,0.11962277917878217,96,False
+" 1. First, we need to find out how much Jill earns weekly for each job.
+           For teaching: $20 per hour * 35 hours per week = $700 per week
+           For coaching: $30 per hour * 15 hours",Node1,2,7,2,9,0.9770754747604474,59,False
+" 1. First, we need to calculate the earnings from each job separately.
+            - Teaching hours per week * Teacher hourly pay = Earnings from teaching job
+            - Coaching hours per week * Coach hourly pay = Earnings from coaching job
+              35 teaching hours",Node2,3,8,3,11,0.6141198324868974,62,False
+" 1. First, let's calculate Jill's earnings from teaching for one week. She gets paid $20 per hour and works 35 hours a week. So, we multiply the hourly rate by the number of hours worked: $20 * 35 = $700.
+        2. Next, let's calculate her earnings from coaching for one week. She gets paid $30 per hour and works 15 hours a week as a coach. So, we multiply the hourly rate by the number of",Node3,2,6,2,8,0.19848173828597504,116,False
+" 1. First, let's calculate Jill's earnings per hour for each job. She gets paid $20/hour as a teacher and $30/hour as a cheerleading coach.
+        2. Next, we need to find out how many hours she works in total per week. She works 35 hours as a teacher and 15 hours as a coach, so 35 + 15 = 50 hours per week combined.
+        3.",Node4,2,7,2,9,0.3239347923090671,102,False
+" 1. Calculate Jill's weekly earnings for teaching: $20 per hour * 35 hours = $700 per week
+        2. Calculate Jill's weekly earnings for coaching: $30 per hour * 15 hours = $450 per week
+        3. Calculate her total weekly earnings: $700 (teaching) + $450 (coaching) = $1150 per week
+        4. Calculate Jill's annual salary by multiplying her weekly earnings by the",Node5,1,5,1,6,0.4078398228222526,118,False
+" 1. First, let's calculate Jill's earnings from teaching per week. She gets paid $20 per hour and works for 35 hours a week. So, 
+           Teaching income per week = Hourly rate * Hours worked = $20/hour *",Node6,5,9,5,14,0.23715651868575904,62,False
+" 1. Calculate Jill's weekly earnings for teaching: $20 per hour * 35 hours = $700 per week
+        2. Calculate Jill's weekly earnings for coaching: $30 per hour * 15 hours = $450 per week
+        3. Calculate her total weekly earnings: $700 (teaching) + $450 (coaching) = $1150 per week
+        4. Calculate Jill's annual salary by multiplying her weekly earnings by the number of weeks she works per year: $1150 per week * 50 weeks = $57,500 per year
+        So, Jill's annual salary is $57,500.",Node7,0,0,1,1,0.4451991391439798,74,False

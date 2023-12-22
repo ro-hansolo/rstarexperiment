@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Kelian has two recipes for preparing dishes, one having 20 instructions and the second one having twice as many instructions as the first one. How many instructions does Kelian have to read to prepare the two dishes? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:8, Flag:False
+[\"1. We know that Kelian's first recipe has 20 instructions.\n        2. The second recipe has twice as many instructions as the first one, so we need to find how many times 20 is multiplied by 2.\n           2 * 20 = 40 (The second recipe has 40 instructions.)\n        Now, let'\", 79, 0.5497000766952231]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:8, Flag:False
+[\"1. First, let's find out how many instructions are in the second recipe. Since it has twice as many instructions as the first one (20), we can multiply 20 by 2 to get the number of instructions in the second recipe. So, 20 * 2 = 40 instructions for the second recipe.\n        2. Now, we need\", 80, 0.3182998459406938]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:8, Flag:False
+[\"1. Let's break down the given information:\n           - Recipe A has 20 instructions.\n           - Recipe B has double the number of instructions in Recipe A, which is twice as many as 20.\n\n        2. To find out how many instructions are in both recipes combined, we need to add the number of instructions from each recipe:\n          Recipe A + Recipe B = 2\", 91, 0.3858083324686059]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:8, Flag:False
+[\"1. First, let's understand the number of instructions in each recipe. The first recipe has 20 instructions, and the second one has twice as many instructions as the first one, so it has 2 * 20 = 40 instructions.\n        2. Now, we need to find out how many total instructions Kelian needs for both dishes. To do this, we simply add the number of instructions from each recipe:\", 91, 0.48635140384513675]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:3, H:9, Flag:False
+['1. We know there are two recipes involved - one with 20 instructions and another one with double the number of instructions compared to the first one.\n        2. The second recipe has twice', 40, 0.8693140805261178]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:8, Flag:False
+[\"1. First, let's find out how many instructions are in the second recipe. Since it has twice as many instructions as the first one with 20 instructions, we multiply 20 by 2.\n   20 * 2 = 40 instructions\n   \n   2. Now, to prepare both dishes, Kelian needs to read all the instructions from both recipes. So, we add the\", 87, 0.011557841170772631]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:7, Flag:False
+['1. To find out how many instructions are in each recipe, we first need to understand that one recipe has 20 instructions.\n        2. The second recipe has twice as many instructions as the first one, which means it will have 2 * 20 = 40 instructions.\n        3. Now, to prepare', 69, 0.7536704836942958]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:1, H:1, Flag:False
+['4. both dishes, Kelian needs to read all the instructions from both recipes.\n        5. So, we need to add the number of instructions in each recipe: 20 (from the first recipe) + 40 (from the second recipe).\n        6. Finally, the total number of instructions Kelian has to read is 60.', 118, 0.4025851894028032]
+Path: Node6Node7" color=black shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:1, H:1, Flag:False
+['4. both dishes, Kelian must read and follow all the given instructions for both recipes combined.\n        5. So, the total number of instructions Kelian has to read is 20 (first recipe) + 40 (second recipe) = 60 instructions.', 76, 0.7487481432179329]
+Path: Node6Node8" color=black shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['both dishes, Kelian needs to read all the instructions for both recipes combined.\n        4. So, the total number of instructions is 20 (from the first recipe) + 40 (from the second recipe) = 60 instructions.\n        5. Therefore, Kelian has to read 60 instructions to prepare the two dishes', 73, 0.2349847666977044]
+Path: Node6Node9" color=green shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:1, H:1, Flag:False
+['4. both dishes, Kelian would need to read these combined instructions from both recipes.\n        5. So, in total, there are 20 (first recipe) + 40 (second recipe) = 60 instructions Kelian has to read to prepare the two dishes.', 102, 0.6502497832073129]
+Path: Node6Node10" color=black shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:1, H:1, Flag:False
+['4. both dishes, Kelian needs to read all of the instructions for each dish.\n        5. This means Kelian must read a total of 20 (first recipe) + 40 (second recipe) = 60 instructions to prepare both dishes.', 95, 0.6836103439865249]
+Path: Node6Node11" color=black shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:2, H:2, Flag:False
+['4. both dishes, Kelian needs to read all the instructions from both recipes.\n        5. So, the total number of instructions to read is the sum of instructions in each recipe: 20 (from the first recipe) + 40 (from the second', 56, 0.04225855455664984]
+Path: Node6Node12" color=black shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:1, H:1, Flag:False
+['4. both dishes, Kelian needs to read all of the instructions from both recipes.\n        5. So, in total, there are 20 (first recipe) + 40 (', 41, 0.48323133332897983]
+Path: Node6Node13" color=black shape=box]
+}

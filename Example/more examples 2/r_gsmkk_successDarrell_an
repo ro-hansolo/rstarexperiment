@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Darrell and Allen's ages are in the ratio of 7:11. If their total age now is 162, calculate Allen's age 10 years from now. Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:10, Flag:False
+[\"1. We know the ratio of their ages is 7 (Darrell) to 11 (Allen). So, their combined ages are in the ratio of 7+11 = 18.\n        2. Their current total age is 162 years old. To find Darrell's and Allen's individual ages, we need to break down that combined ratio into two separate ratios: 7\", 90, 0.7251451777495882]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:6, Flag:False
+[\"1. First, let's find the sum of their current ages (Darrell + Allen).\n           Darrell's age = 7/24 * 162 = 35\n           Allen's age = 162 - 35 = 127\n        2. Now, let'\", 71, 0.6584355087314209]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:10, Flag:False
+[\"1. We need to find the sum of Darrell and Allen's current ages first. The ratio of their ages is given as 7:11. To find this sum, we will add up these two numbers together and then multiply by a common factor (in this case, the L\", 61, 0.6316543571302013]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:10, Flag:False
+[\"1. First, we need to find the sum of their current ages (Darrell's and Allen's). We have a ratio of 7:11 and a total age of 162. To do this, we can multiply each part of the ratio by the total age and then add them\", 66, 0.4173997813772573]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:10, Flag:False
+[\"1. First, let's understand the ratio of ages between Darrell and Allen as 7:11. This means that Darrell's age is 7 parts out of a total of 18 (7+11) parts, and Allen's age makes\", 58, 0.8771317924107607]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:5, H:10, Flag:True
+[\"1. First, let's find a common multiple for the ratio numbers (7 and 11). The least common multiple (LCM) of 7 and 11 is 77.\n        2. Now, we know that their total age is 162. We have to divide this total by the LCM (77) to find their shared age at a certain\", 82, 0.6152688067760671]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:8, Flag:False
+[\"1. First, we need to find the combined age of Darrell and Allen. They have a 7:11 ratio, so let's denote it as (7x):(11x), where x is some common factor for both numbers. To do this, we multiply each\", 61, 0.7169336110222672]
+Path: StartNode6" color=black shape=box]
+	Node1 -> Node7 [label=Node1Node7]
+	Node7 [label="V:2, H:8, Flag:False
+[\"3. Next, we need to find the ratio of their ages in 10 years from now (Darrell + Allen).\n           Darrell's age in 10 years = 35 + 10 = 45\n           Allen's age in 10 years = 127 + 10 =\", 73, 0.09226985143698252]
+Path: Node1Node7" color=black shape=box]
+	Node1 -> Node8 [label=Node1Node8]
+	Node8 [label="V:2, H:2, Flag:False
+[\"3. Next, we need to find the ratio of their ages in 10 years from now (Darrell's age + 10 / Allen's age + 10).\n           Darrell's age in 10 years = 35 + 10 = 45\n           Allen's age in 10 years = 127 + 10 = 137\n        4. Calculate the\", 97, 0.0941684626766861]
+Path: Node1Node8" color=black shape=box]
+	Node1 -> Node9 [label=Node1Node9]
+	Node9 [label="V:8, H:9, Flag:True
+[\"3. Find their ratio of ages (7:11).\n           Ratio is a simplified expression of two numbers where one number has been multiplied by the other's reciprocal.\n           In this case, the ratio is 7/11 = (7\", 58, 0.9818497647019048]
+Path: Node1Node9" color=red shape=box]
+	Node1 -> Node10 [label=Node1Node10]
+	Node10 [label="V:2, H:2, Flag:False
+[\"3. Calculate the ratio of their ages in 10 years from now (Darrell + Allen).\n           Darrell's age in 10 years = 35 + 10 = 45\n           Allen's age in 10 years = 127 + 10 = 137\n        4. Find the ratio of their ages\", 82, 0.10955606190831857]
+Path: Node1Node10" color=black shape=box]
+	Node1 -> Node11 [label=Node1Node11]
+	Node11 [label="V:1, H:1, Flag:False
+[\"3. We want to find Allen's age in 10 years from now, so we need to add 10 more years to his current age:\n            Allen's age after 10 years = 127 + 10 = 137\n           So, Allen will be\", 66, 0.993312821202579]
+Path: Node1Node11" color=black shape=box]
+	Node1 -> Node12 [label=Node1Node12]
+	Node12 [label="V:9, H:9, Flag:True
+[\"3. Next, we need to find the ratio of their ages in 10 years from now. We can do this by dividing each current age by their total age and multiplying it by 10.\n           Darrell's age in 10 years = (7/\", 60, 0.1555089773501661]
+Path: Node1Node12" color=red shape=box]
+	Node1 -> Node13 [label=Node1Node13]
+	Node13 [label="V:1, H:1, Flag:False
+[\"3. To find Allen's age after 10 years, we need to add 10 years to his current age.\n            Allen's age (after 10 years) = 127 + 10 = 137\n        So, Allen will be\", 62, 0.9727232310271966]
+Path: Node1Node13" color=black shape=box]
+	Node11 -> Node14 [label=Node11Node14]
+	Node14 [label="V:1, H:0, Flag:False
+['4. 137 years old in 10 years from now.', 82, 0.846058134345642]
+Path: Node11Node14" color=green shape=box]
+	Node11 -> Node15 [label=Node11Node15]
+	Node15 [label="V:1, H:0, Flag:False
+['137 years old 10 years from now.', 61, 0.9692311720170356]
+Path: Node11Node15" color=green shape=box]
+	Node11 -> Node16 [label=Node11Node16]
+	Node16 [label="V:1, H:0, Flag:False
+['4. 137 years old in 10 years from now.', 68, 0.7606551363820445]
+Path: Node11Node16" color=green shape=box]
+	Node11 -> Node17 [label=Node11Node17]
+	Node17 [label="V:1, H:0, Flag:False
+['137 years old in 10 years.', 60, 0.15056023641616723]
+Path: Node11Node17" color=green shape=box]
+	Node11 -> Node18 [label=Node11Node18]
+	Node18 [label="V:1, H:0, Flag:False
+[\"4. Allen's age 10 years from now is 137.\", 63, 0.3140829282523848]
+Path: Node11Node18" color=green shape=box]
+	Node11 -> Node19 [label=Node11Node19]
+	Node19 [label="V:1, H:0, Flag:False
+['4. 137 years old in 10 years from now.', 73, 0.026400992459964967]
+Path: Node11Node19" color=green shape=box]
+	Node11 -> Node20 [label=Node11Node20]
+	Node20 [label="V:1, H:0, Flag:False
+['137 years old 10 years from now.', 105, 0.5057812309482725]
+Path: Node11Node20" color=green shape=box]
+}

@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Grandma Jones baked 5 apple pies for the fireman's luncheon.  She cut each pie into 8 pieces and set the five pies out on the buffet table for the guests to serve themselves.  At the end of the evening, after the guests had taken and eaten their pieces of pie, there were 14 pieces of pie remaining.  How many pieces were taken by the guests? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:8, Flag:False
+['1. Grandma Jones baked 5 apple pies and each one was cut into 8 pieces. To find out how many pieces were made in total, multiply the number of pies by the number of pieces per pie: 5 pies * 8 pieces/pie = 40 pieces in total.\n        2. After the guests had taken and eaten their pieces, there were 14 pieces remaining on the table. To find', 93, 0.6485321027841773]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:8, Flag:False
+['1. First, we need to find out how many total pieces of apple pies were available before the event started. To do this, multiply the number of pies (5) by the number of slices per pie (8). So, 5 * 8 =', 58, 0.07691730189653234]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:8, Flag:False
+[\"1. First, let's find out how many total pieces of apple pies were available before any guest took a piece. To do this, we multiply the number of pies (5) by the number of slices per pie (8). So, 5 * 8 = 40 total pieces.\", 67, 0.18078682100900223]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:8, Flag:False
+['1. First, we need to find out how many total pieces of apple pies Grandma Jones baked. She made 5 apple pies and each was cut into 8 pieces. So, 5 pies * 8 pieces per pie = 40 total pieces.\n        2. Next, we know that there were 14 remaining pieces after the guests had taken their share. To find', 84, 0.12479862815432063]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:4, Flag:False
+['1. Firstly, we need to know how many total pieces were available on the table initially. So, multiply the number of pies (5) by the number of pieces per pie (8). This will give us 40 pieces in total on the table.\n        2. Then, we find out how many pieces were left after guests took their portions. There were 14 remaining pieces from the initial 40.\n        3. To calculate how many pieces were taken by the guests, we simply', 107, 0.6187865903258496]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:0, H:2, Flag:False
+['1. Grandma Jones baked 5 apple pies. Each pie is cut into 8 slices.\n        2. So in total, she had (5 pies * 8 slices per pie) = 40 initial slices of apple pie.\n        3. The remaining 14 slices were left after the guests took pieces from the buffet table.\n        4. To find out how many slices were taken by the guests, we can subtract these', 102, 0.7475391115096025]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:8, Flag:False
+['1. We know that Grandma baked 5 apple pies in total.\n        2. She cut each pie into 8 pieces, so there are 5 * 8 = 40 pieces per pie.\n        3. Now, consider the initial number of slices before the guests took any: 40 (pieces per pie) * 5', 77, 0.5197785486267282]
+Path: StartNode6" color=black shape=box]
+	Node5 -> Node7 [label=Node5Node7]
+	Node7 [label="V:0, H:1, Flag:False
+['14 remaining slices from the total of 40 initial slices: 40 - 14 = 26 slices.', 67, 0.6840945611084077]
+Path: Node5Node7" color=black shape=box]
+	Node5 -> Node8 [label=Node5Node8]
+	Node8 [label="V:0, H:0, Flag:False
+[\"40 initial slices from the remaining 14 slices: 40 - 14 = 26 slices.\n        Therefore, the guests took 26 pieces of apple pie during the fireman's luncheon.\", 62, 0.468457709139813]
+Path: Node5Node8" color=green shape=box]
+	Node5 -> Node9 [label=Node5Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['5. Remaining slices (14) from the initial total of slices (40).\n        6. So, the number of slices taken by the guests is 40 - 14 = 26 apple pie slices.', 83, 0.3349084594973384]
+Path: Node5Node9" color=green shape=box]
+	Node5 -> Node10 [label=Node5Node10]
+	Node10 [label="V:0, H:0, Flag:False
+[\"14 remaining slices from the initial 40 slices: 40 - 14 = 26 slices.\n        So, the guests took 26 pieces of apple pie during the fireman's\", 48, 0.22318547530335986]
+Path: Node5Node10" color=green shape=box]
+	Node5 -> Node11 [label=Node5Node11]
+	Node11 [label="V:0, H:0, Flag:False
+[\"14 remaining slices from the original 40 initial slices: 40 - 14 = 26 slices.\n        5. Therefore, a total of 26 pieces of apple pie were taken by the guests during the fireman's\", 56, 0.4552414073634501]
+Path: Node5Node11" color=green shape=box]
+	Node5 -> Node12 [label=Node5Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['14 remaining slices from the initial 40 slices: 40 - 14 = 26 slices of apple pie were taken by the guests.', 98, 0.7822478157862646]
+Path: Node5Node12" color=green shape=box]
+	Node5 -> Node13 [label=Node5Node13]
+	Node13 [label="V:0, H:0, Flag:False
+[\"remaining slices from the initial number of slices: (40 initial slices - 14 remaining slices) = 26 slices.\n        Therefore, the guests took 26 pieces of apple pie during the fireman's luncheon.\", 106, 0.4176400663438584]
+Path: Node5Node13" color=green shape=box]
+}

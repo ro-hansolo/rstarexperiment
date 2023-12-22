@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Harry slept 9 hours last night. His friend James slept only 2/3 of what Harry slept. How many more hours did Harry sleep than James? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:3, Flag:False
+[\"1. First, let's find out how many hours James slept by using the given ratio (2/3 of Harry's 9 hours).\n           2/3 * 9 = 6 hours\n        2. Now that we know James slept for 6 hours, let's calculate the difference between their sleep times.\n           Difference\", 73, 0.4544796139655558]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:3, Flag:False
+[\"1. First, we need to find out how many hours James slept. To do that, we'll multiply the number of hours Harry slept (9) by the fraction of what James slept (2/3). So, 9 * (2/3) = 6 hours.\n        2. Now, we know both Harry and James slept for 9 and 6 hours respectively. To find out how many\", 87, 0.23132674661683716]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:2, Flag:False
+[\"1. First, we need to determine the number of hours James slept.\n        2. To do this, multiply James's sleep (which is 2/3 of Harry's sleep) by Harry's actual hours (9).\n        (2/3) * 9 = 6 hours\n        3. Now that we have the number of hours James slept (6), sub\", 84, 0.8812907710319609]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:2, Flag:False
+['1. First, find out how many hours James slept. We know he slept 2/3 of what Harry slept, and Harry slept for 9 hours. So, we multiply 2/3 by 9 to get the number of hours James slept: (2/3) * 9 = 6 hours.\n        2. Now, compare the sleeping hours of both friends. Harry slept 9 hours while James slept 6 hours.\n        3. To find out how many more hours', 104, 0.5789521214512463]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:6, Flag:False
+[\"1. First, let's find out how many hours James slept. Since James slept 2/3 of what Harry slept, and Harry slept for 9 hours, we can calculate this by multiplying the fraction (2/3) with the number of hours Harry slept (9). So, 2/\", 64, 0.10497238468474346]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:7, Flag:False
+[\"1. First, let's determine how many hours James slept. We know that he slept 2/3 of what Harry slept, and Harry slept 9 hours. So, we can calculate this by multiplying the fraction (2/3) with the number of hours Harry slept (9).\n            James' sleep = (2/3) * 9\n        2. Now let's perform the multiplication:\n            James' sleep = (2 * 9) / 3\n            James' sleep =\", 109, 0.48893370511940204]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:4, Flag:False
+[\"1. First, let's find out how many hours James slept. Since James slept 2/3 of what Harry slept, and Harry slept for 9 hours, we can calculate this by multiplying the fraction (2/3) with the number of hours Harry slept (9). So, 2/3 * 9 = 6 hours.\n        2. Now that we know James slept 6 hours, we need to find out how many more hours Harry slept than James. To\", 102, 0.011777625088108756]
+Path: StartNode6" color=black shape=box]
+	Node2 -> Node7 [label=Node2Node7]
+	Node7 [label="V:0, H:0, Flag:False
+[\"4. Subtract James's sleep from Harry's sleep to find the difference in hours.\n        Harry's sleep: 9 hours\n        Difference: 9 - 6 = 3 hours\n        5. Finally, Harry slept 3 more hours than James.\", 94, 0.05834203067962618]
+Path: Node2Node7" color=green shape=box]
+	Node2 -> Node8 [label=Node2Node8]
+	Node8 [label="V:0, H:0, Flag:False
+[\"4. Subtract James's sleep hours from Harry's sleep hours to find the difference in hours between them.\n        Harry's sleep hours: 9\n        Difference in sleep hours: 9 - 6 = 3 hours\n        5. So, Harry slept 3 more hours than James.\", 87, 0.27455677738638407]
+Path: Node2Node8" color=green shape=box]
+	Node2 -> Node9 [label=Node2Node9]
+	Node9 [label="V:1, H:0, Flag:False
+[\"4. Subtract James's sleep hours from Harry's sleep hours to find the difference in hours between them.\n        Harry's sleep: 9 hours - James's sleep: 6 hours = 3\", 46, 0.09389975488470903]
+Path: Node2Node9" color=green shape=box]
+	Node2 -> Node10 [label=Node2Node10]
+	Node10 [label="V:0, H:0, Flag:False
+[\"4. Subtract James's sleep hours from Harry's sleep hours to find the difference in their sleep duration.\n        Harry's sleep: 9 hours - James's sleep: 6 hours = 3 more hours\n\n        So, Harry slept 3 more hours than James.\", 76, 0.36712408562669174]
+Path: Node2Node10" color=green shape=box]
+	Node2 -> Node11 [label=Node2Node11]
+	Node11 [label="V:0, H:0, Flag:False
+[\"4. Subtract James's sleep hours from Harry's sleep hours to find the difference.\n        Difference = Harry's sleep hours - James's sleep hours\n        Difference = 9 - 6 = 3 hours\n        5. Finally, we can conclude that Harry slept 3 more hours than James.\", 85, 0.16399245401761275]
+Path: Node2Node11" color=green shape=box]
+	Node2 -> Node12 [label=Node2Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['4. Subtract this from the total hours Harry slept (9) to find the difference between their sleep times.\n        9 - 6 = 3 hours\n        5. Therefore, Harry slept 3 more hours than James did last night.', 98, 0.7116216720840661]
+Path: Node2Node12" color=green shape=box]
+	Node2 -> Node13 [label=Node2Node13]
+	Node13 [label="V:0, H:0, Flag:False
+[\"4. Subtract James's sleep hours from Harry's sleep hours to find the difference in sleeping time between them.\n          Difference = Harry's sleep (9 hours) - James's sleep (6 hours)\n        Difference = 3 hours\n        So, Harry slept 3 more hours than James last night.\", 91, 0.5948701716040082]
+Path: Node2Node13" color=green shape=box]
+}

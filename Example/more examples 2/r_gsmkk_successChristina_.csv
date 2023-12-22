@@ -1,0 +1,78 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, we need to determine the number of guests who actually attend the party. Since 1/4 of them don't show up, that means 3/4 (or 75%) of the invited guests will be present.
+        2. Calculate the number of attendees: 16",Node0,8,10,8,18,0.0036463699959750073,67,False
+" 1. First, we need to determine the number of guests who actually attend the party. Since 1/4 of them don't show up, there will be 3/4 * 16 = 12 attendees.
+        2. Next, Christina needs .75 gift bags",Node2,4,5,4,9,0.37109613327155677,64,False
+" 1. Calculate the number of guests who don't attend due to the 1/4 no-show rate
+        No-shows = (1/4) * 16 invited guests = 0.25 * 16 = 4 people not attending
+
+        2. Determine how many attendees will still need gift bags
+        Attending guests = 16 invited - 4 no-shows = 12",Node3,2,3,2,5,0.8829497695404732,96,False
+" 1. First, we need to calculate the number of guests who actually attend the party. Since 1/4 of the attendees don't show up and there are 16 invited guests, that means 16 * (1 - 1/4) =",Node4,7,10,7,17,0.3331494520885687,58,False
+" 1. First, we need to determine the number of guests who actually attend the party. We know that 16 were invited and 1/4 don't show up. So, 16 * (1 -",Node5,8,10,8,18,0.5687544272995241,46,False
+" 1. First, we need to determine how many guests actually attend the party. Since 1/4 of them don't show up, that means (1/4) * 16 = 4 friends won't come. So, there are 16 - 4 = 12 attendees.
+        2. Christina needs .75 gift bags per guest, and she",Node6,2,3,2,5,0.26372550342927636,84,False
+" 1. Calculate the number of guests who don't attend due to the 1/4 no-show rate
+        No-shows = (1/4) * 16 invited guests = 0.25 * 16 = 4 people not attending
+
+        2. Determine how many attendees will still need gift bags
+        Attending guests = 16 invited - 4 no-shows = 12 3. Calculate the number of required gift bags for attendees
+        Required gift bags for attendees = (0.75 gift bags per guest) * 12 attending guests = 9 gift bags
+
+        4. Find out how much Christina will spend on those gift bags
+        Cost of gift bags = (number of required gift bags) *",Node7,1,2,3,5,0.7302227156309719,79,False
+" 1. Calculate the number of guests who don't attend due to the 1/4 no-show rate
+        No-shows = (1/4) * 16 invited guests = 0.25 * 16 = 4 people not attending
+
+        2. Determine how many attendees will still need gift bags
+        Attending guests = 16 invited - 4 no-shows = 12 3. Calculate the number of gift bags needed for attendees
+        Gift bags per guest = 0.75 (Christina wants to give more than half a bag)
+        Number of gift bags needed = 0.75 * 12 attending guests = 9 gift bags
+        
+        4. Calculate the total cost of the gift bags
+        Cost per gift bag = $2 each",Node9,1,2,3,5,0.40693161711746484,90,False
+" 1. Calculate the number of guests who don't attend due to the 1/4 no-show rate
+        No-shows = (1/4) * 16 invited guests = 0.25 * 16 = 4 people not attending
+
+        2. Determine how many attendees will still need gift bags
+        Attending guests = 16 invited - 4 no-shows = 12 3. Calculate the number of gift bags needed for these attendees
+        Gift bags per guest = 0.75
+        Total gift bags needed = 0.75 * 12 guests = 9 gift bags
+
+        4. Find the total cost of the gift bags
+        Cost per gift bag = $2
+        Total cost",Node10,1,2,3,5,0.09099716531154312,78,False
+" 1. Calculate the number of guests who don't attend due to the 1/4 no-show rate
+        No-shows = (1/4) * 16 invited guests = 0.25 * 16 = 4 people not attending
+
+        2. Determine how many attendees will still need gift bags
+        Attending guests = 16 invited - 4 no-shows = 12 3. Calculate the total number of gift bags needed for the event
+        Gift bags per attendee = 0.75 gift bag
+        Total gift bags = (0",Node11,1,3,3,6,0.7913166337542912,40,False
+" 1. Calculate the number of guests who don't attend due to the 1/4 no-show rate
+        No-shows = (1/4) * 16 invited guests = 0.25 * 16 = 4 people not attending
+
+        2. Determine how many attendees will still need gift bags
+        Attending guests = 16 invited - 4 no-shows = 12 3. Calculate the number of gift bags needed for these attendees
+        Gift bags per guest = 0.75
+        Total gift bags needed = 0.75 * 12 attending",Node13,1,2,3,5,0.20015534442089578,47,False
+" 1. First, we need to determine how many guests actually attend the party. Since 1/4 of them don't show up, that means (1/4) * 16 = 4 friends won't come. So, there are 16 - 4 = 12 attendees.
+        2. Christina needs .75 gift bags per guest, and she invited 12 guests to attend the party. To find out how many gift bags she will need, we multiply the number of guests by the required quantity: 12 * 0.7",Node15,5,7,7,14,0.47388971674334146,41,False
+" 1. First, we need to determine how many guests actually attend the party. Since 1/4 of them don't show up, that means (1/4) * 16 = 4 friends won't come. So, there are 16 - 4 = 12 attendees.
+        2. Christina needs .75 gift bags per guest, and she 3. wants to prepare for 12 guests, not all of whom will receive the gift bag. To figure out how many gift bags are needed, we multiply 12 guests by .75 (the number of gift bags per person). So, 1",Node16,3,7,5,12,0.7743373279101231,55,False
+" 1. First, we need to determine how many guests actually attend the party. Since 1/4 of them don't show up, that means (1/4) * 16 = 4 friends won't come. So, there are 16 - 4 = 12 attendees.
+        2. Christina needs .75 gift bags per guest, and she 3. wants to give them to the 12 guests who attended the party. To find out how many gift bags are needed, we multiply the number of guests by the required amount: 12 * 0.75 =",Node19,3,8,5,13,0.3062601804046323,49,False
+" 1. First, we need to determine how many guests actually attend the party. Since 1/4 of them don't show up, that means (1/4) * 16 = 4 friends won't come. So, there are 16 - 4 = 12 attendees.
+        2. Christina needs .75 gift bags per guest, and she invited 12 guests who attended the party. To find out how many gift bags she needs for these attendees, we multiply the number of guests by the required amount: 12 * 0.75 = 9 gift bags.
+        3. Gift bags cost $2 each. To find out how much she will spend on gift bags, we multiply the total number of gift bags needed (9) by their cost ($2):",Node20,0,2,2,4,0.17779645857593318,95,False
+" 1. Calculate the number of guests who don't attend due to the 1/4 no-show rate
+        No-shows = (1/4) * 16 invited guests = 0.25 * 16 = 4 people not attending
+
+        2. Determine how many attendees will still need gift bags
+        Attending guests = 16 invited - 4 no-shows = 12 3. Calculate the number of required gift bags for attendees
+        Required gift bags for attendees = (0.75 gift bags per guest) * 12 attending guests = 9 gift bags
+
+        4. Find out how much Christina will spend on those gift bags
+        Cost of gift bags = (number of required gift bags) * (cost per gift bag) = 9 gift bags * $2 each = $18
+
+        So, Christina will spend $18 on the gift bags for her birthday party.",Node28,0,0,3,3,0.2327476334964289,51,False

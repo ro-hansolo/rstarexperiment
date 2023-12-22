@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Gene is sewing a quilt out of old souvenir t-shirts. He has one shirt from each vacation he has been on. Every shirt is its own quilt block. Each row is made of blocks from a different year of vacations. He goes on four vacations a year and has been vacationing since he was 23 years old. He is now 34. How many quilt blocks does he have in total? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:0, H:2, Flag:False
+[\"1. Calculate the number of years Gene has been vacationing: Since Gene started at age 23, and he is currently 34 years old, that's a difference of 34 - 23 = 11 years.\n\n2. Determine how many vacations he had per year: He goes on four vacations a year.\n\n3.\", 80, 0.8677487847784079]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:0, H:2, Flag:False
+[\"1. First, let's determine the number of years Gene has been vacationing. He started at age 23 and is currently 34 years old. So, there are 34 - 23 = 11 years of vacations.\n        2. Next, we need to find out how many vacations he goes on each year. He goes on four vacations per year.\n        3. Now, let's calculate the total number of vacations he has\", 102, 0.28613598666643814]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:0, H:2, Flag:False
+[\"1. First, we need to know how many years Gene has been vacationing. Since he is currently 34 years old and started at age 23, he has been on vacations for 34 - 23 = 11 years.\n        2. Next, let's calculate the total number of vacations he went on during those 1\", 77, 0.38649530153556677]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:0, H:1, Flag:False
+[\"1. First, let's determine how many years Gene has been vacationing for. He started at 23 years old and is now 34 years old. So the number of years are 34 - 23 = 11 years.\n        2. We know that he goes on four vacations a year, so in those 11 years he has gone on a total of 11 years * 4 vacations per year = 44 vac\", 100, 0.8411087510220107]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:3, H:10, Flag:True
+['1. First, we need to determine the number of years Gene has been vacationing. He started at age 23 and is currently 34 years old. So, the number of years is 34 - 23 = 1', 51, 0.30254466309630645]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:8, H:10, Flag:True
+[\"1. First, let's find out the number of vacations Gene went on from age 23 to his current age of 34.\n         23 + 4 = 27 vacations (from age 23-27)\n         28 + 4 = 32 vacations (from age 24-28)\n         33 + 4 = 37 vacations (from\", 92, 0.6831799829594581]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:0, H:2, Flag:False
+[\"1. First, let's find out how many years Gene has been vacationing. He started at age 23 and is currently 34 years old. So, the number of years = 34 - 23 = 11 years.\n        2. Gene goes on four vacations a year. To calculate the total number of vacations he's had, multiply the number of years by the number of vacations per year: 11 years *\", 100, 0.2965901802107819]
+Path: StartNode6" color=black shape=box]
+	Node3 -> Node7 [label=Node3Node7]
+	Node7 [label="V:0, H:0, Flag:False
+['3. Each vacation results in one shirt, which is a quilt block. So, Gene has 44 quilt blocks from his vacations.', 60, 0.07534649145241734]
+Path: Node3Node7" color=green shape=box]
+	Node3 -> Node8 [label=Node3Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['4. Now, for each vacation he gets one shirt from his souvenir collection and adds it to the quilt blocks. So far he has collected 44 shirts (44 vacations * 1 shirt per vacation).\n        Combining all the information gathered: Gene has a total of 44 quilt blocks in his quilt, each block representing a different year and vacation with a souvenir t-shirt from that time.', 107, 0.9581380043487762]
+Path: Node3Node8" color=green shape=box]
+	Node3 -> Node9 [label=Node3Node9]
+	Node9 [label="V:0, H:1, Flag:False
+['ations.\n        3. Since each shirt is its own quilt block and every shirt is from a different vacation, the number of unique shirts/blocks would be equal to the total number of vacations he has gone on - 44 vacations.\n        4. Finally, to find out the total number of quilt blocks', 69, 0.9616940380041813]
+Path: Node3Node9" color=black shape=box]
+	Node3 -> Node10 [label=Node3Node10]
+	Node10 [label="V:0, H:0, Flag:False
+['3. Each vacation results in one shirt, and each shirt is a quilt block. So, the total number of blocks is equal to the number of shirts, which is 44 vacations * 1 shirt per vacation = 44 quilt blocks.\n        Gene has a total of 44 quilt blocks in his quilt', 72, 0.3998329000815055]
+Path: Node3Node10" color=green shape=box]
+	Node3 -> Node11 [label=Node3Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['3. Gene has one quilt block for each shirt from his vacations. He has one shirt per vacation and one souvenir t-shirt per year, which is also a vacation. Therefore, he has 44 total vacations (from step 2) * 1 shirt per vacation = 44 quilt blocks in total.', 79, 0.799804871813056]
+Path: Node3Node11" color=green shape=box]
+	Node3 -> Node12 [label=Node3Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['3. For each vacation, he gets one souvenir t-shirt and turns it into a quilt block. Therefore, the total number of quilt blocks is equal to the total number of vacations (44).\n        So Gene has a total of 44 quilt blocks in his quilt made from old souvenir t-shirts.', 111, 0.45473578861632913]
+Path: Node3Node12" color=green shape=box]
+	Node3 -> Node13 [label=Node3Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['3. Each shirt is one quilt block and there are 44 vacation shirts (blocks). Therefore, Gene has a total of 44 blocks in his quilt.', 83, 0.927329828263806]
+Path: Node3Node13" color=green shape=box]
+}

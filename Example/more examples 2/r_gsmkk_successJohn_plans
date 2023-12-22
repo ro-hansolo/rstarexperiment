@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: John plans to sell all his toys and use the money to buy video games. He has 13 lego sets and he sells them for $15 each. He ends up buying 8 video games for $20 each and has $5 left. How many lego sets does he still have? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:6, Flag:False
+[\"1. Let's first calculate the total amount John gets from selling the Lego sets. He sells 13 sets at a price of $15 each, so we multiply 13 by 15: 13 * 15 = 195.\n        2. Next, let's find out how much money he spends on video games.\", 81, 0.44625698826585736]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:7, Flag:False
+[\"1. First, let's calculate the total amount John gets from selling his Lego sets. He sells 13 sets at $15 each, so 13 * $15 = $195.\n        2. Next, we\", 54, 0.11014692560848649]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:5, Flag:False
+['1. John starts with 13 Lego sets to sell.\n        2. Each set is sold for $15. So, he gets 13 * $15 = $195 from selling all the Legos.\n        3. Now that he bought 8 video games cost', 63, 0.997661451465762]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:6, Flag:False
+[\"1. Calculate the total earnings from selling John's Lego sets.\n           Number of Lego sets = 13\n           Selling price per set = $15\n           Total Earnings = (Number of Lego Sets) * (Selling Price per Set)\n           Total Earnings =\", 67, 0.6278816088607515]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:7, Flag:False
+[\"1. Let's first calculate the total amount John gets from selling his lego sets. Since there are 13 lego sets, and he sells them at a price of $15 each, we multiply the number of\", 49, 0.7079997235494293]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:6, Flag:False
+[\"1. First, let's calculate how much money John gets from selling all his Lego sets. He sold 13 Lego sets at $15 each, so the total earnings are 13 * $15 = $195.\n        2. Next, we need to determine how many video games he could have bought if he had the entire amount of money\", 79, 0.8424195354670775]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:3, Flag:False
+['1. John starts with 13 Lego sets.\n        2. He sells each set for $15, which gives him the profit from selling them: 13 sets * $15/set = $195.\n        3. He then buys 8 video games at $20 each, costing him a total of 8 *', 78, 0.7324757259467342]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:2, H:1, Flag:False
+['$20 = $160.\n        4. After buying the games, he has $5 left from his initial profit: $195 - $160 = $35 + $160 (initial money spent on games) = $195.\n        5. We need to find out how many Lego sets are still with him after all these transactions: \n        Initially, he had 13 sets. After selling them and buying games, he ends up with', 107, 0.6780563889264924]
+Path: Node6Node7" color=black shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:1, H:1, Flag:False
+['$20/game = $160.\n        4. After buying the video games, he has $5 left from his earnings: $195 - $160 = $35.\n        5.', 48, 0.3264687490088811]
+Path: Node6Node8" color=black shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:1, H:1, Flag:False
+['$20/game = $160.\n        4. The remaining money after buying the video games is: $195 (from Lego sets) - $160 (cost of video games) = $35 left.', 52, 0.9892789560302201]
+Path: Node6Node9" color=black shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:2, H:1, Flag:False
+['$20/game = $160.\n        4. After buying the video games, he has $5 left from his initial profit: $195 - $160 (the cost of buying video games) = $35.', 54, 0.46266902635390983]
+Path: Node6Node10" color=black shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:1, H:1, Flag:False
+['$20/game = $160.\n        4. After buying the video games, he has $5 left from selling his Lego sets: $195 - $160 = $35.\n        5. To find out how many lego sets are still with him, we need to subtract the cost of the video games from the', 77, 0.3806616805471468]
+Path: Node6Node11" color=black shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:1, H:1, Flag:False
+[\"4. $20 = $160. So far, he's spent $160 from the Lego sales profit on video games.\n        To find out how much money is left after buying the video games: \n        5. Calculate the remaining amount by subtracting what was spent on video games from the total Lego set profit: $195 (from lego sales) - $160 (spent on video games) = $35 left.\n        This means after buying\", 110, 0.9926500545190099]
+Path: Node6Node12" color=black shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:4, H:1, Flag:True
+['4. With the remaining money after buying video games, he has $5 left. So, the sum of his earnings and the money left is $195 + $5 = $200.\n        5. We', 47, 0.6419043375570831]
+Path: Node6Node13" color=black shape=box]
+	Node2 -> Node14 [label=Node2Node14]
+	Node14 [label="V:5, H:8, Flag:False
+['4. At $20 each, the total cost of those video games is 8 * $20 = $160.\n        5. After buying the video games, John has $5 left from his earnings.\n        6.', 51, 0.40938920372477994]
+Path: Node2Node14" color=black shape=box]
+	Node2 -> Node15 [label=Node2Node15]
+	Node15 [label="V:5, H:8, Flag:False
+['4. The total cost of the video games is 8 * $20 = $160.\n        5. After buying these video games, John has $5 left.\n        6. To find out how many Lego sets are still remaining after buying the video games,', 59, 0.6591455220122234]
+Path: Node2Node15" color=black shape=box]
+	Node2 -> Node16 [label=Node2Node16]
+	Node16 [label="V:1, H:0, Flag:False
+['4. He paid a total of $8 * $20 = $160 for these video games.\n        5. John has $5 left from the money earned by selling toys after buying video games.\n        6. We need to find out how many Legos he still owns. Since he initially had 13 and sold them all, we subtract this amount from the number he started with: 13 - 13 = 0.\n        John still has 0 Lego sets left', 107, 0.7671353067421656]
+Path: Node2Node16" color=green shape=box]
+	Node2 -> Node17 [label=Node2Node17]
+	Node17 [label="V:7, H:8, Flag:True
+['4. The total cost of the video games is 8 * $20 = $160.\n        5. John has $5 left after buying the video games, which means he spent $195 - $160 = $35 on the video games.\n        6. To find out how many Lego sets are still with him, we need to subtract the cost of video games from the money made by selling', 92, 0.2813691767700608]
+Path: Node2Node17" color=red shape=box]
+	Node2 -> Node18 [label=Node2Node18]
+	Node18 [label="V:5, H:9, Flag:False
+['4. For each game, he pays $20. So, the total spent on buying these games is 8 * $20 = $160.\n        5. John has $5 left after buying the video games. To find out how much money he had before buying them, we add his remaining money to what he spent on the video games: $5 + $160 = $165.\n        6.', 92, 0.6677194771217655]
+Path: Node2Node18" color=black shape=box]
+	Node2 -> Node19 [label=Node2Node19]
+	Node19 [label="V:6, H:8, Flag:True
+['4. The total cost of buying these 8 video games is 8 * $20 = $160.\n        5. After buying the video games, John has $195 - $160 = $35 left from selling Legos.\n        6. He also has an extra $5 from his initial money. So, he now has a total of $35 + $5 = $40.\n        7. To find out how many Lego sets John still has, we need to divide the remaining amount by the price per set', 119, 0.10532131959816926]
+Path: Node2Node19" color=red shape=box]
+	Node2 -> Node20 [label=Node2Node20]
+	Node20 [label="V:6, H:10, Flag:True
+['4. The total cost of buying those 8 video games is 8 * $20 = $160.\n        5. John has $5 left after buying the video games.\n        6. To find out how much money was spent on Legos, we add the amount from selling them and the money spent on video games: $195 (from Legos) + $160 (for video games) = $355.', 97, 0.3810201295619884]
+Path: Node2Node20" color=red shape=box]
+}

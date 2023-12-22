@@ -1,0 +1,172 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's find out how much water there is initially in each type of drink.
+           Orange drink: (2/3) * 10 liters = 6.67 liters of water",Node0,1,6,1,7,0.37856619861352836,47,False
+" 1. First, let's calculate the total amount of water present in both the drinks before mixing them.
+           Orange drink: 10 L * (2/3) = 6.67 L (water content)
+           Pineapple drink: 15 L * (3/5) = 9 L (water content)
+           Combined water content: 6.67 L + 9 L = 15.67 L
+           
+        2. Now, let's account for the spilled liquid.",Node1,0,4,0,4,0.7527812567412295,116,False
+" 1. First, let's find out how much water was initially present in both drinks separately.
+           Orange Drink: Water fraction = (2/3) * 10 L (water fraction times amount) = 6.7 L of water
+           Pineapple Drink: Water fraction = (3/5) * 15 L (water fraction times amount) = 9 L of water
+        2. Now, let's add the initial amounts of both drinks without considering the spillage:
+            Total",Node2,2,4,2,6,0.7204055813375053,112,False
+" 1. First, let's find out how much water was originally present in the orange drink. We know there are 10 liters of orange drink with two-thirds being water. To calculate this, multiply the total volume by the",Node3,5,10,5,15,0.5464457487253808,51,False
+" 1. Let's first find out how much water is in each type of drink separately.
+           Orange drink: (10 liters * 2/3) = 6.67 liters of water
+           Pineapple drink: (15 liters * 3/5) = 9",Node5,2,7,2,9,0.349605135741651,66,False
+" 1. First, let's calculate the total amount of water present in both the drinks before mixing them.
+           Orange drink: 10 L * (2/3) = 6.67 L (water content)
+           Pineapple drink: 15 L * (3/5) = 9 L (water content)
+           Combined water content: 6.67 L + 9 L = 15.67 L
+           
+        2. Now, let's account for the spilled liquid. 10 L of orange drink were spilled, so we need to subtract that from the total amount of orange drink.
+           Remaining orange drink: 10 L - 1 L = 9 L
+           
+        3. Calculate the new combined water content after accounting for the spill and mixing both drinks.
+           New combined water content: (6",Node7,2,3,2,5,0.08960323572145179,77,False
+" 1. First, let's calculate the total amount of water present in both the drinks before mixing them.
+           Orange drink: 10 L * (2/3) = 6.67 L (water content)
+           Pineapple drink: 15 L * (3/5) = 9 L (water content)
+           Combined water content: 6.67 L + 9 L = 15.67 L
+           
+        2. Now, let's account for the spilled liquid. 10 L of orange drink is spilled, so we have 10 - 1 = 9 L remaining.
+           Orange drink water content: 9 L * (2/3) = 6 L (water content after spillage)
+           
+        3. Calculate the total amount of liquid in the mixed drinks after adding the orange drink to the pineapple drink and accounting for",Node8,1,2,1,3,0.13552451874742644,83,False
+" 1. First, let's calculate the total amount of water present in both the drinks before mixing them.
+           Orange drink: 10 L * (2/3) = 6.67 L (water content)
+           Pineapple drink: 15 L * (3/5) = 9 L (water content)
+           Combined water content: 6.67 L + 9 L = 15.67 L
+           
+        2. Now, let's account for the spilled liquid. 1 L (spilled orange drink) = 1 L * (2/3) = 0.67 L (water content in the spilled liquid)
+        
+        3. Calculate the total amount of water present after accounting for the spill.
+           Total water content",Node9,1,2,1,3,0.6037618800997941,60,False
+" 1. First, let's calculate the total amount of water present in both the drinks before mixing them.
+           Orange drink: 10 L * (2/3) = 6.67 L (water content)
+           Pineapple drink: 15 L * (3/5) = 9 L (water content)
+           Combined water content: 6.67 L + 9 L = 15.67 L
+           
+        2. Now, let's account for the spilled liquid. 10 L of orange drink is reduced by 1 L, so we have 9 L remaining.
+           Orange drink water content: 9 L * (2/3) = 6 L
+           
+        3. Calculate the total amount of water in the combined drinks after spilling and mixing.
+          Combined water content after",Node13,1,2,1,3,0.0845617423776972,71,False
+" 1. First, let's calculate the total amount of water present in both the drinks before mixing them.
+           Orange drink: 10 L * (2/3) = 6.67 L (water content)
+           Pineapple drink: 15 L * (3/5) = 9 L (water content)
+           Combined water content: 6.67 L + 9 L = 15.67 L
+           
+        2. Now, let's account for the spilled liquid. 1 L (spilled orange drink) = 1 L * (2/3) = 0.67 L (water content in the spilled liquid)
+        
+        3. Calculate the total amount of water present after accounting for the spill.
+           Total water content before spilling: 15.67 L
+         spilled liquid water content: 0.67 L
+           Combined remaining water content: 15.67 L + 0.67 L = 16.34 L
+           
+        4. Finally, let's calculate the water content in the 24 liters of mixed drinks remaining after spilling and adding pineapple drink to orange drink.
+          Mixed drinks remaining: (24 L",Node21,2,6,3,9,0.9235499833051604,104,False
+" 1. First, let's calculate the total amount of water present in both the drinks before mixing them.
+           Orange drink: 10 L * (2/3) = 6.67 L (water content)
+           Pineapple drink: 15 L * (3/5) = 9 L (water content)
+           Combined water content: 6.67 L + 9 L = 15.67 L
+           
+        2. Now, let's account for the spilled liquid. 1 L (spilled orange drink) = 1 L * (2/3) = 0.67 L (water content in the spilled liquid)
+        
+        3. Calculate the total amount of water present after accounting for the spill.
+           Total water content = Initial combined water content - Water content in the spilled liquid
+         = 15.67 L - 0.67 L = 15 L
+           
+        The remaining 24 liters (combined drinks) contain 15 L of water.",Node22,1,2,2,4,0.7994177777717694,92,False
+" 1. First, let's calculate the total amount of water present in both the drinks before mixing them.
+           Orange drink: 10 L * (2/3) = 6.67 L (water content)
+           Pineapple drink: 15 L * (3/5) = 9 L (water content)
+           Combined water content: 6.67 L + 9 L = 15.67 L
+           
+        2. Now, let's account for the spilled liquid. 1 L (spilled orange drink) = 1 L * (2/3) = 0.67 L (water content in the spilled liquid)
+        
+        3. Calculate the total amount of water present after accounting for the spill.
+           Total water content 15.67 L (combined initial water content) - 0.67 L (spilled orange drink water content) = 15 L
+           
+        4. Lastly, let's determine the water content in the remaining 24 liters of mixed drinks after sp",Node24,1,6,2,8,0.8262769219493521,62,False
+" 1. First, let's calculate the total amount of water present in both the drinks before mixing them.
+           Orange drink: 10 L * (2/3) = 6.67 L (water content)
+           Pineapple drink: 15 L * (3/5) = 9 L (water content)
+           Combined water content: 6.67 L + 9 L = 15.67 L
+           
+        2. Now, let's account for the spilled liquid. 1 L (spilled orange drink) = 1 L * (2/3) = 0.67 L (water content in the spilled liquid)
+        
+        3. Calculate the total amount of water present after accounting for the spill.
+           Total water content = Combined water content - Water content in spilled liquid
+         = 15.67 L - 0.67 L = 15 L
+           
+        The remaining 24 liters of mixed drinks contain 15 liters of water.",Node26,1,2,2,4,0.4349590217113023,110,False
+" 1. First, let's find out how much water there is initially in each type of drink.
+           Orange drink: (2/3) * 10 liters = 6.67 liters of water Pineapple drink: (3/5) * 15 liters = 9 liters of water
+
+        2. Now, let's account for the spilled orange drink:
+           Orange drink: 10 liters - 1 liter = 9 liters remaining
+
+        3. Combine the two drinks (Orange + Pineapple) and add the extra liter of water that was in the orange drink:
+           24 liters = (9 liters",Node63,3,8,4,12,0.6455531184235924,106,False
+" 1. First, let's find out how much water there is initially in each type of drink.
+           Orange drink: (2/3) * 10 liters = 6.67 liters of water Pineapple drink: (3/5) * 15 liters = 9 liters of water
+
+   2. Next, let's calculate the combined total amount of liquid before spilling occurs.
+      Combined total liquid = Orange drink + Pineapple drink = 10 liters + 15 liters = 25 liters
+
+   3. Now, let's find out how much water is present in this combined total liquid before the spill.
+      Total water content = Water from Orange drink + Water",Node64,3,7,4,11,0.6846823810620624,116,False
+" 1. First, let's find out how much water there is initially in each type of drink.
+           Orange drink: (2/3) * 10 liters = 6.67 liters of water Pineapple drink: (3/5) * 15 liters = 9 liters of water
+
+   2. Now, let's calculate the total amount of water in both drinks before spilling.
+      Total water = Orange drink water + Pineapple drink",Node65,3,7,4,11,0.284256305113715,59,False
+" 1. First, let's find out how much water there is initially in each type of drink.
+           Orange drink: (2/3) * 10 liters = 6.67 liters of water Pineapple drink: (3/5) * 15 liters = 9 liters of water
+
+   2. Now, we know that after spilling one liter of orange drink, we have the following amounts:
+       Orange drink: 10 - 1 = 9 liters
+       Pineapple drink: remains unchanged at 15 liters
+
+   3. Next, let's combine both drinks and find out how much water is in them now. We add up all the water content",Node66,4,8,5,13,0.5814404810076864,111,False
+" 1. Let's first find out how much water is in each type of drink separately.
+           Orange drink: (10 liters * 2/3) = 6.67 liters of water
+           Pineapple drink: (15 liters * 3/5) = 9 2. Now, let's combine the two drinks without spilling any more orange drink. We have 10 liters of orange drink and 14 liters of pineapple drink left. So, we will combine them to",Node77,5,4,7,11,0.3132486654835287,48,False
+" 1. Let's first find out how much water is in each type of drink separately.
+           Orange drink: (10 liters * 2/3) = 6.67 liters of water
+           Pineapple drink: (15 liters * 3/5) = 9 2. Now, let's combine the two drinks without considering the spilled orange drink:
+            Total volume = 10 liters (orange drink) + 15 liters (pineapple drink) = 25 liters
+            Total water in combined drinks = 6.67 liters (water",Node78,6,3,8,11,0.3393696000147405,69,False
+" 1. Let's first find out how much water is in each type of drink separately.
+           Orange drink: (10 liters * 2/3) = 6.67 liters of water
+           Pineapple drink: (15 liters * 3/5) = 9 2. Now, we have the orange drink with a spillage of 1 liter, so let's subtract it from the original amount to get the remaining orange drink.
+           Remaining Orange drink: 10 - 1 = 9 liters
+           9 liters of orange drink has 6.67 liters of water in it.
+        3. Combining both drinks,",Node79,3,3,5,8,0.32904714863492024,85,False
+" 1. Let's first find out how much water is in each type of drink separately.
+           Orange drink: (10 liters * 2/3) = 6.67 liters of water
+           Pineapple drink: (15 liters * 3/5) = 9 2. Now, we need to consider the spill and the resulting amount of each type of drink left.
+           Orange drink after spill: 10 - 1 = 9 liters
+           Pineapple drink remains unchanged at 15 liters
+        Combined drinks after spill: (9 + 15) = 24 liters in total",Node80,2,2,4,6,0.6419477170196101,82,False
+" 1. Let's first find out how much water is in each type of drink separately.
+           Orange drink: (10 liters * 2/3) = 6.67 liters of water
+           Pineapple drink: (15 liters * 3/5) = 9 2. Now, let's calculate the total amount of water in both drinks before spilling.
+           Total water = Orange drink water + Pineapple drink water = 6.67 + 9 = 15.67 liters
+        3. After spilling one liter of orange drink, we have 9 liters left of it.
+           Remaining orange drink: 9",Node81,3,3,5,8,0.19623653108399608,84,False
+" 1. Let's first find out how much water is in each type of drink separately.
+           Orange drink: (10 liters * 2/3) = 6.67 liters of water
+           Pineapple drink: (15 liters * 3/5) = 9 2. Now, let's account for the spilled orange drink. We have 10 liters - 1 liter = 9 liters of orange drink remaining.
+           Orange drink with water: (9 liters * 2/",Node83,4,2,6,8,0.40532384773025554,51,False
+" 1. Let's first find out how much water is in each type of drink separately.
+           Orange drink: (10 liters * 2/3) = 6.67 liters of water
+           Pineapple drink: (15 liters * 3/5) = 9 2. Now, we need to consider the spill and the resulting amount of each type of drink left.
+           Orange drink after spill: 10 - 1 = 9 liters
+           Pineapple drink remains unchanged at 15 liters
+        Combined drinks after spill: (9 + 15) = 24 liters in total 3. Finally, we need to find out how much water is in the remaining 24 liters.
+          Total water in combined drinks: (6.67 + 9.0) = 15.67 liters of water
+        So, there are 15.67 liters of water in the remaining 24 liters.",Node85,0,0,4,4,0.3175766230830318,98,False
