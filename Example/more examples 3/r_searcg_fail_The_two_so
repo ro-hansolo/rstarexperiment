@@ -1,0 +1,64 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: The two solutions of the equation $x^2+bx+18=0$ are in the ratio of $2$ to $1$ for some values of $b.$ What is the largest possible value of $b?$ Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:10, H:10, Flag:True
+To find the largest possible value of $b,$ we can use the quadratic formula to solve for the two solutions: 
+
+$$x=\dfrac{-b\pm\sqrt{b^2-4(18)}}{2}$$
+
+Since
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:10, H:10, Flag:True
+First, let's use the quadratic formula to find the solutions of the equation: $x = \frac{-b \pm \sqrt{b^2 - 4(18)}}{2}$
+
+Next, we know that the ratio of the
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:10, H:10, Flag:True
+The ratio of $2$ to $1$ means that one solution is twice the other. We can represent this with the equations
+        $x_2=2x_1$ and $x_1x_2=18.$ Sol
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:10, H:10, Flag:True
+In order to find the largest possible value of $b,$ we need to first use the quadratic formula to solve for the two solutions of the equation. The quadratic formula states that the solutions are given by:
+        $$x=\frac{-b\pm
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:10, H:10, Flag:True
+The ratio of the solutions of a quadratic equation is determined by the discriminant, which is given by $b^2-4ac,$ where $a=1$ in this case. For a ratio of $2$ to $1,$ we
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:10, H:10, Flag:True
+The first step would be to use the quadratic formula to solve for the solutions of the equation. The general form of the quadratic formula is $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$.
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:10, H:10, Flag:True
+The first step is to set up the equation in the proper form, which would be $x^2+bx+18=0.$ The next step would be to use the quadratic formula, which states that the solutions to the equation can be found
+Path: StartNode6" color=red shape=box]
+	Start -> Node7 [label=StartNode7]
+	Node7 [label="V:10, H:10, Flag:True
+To find the largest possible value of $b,$ let us first express the two solutions of the equation in the form of a ratio. We can use the quadratic formula to find the solutions, given by:
+
+        $x = \frac{-b \
+Path: StartNode7" color=red shape=box]
+	Start -> Node8 [label=StartNode8]
+	Node8 [label="V:10, H:10, Flag:True
+To solve this equation, we first need to find the two solutions. We can use the quadratic formula: $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$ In this case,
+Path: StartNode8" color=red shape=box]
+	Start -> Node9 [label=StartNode9]
+	Node9 [label="V:10, H:10, Flag:True
+The two solutions of the equation can be found by using the quadratic formula $x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$, where in this case $a=1$ and $c
+Path: StartNode9" color=red shape=box]
+	Start -> Node10 [label=StartNode10]
+	Node10 [label="V:10, H:10, Flag:True
+The first step is to use the quadratic formula to solve for the solutions of the equation. The quadratic formula states that for an equation of the form $ax^2+bx+c=0$, the solutions are given by $x=\frac{-b
+Path: StartNode10" color=red shape=box]
+	Start -> Node11 [label=StartNode11]
+	Node11 [label="V:10, H:10, Flag:True
+To find the largest possible value of b, we will first need to find the two solutions of the given equation. We can do this by using the quadratic formula: $x = \frac{-b \pm \sqrt{b^2-4
+Path: StartNode11" color=red shape=box]
+}

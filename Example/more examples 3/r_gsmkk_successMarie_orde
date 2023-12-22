@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Marie ordered one chicken meal that costs $12, 5 packs of milk that costs $3 each, 4 apples that cost $1.50 each, and some boxes of pizza. Marie paid a total of $50. How many boxes of pizza did Marie order if each box costs $8.50? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:9, Flag:False
+[\"1. First, let's find the total cost of the items we know the quantity for: chicken meal ($12), milk packs ($3 * 5 = $15), and apples ($1.50 *\", 49, 0.24419268984842413]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:8, Flag:False
+[\"1. First, let's find the total cost of all items except pizza.\n           Chicken meal: $12\n           5 packs of milk: 5 * $3 = $15\", 45, 0.23950916798806454]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:8, Flag:False
+[\"1. First, let's find the total cost of all items except pizza. We know the cost of chicken meal, milk packs, and apples.\n           Chicken meal cost = $12\n           5 milk packs cost = 5 * $3 = $15\n           4 apples cost =\", 67, 0.30374325798688695]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:9, Flag:False
+['1. We need to find out how much money Marie spent on the food items mentioned before pizza.\n        2. The expenses are as follows: Chicken meal ($12), Milk (5 packs * $3)', 47, 0.8965549868504126]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:10, Flag:False
+[\"1. First, let's find the total cost of all items except pizza.\n           Chicken meal: $12\n           5 packs of milk: 5 * $3 = $15\n           4 ap\", 47, 0.10993830247438996]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:0, H:7, Flag:False
+[\"1. Calculate the total cost of the items already mentioned: Chicken meal ($12), milk packs ($3 x 5 = $15) and apples ($1.50 x 4 = $6). So far, we have $12 + $15 + $6 = $33 spent on these items.\n        2. Subtract the cost of all other items from Marie's total payment to find out how much she paid for pizza boxes: $50 - $33 =\", 109, 0.6130307583507434]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:3, H:10, Flag:False
+[\"1. First, let's find the total cost of the items we know their prices for: chicken meal ($12), milk packs ($3 * 5 = $15), and apples ($\", 43, 0.4438857242605647]
+Path: StartNode6" color=black shape=box]
+	Node5 -> Node7 [label=Node5Node7]
+	Node7 [label="V:4, H:3, Flag:True
+['3. Divide the remaining amount by the cost per box to determine the number of boxes ordered: ($50 - $33) / $8.50 ≈ 16.9274\n        4. Round up or down to the nearest whole number, depending on your preference (these are not usually exact numbers in real-life situations). For example, you might round up to', 84, 0.6657847470383249]
+Path: Node5Node7" color=red shape=box]
+	Node5 -> Node8 [label=Node5Node8]
+	Node8 [label="V:2, H:2, Flag:True
+['3. Calculate the number of pizza boxes Marie ordered by dividing her remaining amount by the cost per box: ($50 - $33) / $8.50 ≈ 12.6574 (rounded to 13).\n        4. Since', 60, 0.3928219365077015]
+Path: Node5Node8" color=red shape=box]
+	Node5 -> Node9 [label=Node5Node9]
+	Node9 [label="V:1, H:2, Flag:False
+['3. Divide the remaining amount by the cost per pizza box ($8.50) to find out how many pizza boxes were ordered: ($50 - $33) / $8.50 = \n        4. The result is approximately 6.2, which', 59, 0.43705183633728617]
+Path: Node5Node9" color=black shape=box]
+	Node5 -> Node10 [label=Node5Node10]
+	Node10 [label="V:8, H:10, Flag:True
+['3. Now, divide the remaining amount by the price per pizza box ($8.50) to find out how many boxes were ordered: ($50 - $33) / $8.50 = 17.\n        Marie ordered 17 boxes of pizza.', 105, 0.6772446061498865]
+Path: Node5Node10" color=red shape=box]
+	Node5 -> Node11 [label=Node5Node11]
+	Node11 [label="V:0, H:1, Flag:False
+['3. Divide this value by the cost per pizza box ($8.50) to get the number of pizza boxes Marie ordered: $17 / $8.50 ≈ 2 boxes (appro', 44, 0.7894783981803307]
+Path: Node5Node11" color=black shape=box]
+	Node5 -> Node12 [label=Node5Node12]
+	Node12 [label="V:5, H:3, Flag:False
+['3. Since each pizza box costs $8.50, we can now divide the remaining amount by the cost per pizza box to determine the number of pizza boxes ordered: ($50 - $33) / $8.', 47, 0.6743556560942914]
+Path: Node5Node12" color=black shape=box]
+	Node5 -> Node13 [label=Node5Node13]
+	Node13 [label="V:8, H:10, Flag:True
+[\"3. Divide the remaining amount by the cost per pizza box ($8.50) to determine the number of pizza boxes ordered: ($50 - $33) / $8.50 ≈ 16.92 (rounded up).\n        4. Since we can't order a fraction of a pizza box, Marie likely ordered 17 boxes of pizza.\", 95, 0.313665076605526]
+Path: Node5Node13" color=red shape=box]
+	Node11 -> Node14 [label=Node11Node14]
+	Node14 [label="V:2, H:1, Flag:False
+['3. Therefore, Marie ordered 2 boxes of pizza.', 77, 0.6679138175005632]
+Path: Node11Node14" color=black shape=box]
+	Node11 -> Node15 [label=Node11Node15]
+	Node15 [label="V:1, H:0, Flag:False
+['3. Since we cannot have a fraction of a pizza box, round down to get an integer result: 2 boxes of pizza.', 48, 0.6277818340221597]
+Path: Node11Node15" color=green shape=box]
+	Node11 -> Node16 [label=Node11Node16]
+	Node16 [label="V:3, H:3, Flag:True
+[\"3. Since we're approximating, it could be 2 or slightly more than 2 boxes of pizza.\", 84, 0.14356280665876275]
+Path: Node11Node16" color=red shape=box]
+	Node11 -> Node17 [label=Node11Node17]
+	Node17 [label="V:4, H:4, Flag:True
+['3. Round the result, if necessary. Since there might be some inaccuracies due to the approximations made in earlier calculations, it is a good idea to round the final answer. However, 2 pizza boxes are still very close to the actual value. Therefore, Marie', 56, 0.9147820636887408]
+Path: Node11Node17" color=red shape=box]
+	Node11 -> Node18 [label=Node11Node18]
+	Node18 [label="V:4, H:3, Flag:False
+[\"3. Since we rounded the result, it's possible that there might be a slight difference in the actual number of pizza boxes. However, considering the given information, Marie likely ordered around 2 boxes of pizza.\", 68, 0.10355548750635057]
+Path: Node11Node18" color=black shape=box]
+	Node11 -> Node19 [label=Node11Node19]
+	Node19 [label="V:8, H:8, Flag:True
+[\"3. Since we used an approximation, it's possible that Marie bought a fractional number of pizza boxes. The exact value might be something like 1.92 or 1.8\", 40, 0.8043710043395336]
+Path: Node11Node19" color=red shape=box]
+	Node11 -> Node20 [label=Node11Node20]
+	Node20 [label="V:4, H:1, Flag:False
+[\"3. Since we can't have a fraction of a pizza box, round up or down depending on your preference. If you round down, Marie ordered one pizza box; if you round up, she ordered two pizza boxes\", 45, 0.4024303819894013]
+Path: Node11Node20" color=black shape=box]
+}

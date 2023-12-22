@@ -1,0 +1,264 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v",Node0,1,8,1,9,0.5093454311760698,51,False
+" 1. Let's set up an equation using variables for the initial number of vacuum cleaners (N), vacuum cleaners sold to each house, and remaining vacuum cleaners after selling to all houses. We can use N_G, N_R, N_O, and N_L for the green house, red house, orange house, and left over",Node3,2,9,2,11,0.558460929532571,74,False
+" 1. We know that Melanie had 5 vacuum cleaners left.
+        2. We also know that she sold a third of her vacuum cleaners at the green house and then some more to the red house (2 additional) after selling half of what was remaining to the orange house.
+        3. Let's represent the total number of vacuum cleaners Melanie initially had as ""V"" and the number left as ""L"". We can set up equations for each step in this process",Node4,3,7,3,10,0.8350630552309107,102,False
+" 1. Let's first determine the number of vacuum cleaners Melanie sold at each location.
+        a. Green house: A third of her total amount is sold here, so we need to find one-third of the total and add",Node5,4,9,4,13,0.39879110828655673,50,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial",Node6,1,8,1,9,0.5993446588510349,47,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. At the red house, she sold 2 more than the green house. Therefore, she sold (1/3) * total_v + 2.
+        4. At the orange house, she sold half of what was left after visiting the first two houses. So, she sold (total_left - (1/3) * total_v)/2
+        5. Now",Node8,6,5,7,12,0.6029882656128698,82,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. At the red house, she sold 2 more than at the green house. So, she sold (1/3 * total_v) + 2.
+        4. At the orange house, she sold half of what was left after visiting the other two houses. So, she sold (total_v - (1/3 * total_v) - 2) / 2.
+        5. Add up all",Node9,5,4,6,10,0.8107141659791851,91,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. Since there are 5 left and 1/3 was sold at the green house, the remaining vacuum cleaners after visiting the green house can be calculated as follows: total_v - (1/3) * total_v = 5 - (total_v / 3)
+        We can rearrange this equation to solve for total",Node11,7,2,8,10,0.7289985917219838,74,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. At the red house, she sold 2 more than what she sold at the green house. So, she sold (1/3) * total_v + 2.
+        4. At the orange house, she sold half of what was left after selling to the first two houses. So, she sold ((1/3) * total_v +",Node12,6,5,7,12,0.11713058052761649,77,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial amount (x). This can be found by dividing x by 3.
+        Green: (x/3) vacuum cleaners
+
+        3. She then sold 2 more vacuum cleaners at the red house, adding to the remaining number from the green house. So the total for the red house is equal to:
+        Red: [(x/3) + 2] vacuum cleaners
+
+        4. Finally, she sold half of what was left at the orange house.",Node14,2,7,3,10,0.7310522719998933,104,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial number (let's call it x). This is 1/3 * x = 5 (since she has 5 left after selling them all).
+        3. Now, at the red house, she sold 2 more vacuum cleaners than what was sold at the green house. So, we need to add 2 to the number of vacuum cleaners sold at the green house: 5 + 2 = 7.
+        4. At the orange house, she sold half of what was left after selling at the red house. We first find out how",Node18,2,8,3,11,0.050695436034616126,118,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get",Node20,2,7,3,10,0.2940843143645794,86,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. At the red house, she sold 2 more than at the green house. So, she sold (1/3 * total_v) + 2.
+        4. At the orange house, she sold half of what was left after visiting the other two houses. So, she sold (total_v - (1/3 * total_v) - 2) / 2.
+        5. Add up all 6. The sum of vacuum cleaners sold is: (1/3 * total_v) + (1/3 * total_v) + 2 + ((total_v - (1/3 * total_v) - 2) / 2) = (2/3 * total_v) + 2 + (total_v - (2/3 * total_v) - 2) / 2
+        7. Now, we know that Melanie has 5 vacuum cleaners left",Node28,4,3,10,13,0.10240898039959001,109,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. At the red house, she sold 2 more than at the green house. So, she sold (1/3 * total_v) + 2.
+        4. At the orange house, she sold half of what was left after visiting the other two houses. So, she sold (total_v - (1/3 * total_v) - 2) / 2.
+        5. Add up all 6. Total vacuum cleaners sold = (1/3 * total_v) + 2 + ((total_v - (1/3 * total_v) - 2) / 2) +",Node29,5,8,11,19,0.46555387128862524,45,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. At the red house, she sold 2 more than at the green house. So, she sold (1/3 * total_v) + 2.
+        4. At the orange house, she sold half of what was left after visiting the other two houses. So, she sold (total_v - (1/3 * total_v) - 2) / 2.
+        5. Add up all 6. Total vacuum cleaners sold = green + red + orange = ((1/3 * total_v) + 2) + ((total_v - (1/3 * total_v) - 2) / 2) + (2 more than the red house)
+        7. We know that Melanie has 5 vacuum cleaners left after selling at all three houses, so we can write an equation using this information:
+         8",Node30,5,7,11,18,0.6071068962965622,95,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. At the red house, she sold 2 more than at the green house. So, she sold (1/3 * total_v) + 2.
+        4. At the orange house, she sold half of what was left after visiting the other two houses. So, she sold (total_v - (1/3 * total_v) - 2) / 2.
+        5. Add up all 6. We have: total_v = sold at green + sold at red + sold at orange + 5 left (remaining).
+        7. Total_v = (1/3 * total_v) + 2 + ((total_v - (1/3 * total_v) - 2) / 2) +",Node31,5,8,11,19,0.8596913459496646,73,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. At the red house, she sold 2 more than at the green house. So, she sold (1/3 * total_v) + 2.
+        4. At the orange house, she sold half of what was left after visiting the other two houses. So, she sold (total_v - (1/3 * total_v) - 2) / 2.
+        5. Add up all 6. The sum of vacuum cleaners sold is: (1/3 * total_v) + (1/3 * total_v) + 2 + ((total_v - (1/3 * total_v) - 2) / 2) = (2/",Node32,5,8,11,19,0.2022971199778406,60,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. At the red house, she sold 2 more than at the green house. So, she sold (1/3 * total_v) + 2.
+        4. At the orange house, she sold half of what was left after visiting the other two houses. So, she sold (total_v - (1/3 * total_v) - 2) / 2.
+        5. Add up all 6. Total_sold = 1/3 * total_v + 2 + (1/3 * total_v) + 2 + (total_v - (1/3 * total_v) - 2) / 2
+        7. Simplify the equation by combining like terms
+        8. Total_sold = 4/3 * total_v + 4 - 2/(total_v",Node33,5,7,11,18,0.7284619560558261,93,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial amount (x). This can be found by dividing x by 3.
+        Green: (x/3) vacuum cleaners
+
+        3. She then sold 2 more vacuum cleaners at the red house, adding to the remaining number from the green house. So the total for the red house is equal to:
+        Red: [(x/3) + 2] vacuum cleaners
+
+        4. Finally, she sold half of what was left at the orange house. 5. The remaining amount after selling to the red house is (x - (x/3) - 2). To find how many were sold at the orange house, we need to divide this number by two:
+        Orange: [(x - (x/3) - 2)/2] vacuum cleaners
+
+        6. Now that we have the vacuum cleaner sales at each location, let's find out how many Melanie had when she started with. We know",Node47,2,7,5,12,0.9967037559665428,101,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. To find this, we need to divide the remaining vacuum cleaners by 2: (Initial_vacuum_cleaners - Green_house_",Node49,2,8,5,13,0.1395336370595368,61,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. First, find the remaining quantity from the red house by subtracting Red_house_sales from the initial number: Initial_vacuum_cleaners - Red_house_sales = Remaining_vacuum_cleaners. Now, divide this remaining quantity by 2 to get what she sold at the orange house: Orange_house_sales",Node50,2,8,5,13,0.626947435896723,106,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at both green and red houses. To calculate this, divide the remaining amount by 2 after selling at both locations (Green + Red), which is: ((Initial_vacuum_cleaners - Green_house_sales) / 2) * 2 = Orange_house_sales.
+        5. Now that we have the sales for each location, we can find out how many vacuum cleaners she",Node51,2,8,5,13,0.8346144558770924,112,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. To find this, we need to divide the remaining vacuum cleaners by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales.
+        5. Now, let's add up all the sales from each location to find out how many vacuum cleaners were sold in total",Node52,2,8,5,13,0.21548949143775076,111,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. For the orange house, half of what was left were sold. Since we know that she had 5 vacuum cleaners left, we can calculate the remaining quantity before going to the orange house: Initial_vacuum_cleaners - Green_house_sales = Remaining_vacuum_cleaners.
+        5. At the orange house, half of the remaining quantity was sold (Remaining_vacuum_clean",Node53,1,7,4,11,0.8664310973311276,101,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. Finally, at the orange house, half of what was left after the first two houses were sold. To calculate this, we need to subtract both the green and red house sales from the initial number and then divide the remaining quantity by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales.",Node54,2,8,5,13,0.9694303769868563,97,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. To find out how many vacuum cleaners were left after the green and red houses, subtract the green and red house sales from the initial number: Initial_vacuum_cleaners - Green_house_sales - Red_house_sales = Vacuum_cleaners_left.
+        5. Now, we need",Node55,2,8,5,13,0.1878162624425297,100,False
+" 1. Let's first determine the number of vacuum cleaners sold after visiting each house.
+        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v 3. At the red house, she sold 2 more than what she sold at the green house. So, she sold (1/3) * total_v + 2.
+        4. At the orange house, she sold half of what was left after selling to the first two houses. So, she sold ((1/3) * total_v + 5. Now we know that Melanie has 5 vacuum cleaners left. We can use this information to find the initial number of vacuum cleaners: total_v = 5 + (1/3) * total_v + 2 + ((1/3) * total_v + 2)
+        6. Simplify the equation by combining like terms: total_v = 5 + (2/3) * total_v + 4
+        7. Move all terms with 'total_v' to one side of the equation: (1",Node89,6,6,13,19,0.2218472528531502,119,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. First, find the remaining quantity from the red house by subtracting Red_house_sales from the initial number: Initial_vacuum_cleaners - Red_house_sales = Remaining_vacuum_cleaners. Now, divide this remaining quantity by 2 to get what she sold at the orange house: Orange_house_sales 5. We know that Melanie has 5 vacuum cleaners left after selling at all three houses. To find the initial number of vacuum cleaners, add the sales from each location and subtract the remaining quantity: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - Remaining_vacuum_cleaners
+        6. Plug in all",Node122,5,8,10,18,0.3746638424836195,91,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. First, find the remaining quantity from the red house by subtracting Red_house_sales from the initial number: Initial_vacuum_cleaners - Red_house_sales = Remaining_vacuum_cleaners. Now, divide this remaining quantity by 2 to get what she sold at the orange house: Orange_house_sales 5. Finally, we need to find how many vacuum cleaners were left after selling all of them. To do this, subtract the total sales from the initial number: Initial_vacuum_cleaners - (Green_house_sales + Red_house_sales + Orange_house_sales) =",Node123,5,9,10,19,0.3796977683669497,67,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. Finally, at the orange house, half of what was left after the first two houses were sold. To calculate this, we need to subtract both the green and red house sales from the initial number and then divide the remaining quantity by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales. 5. Now, we have all the numbers of vacuum cleaners sold at each house. To find out how many she started with, we can simply add the total number sold to what's left: Initial_vacuum_cleaners = Vacuum_cleaners_sold (Green + Red + Orange) + Vacuums_left.
+        6. Plugging in all the known values from steps 1-4, we get the following equation: Initial_vacuum_cleaners = Green_house_sales + Red",Node140,5,9,10,19,0.9444221733292084,116,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. Finally, at the orange house, half of what was left after the first two houses were sold. To calculate this, we need to subtract both the green and red house sales from the initial number and then divide the remaining quantity by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales. 5. Now, we have the total vacuum cleaners sold at each location: Green_house_sales + Red_house_sales + Orange_house_sales = Total_vacuum_cleaners_sold.
+        6. We know that Melanie has 5 vacuum cleaners left and she started with an unknown number of them. To find the initial quantity, we need to add the total number of vacuum cleaners sold to the remaining ones: Initial",Node141,5,9,10,19,0.26603090340190017,99,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. Finally, at the orange house, half of what was left after the first two houses were sold. To calculate this, we need to subtract both the green and red house sales from the initial number and then divide the remaining quantity by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales. 5. Now, we know how many vacuum cleaners were sold at each house. To find out how many she started with, we need to add all the sales together: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales.
+        6. We know that Melanie has 5 vacuum cleaners left and sold 2 more at the red",Node142,5,9,10,19,0.03188817505452657,89,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. Finally, at the orange house, half of what was left after the first two houses were sold. To calculate this, we need to subtract both the green and red house sales from the initial number and then divide the remaining quantity by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales. 5. Now, we have all the information about the vacuum cleaners sold at each house. We need to find out how many were left after selling them all. To do this, add up the sales from all three houses: Green_house_sales + Red_house_sales + Orange_house_sales = Total_vacuum_cleaners_sold.
+        6. Melanie has 5 vacuum cleaners left. We need to find out how many she",Node143,5,9,10,19,0.10936777194795066,101,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. Finally, at the orange house, half of what was left after the first two houses were sold. To calculate this, we need to subtract both the green and red house sales from the initial number and then divide the remaining quantity by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales. 5. Now, we have all the sold quantities at each location. To find out how many vacuum cleaners Melanie started with, we need to add up the sold quantities and subtract them from her current remaining quantity (5 vacuum cleaners). Initial_vacuum_cleaners = Remaining_vacuum_cleaners + Green_house_sales +",Node144,5,9,10,19,0.5398641850653162,76,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. Finally, at the orange house, half of what was left after the first two houses were sold. To calculate this, we need to subtract both the green and red house sales from the initial number and then divide the remaining quantity by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales. 5. Now, we know how many vacuum cleaners were sold at each location. To find out how many she started with, we need to add the sales from all three houses: Initial_vacuum_cleaners = Green_house_sales",Node145,5,9,10,19,0.25908174852844623,52,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. Finally, at the orange house, half of what was left after the first two houses were sold. To calculate this, we need to subtract both the green and red house sales from the initial number and then divide the remaining quantity by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales. 5. Now, we know how many vacuum cleaners were sold at each house. We can add them up to find the total number of sales: Green_house_sales + Red_house_sales + Orange_house_sales = Total_sales.
+        6. Melanie has 5 vacuum cleaners left, so we need to subtract this from the total sales to find out how many she started with: Initial_vacuum_cleaners = Total_sales - Remaining_",Node146,5,9,10,19,0.16090906136806427,107,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. To find out how many vacuum cleaners were left after the green and red houses, subtract the green and red house sales from the initial number: Initial_vacuum_cleaners - Green_house_sales - Red_house_sales = Vacuum_cleaners_left.
+        5. Now, we need to find out how many vacuum cleaners were sold at the orange house by dividing the remaining quantity (Vacuum_cleaners_left) by 2: Orange_house_sales = Vacuum_cleaners_left / 2.
+        6. Finally,",Node147,4,9,9,18,0.38866428883983184,59,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. To find out how many vacuum cleaners were left after the green and red houses, subtract the green and red house sales from the initial number: Initial_vacuum_cleaners - Green_house_sales - Red_house_sales = Vacuum_cleaners_left.
+        5. Now, we need to divide the vacuum cleaners left by 2 because she sold half of them at the orange house (half of what was left). So, we have: (1/2) * Vacuum_cleaners_left = Orange_house",Node148,4,9,9,18,0.6891443694058775,50,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. To find out how many vacuum cleaners were left after the green and red houses, subtract the green and red house sales from the initial number: Initial_vacuum_cleaners - Green_house_sales - Red_house_sales = Vacuum_cleaners_left.
+        5. Now, we need 6. To determine how many vacuum cleaners Melanie sold at the orange house, multiply half of what was left by the number of vacuum cleaners initially available: 0.5 * Vacuum_cleaners",Node149,4,9,9,18,0.9367519308350545,45,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. To find out how many vacuum cleaners were left after the green and red houses, subtract the green and red house sales from the initial number: Initial_vacuum_cleaners - Green_house_sales - Red_house_sales = Vacuum_cleaners_left.
+        5. Now, we need to find half of what was left after selling at the orange house. To do this, divide the Vacuum_cleaners_left by 2: Half_of_Vacuum_cleaners_left = (Vacuum_cleaners_left / 2).
+        6. Finally, we know that Melanie has 5",Node150,4,9,9,18,0.31955246061958986,72,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. To find out how many vacuum cleaners were left after the green and red houses, subtract the green and red house sales from the initial number: Initial_vacuum_cleaners - Green_house_sales - Red_house_sales = Vacuum_cleaners_left.
+        5. Now, we need to find half of what was left after selling at the orange house. To do this, divide Vacuum_cleaners_left by 2: (Vacuum_cleaners_left / 2) = Orange_house_sales.",Node151,4,9,9,18,0.021965802650852795,52,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. To find out how many vacuum cleaners were left after the green and red houses, subtract the green and red house sales from the initial number: Initial_vacuum_cleaners - Green_house_sales - Red_house_sales = Vacuum_cleaners_left.
+        5. Now, we need to find out how many vacuum cleaners were sold at the orange house. Since she sold half of what was left after selling at the red house, we can calculate this by dividing Vacuum_cleaners_left by 2: Orange_house_sales = (",Node152,4,9,9,18,0.24911600987845806,57,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. To find out how many vacuum cleaners were left after the green and red houses, subtract the green and red house sales from the initial number: Initial_vacuum_cleaners - Green_house_sales - Red_house_sales = Vacuum_cleaners_left.
+        5. Now, we need to find out how many vacuum cleaners were left after selling at the orange house. To do this, subtract the number of vacuum cleaners sold at the orange house from the remaining vacuum cleaners: V",Node153,4,9,9,18,0.549436202047605,42,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. First, find the remaining quantity from the red house by subtracting Red_house_sales from the initial number: Initial_vacuum_cleaners - Red_house_sales = Remaining_vacuum_cleaners. Now, divide this remaining quantity by 2 to get what she sold at the orange house: Orange_house_sales 5. We know that Melanie has 5 vacuum cleaners left after selling at all three houses. To find the initial number of vacuum cleaners, add the sales from each location and subtract the remaining quantity: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - Remaining_vacuum_cleaners
+        6. Plug in all 7. values into the equation. We get: (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red",Node168,2,7,12,19,0.9729118034925579,45,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. First, find the remaining quantity from the red house by subtracting Red_house_sales from the initial number: Initial_vacuum_cleaners - Red_house_sales = Remaining_vacuum_cleaners. Now, divide this remaining quantity by 2 to get what she sold at the orange house: Orange_house_sales 5. We know that Melanie has 5 vacuum cleaners left after selling at all three houses. To find the initial number of vacuum cleaners, add the sales from each location and subtract the remaining quantity: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - Remaining_vacuum_cleaners
+        6. Plug in all calculated values into the equation: (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red_house_sales) - Remaining_vacuum_cleaners = 5
+        7. Solve for Initial_vacuum",Node169,2,7,12,19,0.026023761443273785,72,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. First, find the remaining quantity from the red house by subtracting Red_house_sales from the initial number: Initial_vacuum_cleaners - Red_house_sales = Remaining_vacuum_cleaners. Now, divide this remaining quantity by 2 to get what she sold at the orange house: Orange_house_sales 5. We know that Melanie has 5 vacuum cleaners left after selling at all three houses. To find the initial number of vacuum cleaners, add the sales from each location and subtract the remaining quantity: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - Remaining_vacuum_cleaners
+        6. Plug in all 7. values we've calculated into the equation and solve for the initial number of vacuum cleaners: Initial_vacuum_cleaners = (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red_house_sales) - Remaining_vacuum_cleaners
+        8. Simplify the equation by moving all terms with the unknown variable",Node170,2,6,12,18,0.14980752747733628,98,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. First, find the remaining quantity from the red house by subtracting Red_house_sales from the initial number: Initial_vacuum_cleaners - Red_house_sales = Remaining_vacuum_cleaners. Now, divide this remaining quantity by 2 to get what she sold at the orange house: Orange_house_sales 5. We know that Melanie has 5 vacuum cleaners left after selling at all three houses. To find the initial number of vacuum cleaners, add the sales from each location and subtract the remaining quantity: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - Remaining_vacuum_cleaners
+        6. Plug in all values we have calculated to solve for Initial_vacuum_cleaners:
+         
+        (1/3) * Initial_vacuum_cleaners = Green_house_sales, so we get: (1/3) * Initial_vacuum_cleaners = 2 * Red_house",Node171,2,5,12,17,0.9220059623551913,67,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. First, find the remaining quantity from the red house by subtracting Red_house_sales from the initial number: Initial_vacuum_cleaners - Red_house_sales = Remaining_vacuum_cleaners. Now, divide this remaining quantity by 2 to get what she sold at the orange house: Orange_house_sales 5. We know that Melanie has 5 vacuum cleaners left after selling at all three houses. To find the initial number of vacuum cleaners, add the sales from each location and subtract the remaining quantity: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - Remaining_vacuum_cleaners
+        6. Plug in all values calculated previously: Initial_vacuum_cleaners = (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red_house_sales) - Remaining_vacuum_cleaners
+        7. Solve for the initial number of vacuum cleaners: Initial_v",Node172,2,3,12,15,0.5465198647052161,82,False
+" 1. Let's first find out how many vacuum cleaners were sold at each location.
+        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.
+        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the
+         Green_house_sales and get Red_house_sales.
+        4. At the orange house, she sold half of what was left after selling at the red house. First, find the remaining quantity from the red house by subtracting Red_house_sales from the initial number: Initial_vacuum_cleaners - Red_house_sales = Remaining_vacuum_cleaners. Now, divide this remaining quantity by 2 to get what she sold at the orange house: Orange_house_sales 5. We know that Melanie has 5 vacuum cleaners left after selling at all three houses. To find the initial number of vacuum cleaners, add the sales from each location and subtract the remaining quantity: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - Remaining_vacuum_cleaners
+        6. Plug in all values calculated previously: Initial_vacuum_cleaners = (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red_house_sales) - Remaining_vacuum_cleaners
+        7. Solve for the initial number of vacuum cleaners: Initial_v 8. Calculate the final answer: Initial_vacuum_cleaners = 15
+        So, Melanie started with 15 vacuum cleaners.",Node177,6,0,18,18,0.4003247137752226,72,False

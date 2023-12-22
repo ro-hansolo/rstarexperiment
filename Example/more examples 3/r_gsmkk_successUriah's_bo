@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Uriah's book bag is getting too heavy for him. He needs to remove 15 pounds from it. His comic books weigh 1/4 pound each and his toys weigh 1/2 pound each. If he removes 30 comic books, how many toys does he need to remove? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:7, Flag:False
+[\"1. First, let's find out the total weight of the comic books Uriah wants to remove. He has 30 comic books and each one weighs 1/4 pound. So, we multiply the number of comic books by their individual weight: 30 * (1\", 62, 0.19372605093192652]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:8, Flag:True
+[\"1. First, let's find out the total weight of all the comic books in Uriah's bag. Since there are 30 comic books and each one weighs 1/4 pound, we can multiply the number of comic books by their individual weight to get the total weight: \n           30 * (1/4) = 7.\", 78, 0.2931716901820025]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:7, Flag:False
+['1. First, we know the total weight Uriah needs to reduce is 15 pounds.\n        2. We also know that his comic books weigh 1/4 pound each and his toys weigh 1/2 pound each.\n        3. If he removes 30 comic books, then we need to calculate how much weight he removed from them:', 78, 0.20803435903386325]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:7, Flag:False
+[\"1. First, let's find out the total weight of the comic books Uriah wants to remove. He has 30 comic books and each one weighs 1/4 pound. To calculate their combined\", 45, 0.16424649876942543]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:5, Flag:False
+[\"1. First, let's find out the total weight of the comic books Uriah wants to remove. He has 30 comic books and each one weighs 1/4 pound. To calculate the total weight, multiply the number of comic books by their individual weight: 30 * (1/4) = 7.5 pounds\n        2. Now we know that Uriah needs to remove a total of 15 pounds from his book bag. We've already accounted for 7.5 pounds coming from the comic books, so we\", 120, 0.07753126963209045]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:5, Flag:False
+['1. Uriah has 30 comic books which have a combined weight of 30 * (1/4 pound per book) = 7.5 pounds. We now know they contribute to the overall bag weight, but we also have toys that add some weight.\n        2. The question tells us Uriah needs to remove 15 pounds in total, which means he should remove all extra weight added from both comic books and toys.\n        3. Since Uriah', 102, 0.9807797562003855]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:7, Flag:False
+[\"1. First, let's find out the total weight of the comic books Uriah wants to remove. He has 30 comic books and each one weighs 1/4 pound. To calculate their combined weight, multiply the number of comic books by the weight per comic book: 30 * (1/4) = 7.5\", 75, 0.17576012756740178]
+Path: StartNode6" color=black shape=box]
+	Node4 -> Node7 [label=Node4Node7]
+	Node7 [label="V:2, H:9, Flag:False
+['need to remove the remaining weight (15 - 7.5) = 7.5 pounds from the toys.\n        3. Each toy weighs 1/2 pound. To find out how many toys Uriah needs to', 50, 0.7127053852588909]
+Path: Node4Node7" color=black shape=box]
+	Node4 -> Node8 [label=Node4Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['3. Calculate how many more pounds he needs to remove from toys: 15 - 7.5 = 7.5 pounds remaining to remove from toys\n        4. Since each toy weighs 1/2 pound, divide the remaining amount by the weight of a single toy to find out how many toys he needs to remove: 7.5 / (1/2) = 7.5 * 2 = 15 toys\n        Uri', 98, 0.6363984068664297]
+Path: Node4Node8" color=green shape=box]
+	Node4 -> Node9 [label=Node4Node9]
+	Node9 [label="V:2, H:9, Flag:False
+['3. need to find out how many more pounds need to be removed (from toys). To do this, subtract the weight of the comic books he wants to remove from the total weight he needs to remove: 15 - 7.5 = 7.5 pounds remaining\n        4. Since each toy', 65, 0.4398667370621764]
+Path: Node4Node9" color=black shape=box]
+	Node4 -> Node10 [label=Node4Node10]
+	Node10 [label="V:2, H:9, Flag:False
+[\"3. Calculate the remaining weight he should remove: 15 - 7.5 = 7.5 more pounds need to be removed.\n        4. Since each toy weighs 1/2 pound, we'll divide the total\", 52, 0.9669595235252734]
+Path: Node4Node10" color=black shape=box]
+	Node4 -> Node11 [label=Node4Node11]
+	Node11 [label="V:2, H:9, Flag:False
+['need to find out how many toys he should remove to reach the desired weight reduction. To do this, subtract the weight of the removed comic books (7.5) from the total weight Uriah wants to reduce (15): 15 - 7.5 =', 59, 0.5305599947318755]
+Path: Node4Node11" color=black shape=box]
+	Node4 -> Node12 [label=Node4Node12]
+	Node12 [label="V:1, H:9, Flag:False
+['3. need to find out how many more pounds he should remove from his toys. To do this, subtract the weight of the comic books (7.5) from the total amount needed (15): 15 - 7.5 = 7.5 pounds\n        4. Finally, we know that each toy weighs 1/2 pound and Uriah needs to remove 7.5 pounds more from his toys. To find out how many toys he should remove, divide the remaining weight (7.5) by the individual weight of a', 117, 0.11200417299376852]
+Path: Node4Node12" color=black shape=box]
+	Node4 -> Node13 [label=Node4Node13]
+	Node13 [label="V:2, H:9, Flag:False
+['3. need to find out how many toys he should remove to reach the desired weight reduction. To do this, subtract the weight of the comic books from the total weight Uriah needs to remove: 15 - 7.5 = 7.', 54, 0.02845167946769267]
+Path: Node4Node13" color=black shape=box]
+}

@@ -1,0 +1,72 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" First, we need to calculate the interest earned each year and then add it back to the principal amount. Since the interest rate is compounded quarterly, we will divide the annual interest",Node1,5,7,5,12,0.06357482069480191,38,False
+" First, we need to calculate the interest earned each year",Node3,4,8,4,12,0.1426007715189962,12,False
+" First, we need to calculate the interest earned each year Step 1: Calculate interest for one year (compounding occurs every quarter)
+        Interest rate = 10% / 4 = 2.5% per quarter
+
+        Step 2",Node11,3,9,7,16,0.9786011716696902,46,False
+" First, we need to calculate the interest earned each year Interest per year = (Interest rate / Number of compounding periods) * Principal amount
+        Interest per year = (10% / 4) * $10,000
+        Interest per year = ($2.5% * $10,000)",Node12,3,9,7,16,0.37357180189566497,63,False
+" First, we need to calculate the interest earned each year Interest per year = (Interest rate / Number of times interest is compounded) * Principal amount
+        Interest per year = (10% / 4) * $10,000
+        Interest per year = 2.5% * $10,000
+        Interest per year",Node13,3,9,7,16,0.07405326189813055,69,False
+" First, we need to calculate the interest earned each year 10% * (1/4) = 2.5% per quarter
+
+        Now, let's find out how much her investment grows every quarter from the initial $10,\!000
+        $10,\!00",Node14,4,10,8,18,0.6424131585812002,54,False
+" First, we need to calculate the interest earned each year 10% * (1/4) = 2.5% per quarter
+
+        Now, let's find out how much her investment grows every quarter from the initial $10,\!000
+        $10,\!00 10,\!000 + ($10,\!000 * 0.025) = $10,\!250
+        10,\!250 + ($10,\!250 * 0.025) = $10,\!312.50
+        10,\!312.50 + ($1",Node30,3,10,11,21,0.6232663798862406,86,False
+" First, we need to calculate the interest earned each year 10% * (1/4) = 2.5% per quarter
+
+        Now, let's find out how much her investment grows every quarter from the initial $10,\!000
+        $10,\!00 10,\!000 + 2.5% of 10,\!000 = 10,\!000 + (10,\!000 * 0.025) = 10,\!000 + 250 = $10,\!250
+        After the",Node31,3,10,11,21,0.4809218453996339,75,False
+" First, we need to calculate the interest earned each year 10% * (1/4) = 2.5% per quarter
+
+        Now, let's find out how much her investment grows every quarter from the initial $10,\!000
+        $10,\!00 10,\!000 + 2.5% of 10,\!000 = 10,\!000 + (2.5/100) * 10,\!000 = 10,\!000 + 250 = $10,250",Node32,3,9,11,20,0.4577917438410608,74,False
+" First, we need to calculate the interest earned each year 10% * (1/4) = 2.5% per quarter
+
+        Now, let's find out how much her investment grows every quarter from the initial $10,\!000
+        $10,\!00 10,\!000 + ($10,\!00 * 0.025) = $10,\!025
+        10,\!025 + ($10,\!025 * 0.025) = $",Node33,3,10,11,21,0.7592011471951994,60,False
+" First, we need to calculate the interest earned each year 10% * (1/4) = 2.5% per quarter
+
+        Now, let's find out how much her investment grows every quarter from the initial $10,\!000
+        $10,\!00 10,000 * 1.025 = $10,025
+
+        At the end of the first quarter, she has $10,025. After another three quarters, we will see how much her investment grows",Node34,2,9,10,19,0.7177379377205655,55,False
+" First, we need to calculate the interest earned each year 10% * (1/4) = 2.5% per quarter
+
+        Now, let's find out how much her investment grows every quarter from the initial $10,\!000
+        $10,\!00 10,000 * 1.025 = $10,025
+
+        At the end of the first quarter, she has $10,025. After another three quarters, we will see how much her investment grows 10,025 * 1.025^3 = 10,025 * (1.025)^4 = $10,276.79
+
+        So after the first year with four quarters of interest compounding, Paula'",Node39,4,5,14,19,0.6326411905099146,62,False
+" First, we need to calculate the interest earned each year 10% * (1/4) = 2.5% per quarter
+
+        Now, let's find out how much her investment grows every quarter from the initial $10,\!000
+        $10,\!00 10,\!000 + 2.5% of 10,\!000 = 10,\!000 + (10,\!000 * 0.025) = 10,\!000 + 250 = $10,\!250
+        After the 1st quarter: $10,\!250
+
+        Now, let's find out how much her investment grows every quarter from the new amount ($10,\!250)
+        $10,\",Node55,2,8,13,21,0.3224661267498542,48,False
+" First, we need to calculate the interest earned each year 10% * (1/4) = 2.5% per quarter
+
+        Now, let's find out how much her investment grows every quarter from the initial $10,\!000
+        $10,\!00 10,\!000 + 2.5% of 10,\!000 = 10,\!000 + (10,\!000 * 0.025) = 10,\!000 + 250 = $10,\!250
+        After the 1st quarter: $10,\!250
+        2nd quarter: $10,\!250 + 2.5% of 10,\!250 = 10,\!250 + (10,\!250 * 0.025) = 10,\!25",Node56,2,7,13,20,0.3389749658503637,75,False
+" First, we need to calculate the interest earned each year 10% * (1/4) = 2.5% per quarter
+
+        Now, let's find out how much her investment grows every quarter from the initial $10,\!000
+        $10,\!00 10,\!000 + 2.5% of 10,\!000 = 10,\!000 + (10,\!000 * 0.025) = 10,\!000 + 250 = $10,\!250
+        After the 1st quarter: $10,\!250
+        After the 2nd quarter: $10,\!250 + ($10,\!250 * 0.025) = $10,\!250 + 262.50 = $10,\!",Node59,2,8,13,21,0.8933875281965753,69,False

@@ -1,0 +1,13 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. To find the total number of units in the entire building, first multiply the number of floors by the number of units per floor. This gives us 15 floors * 8 units/floor = 120 units.",Node0,0,8,0,8,0.616133868787331,51,False
+" 1. We know that there are 15 floors in the building.
+        2. Each floor has 8 units, so we calculate the total number of units by multiplying the number of floors by the number of units per floor (15 * 8 = 120).
+        3. We're given that 3/4 of the building is occupied, which means that 1 - 3/4 = 1/4 of the units are unoccupied.
+        4. To find the number of unoccupied units",Node2,1,4,1,5,0.6070176923994753,115,False
+" 1. First, let's find out how many units are in the entire building. There are 15 floors with 8 units each, so we multiply 15 by 8 to get the total number of units: 15 * 8 = 120 units.
+        2. Now, we",Node5,0,7,0,7,0.023948098607284862,68,False
+" 1. We know that there are 15 floors in the building.
+        2. Each floor has 8 units, so we calculate the total number of units by multiplying the number of floors by the number of units per floor (15 * 8 = 120).
+        3. We're given that 3/4 of the building is occupied, which means that 1 - 3/4 = 1/4 of the units are unoccupied.
+        4. To find the number of unoccupied units 5. Multiply the total number of units (120) by the fraction representing the unoccupied part (1/4). Do this calculation: (120 * 1/4 = 30).
+        So, there are a total of 30 unoccupied units in the building.",Node7,0,0,1,1,0.7877886782492465,93,False

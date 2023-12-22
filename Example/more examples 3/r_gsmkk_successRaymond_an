@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Raymond and Samantha are cousins. Raymond was born 6 years before Samantha. Raymond had a son at the age of 23. If Samantha is now 31, how many years ago was Raymond's son born? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:9, Flag:False
+['1. We know that Raymond and Samantha are cousins.\n        2. Raymond was born 6 years before Samantha.\n        3. Raymond had a son at the age of 23.\n        4. Samantha is now 31 years old.', 60, 0.010773794812028115]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:7, H:10, Flag:True
+[\"1. We know that Raymond and Samantha are cousins. This means they have the same grandparents but different parents.\n        2. It is given that Raymond was born 6 years before Samantha. So, if Samantha is now 31, we can calculate her age at the time of Raymond's birth: 31 - 6 = 25 years old when he was born.\", 90, 0.4776000942095593]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:9, Flag:False
+['1. We know that Raymond and Samantha are cousins.\n        2. Raymond was born 6 years before Samantha.\n        3. Raymond had a son at the age of 23.\n        4. Samantha is now 31 years old.\n        5. To find', 66, 0.07895894086312005]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:5, Flag:False
+[\"1. We know that Raymond and Samantha are cousins.\n        2. Raymond was born 6 years before Samantha.\n        3. Raymond had a son at the age of 23.\n        4. Samantha is now 31 years old.\n        5. To find out when Raymond's son was born, we need to consider Raymond's age (23) and add his son's birth year to it.\n        6. Since Raymond had a son\", 107, 0.34826032442781185]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:6, H:10, Flag:True
+['1. We know that Raymond and Samantha are cousins, so they share the same grandparents. This means their parents have a sibling relationship.\n        2. Raymond was born 6 years before Samantha, which implies', 49, 0.23763466766892993]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:9, H:10, Flag:True
+[\"1. First, we need to find out Samantha's birth year. Since she is currently 31 years old and was born 6 years after Raymond, Ray must be 25 years old now (since he\", 47, 0.9670861981973865]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:3, H:3, Flag:False
+['1. We know that Rayman and Samantha are cousins, so they share a common grandparent or great-grandparent. This means their parents have the same generation gap.\n        2. We also know that Raymond was born 6 years before Samantha. So, if Samantha is now 31 years old, then Raymond must be 37 (31 + 6).\n        3. We are given that Raymond had a son at the age of 23. To find out how many years ago his son was born,', 117, 0.33330613918572105]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:0, H:0, Flag:False
+[\"4. We need to subtract Raymond's age when he became a father (23) from his current age (Raymond's age is 37 now). So, 37 - 23 = 14 years.\n        5. Therefore, Raymond's son was born 14 years ago.\", 99, 0.8836805688240946]
+Path: Node6Node7" color=green shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:0, H:0, Flag:False
+[\"4. We need to subtract the age when he had his son from his current age. So, 37 (Raymond's current age) - 23 (age when he had a son) = 14 years.\n        Therefore, Raymond's son was born 14 years ago.\", 72, 0.36998099825870767]
+Path: Node6Node8" color=green shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:8, H:10, Flag:True
+[\"4. Add up Raymond's current age to the age when he had his child: 37 (Raymond's age) + 23 (age when he had his son).\n        5. This will result in a sum of 60 years. Therefore, Raymond's son was born 60 years ago.\", 94, 0.6220789301415864]
+Path: Node6Node9" color=red shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:0, H:0, Flag:False
+[\"4. We need to subtract the age when he had his son from the current age of Raymond. So, 37 (Raymond's current age) - 23 (age when he had a son) = 14 years.\n        Therefore, Raymond's son was born 14 years ago.\", 110, 0.27120428952072884]
+Path: Node6Node10" color=green shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:0, H:0, Flag:False
+[\"4. We need to subtract Raymond's age when he had his son from his current age. So, 37 (Raymond's current age) - 23 (age when he had a son) = 14 years.\n        5. Therefore, Raymond's son was born 14 years ago.\", 100, 0.2840415800315492]
+Path: Node6Node11" color=green shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:6, H:8, Flag:False
+[\"4. We need to calculate the difference in time between when Raymond's son was born and now. For this, we will subtract the year Raymond was when his son was born from the current year.\n        5. Currently, it is 2023 (assuming). So, the age of Raymond's\", 67, 0.5728425729234445]
+Path: Node6Node12" color=black shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:0, H:0, Flag:False
+[\"4. we need to subtract Rayman's age when he became a father (23) from his current age (37).\n        5. So, 37 - 23 = 14.\n        6. Therefore, Raymond's son was born 14 years ago since Samantha is currently 31.\", 118, 0.846640711422268]
+Path: Node6Node13" color=green shape=box]
+}

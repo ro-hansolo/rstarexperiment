@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Ted the T-Rex was planning to bring potato salad to the dinosaur picnic.  He knows that an adult dinosaur will eat 10 lbs of potato salad, and a child will eat half as much as an adult.  If there will be 20 adults and 5 children at the picnic, how many pounds of potato salad does Ted need to bring to the picnic if he hopes to have enough to feed everyone? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:8, Flag:False
+[\"1. First, let's calculate the amount of potato salad for adults and children separately.\n           a. For adults, an adult dinosaur eats 10 lbs of potato salad, so we need 20 * 10 =\", 55, 0.6761950675769872]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:8, Flag:False
+[\"1. Firstly, let's find out how much potato salad each adult will eat. Adults require 10 lbs per person, so for 20 adults, we multiply by the number of people: 10 lbs/\", 53, 0.5690605072424939]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:5, Flag:False
+[\"1. First, let's calculate the total amount of potato salad needed for all the adults. Since an adult eats 10 lbs and there are 20 adults attending, we multiply 10 lbs by 20 adults: 10 * 20 = 200 lbs.\n        2. Next, let's find out how much potato salad is needed for the children. Since a child eats half as much as an adult, and they\", 105, 0.16423806127694174]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:6, H:9, Flag:False
+[\"1. First, let's calculate the total amount of potato salad needed for all the adults. Since an adult eats 10 lbs and there are 20 adults, we multip\", 41, 0.009379600347826922]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:2, Flag:False
+['1. Calculate the total amount of potato salad needed for all adults: 20 adults * 10 lbs per adult = 200 lbs.\n        2. Calculate the amount of potato salad needed for each child: 5 children * (1/2) * 10 lbs per adult = 25 lbs.\n        3. Add up the total amount of potato salad needed for all adults and children:', 98, 0.6428821454633069]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:6, H:9, Flag:False
+[\"1. First, let's determine the total amount of potato salad needed for all the adults. Since there are 20 adults and each adult eats 10 lbs, we can calculate this by multiplying the number of adults by the amount each adult eats: 20 * 10 = 200 lbs of pot\", 74, 0.15305698476537855]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:5, Flag:False
+[\"1. First, let's determine the total amount of potato salad needed for all the adults. Since there are 20 adults and each adult eats 10 lbs, we can calculate this by multiplying the number of adults by the amount each adult needs. So, 20 adults * 10 lbs/adult = 200 lbs.\n        2. Next, let's find out how much potato salad is needed for all the children. There are 5\", 107, 0.08319855967332002]
+Path: StartNode6" color=black shape=box]
+	Node4 -> Node7 [label=Node4Node7]
+	Node7 [label="V:0, H:0, Flag:False
+['200 lbs + 25 lbs = 225 lbs.\n        So, Ted needs to bring 225 pounds of potato salad to have enough for everyone at the dinosaur picnic.', 97, 0.7393575770703755]
+Path: Node4Node7" color=green shape=box]
+	Node4 -> Node8 [label=Node4Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['200 lbs (adults) + 25 lbs (children) = 225 lbs.\n        Ted needs to bring 225 lbs of potato salad to the picnic to ensure there is enough', 52, 0.5912535766025787]
+Path: Node4Node8" color=green shape=box]
+	Node4 -> Node9 [label=Node4Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['200 lbs (for adults) + 25 lbs (for children) = 225 lbs.\n        Ted needs to bring 225 pounds of potato salad to ensure there will be enough to feed everyone at', 52, 0.7706559372081176]
+Path: Node4Node9" color=green shape=box]
+	Node4 -> Node10 [label=Node4Node10]
+	Node10 [label="V:0, H:0, Flag:False
+['200 lbs (adults) + 25 lbs (children) = 225 lbs.\n        Ted needs to bring 225 pounds of potato salad to the dinosaur picnic in order to have enough for everyone.', 87, 0.22847495680013796]
+Path: Node4Node10" color=green shape=box]
+	Node4 -> Node11 [label=Node4Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['200 lbs + 25 lbs = 225 lbs.\n        Ted needs to bring 225 pounds of potato salad to the picnic if he hopes to have enough to feed everyone.', 113, 0.5557931246496958]
+Path: Node4Node11" color=green shape=box]
+	Node4 -> Node12 [label=Node4Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['200 lbs + 25 lbs = 225 lbs.\n        Ted needs to bring 225 pounds of potato salad in order to have enough to feed everyone at the dinosaur picnic.', 88, 0.6765420058407343]
+Path: Node4Node12" color=green shape=box]
+	Node4 -> Node13 [label=Node4Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['200 lbs + 25 lbs = 225 lbs.\n        Ted needs to bring 225 lbs of potato salad to the dinosaur picnic to have enough for everyone attending, including both adults and children.', 110, 0.504944214540983]
+Path: Node4Node13" color=green shape=box]
+}

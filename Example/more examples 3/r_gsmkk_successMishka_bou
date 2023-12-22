@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Mishka bought 3 pairs of shorts, 3 pairs of pants, and 3 pairs of shoes. One pair of shorts costs $16.50. One pair of pants costs $22.50 and one pair of shoes costs $42. How many dollars did Mishka spend on all the clothing items? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:6, Flag:False
+['1. To find out how much Mishka spent on each type of clothing, we need to multiply the number of items by the cost per item for that particular type.\n        2. For shorts, there are 3 pairs and they cost $16.50 each. So, 3 * $16.50 = $49.50', 77, 0.49769525640723755]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:0, H:2, Flag:False
+['1. Calculate the total cost for each type of clothing item by multiplying the number of pairs with their respective cost per pair.\n           Total shorts cost = 3 pairs * $16.50/pair = $49.50\n           Total pants cost = 3 pairs * $22.50/pair = $75.00\n           Total shoes cost = 3 pairs * $42/pair = $126.00', 100, 0.4209572457437982]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:8, Flag:False
+[\"1. First, let's calculate the total cost for each type of clothing item.\n           - Shorts: 3 pairs * $16.50 per pair = $49.50\n           - Pants: 3\", 51, 0.09835533788619566]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:5, H:8, Flag:False
+[\"1. First, let's calculate the total cost of each type of clothing separately.\n           Total shorts cost = Number of shorts * Cost per pair of shorts\n           Total pants cost = Number of pants * Cost per pair of pants\n           Total shoes cost = Number of\", 56, 0.46181455225635903]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:4, Flag:False
+[\"1. First, let's calculate the total cost for each type of clothing item.\n           - Total cost for shorts = 3 pairs * $16.50 per pair = $49.50\n           - Total cost for pants = 3 pairs * $22.50 per pair = $75.00\n           - Total cost for shoes = 3 pairs * $42.00 per pair\", 92, 0.16348981028464948]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:3, H:4, Flag:False
+[\"1. First, let's calculate the total cost for each type of clothing item.\n           - For shorts: 3 pairs * $16.50 per pair = $49.50\n           - For pants: 3 pairs * $22.50 per pair = $67.50\n           - For shoes: 3 pairs * $42 per pair = $126\n        2. Now, let's add up the total cost for\", 103, 0.19021652013906365]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:5, H:4, Flag:True
+['1. First, we need to determine how much each type of clothing item costs in total.\n           - For shorts: 3 pairs * $16.50 per pair = $55.50\n           - For pants: 3 pairs * $22.50 per pair = $75.00\n           - For shoes: 3 pairs * $42 per pair = $126.00\n        2. Next, we will add up the total cost of each type of clothing', 110, 0.8552781069509356]
+Path: StartNode6" color=red shape=box]
+	Node1 -> Node7 [label=Node1Node7]
+	Node7 [label="V:0, H:0, Flag:False
+['2. Add up the total costs of all clothing items to find the overall spending.\n           Overall spending = Total shorts cost + Total pants cost + Total shoes cost\n           Overall spending = $49.50 + $75.00 + $126.00 = $240.50\n        3. Mishka spent a total of $240.50 on all the clothing items.', 105, 0.39601775121675353]
+Path: Node1Node7" color=green shape=box]
+	Node1 -> Node8 [label=Node1Node8]
+	Node8 [label="V:1, H:3, Flag:False
+['2. Add the total costs for each clothing item to find the overall spending.\n          Overall spending = Total shorts cost + Total pants cost + Total shoes cost\n          Overall spending = $49.', 41, 0.7079452171064896]
+Path: Node1Node8" color=black shape=box]
+	Node1 -> Node9 [label=Node1Node9]
+	Node9 [label="V:1, H:4, Flag:False
+['2. Add the costs of all clothing items to find the total amount spent on all the clothing items.\n           Total spending = Total shorts cost + Total pants cost + Total shoes cost\n           Total spending = $49.50 + $75.0', 57, 0.6266571663842874]
+Path: Node1Node9" color=black shape=box]
+	Node1 -> Node10 [label=Node1Node10]
+	Node10 [label="V:1, H:5, Flag:False
+['2. Add up the costs of all clothing items to get the total spending amount.\n          Total spending = $49.50 (shorts) + $75.00 (pants) + $126.', 49, 0.8033910245451058]
+Path: Node1Node10" color=black shape=box]
+	Node1 -> Node11 [label=Node1Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['2. Add the total costs of all clothing items to find the overall spending.\n           Overall spending = Total shorts cost + Total pants cost + Total shoes cost\n           Overall spending = $49.50 + $75.00 + $126.00 = $240.50\n        Mishka spent a total of $240.50 on all the clothing items.', 105, 0.2639683625011514]
+Path: Node1Node11" color=green shape=box]
+	Node1 -> Node12 [label=Node1Node12]
+	Node12 [label="V:5, H:1, Flag:True
+['2. Add up the total costs of all clothing items to find out how much Mishka spent in total.\n           Total spending = $49.50 (shorts) + $75.00 (pants) + $126.00 (shoes) = $24', 68, 0.9777243327760183]
+Path: Node1Node12" color=red shape=box]
+	Node1 -> Node13 [label=Node1Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['2. Add up the total cost for each type of clothing item to find the overall spending on all the items.\n           Overall spending = Total shorts + Total pants + Total shoes\n           Overall spending = $49.50 + $75.00 + $126.00 = $240.50\n        Mishka spent a total of $240.50 on all the clothing items.', 98, 0.47691404550706207]
+Path: Node1Node13" color=green shape=box]
+}

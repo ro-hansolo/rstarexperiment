@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: The Doubtfire sisters are driving home with 7 kittens adopted from the local animal shelter when their mother calls to inform them that their two house cats have just had kittens. She says that Patchy, the first cat, has had thrice the number of adopted kittens, while Trixie, the other cat, has had 12. How many kittens does the Doubtfire family now have? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:5, Flag:False
+[\"1. First, we need to find out how many kittens they had from their two house cats. They have Patchy, who has thrice the number of adopted kittens, and Trixie with 12 kittens. So Patchy's offspring would be 7 (adopted kittens) * 3 = 21 kittens.\n        2. Now, we combine this number with the kittens from\", 99, 0.731462261536201]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:8, H:9, Flag:True
+['1. We know there are 7 kittens from the local shelter and 3 kittens from Patchy (since she has thrice the number of adopted kittens). So, we add these two numbers together: 7 + 3 = 10 kittens from the shelter and Patchy.', 70, 0.006204717082104683]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:3, Flag:False
+[\"1. We know there are 7 kittens from the local shelter and 2 house cats that just gave birth.\n        2. Patchy's litter size is thrice the number of adopted kittens, so it has 3 * 7 = 21 kittens.\n        3. Trixie's litter size is 12 kittens.\", 83, 0.010046645692754375]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:8, H:9, Flag:True
+['1. We know there are 7 kittens from the local shelter and 3 kittens from Patchy (since she had thrice the number of adopted kittens). So, we add these two numbers together to find out how many kittens they have so far: 7 + 3 = 10 kittens.\n        2. Now, Trixie has had 12 kittens. We need to include these in the total count of kittens. So, we add the 10 k', 114, 0.10601290706202837]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:8, H:9, Flag:True
+[\"1. We know there are 7 kittens from the local shelter and 3 kittens from Patchy (since Patchy's kittens are thrice the number of adopted ones).\n        2. Adding\", 50, 0.2925199073285326]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:10, H:10, Flag:True
+['1. We need to find the combined number of all the kittens, which include the adopted ones, the newborns from the two house cats, and the kittens from Patchy and Trixie.\n        2. The Doubtfire sisters adopted 7 kittens from the local animal shelter, so we add that number to the total: 7 + 7 = 1', 84, 0.685515995257187]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:8, H:8, Flag:True
+[\"1. We know there are 7 kittens from the local shelter and 3 more from Patchy (since Patchy's number of kittens is thrice that of the adopted ones). So, we add these two numbers together to get a total of 7 + 3 = 10 kittens.\n        2. Trixie has had 12 kittens.\n        3. Now, we need to combine all\", 97, 0.18685420579878487]
+Path: StartNode6" color=red shape=box]
+	Node2 -> Node7 [label=Node2Node7]
+	Node7 [label="V:3, H:2, Flag:True
+['4. Now we need to add all these kittens together: 7 (adopted) + 21 (Patchy) + 12 (Trixie) + 2 (house cats without kittens).\n        5. Calculating the sum', 58, 0.7465970707885289]
+Path: Node2Node7" color=red shape=box]
+	Node2 -> Node8 [label=Node2Node8]
+	Node8 [label="V:3, H:1, Flag:True
+['4. Now, we need to add all these kittens together: 7 (adopted) + 21 (Patchy) + 12 (Trixie) + 2 (house cats) = 42 k', 51, 0.21157142607174173]
+Path: Node2Node8" color=red shape=box]
+	Node2 -> Node9 [label=Node2Node9]
+	Node9 [label="V:3, H:6, Flag:True
+['4. Add all the kittens together: (7 kitten from shelter + 21 from Patchy + 12 from Trixie) + 2 house cats = 7 + 21 + 12 + 2 = 42 kittens\n        The Doubt', 64, 0.9597909920144121]
+Path: Node2Node9" color=red shape=box]
+	Node2 -> Node10 [label=Node2Node10]
+	Node10 [label="V:1, H:0, Flag:False
+[\"4. Combine all the kitten numbers: 7 (from local shelter) + 21 (Patchy's litter) + 12 (Trixie's litter) = 40 kittens.\n        The Doubtfire family now has a total of 40 kittens.\", 118, 0.9184421110385731]
+Path: Node2Node10" color=green shape=box]
+	Node2 -> Node11 [label=Node2Node11]
+	Node11 [label="V:1, H:0, Flag:False
+['4. Add up the total number of kittens from all sources: 7 (adopted) + 21 (Patchy) + 12 (Trixie) = 40 kittens.\n        The Doubtfire family now has a total of 40 kittens.', 92, 0.7622456284168412]
+Path: Node2Node11" color=green shape=box]
+	Node2 -> Node12 [label=Node2Node12]
+	Node12 [label="V:3, H:1, Flag:True
+['4. Add up all the kittens: 7 (adopted) + 21 (Patchy) + 12 (Trixie) + 2 (house cats) = 42', 45, 0.26590984118821326]
+Path: Node2Node12" color=red shape=box]
+	Node2 -> Node13 [label=Node2Node13]
+	Node13 [label="V:1, H:0, Flag:False
+['4. Combining all kittens we have: Adopted (7), Patchy (21), and Trixie (12).\n        5. Add them up to find the total number of kittens: 7 + 21 + 12 = 40 kittens.\n        The Doubtfire family now has 40 kittens in total.', 114, 0.8469434309985996]
+Path: Node2Node13" color=green shape=box]
+}

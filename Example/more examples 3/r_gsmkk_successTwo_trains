@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Two trains leave San Rafael at the same time. They begin traveling westward, both traveling for 80 miles. The next day, they travel northwards, covering 150 miles. What's the distance covered by each train in the two days? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:6, H:8, Flag:True
+[\"1. First, let's calculate the total distance covered by each train during their westward journey. They both traveled for 80 miles each day. So, for one day, they cover a combined distance of 80 + 80 = 160 miles. Since it took two days to travel this way, the total\", 70, 0.16733815742718083]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:4, H:7, Flag:False
+['1. First, we need to know the distance covered by each train daily on their respective routes. \n          - Day 1 (Westward): They both travel for 80 miles.\n           - Day 2 (Northwards): They both cover 150 miles.\n       \n        2. Next, we need to find out the combined distance traveled by each train on their two-day journey. To do this, sum up the daily distances from days 1 and 2.\n          - Combined Distance = Day 1 Distance', 117, 0.7931952431261469]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:3, H:5, Flag:False
+[\"1. First, let's calculate the total distance traveled by each train on the first day (westward for 80 miles).\n           Train A distance = 80 miles\n           Train B distance = 80 miles\n\n        2. Next, we need to find out how far they travel northwards on the second day (150 miles).\n           Train A distance = 150 miles\n           Train B distance = 150 miles\n\n        3. Now, let'\", 107, 0.039391317709276064]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:9, H:8, Flag:True
+[\"1. First, let's calculate the total distance covered by each train on their westward journey. They both traveled for 80 miles each day. So, for one day, they covered 80 miles. Since it was for two days, we multiply this value by 2 to get the total distance covered in the westward direction: 80 * 2 =\", 80, 0.05692098978779425]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:5, H:7, Flag:True
+['1. Analyze the given information. We have a scenario where two trains leave San Rafael simultaneously and travel westward for 80 miles each day. They continue their journey northwards for another 150 miles the next day, together covering all three distances: westward in day 1, and northwards in both day 1 and day 2.\n        2. Calculate the total distance covered in each direction per train over', 92, 0.8547032714373187]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:4, H:6, Flag:True
+['1. First, we need to find the total distance each train covers in one direction (westward).\n           Train A travels westward for 80 miles and then northwards for 150 miles. The sum of these distances is', 50, 0.5565622606690634]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:6, H:2, Flag:True
+['1. In the first day, both trains travel westward for 80 miles each. So, their total distance covered on that day is 2 * 80 = 160 miles.\n        2. On the second day, they travel northwards covering 150 miles each. Their combined distance for this day is 2 * 150 = 300 miles.\n        3. To find their total distance covered in two days, we add up the distances from both days', 106, 0.39544998766954786]
+Path: StartNode6" color=red shape=box]
+	Node2 -> Node7 [label=Node2Node7]
+	Node7 [label="V:9, H:2, Flag:False
+[\"3. Now, let's add up the distances for both days to find their total distance.\n           Train A distance = (80 miles + 150 miles) = 2\", 40, 0.9524252588074413]
+Path: Node2Node7" color=black shape=box]
+	Node2 -> Node8 [label=Node2Node8]
+	Node8 [label="V:1, H:1, Flag:False
+['4. Finally, add up all the distances covered by each train in both days to find their total distance.\n           Total distance for Train A = (80 miles + 150 miles) = 230 miles\n           Total distance for Train B = (80 miles + 150 miles) = 230 miles\n\n        Both trains covered a total of 230 miles in the two days.', 114, 0.0936899548063902]
+Path: Node2Node8" color=black shape=box]
+	Node2 -> Node9 [label=Node2Node9]
+	Node9 [label="V:9, H:2, Flag:False
+['4. Finally, to determine their total distance covered in two days, we add up all the distances from both days.\n           Total distance for Train A = 80 (day 1) + 150 (day 2) = 230 miles\n           Total distance for Train B = 80 (day 1)', 72, 0.6506109303655461]
+Path: Node2Node9" color=black shape=box]
+	Node2 -> Node10 [label=Node2Node10]
+	Node10 [label="V:2, H:1, Flag:False
+['4. Finally, add up all the distances for each train in both days to find the total distance covered by them.\n           Total distance for Train A = 80 (first day) + 150 (second day) = 230 miles', 54, 0.14393909910199054]
+Path: Node2Node10" color=black shape=box]
+	Node2 -> Node11 [label=Node2Node11]
+	Node11 [label="V:9, H:1, Flag:False
+['4. Finally, add up all the distances traveled by each train in both days to find the total distance covered.\n           Total distance for Train A = (80 miles + 150 miles) = 230 miles\n           Total distance for Train B = (80 miles + 150 miles) = 230 miles\n\n        Both trains have covered a total of 2', 85, 0.1388419875048944]
+Path: Node2Node11" color=black shape=box]
+	Node2 -> Node12 [label=Node2Node12]
+	Node12 [label="V:2, H:0, Flag:False
+['4. Finally, add up all the distances covered by each train in both days to find the total distance for each train.\n           Total distance for Train A = 80 miles (first day) + 150 miles (second day) = 230 miles\n           Total distance for Train B = 80 miles (first day) + 150 miles (second day) = 230 miles\n\n        Both trains covered a total of 230 miles in the two days.', 116, 0.33225287722740693]
+Path: Node2Node12" color=green shape=box]
+	Node2 -> Node13 [label=Node2Node13]
+	Node13 [label="V:9, H:1, Flag:False
+[\"4. Finally, let's add the distances for both days to find the total distance each train covered in two days.\n           Train A distance = (80 miles) + (150 miles) = 230 miles\n           Train B distance = (80 miles)\", 60, 0.796444921575127]
+Path: Node2Node13" color=black shape=box]
+}

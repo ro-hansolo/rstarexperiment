@@ -1,0 +1,17 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's calculate the amount of potato salad for adults and children separately.
+           a. For adults, an adult dinosaur eats 10 lbs of potato salad, so we need 20 * 10 =",Node0,5,8,5,13,0.6761950675769872,55,False
+" 1. Firstly, let's find out how much potato salad each adult will eat. Adults require 10 lbs per person, so for 20 adults, we multiply by the number of people: 10 lbs/",Node1,5,8,5,13,0.5690605072424939,53,False
+" 1. First, let's calculate the total amount of potato salad needed for all the adults. Since an adult eats 10 lbs and there are 20 adults attending, we multiply 10 lbs by 20 adults: 10 * 20 = 200 lbs.
+        2. Next, let's find out how much potato salad is needed for the children. Since a child eats half as much as an adult, and they",Node2,2,5,2,7,0.16423806127694174,105,False
+" 1. First, let's calculate the total amount of potato salad needed for all the adults. Since an adult eats 10 lbs and there are 20 adults, we multip",Node3,6,9,6,15,0.009379600347826922,41,False
+" 1. Calculate the total amount of potato salad needed for all adults: 20 adults * 10 lbs per adult = 200 lbs.
+        2. Calculate the amount of potato salad needed for each child: 5 children * (1/2) * 10 lbs per adult = 25 lbs.
+        3. Add up the total amount of potato salad needed for all adults and children:",Node4,1,2,1,3,0.6428821454633069,98,False
+" 1. First, let's determine the total amount of potato salad needed for all the adults. Since there are 20 adults and each adult eats 10 lbs, we can calculate this by multiplying the number of adults by the amount each adult eats: 20 * 10 = 200 lbs of pot",Node5,6,9,6,15,0.15305698476537855,74,False
+" 1. First, let's determine the total amount of potato salad needed for all the adults. Since there are 20 adults and each adult eats 10 lbs, we can calculate this by multiplying the number of adults by the amount each adult needs. So, 20 adults * 10 lbs/adult = 200 lbs.
+        2. Next, let's find out how much potato salad is needed for all the children. There are 5",Node6,2,5,2,7,0.08319855967332002,107,False
+" 1. Calculate the total amount of potato salad needed for all adults: 20 adults * 10 lbs per adult = 200 lbs.
+        2. Calculate the amount of potato salad needed for each child: 5 children * (1/2) * 10 lbs per adult = 25 lbs.
+        3. Add up the total amount of potato salad needed for all adults and children: 200 lbs + 25 lbs = 225 lbs.
+        So, Ted needs to bring 225 pounds of potato salad to have enough for everyone at the dinosaur picnic.",Node7,0,0,1,1,0.7393575770703755,97,False

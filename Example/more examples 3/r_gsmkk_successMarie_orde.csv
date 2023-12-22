@@ -1,0 +1,29 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's find the total cost of the items we know the quantity for: chicken meal ($12), milk packs ($3 * 5 = $15), and apples ($1.50 *",Node0,1,9,1,10,0.24419268984842413,49,False
+" 1. First, let's find the total cost of all items except pizza.
+           Chicken meal: $12
+           5 packs of milk: 5 * $3 = $15",Node1,1,8,1,9,0.23950916798806454,45,False
+" 1. First, let's find the total cost of all items except pizza. We know the cost of chicken meal, milk packs, and apples.
+           Chicken meal cost = $12
+           5 milk packs cost = 5 * $3 = $15
+           4 apples cost =",Node2,1,8,1,9,0.30374325798688695,67,False
+" 1. We need to find out how much money Marie spent on the food items mentioned before pizza.
+        2. The expenses are as follows: Chicken meal ($12), Milk (5 packs * $3)",Node3,2,9,2,11,0.8965549868504126,47,False
+" 1. First, let's find the total cost of all items except pizza.
+           Chicken meal: $12
+           5 packs of milk: 5 * $3 = $15
+           4 ap",Node4,2,10,2,12,0.10993830247438996,47,False
+" 1. Calculate the total cost of the items already mentioned: Chicken meal ($12), milk packs ($3 x 5 = $15) and apples ($1.50 x 4 = $6). So far, we have $12 + $15 + $6 = $33 spent on these items.
+        2. Subtract the cost of all other items from Marie's total payment to find out how much she paid for pizza boxes: $50 - $33 =",Node5,0,7,0,7,0.6130307583507434,109,False
+" 1. First, let's find the total cost of the items we know their prices for: chicken meal ($12), milk packs ($3 * 5 = $15), and apples ($",Node6,3,10,3,13,0.4438857242605647,43,False
+" 1. Calculate the total cost of the items already mentioned: Chicken meal ($12), milk packs ($3 x 5 = $15) and apples ($1.50 x 4 = $6). So far, we have $12 + $15 + $6 = $33 spent on these items.
+        2. Subtract the cost of all other items from Marie's total payment to find out how much she paid for pizza boxes: $50 - $33 = 3. Divide the remaining amount by the cost per pizza box ($8.50) to find out how many pizza boxes were ordered: ($50 - $33) / $8.50 = 
+        4. The result is approximately 6.2, which",Node9,1,2,1,3,0.43705183633728617,59,False
+" 1. Calculate the total cost of the items already mentioned: Chicken meal ($12), milk packs ($3 x 5 = $15) and apples ($1.50 x 4 = $6). So far, we have $12 + $15 + $6 = $33 spent on these items.
+        2. Subtract the cost of all other items from Marie's total payment to find out how much she paid for pizza boxes: $50 - $33 = 3. Divide this value by the cost per pizza box ($8.50) to get the number of pizza boxes Marie ordered: $17 / $8.50 ≈ 2 boxes (appro",Node11,0,1,0,1,0.7894783981803307,44,False
+" 1. Calculate the total cost of the items already mentioned: Chicken meal ($12), milk packs ($3 x 5 = $15) and apples ($1.50 x 4 = $6). So far, we have $12 + $15 + $6 = $33 spent on these items.
+        2. Subtract the cost of all other items from Marie's total payment to find out how much she paid for pizza boxes: $50 - $33 = 3. Since each pizza box costs $8.50, we can now divide the remaining amount by the cost per pizza box to determine the number of pizza boxes ordered: ($50 - $33) / $8.",Node12,5,3,5,8,0.6743556560942914,47,False
+" 1. Calculate the total cost of the items already mentioned: Chicken meal ($12), milk packs ($3 x 5 = $15) and apples ($1.50 x 4 = $6). So far, we have $12 + $15 + $6 = $33 spent on these items.
+        2. Subtract the cost of all other items from Marie's total payment to find out how much she paid for pizza boxes: $50 - $33 = 3. Divide this value by the cost per pizza box ($8.50) to get the number of pizza boxes Marie ordered: $17 / $8.50 ≈ 2 boxes (appro 3. Therefore, Marie ordered 2 boxes of pizza.",Node14,2,1,2,3,0.6679138175005632,77,False
+" 1. Calculate the total cost of the items already mentioned: Chicken meal ($12), milk packs ($3 x 5 = $15) and apples ($1.50 x 4 = $6). So far, we have $12 + $15 + $6 = $33 spent on these items.
+        2. Subtract the cost of all other items from Marie's total payment to find out how much she paid for pizza boxes: $50 - $33 = 3. Divide this value by the cost per pizza box ($8.50) to get the number of pizza boxes Marie ordered: $17 / $8.50 ≈ 2 boxes (appro 3. Since we cannot have a fraction of a pizza box, round down to get an integer result: 2 boxes of pizza.",Node15,1,0,1,1,0.6277818340221597,48,False

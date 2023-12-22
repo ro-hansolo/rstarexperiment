@@ -1,0 +1,15 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Let's first find out how many jewels Aaron has: Aaron has 5 more jewels than half of Raymond's jewels, and Raymond has 40 jewels.",Node0,3,6,3,9,0.577551630521327,40,False
+" 1. We know that Siobhan has 2 fewer jewels than Aaron.
+        Since we don't have information about Aaron yet, let's call his number of jewels as X. So, Siobhan has X - 2 jewels.
+
+        2. Now, Aaron has 5 more jewels than half of Raymond's jewels. If Raymond has 40 jewels, then half of them would be 40 / 2 = 20 jewels. This means Aaron has 20",Node1,3,5,3,8,0.8778217906708936,113,False
+" 1. We know that Aaron has 5 more jewels than half of Raymond's jewels and Raymond has 40 jewels. So, to find half of Raymond's jewels, we calculate 40 / 2 = 20 jewels.
+        2. Now we have the information about Aaron: he has 5 more jewels than 20 (half of Raymond's jewels). This means Aaron has 20 +",Node3,2,4,2,6,0.7070123265224921,96,False
+" 1. We know that Aaron has 5 more jewels than half of Raymond's jewels and Raymond has 40 jewels. So, to find half of Raymond's jewels, we calculate 40 / 2 = 20 jewels.
+        2. Now we have the information about Aaron: he has 5 more jewels than 20 (half of Raymond's jewels). This means Aaron has 20 + 5 = 25 jewels.
+        3. Siobhan has 2 fewer jewels than Aaron. So, to find how many jewels Siobhan has, we subtract 2 from the number of jewels Aaron has: 25 - 2",Node7,0,2,2,4,0.8746221280742246,57,False
+" 1. We know that Aaron has 5 more jewels than half of Raymond's jewels and Raymond has 40 jewels. So, to find half of Raymond's jewels, we calculate 40 / 2 = 20 jewels.
+        2. Now we have the information about Aaron: he has 5 more jewels than 20 (half of Raymond's jewels). This means Aaron has 20 + 5 = 25 jewels.
+        3. Siobhan has 2 fewer jewels than Aaron, so to find how many jewels she has, we subtract 2 from the number of jewels Aaron has: 25 - 2 = 23 jewels.
+        Therefore, Siobhan has 23 jewels.",Node8,0,0,2,2,0.2971103642970687,86,False

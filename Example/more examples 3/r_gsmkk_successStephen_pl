@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Stephen placed an online order for groceries.  His final bill came to $40.00.  Because this was through a delivery vendor, they tacked on a 25% fee to his final total and charged him $3.00 in delivery fees.  Stephen also added a $4.00 tip.  After the extra fees, what was the final price of Stephen's groceries? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:5, Flag:False
+[\"1. First, let's find out the total cost after adding the 25% fee and the $3.00 delivery fee to the original bill amount ($40.00). To do this, we multiply the original bill by 1.25 (the 25% as a decimal) and add the delivery fee:\n           Total cost after fees = Original bill * 1.25 + Delivery fee\n           Total\", 95, 0.04150101409721474]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:4, H:4, Flag:False
+[\"1. First, let's find out the original cost of his groceries before any additional charges were applied: $40.00 (initial bill).\n        2. Next, we need to calculate the 25% service fee, which is equal to 25/100 * $40.00 = $10.0\", 76, 0.6068901564271144]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:7, H:8, Flag:True
+['1. First, find the initial total cost (including tip) before adding other charges: The order cost is $40 + $4 = $44.\n        2. Next, calculate the percentage fee by', 44, 0.7846227022328214]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:5, H:5, Flag:False
+['1. First, we need to find the total cost with the added fee and delivery charges. To do this, we can add the 25% fee and $3.00 in delivery fees to his original bill of $40.00.\n           25% of $40.00 = (25/100) * $40.00', 81, 0.39614472844716264]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:3, H:3, Flag:False
+[\"1. First, let's find out the total cost after adding the 25% fee and the delivery fees to the original bill amount. To do this, we multiply $40.00 by 1.25 (the 25% as a decimal) and then add the $3.00 delivery fee:\n           $40.00 * 1.25 = $50.00\n           $50\", 97, 0.0814682566557019]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:8, H:7, Flag:True
+[\"1. First, we need to find out the total cost after adding the service fee and delivery fees. To do this, we'll add these fees onto the initial bill amount: $40.00 + $3.00 (service fee) + $3.\", 57, 0.5534655814846053]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:7, H:6, Flag:True
+[\"1. First, let's find out the cost after adding the 25% fee to his original bill. To do this, multiply the original cost ($40) by the percentage (25%).\", 47, 0.38784711628259316]
+Path: StartNode6" color=red shape=box]
+	Node4 -> Node7 [label=Node4Node7]
+	Node7 [label="V:0, H:2, Flag:False
+['2. Now, we need to include the tip that Stephen added which is $4.00. Add this amount to our total cost from step 1:\n           $50 + $4.00 = $54.0', 50, 0.5666582098820501]
+Path: Node4Node7" color=black shape=box]
+	Node4 -> Node8 [label=Node4Node8]
+	Node8 [label="V:0, H:0, Flag:False
+[\"2. Next, we need to add the tip amount of $4.00 to this total cost:\n           $50.00 + $4.00 = $54.00\n        So, after all additional fees and the tip, Stephen's final price for his groceries was $54.00.\", 105, 0.3656274864064909]
+Path: Node4Node8" color=green shape=box]
+	Node4 -> Node9 [label=Node4Node9]
+	Node9 [label="V:0, H:0, Flag:False
+[\"2. Now, we need to include the tip of $4.00. We'll just add this amount to our total from step 1:\n           $50 + $4.00 = $54.00\n        So, the final price of Stephen's groceries after all additional fees and the tip is $54.00.\", 99, 0.7240085996738456]
+Path: Node4Node9" color=green shape=box]
+	Node4 -> Node10 [label=Node4Node10]
+	Node10 [label="V:0, H:2, Flag:False
+[\"2. Now, we need to include the tip amount of $4.00 into the total cost. We simply add this to the previous result ($50):\n           $50 + $4 = $54.00\n        The final price of Stephen's groceries after\", 62, 0.28836542405345145]
+Path: Node4Node10" color=black shape=box]
+	Node4 -> Node11 [label=Node4Node11]
+	Node11 [label="V:0, H:2, Flag:False
+['2. Now, we need to include the tip amount of $4.00. To do this, we simply add it to the total cost after fees:\n           $50.00 + $4.00 = $54.00\n        So, the', 59, 0.04683337877933258]
+Path: Node4Node11" color=black shape=box]
+	Node4 -> Node12 [label=Node4Node12]
+	Node12 [label="V:0, H:0, Flag:False
+[\"2. Next, we need to include the tip amount of $4.00. So, we add this to the total cost after fees:\n           $50.00 + $4.00 = $54.00\n        The final price of Stephen's groceries after all the additional costs is $54.00.\", 112, 0.22081798239562178]
+Path: Node4Node12" color=green shape=box]
+	Node4 -> Node13 [label=Node4Node13]
+	Node13 [label="V:0, H:0, Flag:False
+[\"2. Now, we need to include the tip amount of $4.00. Add this to the new total cost from step 1 ($50):\n          $50 + $4 = $54.00\n        The final price of Stephen's groceries after all additional fees and tips was $54.00.\", 115, 0.4802846829972256]
+Path: Node4Node13" color=green shape=box]
+}

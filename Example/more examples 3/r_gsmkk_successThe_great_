@@ -1,0 +1,118 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: The great dragon, Perg, sat high atop mount Farbo, breathing fire upon anything within a distance of 1000 feet.  Polly could throw the gold javelin, the only known weapon that could sleigh the dragon, for a distance of 400 feet, well within the reach of the dragon's flames.  But when Polly held the sapphire gemstone, she could throw the javelin three times farther than when not holding the gemstone. If holding the gemstone, how far outside of the reach of the dragon's flames could Polly stand and still hit the dragon with the gold javelin? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:3, H:9, Flag:False
+[\"1. Analyze the given information:\n   - Distance at which Perg can breathe fire: 1000 feet\n   - Distance at which Polly can throw the gold javelin without gemstone: 400 feet (within the dragon'\", 59, 0.9204651904523856]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:3, H:9, Flag:False
+[\"1. First, let's analyze the distances involved in this situation. Perg can breathe fire up to 1000 feet away. The javelin can be thrown by Polly for a distance of 4\", 46, 0.21277710250548554]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:2, H:8, Flag:False
+[\"1. First, let's identify the distances involved in this situation. The dragon's flame reaches up to 1000 feet away from its position on Mount Farbo. Polly can throw the javelin for a distance of 400 feet without any gemstone and 1200 feet with it (3 times farther).\n        2. Now, we need to find out when she is holding the sapphire gemstone, how far outside the dragon's reach she can still hit him. We know that Polly needs to throw\", 117, 0.47124033092680695]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:8, Flag:False
+[\"1. First, let's analyze the distances involved in this situation. The dragon can breathe fire up to a distance of 1000 feet. Polly can throw the javelin without the gemstone for 400 feet and with the gemstone for 1200 feet (3 times farther).\n        2. Now, we need to find\", 77, 0.057759515421657026]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:7, Flag:False
+[\"1. First, let's find out how much distance Polly can cover by throwing the javelin when holding the sapphire gemstone. She can throw it three times farther than her original 400 feet (the distance without holding the gemstone).\n        3 times more distance = 400 * 3 = 1200 feet\n        2. Now, we have to consider Polly's\", 90, 0.9974417135458791]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:8, Flag:False
+[\"1. First, let's analyze the distances involved in this situation. The dragon can breathe fire up to a distance of 1000 feet. Polly can throw the javelin for 400 feet without the gemstone and 1200 feet with it (3 times farther).\n        2. Now, we need to find out how far away from the dragon's flames Polly needs to be in order\", 91, 0.0955629480685456]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:7, Flag:False
+[\"1. First, let's determine the distance Polly can throw the javelin when she holds the sapphire gemstone. She can throw it three times farther than her normal range of 400 feet. So, with the gemstone, she can throw it 3 * 400 = 1200 feet.\n        2. Now, we need to consider the distance the dragon's fire reaches (1000 feet). We want Polly to be able to hit\", 106, 0.0647287224803168]
+Path: StartNode6" color=black shape=box]
+	Node4 -> Node7 [label=Node4Node7]
+	Node7 [label="V:1, H:2, Flag:False
+[\"2a. The reach of the dragon's flame is 1000 feet.\n        2b. She needs to be outside this range so that she remains safe.\n        2c. To hit the dragon, she needs to throw the javelin from a distance within the\", 60, 0.9566212155820977]
+Path: Node4Node7" color=black shape=box]
+	Node4 -> Node8 [label=Node4Node8]
+	Node8 [label="V:1, H:3, Flag:False
+[\"3. Next, let's find out how far she can throw the javelin when not holding the gemstone (which is 400 feet).\n        Distance without gemstone = 400 feet\n        Distance with gemstone = 1200 feet\n        Difference in distance = 1200\", 72, 0.29502909988509074]
+Path: Node4Node8" color=black shape=box]
+	Node4 -> Node9 [label=Node4Node9]
+	Node9 [label="V:1, H:3, Flag:False
+[\"3. Next, let's find out how far outside of the dragon's flames she can be while still hitting it with the javelin. The dragon breathes fire up to a distance of 1000 feet. To hit the dragon, Polly needs to throw the javelin at least 400 feet (\", 70, 0.10566341190019835]
+Path: Node4Node9" color=black shape=box]
+	Node4 -> Node10 [label=Node4Node10]
+	Node10 [label="V:1, H:3, Flag:False
+[\"3. safety from the dragon's flames within a distance of 1000 feet (the dragon's fire range).\n        4. To stay safe and still be able to hit the dragon with her javelin, she should throw it at least up to the boundary where the dragon's flames stop reaching. This means she has to account for both the increased throwing distance and the 1000-foot limit of the dragon's fire range.\n        5. Find the new\", 104, 0.740923014517374]
+Path: Node4Node10" color=black shape=box]
+	Node4 -> Node11 [label=Node4Node11]
+	Node11 [label="V:1, H:3, Flag:False
+[\"new distance of 1200 feet and compare it with the dragon's flame range (1000 feet), which is where fire can reach. We want to be outside the dragon's flames but still within range for Polly to hit the dragon.\", 57, 0.6272994749093034]
+Path: Node4Node11" color=black shape=box]
+	Node4 -> Node12 [label=Node4Node12]
+	Node12 [label="V:1, H:3, Flag:False
+[\"3. distance of javelin throw with and without the sapphire gemstone, as well as Perg's fire range of 1000 feet. We need to find a point where her javelin will\", 47, 0.9661299958539692]
+Path: Node4Node12" color=black shape=box]
+	Node4 -> Node13 [label=Node4Node13]
+	Node13 [label="V:3, H:10, Flag:True
+[\"1000 feet - 1200 feet = -200 feet\n        3. However, this is a negative value which means she cannot go beyond the dragon's reach. So, if Polly holds the gemstone and wants to hit the dragon, she should stay within the range of 400 feet (the original distance without holding the gemstone) from the edge of the dragon's flame.\", 113, 0.46224108184215484]
+Path: Node4Node13" color=red shape=box]
+	Node7 -> Node14 [label=Node7Node14]
+	Node14 [label="V:2, H:2, Flag:True
+[\"5. Combining steps 2 and 4, let's find out how far away Polly can safely throw the javelin with the gemstone while still hitting the dragon. Let's consider the distance of 1200 feet that she could cover with the sapphire gemstone.\n        6a. The range covered is greater than the range of the dragon's flame (1200 > 1000). Therefore, Polly can safely stand somewhere between the distance where her javelin can reach\", 112, 0.9569072811908668]
+Path: Node7Node14" color=red shape=box]
+	Node7 -> Node15 [label=Node7Node15]
+	Node15 [label="V:2, H:8, Flag:True
+[\"extended reach of her enhanced throwing power (1200 feet) but not too far that it goes out of the range. \n        Let's calculate the maximum safe distance:\n        Maximum safe distance = Distance she can extend while holding gemstone - Distance the dragon's flame reaches\n                                = 120\", 72, 0.8806703168158987]
+Path: Node7Node15" color=red shape=box]
+	Node7 -> Node16 [label=Node7Node16]
+	Node16 [label="V:9, H:9, Flag:True
+['extended range (400 + 1200 = 1600 feet) of her original throwing distance with the gemstone.\n        3. So, when holding the sapphire gemstone, Polly can stand', 49, 0.20992078145553206]
+Path: Node7Node16" color=red shape=box]
+	Node7 -> Node17 [label=Node7Node17]
+	Node17 [label="V:9, H:9, Flag:True
+[\"3 times farther range (1200 feet) and outside the flame's reach (1000 feet).\n        3. We need to find the common range that satisfies both conditions.\n        Common range = Minimum(1200 feet, 1000 feet + 400 feet)\n        Since 1\", 73, 0.21650948090674815]
+Path: Node7Node17" color=red shape=box]
+	Node7 -> Node18 [label=Node7Node18]
+	Node18 [label="V:9, H:9, Flag:True
+[\"3 times farther range (1200 feet) and beyond the flame's reach (1000 feet).\n        3. The farthest distance Polly could be while still hitting the dragon is when this new range overlaps with the outermost edge of the 1200-foot javelin throwing range.\n        4. Add up both ranges: 1000 + 1200 = 2200 feet.\n        5. The farthest distance outside of\", 109, 0.9509025072702088]
+Path: Node7Node18" color=red shape=box]
+	Node7 -> Node19 [label=Node7Node19]
+	Node19 [label="V:1, H:1, Flag:False
+[\"extended range of her new throwing ability (1200 feet) but still beyond the reach of the dragon's flames (1000 feet).\n        3. We can find this safe distance by subtracting the 1000 feet of the dragon's flame from the 1200 feet she can cover with her extended throwing ability.\n        Safe distance =\", 81, 0.264257448078418]
+Path: Node7Node19" color=black shape=box]
+	Node7 -> Node20 [label=Node7Node20]
+	Node20 [label="V:10, H:10, Flag:True
+[\"2d. Combined range of her new throwing ability (1200 feet) and the safety distance (outside the flame's reach).\n        3. Let's find the combined distance: 1200 feet (new distance) + 1000 feet (safe distance) = 2200 feet\n        So, when holding the sapphire gemstone, Polly can stand 2200 feet outside of the reach of the dragon's flames and still hit the dragon with the gold javelin.\", 119, 0.12594650940246443]
+Path: Node7Node20" color=red shape=box]
+	Node19 -> Node21 [label=Node19Node21]
+	Node21 [label="V:0, H:0, Flag:False
+[\"1200 feet - 1000 feet = 200 feet\n\nSo, when holding the sapphire gemstone, Polly could stand 200 feet outside of the reach of the dragon's flames and still hit the dragon with the gold javelin.\", 93, 0.007781863645532239]
+Path: Node19Node21" color=green shape=box]
+	Node19 -> Node22 [label=Node19Node22]
+	Node22 [label="V:0, H:0, Flag:False
+[\"1200 - 1000 = 200 feet\n        4. Polly can stand 200 feet farther outside the reach of the dragon's flames and still have a chance to hit the dragon using the gold javelin when holding the sapphire gemstone.\", 94, 0.6952579425607006]
+Path: Node19Node22" color=green shape=box]
+	Node19 -> Node23 [label=Node19Node23]
+	Node23 [label="V:0, H:0, Flag:False
+[\"1200 feet - 1000 feet = 200 feet\n\nSo, when Polly holds the sapphire gemstone and throws the gold javelin, she can stand 200 feet outside of the reach of the dragon's flames and still hit the dragon.\", 105, 0.12645503703747674]
+Path: Node19Node23" color=green shape=box]
+	Node19 -> Node24 [label=Node19Node24]
+	Node24 [label="V:0, H:0, Flag:False
+[\"1200 - 1000 = 200 feet\n        Polly can stand 200 feet outside the reach of the dragon's flames and still hit the dragon with the gold javelin while holding the sapphire gemstone.\", 82, 0.4986108624350304]
+Path: Node19Node24" color=green shape=box]
+	Node19 -> Node25 [label=Node19Node25]
+	Node25 [label="V:0, H:0, Flag:False
+[\"1200 - 1000 = 200 feet\n\nSo, when holding the sapphire gemstone, Polly could stand 200 feet outside of the reach of the dragon's flames and still hit the dragon with the gold javelin.\", 104, 0.2805747037255678]
+Path: Node19Node25" color=green shape=box]
+	Node19 -> Node26 [label=Node19Node26]
+	Node26 [label="V:0, H:0, Flag:False
+[\"1200 feet - 1000 feet = 200 feet\n\nSo, when holding the gemstone, Polly could stand 200 feet outside of the reach of the dragon's flames and still hit the dragon with the gold javelin.\", 73, 0.58051992387994]
+Path: Node19Node26" color=green shape=box]
+	Node19 -> Node27 [label=Node19Node27]
+	Node27 [label="V:0, H:0, Flag:False
+[\"1200 - 1000 = 200 feet\n\nSo, when holding the sapphire gemstone, Polly could stand 200 feet outside of the reach of the dragon's flames and still hit the dragon with the gold javelin.\", 115, 0.09858080780243272]
+Path: Node19Node27" color=green shape=box]
+}

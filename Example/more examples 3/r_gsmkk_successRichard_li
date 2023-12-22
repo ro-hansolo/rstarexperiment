@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Richard lives in an apartment building with 15 floors. Each floor contains 8 units, and 3/4 of the building is occupied. What's the total number of unoccupied units In the building? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:0, H:8, Flag:False
+['1. To find the total number of units in the entire building, first multiply the number of floors by the number of units per floor. This gives us 15 floors * 8 units/floor = 120 units.', 51, 0.616133868787331]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:9, Flag:True
+['1. Calculate the total number of units in the entire building.\n           Number of floors * Units per floor = Floors * 8 = 15 * 8 = 120 units\n\n        2. Determine the fraction of occupied units.\n          Occupied percentage = 3', 65, 0.9302484453370877]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:1, H:4, Flag:False
+[\"1. We know that there are 15 floors in the building.\n        2. Each floor has 8 units, so we calculate the total number of units by multiplying the number of floors by the number of units per floor (15 * 8 = 120).\n        3. We're given that 3/4 of the building is occupied, which means that 1 - 3/4 = 1/4 of the units are unoccupied.\n        4. To find the number of unoccupied units\", 115, 0.6070176923994753]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:6, H:6, Flag:True
+[\"1. First, let's find out how many floors are occupied by calculating 3/4 * 15 = 11.25 (rounded to 11).\n        2. Now, we know that there are 11 occupied floors with 8 units each. To find the total number of occupied units, multiply the number of occupied floors by the number of units per floor: 11 * 8 = 88 units.\n        3. Since we want to find the total number of unoccupied units, subtract\", 118, 0.06294296901559049]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:10, H:10, Flag:True
+[\"1. First, let's determine how many floors are occupied by calculating 3/4 * 15 = 11.25 (rounding down to a whole number).\n        2\", 43, 0.47656622296078077]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:0, H:7, Flag:False
+[\"1. First, let's find out how many units are in the entire building. There are 15 floors with 8 units each, so we multiply 15 by 8 to get the total number of units: 15 * 8 = 120 units.\n        2. Now, we\", 68, 0.023948098607284862]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:9, H:10, Flag:True
+[\"1. First, let's find out how many floors are occupied in the building by multiplying the total floors (15) by the percentage of occupancy (3/4).\n        (15 * 3/4) = (10.5 + 4.5) = 15 floors\n        2. Now that we know\", 74, 0.6548138884480745]
+Path: StartNode6" color=red shape=box]
+	Node2 -> Node7 [label=Node2Node7]
+	Node7 [label="V:0, H:0, Flag:False
+['5. Multiply the total number of units (120) by the fraction representing the unoccupied part (1/4). Do this calculation: (120 * 1/4 = 30).\n        So, there are a total of 30 unoccupied units in the building.', 93, 0.7877886782492465]
+Path: Node2Node7" color=green shape=box]
+	Node2 -> Node8 [label=Node2Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['5. Multiply the total number of units (120) by the fraction of unoccupied units (1/4).\n        6. Calculate the result: (120 * 1/4 = 30).\n        So, there are a total of 30 unoccupied units in the building.', 115, 0.3521094585335056]
+Path: Node2Node8" color=green shape=box]
+	Node2 -> Node9 [label=Node2Node9]
+	Node9 [label="V:1, H:0, Flag:False
+['5. Multiply the total number of units (120) by the fraction of unoccupied units (1/4).\n        6. Calculate the result: (120 * 1/4) = 30 units.\n        There are a total of 30 unoccupied units in the building.', 79, 0.5609070935357744]
+Path: Node2Node9" color=green shape=box]
+	Node2 -> Node10 [label=Node2Node10]
+	Node10 [label="V:2, H:1, Flag:False
+['5. Multiply the total number of units (120) by the fraction of unoccupied units (1/4).\n        6. Calculate the result: 120 * (1/4', 46, 0.4590092346893604]
+Path: Node2Node10" color=black shape=box]
+	Node2 -> Node11 [label=Node2Node11]
+	Node11 [label="V:1, H:0, Flag:False
+['5. We need to calculate what fraction of 120 units this corresponds to (1/4 * 120 = 30).\n        Therefore, there are a total of 30 unoccupied units in the building.', 59, 0.9395597563320646]
+Path: Node2Node11" color=green shape=box]
+	Node2 -> Node12 [label=Node2Node12]
+	Node12 [label="V:1, H:0, Flag:False
+['5. Multiply the total number of units (120) by the fraction of unoccupied units (1/4) to get how many unoccupied units there are: 120 * 1/4 = 30.\n        6. So, there are 30 unoccupied units in the building.', 85, 0.810880826584152]
+Path: Node2Node12" color=green shape=box]
+	Node2 -> Node13 [label=Node2Node13]
+	Node13 [label="V:1, H:0, Flag:False
+['5. Multiply the total number of units (120) by the fraction of unoccupied units (1/4). So, 120 * 1/4 = 30.\n        The total number of unoccupied units in the building is 30.', 70, 0.02919485184940751]
+Path: Node2Node13" color=green shape=box]
+}

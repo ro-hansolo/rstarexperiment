@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: When Freda cooks canned tomatoes into sauce, they lose half their volume. Each 16 ounce can of tomatoes that she uses contains three tomatoes. Freda’s last batch of tomato sauce made 32 ounces of sauce. How many tomatoes did Freda use? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:1, Flag:False
+['1. We know that each 16-ounce can has 3 tomatoes and the sauce volume is 32 ounces.\n        2. To find out how many cans are needed, we need to divide the sauce volume by the volume of one can. So, 32 ounces / 16 ounces per can = 2 cans.\n        3. Now that we know she used 2 cans', 94, 0.18582739068658471]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:9, H:9, Flag:True
+['1. We know that each can of tomatoes has 3 tomatoes in it.\n        2. Freda uses 16-ounce cans, and the sauce she makes is half the volume of the original tomatoes.\n        3. A 16-ounce can contains 48 ounces (16 * 3) of tomatoes.\n        4. To find out how many tomatoes are in 32 ounces of sauce, we need to convert it back', 105, 0.3915261253445863]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:2, Flag:False
+[\"1. Let's first find the remaining volume after cooking, so we subtract half from the original volume (16 ounces). That would be 16 * 0.5 = 8 ounces lost in volume for each can of tomatoes.\n        2. Now that we know how much is lost per can, let's find out how many cans were needed to make the desired sauce volume of 32 ounces. To do this, divide the total desired sauce volume by the remaining volume after cooking\", 112, 0.6577111445911972]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:10, H:10, Flag:True
+[\"1. First, let's find out how much the sauce volume increases after cooking. The canned tomatoes lose half their volume when cooked, so they go from 16 ounce to 8 ounce. Now we need to add the volume of one tomato (8 ounce) back into it since it was lost during cooking. This means that every\", 75, 0.6565852257282033]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:8, H:10, Flag:True
+['1. We know the initial volume of canned tomatoes is 16 ounces per can, and there are three tomatoes in each can. So, we need to calculate how many tomatoes', 42, 0.2661794006023792]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:0, H:1, Flag:False
+[\"1. We know the total volume of sauce obtained is 32 ounces and it was created from canned tomatoes that lost half their volume while cooking. So, we need to find out how many ounces the canned tomatoes had before losing the volume.\n\n    To do this, we'll multiply the final volume by 2 (since they lost half) to find the initial volume: 32 oz * 2 = 64 oz.\", 101, 0.7471230978608852]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:10, H:10, Flag:True
+[\"1. Let's find out how much volume a single tomato takes up in the canned tomatoes after it is cooked into sauce. The total volume decreases to half, so each tomato will lose half its volume and contribute to half of its original volume\", 54, 0.8841909021027157]
+Path: StartNode6" color=red shape=box]
+	Node5 -> Node7 [label=Node5Node7]
+	Node7 [label="V:0, H:0, Flag:False
+[\"2. Now that we know the initial volume of canned tomatoes was 64 ounces, we can determine how many 16-ounce cans of tomatoes are needed for this volume. We'll divide the total ounces by the number of ounces\", 59, 0.7618607113376191]
+Path: Node5Node7" color=green shape=box]
+	Node5 -> Node8 [label=Node5Node8]
+	Node8 [label="V:8, H:10, Flag:True
+[\"2. Now that we know the initial volume of canned tomatoes was 64 ounces, we need to find out how many cans were used because each can has three tomatoes in it. We'll divide 64 ounces by the number of tomatoes per can (3): 64 oz / 3 = 21.3333.\n        3. However, since we cannot have fractional parts of cans, we will round up to the nearest whole number, which is 2\", 112, 0.6877218806212363]
+Path: Node5Node8" color=red shape=box]
+	Node5 -> Node9 [label=Node5Node9]
+	Node9 [label="V:6, H:10, Flag:True
+[\"2. Now, we have to consider each 16-ounce can contains three tomatoes. So, for one can, there are 16/3 = 5.333 (rounded up to 5.3) tomatoes in each can.\n        3. To find the total number of tomatoes used, we'll divide the initial volume\", 77, 0.8346178317125574]
+Path: Node5Node9" color=red shape=box]
+	Node5 -> Node10 [label=Node5Node10]
+	Node10 [label="V:0, H:0, Flag:False
+[\"2. Now that we know the initial volume of canned tomatoes was 64 ounces, we need to determine how many 16-ounce cans were used. To do this, we'll divide the total initial volume by the volume per can: 64 oz / 16 oz/can = 4 cans.\n        3. Finally, each can contains three tomatoes. So, to find out how many tomatoes Freda used in total, we multiply the number of cans (4) by the number of tomatoes\", 118, 0.1465944679519685]
+Path: Node5Node10" color=green shape=box]
+	Node5 -> Node11 [label=Node5Node11]
+	Node11 [label="V:1, H:1, Flag:False
+[\"2. Now that we know the initial volume of canned tomatoes was 64 ounces, we need to determine how many 16-ounce cans were used. To do this, we'll divide the total initial volume by the volume per can: 64 oz / 16 oz/can = 4 cans.\n        3. Finally, each can contains three tomatoes. So, to find out how many tomatoes Freda used in total, we need to multiply the\", 107, 0.044096997956223905]
+Path: Node5Node11" color=black shape=box]
+	Node5 -> Node12 [label=Node5Node12]
+	Node12 [label="V:9, H:10, Flag:True
+['2. We also know that each 16-ounce can contains three tomatoes, so we need to divide the initial volume obtained earlier by the ounces per tomato: 64 oz / 3 (tomatoes/can) = 21.333 (which is not a whole number of cans).\n        3', 72, 0.960861542122424]
+Path: Node5Node12" color=red shape=box]
+	Node5 -> Node13 [label=Node5Node13]
+	Node13 [label="V:1, H:1, Flag:False
+['2. Now that we know the initial volume of canned tomatoes was 64 ounces, we need to determine how many 16-ounce cans were used. To do this,', 42, 0.0013763702556259805]
+Path: Node5Node13" color=black shape=box]
+}

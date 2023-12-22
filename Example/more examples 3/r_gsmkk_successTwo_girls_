@@ -1,0 +1,146 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Two girls each got 1/6 of the 24 liters of water. Then a boy got 6 liters of water. How many liters of water were left? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:2, Flag:False
+[\"1. First, let's find out how much water the two girls got together. To do this, we multiply each girl's share by 2 (since there are two girls). So, 1/6 * 2 = 1/3.\n        2. Now, we know that the total amount of water was initially 24 liters. We subtract the amount given to the girls from this total: 2\", 92, 0.03542842877150032]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:8, Flag:False
+[\"1. First, let's find out how much water the two girls got together. To do this, we multiply each girl's share by 2 (since there are two girls). So, 1/6 * 2 =\", 50, 0.09194130057954841]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:10, H:10, Flag:True
+['1. Start with 24 liters of water.\n        2. Divide it equally among two girls, so each girl gets 24 / 2 = 12 liters.\n        3. Now there are still 24 - (2 * 12) = 6 liters of water left.\n        4. A boy got 6 liters of water.\n        5. Add the 6 liters', 93, 0.5909915169238408]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:0, H:2, Flag:False
+['1. First, calculate how much water each girl received individually: (1/6) * 24 = 4 liters per girl.\n        2. Now, add the amount of water each girl got to find their combined total: 4 (liters from first girl) + 4 (liters from second girl) = 8 liters for both girls.\n        3. Subtract the combined total from the initial 24 liters to find out how much water', 101, 0.5735254607003416]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:8, Flag:False
+['1. First, we need to find out how much water the two girls got together. To do this, multiply their individual shares by 2 (since there are two of them). So, 1/6 * 2 = 2/', 51, 0.2704813308032905]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:2, Flag:False
+[\"1. First, let's find out how much water the two girls got together. To do this, we multiply each girl's share by 2 (since there are two girls). So, 1/6 * 2 = 1/3.\n        2. Now, we know that the total amount of water was initially 24 liters. We subtract the amount given to the girls from this total: 24 - 1/3 * 24 =\", 104, 0.07160551229405021]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:9, Flag:False
+[\"1. First, let's find out how much water the two girls got individually. Since there are 2 girls and each got 1/6 of the total amount, we can calculate this by multiplying the fraction (1/6) by 2 (the number of girls). So, it would be (1/6) * 2 =\", 74, 0.49677309245989754]
+Path: StartNode6" color=black shape=box]
+	Node3 -> Node7 [label=Node3Node7]
+	Node7 [label="V:9, H:9, Flag:True
+['was left before the boy got any: 24 - 8 = 16 liters remaining.\n        4. Finally, add the 6 liters the boy received to this remaining amount to get the final result: 16 (liters from step 3) + 6 (liters from the boy) = 22 liters left after everything.', 80, 0.7638836552323952]
+Path: Node3Node7" color=red shape=box]
+	Node3 -> Node8 [label=Node3Node8]
+	Node8 [label="V:9, H:9, Flag:True
+['was left before the boy got his share: 24 - 8 = 16 liters remaining.\n        4. The boy received 6 liters of water. Add this amount to the remaining water to see how much water is left after the boy took his share: 16 (liters remaining) + 6 (liters for the boy) = 22 liters total.\n        5. Therefore, there were 22 liters of water left', 100, 0.7408398185106114]
+Path: Node3Node8" color=red shape=box]
+	Node3 -> Node9 [label=Node3Node9]
+	Node9 [label="V:9, H:9, Flag:True
+['was left before the boy got his share: 24 - 8 = 16 liters of water remaining.\n        4. Finally, add the 6 liters of water the boy received to the remaining amount to determine the final total: 1', 54, 0.5023659989566098]
+Path: Node3Node9" color=red shape=box]
+	Node3 -> Node10 [label=Node3Node10]
+	Node10 [label="V:9, H:9, Flag:True
+[\"was left before the boy got his share: 24 - 8 = 16 liters remaining.\n        4. Now, add the 6 liters of water the boy received to the remaining amount after girls' share: 16 (liters from step 3) + 6 (liters from boy) = 22 liters total after including the boy's share.\n        5. Finally, sub\", 91, 0.4722090267081839]
+Path: Node3Node10" color=red shape=box]
+	Node3 -> Node11 [label=Node3Node11]
+	Node11 [label="V:9, H:9, Flag:True
+['there was before adding any more: 24 - 8 = 16 liters left after the two girls had their share.\n        4. The boy got 6 liters of water, so add that amount to the remaining liters: 16 (liters', 58, 0.838519448636431]
+Path: Node3Node11" color=red shape=box]
+	Node3 -> Node12 [label=Node3Node12]
+	Node12 [label="V:9, H:9, Flag:True
+['was left before the boy got his share: 24 - 8 = 16 liters remaining.\n        4. Finally, add the 6 liters of water the boy received to the remaining amount: 16 (liters from step 3) + 6 (liters from boy) = 22 liters left after all three got their share.', 116, 0.12650378483397096]
+Path: Node3Node12" color=red shape=box]
+	Node3 -> Node13 [label=Node3Node13]
+	Node13 [label="V:9, H:9, Flag:True
+['was left before the boy got his portion: 24 (initial liters) - 8 (from both girls) = 16 liters remaining.\n        4. Add the 6 liters the boy received, which is the final increase in total amount: 16 + 6 = 22 liters', 68, 0.8498502742133414]
+Path: Node3Node13" color=red shape=box]
+	Node0 -> Node14 [label=Node0Node14]
+	Node14 [label="V:4, H:4, Flag:False
+[\"4 liters = 24 - (1/3 * 2)\n\n        3. Next, we need to consider the boy's share of 6 liters. To find out how much water was left after giving him his share, we subtract his amount from the remaining total: \n        24 - (1/3 * 2) - 6 =\", 81, 0.3298926692141346]
+Path: Node0Node14" color=black shape=box]
+	Node0 -> Node15 [label=Node0Node15]
+	Node15 [label="V:5, H:4, Flag:True
+['4 liters - (2 girls * 1/3) liters = 24 - (2 * 1/3) liters = 24 - (2 * 4/6) liters = 24 - 8/6 liters = 24 -', 61, 0.3406027933786634]
+Path: Node0Node15" color=red shape=box]
+	Node0 -> Node16 [label=Node0Node16]
+	Node16 [label="V:1, H:2, Flag:False
+[\"4 liters - 1/3 * 24 liters = 24 liters - 8 liters\n        3. Next, let's calculate the water the boy got. He received 6 liters of water.\n        4. Now, we want to find out how much water is left after adding up all these amounts. So, we subtract the amount given to the boy from the remaining water after giving\", 90, 0.5676733119546307]
+Path: Node0Node16" color=black shape=box]
+	Node0 -> Node17 [label=Node0Node17]
+	Node17 [label="V:1, H:2, Flag:False
+['4 liters - 1/3 * 24 liters = 24 liters - 8 liters (since 1/3 is equivalent to 8/24)\n        3. After that, we need to consider the water given to the boy. He got 6 liters of water.', 68, 0.2849735461748978]
+Path: Node0Node17" color=black shape=box]
+	Node0 -> Node18 [label=Node0Node18]
+	Node18 [label="V:10, H:10, Flag:True
+[\"4 liters.\n        3. Finally, let's include the boy's share of 6 liters. Add it to the remaining 24 liters: 24 + 6 = 30 liters.\n        4\", 52, 0.8502885992094277]
+Path: Node0Node18" color=red shape=box]
+	Node0 -> Node19 [label=Node0Node19]
+	Node19 [label="V:10, H:10, Flag:True
+['3. Next, a boy received 6 liters. Adding his share to the remaining total (from step 2), we have: 2 + 6 = 8 liters of water left.', 54, 0.8683002790579522]
+Path: Node0Node19" color=red shape=box]
+	Node0 -> Node20 [label=Node0Node20]
+	Node20 [label="V:10, H:10, Flag:True
+[\"4 liters - (1/3) * 24 liters = 24 liters - 8 liters (since 1/3 * 24 equals 8). This gives us the remaining water before adding the boy's share.\n        3. Finally, we need to include the 6 liters of water given to the boy. To do this, we simply add his share to the remaining water: 24 - 8 + 6 = 16 liters.\", 107, 0.9925169372672792]
+Path: Node0Node20" color=red shape=box]
+	Node5 -> Node21 [label=Node5Node21]
+	Node21 [label="V:10, H:10, Flag:True
+['3. To solve for this expression, first multiply both sides by 6 (since 1/3 is equivalent to 1/6 * 6): 144 - (1/6 * 24) =\n        4. Now, we have a simplified equation: 144 - 4 =\n        5. Finally, subtract the 4 from 144 to find out how much water was left after the girls got their share: 140 liters of water were', 109, 0.6559109048579957]
+Path: Node5Node21" color=red shape=box]
+	Node5 -> Node22 [label=Node5Node22]
+	Node22 [label="V:10, H:10, Flag:True
+['3. Calculate the result: 24 - (24 * 2/6) = 24 - 8 = 16 liters of water remain after giving water to the two girls.\n        4. Finally, we need to add the amount given to the boy which is 6 liters. So, the remaining water now becomes: 16 + 6 = 22 liters of water are left.', 112, 0.5606984896298602]
+Path: Node5Node22" color=red shape=box]
+	Node5 -> Node23 [label=Node5Node23]
+	Node23 [label="V:10, H:10, Flag:True
+[\"3. To cancel out fractions in the last term, we multiply by the reciprocal of the fraction's denominator (which is 6): 24 - 1/3 * 24 = 24 - 8/3 = 24 - 24/3 = 0.\n        4. Finally, add the 6 liters given to the boy: 0 + 6 = 6 liters were left.\", 103, 0.8596390243116531]
+Path: Node5Node23" color=red shape=box]
+	Node5 -> Node24 [label=Node5Node24]
+	Node24 [label="V:9, H:9, Flag:True
+[\"3. To simplify the fraction in step 2, we can multiply both numerator and denominator by 6 (since it's a multiple of 6 that will make the fraction whole). So, 24 - (2 * 8) =\n        4. Finally, subtracting the\", 65, 0.15645882359180963]
+Path: Node5Node24" color=red shape=box]
+	Node5 -> Node25 [label=Node5Node25]
+	Node25 [label="V:10, H:10, Flag:True
+[\"3. To remove the fraction, we need to multiply both sides by 6 (because 6 is the reciprocal of 1/6). So, 24 * 6 - 24 = 144 - 24 = 120 liters of water were left after giving water to the two girls.\n        4. Now, let's add the amount given to the boy: 120 +\", 95, 0.6921359868245068]
+Path: Node5Node25" color=red shape=box]
+	Node5 -> Node26 [label=Node5Node26]
+	Node26 [label="V:9, H:7, Flag:True
+['3. Calculate 1/3 * 24: 1/3 * 24 = 8 liters (since 1/3 of 24 is equal to 8)\n        4. Now, we have the remaining amount after giving water to the', 58, 0.25200348758847146]
+Path: Node5Node26" color=red shape=box]
+	Node5 -> Node27 [label=Node5Node27]
+	Node27 [label="V:10, H:10, Flag:True
+['3. Calculate the part without the fraction: (24 - 8) = 16.\n        4. Multiply by the reciprocal of the fraction in the numerator to get rid of the remaining fraction: 16 * 3 = 48.\n        5. Finally, add the 6 liters that the boy got: 48 + 6 = 54 liters. So there were 54 liters of water left after all the distributions.', 113, 0.5770137343258386]
+Path: Node5Node27" color=red shape=box]
+	Node16 -> Node28 [label=Node16Node28]
+	Node28 [label="V:10, H:0, Flag:True
+['5. To the girls: 24 liters - 8 liters = 16 liters\n        6. Then, add the water the boy got: 16 liters + 6 liters = 22 liters\n        7. Finally, subtract this sum from the initial total to find out how much water is left: 24 liters - 22 liters = 2 liters\n\nThere were 2 liters of water left.', 109, 0.18574429668192138]
+Path: Node16Node28" color=green shape=box]
+	Node16 -> Node29 [label=Node16Node29]
+	Node29 [label="V:5, H:10, Flag:True
+[\"5. To the girls: 24 liters - 8 liters = 16 liters\n        6. Then, add the boy's share: 16 liters + 6 liters = 22 liters\n        7. Finally, we\", 58, 0.0579726891119382]
+Path: Node16Node29" color=red shape=box]
+	Node16 -> Node30 [label=Node16Node30]
+	Node30 [label="V:0, H:0, Flag:False
+['5. To the girls: 24 liters - 8 liters = 16 liters. Then, we subtract what the boy got: 16 liters - 6 liters = 10 liters.\n\n        As a result, there were 10 liters of water left after giving all amounts to the girls and the boy.', 108, 0.8256162241243761]
+Path: Node16Node30" color=green shape=box]
+	Node16 -> Node31 [label=Node16Node31]
+	Node31 [label="V:10, H:0, Flag:True
+['5. To the girls: 24 liters - 8 liters = 16 liters\n        6. Then, add the water the boy got: 16 liters + 6 liters = 22 liters', 51, 0.15962222634581613]
+Path: Node16Node31" color=green shape=box]
+	Node16 -> Node32 [label=Node16Node32]
+	Node32 [label="V:0, H:0, Flag:False
+['5. to the girls: (24 liters - 8 liters) - 6 liters = 16 liters - 6 liters = 10 liters', 41, 0.6142940975919661]
+Path: Node16Node32" color=green shape=box]
+	Node16 -> Node33 [label=Node16Node33]
+	Node33 [label="V:0, H:0, Flag:False
+['5. To the girls: 24 liters - 8 liters = 16 liters\n        Finally, after the boy got his share, there were 16 - 6 = 10 liters of water left.', 97, 0.9978849503278976]
+Path: Node16Node33" color=green shape=box]
+	Node16 -> Node34 [label=Node16Node34]
+	Node34 [label="V:1, H:0, Flag:False
+['5. To the girls: 24 liters - 8 liters = 16 liters\n        6. Finally, we add the water the boy got and subtract it from the remaining water after giving to the girls: 16 liters + 6 liters - 6 liters = 16 liters\n        7. Therefore, there were 16 liters of', 84, 0.12269892490273793]
+Path: Node16Node34" color=green shape=box]
+}

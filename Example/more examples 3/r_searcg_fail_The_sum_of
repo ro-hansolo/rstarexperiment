@@ -1,0 +1,6 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: The sum of a 15-term arithmetic series with first term 7 is -210. What is the common difference? Start of Search
+Path: Start" color=black shape=box]
+}

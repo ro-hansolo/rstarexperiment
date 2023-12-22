@@ -1,0 +1,20 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's find out the total cost after adding the 25% fee and the $3.00 delivery fee to the original bill amount ($40.00). To do this, we multiply the original bill by 1.25 (the 25% as a decimal) and add the delivery fee:
+           Total cost after fees = Original bill * 1.25 + Delivery fee
+           Total",Node0,5,5,5,10,0.04150101409721474,95,False
+" 1. First, let's find out the original cost of his groceries before any additional charges were applied: $40.00 (initial bill).
+        2. Next, we need to calculate the 25% service fee, which is equal to 25/100 * $40.00 = $10.0",Node1,4,4,4,8,0.6068901564271144,76,False
+" 1. First, we need to find the total cost with the added fee and delivery charges. To do this, we can add the 25% fee and $3.00 in delivery fees to his original bill of $40.00.
+           25% of $40.00 = (25/100) * $40.00",Node3,5,5,5,10,0.39614472844716264,81,False
+" 1. First, let's find out the total cost after adding the 25% fee and the delivery fees to the original bill amount. To do this, we multiply $40.00 by 1.25 (the 25% as a decimal) and then add the $3.00 delivery fee:
+           $40.00 * 1.25 = $50.00
+           $50",Node4,3,3,3,6,0.0814682566557019,97,False
+" 1. First, let's find out the total cost after adding the 25% fee and the delivery fees to the original bill amount. To do this, we multiply $40.00 by 1.25 (the 25% as a decimal) and then add the $3.00 delivery fee:
+           $40.00 * 1.25 = $50.00
+           $50 2. Now, we need to include the tip that Stephen added which is $4.00. Add this amount to our total cost from step 1:
+           $50 + $4.00 = $54.0",Node7,0,2,3,5,0.5666582098820501,50,False
+" 1. First, let's find out the total cost after adding the 25% fee and the delivery fees to the original bill amount. To do this, we multiply $40.00 by 1.25 (the 25% as a decimal) and then add the $3.00 delivery fee:
+           $40.00 * 1.25 = $50.00
+           $50 2. Next, we need to add the tip amount of $4.00 to this total cost:
+           $50.00 + $4.00 = $54.00
+        So, after all additional fees and the tip, Stephen's final price for his groceries was $54.00.",Node8,0,0,3,3,0.3656274864064909,105,False

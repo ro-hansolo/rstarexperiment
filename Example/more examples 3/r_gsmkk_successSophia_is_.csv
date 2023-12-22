@@ -1,0 +1,11 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. To find out how far Sophia can drive on one full tank, we need to first determine the mileage per gallon her car achieves.
+        2. She has traveled 100 miles since filling up with 4 gallons of gas. So, she gets approximately 100 miles / 4 gallons = 25 miles/gallon of efficiency.
+        3. Her tank holds",Node0,1,5,1,6,0.7307075188260508,90,False
+" 1. First, we need to determine the efficiency of the car in terms of miles per gallon (MPG). To do this, divide the total distance traveled by the amount of fuel used. So far, Sophia has driven 100 miles using 4 gallons of gas.
+        Distance/F",Node1,2,7,2,9,0.2950770876045241,66,False
+" 1. To find out how far Sophia can drive on one full tank, we need to first determine the mileage per gallon her car achieves.
+        2. She has traveled 100 miles since filling up with 4 gallons of gas. So, she gets approximately 100 miles / 4 gallons = 25 miles/gallon of efficiency.
+        3. Her tank holds 12 gallons of gas.
+        4. To find the total distance Sophia can drive on a full tank, multiply her car's mileage per gallon by the number of gallons in the tank: 25 miles/gallon * 12 gallons = 300 miles.
+        Therefore, Sophia can drive approximately 300 miles on a single tank of gas.",Node7,0,0,1,1,0.07991992516494195,105,False

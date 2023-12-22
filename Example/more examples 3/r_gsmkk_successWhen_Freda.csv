@@ -1,0 +1,12 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We know that each 16-ounce can has 3 tomatoes and the sauce volume is 32 ounces.
+        2. To find out how many cans are needed, we need to divide the sauce volume by the volume of one can. So, 32 ounces / 16 ounces per can = 2 cans.
+        3. Now that we know she used 2 cans",Node0,1,1,1,2,0.18582739068658471,94,False
+" 1. Let's first find the remaining volume after cooking, so we subtract half from the original volume (16 ounces). That would be 16 * 0.5 = 8 ounces lost in volume for each can of tomatoes.
+        2. Now that we know how much is lost per can, let's find out how many cans were needed to make the desired sauce volume of 32 ounces. To do this, divide the total desired sauce volume by the remaining volume after cooking",Node2,5,2,5,7,0.6577111445911972,112,False
+" 1. We know the total volume of sauce obtained is 32 ounces and it was created from canned tomatoes that lost half their volume while cooking. So, we need to find out how many ounces the canned tomatoes had before losing the volume.
+
+    To do this, we'll multiply the final volume by 2 (since they lost half) to find the initial volume: 32 oz * 2 = 64 oz.",Node5,0,1,0,1,0.7471230978608852,101,False
+" 1. We know the total volume of sauce obtained is 32 ounces and it was created from canned tomatoes that lost half their volume while cooking. So, we need to find out how many ounces the canned tomatoes had before losing the volume.
+
+    To do this, we'll multiply the final volume by 2 (since they lost half) to find the initial volume: 32 oz * 2 = 64 oz. 2. Now that we know the initial volume of canned tomatoes was 64 ounces, we can determine how many 16-ounce cans of tomatoes are needed for this volume. We'll divide the total ounces by the number of ounces",Node7,0,0,0,0,0.7618607113376191,59,False

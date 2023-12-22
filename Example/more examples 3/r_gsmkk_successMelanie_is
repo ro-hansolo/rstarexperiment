@@ -1,0 +1,734 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Melanie is a door-to-door saleswoman. She sold a third of her vacuum cleaners at the green house, 2 more to the red house, and half of what was left at the orange house. If Melanie has 5 vacuum cleaners left, how many did she start with? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:8, Flag:False
+[\"1. Let's first determine the number of vacuum cleaners sold after visiting each house.\n        2. At the green house, she sold a third of her vacuum cleaners. So, she sold (1/3) * total_v\", 51, 0.5093454311760698]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:10, H:10, Flag:True
+['1. We know that Melanie sold a total of 2/3 of her vacuum cleaners at the green house, which is equal to 2/3 * 5 = 10 vacuum cleaners.\n        2. She sold 2 more vacuum cleaners at the red house, so she had 10 + 2 = 12 vacuum cleaners left after selling at the green and red houses.\n        3. Melanie also sold half of what was left at the orange house, which', 106, 0.44684457371553177]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:9, H:10, Flag:True
+[\"1. First, we need to know the total number of vacuum cleaners she sold.\n        2. She sold a third at the green house and half were consumed after the red and orange houses' sales. To get these combined sales, calculate it as (1/3 + 1/2) * total_vacuum_cleaners\n        3. (2\", 77, 0.9598252952229575]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:9, Flag:False
+[\"1. Let's set up an equation using variables for the initial number of vacuum cleaners (N), vacuum cleaners sold to each house, and remaining vacuum cleaners after selling to all houses. We can use N_G, N_R, N_O, and N_L for the green house, red house, orange house, and left over\", 74, 0.558460929532571]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:3, H:7, Flag:False
+['1. We know that Melanie had 5 vacuum cleaners left.\n        2. We also know that she sold a third of her vacuum cleaners at the green house and then some more to the red house (2 additional) after selling half of what was remaining to the orange house.\n        3. Let\'s represent the total number of vacuum cleaners Melanie initially had as \"V\" and the number left as \"L\". We can set up equations for each step in this process', 102, 0.8350630552309107]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:4, H:9, Flag:False
+[\"1. Let's first determine the number of vacuum cleaners Melanie sold at each location.\n        a. Green house: A third of her total amount is sold here, so we need to find one-third of the total and add\", 50, 0.39879110828655673]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:8, Flag:False
+[\"1. Let's first find out how many vacuum cleaners were sold at each location.\n        2. At the green house, she sold a third of her total, so we need to calculate one-third of the initial\", 47, 0.5993446588510349]
+Path: StartNode6" color=black shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:10, H:10, Flag:True
+['3. At the red house, she sold 2 more than at the green house. So, she sold (1/3) * total_v + 2\n        4. At the orange house, she sold half of what was left after selling to the first two houses. So, she sold (1/2) * ((1/3) * total_v + 2) + 5\n        5. Now, we know that Melanie has 5 vacuum clean', 100, 0.09578882710690606]
+Path: Node0Node7" color=red shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:6, H:5, Flag:False
+['3. At the red house, she sold 2 more than the green house. Therefore, she sold (1/3) * total_v + 2.\n        4. At the orange house, she sold half of what was left after visiting the first two houses. So, she sold (total_left - (1/3) * total_v)/2\n        5. Now', 82, 0.6029882656128698]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:5, H:4, Flag:False
+['3. At the red house, she sold 2 more than at the green house. So, she sold (1/3 * total_v) + 2.\n        4. At the orange house, she sold half of what was left after visiting the other two houses. So, she sold (total_v - (1/3 * total_v) - 2) / 2.\n        5. Add up all', 91, 0.8107141659791851]
+Path: Node0Node9" color=black shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:10, H:10, Flag:True
+['3. At the red house, she sold 2 more than at the green house. So, she sold (1/3) * total_v + 2\n        4. At the orange house, she sold half of what was left after selling to the first two houses. So, she sold (1/2) * ((1/3) * total_v + 2) + 5\n        5. Now we know the number of vacuum cleaners sold at each house: green = (1/3) * total', 111, 0.013124676770646104]
+Path: Node0Node10" color=red shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:7, H:2, Flag:False
+['3. Since there are 5 left and 1/3 was sold at the green house, the remaining vacuum cleaners after visiting the green house can be calculated as follows: total_v - (1/3) * total_v = 5 - (total_v / 3)\n        We can rearrange this equation to solve for total', 74, 0.7289985917219838]
+Path: Node0Node11" color=black shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:6, H:5, Flag:False
+['3. At the red house, she sold 2 more than what she sold at the green house. So, she sold (1/3) * total_v + 2.\n        4. At the orange house, she sold half of what was left after selling to the first two houses. So, she sold ((1/3) * total_v +', 77, 0.11713058052761649]
+Path: Node0Node12" color=black shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:10, H:10, Flag:True
+['3. At the red house, she sold 2 more than at the green house. So, she sold (1/3) * total_v + 2\n        4. At the orange house, she sold half of what was left after selling to the first two houses. So, she sold (1/2) * ((1/3) * total_v + 2) + ((1/3) * total_v - ((1/', 95, 0.5112289548273663]
+Path: Node0Node13" color=red shape=box]
+	Node6 -> Node14 [label=Node6Node14]
+	Node14 [label="V:2, H:7, Flag:False
+['amount (x). This can be found by dividing x by 3.\n        Green: (x/3) vacuum cleaners\n\n        3. She then sold 2 more vacuum cleaners at the red house, adding to the remaining number from the green house. So the total for the red house is equal to:\n        Red: [(x/3) + 2] vacuum cleaners\n\n        4. Finally, she sold half of what was left at the orange house.', 104, 0.7310522719998933]
+Path: Node6Node14" color=black shape=box]
+	Node6 -> Node15 [label=Node6Node15]
+	Node15 [label="V:10, H:10, Flag:True
+[\"number (5). To do this, divide 5 by 3: 5 / 3 = 1.67. Since we can't have a fraction of a vacuum cleaner, let's round down to\", 47, 0.35185248844420947]
+Path: Node6Node15" color=red shape=box]
+	Node6 -> Node16 [label=Node6Node16]
+	Node16 [label="V:10, H:10, Flag:True
+['number of vacuum cleaners. (5 / 3) = 1.67 (rounded down to 1). So, she sold 1 at the green house.\n        3. At the red house, she sold 2 more than what was sold at the green house, so she sold 1 + 2 = 3 vacuum cleaners there.\n        4. At the orange house, she sold half of what was left after selling to the first two houses. So, we need to calculate half of the remaining number of vacuum cleaners (5 -', 119, 0.23061700276227537]
+Path: Node6Node16" color=red shape=box]
+	Node6 -> Node17 [label=Node6Node17]
+	Node17 [label="V:10, H:10, Flag:True
+['number. (5 / 3) = 1.67 (rounded down to 1 for simplicity). So, she sold 1 vacuum cleaner at the green house.\n        3. At the red house, she sold 2 more than what was sold at the green house. Since she sold 1 there, we add 2 more: 1 + 2 = 3 vacuum cleaners were sold at the red house.\n        4. At the orange house, she sold half of what was', 107, 0.3284350697513668]
+Path: Node6Node17" color=red shape=box]
+	Node6 -> Node18 [label=Node6Node18]
+	Node18 [label="V:2, H:8, Flag:False
+[\"number (let's call it x). This is 1/3 * x = 5 (since she has 5 left after selling them all).\n        3. Now, at the red house, she sold 2 more vacuum cleaners than what was sold at the green house. So, we need to add 2 to the number of vacuum cleaners sold at the green house: 5 + 2 = 7.\n        4. At the orange house, she sold half of what was left after selling at the red house. We first find out how\", 118, 0.050695436034616126]
+Path: Node6Node18" color=black shape=box]
+	Node6 -> Node19 [label=Node6Node19]
+	Node19 [label="V:10, H:10, Flag:True
+['count (5 vacuum cleaners). One-third is 1/3, and when multiplied by 5, it gives us: (1/3) * 5 = 5/3 = 1.67 (', 48, 0.5844822266122308]
+Path: Node6Node19" color=red shape=box]
+	Node6 -> Node20 [label=Node6Node20]
+	Node20 [label="V:2, H:7, Flag:False
+['quantity (which is unknown). To do this, multiply 1/3 by the initial number: (1/3) * Initial_vacuum_cleaners = Green_house_sales.\n        3. At the red house, she sold 2 more vacuum cleaners than at the green house. So, we need to add 2 to the\n         Green_house_sales and get', 86, 0.2940843143645794]
+Path: Node6Node20" color=black shape=box]
+	Node4 -> Node21 [label=Node4Node21]
+	Node21 [label="V:8, H:10, Flag:True
+['4. At the green house, she sold 1/3 * V vacuum cleaners, so we have L = (5/3) * V - 1/3 * V which simplifies to L = (2/3) * V.\n        5. After selling at the red house, she had 2 more vacuum cleaners left, so now L = (2/3) * V + 2.\n        6. At the orange house, she sold half of what was remaining, which means she sold (1', 111, 0.2421294385318824]
+Path: Node4Node21" color=red shape=box]
+	Node4 -> Node22 [label=Node4Node22]
+	Node22 [label="V:8, H:10, Flag:True
+['4. First, we can write down that V = L + (2/5)V since she sold a third to green house and then 2 more after selling half of what was remaining at orange house.\n        5. Now, let\'s solve the equation for V. To do this, we want to move all \"L\" terms on one side and all \"V\" terms on the other side, so that there is only a single \"V\" term in one equation: (1/2)L +', 107, 0.9088732398333484]
+Path: Node4Node22" color=red shape=box]
+	Node4 -> Node23 [label=Node4Node23]
+	Node23 [label="V:8, H:10, Flag:True
+[\"4. V - (1/3 * V) = Green House sales (let's say G)\n        5. V - (G + 2) = Red House sales (let's say R)\n        6. L - (R/2) = Orange House sales (let's say\", 65, 0.46098233584574577]
+Path: Node4Node23" color=red shape=box]
+	Node4 -> Node24 [label=Node4Node24]
+	Node24 [label="V:8, H:10, Flag:True
+['4. At the green house, V/3 were sold: L = V - (V/3)\n        5. After that, 2 more were sold to the red house: L = L - 2\n        6. Finally, half of what was left was sold at the orange house: L/2 = L - L/2\n           Combining all these steps in one equation: V = (V/3) + (L - 2) + (L - L/2)\n        7. Now we can solve for', 114, 0.5955671754165032]
+Path: Node4Node24" color=red shape=box]
+	Node4 -> Node25 [label=Node4Node25]
+	Node25 [label="V:8, H:10, Flag:True
+['4. First, she sold a third at the green house: V/3 = 5 (since 5 is what was left after selling to the other houses)\n        5. Then, she sold 2 more vacuum cleaners to the red house: V/3 + 2 = L - 5 (because there were 5 left and we need to find out how many were initially)\n        6. Finally, she sold half of what was remaining at the orange house: L/2 = 5 (since 5 is what was left after', 115, 0.021879858174957745]
+Path: Node4Node25" color=red shape=box]
+	Node4 -> Node26 [label=Node4Node26]
+	Node26 [label="V:8, H:10, Flag:True
+['4. First, we need to find out how many vacuum cleaners she sold at the green house. A third of her initial stock means she sold V/3 at the green house.\n        5. Then, she sold 2 more to the red house, making it a total of V/3 + 2 to the red house.\n        6. After that, she sold half of what was left (L) to the orange house, which means L/2 were', 98, 0.596396550270802]
+Path: Node4Node26" color=red shape=box]
+	Node4 -> Node27 [label=Node4Node27]
+	Node27 [label="V:8, H:10, Flag:True
+['4. First, she sold a third (1/3 * V) at the green house and then had L - 1/3 * V vacuum cleaners remaining. She sold two more to the red house, so now she had L - 1/3 * V + 2 vacuum cleaners.\n        5. Then, Melanie sold half of what was left (L / 2) at the orange house and ended up with 5 vacuum cleaners left. So, we can write this as L = V -', 109, 0.6552632690622525]
+Path: Node4Node27" color=red shape=box]
+	Node9 -> Node28 [label=Node9Node28]
+	Node28 [label="V:4, H:3, Flag:False
+['6. The sum of vacuum cleaners sold is: (1/3 * total_v) + (1/3 * total_v) + 2 + ((total_v - (1/3 * total_v) - 2) / 2) = (2/3 * total_v) + 2 + (total_v - (2/3 * total_v) - 2) / 2\n        7. Now, we know that Melanie has 5 vacuum cleaners left', 109, 0.10240898039959001]
+Path: Node9Node28" color=black shape=box]
+	Node9 -> Node29 [label=Node9Node29]
+	Node29 [label="V:5, H:8, Flag:False
+['6. Total vacuum cleaners sold = (1/3 * total_v) + 2 + ((total_v - (1/3 * total_v) - 2) / 2) +', 45, 0.46555387128862524]
+Path: Node9Node29" color=black shape=box]
+	Node9 -> Node30 [label=Node9Node30]
+	Node30 [label="V:5, H:7, Flag:False
+['6. Total vacuum cleaners sold = green + red + orange = ((1/3 * total_v) + 2) + ((total_v - (1/3 * total_v) - 2) / 2) + (2 more than the red house)\n        7. We know that Melanie has 5 vacuum cleaners left after selling at all three houses, so we can write an equation using this information:\n         8', 95, 0.6071068962965622]
+Path: Node9Node30" color=black shape=box]
+	Node9 -> Node31 [label=Node9Node31]
+	Node31 [label="V:5, H:8, Flag:False
+['6. We have: total_v = sold at green + sold at red + sold at orange + 5 left (remaining).\n        7. Total_v = (1/3 * total_v) + 2 + ((total_v - (1/3 * total_v) - 2) / 2) +', 73, 0.8596913459496646]
+Path: Node9Node31" color=black shape=box]
+	Node9 -> Node32 [label=Node9Node32]
+	Node32 [label="V:5, H:8, Flag:False
+['6. The sum of vacuum cleaners sold is: (1/3 * total_v) + (1/3 * total_v) + 2 + ((total_v - (1/3 * total_v) - 2) / 2) = (2/', 60, 0.2022971199778406]
+Path: Node9Node32" color=black shape=box]
+	Node9 -> Node33 [label=Node9Node33]
+	Node33 [label="V:5, H:7, Flag:False
+['6. Total_sold = 1/3 * total_v + 2 + (1/3 * total_v) + 2 + (total_v - (1/3 * total_v) - 2) / 2\n        7. Simplify the equation by combining like terms\n        8. Total_sold = 4/3 * total_v + 4 - 2/(total_v', 93, 0.7284619560558261]
+Path: Node9Node33" color=black shape=box]
+	Node9 -> Node34 [label=Node9Node34]
+	Node34 [label="V:6, H:0, Flag:True
+['6. total_v = 5 (left vacuum cleaners) + 3 (green house) + 4 (red house) + 3 (orange house).\n        7. Now, we need to calculate the initial number of vacuum cleaners Melanie had: initial_total_v = 5 (from step 6) + 8 (all vacuum cleaners from the houses where she sold).\n        8. So, Melanie started with 13 vacuum cleaners in total.', 106, 0.7143785732622446]
+Path: Node9Node34" color=green shape=box]
+	Node11 -> Node35 [label=Node11Node35]
+	Node35 [label="V:3, H:9, Flag:True
+['4. total_v = 5 + (total_v / 3)\n        5. Now we need to find a common denominator and multiply both sides by the greatest common divisor to get rid', 44, 0.7989271279182001]
+Path: Node11Node35" color=red shape=box]
+	Node11 -> Node36 [label=Node11Node36]
+	Node36 [label="V:3, H:9, Flag:True
+[\"4. total_v = 5 + (total_v / 3)\n        5. Now, we'll solve for the value of total_v: \n           a. Add -(total_v/3) to both sides of the equation:\", 56, 0.3068994489166732]
+Path: Node11Node36" color=red shape=box]
+	Node11 -> Node37 [label=Node11Node37]
+	Node37 [label="V:2, H:8, Flag:True
+['4. total_v = 5 + (total_v / 3)\n        5. Multiply both sides by 3: 3 * total_v = 15 + total_v\n        6. Subtract total_v from both sides: 2 * total_v = 15\n        7. Divide both sides by 2: total_v', 82, 0.3935856864682429]
+Path: Node11Node37" color=red shape=box]
+	Node11 -> Node38 [label=Node11Node38]
+	Node38 [label="V:2, H:8, Flag:True
+['4. (2/3) * total_v = 5\n        Now, we can multiply both sides by 3 to isolate the variable:\n        5. (2 * 3)', 43, 0.27286562778941137]
+Path: Node11Node38" color=red shape=box]
+	Node11 -> Node39 [label=Node11Node39]
+	Node39 [label="V:3, H:9, Flag:True
+[\"4. total_v = 5 + (total_v / 3)\n        5. Now, we need to find the value of total_v that satisfies the equation. To do this, we'll use algebraic methods\", 49, 0.21112277988662687]
+Path: Node11Node39" color=red shape=box]
+	Node11 -> Node40 [label=Node11Node40]
+	Node40 [label="V:3, H:9, Flag:True
+['4. total_v = 5 + (total_v / 3)\n        5. Now, we need to find a common denominator of 3 and 5. The least common', 41, 0.3500054412722491]
+Path: Node11Node40" color=red shape=box]
+	Node11 -> Node41 [label=Node11Node41]
+	Node41 [label="V:2, H:8, Flag:True
+['4. total_v = 5 + (total_v / 3)\n        Multiplying by 3 on both sides, we have: 3 * total_v = 15 + total_v\n        Subtracting total_v from both sides, we get:', 62, 0.7631644828192182]
+Path: Node11Node41" color=red shape=box]
+	Node14 -> Node42 [label=Node14Node42]
+	Node42 [label="V:4, H:9, Flag:True
+['5. To find out how many were left after selling to the green and red houses, we need to subtract the total from the green and red houses from her initial amount (x). So, we have:\n        Left: x - [(x/3) + 2]\n\n        6. Now, we know that Melanie has 5 vacuum cleaners left after selling at all three houses. To find out how many she started with, we need to add the remaining amount from the orange', 104, 0.2074490553248357]
+Path: Node14Node42" color=red shape=box]
+	Node14 -> Node43 [label=Node14Node43]
+	Node43 [label="V:5, H:10, Flag:True
+['5. First, we need to find out how many vacuum cleaners were remaining after selling at the red house. We can do this by subtracting the number of vacuum cleaners sold at the red house from those sold at the green house (i.e., [(x/3) + 2] - (x/3)).\n        Remaining:', 75, 0.8192122616954255]
+Path: Node14Node43" color=red shape=box]
+	Node14 -> Node44 [label=Node14Node44]
+	Node44 [label="V:4, H:9, Flag:True
+['5. To find out how many vacuum cleaners were left after selling to the green and red houses, we need to subtract the total from the green and red houses from the initial amount (x). This leaves', 43, 0.07536552290248288]
+Path: Node14Node44" color=red shape=box]
+	Node14 -> Node45 [label=Node14Node45]
+	Node45 [label="V:4, H:9, Flag:True
+[\"5. Let's find out how many vacuum cleaners were remaining after selling to the green and red houses. This is equal to x - (x/3) - 2.\n        Remaining: [x - (x/3) - 2] vacuum clean\", 57, 0.7671391595213144]
+Path: Node14Node45" color=red shape=box]
+	Node14 -> Node46 [label=Node14Node46]
+	Node46 [label="V:5, H:10, Flag:True
+[\"5. First, we need to find out how many vacuum cleaners are left after selling at the red house. Let's add the green and red numbers together: [(x/3) + 2] = y (remaining vacuum cleaners)\n        6. Now, at the orange house, she sold half of what remained (y). We need to calculate one-half of y, which can be found by dividing it by 2:\n        Orange: [(y/2)] vacuum cleaners\", 109, 0.9678794766719068]
+Path: Node14Node46" color=red shape=box]
+	Node14 -> Node47 [label=Node14Node47]
+	Node47 [label="V:2, H:7, Flag:False
+[\"5. The remaining amount after selling to the red house is (x - (x/3) - 2). To find how many were sold at the orange house, we need to divide this number by two:\n        Orange: [(x - (x/3) - 2)/2] vacuum cleaners\n\n        6. Now that we have the vacuum cleaner sales at each location, let's find out how many Melanie had when she started with. We know\", 101, 0.9967037559665428]
+Path: Node14Node47" color=black shape=box]
+	Node14 -> Node48 [label=Node14Node48]
+	Node48 [label="V:5, H:10, Flag:True
+[\"5. Firstly, we need to calculate the remaining number from the red house (y), as it's the total number of vacuum cleaners sold after both green and red houses:\n        y = (x/3) + 2\n\n        6. Now that we have the remaining quantity from the red house, we can find the amount sold at the orange house by dividing that value by 2:\n        Orange:\", 90, 0.945771663931394]
+Path: Node14Node48" color=red shape=box]
+	Node20 -> Node49 [label=Node20Node49]
+	Node49 [label="V:2, H:8, Flag:False
+['Red_house_sales.\n        4. At the orange house, she sold half of what was left after selling at the red house. To find this, we need to divide the remaining vacuum cleaners by 2: (Initial_vacuum_cleaners - Green_house_', 61, 0.1395336370595368]
+Path: Node20Node49" color=black shape=box]
+	Node20 -> Node50 [label=Node20Node50]
+	Node50 [label="V:2, H:8, Flag:False
+['Red_house_sales.\n        4. At the orange house, she sold half of what was left after selling at the red house. First, find the remaining quantity from the red house by subtracting Red_house_sales from the initial number: Initial_vacuum_cleaners - Red_house_sales = Remaining_vacuum_cleaners. Now, divide this remaining quantity by 2 to get what she sold at the orange house: Orange_house_sales', 106, 0.626947435896723]
+Path: Node20Node50" color=black shape=box]
+	Node20 -> Node51 [label=Node20Node51]
+	Node51 [label="V:2, H:8, Flag:False
+['Red_house_sales.\n        4. At the orange house, she sold half of what was left after selling at both green and red houses. To calculate this, divide the remaining amount by 2 after selling at both locations (Green + Red), which is: ((Initial_vacuum_cleaners - Green_house_sales) / 2) * 2 = Orange_house_sales.\n        5. Now that we have the sales for each location, we can find out how many vacuum cleaners she', 112, 0.8346144558770924]
+Path: Node20Node51" color=black shape=box]
+	Node20 -> Node52 [label=Node20Node52]
+	Node52 [label="V:2, H:8, Flag:False
+[\"Red_house_sales.\n        4. At the orange house, she sold half of what was left after selling at the red house. To find this, we need to divide the remaining vacuum cleaners by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales.\n        5. Now, let's add up all the sales from each location to find out how many vacuum cleaners were sold in total\", 111, 0.21548949143775076]
+Path: Node20Node52" color=black shape=box]
+	Node20 -> Node53 [label=Node20Node53]
+	Node53 [label="V:1, H:7, Flag:False
+['Red_house_sales.\n        4. For the orange house, half of what was left were sold. Since we know that she had 5 vacuum cleaners left, we can calculate the remaining quantity before going to the orange house: Initial_vacuum_cleaners - Green_house_sales = Remaining_vacuum_cleaners.\n        5. At the orange house, half of the remaining quantity was sold (Remaining_vacuum_clean', 101, 0.8664310973311276]
+Path: Node20Node53" color=black shape=box]
+	Node20 -> Node54 [label=Node20Node54]
+	Node54 [label="V:2, H:8, Flag:False
+['Red_house_sales.\n        4. Finally, at the orange house, half of what was left after the first two houses were sold. To calculate this, we need to subtract both the green and red house sales from the initial number and then divide the remaining quantity by 2: (Initial_vacuum_cleaners - Green_house_sales - Red_house_sales) / 2 = Orange_house_sales.', 97, 0.9694303769868563]
+Path: Node20Node54" color=black shape=box]
+	Node20 -> Node55 [label=Node20Node55]
+	Node55 [label="V:2, H:8, Flag:False
+['Red_house_sales.\n        4. At the orange house, she sold half of what was left after selling at the red house. To find out how many vacuum cleaners were left after the green and red houses, subtract the green and red house sales from the initial number: Initial_vacuum_cleaners - Green_house_sales - Red_house_sales = Vacuum_cleaners_left.\n        5. Now, we need', 100, 0.1878162624425297]
+Path: Node20Node55" color=black shape=box]
+	Node3 -> Node56 [label=Node3Node56]
+	Node56 [label="V:7, H:9, Flag:True
+['2. We know that Melanie sold a third of her vacuum cleaners at the green house (N_G = 1/3 * N). She sold 2 more to the red house (N_R = N', 46, 0.2752621598702313]
+Path: Node3Node56" color=red shape=box]
+	Node3 -> Node57 [label=Node3Node57]
+	Node57 [label="V:6, H:9, Flag:True
+['2. We know that Melanie started with 5 vacuum cleaners left: N_L = 5\n        3. She sold a third of her vacuum cleaners at the green house, which means she sold 1/3 * N (where N is the initial number of vacuum cleaners) there', 63, 0.5991260665443076]
+Path: Node3Node57" color=red shape=box]
+	Node3 -> Node58 [label=Node3Node58]
+	Node58 [label="V:7, H:10, Flag:True
+['2. Set up the equations:\n           - Sold a third of her vacuum cleaners at the green house = (1/3) * N_G = 5 (since she sold 5 to other houses)\n           - Sold 2 more vacuum cleaners than she did at the red house = N_R + 2 = N_G (because she sold 5 in total at the red and green houses)\n           - Half of what was left after selling to the first two houses went to the orange', 107, 0.6856119447594268]
+Path: Node3Node58" color=red shape=box]
+	Node3 -> Node59 [label=Node3Node59]
+	Node59 [label="V:6, H:9, Flag:True
+['2. We know that Melanie sold a third of her vacuum cleaners at the green house, which means she sold 1/3 * N (where N is the initial number of vacuum cleaners). So, we can write this as N_G = N / 3.\n        3. She sold 2 more vacuum cleaners to the red house than to the green house, so N_R = N_G + 2.\n        4. She sold half of what was left at the orange house, which means she had N_L /', 117, 0.019110237192835666]
+Path: Node3Node59" color=red shape=box]
+	Node3 -> Node60 [label=Node3Node60]
+	Node60 [label="V:6, H:9, Flag:True
+['2. We know that Melanie sold a third of her vacuum cleaners at the green house, so N_G = (1/3) * N\n        3. She sold 2 more vacuum cleaners than she did to the green house at the red house, so N_R = N_G + 2\n        4. Melanie sold half of what was left after selling to the green and red houses at the orange house', 91, 0.533809700324707]
+Path: Node3Node60" color=red shape=box]
+	Node3 -> Node61 [label=Node3Node61]
+	Node61 [label="V:6, H:9, Flag:True
+['2. We know that Melanie sold a third of her vacuum cleaners at the green house, which means she sold 1/3 * N (where N is the initial number of vacuum cleaners). So, we can write this as N_G = N / 3.\n        3. She sold 2 more vacuum cleaners to', 71, 0.08262409083665156]
+Path: Node3Node61" color=red shape=box]
+	Node3 -> Node62 [label=Node3Node62]
+	Node62 [label="V:6, H:10, Flag:True
+[\"2. Now, let's express these relationships in terms of known quantities:\n           - One third of the initial number sold at the green house is represented as (1/3) * N\n           - Adding 2 to that at the red house results in N_R = (\", 60, 0.8824475499851819]
+Path: Node3Node62" color=red shape=box]
+	Node18 -> Node63 [label=Node18Node63]
+	Node63 [label="V:10, H:10, Flag:True
+['5. many vacuum cleaners were left by subtracting the amount sold at the red house from the initial number (x): x - 7 = 5 - 7 = -2. She then sold half of this, which is -2 / 2 = -1.\n        6. Now we know how many', 67, 0.5650242625955588]
+Path: Node18Node63" color=red shape=box]
+	Node18 -> Node64 [label=Node18Node64]
+	Node64 [label="V:10, H:10, Flag:True
+[\"many vacuum cleaners were left after selling at the red house by subtracting the number sold there from the total (x): x - 7 = 5 - 7 = -2. Then, we need to divide this remaining number by 2: (-2) / 2 = -1.\n        5. Now, let's add up all the vacuum cleaners sold at each location:\", 85, 0.16906639739168638]
+Path: Node18Node64" color=red shape=box]
+	Node18 -> Node65 [label=Node18Node65]
+	Node65 [label="V:10, H:10, Flag:True
+['5. many vacuum cleaners were left after selling at the red house: x - 7 = 5 - 7 = -2 (since Melanie has 5 left).\n        6. Now, we need to calculate half of what was left after selling at the red house: -2 / 2 = -1.\n        7. Finally, add up all the vacuum cleaners sold at each location: 5 (green) + 7 (red) + (-1)', 101, 0.23465856356157655]
+Path: Node18Node65" color=red shape=box]
+	Node18 -> Node66 [label=Node18Node66]
+	Node66 [label="V:10, H:10, Flag:True
+['5. many were left by subtracting from the total (green plus red): x - 7 = x - 5 = 3 vacuum cleaners remaining. Now we need to divide these 3 remaining vacuum cleaners into halves: 3 / 2 = 1.5 (which is rounded down to 1).', 70, 0.7670022633086908]
+Path: Node18Node66" color=red shape=box]
+	Node18 -> Node67 [label=Node18Node67]
+	Node67 [label="V:10, H:10, Flag:True
+['many vacuum cleaners were left by subtracting the number sold at the red house from the initial total (x): x - 7 = 5 - 7 = -2. Then, we need to calculate half of this remaining amount: (-2) / 2 = -1. So, she sold 1 vacuum cleaner at the orange house.\n        5. Now that we know how many vacuum cleaners were sold at each location, we can find out the initial number (x). To do this, add all the vacuum cleaners sold at each location:', 119, 0.37651939069958884]
+Path: Node18Node67" color=red shape=box]
+	Node18 -> Node68 [label=Node18Node68]
+	Node68 [label="V:7, H:10, Flag:True
+['many vacuum cleaners were left after selling at the red house: x - 7 = 5 (since she has 5 left). Then, we need to calculate half of that number: 5 / 2 = 2.5. However, since she sold only whole numbers, we can round it down to 2 vacuum cleaners.', 71, 0.0859463783698794]
+Path: Node18Node68" color=red shape=box]
+	Node18 -> Node69 [label=Node18Node69]
+	Node69 [label="V:6, H:10, Flag:True
+['many were remaining: x - 7 (since 7 were sold at the red house), then divide this by 2 to get half: (x - 7) / 2 = 5 (she has', 44, 0.8827162034380974]
+Path: Node18Node69" color=red shape=box]
+	Node53 -> Node70 [label=Node53Node70]
+	Node70 [label="V:3, H:9, Flag:False
+['cleaners / 2). Now we can add up all the sales from each location: Green_house_sales + Red_house_sales + Orange_house_sales = Total_sales.\n        6. We know that Melanie has 5 vacuum clean', 58, 0.5142460774185503]
+Path: Node53Node70" color=black shape=box]
+	Node53 -> Node71 [label=Node53Node71]
+	Node71 [label="V:3, H:8, Flag:False
+['cleaners / 2). We need to subtract this from the remaining quantity to find out how many were left after selling at the orange house: Remaining_vacuum_cleaners - Orange_house_sales', 46, 0.018912156916608303]
+Path: Node53Node71" color=black shape=box]
+	Node53 -> Node72 [label=Node53Node72]
+	Node72 [label="V:3, H:7, Flag:False
+['ers / 2). We need to subtract this number from the remaining vacuum cleaners: Remaining_vacuum_cleaners - Orange_house_sales = Final_remaining_vacuum_cleaners.\n        6. To find out the initial quantity, we can add all the known values (sold and final remaining): Initial_vacuum_cleaners = Green_house', 85, 0.7961588947666901]
+Path: Node53Node72" color=black shape=box]
+	Node53 -> Node73 [label=Node53Node73]
+	Node73 [label="V:3, H:9, Flag:False
+['cleaners / 2).\n        6. Now we know how many vacuum cleaners were sold at each location: Green_house_sales + Red_house_sales + Orange_house_s', 43, 0.17625146755768262]
+Path: Node53Node73" color=black shape=box]
+	Node53 -> Node74 [label=Node53Node74]
+	Node74 [label="V:3, H:8, Flag:False
+['cleaners / 2). We need to subtract this from the remaining quantity to find out how many were left after selling at the orange house: Remaining_vacuum_cleaners - Orange_house_sales', 46, 0.04330561963017987]
+Path: Node53Node74" color=black shape=box]
+	Node53 -> Node75 [label=Node53Node75]
+	Node75 [label="V:3, H:6, Flag:False
+[\"ers / 2). Now we can add this to the total sales to get Orange_house_sales.\n        6. Finally, let's sum up all the sales at each location: Green_house_sales + Red_house_sales + Orange_house_sales = Total_sales.\n        7. We know that Melanie\", 76, 0.42667449094416876]
+Path: Node53Node75" color=black shape=box]
+	Node53 -> Node76 [label=Node53Node76]
+	Node76 [label="V:2, H:5, Flag:False
+['cleaners / 2). We need to subtract this from the remaining quantity before going to the orange house: Remaining_vacuum_cleaners - Orange_house_sales = Final_remaining_vacuum_cleaners.\n        6. Now, we know that Melanie has 5 vacuum cleaners left after selling at all houses. We can find out how many vacuum cleaners she started with by adding the final remaining quantity to the number of vacuum cleaners sold at the orange house: Final_remaining_vac', 114, 0.33897279537384295]
+Path: Node53Node76" color=black shape=box]
+	Node8 -> Node77 [label=Node8Node77]
+	Node77 [label="V:5, H:8, Flag:True
+[\"6. We're given that Melanie has 5 vacuum cleaners left. This means (1/3) * total_v + 2 + (total_left - (1/3) * total_v)/2 = 5.\n        7. Solving for total_v, we get:\n            total_v = (20 * (1/3)) / (1/6) - 2\n            total_v =\", 96, 0.5947464422163107]
+Path: Node8Node77" color=red shape=box]
+	Node8 -> Node78 [label=Node8Node78]
+	Node78 [label="V:5, H:8, Flag:True
+['6. To find the total number of vacuum cleaners she had initially, we can simply add the remaining vacuum cleaners to the sum of all sold: total_v = 5 + ((1', 40, 0.9108960728947815]
+Path: Node8Node78" color=red shape=box]
+	Node8 -> Node79 [label=Node8Node79]
+	Node79 [label="V:4, H:8, Flag:True
+['6. We know Melanie has 5 vacuum cleaners left, so we can write this equation: (1/3) * total_v + 2 + (1/3) * total_v/2 = 5\n        7. Simplify the equation and solve for total_v: (2/3) * total_v = 20 - 2 - 5 -> (2/3) * total_v = 13', 97, 0.9286281512790304]
+Path: Node8Node79" color=red shape=box]
+	Node8 -> Node80 [label=Node8Node80]
+	Node80 [label="V:5, H:9, Flag:True
+['6. Combine all the vacuum cleaners sold: sold_green + sold_red + sold_orange = (1/3) * total_v + 2 + ((total_left', 41, 0.7340041877715839]
+Path: Node8Node80" color=red shape=box]
+	Node8 -> Node81 [label=Node8Node81]
+	Node81 [label="V:5, H:9, Flag:True
+[\"6. Let's add up all the vacuum cleaners sold to get the total number sold: \n          (1/3) * total_v + (1/3) * total_v + 2 + ((total_left - (1/3\", 55, 0.5462450679338429]
+Path: Node8Node81" color=red shape=box]
+	Node8 -> Node82 [label=Node8Node82]
+	Node82 [label="V:5, H:9, Flag:True
+['6. We know that Melanie has 5 vacuum cleaners left at the end.\n        7. To find out how many she started with, we need to add all the vacuum cleaners she sold to the', 44, 0.5606518675821991]
+Path: Node8Node82" color=red shape=box]
+	Node8 -> Node83 [label=Node8Node83]
+	Node83 [label="V:4, H:7, Flag:True
+[\"6. Let's add up all the vacuum cleaners sold: (1/3) * total_v + 2 + ((total_left - (1/3) * total_v)/2)\n        7. We know that Melanie has 5 vacuum cleaners left, so we can set this as an equation: \n         5 = (1/3) * total_v + 2 + ((total_left - (1/3) * total_\", 101, 0.40765973302080305]
+Path: Node8Node83" color=red shape=box]
+	Node12 -> Node84 [label=Node12Node84]
+	Node84 [label="V:7, H:8, Flag:True
+['5. Now we know how many vacuum cleaners were sold at each house: green - (1/3) * total_v, red - ((1/3) * total_v + 2), orange - ((1/3) * total_v +', 55, 0.13730098175550465]
+Path: Node12Node84" color=red shape=box]
+	Node12 -> Node85 [label=Node12Node85]
+	Node85 [label="V:7, H:7, Flag:True
+[\"2) / 2.\n        5. Now let's determine how many vacuum cleaners were left before going to the orange house. This number is equal to the initial number of vacuum cleaners minus what was sold at the green and red houses. So, we have (total_v - ((1/3) * total_v + 2)).\n        6. At the orange house, she had 5 vacuum cleaners left. Let's subtract these from the number of vacuum cleaners remaining before going to the\", 111, 0.8576676351948566]
+Path: Node12Node85" color=red shape=box]
+	Node12 -> Node86 [label=Node12Node86]
+	Node86 [label="V:7, H:9, Flag:True
+[\"5. Now we know how many vacuum cleaners were sold at each house, and we know that Melanie has 5 left. We can use this information to determine the original amount she started with.\n        6. Let's add up all the vacuum cleaners sold: green (1/3) * total_v + red ((1/3) * total_v +\", 79, 0.695507632741534]
+Path: Node12Node86" color=red shape=box]
+	Node12 -> Node87 [label=Node12Node87]
+	Node87 [label="V:7, H:9, Flag:True
+[\"5. Now, let's determine how many vacuum cleaners Melanie had initially. Since she has 5 vacuum cleaners remaining after visiting all three houses, we need to find the difference between this\", 41, 0.8705839475891349]
+Path: Node12Node87" color=red shape=box]
+	Node12 -> Node88 [label=Node12Node88]
+	Node88 [label="V:7, H:8, Flag:True
+['5. Now we know how many vacuum cleaners were sold at each house: green - (1/3) * total_v, red - ((1/3) * total_v + 2), orange - ((1/3) * total_v + 2)/2.\n        6. We have 5 vacuum cleaners left after selling to all houses. So, we can write an equation: (1/3) * total_v + ((1/3) * total_v + 2) + ((1/3) * total_v +', 120, 0.012333696435293362]
+Path: Node12Node88" color=red shape=box]
+	Node12 -> Node89 [label=Node12Node89]
+	Node89 [label="V:6, H:6, Flag:False
+[\"5. Now we know that Melanie has 5 vacuum cleaners left. We can use this information to find the initial number of vacuum cleaners: total_v = 5 + (1/3) * total_v + 2 + ((1/3) * total_v + 2)\n        6. Simplify the equation by combining like terms: total_v = 5 + (2/3) * total_v + 4\n        7. Move all terms with 'total_v' to one side of the equation: (1\", 119, 0.2218472528531502]
+Path: Node12Node89" color=black shape=box]
+	Node12 -> Node90 [label=Node12Node90]
+	Node90 [label="V:7, H:10, Flag:True
+['5. We know that Melanie has 5 vacuum cleaners left after visiting all three houses. Therefore, we can write this as a system of equations:\n        (1/3) * total_v - 5 = 0 (1/3) * total_v +', 59, 0.5742225250607514]
+Path: Node12Node90" color=red shape=box]
+	Node47 -> Node91 [label=Node47Node91]
+	Node91 [label="V:4, H:9, Flag:True
+['7. She has 5 vacuum cleaners left after selling to all three houses. To find the initial amount (x), we need to add the remaining number from each house:\n        x = Green + Red + Orange + Remaining\n        x = [(x/3) + 2] + [(x/3) + 2] + [(x - (x/3) - 2)/2] +', 90, 0.024341686032152476]
+Path: Node47Node91" color=red shape=box]
+	Node47 -> Node92 [label=Node47Node92]
+	Node92 [label="V:4, H:8, Flag:True
+['7. She has 5 vacuum cleaners left after selling to all houses. To find how many she originally had, we need to add these 5 back to the total number of vacuum cleaners sold:\n        Total sales: [(x/3) + (x - (x/3) - 2)/2] + 5', 71, 0.4908671586551657]
+Path: Node47Node92" color=red shape=box]
+	Node47 -> Node93 [label=Node47Node93]
+	Node93 [label="V:4, H:9, Flag:True
+['7. She initially had 5 vacuum cleaners left after selling all the rest. So we can represent this by:\n        x - [(x/3) + (x/3) + 2 +', 44, 0.8031019500969591]
+Path: Node47Node93" color=red shape=box]
+	Node47 -> Node94 [label=Node47Node94]
+	Node94 [label="V:4, H:9, Flag:True
+['7. She has 5 vacuum cleaners left after selling to all three houses. This means that the total number of vacuum cleaners she initially had (x) is equal to:\n        x = 5 + [(x/3) + 2] + [(x - (', 60, 0.38465934134976654]
+Path: Node47Node94" color=red shape=box]
+	Node47 -> Node95 [label=Node47Node95]
+	Node95 [label="V:4, H:9, Flag:True
+['7. She has 5 vacuum cleaners left after selling to all three houses. To find out her initial number of vacuum cleaners, we need to add back the remaining vacuum cleaners from each house:\n        Initial: (x/3) + [', 53, 0.5705245291888329]
+Path: Node47Node95" color=red shape=box]
+	Node47 -> Node96 [label=Node47Node96]
+	Node96 [label="V:4, H:8, Flag:True
+['7. She has 5 vacuum cleaners left after selling to all three houses. To find the initial amount (x), we need to add the total number of vacuum cleaners sold from all locations:\n        Total sales = Green + Red + Orange\n        Total sales = [(x/3) + 2] + [(x - (x/3) - 2)/2]', 82, 0.1529603435713367]
+Path: Node47Node96" color=red shape=box]
+	Node47 -> Node97 [label=Node47Node97]
+	Node97 [label="V:3, H:7, Flag:True
+[\"7. She ended with 5 vacuum cleaners left after selling to all houses (x - green - red - orange = x - (x/3) - 2 - ((x - (x/3) - 2)/2) = 5). To find the starting amount, we need to add back these sales from each house:\n        8. Green house's sales: (x/3\", 85, 0.7666126757311383]
+Path: Node47Node97" color=red shape=box]
+	Node5 -> Node98 [label=Node5Node98]
+	Node98 [label="V:10, H:10, Flag:True
+['3/5 * 5 = 1.5 + 5 = 6.5 vacuum cleaners sold at the green house.\n        b. Red house: She sold 2 more vacuum cleaners than she did at the green house,', 51, 0.31862968069936626]
+Path: Node5Node98" color=red shape=box]
+	Node5 -> Node99 [label=Node5Node99]
+	Node99 [label="V:10, H:10, Flag:True
+['3/5 * 5 = 1.5 + 5 = 6.5 vacuum cleaners sold at the green house.\n        b. Red house: She sold 2 more vacuum cleaners than she did at the green house, so we calculate the difference between these two amounts.\n         6.5 - 2 = 4.5 vacuum cleaners sold at the red house.\n        c. Orange', 88, 0.44394320090179595]
+Path: Node5Node99" color=red shape=box]
+	Node5 -> Node100 [label=Node5Node100]
+	Node100 [label="V:9, H:10, Flag:True
+['3/5 * 5 = 1.5 + 5 = 6.5 vacuum cleaners sold at the green house.\n        b. Red house: She sold 2 more vacuum cleaners than what she sold at the green house, so we need to add 2 to the number of vacuum cleaners sold at the green house.\n        6.5 + 2 = 8.5 vacuum cleaners sold at the red house.\n        c. Orange house: She sold half of what was left after selling at the other two houses', 115, 0.17300611692778722]
+Path: Node5Node100" color=red shape=box]
+	Node5 -> Node101 [label=Node5Node101]
+	Node101 [label="V:8, H:10, Flag:True
+['3/5 * 5 = 1.5 + 5 = 6.5 vacuum cleaners sold at the green house.\n        b. Red house: She sold 2 more than what she sold at the green house, which is 6.5. So, we need to add 2 to her sales at the green house and find the result.\n        6.5 + 2 = 8 vacuum cleaners sold at the red house.\n        c. Orange house: She sold half of what was left after selling at the first', 115, 0.17951301591341562]
+Path: Node5Node101" color=red shape=box]
+	Node5 -> Node102 [label=Node5Node102]
+	Node102 [label="V:9, H:10, Flag:True
+['3/5 * 5 = (6 / 5) * 5 = 6 vacuum cleaners sold at green house.\n        b. Red house: She sold 2 more than what she sold at the green house, which is 6 from step', 54, 0.40594533079808326]
+Path: Node5Node102" color=red shape=box]
+	Node5 -> Node103 [label=Node5Node103]
+	Node103 [label="V:10, H:10, Flag:True
+[\"3/5 * 5 = 1.5 + 5 = 6.5 vacuum cleaners sold at the green house.\n        b. Red house: She sold 2 more than what she sold at the green house, so let's add those 2 to\", 58, 0.25405698945444544]
+Path: Node5Node103" color=red shape=box]
+	Node5 -> Node104 [label=Node5Node104]
+	Node104 [label="V:8, H:10, Flag:True
+['2/3 * 5 = 10 (vacuum cleaners sold)\n        b. Red house: She sold 2 more vacuum cleaners than at the green house, which means she sold 12 (10 from Green + 2 more).\n        c. Orange house: Half of what was left after selling to the red house is sold here, so we need to find half of the remaining vacuum cleaners and add it to the ones already sold.\n        5/2 * (5 - 1', 110, 0.43920280714528115]
+Path: Node5Node104" color=red shape=box]
+	Node28 -> Node105 [label=Node28Node105]
+	Node105 [label="V:5, H:9, Flag:True
+['8. We can now find the initial number of vacuum cleaners she started with: Initial_v = Left_v + Vacuum_Cleaners_Sold\n        9. Plugging in the values into the equation: Initial_v = 5 + (2/3 * total_v) + 2 + (total_v - (2/3 * total_v) - 2) / 2\n        10. Sim', 95, 0.877201339203031]
+Path: Node28Node105" color=red shape=box]
+	Node28 -> Node106 [label=Node28Node106]
+	Node106 [label="V:6, H:9, Flag:True
+['8. To find the initial number of vacuum cleaners she had, add up all the remaining vacuum cleaners after visiting each house: 5 + 0 (green house, already sold a third) + 0 (red house, sold 2 more than green) = 5 - ((1/3 * total_v) - 2)\n        9. The equation now simplifies to 5 = 5 - ((2/3 * total_v) - 4). We can get rid of the constants by', 109, 0.5352941979558632]
+Path: Node28Node106" color=red shape=box]
+	Node28 -> Node107 [label=Node28Node107]
+	Node107 [label="V:5, H:9, Flag:True
+[\"8. So, the equation becomes: (2/3 * total_v) + 2 + (total_v - (2/3 * total_v) - 2) / 2 = 5\n        9. Solve for total_v by isolating it on one side of the equation. We can do this by moving all terms with 'total_v' to one side and constants to the other side:\n        (2/3 * total_v) + (total_v - (2/3 * total\", 113, 0.033874608317622235]
+Path: Node28Node107" color=red shape=box]
+	Node28 -> Node108 [label=Node28Node108]
+	Node108 [label="V:6, H:9, Flag:True
+['8. To find the initial number of vacuum cleaners, subtract the sold and remaining vacuum cleaners from the starting amount: total_v = (initial_vacuum_cleaners) - (sold_at_green_house) - (sold_at_red_house) - (sold_at_orange_house) + (left_after_or', 81, 0.5664593175786101]
+Path: Node28Node108" color=red shape=box]
+	Node28 -> Node109 [label=Node28Node109]
+	Node109 [label="V:5, H:9, Flag:True
+['8. So, the equation becomes: (2/3 * total_v) + 2 + (total_v - (2/3 * total_v) - 2) / 2 = 5\n        9. Solve for total_v. We can start by multiplying both sides of the equation by', 69, 0.3436028983569529]
+Path: Node28Node109" color=red shape=box]
+	Node28 -> Node110 [label=Node28Node110]
+	Node110 [label="V:6, H:9, Flag:True
+['8. So, to find out how many she started with, we can set up an equation: \n          (2/3 * total_v) + 2 + ((total_v - (2/3 * total_v) - 2) / 2) = total_v - 5\n        9. Solve for total_v: total_v = 10 + 5 - 2 + (2/3 * total_v) - (', 101, 0.5661331800884871]
+Path: Node28Node110" color=red shape=box]
+	Node28 -> Node111 [label=Node28Node111]
+	Node111 [label="V:5, H:9, Flag:True
+['8. So, the equation becomes: (2/3 * total_v) + 2 + (total_v - (2/3 * total_v) - 2) / 2 = 5\n        9. Solve for total_v by first simplifying the equation to: (4/3 * total_v) - 2 = 5\n        10. Add 2 to both sides of the equation: (4/', 96, 0.17048176888290756]
+Path: Node28Node111" color=red shape=box]
+	Node49 -> Node112 [label=Node49Node112]
+	Node112 [label="V:6, H:8, Flag:True
+['sales - Red_house_sales) / 2 = Orange_house_sales.\n        5. Now that we have sold vacuum cleaners at each location, we need to find out how many were left after selling all of them. To do this, add the sales from all locations: Green_house_sales + Red_house_sales + Orange_house_sales = Total_vacuum_cleaners_left.\n        6. Finally, since Melanie has 5 vacuum cleaners left, we need to', 114, 0.33603800200713674]
+Path: Node49Node112" color=red shape=box]
+	Node49 -> Node113 [label=Node49Node113]
+	Node113 [label="V:6, H:8, Flag:True
+[\"sales - Red_house_sales) / 2 = Orange_house_sales.\n        5. Now that we have sold vacuum cleaners at each location, let's sum them up to find the total number of vacuum cleaners sold: Green_house_sales + Red_house_sales + Orange_house_sales.\n        6. Finally, to find how many vacuum cleaners Melanie started with, we need to subtract the total sales from the initial number of vacuum clean\", 107, 0.6667879949139629]
+Path: Node49Node113" color=red shape=box]
+	Node49 -> Node114 [label=Node49Node114]
+	Node114 [label="V:6, H:8, Flag:True
+[\"sales - Red_house_sales) / 2 = Orange_house_sales.\n        5. Now that we have sold vacuum cleaners at each location, let's add them up to find the total number of vacuum cleaners sold: Green_house_sales + Red_house_sales + Orange_house_sales = Total_vacuum_cleaners_sold.\n        6. Melanie\", 92, 0.10700465603113851]
+Path: Node49Node114" color=red shape=box]
+	Node49 -> Node115 [label=Node49Node115]
+	Node115 [label="V:6, H:8, Flag:True
+['sales - Red_house_sales) / 2 = Orange_house_sales.\n        5. Add up all the sales from each location (Green house, Red house, and Orange house), which is equal to the remaining quantity after selling at the orange house:\n        Initial_vacuum_cleaners - Green_house_sales - Red_house_sales = Remaining_vacuum_cleaners.\n        6. Now', 97, 0.7470810825171224]
+Path: Node49Node115" color=red shape=box]
+	Node49 -> Node116 [label=Node49Node116]
+	Node116 [label="V:5, H:7, Flag:True
+['sales - Red_house_sales) / 2 = Orange_house_sales.\n        5. Now that we have the number of vacuum cleaners sold at each location, we can find out how many were left after selling them all: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - 5 (since there are 5 left).\n        6. Finally', 97, 0.1713577213194779]
+Path: Node49Node116" color=red shape=box]
+	Node49 -> Node117 [label=Node49Node117]
+	Node117 [label="V:6, H:8, Flag:True
+['sales - Red_house_sales) / 2 = Orange_house_sales.\n        5. Now that we know how many were sold at each place, we can subtract', 40, 0.8942033895356775]
+Path: Node49Node117" color=red shape=box]
+	Node49 -> Node118 [label=Node49Node118]
+	Node118 [label="V:5, H:7, Flag:True
+['sales - Red_house_sales) / 2 = Orange_house_sales.\n        5. Now that we have the number of vacuum cleaners sold at each location, we can find out how many were left after selling at all three houses: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house', 80, 0.34808808073992703]
+Path: Node49Node118" color=red shape=box]
+	Node50 -> Node119 [label=Node50Node119]
+	Node119 [label="V:6, H:9, Flag:True
+['5. Finally, we need to find out how many vacuum cleaners were initially with Melanie. To do that, add up all the sales from each location and subtract it from the initial number: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - 5 (remaining vacuum cleaners)\n        6. Plug in the values we calculated earlier into this equation to find the initial number of vacuum cleaners Melanie had: Initial_', 110, 0.2112465270172208]
+Path: Node50Node119" color=red shape=box]
+	Node50 -> Node120 [label=Node50Node120]
+	Node120 [label="V:6, H:9, Flag:True
+['5. Finally, we need to find the initial number of vacuum cleaners Melanie had. To do this, add up all the sales from each location and subtract it from the total number of vacuum cleaners left (which is 5): Initial_vacuum_cleaners = Total_sales + Remaining_vacuum_cleaners\n        6. Calculate the total sales by adding Green_house_sales,', 91, 0.1031005266986923]
+Path: Node50Node120" color=red shape=box]
+	Node50 -> Node121 [label=Node50Node121]
+	Node121 [label="V:7, H:9, Flag:True
+['5. Lastly, we need to find out how many vacuum cleaners she had left after selling everything. To do this, subtract all the sales from the initial number: Initial_vacuum_cleaners - Green_house_sales - Red_house', 55, 0.5462340169631426]
+Path: Node50Node121" color=red shape=box]
+	Node50 -> Node122 [label=Node50Node122]
+	Node122 [label="V:5, H:8, Flag:False
+['5. We know that Melanie has 5 vacuum cleaners left after selling at all three houses. To find the initial number of vacuum cleaners, add the sales from each location and subtract the remaining quantity: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - Remaining_vacuum_cleaners\n        6. Plug in all', 91, 0.3746638424836195]
+Path: Node50Node122" color=black shape=box]
+	Node50 -> Node123 [label=Node50Node123]
+	Node123 [label="V:5, H:9, Flag:False
+['5. Finally, we need to find how many vacuum cleaners were left after selling all of them. To do this, subtract the total sales from the initial number: Initial_vacuum_cleaners - (Green_house_sales + Red_house_sales + Orange_house_sales) =', 67, 0.3796977683669497]
+Path: Node50Node123" color=black shape=box]
+	Node50 -> Node124 [label=Node50Node124]
+	Node124 [label="V:6, H:9, Flag:True
+['5. Finally, we need to find out how many vacuum cleaners were initially with Melanie. To do this, add up all the sales from each location and subtract it from the initial number: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales - 5 (remaining vacuum cleaners)\n        6. Plug in the values we calculated earlier into this equation to find the initial quantity: Initial_vacuum_cleaners = (1/3 * Unknown', 117, 0.03789506560779232]
+Path: Node50Node124" color=red shape=box]
+	Node50 -> Node125 [label=Node50Node125]
+	Node125 [label="V:7, H:9, Flag:True
+[\"5. Add up all the sales from each location: Green_house_sales + Red_house_sales + Orange_house_sales = Total_vacuum_cleaners_sold.\n        6. Finally, subtract the total number of vacuum cleaners sold from the initial quantity to find out how many she started with: Initial_vacuum_cleaners - Total_vacuum_cleaners_sold = Started_with_quantity.\n        Now let's plug in the given values and solve\", 115, 0.3419256499419462]
+Path: Node50Node125" color=red shape=box]
+	Node51 -> Node126 [label=Node51Node126]
+	Node126 [label="V:6, H:8, Flag:True
+['started with by adding all the sales together: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales.\n        6. We know that Melanie has 5 vacuum cleaners left, so we can also express this as: Initial_vacuum_cleaners - (Green_house_sales + Red_house_sales + Orange_house_sales) = 5.\n        7. Now we have a system', 108, 0.3846770754151355]
+Path: Node51Node126" color=red shape=box]
+	Node51 -> Node127 [label=Node51Node127]
+	Node127 [label="V:6, H:9, Flag:True
+['started with by adding all the sales together: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales.\n        6. We', 44, 0.12352612887004888]
+Path: Node51Node127" color=red shape=box]
+	Node51 -> Node128 [label=Node51Node128]
+	Node128 [label="V:5, H:7, Flag:True
+['started with by adding up all the sales from each house: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales.\n        6. We know that Melanie had 5 vacuum cleaners left after selling at these houses, so we can use this information to find the remaining amount of vacuum cleaners she sold: Remaining_vacuum_cleaners = Initial_vacuum_cleaners - 5.\n        7. Finally, we can solve for the initial number', 117, 0.3425628722036447]
+Path: Node51Node128" color=red shape=box]
+	Node51 -> Node129 [label=Node51Node129]
+	Node129 [label="V:6, H:9, Flag:True
+['started with by adding up all the sales: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales.\n        6. We know that Melanie has 5 vacuum', 52, 0.21017408715567942]
+Path: Node51Node129" color=red shape=box]
+	Node51 -> Node130 [label=Node51Node130]
+	Node130 [label="V:6, H:8, Flag:True
+['started with by adding all these sales back together: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales.\n        6. We know she has 5 vacuum cleaners left and sold 2 more at the', 61, 0.6471102198195923]
+Path: Node51Node130" color=red shape=box]
+	Node51 -> Node131 [label=Node51Node131]
+	Node131 [label="V:6, H:10, Flag:True
+['started with by adding all the sales together: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales.\n        6', 42, 0.29368242855879245]
+Path: Node51Node131" color=red shape=box]
+	Node51 -> Node132 [label=Node51Node132]
+	Node132 [label="V:5, H:7, Flag:True
+['started with by adding all the sales together: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales.\n        6. We know that Melanie has 5 vacuum cleaners left, so we can also express this as a function of the initial number: (Initial_vac', 75, 0.19024155763401762]
+Path: Node51Node132" color=red shape=box]
+	Node52 -> Node133 [label=Node52Node133]
+	Node133 [label="V:6, H:8, Flag:True
+[\"(Green_house_sales + Red_house_sales + Orange_house_sales).\n        6. Finally, we need to subtract the total number of vacuum cleaners sold from the initial quantity to find out how many she started with: Initial_vacuum_cleaners = Total_sold + Remaining_vacuum_cleaners.\n\nLet's plug in the given values:\n1. Melanie has 5 vacuum cleaners left\", 101, 0.20626325078539098]
+Path: Node52Node133" color=red shape=box]
+	Node52 -> Node134 [label=Node52Node134]
+	Node134 [label="V:6, H:8, Flag:True
+['(Green_house_sales + Red_house_sales + Orange_house_sales).\n        6. Finally, we need to subtract the total sales from the initial number of vacuum cleaners to find out how many she started with: Initial_vacuum_cleaners = Total_sales + Remaining_vacuum_cleaners.\n        7. We know that Melanie has 5 vacuum cleaners left, so we can use this as the value for Remaining_vacuum_cleaners.', 115, 0.1143729387208019]
+Path: Node52Node134" color=red shape=box]
+	Node52 -> Node135 [label=Node52Node135]
+	Node135 [label="V:6, H:8, Flag:True
+[\"(Green_house_sales + Red_house_sales + Orange_house_sales).\n        6. Finally, we need to subtract the total sales from the initial number of vacuum cleaners to find out how many she started with: Initial_vacuum_cleaners = Total_sales + Remaining_vacuum_cleaners.\n\nLet's plug in the given values and solve for the unknown variables:\", 95, 0.18773682315653406]
+Path: Node52Node135" color=red shape=box]
+	Node52 -> Node136 [label=Node52Node136]
+	Node136 [label="V:6, H:8, Flag:True
+['(Green_house_sales + Red_house_sales + Orange_house_sales).\n        6. Finally, we need to subtract the total number of vacuum cleaners sold from the initial quantity to find out how many she started with: Initial_vacuum_cleaners = Total_sold', 67, 0.08266047901680862]
+Path: Node52Node136" color=red shape=box]
+	Node52 -> Node137 [label=Node52Node137]
+	Node137 [label="V:8, H:9, Flag:True
+[\"Total_sales = Green_house_sales + Red_house_sales + Orange_house_sales.\n        6. Finally, we know Melanie started with 5 vacuum cleaners left. To find the initial number of vacuum cleaners, we need to add the total sales to the remaining vacuum cleaners and divide by 2: (Total_sales + Remaining_vacuum_cleaners) / 2 = Initial_vacuum_cleaners.\n        7. Let's plug in all known values\", 115, 0.6584639355390443]
+Path: Node52Node137" color=red shape=box]
+	Node52 -> Node138 [label=Node52Node138]
+	Node138 [label="V:8, H:9, Flag:True
+[\"Total_sales = Green_house_sales + Red_house_sales + Orange_house_sales\n        6. We know that Melanie has 5 vacuum cleaners left, so we can calculate the number of these remaining as Initial_vacuum_cleaners - Total_sales.\n        Now let's put everything together:\n\nInitial_vacuum_cleaners = (1/3) * Initial_vacuum\", 98, 0.9479619765258203]
+Path: Node52Node138" color=red shape=box]
+	Node52 -> Node139 [label=Node52Node139]
+	Node139 [label="V:8, H:9, Flag:True
+['(Green_house_sales + Red_house_sales + Orange_house_sales) = Total_vacuum_cleaners_sold.\n        6. We know that Melanie started with 5 vacuum cleaners left after selling at the orange house. To find out how many she had initially, we need to add these remaining vacuum cleaners back to the total sales: (Total_vacuum', 89, 0.3352917748721177]
+Path: Node52Node139" color=red shape=box]
+	Node54 -> Node140 [label=Node54Node140]
+	Node140 [label="V:5, H:9, Flag:False
+[\"5. Now, we have all the numbers of vacuum cleaners sold at each house. To find out how many she started with, we can simply add the total number sold to what's left: Initial_vacuum_cleaners = Vacuum_cleaners_sold (Green + Red + Orange) + Vacuums_left.\n        6. Plugging in all the known values from steps 1-4, we get the following equation: Initial_vacuum_cleaners = Green_house_sales + Red\", 116, 0.9444221733292084]
+Path: Node54Node140" color=black shape=box]
+	Node54 -> Node141 [label=Node54Node141]
+	Node141 [label="V:5, H:9, Flag:False
+['5. Now, we have the total vacuum cleaners sold at each location: Green_house_sales + Red_house_sales + Orange_house_sales = Total_vacuum_cleaners_sold.\n        6. We know that Melanie has 5 vacuum cleaners left and she started with an unknown number of them. To find the initial quantity, we need to add the total number of vacuum cleaners sold to the remaining ones: Initial', 99, 0.26603090340190017]
+Path: Node54Node141" color=black shape=box]
+	Node54 -> Node142 [label=Node54Node142]
+	Node142 [label="V:5, H:9, Flag:False
+['5. Now, we know how many vacuum cleaners were sold at each house. To find out how many she started with, we need to add all the sales together: Initial_vacuum_cleaners = Green_house_sales + Red_house_sales + Orange_house_sales.\n        6. We know that Melanie has 5 vacuum cleaners left and sold 2 more at the red', 89, 0.03188817505452657]
+Path: Node54Node142" color=black shape=box]
+	Node54 -> Node143 [label=Node54Node143]
+	Node143 [label="V:5, H:9, Flag:False
+['5. Now, we have all the information about the vacuum cleaners sold at each house. We need to find out how many were left after selling them all. To do this, add up the sales from all three houses: Green_house_sales + Red_house_sales + Orange_house_sales = Total_vacuum_cleaners_sold.\n        6. Melanie has 5 vacuum cleaners left. We need to find out how many she', 101, 0.10936777194795066]
+Path: Node54Node143" color=black shape=box]
+	Node54 -> Node144 [label=Node54Node144]
+	Node144 [label="V:5, H:9, Flag:False
+['5. Now, we have all the sold quantities at each location. To find out how many vacuum cleaners Melanie started with, we need to add up the sold quantities and subtract them from her current remaining quantity (5 vacuum cleaners). Initial_vacuum_cleaners = Remaining_vacuum_cleaners + Green_house_sales +', 76, 0.5398641850653162]
+Path: Node54Node144" color=black shape=box]
+	Node54 -> Node145 [label=Node54Node145]
+	Node145 [label="V:5, H:9, Flag:False
+['5. Now, we know how many vacuum cleaners were sold at each location. To find out how many she started with, we need to add the sales from all three houses: Initial_vacuum_cleaners = Green_house_sales', 52, 0.25908174852844623]
+Path: Node54Node145" color=black shape=box]
+	Node54 -> Node146 [label=Node54Node146]
+	Node146 [label="V:5, H:9, Flag:False
+['5. Now, we know how many vacuum cleaners were sold at each house. We can add them up to find the total number of sales: Green_house_sales + Red_house_sales + Orange_house_sales = Total_sales.\n        6. Melanie has 5 vacuum cleaners left, so we need to subtract this from the total sales to find out how many she started with: Initial_vacuum_cleaners = Total_sales - Remaining_', 107, 0.16090906136806427]
+Path: Node54Node146" color=black shape=box]
+	Node55 -> Node147 [label=Node55Node147]
+	Node147 [label="V:4, H:9, Flag:False
+['to find out how many vacuum cleaners were sold at the orange house by dividing the remaining quantity (Vacuum_cleaners_left) by 2: Orange_house_sales = Vacuum_cleaners_left / 2.\n        6. Finally,', 59, 0.38866428883983184]
+Path: Node55Node147" color=black shape=box]
+	Node55 -> Node148 [label=Node55Node148]
+	Node148 [label="V:4, H:9, Flag:False
+['to divide the vacuum cleaners left by 2 because she sold half of them at the orange house (half of what was left). So, we have: (1/2) * Vacuum_cleaners_left = Orange_house', 50, 0.6891443694058775]
+Path: Node55Node148" color=black shape=box]
+	Node55 -> Node149 [label=Node55Node149]
+	Node149 [label="V:4, H:9, Flag:False
+['6. To determine how many vacuum cleaners Melanie sold at the orange house, multiply half of what was left by the number of vacuum cleaners initially available: 0.5 * Vacuum_cleaners', 45, 0.9367519308350545]
+Path: Node55Node149" color=black shape=box]
+	Node55 -> Node150 [label=Node55Node150]
+	Node150 [label="V:4, H:9, Flag:False
+['to find half of what was left after selling at the orange house. To do this, divide the Vacuum_cleaners_left by 2: Half_of_Vacuum_cleaners_left = (Vacuum_cleaners_left / 2).\n        6. Finally, we know that Melanie has 5', 72, 0.31955246061958986]
+Path: Node55Node150" color=black shape=box]
+	Node55 -> Node151 [label=Node55Node151]
+	Node151 [label="V:4, H:9, Flag:False
+['to find half of what was left after selling at the orange house. To do this, divide Vacuum_cleaners_left by 2: (Vacuum_cleaners_left / 2) = Orange_house_sales.', 52, 0.021965802650852795]
+Path: Node55Node151" color=black shape=box]
+	Node55 -> Node152 [label=Node55Node152]
+	Node152 [label="V:4, H:9, Flag:False
+['to find out how many vacuum cleaners were sold at the orange house. Since she sold half of what was left after selling at the red house, we can calculate this by dividing Vacuum_cleaners_left by 2: Orange_house_sales = (', 57, 0.24911600987845806]
+Path: Node55Node152" color=black shape=box]
+	Node55 -> Node153 [label=Node55Node153]
+	Node153 [label="V:4, H:9, Flag:False
+['to find out how many vacuum cleaners were left after selling at the orange house. To do this, subtract the number of vacuum cleaners sold at the orange house from the remaining vacuum cleaners: V', 42, 0.549436202047605]
+Path: Node55Node153" color=black shape=box]
+	Node30 -> Node154 [label=Node30Node154]
+	Node154 [label="V:8, H:9, Flag:True
+['5 = total_v - (1/3 * total_v) - 2 - ((total_v - (1/3 * total_v) - 2) / 2) + 2\n        9. Solve the equation for total_v. Use algebra to isolate total_v by moving terms around and simplifying:\n         5 = total_v - (1', 83, 0.8100953003849626]
+Path: Node30Node154" color=red shape=box]
+	Node30 -> Node155 [label=Node30Node155]
+	Node155 [label="V:7, H:9, Flag:True
+[\"total_v - (1/3 * total_v) - 2 - ((total_v - (1/3 * total_v) - 2) / 2) - 2 = 5\n        9. Now, let's solve for the initial number of vacuum cleaners (total_v):\n         10. Add all the\", 76, 0.4021210776947858]
+Path: Node30Node155" color=red shape=box]
+	Node30 -> Node156 [label=Node30Node156]
+	Node156 [label="V:9, H:10, Flag:True
+[\"9. Now let's solve for total_v: total_v = 6 - (1/3 * 6) + 2 - ((6 - (1/3 * 6) - 2) / 2) + 2 = 5 + 2 - (4/3) + 2 - (4/\", 72, 0.6199724723095468]
+Path: Node30Node156" color=red shape=box]
+	Node30 -> Node157 [label=Node30Node157]
+	Node157 [label="V:9, H:10, Flag:True
+['Total_v = initial_vacuum_cleaners - 5\n        9. Now, we can substitute the value we found for the total vacuum cleaners sold in step 5 into the equation and solve for the initial number of vacuum cleaners Melanie started with:\n        Initial_vacuum_cleaners = Total_sold +', 73, 0.6689101282070967]
+Path: Node30Node157" color=red shape=box]
+	Node30 -> Node158 [label=Node30Node158]
+	Node158 [label="V:10, H:10, Flag:True
+[\"5 = ((1/3 * total_v) + 2) + ((total_v - (1/3 * total_v) - 2) / 2) + (2 more than the red house) - total_v\n        9. Now, solve for 'total_v' by first simplifying the equation:\n         5\", 74, 0.36530566694364697]
+Path: Node30Node158" color=red shape=box]
+	Node30 -> Node159 [label=Node30Node159]
+	Node159 [label="V:10, H:10, Flag:True
+[\"9. Now, let's solve for total_v to find out how many she started with:\n        Total_v = (1/3 * 5) + 2 + ((5 - (1/3 * 5) - 2) / 2) + 2\n        Total_v = (5/3) + 2 + ((5 - 5/3 - 2) / 2) + 2\n        Total_v = (5/3) + 2 + (-1/6 * 5) / 2\", 120, 0.0785975284635666]
+Path: Node30Node159" color=red shape=box]
+	Node30 -> Node160 [label=Node30Node160]
+	Node160 [label="V:2, H:0, Flag:True
+[\"5 = ((1/3 * total_v) + 2) + (((total_v - (1/3 * total_v)) - 4) / 2) + 2\n         9. Now solve the equation for the unknown 'total_v':\n        total_v = 30\n      10. So, Melanie started with 30 vacuum cleaners.\", 115, 0.9406600801930975]
+Path: Node30Node160" color=green shape=box]
+	Node33 -> Node161 [label=Node33Node161]
+	Node161 [label="V:9, H:10, Flag:True
+[\"9. Adding the constant term (4-2) to both sides, we get: Total_sold = 4/3 * total_v + 2\n        10. Now, let's find out how many vacuum cleaners she started with.\n        11. We know that Melanie has 5 vacuum cleaners left and she sold\", 76, 0.7093271792569904]
+Path: Node33Node161" color=red shape=box]
+	Node33 -> Node162 [label=Node33Node162]
+	Node162 [label="V:9, H:10, Flag:True
+['9. We know that Melanie has 5 vacuum cleaners left, so we can rewrite the equation in terms of the remaining vacuum cleaners: \n        Remaining_v = Total_sold - (4/3 * total_v + 4) + 2/(total_v)\n        10. Substitute the known values from step 5: Remaining_v = 5 - (4/3 * 5 + 4) + 2/(', 103, 0.4051831206876466]
+Path: Node33Node162" color=red shape=box]
+	Node33 -> Node163 [label=Node33Node163]
+	Node163 [label="V:9, H:10, Flag:True
+['9. We want to find out how many vacuum cleaners Melanie started with (5 left). So, we can subtract the number of vacuum cleaners she sold from the number she had left: Total', 42, 0.5975986770845766]
+Path: Node33Node163" color=red shape=box]
+	Node33 -> Node164 [label=Node33Node164]
+	Node164 [label="V:9, H:10, Flag:True
+['9. Now, we know that Melanie has 5 vacuum cleaners left after visiting all houses. So, we can set up an equation to find the initial number of vacuum cleaners: \n        Initial_v = Total_sold + Left_over_v\n        Initial_v = (4/3 * total_v + 4 - 2/(total_v) + 5\n        10. Solve for total_v by isolating it on one side of the equation:', 106, 0.07392846116191787]
+Path: Node33Node164" color=red shape=box]
+	Node33 -> Node165 [label=Node33Node165]
+	Node165 [label="V:9, H:10, Flag:True
+[\"9. Now, let's find out how many vacuum cleaners were sold in total (Total_sold). We know she has 5 left and sold 10 at the red house and orange house combined. So, Total_sold = 15 (left) + 10 + 5.\n        10. Total_sold = 20 +\", 80, 0.4981936678737997]
+Path: Node33Node165" color=red shape=box]
+	Node33 -> Node166 [label=Node33Node166]
+	Node166 [label="V:9, H:10, Flag:True
+[\"9. Now, we need to find the initial number of vacuum cleaners (total_v). We are given that Melanie has 5 left at the end, so: remaining_vacuums = initial_vacuums - total_sold\n      10. Substitute this into the previous equation: remaining_vacuums + Total_sold = initial_vacuums - Total_sold\n       11. Plug in the values we've determined so far: 5 +\", 111, 0.8535240217584218]
+Path: Node33Node166" color=red shape=box]
+	Node33 -> Node167 [label=Node33Node167]
+	Node167 [label="V:9, H:10, Flag:True
+['9. Now, we know that Melanie has 5 vacuum cleaners left after visiting all houses. So, we can write this as: \n         5 = (4/3 * total_v) + 4 - 2 / (total_v)\n        10. We want to find the initial', 66, 0.4609968986118196]
+Path: Node33Node167" color=red shape=box]
+	Node122 -> Node168 [label=Node122Node168]
+	Node168 [label="V:2, H:7, Flag:False
+['7. values into the equation. We get: (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red', 45, 0.9729118034925579]
+Path: Node122Node168" color=black shape=box]
+	Node122 -> Node169 [label=Node122Node169]
+	Node169 [label="V:2, H:7, Flag:False
+['calculated values into the equation: (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red_house_sales) - Remaining_vacuum_cleaners = 5\n        7. Solve for Initial_vacuum', 72, 0.026023761443273785]
+Path: Node122Node169" color=black shape=box]
+	Node122 -> Node170 [label=Node122Node170]
+	Node170 [label="V:2, H:6, Flag:False
+[\"7. values we've calculated into the equation and solve for the initial number of vacuum cleaners: Initial_vacuum_cleaners = (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red_house_sales) - Remaining_vacuum_cleaners\n        8. Simplify the equation by moving all terms with the unknown variable\", 98, 0.14980752747733628]
+Path: Node122Node170" color=black shape=box]
+	Node122 -> Node171 [label=Node122Node171]
+	Node171 [label="V:2, H:5, Flag:False
+['values we have calculated to solve for Initial_vacuum_cleaners:\n         \n        (1/3) * Initial_vacuum_cleaners = Green_house_sales, so we get: (1/3) * Initial_vacuum_cleaners = 2 * Red_house', 67, 0.9220059623551913]
+Path: Node122Node171" color=black shape=box]
+	Node122 -> Node172 [label=Node122Node172]
+	Node172 [label="V:2, H:3, Flag:False
+['values calculated previously: Initial_vacuum_cleaners = (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red_house_sales) - Remaining_vacuum_cleaners\n        7. Solve for the initial number of vacuum cleaners: Initial_v', 82, 0.5465198647052161]
+Path: Node122Node172" color=black shape=box]
+	Node122 -> Node173 [label=Node122Node173]
+	Node173 [label="V:1, H:0, Flag:True
+['calculated values into the equation: (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red_house_sales) - Remaining_vacuum_cleaners = 5\n        7. Solve for the initial number of vacuum cleaners: Initial_vacuum_cleaners ≈ 10.33, which is approximately 10.', 101, 0.24437911856356054]
+Path: Node122Node173" color=green shape=box]
+	Node122 -> Node174 [label=Node122Node174]
+	Node174 [label="V:1, H:0, Flag:True
+['calculated values into the equation: (1/3) * Initial_vacuum_cleaners + 2 + 0.5 * ((Initial_vacuum_cleaners - Green_house_sales) / 2) - Remaining_vacuum_cleaners = 5\n        7. Now, solve for the unknown initial quantity: Initial_vacuum_cleaners ≈ 15', 100, 0.6800614788468268]
+Path: Node122Node174" color=green shape=box]
+	Node172 -> Node175 [label=Node172Node175]
+	Node175 [label="V:8, H:8, Flag:True
+['8. Calculate: Initial_vacuum_cleaners = 5 + 2 + (1/2) * (Initial_vacuum_cleaners - 3) - 5\n        9. Simplify the equation: Initial_vacuum_cleaners = 7 + (1/2) * (Initial_vac', 75, 0.12962068989372455]
+Path: Node172Node175" color=red shape=box]
+	Node172 -> Node176 [label=Node172Node176]
+	Node176 [label="V:8, H:9, Flag:True
+['8. Substitute all calculated values into the equation and solve for the unknown variable: Initial_vacuum_cleaners = (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - Red_house_sales) - Remaining_vacuum_cleaners\n        9. Rear', 84, 0.35997022139756596]
+Path: Node172Node176" color=red shape=box]
+	Node172 -> Node177 [label=Node172Node177]
+	Node177 [label="V:6, H:0, Flag:False
+['8. Calculate the final answer: Initial_vacuum_cleaners = 15\n        So, Melanie started with 15 vacuum cleaners.', 72, 0.4003247137752226]
+Path: Node172Node177" color=green shape=box]
+	Node172 -> Node178 [label=Node172Node178]
+	Node178 [label="V:8, H:8, Flag:True
+['8. Calculate: Initial_vacuum_cleaners = 5 + 2 + (1/2) * (Initial_vacuum_cleaners - 3) - 5\n        9. Simplify the equation by moving the constant terms to one side and the variable term to the other side: \n         5 + 2 + (1/2) * Initial_vacuum_', 88, 0.039903762399558285]
+Path: Node172Node178" color=red shape=box]
+	Node172 -> Node179 [label=Node172Node179]
+	Node179 [label="V:8, H:7, Flag:True
+['8. Calculate: Initial_vacuum_cleaners = 5 + 2 + (1/2) * (Initial_vacuum_cleaners - 3) - 5\n        9. Simplify the equation further by factoring out Initial_vacuum_cleaners from the last term: Initial_vacuum_cleaners = 5 + 2 + (1/2) * (', 91, 0.6978230068004558]
+Path: Node172Node179" color=red shape=box]
+	Node172 -> Node180 [label=Node172Node180]
+	Node180 [label="V:8, H:7, Flag:True
+['8. Calculate: Initial_vacuum_cleaners = 5 + 2 + (1/2) * (Initial_vacuum_cleaners - 3) -', 41, 0.2618080440368513]
+Path: Node172Node180" color=red shape=box]
+	Node172 -> Node181 [label=Node172Node181]
+	Node181 [label="V:8, H:8, Flag:True
+['8. Substitute all values and solve for the equation we just created: Initial_vacuum_cleaners = (1/3) * Initial_vacuum_cleaners + 2 + (1/2) * (Initial_vacuum_cleaners - 2) - 5\n        9. Simplify the equation and solve for Initial_vacuum_', 83, 0.7861513439934913]
+Path: Node172Node181" color=red shape=box]
+}

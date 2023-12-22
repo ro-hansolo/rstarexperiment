@@ -1,0 +1,45 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Let's first find out how many articles Meredith wrote on Tuesday. She wrote 2/5 times more than her Monday output, which was 5 articles. So, we can multiply 5 by 2/5 to get this amount. (5 * 2/5) = 4
+        2. On Wednesday, she wrote twice the number of articles",Node0,5,9,5,14,0.614122509905767,80,False
+" 1. First, let's find out how many articles Meredith wrote on Tuesday. She wrote 2/5 times more than Monday's 5 articles, so we need to multiply 5 by 2/5.
+           5 * (2/5) = 4 articles
+        2. Now that we know she wrote 4 articles on Tuesday and 5 on Monday, we can calculate the",Node2,5,9,5,14,0.14601536443855823,87,False
+" 1. On Monday, Meredith wrote 5 articles. Each article takes an average of 4 hours to research and write. So, for these 5 articles, she spent 5 * 4 = 20",Node3,5,10,5,15,0.6395035191863376,46,False
+" 1. First, we need to determine how many articles Meredith wrote on Tuesday and then on Wednesday. We know that she wrote 2/5 times more on Tuesday than Monday, so when she wrote 5 articles on Monday, she wrote 5 * (2/5) = 4 articles on Tuesday.
+        2. On Wednesday, she wrote twice the number of articles as on Tuesday, which is 4 * 2 = 8 articles.
+        3. Now we have the total number of articles written in three days: Monday's",Node5,1,7,1,8,0.6023931910717443,116,False
+" 1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.
+        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote",Node6,2,8,2,10,0.6749117392209382,70,False
+" 1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.
+        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote 5 articles on Monday, we can find out how many more she wrote on Tuesday: (2 / 5) * 5 = 2 additional articles. So, on Tuesday she wrote a total of 5 + 2 = 7 articles. For each article on Tuesday, the time spent is still",Node15,2,9,4,13,0.7716359602858456,63,False
+" 1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.
+        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote 5 articles on Monday, this means she wrote (2/5) * 5 = 2 additional articles on Tuesday. So, the total number of articles written on Tuesday is 5 + 2 = 7 articles. The time spent on research and writing for these 7 articles would be 7 * 4 = 28 hours.
+        3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday",Node17,2,7,4,11,0.01778347402730962,89,False
+" 1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.
+        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote 5 articles on Monday, this means she wrote 5 * (2/5) = 2 extra articles on Tuesday. In total, she wrote 5 + 2 = 7 articles on Tuesday. Using the same",Node18,2,8,4,12,0.7247524698519024,45,False
+" 1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.
+        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote 5 articles on Monday, we need to find 2/5 of that number: (2/5) * 5 = 2. So, she wrote 2 additional articles on Tuesday compared to Monday.
+        3. She now wrote a total of 5 + 2 = 7 articles on Tuesday. The time spent on these 2 extra articles is",Node20,2,8,4,12,0.7022464079602809,76,False
+" 1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.
+        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote 5 articles on Monday, this means she wrote (2/5) * 5 = 2 additional articles on Tuesday. So, the total number of articles written on Tuesday is 5 + 2 = 7 articles. The time spent on research and writing for these 7 articles would be 7 * 4 = 28 hours.
+        3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday 4. We know that Meredith wrote 7 articles on Tuesday, so twice as many would be 7 * 2 = 14 articles on Wednesday. The time spent on research and writing for these 14",Node23,1,2,5,7,0.4250980870231601,46,False
+" 1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.
+        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote 5 articles on Monday, this means she wrote (2/5) * 5 = 2 additional articles on Tuesday. So, the total number of articles written on Tuesday is 5 + 2 = 7 articles. The time spent on research and writing for these 7 articles would be 7 * 4 = 28 hours.
+        3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday 4. She wrote 7 articles on Tuesday, so twice that amount is 2 * 7 = 14 articles on Wednesday. The time spent on research and writing for these 14 articles would be 14 * 4 = 56 hours.
+        Now, let's add up the total hours she spent in the three days:
+        20 (Monday) + 28 (",Node24,1,1,5,6,0.33831727120053157,88,False
+" 1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.
+        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote 5 articles on Monday, this means she wrote (2/5) * 5 = 2 additional articles on Tuesday. So, the total number of articles written on Tuesday is 5 + 2 = 7 articles. The time spent on research and writing for these 7 articles would be 7 * 4 = 28 hours.
+        3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday (which was 7). So, she wrote 7 * 2 = 14 articles on Wednesday. The time spent on research and writing for these 14 articles would be 14 * 4 = 56 hours.
+        Now, we need to add the total hours she spent in each day: Monday's 20 hours + Tuesday's 28 hours + Wednesday's 56 hours =",Node26,1,1,5,6,0.38605905243622085,92,False
+" 1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.
+        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote 5 articles on Monday, this means she wrote (2/5) * 5 = 2 additional articles on Tuesday. So, the total number of articles written on Tuesday is 5 + 2 = 7 articles. The time spent on research and writing for these 7 articles would be 7 * 4 = 28 hours.
+        3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday 4. She wrote 7 articles on Tuesday, so twice that amount is 2 * 7 = 14 articles on Wednesday. The time spent on research and writing for these 14 articles would be 14 * 4 = 56 hours.
+        Now, let's add up the total hours she spent in the three days:
+        20 (Monday) + 28 ( 30 (Tuesday) + 56 (Wednesday) = 104 hours",Node28,1,1,6,7,0.9032490614669496,58,False
+" 1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.
+        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote 5 articles on Monday, this means she wrote (2/5) * 5 = 2 additional articles on Tuesday. So, the total number of articles written on Tuesday is 5 + 2 = 7 articles. The time spent on research and writing for these 7 articles would be 7 * 4 = 28 hours.
+        3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday 4. She wrote 7 articles on Tuesday, so twice that amount is 2 * 7 = 14 articles on Wednesday. The time spent on research and writing for these 14 articles would be 14 * 4 = 56 hours.
+        Now, let's add up the total hours she spent in the three days:
+        20 (Monday) + 28 ( 28 (Tuesday) + 56 (Wednesday) = 104 hours.
+        Meredith spent a total of 104 hours writing articles in those three days.",Node32,1,0,6,6,0.8578260853376446,75,False

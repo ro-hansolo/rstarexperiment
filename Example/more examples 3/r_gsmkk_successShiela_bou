@@ -1,0 +1,202 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Shiela bought five cell phones for $150 each for a 3-month installment. A 2% interest will be charged for each unit. How much will Shiela pay each month for 3 months? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:6, H:10, Flag:True
+['1. Calculate the total cost of the cell phones: (Number of cell phones * Cost per phone) + Interest\n        Number of cell phones = 5, Cost per phone = $150, Interest rate =', 47, 0.8858922743236418]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:7, Flag:False
+[\"1. First, let's calculate the total cost of the cell phones without any interest. To do this, multiply the number of units (5) by the price per unit ($150). So, 5 * $150 = $750.\n        2. Next, we need to find out how\", 69, 0.06869778274772387]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:8, Flag:True
+[\"1. Let's first determine the total cost of the cell phones before interest. Sheila bought five phones at $150 each, so she spent 5 * $150 = $750 in total.\n        2. Next, we need to calculate the interest she will pay. A 2% interest rate is 0.02. With a 3-month installment plan for each of the five units (phones), Shiela will be charged 3 * 0.02 = $0.06\", 114, 0.9916995992109955]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:8, Flag:False
+[\"1. First, let's find the total cost of all the cell phones without the interest. To do this, multiply the number of units (5) by the price per unit ($150). So, 5 * $150 = $750.\n        Now we have the initial amount Shiela will pay for the cell phones, which is $750.\n        2. Next, let's calculate the interest she has to pay. To do this, multiply the total cost ($7\", 111, 0.5168108705421991]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:9, Flag:False
+['1. First, we need to calculate the total cost of all 5 cell phones before considering any interest. We do this by multiplying the number of units (5) by their individual price ($150). This gives us 5 * $150 =', 55, 0.7435153474758865]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:6, H:9, Flag:True
+['1. Calculate the total cost of the cell phones.\n           The price per phone is $150 and she bought five of them, so we multiply $150 by 5.\n           5 * $150 = $750 (total cost)\n\n        2. Determine the interest amount for each unit.\n           2% interest is applied to each phone, so we will calculate this part by getting 2', 94, 0.8037915171642143]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:3, H:7, Flag:False
+[\"1. First, let's calculate the total cost of the cell phones without any additional charges. The price per phone is $150 and she bought five phones, so the total cost is 5 * $150 = $750.\n        2. Now, we need to consider the interest charged on each unit. A 2% interest will be added for each of the five cell phones. To calculate this, multiply the price per phone by the interest\", 99, 0.346240262773292]
+Path: StartNode6" color=black shape=box]
+	Node1 -> Node7 [label=Node1Node7]
+	Node7 [label="V:4, H:8, Flag:False
+['3. much interest Shiela will pay for each unit. To do this, multiply the number of units (5) by the interest rate (2%) as a decimal (0.02). So, 5 * 0.02 =', 53, 0.34182333740727744]
+Path: Node1Node7" color=black shape=box]
+	Node1 -> Node8 [label=Node1Node8]
+	Node8 [label="V:2, H:6, Flag:False
+[\"3. much interest will be charged on each cell phone. We'll use a 2% rate for this calculation. Multiply the price per unit ($150) by the interest rate (0.02). The result is $150 * 0.02 = $3.\n        4. Now, let's find the total cost including interest. To do this, add the calculated interest amount from step 3 to the original cost from step 1 ($750\", 105, 0.8849402561466666]
+Path: Node1Node8" color=black shape=box]
+	Node1 -> Node9 [label=Node1Node9]
+	Node9 [label="V:5, H:8, Flag:False
+['3. much interest Shiela will have to pay. She has 5 cell phones with a 2% interest rate. To calculate the total interest, multiply the number of units (5', 40, 0.7009134289125113]
+Path: Node1Node9" color=black shape=box]
+	Node1 -> Node10 [label=Node1Node10]
+	Node10 [label="V:4, H:7, Flag:False
+[\"3. much Shiela will pay in total with the interest. To do this, multiply the total cost without interest ($750) by the interest rate (2%). We'll convert 2% to\", 46, 0.3729352555930674]
+Path: Node1Node10" color=black shape=box]
+	Node1 -> Node11 [label=Node1Node11]
+	Node11 [label="V:2, H:6, Flag:False
+[\"3. much interest Shiela will pay for each unit. To do this, multiply the price of one unit ($150) by the interest rate (2%). So, $150 * 0.02 = $3.\n        4. Now, let's calculate the total interest she will pay. Multiply the number of units (5) by the interest per unit ($3). So, 5 * $3 = $15.\", 102, 0.06238830288693631]
+Path: Node1Node11" color=black shape=box]
+	Node1 -> Node12 [label=Node1Node12]
+	Node12 [label="V:3, H:7, Flag:True
+[\"3. much money Shiela will pay for each month over the 3-month installment period. To do this, divide the total cost (without interest) by the number of months (3). So, $750 / 3 = $250 per month.\n        4. Now, we should include the 2% interest in our calculation. We'll do this by multiplying the monthly payment ($250) by 1 + the interest rate (1 +\", 103, 0.6598644225633232]
+Path: Node1Node12" color=red shape=box]
+	Node1 -> Node13 [label=Node1Node13]
+	Node13 [label="V:2, H:6, Flag:False
+['3. much interest Shiela will pay for each unit. To do this, multiply the price of one unit ($150) by the interest rate (2%). So, $150 * 0.02 = $3.\n        4', 56, 0.015148156492707177]
+Path: Node1Node13" color=black shape=box]
+	Node3 -> Node14 [label=Node3Node14]
+	Node14 [label="V:9, H:9, Flag:True
+['3. Finally, add the interest to the original amount to find the total amount Shiela will have to pay for all 3 months. So, $750 + $15 = $765.\n        Sh', 48, 0.3651106067560709]
+Path: Node3Node14" color=red shape=box]
+	Node3 -> Node15 [label=Node3Node15]
+	Node15 [label="V:9, H:9, Flag:True
+[\"3. Finally, let's add the interest amount from step 2 to the initial amount calculated in step 1 ($750). This will give us the final amount Shiela needs to pay for all three months. So, $750 (initial) + $15 (interest) = $765.\n        AI: In total, Shiela will have to pay $765 over 3 months. To divide this into equal monthly payments\", 99, 0.4479325393317052]
+Path: Node3Node15" color=red shape=box]
+	Node3 -> Node16 [label=Node3Node16]
+	Node16 [label="V:8, H:10, Flag:True
+[\"3. Finally, let's sum up the initial amount and the interest to find out the total amount she will pay each month. Add $750 to the interest ($15), which gives us a total of $765. This is how much Shiela will have to pay for 3 months (12 installments) divided by 12, as follows: $765 / 1\", 87, 0.7901888554301952]
+Path: Node3Node16" color=red shape=box]
+	Node3 -> Node17 [label=Node3Node17]
+	Node17 [label="V:8, H:8, Flag:True
+['3. Finally, add the interest to the initial amount to find the total amount Shiela needs to pay each month for 3 months. Adding $15 (interest) to $750 (initial amount), we get $765.\n        So, Shiela will pay $765 in total over the three-month period, which means she will pay approximately $255 per month ($765 / 3 months).', 108, 0.3725892710311366]
+Path: Node3Node17" color=red shape=box]
+	Node3 -> Node18 [label=Node3Node18]
+	Node18 [label="V:8, H:8, Flag:True
+['3. Finally, add the interest to the initial amount to find the final payment Shiela needs to make each month for 3 months. Add $750 (initial amount) and $15 (interest). So, $750 + $15 = $765.\n        Shiela will pay $765 each month for 3 months in total.', 99, 0.05504177654043718]
+Path: Node3Node18" color=red shape=box]
+	Node3 -> Node19 [label=Node3Node19]
+	Node19 [label="V:10, H:10, Flag:True
+[\"3. Finally, let's find the total cost Shiela will have to pay, including both the initial amount and the interest. Add the original $750 to the interest amount: $750 + $15 = $765.\n        The final sum she needs to pay each month is divided by 3 months, which is $7\", 76, 0.8265753115929285]
+Path: Node3Node19" color=red shape=box]
+	Node3 -> Node20 [label=Node3Node20]
+	Node20 [label="V:8, H:8, Flag:True
+['3. Finally, add the interest to the original cost of the cell phones ($750) to find out the final amount Shiela will pay each month for 3 months. So, $750 + $15 = $765 per month.', 83, 0.6157973095914694]
+Path: Node3Node20" color=red shape=box]
+	Node6 -> Node21 [label=Node6Node21]
+	Node21 [label="V:6, H:9, Flag:True
+['rate: $150 * 0.02 = $3.\n        3. Add the interest amount to the total cost of the cell phones without any additional charges: $750 + $3 = $753.\n        4. Shiela will pay for this over a period of three months, so we need to divide the total cost by the number of months to find out how much she needs to pay each month: $753 / 3 = $2', 103, 0.2755990278511473]
+Path: Node6Node21" color=red shape=box]
+	Node6 -> Node22 [label=Node6Node22]
+	Node22 [label="V:6, H:9, Flag:True
+[\"rate: $150 * 0.02 = $3.\n        3. Add this extra charge to each phone's initial cost: $750 + $3 = $753 per cell phone.\n        4. Shiela will pay this total price of $753 for the three-month installment plan, so\", 75, 0.8532746137651998]
+Path: Node6Node22" color=red shape=box]
+	Node6 -> Node23 [label=Node6Node23]
+	Node23 [label="V:2, H:5, Flag:False
+['rate: 5 * $150 * 0.02 = $30.\n        3. Add the interest to the total cost of the cell phones: $750 + $30 = $780.\n        4. Shiela will pay this amount over a period of 3 months', 68, 0.17483401821668]
+Path: Node6Node23" color=black shape=box]
+	Node6 -> Node24 [label=Node6Node24]
+	Node24 [label="V:6, H:9, Flag:True
+[\"rate: $150 * 0.02 = $3.\n        3. Next, add the interest amount to the total cost of the cell phones: $750 + $3 (interest) = $753. This is Shiela's final total payment for all five phones and the interest.\n        4. Since this cost needs to be\", 79, 0.8512381488546246]
+Path: Node6Node24" color=red shape=box]
+	Node6 -> Node25 [label=Node6Node25]
+	Node25 [label="V:6, H:9, Flag:True
+['rate: $150 * 2% = $150 * 0.02 = $3 per phone.\n        3. Add the interest cost to the total price of the phones without any additional charges: $750 (total) + $3 (', 58, 0.7373702082247526]
+Path: Node6Node25" color=red shape=box]
+	Node6 -> Node26 [label=Node6Node26]
+	Node26 [label="V:10, H:9, Flag:True
+[\"rate. So, 5 * ($150 * 0.02) = $75.\n        3. Now, let's find the total cost including all five units and the added interest: $750 (the original price of the phones) + $75 (interest on each unit) = $825.\n        4\", 76, 0.9909613221038205]
+Path: Node6Node26" color=red shape=box]
+	Node6 -> Node27 [label=Node6Node27]
+	Node27 [label="V:2, H:7, Flag:False
+['rate: 5 * $150 * 0.02 = $30.\n        3. Adding this extra cost to the initial total cost gives us the final total cost including the interest: $750 + $30 =', 53, 0.3571028507453742]
+Path: Node6Node27" color=black shape=box]
+	Node8 -> Node28 [label=Node8Node28]
+	Node28 [label="V:6, H:6, Flag:False
+['5. Finally, we need to divide the total cost by the number of months (3) to determine how much Shiela will pay each month. So, $850 / 3 = $283.33.\n        Shiela will pay $283.33 each month for 3 months.', 118, 0.017079438223248977]
+Path: Node8Node28" color=black shape=box]
+	Node8 -> Node29 [label=Node8Node29]
+	Node29 [label="V:6, H:6, Flag:False
+['5. Finally, we need to divide the total cost by the number of months (3) to determine how much Shiela will pay each month. So, $850 / 3 = $283.33.\n        Shiela will pay $283.33 each month for 3 months.', 80, 0.12892688130569419]
+Path: Node8Node29" color=black shape=box]
+	Node8 -> Node30 [label=Node8Node30]
+	Node30 [label="V:4, H:4, Flag:False
+['5. Finally, we need to divide the total cost by the number of months (3) to determine how much Shiela will pay each month for 3 months. So, $900 / 3 = $300 per month.\n        Shiela will pay $300 each month', 65, 0.5253300847760292]
+Path: Node8Node30" color=black shape=box]
+	Node8 -> Node31 [label=Node8Node31]
+	Node31 [label="V:6, H:6, Flag:False
+['5. Finally, we need to divide the total cost by the number of months (3) to determine how much Shiela will pay each month. So, $850 / 3 = $283.33.\n        Shiela will pay $283.33 each month for 3 months.', 119, 0.2991056793941931]
+Path: Node8Node31" color=black shape=box]
+	Node8 -> Node32 [label=Node8Node32]
+	Node32 [label="V:4, H:4, Flag:False
+[\"5. Finally, we'll divide the total cost by the number of months (3) to determine how much Shiela will pay each month. So, $900 / 3 = $300 per month.\n        In conclusion, Shiela will pay $300 each month for 3 months in installments as part of her cell phone purchase.\", 86, 0.4642992273407609]
+Path: Node8Node32" color=black shape=box]
+	Node8 -> Node33 [label=Node8Node33]
+	Node33 [label="V:6, H:6, Flag:False
+['5. Finally, we need to divide the total cost by the number of installments (3 months) to determine how much Shiela will pay each month. So, $850 / 3 = $283.33.\n        Shiela will pay $283.33 each month for 3 months.', 117, 0.17490501962520177]
+Path: Node8Node33" color=black shape=box]
+	Node8 -> Node34 [label=Node8Node34]
+	Node34 [label="V:6, H:6, Flag:False
+['5. Finally, we need to divide the total cost by the number of months (3) to determine how much Shiela will pay each month. So, $850 / 3 = $283.33.\n        Shiela will pay $283.', 61, 0.18670616606388546]
+Path: Node8Node34" color=black shape=box]
+	Node11 -> Node35 [label=Node11Node35]
+	Node35 [label="V:1, H:2, Flag:False
+[\"5. Finally, we need to add the total cost of cell phones without any interest ($750) with the total interest she will pay ($15). This gives us her overall cost which is $765.\n        6. To divide this amount equally over 3 months, we'll need to find out how\", 68, 0.8291798709816177]
+Path: Node11Node35" color=black shape=box]
+	Node11 -> Node36 [label=Node11Node36]
+	Node36 [label="V:10, H:10, Flag:True
+['5. Add the interest amount to the initial cost of the phones without any interest. So, $750 + $15 = $765.\n        This is the total amount Shiela will pay in 3 months for these cell phones at $27 per month.', 110, 0.8815177911794949]
+Path: Node11Node36" color=red shape=box]
+	Node11 -> Node37 [label=Node11Node37]
+	Node37 [label="V:1, H:2, Flag:False
+['5. Finally, we need to add the interest to the original cost to find the total cost including interest. Add $750 (initial price) to $15 (interest amount), giving us $765 as the new total cost with interest.\n        6. We already know that Shiela will pay this amount over three months. To break down her payment, we simply divide the total cost ($', 86, 0.9773219718964952]
+Path: Node11Node37" color=black shape=box]
+	Node11 -> Node38 [label=Node11Node38]
+	Node38 [label="V:1, H:2, Flag:False
+[\"5. Finally, add the total cost without any interest and the interest to find out the total amount Shiela has to pay in 3 months. Total cost without interest is $750, and the total interest is $15. So, $750 + $15 = $765.\n        6. To distribute this payment over 3 months, we'll divide it by the number of\", 88, 0.8272328552686403]
+Path: Node11Node38" color=black shape=box]
+	Node11 -> Node39 [label=Node11Node39]
+	Node39 [label="V:1, H:2, Flag:False
+['5. Finally, add the initial cost without interest ($750) to the total interest paid ($15). This is the amount Shiela will pay for each month over the 3 months installment. So, $750 + $15 = $765.', 81, 0.9425668017609379]
+Path: Node11Node39" color=black shape=box]
+	Node11 -> Node40 [label=Node11Node40]
+	Node40 [label="V:1, H:2, Flag:False
+['5. Finally, add the total cost without interest ($750) to the total interest she will pay ($15). This gives us the final amount Shiela needs to pay for all 3 months. So, $750 + $15 = $765.', 108, 0.4563958314330502]
+Path: Node11Node40" color=black shape=box]
+	Node11 -> Node41 [label=Node11Node41]
+	Node41 [label="V:10, H:10, Flag:True
+['5. Finally, add the total cost without interest to the total interest amount to find out the final price Shiela needs to pay. Adding $750 and $15 gives us $76', 43, 0.31736269677377926]
+Path: Node11Node41" color=red shape=box]
+	Node35 -> Node42 [label=Node35Node42]
+	Node42 [label="V:0, H:0, Flag:False
+['7. much she should pay each month. Divide the total cost by the number of months (3). So, $765 / 3 = $255.\n        Shiela will pay $255 each month for 3 months in installments.', 105, 0.42238572736482327]
+Path: Node35Node42" color=green shape=box]
+	Node35 -> Node43 [label=Node35Node43]
+	Node43 [label="V:0, H:0, Flag:False
+['7. much she should pay each month. So, divide the total cost by the number of months (3). Therefore, $765 / 3 = $255.\n        Shiela will pay $255 each month for', 53, 0.5576835307304131]
+Path: Node35Node43" color=green shape=box]
+	Node35 -> Node44 [label=Node35Node44]
+	Node44 [label="V:0, H:0, Flag:False
+['7. much each monthly payment should be. To do this, divide the overall cost ($765) by the number of months (3). So, $765 / 3 = $255.\n        Shiela will pay $255 each month for 3 months to cover the costs associated with these cell phones.', 100, 0.4730800030669501]
+Path: Node35Node44" color=green shape=box]
+	Node35 -> Node45 [label=Node35Node45]
+	Node45 [label="V:0, H:0, Flag:False
+['7. much she needs to pay each month. Divide the overall cost by the number of months (3). So, $765 / 3 = $255.\n        Shiela will pay $255 each month for 3 months.', 77, 0.5339573891106122]
+Path: Node35Node45" color=green shape=box]
+	Node35 -> Node46 [label=Node35Node46]
+	Node46 [label="V:0, H:0, Flag:False
+['7. much she needs to pay each month. Divide the overall cost by the number of months (3). So, $765 / 3 = $255.\n        Shiela will pay $255 each month for 3 months.', 108, 0.017388718091047584]
+Path: Node35Node46" color=green shape=box]
+	Node35 -> Node47 [label=Node35Node47]
+	Node47 [label="V:0, H:0, Flag:False
+['7. much she should pay per month. Divide the total cost by the number of months (3). So, $765 / 3 = $255.\n        8. Therefore, Shiela will pay $255 each month for 3 months as part of her installment plan.', 97, 0.6148318109083365]
+Path: Node35Node47" color=green shape=box]
+	Node35 -> Node48 [label=Node35Node48]
+	Node48 [label="V:0, H:0, Flag:False
+['7. much money Shiela should pay per month. So, divide the overall cost by the number of months (3). Therefore, $765 / 3 = $255.', 110, 0.843059746655053]
+Path: Node35Node48" color=green shape=box]
+}

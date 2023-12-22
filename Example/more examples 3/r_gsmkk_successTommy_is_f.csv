@@ -1,0 +1,24 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's calculate the total amount raised from selling brownies. To do this, we need to multiply the number of brownies sold (43) by their price per slice ($3). So, 43 * $3 = $129.
+        2. Next, let's find out how much money Tommy raises from selling cheesecakes. We follow a similar process as with brownies: multiply the number of cheesecake slices sold (23) by their price per slice ($4",Node0,0,2,0,2,0.02572430841410045,114,False
+" 1. First, we need to calculate the total revenue from selling brownies. To do this, multiply the number of brownies (43) by the price per slice ($3).
+           Total_brownie_revenue = Brownies * Price/slice
+           Total_brownie_revenue = 43 * $3
+           Total_brownie_revenue = $129
+
+        2. Then, we need to do the same for chees",Node1,0,2,0,2,0.8461747904788792,104,False
+" 1. First, let's determine the total revenue from selling brownies. To do this, we multiply the number of brownies sold (43) by their price per slice ($3).
+           Total revenue for brownies =",Node3,0,9,0,9,0.4251152252917739,50,False
+" 1. First, let's calculate the total amount raised from selling brownies.
+           To do this, we need to multiply the number of brownies sold (43) by their price per slice ($3).
+           43 * $3 = $129
+        So, Tommy raises $129 from selling brownies.
+
+        2. Now, let's calculate the total amount raised from selling cheesecakes.
+           To",Node4,0,2,0,2,0.36258929874437174,98,False
+" 1. First, we need to determine the total amount Tommy will earn from selling brownies. The price per brownie slice is $3, and he sold 43 brownies. So, multiply the number of brownies (43) by the cost per brownie ($3). This gives us: 43 * 3 = $129
+        2. Now, we need to calculate the total amount from cheesecake sales. Tommy sold 23 cheesecakes at a price of $4 per slice. Multiply the number of",Node5,0,2,0,2,0.9527308634022038,119,False
+" 1. First, we need to calculate the total revenue from both types of baked goods. To do this, multiply the number of each item sold by its respective price.
+            Revenue for brownies = (Number of brownies sold) * ($3 per slice) = 43 * $3 = $129
+            Revenue for cheesecakes = (Number of cheesecake slices sold) * ($4 per slice) = 23 * $4 = $92
+        2.",Node6,0,0,0,0,0.8063517794133074,111,False

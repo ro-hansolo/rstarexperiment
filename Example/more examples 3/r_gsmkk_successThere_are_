@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: There are twice as many boys as girls at Dr. Wertz's school. If there are 60 girls and 5 students to every teacher, how many teachers are there? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:2, Flag:False
+['1. First, we need to find the number of boys since there are twice as many boys as girls. So, we multiply the number of girls by 2: 60 * 2 = 120 boys.\n        2. Now we have the total number of students, which is both girls and boys combined: 60 girls + 120 boys = 180 students.\n        3. Finally, to find out how', 96, 0.887515237553486]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:8, Flag:False
+[\"1. We know the ratio of boys to girls is 2:1, which means for each girl, there are two boys (twice as many).\n        2. There are 60 girls at Dr. Wertz's school. To find the number of boys, multip\", 60, 0.8080878210163176]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:9, H:9, Flag:True
+['1. We know that twice as many boys as girls exist.\n        2. We have a given number of girls, which is 60, and we know their ratio with the boys (therefore also known as \"the rest\" or simply, \"others\").\n        3. We are told that there are 5 students to every teacher. Since there are more boys than girls, it implies that both genders\' ratio must be maintained among those students.\n        4', 98, 0.8528907074903704]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:1, Flag:False
+['1. We know there are twice as many boys as girls. So, if there are 60 girls, there must be 2 * 60 = 120 boys at the school.\n        2. The total number of students is the sum of both genders, which is 60 (girls) + 120 (boys) = 180', 81, 0.14577339255867283]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:4, Flag:False
+['1. We know there are twice as many boys as girls. So, if there are 60 girls, there must be 2 * 60 = 120 boys at the school.', 44, 0.015275967389310585]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:3, Flag:False
+['1. We know there are twice as many boys as girls. So, if there are 60 girls, there must be 2 * 60 = 120 boys at the school.\n        2. The total number of students is the sum of both genders, which is 60 (girls) + 120', 73, 0.08281419534343348]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:1, H:1, Flag:False
+['1. We know there are twice as many boys as girls. So, if there are 60 girls, then there will be 2 * 60 = 120 boys.\n        2. The total number of students is the sum of both genders, which is 60 (girls) + 120 (boys) = 180 students in total.\n        3. There are 5 students per teacher. To find out how many teachers are needed to accommodate all these students,', 109, 0.34983626526141454]
+Path: StartNode6" color=black shape=box]
+	Node3 -> Node7 [label=Node3Node7]
+	Node7 [label="V:0, H:1, Flag:False
+['3. Every teacher is assigned to take care of 5 students each. To find out how many teachers are needed for all 180 students, we can divide the number of students by the number of students per teacher. So, 180 (total students) / 5 (students per teacher) = 36\n        4. There are 36 teachers required at Dr. W', 84, 0.9740645150573338]
+Path: Node3Node7" color=black shape=box]
+	Node3 -> Node8 [label=Node3Node8]
+	Node8 [label="V:1, H:3, Flag:False
+['3. There are 5 students per teacher. To find out how many teachers are needed to teach all these students, we need to divide the total number of students by the number of students per teacher: 1', 43, 0.3000529843248717]
+Path: Node3Node8" color=black shape=box]
+	Node3 -> Node9 [label=Node3Node9]
+	Node9 [label="V:0, H:0, Flag:False
+[\"3. Each teacher has 5 students to take care of. To find out how many teachers are needed, we need to divide the total number of students by the number of students per teacher. So, 180 students / 5 students per teacher = 36 teachers\n        Therefore, there are 36 teachers at Dr. Wertz's school.\", 100, 0.603285040790687]
+Path: Node3Node9" color=green shape=box]
+	Node3 -> Node10 [label=Node3Node10]
+	Node10 [label="V:0, H:0, Flag:False
+[\"3. There are 5 students per teacher. To find out how many teachers are needed for all these students, we can divide the total number of students by the number of students per teacher: 180 / 5 = 36\n        4. Therefore, there are 36 teachers at Dr. Wertz's school to accommodate all the students.\", 100, 0.21559530917033132]
+Path: Node3Node10" color=green shape=box]
+	Node3 -> Node11 [label=Node3Node11]
+	Node11 [label="V:1, H:2, Flag:False
+[\"3. There are 5 students per teacher. To find out how many teachers there are, we need to divide the total number of students by the number of students per teacher: 180 / 5 = 36\n        So, there are 36 teachers at Dr. Wertz's school.\", 109, 0.46102647977123223]
+Path: Node3Node11" color=black shape=box]
+	Node3 -> Node12 [label=Node3Node12]
+	Node12 [label="V:0, H:0, Flag:False
+[\"3. There are 5 students per teacher. To find out how many teachers are needed to teach all these students, we need to divide the total number of students by the number of students per teacher: 180 (total students) / 5 (students per teacher) = 36\n        4. Therefore, there are 36 teachers at Dr. Wertz's school.\", 108, 0.04442769425166848]
+Path: Node3Node12" color=green shape=box]
+	Node3 -> Node13 [label=Node3Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['3. Each teacher teaches 5 students. To determine the number of teachers, we need to divide the total number of students by the number of students per teacher: 180 students / 5 students per teacher = 36 teachers', 49, 0.7401345121314812]
+Path: Node3Node13" color=green shape=box]
+}

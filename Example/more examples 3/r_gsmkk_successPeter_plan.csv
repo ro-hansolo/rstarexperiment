@@ -1,0 +1,20 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's determine the total cost of going to the movies once. Peter spends $7 on a ticket and $7 on popcorn, so the combined cost is $7 + $7 = $14.
+        2. Now we know that he has $42 for the whole week. To find out how many times he can go to the movies, we need to divide his total budget by the cost of going once. So, $42 / $14 = 3.
+        3. Therefore, Peter can go to the movies",Node0,0,2,0,2,0.06536940306212147,120,False
+" 1. First, let's determine the total cost of going to the movies once. Peter spends $7 on a ticket and another $7 on popcorn, so the combined cost is $7 + $7 = $14.
+        2. Now that we know the cost for one visit, we need to find out how many times he can go with his $42 budget. To do this, divide Peter's total budget ($42) by the cost of going to the movies once ($14). So, $42 /",Node1,1,3,1,4,0.41051033016135696,115,False
+ 1. Let's first determine what his expenses are per visit by adding the cost of the ticket and the cost of popcorn together. This would be $7 (ticket) + $7 (,Node2,4,8,4,12,0.8489784407059969,42,False
+" 1. First, let's find out the cost of one movie visit including both the ticket and the popcorn. To do this, we add the cost of the ticket ($7) and the cost of the popcorn ($7). So, the total cost per visit is $7 + $7 = $14.
+        2. Peter has 42 dollars in total for the week. We want to find out how many times he can go to the movies with this amount. To do that, we",Node3,1,4,1,5,0.6096147968657758,107,False
+" 1. First, let's determine the total cost of going to the movies once, including both the ticket and the popcorn. To do this, we add the prices together: $7 (ticket) + $7 (popcorn) = $14.
+
+2. Next, we know that Peter has 42 dollars for the",Node4,2,7,2,9,0.8809205956116003,74,False
+" 1. First, let's calculate the total cost of both items (ticket and popcorn) together. We know that Peter spends $7 on a ticket and $7 on popcorn. So, the combined cost is $7 + $7 = $14.
+       
+        2. Now, we need to find out how many times he can go to the movies with his budget of",Node5,2,7,2,9,0.31563256669960127,85,False
+" 1. First, let's determine the total cost of going to the movies once. Peter spends $7 on a ticket and another $7 on popcorn, so the combined cost is $7 + $7 = $14.
+        2. Now we know that he has $42 for the whole week. To find out how many times he can go to the movies, we need to divide his total budget by the cost of going once. So, $42 / $14 =",Node6,3,3,3,6,0.2272140780463363,105,False
+" 1. First, let's determine the total cost of going to the movies once. Peter spends $7 on a ticket and $7 on popcorn, so the combined cost is $7 + $7 = $14.
+        2. Now we know that he has $42 for the whole week. To find out how many times he can go to the movies, we need to divide his total budget by the cost of going once. So, $42 / $14 = 3.
+        3. Therefore, Peter can go to the movies 3 times this week with his available budget.",Node7,0,0,0,0,0.11253612742478158,43,False

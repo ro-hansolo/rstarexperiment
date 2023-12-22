@@ -1,0 +1,146 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Vincent can buy flowers in packages of 3 for $2.50 or in packages of 2 for $1. How much money does he save by buying 18 flowers at the better price? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:9, H:5, Flag:True
+[\"1. First, let's determine the cost per flower for each option. For packages of 3, divide the total cost ($2.50) by the number of flowers (3). This gives us $2.50 / 3 = $0.83 per flower. Similarly, for packages of 2, divide the total cost ($1) by the number of flowers (2), which is $1 / 2 = $0.50 per\", 97, 0.4878372187071075]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:9, H:5, Flag:True
+[\"1. First, let's determine the cost per flower for each package type. For packages of 3, the cost is $2.50 divided by 3 flowers, which equals $0.83 per flower. For packages of 2, the cost is $1 divided by 2 flowers, which also\", 66, 0.026435758763020845]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:9, H:5, Flag:True
+[\"1. First, let's determine the cost per flower for each package type. For packages of 3, it costs $2.50 divided by 3 flowers, which is $2.50 / 3 = $0.83 per flower. For packages of 2\", 60, 0.11994533170867783]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:3, Flag:False
+[\"1. First, let's determine the cost of each flower type. For the package of 3 flowers, we have 3 flowers per package and a total cost of $2.50 for that package. So, the cost per flower is $2.50 / 3 = $0.83.\n        2. Similarly, for the package of 2 flowers, there are 2 flowers per package with a total cost of $1. The cost per flower here is $1 / 2 = $0.50.\n        3. Now\", 118, 0.37308319197715]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:9, H:5, Flag:True
+['1. First, we need to determine what the best option is - cheaper per flower and buy 18. We will compare the two options based on the cost of 18 flowers.\n        2. For 3-flower packages, Vincent spends $2.50 for 3 flowers, so he has $2.50 / 3 = $0.833 spent', 83, 0.8074478463132949]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:9, H:5, Flag:True
+[\"1. First, let's determine the cost per flower for each package type. For packages of 3, the cost is $2.50 divided by 3 flowers, which equals $0.83 per flower\", 46, 0.11235686505691145]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:9, H:5, Flag:True
+[\"1. First, let's determine the cost per flower for each package type. For packages of 3, the cost is $2.50 divided by 3 flowers, which equals $0.83 per flower. For packages of 2, the cost is $1 divided by\", 60, 0.11935920141332601]
+Path: StartNode6" color=red shape=box]
+	Node3 -> Node7 [label=Node3Node7]
+	Node7 [label="V:5, H:5, Flag:False
+[\"4. Since Vincent wants to buy 18 flowers in total, we need to find the cheapest option: buying them in packages of either 3 or 2.\n        5. To determine this, let's compare the cost per flower for both options. We have $0.8\", 61, 0.6428602636984371]
+Path: Node3Node7" color=black shape=box]
+	Node3 -> Node8 [label=Node3Node8]
+	Node8 [label="V:5, H:4, Flag:False
+[\"4. Let's identify the better price option based on the costs per flower. Comparing $0.83 to $0.50, Vincent saves more money when buying flowers at the $1 package (2 flowers) as it\", 49, 0.6911810646288795]
+Path: Node3Node8" color=black shape=box]
+	Node3 -> Node9 [label=Node3Node9]
+	Node9 [label="V:5, H:4, Flag:False
+[\"4. We want to compare these costs when buying 18 flowers. Let's calculate the total cost for each option:\n        - Option A (package of 3): 18 flowers / 3 flowers per package = 6 packages, so the total\", 55, 0.3289009329929524]
+Path: Node3Node9" color=black shape=box]
+	Node3 -> Node10 [label=Node3Node10]
+	Node10 [label="V:5, H:4, Flag:False
+[\"4. To calculate how much money Vincent saves by buying 18 flowers at the better price, we need to identify the cheaper option first. Comparing the costs of individual flowers, it's\", 40, 0.7478440691111404]
+Path: Node3Node10" color=black shape=box]
+	Node3 -> Node11 [label=Node3Node11]
+	Node11 [label="V:10, H:10, Flag:True
+[\"4. Let's find out which option has a lower cost per flower. Comparing the costs per flower, we can see that buying in packages of 3 flowers for $0.83 each is cheaper than buying in packages of 2 flowers for $0.50\", 57, 0.3912334075786159]
+Path: Node3Node11" color=red shape=box]
+	Node3 -> Node12 [label=Node3Node12]
+	Node12 [label="V:5, H:4, Flag:False
+[\"4. Next, we need to find out which price is better for buying 18 flowers. Let's compare the costs of both types of packages: \n           - 18 flowers at $0.83 per flower (package of 3) = 18 * $0.83 = $15.04\n           - 18 flowers at $0.50 per flower (package of 2) =\", 93, 0.46022723929342735]
+Path: Node3Node12" color=black shape=box]
+	Node3 -> Node13 [label=Node3Node13]
+	Node13 [label="V:3, H:3, Flag:False
+[\"4. Calculate Vincent's total number of flowers: He wants to buy 18 flowers, so he would need 18 / 3 = 6 packages of three flowers and 18 / 2 = 9 packages of two flowers.\n        5. Find the cost for each type of package: For the package of 3\", 72, 0.9074991961336475]
+Path: Node3Node13" color=black shape=box]
+	Node13 -> Node14 [label=Node13Node14]
+	Node14 [label="V:2, H:8, Flag:False
+['6. Calculate the total cost for each flower type: Total cost for 6 packages of 3 flowers is 6 * $0.83 = $5.00, and total cost for 9 packages of 2 flowers is 9 * $0.50 = $4.50.\n        7. Compare the costs to find the difference: The better price would be', 83, 0.21137463685683522]
+Path: Node13Node14" color=black shape=box]
+	Node13 -> Node15 [label=Node13Node15]
+	Node15 [label="V:4, H:7, Flag:False
+[\"6. Add up the total cost for Vincent's chosen combinations: 6 * $0.83 (for the packages of 3) + 9 * $0.50 (for the packages of 2). This gives us a total of $4.98.\n        7. Calculate how much money Vincent saves by buying the cheaper flowers: We compare this to the original cost if he were to buy all packages of 3, which is 6 * $2.50 = $15. So, Vincent would\", 113, 0.9239977580855602]
+Path: Node13Node15" color=black shape=box]
+	Node13 -> Node16 [label=Node13Node16]
+	Node16 [label="V:5, H:8, Flag:False
+[\"6. Calculate Vincent's total savings by choosing the better price: First, let's find out how much he would spend if he bought all flowers at the $0.83 per flower rate from the packages of 3. That would be 18 * 0.83 = $15.14. Then, let's calculate the cost\", 77, 0.4908294461175827]
+Path: Node13Node16" color=black shape=box]
+	Node13 -> Node17 [label=Node13Node17]
+	Node17 [label="V:3, H:8, Flag:False
+['5.1 Calculate the total cost by multiplying the number of packages (6) with the cost per flower ($0.83): 6 * $0.83 = $4.98.\n        5.2 The cost for each of these packages is $2.50, so he would have 6 packages at a total cost of 6 * $2.50 = $15.\n        6. For the package of 2:', 99, 0.8310453703499291]
+Path: Node13Node17" color=black shape=box]
+	Node13 -> Node18 [label=Node13Node18]
+	Node18 [label="V:6, H:9, Flag:True
+['6. Calculate the total cost for both types of packages: For the 6 packages of 3 flowers, the total cost is 6 * $0.83 = $5.02. For the 9 packages of 2 flowers, the total cost is 9 * $0.', 62, 0.4467733489589698]
+Path: Node13Node18" color=red shape=box]
+	Node13 -> Node19 [label=Node13Node19]
+	Node19 [label="V:5, H:9, Flag:True
+['6. Calculate the total cost: The total cost of buying all 18 flowers would be (6 * $0.83) + (9 * $0.50) = $5.02 + $4.', 49, 0.9475721436164275]
+Path: Node13Node19" color=red shape=box]
+	Node13 -> Node20 [label=Node13Node20]
+	Node20 [label="V:6, H:8, Flag:False
+['6. Calculate the total cost for both types of packages: The cost for the 6 packages of 3 flowers is 6 * $0.83 = $5.00, and the', 42, 0.09729221249381648]
+Path: Node13Node20" color=black shape=box]
+	Node8 -> Node21 [label=Node8Node21]
+	Node21 [label="V:2, H:1, Flag:False
+['4. Finally, Vincent wants to buy 18 flowers in total. To determine which price gives him a better deal, we need to compare the cost of 18 flowers from each option. For the package of 3 flowers, he needs 18 / 3 = 6 packages, which costs 6 * $2.50 = $15. On the other hand, for the package of 2 flowers, he only needs 18 / 2 = 9 packages, and the total cost would be 9 * $1 = $9', 117, 0.6781918966739189]
+Path: Node8Node21" color=black shape=box]
+	Node8 -> Node22 [label=Node8Node22]
+	Node22 [label="V:3, H:2, Flag:False
+[\"5. Finally, we need to determine how many flowers Vincent needs to buy to reach 18 in total. Since we're using the cheaper option of $0.50 per flower, we can calculate this by dividing the total number of flowers needed (18) by the number of flowers per package (2). So, 18 / 2 = 9 packages are required for Vincent to buy 18 flowers.\n        6. To find out how much money Vincent saves, multiply the number of packages (9) by the cost\", 115, 0.5476058569183715]
+Path: Node8Node22" color=black shape=box]
+	Node8 -> Node23 [label=Node8Node23]
+	Node23 [label="V:3, H:2, Flag:False
+[\"5. Finally, let's calculate how much Vincent saves by buying 18 flowers in total. Since he buys 9 packages of 2 flowers ($1 per package), the cost for these is 9 * $1 = $9. For the remaining 9 flowers (\", 58, 0.3845479430608799]
+Path: Node8Node23" color=black shape=box]
+	Node8 -> Node24 [label=Node8Node24]
+	Node24 [label="V:3, H:2, Flag:False
+['5. Calculate the total number of flowers needed. Vincent wants 18 flowers, so either 18 / 3 = 6 packages of three-flowers or 18 / 2 = 9 packages of two-flowers are necessary.\n        6. Determine how much money Vincent saves by buying at', 68, 0.9493681323418844]
+Path: Node8Node24" color=black shape=box]
+	Node8 -> Node25 [label=Node8Node25]
+	Node25 [label="V:10, H:10, Flag:True
+[\"5. Finally, let's calculate how much money Vincent will save by buying 18 flowers at the better price. Since he buys 18 flowers and each flower costs $0.50 in the cheaper option, we multiply 18 by $0.50: 18 * $0.50 = $9.\n        6. Vincent saves $9 by buying 18 flowers at the\", 89, 0.1542909094329048]
+Path: Node8Node25" color=red shape=box]
+	Node8 -> Node26 [label=Node8Node26]
+	Node26 [label="V:5, H:4, Flag:False
+[\"5. Finally, let's calculate how much money Vincent will save by purchasing 18 flowers at the better price. He needs to buy 18 flowers / 2 = 9 packages\", 40, 0.44440813466513396]
+Path: Node8Node26" color=black shape=box]
+	Node8 -> Node27 [label=Node8Node27]
+	Node27 [label="V:2, H:1, Flag:False
+[\"4. Lastly, Vincent wants to buy 18 flowers, so let's find out how many packages of each type he needs to purchase. For the $0.83 per flower option, we need 18 / 3 = 6 packages of three\", 56, 0.8291900234843463]
+Path: Node8Node27" color=black shape=box]
+	Node21 -> Node28 [label=Node21Node28]
+	Node28 [label="V:1, H:0, Flag:False
+['5. So, Vincent saves $6 ($15 - $9) by buying flowers at the better price (package of 2).', 65, 0.6199931687830094]
+Path: Node21Node28" color=green shape=box]
+	Node21 -> Node29 [label=Node21Node29]
+	Node29 [label="V:1, H:0, Flag:False
+['5. The amount Vincent saves by buying 18 flowers at the better price is the difference between these two amounts: $15 - $9 = $6.', 55, 0.980103862007735]
+Path: Node21Node29" color=green shape=box]
+	Node21 -> Node30 [label=Node21Node30]
+	Node30 [label="V:1, H:0, Flag:False
+['5. Comparing these two totals, Vincent saves money by buying the package with 2 flowers as it costs him less: $15 vs $9. His savings for purchasing 18 flowers at the better price is $6 (the difference in cost).', 118, 0.6757700310193915]
+Path: Node21Node30" color=green shape=box]
+	Node21 -> Node31 [label=Node21Node31]
+	Node31 [label="V:1, H:0, Flag:False
+[\"5. To find Vincent's savings, we subtract the lower cost from the higher cost. The savings are calculated as $15 - $9 = $6\n        So, by buying 18 flowers at the better price, Vincent saves $6.\", 103, 0.8739172975312886]
+Path: Node21Node31" color=green shape=box]
+	Node21 -> Node32 [label=Node21Node32]
+	Node32 [label="V:1, H:0, Flag:False
+['5. Vincent saves money by purchasing the package containing 2 flowers due to a lower price per flower and fewer packages needed. By buying 18 flowers at the better price, he saved $6 ($15 - $9).', 117, 0.8363915121240857]
+Path: Node21Node32" color=green shape=box]
+	Node21 -> Node33 [label=Node21Node33]
+	Node33 [label="V:1, H:0, Flag:False
+['5. Vincent saves money by buying at the better price which is the package of 2 flowers. The difference in savings between the two options is found by subtracting the higher cost from the lower cost: $15 - $9 = $6. So, Vincent saves $6 by buying 18 flowers at the better price (package of 2', 73, 0.3922443586933577]
+Path: Node21Node33" color=green shape=box]
+	Node21 -> Node34 [label=Node21Node34]
+	Node34 [label="V:1, H:0, Flag:False
+['5. Comparing these two costs, Vincent saves more money by buying flowers at the $1 package (2 flowers) as it costs him $6 less ($15 - $9).', 60, 0.010453178577749078]
+Path: Node21Node34" color=green shape=box]
+}

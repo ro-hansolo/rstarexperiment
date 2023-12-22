@@ -1,0 +1,34 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Tommy is fundraising for his charity by selling brownies for $3 a slice and cheesecakes for $4 a slice. If Tommy sells 43 brownies and 23 slices of cheesecake, how much money does Tommy raise? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:0, H:2, Flag:False
+[\"1. First, let's calculate the total amount raised from selling brownies. To do this, we need to multiply the number of brownies sold (43) by their price per slice ($3). So, 43 * $3 = $129.\n        2. Next, let's find out how much money Tommy raises from selling cheesecakes. We follow a similar process as with brownies: multiply the number of cheesecake slices sold (23) by their price per slice ($4\", 114, 0.02572430841410045]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:0, H:2, Flag:False
+['1. First, we need to calculate the total revenue from selling brownies. To do this, multiply the number of brownies (43) by the price per slice ($3).\n           Total_brownie_revenue = Brownies * Price/slice\n           Total_brownie_revenue = 43 * $3\n           Total_brownie_revenue = $129\n\n        2. Then, we need to do the same for chees', 104, 0.8461747904788792]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:6, Flag:True
+[\"1. First, let's find out the total amount raised from selling each type of dessert separately:\n           a. From brownies, they are sold at $3 per slice. To calculate the revenue from 43 slices, multiply the price by the number of slices: $3 * 43 = $132.\n           b. Now for the cheesecakes, they are priced at $4 a slice and Tommy sell\", 97, 0.9900939664123144]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:0, H:9, Flag:False
+[\"1. First, let's determine the total revenue from selling brownies. To do this, we multiply the number of brownies sold (43) by their price per slice ($3).\n           Total revenue for brownies =\", 50, 0.4251152252917739]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:0, H:2, Flag:False
+[\"1. First, let's calculate the total amount raised from selling brownies.\n           To do this, we need to multiply the number of brownies sold (43) by their price per slice ($3).\n           43 * $3 = $129\n        So, Tommy raises $129 from selling brownies.\n\n        2. Now, let's calculate the total amount raised from selling cheesecakes.\n           To\", 98, 0.36258929874437174]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:0, H:2, Flag:False
+['1. First, we need to determine the total amount Tommy will earn from selling brownies. The price per brownie slice is $3, and he sold 43 brownies. So, multiply the number of brownies (43) by the cost per brownie ($3). This gives us: 43 * 3 = $129\n        2. Now, we need to calculate the total amount from cheesecake sales. Tommy sold 23 cheesecakes at a price of $4 per slice. Multiply the number of', 119, 0.9527308634022038]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:0, H:0, Flag:False
+['1. First, we need to calculate the total revenue from both types of baked goods. To do this, multiply the number of each item sold by its respective price.\n            Revenue for brownies = (Number of brownies sold) * ($3 per slice) = 43 * $3 = $129\n            Revenue for cheesecakes = (Number of cheesecake slices sold) * ($4 per slice) = 23 * $4 = $92\n        2.', 111, 0.8063517794133074]
+Path: StartNode6" color=green shape=box]
+}

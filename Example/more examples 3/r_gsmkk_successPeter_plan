@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Peter plans to go to the movies this week. He always gets a ticket for $7 and popcorn for $7. If he has 42 dollars for the week, how many times can he go to the movies? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:0, H:2, Flag:False
+[\"1. First, let's determine the total cost of going to the movies once. Peter spends $7 on a ticket and $7 on popcorn, so the combined cost is $7 + $7 = $14.\n        2. Now we know that he has $42 for the whole week. To find out how many times he can go to the movies, we need to divide his total budget by the cost of going once. So, $42 / $14 = 3.\n        3. Therefore, Peter can go to the movies\", 120, 0.06536940306212147]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:1, H:3, Flag:False
+[\"1. First, let's determine the total cost of going to the movies once. Peter spends $7 on a ticket and another $7 on popcorn, so the combined cost is $7 + $7 = $14.\n        2. Now that we know the cost for one visit, we need to find out how many times he can go with his $42 budget. To do this, divide Peter's total budget ($42) by the cost of going to the movies once ($14). So, $42 /\", 115, 0.41051033016135696]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:4, H:8, Flag:False
+[\"1. Let's first determine what his expenses are per visit by adding the cost of the ticket and the cost of popcorn together. This would be $7 (ticket) + $7 (\", 42, 0.8489784407059969]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:1, H:4, Flag:False
+[\"1. First, let's find out the cost of one movie visit including both the ticket and the popcorn. To do this, we add the cost of the ticket ($7) and the cost of the popcorn ($7). So, the total cost per visit is $7 + $7 = $14.\n        2. Peter has 42 dollars in total for the week. We want to find out how many times he can go to the movies with this amount. To do that, we\", 107, 0.6096147968657758]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:2, H:7, Flag:False
+[\"1. First, let's determine the total cost of going to the movies once, including both the ticket and the popcorn. To do this, we add the prices together: $7 (ticket) + $7 (popcorn) = $14.\n\n2. Next, we know that Peter has 42 dollars for the\", 74, 0.8809205956116003]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:2, H:7, Flag:False
+[\"1. First, let's calculate the total cost of both items (ticket and popcorn) together. We know that Peter spends $7 on a ticket and $7 on popcorn. So, the combined cost is $7 + $7 = $14.\n       \n        2. Now, we need to find out how many times he can go to the movies with his budget of\", 85, 0.31563256669960127]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:3, H:3, Flag:False
+[\"1. First, let's determine the total cost of going to the movies once. Peter spends $7 on a ticket and another $7 on popcorn, so the combined cost is $7 + $7 = $14.\n        2. Now we know that he has $42 for the whole week. To find out how many times he can go to the movies, we need to divide his total budget by the cost of going once. So, $42 / $14 =\", 105, 0.2272140780463363]
+Path: StartNode6" color=black shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:0, H:0, Flag:False
+['3 times this week with his available budget.', 43, 0.11253612742478158]
+Path: Node0Node7" color=green shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['3 times this week using his budget of $42.', 101, 0.3387993446035399]
+Path: Node0Node8" color=green shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['3 times this week if he spends all $42 on going to the cinema and purchasing snacks.', 65, 0.9155044325043462]
+Path: Node0Node9" color=green shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:0, H:0, Flag:False
+['3 times this week.', 57, 0.9581086319621416]
+Path: Node0Node10" color=green shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['3 times this week with his available budget.', 75, 0.08069186401943673]
+Path: Node0Node11" color=green shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['3 times this week with the money he has available.', 95, 0.4981444592922454]
+Path: Node0Node12" color=green shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['3 times this week considering the available amount of money for the whole week and the expenses incurred at the movie theater.', 115, 0.9586321744865206]
+Path: Node0Node13" color=green shape=box]
+}

@@ -1,0 +1,10 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, we need to find out how many kittens they had from their two house cats. They have Patchy, who has thrice the number of adopted kittens, and Trixie with 12 kittens. So Patchy's offspring would be 7 (adopted kittens) * 3 = 21 kittens.
+        2. Now, we combine this number with the kittens from",Node0,1,5,1,6,0.731462261536201,99,False
+" 1. We know there are 7 kittens from the local shelter and 2 house cats that just gave birth.
+        2. Patchy's litter size is thrice the number of adopted kittens, so it has 3 * 7 = 21 kittens.
+        3. Trixie's litter size is 12 kittens.",Node2,1,3,1,4,0.010046645692754375,83,False
+" 1. We know there are 7 kittens from the local shelter and 2 house cats that just gave birth.
+        2. Patchy's litter size is thrice the number of adopted kittens, so it has 3 * 7 = 21 kittens.
+        3. Trixie's litter size is 12 kittens. 4. Combine all the kitten numbers: 7 (from local shelter) + 21 (Patchy's litter) + 12 (Trixie's litter) = 40 kittens.
+        The Doubtfire family now has a total of 40 kittens.",Node10,1,0,2,2,0.9184421110385731,118,False

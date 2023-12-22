@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Sophia is thinking of taking a road trip in her car, and would like to know how far she can drive on a single tank of gas. She has traveled 100 miles since last filling her tank, and she needed to put in 4 gallons of gas to fill it up again. The owner's manual for her car says that her tank holds 12 gallons of gas. How many miles can Sophia drive on a single tank of gas? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:5, Flag:False
+['1. To find out how far Sophia can drive on one full tank, we need to first determine the mileage per gallon her car achieves.\n        2. She has traveled 100 miles since filling up with 4 gallons of gas. So, she gets approximately 100 miles / 4 gallons = 25 miles/gallon of efficiency.\n        3. Her tank holds', 90, 0.7307075188260508]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:7, Flag:False
+['1. First, we need to determine the efficiency of the car in terms of miles per gallon (MPG). To do this, divide the total distance traveled by the amount of fuel used. So far, Sophia has driven 100 miles using 4 gallons of gas.\n        Distance/F', 66, 0.2950770876045241]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:6, H:10, Flag:True
+['1. First, we need to find out how much gas is left in the tank after filling it up again. To do this, subtract the amount of gas used (4 gallons) from the total capacity of the tank (1', 48, 0.1949305445968318]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:6, H:10, Flag:True
+[\"1. Calculate the remaining gas in Sophia's tank after the recent refill. Since she put 4 gallons of gas into it, and the tank has 12-gallon capacity, then the remaining gas is 12 - 4 = 8 gallons.\n        2. Find out how many miles per gallon (MPG) her car gets. We don't have this\", 87, 0.9600447085178394]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:7, H:10, Flag:True
+['1. First, we need to determine how much gas is left in the tank after filling it up. Since the tank holds 12 gallons and she put in 4 gallons, there are 12 - 4 =', 49, 0.17085267789299363]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:5, H:10, Flag:True
+[\"1. First, we need to determine the number of miles per gallon (MPG) Sophia's car gets. To do this, we will divide the total distance traveled by the amount of fuel used.\n        2. Total distance traveled = 100 miles + 4 gallons * (distance per gall\", 67, 0.16309266896067687]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:7, H:10, Flag:True
+['1. Firstly, we need to find out how much distance is left after she refilled the tank with the current level. So, subtract the distance traveled from her latest tank fill up (100 miles) from the total distance traveled since the last refill (100 miles + the new travel of 100 miles). This gives us', 75, 0.8025942508797633]
+Path: StartNode6" color=red shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:0, H:0, Flag:False
+[\"12 gallons of gas.\n        4. To find the total distance Sophia can drive on a full tank, multiply her car's mileage per gallon by the number of gallons in the tank: 25 miles/gallon * 12 gallons = 300 miles.\n        Therefore, Sophia can drive approximately 300 miles on a single tank of gas.\", 105, 0.07991992516494195]
+Path: Node0Node7" color=green shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:2, H:2, Flag:False
+[\"4. The full tank capacity is 12 gallons.\n        5. To find the total mileage achievable with a single full tank, multiply the car's efficiency by the number of gallons in a full tank. So, 25 miles/gallon * 12 gallons = 300 miles.\n        Sophia can drive up to 30\", 84, 0.9898354049955785]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:1, H:1, Flag:False
+['12 gallons of gas. Now we can calculate the maximum distance Sophia can drive by multiplying the efficiency by the full tank capacity: 25 miles/gallon * 12 gallons = 300 miles.\n        So, Sophia can potentially drive up to 30', 64, 0.5698099131910502]
+Path: Node0Node9" color=black shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:0, H:0, Flag:False
+['4. 12 gallons of gas in total.\n        4. To find out how far she can drive on a single full tank, we need to multiply the tank capacity by her efficiency per gallon: 12 gallons * 25 miles/gallon = 300 miles.\n        Sophia can drive approximately 300 miles on a single tank of gas with her current fuel efficiency.', 99, 0.41870592673605744]
+Path: Node0Node10" color=green shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:2, H:3, Flag:False
+[\"12 gallons of gas.\n        4. To find the total distance Sophia can drive on a full tank, we need to multiply her car's mileage per gallon by the\", 41, 0.1371600714339385]
+Path: Node0Node11" color=black shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:1, H:1, Flag:False
+['12 gallons of gas when filled up completely.\n        4. To find out the total miles Sophia can drive with a full tank, we multiply her efficiency by the total available gas:\n           25 miles/gallon * 12 gallons =', 57, 0.9492822125128219]
+Path: Node0Node12" color=black shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:4, H:10, Flag:True
+['4. Now, we can calculate how many gallons are left in the tank after her last fill-up. She filled it with 12 gallons and used 4 gallons for the recent trip, so there are 12 - 4 = 8 gallons left in the tank.\n        4. Finally, multiply the miles per gall', 74, 0.5621715064535978]
+Path: Node0Node13" color=red shape=box]
+}

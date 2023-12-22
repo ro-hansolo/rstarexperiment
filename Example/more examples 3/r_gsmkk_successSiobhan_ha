@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Siobhan has 2 fewer jewels than Aaron. Aaron has 5 more jewels than half of Raymond's jewels. If Raymond has 40 jewels, how many jewels does Siobhan have? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:3, H:6, Flag:False
+[\"1. Let's first find out how many jewels Aaron has: Aaron has 5 more jewels than half of Raymond's jewels, and Raymond has 40 jewels.\", 40, 0.577551630521327]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:3, H:5, Flag:False
+[\"1. We know that Siobhan has 2 fewer jewels than Aaron.\n        Since we don't have information about Aaron yet, let's call his number of jewels as X. So, Siobhan has X - 2 jewels.\n\n        2. Now, Aaron has 5 more jewels than half of Raymond's jewels. If Raymond has 40 jewels, then half of them would be 40 / 2 = 20 jewels. This means Aaron has 20\", 113, 0.8778217906708936]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:8, Flag:True
+[\"1. First, we need to find out how many jewels Aaron has. Since Aaron has 5 more jewels than half of Raymond's jewels and Raymond has 40 jewels, we can calculate the number of jewels for Aaron as follows\", 53, 0.13399920007188115]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:4, Flag:False
+[\"1. We know that Aaron has 5 more jewels than half of Raymond's jewels and Raymond has 40 jewels. So, to find half of Raymond's jewels, we calculate 40 / 2 = 20 jewels.\n        2. Now we have the information about Aaron: he has 5 more jewels than 20 (half of Raymond's jewels). This means Aaron has 20 +\", 96, 0.7070123265224921]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:5, H:7, Flag:True
+[\"1. We start with the information given: Siobhan has 2 fewer jewels than Aaron and Aaron has 5 more jewels than half of Raymond's (40) jewels.\n        2. Let's represent the number of Aaron's jewels as A, then his number would be A + 5.\n        3. Now we know that Siobhan has\", 82, 0.7340916337248651]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:10, H:10, Flag:True
+[\"1. First, let's find out how many jewels Aaron has. Since Aaron has 5 more jewels than half of Raymond's jewels and Raymond has 40 jewels, we need to calculate 5 + (1/2) * 40. We start by adding the 5: 5 + 25 = 30. Then, we multiply this result by\", 85, 0.8096895496323347]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:8, H:10, Flag:True
+[\"1. We know that Aaron has 5 more jewels than half of Raymond's jewels. So, let's find out how many jewels Aaron has. Since Raymond has 4\", 40, 0.04940225239412199]
+Path: StartNode6" color=red shape=box]
+	Node3 -> Node7 [label=Node3Node7]
+	Node7 [label="V:0, H:2, Flag:False
+['5 = 25 jewels.\n        3. Siobhan has 2 fewer jewels than Aaron. So, to find how many jewels Siobhan has, we subtract 2 from the number of jewels Aaron has: 25 - 2', 57, 0.8746221280742246]
+Path: Node3Node7" color=black shape=box]
+	Node3 -> Node8 [label=Node3Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['5 = 25 jewels.\n        3. Siobhan has 2 fewer jewels than Aaron, so to find how many jewels she has, we subtract 2 from the number of jewels Aaron has: 25 - 2 = 23 jewels.\n        Therefore, Siobhan has 23 jewels.', 86, 0.2971103642970687]
+Path: Node3Node8" color=green shape=box]
+	Node3 -> Node9 [label=Node3Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['5 = 25 jewels.\n        3. We know that Siobhan has 2 fewer jewels than Aaron. To find this, we subtract the difference: 25 - 2 = 23 jewels.\n        Therefore, Siobhan has 23 jewels.', 100, 0.9160335853232664]
+Path: Node3Node9" color=green shape=box]
+	Node3 -> Node10 [label=Node3Node10]
+	Node10 [label="V:0, H:0, Flag:False
+['5 = 25 jewels.\n        3. Next, we need to find out how many jewels Siobhan has, which is 2 fewer jewels than Aaron. So, Siobhan has 25 - 2 = 23 jewels.', 100, 0.6007583830293701]
+Path: Node3Node10" color=green shape=box]
+	Node3 -> Node11 [label=Node3Node11]
+	Node11 [label="V:0, H:2, Flag:False
+[\"5 = 25 jewels.\n        3. Siobhan has 2 fewer jewels than Aaron, so to find out how many jewels she has, we subtract 2 from Aaron's amount:\", 46, 0.7440876128119815]
+Path: Node3Node11" color=black shape=box]
+	Node3 -> Node12 [label=Node3Node12]
+	Node12 [label="V:0, H:0, Flag:False
+[\"5 = 25 jewels.\n        3. Siobhan has 2 fewer jewels than Aaron, so to find how many jewels she has, we subtract 2 from Aaron's number: 25 - 2 = 23 jewels.\n        Therefore, Siobhan has 23 jew\", 70, 0.07354199520502014]
+Path: Node3Node12" color=green shape=box]
+	Node3 -> Node13 [label=Node3Node13]
+	Node13 [label="V:0, H:0, Flag:False
+[\"5 = 25 jewels.\n        3. Siobhan has 2 fewer jewels than Aaron, so to find her number of jewels, subtract 2 from Aaron's jewels: 25 - 2 = 23 jewels.\n        Siobhan has 23 jewels.\", 81, 0.9319465946844798]
+Path: Node3Node13" color=green shape=box]
+}

@@ -1,0 +1,146 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Meredith is a freelance blogger who writes about health topics and submits to clients each day as her permanent job. A blog article takes an average of 4 hours to research and write about. Last week, she wrote 5 articles on Monday and  2/5 times more articles on Tuesday than on Monday. On Wednesday, she wrote twice the number of articles she wrote on Tuesday. Calculate the total number of hours she spent writing articles in the three days. Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:9, Flag:False
+[\"1. Let's first find out how many articles Meredith wrote on Tuesday. She wrote 2/5 times more than her Monday output, which was 5 articles. So, we can multiply 5 by 2/5 to get this amount. (5 * 2/5) = 4\n        2. On Wednesday, she wrote twice the number of articles\", 80, 0.614122509905767]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:10, H:10, Flag:True
+[\"1. First, let's find out how many articles Meredith wrote on Tuesday. She wrote 2/5 times more than the 5 articles on Monday, so we need to multiply 5 by 2/5.\n           2/5 * 5 = 2\n           So, Meredith wrote 2 additional articles on Tuesday compared\", 75, 0.35975585308587554]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:5, H:9, Flag:False
+[\"1. First, let's find out how many articles Meredith wrote on Tuesday. She wrote 2/5 times more than Monday's 5 articles, so we need to multiply 5 by 2/5.\n           5 * (2/5) = 4 articles\n        2. Now that we know she wrote 4 articles on Tuesday and 5 on Monday, we can calculate the\", 87, 0.14601536443855823]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:5, H:10, Flag:False
+['1. On Monday, Meredith wrote 5 articles. Each article takes an average of 4 hours to research and write. So, for these 5 articles, she spent 5 * 4 = 20', 46, 0.6395035191863376]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:10, H:10, Flag:True
+[\"1. First, let's calculate the number of articles Meredith wrote on each day.\n           Monday: 5 articles\n           Tuesday: 2/5 times more than Monday (which is 5 * 2/5 = 5 * 0.4 = 2) articles\n           Wednesday: 2 times the number of articles she wrote on Tuesday, which is 2 * 2 = 4 articles\n        \n        2. Now let's find out how\", 102, 0.8550436718597151]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:7, Flag:False
+[\"1. First, we need to determine how many articles Meredith wrote on Tuesday and then on Wednesday. We know that she wrote 2/5 times more on Tuesday than Monday, so when she wrote 5 articles on Monday, she wrote 5 * (2/5) = 4 articles on Tuesday.\n        2. On Wednesday, she wrote twice the number of articles as on Tuesday, which is 4 * 2 = 8 articles.\n        3. Now we have the total number of articles written in three days: Monday's\", 116, 0.6023931910717443]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:8, Flag:False
+['1. Meredith wrote 5 articles on Monday. She spends an average of 4 hours per article for research and writing. So, the time spent on Monday is 5 * 4 = 20 hours.\n        2. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote', 70, 0.6749117392209382]
+Path: StartNode6" color=black shape=box]
+	Node5 -> Node7 [label=Node5Node7]
+	Node7 [label="V:10, H:1, Flag:True
+[\"5 + Tuesday's 4 + Wednesday's 8 = 17 articles.\n        4. Each article takes an average of 4 hours to research and write, so to find the total time spent on writing these articles, we multiply the number of articles by the time per article: 17 * 4 =\", 69, 0.15950455713184408]
+Path: Node5Node7" color=red shape=box]
+	Node5 -> Node8 [label=Node5Node8]
+	Node8 [label="V:10, H:1, Flag:True
+[\"5 + Tuesday's 4 + Wednesday's 8 = 17 articles.\n        4. Since each article takes an average of 4 hours to research and write, we can calculate the total time spent by multiplying the number of articles by the time per article: 17 * 4 = 68 hours.\n        Meredith spent a\", 77, 0.09920330228455942]
+Path: Node5Node8" color=red shape=box]
+	Node5 -> Node9 [label=Node5Node9]
+	Node9 [label="V:10, H:1, Flag:True
+[\"5 + Tuesday's 4 + Wednesday's 8 = 17 articles.\n        4. To calculate the total hours spent writing, we need to multiply the total number of articles by the average time it takes her to write one article (4 hours). So, 17 articles * 4 hours\", 66, 0.45757236223322495]
+Path: Node5Node9" color=red shape=box]
+	Node5 -> Node10 [label=Node5Node10]
+	Node10 [label="V:10, H:1, Flag:True
+[\"5 + (Tuesday's 4) + (Wednesday's 8) = 17 articles.\n        4. For each article, she spends an average of 4 hours on research and writing. So we need to multiply the total number of articles by the time spent per article: 17 articles * 4 hours/article\", 76, 0.8880499137760832]
+Path: Node5Node10" color=red shape=box]
+	Node5 -> Node11 [label=Node5Node11]
+	Node11 [label="V:10, H:0, Flag:True
+[\"5 + Tuesday's 4 + Wednesday's 8 = 17 articles.\n        4. Each article takes an average of 4 hours to research and write, so for all 17 articles, she spent 17 * 4 = 68 hours writing articles in the three days.\", 73, 0.280901795462962]
+Path: Node5Node11" color=green shape=box]
+	Node5 -> Node12 [label=Node5Node12]
+	Node12 [label="V:10, H:0, Flag:True
+[\"5 + Tuesday's 4 + Wednesday's 8 = 17 articles.\n        4. Next, we need to determine how many hours she spent writing those 17 articles on average. An article takes an average of 4 hours to research and write about. So, for these 17 articles: 17 * 4 = 68 hours were spent writing.\", 114, 0.6678574013430424]
+Path: Node5Node12" color=green shape=box]
+	Node5 -> Node13 [label=Node5Node13]
+	Node13 [label="V:10, H:0, Flag:True
+[\"5 + Tuesday's 4 + Wednesday's 8 = 17 articles.\n        4. Each article takes an average of 4 hours to research and write. To find the total time spent writing, multiply the number of articles by the time per article\", 56, 0.3043793973404919]
+Path: Node5Node13" color=green shape=box]
+	Node6 -> Node14 [label=Node6Node14]
+	Node14 [label="V:5, H:5, Flag:True
+['5 articles on Monday, this means she wrote (5 * 2 / 5) = 2 articles on Tuesday. Now, the time spent on Tuesday is 2 * 4 = 8 hours.\n        3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday. So, she wrote 2 * 2 = 4 articles on Wednesday. The time spent on Wednesday is 4 * 4 = 16 hours.', 96, 0.36266043625965494]
+Path: Node6Node14" color=red shape=box]
+	Node6 -> Node15 [label=Node6Node15]
+	Node15 [label="V:2, H:9, Flag:False
+['5 articles on Monday, we can find out how many more she wrote on Tuesday: (2 / 5) * 5 = 2 additional articles. So, on Tuesday she wrote a total of 5 + 2 = 7 articles. For each article on Tuesday, the time spent is still', 63, 0.7716359602858456]
+Path: Node6Node15" color=black shape=box]
+	Node6 -> Node16 [label=Node6Node16]
+	Node16 [label="V:10, H:10, Flag:True
+['5 articles on Monday, we need to find 2/5 of 5 and multiply it by the average time per article (4 hours). So, (2/5 * 5) * 4 = (1 * 4) * 4 = 4 * 4 = 16 hours.\n        3. On Wednesday, she wrote twice the number of articles as on Tuesday. Since she wrote 16 articles on Tuesday, we need to find 2 times 16 and multiply it by the average time per article (4', 115, 0.8795337304851746]
+Path: Node6Node16" color=red shape=box]
+	Node6 -> Node17 [label=Node6Node17]
+	Node17 [label="V:2, H:7, Flag:False
+['5 articles on Monday, this means she wrote (2/5) * 5 = 2 additional articles on Tuesday. So, the total number of articles written on Tuesday is 5 + 2 = 7 articles. The time spent on research and writing for these 7 articles would be 7 * 4 = 28 hours.\n        3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday', 89, 0.01778347402730962]
+Path: Node6Node17" color=black shape=box]
+	Node6 -> Node18 [label=Node6Node18]
+	Node18 [label="V:2, H:8, Flag:False
+['5 articles on Monday, this means she wrote 5 * (2/5) = 2 extra articles on Tuesday. In total, she wrote 5 + 2 = 7 articles on Tuesday. Using the same', 45, 0.7247524698519024]
+Path: Node6Node18" color=black shape=box]
+	Node6 -> Node19 [label=Node6Node19]
+	Node19 [label="V:10, H:10, Flag:True
+['5 articles on Monday, we can calculate the number of articles on Tuesday as follows: (2/5) * 5 = 2 + 1 = 3 articles.\n        3. She spent 4 hours per article on Tuesday too. So, for the 3 articles, she spent 3 * 4 =', 67, 0.35845970069052013]
+Path: Node6Node19" color=red shape=box]
+	Node6 -> Node20 [label=Node6Node20]
+	Node20 [label="V:2, H:8, Flag:False
+['5 articles on Monday, we need to find 2/5 of that number: (2/5) * 5 = 2. So, she wrote 2 additional articles on Tuesday compared to Monday.\n        3. She now wrote a total of 5 + 2 = 7 articles on Tuesday. The time spent on these 2 extra articles is', 76, 0.7022464079602809]
+Path: Node6Node20" color=black shape=box]
+	Node17 -> Node21 [label=Node17Node21]
+	Node21 [label="V:6, H:7, Flag:True
+['which is 2 * 7 = 14 additional articles compared to Tuesday. So, the total number of articles written on Wednesday is 7 + 14 = 21 articles. The time spent on research and writing for these 21 articles would be', 56, 0.47141123302857135]
+Path: Node17Node21" color=red shape=box]
+	Node17 -> Node22 [label=Node17Node22]
+	Node22 [label="V:6, H:7, Flag:True
+['4. Since she wrote 7 articles on Tuesday, this means she wrote 2 * 7 = 14 additional articles on Wednesday. So, the total number of articles written on Wednesday is 7 + 14 = 21 articles. The time spent on research and writing for these 21 articles would be 21 * 4 = 84 hours.\n        5.', 83, 0.46533950279069825]
+Path: Node17Node22" color=red shape=box]
+	Node17 -> Node23 [label=Node17Node23]
+	Node23 [label="V:1, H:2, Flag:False
+['4. We know that Meredith wrote 7 articles on Tuesday, so twice as many would be 7 * 2 = 14 articles on Wednesday. The time spent on research and writing for these 14', 46, 0.4250980870231601]
+Path: Node17Node23" color=black shape=box]
+	Node17 -> Node24 [label=Node17Node24]
+	Node24 [label="V:1, H:1, Flag:False
+[\"4. She wrote 7 articles on Tuesday, so twice that amount is 2 * 7 = 14 articles on Wednesday. The time spent on research and writing for these 14 articles would be 14 * 4 = 56 hours.\n        Now, let's add up the total hours she spent in the three days:\n        20 (Monday) + 28 (\", 88, 0.33831727120053157]
+Path: Node17Node24" color=black shape=box]
+	Node17 -> Node25 [label=Node17Node25]
+	Node25 [label="V:6, H:2, Flag:True
+['4. Since she wrote 7 articles on Tuesday, this means she wrote 2 * 7 = 14 articles on Wednesday. The time spent on research and writing for these 14 articles would be 14 * 4 = 56 hours.\n        5. Now, we need to add up the total number of hours she spent writing articles in the three days: 20 (Monday) + 28 (Tuesday) + 56 (Wednesday) =', 106, 0.33580319954612325]
+Path: Node17Node25" color=red shape=box]
+	Node17 -> Node26 [label=Node17Node26]
+	Node26 [label="V:1, H:1, Flag:False
+[\"(which was 7). So, she wrote 7 * 2 = 14 articles on Wednesday. The time spent on research and writing for these 14 articles would be 14 * 4 = 56 hours.\n        Now, we need to add the total hours she spent in each day: Monday's 20 hours + Tuesday's 28 hours + Wednesday's 56 hours =\", 92, 0.38605905243622085]
+Path: Node17Node26" color=black shape=box]
+	Node17 -> Node27 [label=Node17Node27]
+	Node27 [label="V:9, H:10, Flag:True
+['4. Since she wrote 7 articles on Tuesday, this means she wrote 2 * 7 = 14 articles on Wednesday. The time spent on research and writing for these 14 articles would', 42, 0.10880985477815186]
+Path: Node17Node27" color=red shape=box]
+	Node24 -> Node28 [label=Node24Node28]
+	Node28 [label="V:1, H:1, Flag:False
+['30 (Tuesday) + 56 (Wednesday) = 104 hours', 58, 0.9032490614669496]
+Path: Node24Node28" color=black shape=box]
+	Node24 -> Node29 [label=Node24Node29]
+	Node29 [label="V:4, H:9, Flag:True
+['3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday 4. She wrote 7 articles on Tuesday, so twice that amount is 2 * 7 = 14 articles on Wednesday. The time spent on research and writing for these', 55, 0.904370007726592]
+Path: Node24Node29" color=red shape=box]
+	Node24 -> Node30 [label=Node24Node30]
+	Node30 [label="V:4, H:9, Flag:True
+['3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday 4. She wrote 7 articles on Tuesday, so twice that amount is 2 * 7 = 14 articles on Wednesday. The time spent on research and writing for these 1', 56, 0.033160370491318814]
+Path: Node24Node30" color=red shape=box]
+	Node24 -> Node31 [label=Node24Node31]
+	Node31 [label="V:4, H:10, Flag:True
+['3. On Tuesday, she wrote 2/5 times more articles than on Monday. Since she wrote 5 articles on Monday, this means she wrote (2/5) * 5 = 2 additional articles on Tuesday. So, the total number of articles written on Tuesday is 5 + 2 = 7 articles. The time spent on research and writing for these 7 articles would be 7 * 4 = 28 hours.\n        3', 96, 0.7989034232076387]
+Path: Node24Node31" color=red shape=box]
+	Node24 -> Node32 [label=Node24Node32]
+	Node32 [label="V:1, H:0, Flag:False
+['28 (Tuesday) + 56 (Wednesday) = 104 hours.\n        Meredith spent a total of 104 hours writing articles in those three days.', 75, 0.8578260853376446]
+Path: Node24Node32" color=green shape=box]
+	Node24 -> Node33 [label=Node24Node33]
+	Node33 [label="V:4, H:9, Flag:True
+['3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday 4. She wrote 7 articles on Tuesday, so twice that amount is 2 * 7 = 14 articles on Wednesday. The time spent on research and writing for these 14 articles would be 14', 63, 0.3495165758689881]
+Path: Node24Node33" color=red shape=box]
+	Node24 -> Node34 [label=Node24Node34]
+	Node34 [label="V:4, H:10, Flag:True
+[\"3. On Wednesday, she wrote twice the number of articles she wrote on Tuesday 4. She wrote 7 articles on Tuesday, so twice that amount is 2 * 7 = 14 articles on Wednesday. The time spent on research and writing for these 14 articles would be 14 * 4 = 56 hours.\n        Now, let's add up the total\", 83, 0.3865213000212674]
+Path: Node24Node34" color=red shape=box]
+}

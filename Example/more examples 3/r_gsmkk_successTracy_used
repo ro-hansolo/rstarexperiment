@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Tracy used a piece of wire 4 feet long to support tomato plants in the garden. The wire was cut into pieces 6 inches long. How many pieces did she obtain? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:4, H:6, Flag:False
+[\"1. First, we need to determine how many times 6 inches fits into 4 feet.\n        2. To do this, we'll divide 4 feet by 6 inches (since we want to find out the\", 47, 0.3693106941257105]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:3, Flag:False
+[\"1. First, we need to understand how many times we can divide the total length of the wire (4 feet) by the length of each piece (6 inches).\n        2. We'll convert both units from their respective systems into one common unit for ease of comparison - feet and inches. So, 1 foot is equal to 12 inches.\n           A. Convert 4 feet to inches: 4 * 12 = 48 inches\n        3. Now\", 101, 0.9542725762439022]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:3, H:5, Flag:False
+['1. First, we need to find out how many 6-inch segments can fit into the initial 4-foot wire. Since there are 12 inches in a foot, Tracy had (4 feet * 12 inches per foot) = 48 inches of total wire length.\n        2. Now, we need', 70, 0.6290291807324392]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:4, H:7, Flag:False
+[\"1. First, we need to find the total number of 6-inch pieces that can be made using the 4-foot long wire. To do this, we'll divide the length of the wire by the length of each piece (6 inches).\n        Length\", 56, 0.44304550647748]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:3, H:4, Flag:False
+['1. First, we need to determine how many 6-inch long segments can be made from a single 4-foot long piece of wire. A foot is equal to 12 inches, so there are 4 * 12 = 48 inches in the original 4-foot long wire.\n        2. Next, divide this total length into 6-inch long pieces. There will', 85, 0.7942466788404461]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:4, H:8, Flag:False
+[\"1. First, let's understand the given information. Tracy has a 4-foot long wire that will be cut into 6-inch pieces to support tomato plants in her garden.\n        2. To find out how many pieces are obtained from the 4-foot wire, we need to know its equivalent length in\", 70, 0.7679205658266468]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:5, H:9, Flag:True
+[\"1. First, let's determine the total number of 6-inch segments that can be made from the 4-foot wire.\n        2. To do this, we need to convert both lengths to the same unit (inches). A foot contains\", 54, 0.4636687058867639]
+Path: StartNode6" color=red shape=box]
+	Node1 -> Node7 [label=Node1Node7]
+	Node7 [label="V:1, H:0, Flag:False
+[\"3. We know we want to divide the total length (48 inches) by the length of each piece (6 inches). To do this division, we'll perform an integer division and calculate the remainder.\n           A. Divide 48 by 6: 48 / 6 = 8\", 65, 0.7955165948804643]
+Path: Node1Node7" color=green shape=box]
+	Node1 -> Node8 [label=Node1Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['4. Divide the total length in inches (48) by the length of each piece in inches (6): 48 / 6 = 8\n        So, Tracy obtained 8 pieces of wire 6 inches long from the initial 4 feet long wire.', 114, 0.3250449016708189]
+Path: Node1Node8" color=green shape=box]
+	Node1 -> Node9 [label=Node1Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['4. Divide the total length in inches (48) by the length of each piece (6): 48 / 6 = 8\n        Therefore, Tracy obtained 8 pieces from the 4 feet long wire cut into 6-inch lengths for supporting tomato plants in her garden.', 115, 0.9112900807673803]
+Path: Node1Node9" color=green shape=box]
+	Node1 -> Node10 [label=Node1Node10]
+	Node10 [label="V:0, H:0, Flag:False
+['4. Divide the total length in inches (48) by the length of each piece in inches (6): 48 / 6 = 8\n          B. We obtained a whole number, so Tracy cut the wire into equal pieces 8 times to get 6-inch pieces from the 4-foot long wire.', 86, 0.5040261188365328]
+Path: Node1Node10" color=green shape=box]
+	Node1 -> Node11 [label=Node1Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['4. Divide the total length in inches by the length of each piece to find out how many times it can be divided: 48 inches / 6 inches per piece = 8 pieces.', 103, 0.5121289737969307]
+Path: Node1Node11" color=green shape=box]
+	Node1 -> Node12 [label=Node1Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['4. Divide the total length in inches (48 inches) by the length of each piece in inches (6 inches): 48 / 6 = 8\n          So, Tracy obtained 8 pieces of wire 6 inches long from the original 4 feet long wire.', 113, 0.09368728017049222]
+Path: Node1Node12" color=green shape=box]
+	Node1 -> Node13 [label=Node1Node13]
+	Node13 [label="V:0, H:0, Flag:False
+['4. Calculate the number of divisions possible by dividing the total length (in inches) by the piece length (in inches): 48 inches / 6 inches = 8\n\nTracy got a total of 8 pieces, each 6 inches long.', 84, 0.8785314942490209]
+Path: Node1Node13" color=green shape=box]
+}

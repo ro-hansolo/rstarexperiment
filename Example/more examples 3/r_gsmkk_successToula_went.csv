@@ -1,0 +1,53 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. Calculate the cost of each type of pastry by multiplying the number of dozens by their respective unit price.
+           a. Donuts: 3 dozen * $68/dozen = $204
+           b. Mini cupcakes: 2 dozen * $80/dozen = $160
+           c. Mini cheesecakes: 6 dozen * $55/dozen = $330
+        2. Add up the cost of all",Node0,0,5,0,5,0.6122750224960858,106,False
+" 1. Calculate the cost of each type of pastry:
+           a. Donuts: 3 dozens * $68/dozen = $204
+           b. Mini cupcakes: 2 dozens * $80",Node1,3,7,3,10,0.34420484006658314,51,False
+" 1. Let's first find the cost of each type of pastry:
+           Donuts: 3 dozen * $68/dozen = 204 dollars
+           Mini Cupcakes: 2 dozen * $80/dozen = 160 dollars
+           Mini Cheesecakes: 6 dozen * $55/dozen = 330 dollars",Node2,1,5,1,6,0.7010677161975942,84,False
+" 1. First, let's find out the cost of each type of pastry.
+           a. Donuts: 3 dozen * $68/dozen = $204
+           b. Mini cupcakes: 2 dozen * $80/dozen = $160
+           c. Mini cheesecakes: 6 dozen",Node3,2,7,2,9,0.3059528186675472,77,False
+" 1. First, we need to calculate the cost of each type of pastry separately.
+           a. Donuts: 3 dozen * $68/dozen = 204
+           b. Mini cupcakes: 2 dozen * $80/dozen = 160
+           c. Mini cheesecakes: 6 dozen * $55/dozen = 330
+        2. Now, we will add up the costs of all pastries",Node4,0,5,0,5,0.27548497506137093,105,False
+" 1. First, let's find the total number of donuts she bought by multiplying the quantity (3 dozen) with the price per dozen ($68). This will give us 3 * 68 = $204 for donuts.
+        2. Next, determine the total cost for the mini cupcakes by multiplying the quantity",Node5,2,7,2,9,0.8430085659483191,74,False
+" 1. Calculate the cost of each type of pastry by multiplying the number of dozens by their respective unit price.
+           a. Donuts: 3 dozen * $68/dozen = $204
+           b. Mini cupcakes: 2 dozen * $80/dozen = $160
+           c. Mini cheesecakes: 6 dozen * $55/dozen = $330
+        2. Add up the cost of all 3 types of pastries to find the total cost: $204 (donuts) + $160 (mini cupcakes) + $330 (mini che",Node7,1,2,1,3,0.369010014463508,40,False
+" 1. Calculate the cost of each type of pastry by multiplying the number of dozens by their respective unit price.
+           a. Donuts: 3 dozen * $68/dozen = $204
+           b. Mini cupcakes: 2 dozen * $80/dozen = $160
+           c. Mini cheesecakes: 6 dozen * $55/dozen = $330
+        2. Add up the cost of all 3 types of pastries to find the total cost.
+        Total cost = Donuts + Mini cupcakes + Mini cheesecakes
+        Total cost = $204 + $160 + $330
+        Total cost = $794
+
+        The total cost was $",Node8,0,1,0,1,0.3604390158594124,65,False
+" 1. Calculate the cost of each type of pastry by multiplying the number of dozens by their respective unit price.
+           a. Donuts: 3 dozen * $68/dozen = $204
+           b. Mini cupcakes: 2 dozen * $80/dozen = $160
+           c. Mini cheesecakes: 6 dozen * $55/dozen = $330
+        2. Add up the cost of all 3. The total cost is the sum from step 2.
+           Total cost = Donuts cost + Mini cupcake cost + Mini cheesecake cost
+           Total cost = $204 + $1",Node9,1,8,1,9,0.8608162413935455,46,False
+" 1. Calculate the cost of each type of pastry by multiplying the number of dozens by their respective unit price.
+           a. Donuts: 3 dozen * $68/dozen = $204
+           b. Mini cupcakes: 2 dozen * $80/dozen = $160
+           c. Mini cheesecakes: 6 dozen * $55/dozen = $330
+        2. Add up the cost of all 3. Total cost = Donuts + Mini cupcakes + Mini cheesecakes
+           Total cost = $204 + $160 + $330 = $794
+        The total cost was $794 for Toula's pastries from the bakery.",Node10,0,0,0,0,0.030242079187950188,72,False

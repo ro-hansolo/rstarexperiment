@@ -1,0 +1,23 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We know that Raymond and Samantha are cousins.
+        2. Raymond was born 6 years before Samantha.
+        3. Raymond had a son at the age of 23.
+        4. Samantha is now 31 years old.",Node0,1,9,1,10,0.010773794812028115,60,False
+" 1. We know that Raymond and Samantha are cousins.
+        2. Raymond was born 6 years before Samantha.
+        3. Raymond had a son at the age of 23.
+        4. Samantha is now 31 years old.
+        5. To find",Node2,1,9,1,10,0.07895894086312005,66,False
+" 1. We know that Raymond and Samantha are cousins.
+        2. Raymond was born 6 years before Samantha.
+        3. Raymond had a son at the age of 23.
+        4. Samantha is now 31 years old.
+        5. To find out when Raymond's son was born, we need to consider Raymond's age (23) and add his son's birth year to it.
+        6. Since Raymond had a son",Node3,2,5,2,7,0.34826032442781185,107,False
+" 1. We know that Rayman and Samantha are cousins, so they share a common grandparent or great-grandparent. This means their parents have the same generation gap.
+        2. We also know that Raymond was born 6 years before Samantha. So, if Samantha is now 31 years old, then Raymond must be 37 (31 + 6).
+        3. We are given that Raymond had a son at the age of 23. To find out how many years ago his son was born,",Node6,3,3,3,6,0.33330613918572105,117,False
+" 1. We know that Rayman and Samantha are cousins, so they share a common grandparent or great-grandparent. This means their parents have the same generation gap.
+        2. We also know that Raymond was born 6 years before Samantha. So, if Samantha is now 31 years old, then Raymond must be 37 (31 + 6).
+        3. We are given that Raymond had a son at the age of 23. To find out how many years ago his son was born, 4. We need to subtract Raymond's age when he became a father (23) from his current age (Raymond's age is 37 now). So, 37 - 23 = 14 years.
+        5. Therefore, Raymond's son was born 14 years ago.",Node7,0,0,3,3,0.8836805688240946,99,False

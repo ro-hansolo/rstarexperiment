@@ -1,0 +1,47 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. We need to find out how many yogurts Terry wants per day and the total number of days.
+        2. Terry eats 2 yogurts a day, so in 30 days he will eat 2 * 30 = 60 yogurts in total.
+        3. The",Node0,2,6,2,8,0.6397305722653375,71,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. Since there are 4 yogurts for $5.00, we can divide the total amount by the number of yogurts to find the individual cost. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Now that we know the cost of one yogurt",Node3,0,6,0,6,0.5126159313641048,93,False
+" 1. First, let's determine the cost per yogurt when they are on sale. To do this, we divide the total cost by the number of yogurts in the package. So, $5.00 / 4 yog",Node4,1,8,1,9,0.12256807063786379,53,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. To do this, divide the total cost by the number of yogurts in the pack. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Next, we need to find out how many yogurts Terry eats daily. He eats 2 yogurts a day.
+        3. Now, let's calculate the total number of yogurts he consumes",Node6,0,6,0,6,0.1417915624886138,117,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. Since there are 4 yogurts for $5.00, we can divide the total amount by the number of yogurts to find the individual cost. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Now that we know the cost of one yogurt 3. Terry eats 2 yogurts a day. We need to calculate the total number of days for 30 days. To do this, multiply 2 (the number of yogurts Terry eats per day) by 30 (the number of days). So, 2 * 30 = 60.
+        4. Finally, let's calculate the total amount Terry spends on yogurt over these 30",Node7,3,5,3,8,0.7498087734554795,99,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. Since there are 4 yogurts for $5.00, we can divide the total amount by the number of yogurts to find the individual cost. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Now that we know the cost of one yogurt 3. Terry eats 2 yogurts a day. To calculate how much he spends on yogurt in a month, we need to multiply the number of yogurts he eats daily by the cost per yogurt. So, 2 yogurts * $1.25",Node8,3,5,3,8,0.012046011313366356,67,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. Since there are 4 yogurts for $5.00, we can divide the total amount by the number of yogurts to find the individual cost. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Now that we know the cost of one yogurt 3. Terry eats 2 yogurts a day. To calculate how much he spends on yogurt in 30 days, we need to multiply the number of yogurts per day by the cost of each yogurt and then by the number of days (30). So, 2 yogurts/day * $1.",Node9,3,5,3,8,0.4512175905942243,78,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. Since there are 4 yogurts for $5.00, we can divide the total amount by the number of yogurts to find the individual cost. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Now that we know the cost of one yogurt 3. Terry eats 2 yogurts a day. To calculate how much he spends on yogurt in a month, which has 30 days, we need to multiply the number of yogurts he eats daily by the cost per yogurt and then multiply that result by the total number of days in a month (30). So, 2 yogurts * $1.25 per y",Node10,3,5,3,8,0.09226859091601958,94,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. Since there are 4 yogurts for $5.00, we can divide the total amount by the number of yogurts to find the individual cost. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Now that we know the cost of one yogurt 3. Terry eats 2 yogurts a day, so we can calculate how many yogurts he consumes in total over 30 days by multiplying the number of yogurts per day by the number of days.",Node11,4,6,4,10,0.47450572275966485,52,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. Since there are 4 yogurts for $5.00, we can divide the total amount by the number of yogurts to find the individual cost. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Now that we know the cost of one yogurt 3. Terry eats 2 yogurts a day. To calculate how much he spends on yogurt in 30 days, we need to multiply the number of yogurts eaten daily by the cost per yogurt and",Node12,4,6,4,10,0.28308399856300526,53,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. Since there are 4 yogurts for $5.00, we can divide the total amount by the number of yogurts to find the individual cost. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Now that we know the cost of one yogurt 3. We need to calculate how many yogurts Terry consumes in a day (which is 2).
+        4. Then, multiply the number of yogurts he eats daily by the cost per yogurt ($1.25) to find the total cost for one day. So, 2 yogurts * $1.25 = $2.50 per day.
+        5. Finally, we need to calculate the cost over 30 days. To do this,",Node13,2,4,2,6,0.39044661386071144,110,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. To do this, divide the total cost by the number of yogurts in the pack. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Next, we need to find out how many yogurts Terry eats daily. He eats 2 yogurts a day.
+        3. Now, let's calculate the total number of yogurts he consumes 30 days * 2 yogurts per day = 60 yogurts over 30 days.
+        4. Finally, multiply the cost per yogurt by the total number of yogurts to find out how much Terry spends on yogurt during",Node14,1,2,1,3,0.7968563774023608,62,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. To do this, divide the total cost by the number of yogurts in the pack. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Next, we need to find out how many yogurts Terry eats daily. He eats 2 yogurts a day.
+        3. Now, let's calculate the total number of yogurts he consumes 30 days * 2 yogurts per day = 60 yogurts in 30 days.
+        4. Finally, we can determine the amount Terry spends on yogurt over those 30 days by multiplying the number of yogurts he consumes",Node15,1,2,1,3,0.42970627772948566,63,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. To do this, divide the total cost by the number of yogurts in the pack. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Next, we need to find out how many yogurts Terry eats daily. He eats 2 yogurts a day.
+        3. Now, let's calculate the total number of yogurts he consumes over 30 days. To do this, multiply the number of yogurts per day by the number of days in those 30 days (30). So, 2 yogurts/day * 30 days = 60 yogurts in total.
+        4. Finally, let's calculate the cost of all these yogur",Node16,1,2,1,3,0.8558185303178938,80,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. To do this, divide the total cost by the number of yogurts in the pack. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Next, we need to find out how many yogurts Terry eats daily. He eats 2 yogurts a day.
+        3. Now, let's calculate the total number of yogurts he consumes 30 days * 2 yogurts per day = 60 yogurts in 30 days.
+        4. Finally, multiply the cost per yogurt by",Node18,1,2,1,3,0.07843467992911612,41,False
+" 1. First, let's determine the cost of one yogurt when they are on sale. To do this, divide the total cost by the number of yogurts in the pack. So, $5.00 / 4 = $1.25 per yogurt.
+        2. Next, we need to find out how many yogurts Terry eats daily. He eats 2 yogurts a day.
+        3. Now, let's calculate the total number of yogurts he consumes 30 days * 2 yogurts per day = 60 yogurts in total for 30 days.
+        4. Finally, multiply the cost per yogurt by the total number of yogurts Terry eats in a month to find the total spending on yogurt over 30 days. So, 60 yogurts * $1.25 per yogurt = $75.00.",Node19,0,0,0,0,0.3392152793326706,99,False

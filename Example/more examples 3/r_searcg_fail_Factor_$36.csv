@@ -1,0 +1,2 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1st step: To factor this equation, we need to break it down into simpler terms that are multiplied together. We're looking for the factors of each part of the equation and then simplifying them as much as possible.",Node4,4,5,4,9,0.8187451130384052,50,False

@@ -1,0 +1,62 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Mike plays ping pong for 40 minutes.  In the first 20 minutes, he scores 4 points.  In the second 20 minutes, he scores 25% more points.  How many total points did he score? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:10, H:10, Flag:True
+['1. To find out how many points Mike scored in the first 20 minutes, we have 40 minutes and we know he scored 4 points in 20 minutes. So we need to divide his total playing time by 2, then multiply the result by the points per minute he got (4/20).\n        (40/2) * 4 = 20 * 4 = 80 points in the first 20 minutes.', 102, 0.9918077265195949]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:3, H:7, Flag:False
+['1. First, we need to determine how many points Mike scored in the second half of his game. We know that he scored 4 points in the first 20 minutes and then scored 25% more than that during the next 20 minutes. To find this additional amount of points, multiply the initial points by 1.25 (since 25% is equal to 0.25*100).\n            Additional points = 4 * 1.25 =', 106, 0.5958828627830052]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:3, H:9, Flag:False
+['1. We know that Mike plays ping pong for 40 minutes and divides this into two equal parts: 20 minutes each. He scores 4 points in the first part of 20 minutes.\n        2. In the second part, he scores an additional 25% more points than what he scored in the first 20 minutes (which is 4 points). To find this extra number of', 89, 0.8790518040722612]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:4, H:7, Flag:False
+[\"1. First, let's find out how many points Mike scored in the second 20-minute period. We know that he scored 4 points in the first 20 minutes and we want to increase this by 25%. To do so, multiply the initial score (4) by the percentage increase (25%).\n        (4 * 0.25) = 1\n        2. Now, add the new points from the second period to his total points after\", 104, 0.21025306083622375]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:3, H:9, Flag:False
+[\"1. First, let's identify the key information given and what we need to find out. We are looking for the total number of points Mike scored throughout the whole game. We know that he played for 40 minutes, split into two 20-minute segments. He scored 4 points in the first segment and an additional number of points in the second segment equal to 25% more than the initial amount (4 points).\n        2. Now, let's calculate the additional points Mike scored during the second part of his game. To\", 115, 0.818411691205176]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:3, H:9, Flag:False
+['1. Understand the given information: Mike plays ping pong for 40 minutes and scores points in two different time intervals. He scored 4 points in the first half (20 minutes) and scored an additional 25% more points during the second half (also 20 minutes).\n        2. Calculate the points scored in the second half: Since he scored a 25% increase, we need to multiply his initial score by this percentage. So, 4', 103, 0.8456242512351515]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:2, H:6, Flag:False
+[\"1. We need to determine the number of points Mike scored in the second half (20 minutes).\n        2. He scored 4 points in the first half.\n        3. In the second half, he scores 25% more points than what he scored during the first half. So, we calculate 25% of the first half's points: (25/100) * 4 = 1 point.\n        4. Add this to his initial score from the first half\", 107, 0.5966645663241437]
+Path: StartNode6" color=black shape=box]
+	Node6 -> Node7 [label=Node6Node7]
+	Node7 [label="V:10, H:10, Flag:True
+['5. Mike had 4 points from the first half + 1 point from the second half = 5 points in total for the second half.\n        6. Now, combine the points from both halves: 4 points', 47, 0.5351824577771858]
+Path: Node6Node7" color=red shape=box]
+	Node6 -> Node8 [label=Node6Node8]
+	Node8 [label="V:0, H:0, Flag:False
+['5. 4 points (first half) + 1 point (increase in second half) = 5 points in the second half.\n        6. Now, we have the total number of points he scored in both halves: 4 points (first half) + 5 points (second half) = 9 points.', 93, 0.34285258978316013]
+Path: Node6Node8" color=green shape=box]
+	Node6 -> Node9 [label=Node6Node9]
+	Node9 [label="V:0, H:0, Flag:False
+['5. 4 points + 1 point = 5 points for the second half.\n        6. Now, add the points Mike scored in both halves: 4 points (first half) + 5 points (second half) = 9 total points.\n        So, Mike scored a total of 9 points during his 40-minute ping pong game.', 109, 0.9809176787128192]
+Path: Node6Node9" color=green shape=box]
+	Node6 -> Node10 [label=Node6Node10]
+	Node10 [label="V:8, H:10, Flag:True
+['5. So far, Mike has 4 + 1 = 5 points in total after the second half.\n        6. However, we were given that he scored a total of 20 minutes. We need to account for all the', 50, 0.696671714321025]
+Path: Node6Node10" color=red shape=box]
+	Node6 -> Node11 [label=Node6Node11]
+	Node11 [label="V:0, H:0, Flag:False
+['5. 4 + 1 = 5 points scored in the second half.\n        6. Now, we need to add up all these points to get the total number of points Mike scored: 4 (first half) + 5 (second half) = 9 points.', 92, 0.2805914168812469]
+Path: Node6Node11" color=green shape=box]
+	Node6 -> Node12 [label=Node6Node12]
+	Node12 [label="V:0, H:0, Flag:False
+['5. So far, he has a total of 4 + 1 = 5 points after the second half.\n        6. Finally, we need to add the points scored during both halves together. So the overall number of points Mike scored is 4 (first 20 minutes) + 5 (second 20 minutes) = 9 total points.', 117, 0.8161542914252121]
+Path: Node6Node12" color=green shape=box]
+	Node6 -> Node13 [label=Node6Node13]
+	Node13 [label="V:0, H:0, Flag:False
+[\"5. The total points scored in the second half are 4 (initial score from the first half) + 1 (points earned by 25% more than the first half's score). So, he scored 5 points in the second half.\n        6. Now, we add the points scored during both halves together: 4 (first half's score) + 5 (second half's score) = 9 points.\n        Mike scored a total of 9 points after\", 105, 0.8971747178439136]
+Path: Node6Node13" color=green shape=box]
+}

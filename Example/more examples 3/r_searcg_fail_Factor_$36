@@ -1,0 +1,46 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Factor $36-4x^2$ completely. Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:9, H:10, Flag:True
+['First, we need to isolate the term containing x^2 in order to factor it out. We do this by moving the constant term to the other side of the equation. So, we have \n\n36 = 4x', 50, 0.21747717997639837]
+Path: StartNode0" color=red shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:7, H:10, Flag:True
+[\"First, let's rewrite the expression as $36+4x^2$. Now we want to factor out the greatest common divisor (GCD) of the two terms. Since the GCD of 36 and\", 50, 0.29326780546545705]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:8, H:10, Flag:True
+[\"First, let's rewrite the expression as $36=36+0x^2$. Now we can factor out the term that doesn't have an exponent. We do this by dividing $36$ by the\", 50, 0.34217297943151515]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:9, H:10, Flag:True
+[\"First, we need to isolate the term containing x. We'll do this by moving the constant term (36) to the other side of the equation. To accomplish this, you simply subtract 36 from both sides of\", 50, 0.348579770513747]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:4, H:5, Flag:False
+[\"1st step: To factor this equation, we need to break it down into simpler terms that are multiplied together. We're looking for the factors of each part of the equation and then simplifying them as much as possible.\", 50, 0.8187451130384052]
+Path: StartNode4" color=black shape=box]
+	Node4 -> Node5 [label=Node4Node5]
+	Node5 [label="V:9, H:10, Flag:True
+['Step 2: Factor out the constant term from the variable term. In this case, $36$ is a constant term and it can be factored out from the variable term $4x^2$. So we have $36-4x^2 = 36(', 62, 0.035985300784229124]
+Path: Node4Node5" color=red shape=box]
+	Node4 -> Node6 [label=Node4Node6]
+	Node6 [label="V:9, H:10, Flag:True
+['Step 2: Factor out the constant term from the variable term. In this case, $36$ is a constant term and it can be factored out from the variable term $4x^2$. So, we have $36-4x^2 = 36(1-4/36)x^2$.\n        \n        Step 3: Simplify the expression inside the parent', 90, 0.04325061255106166]
+Path: Node4Node6" color=red shape=box]
+	Node4 -> Node7 [label=Node4Node7]
+	Node7 [label="V:8, H:10, Flag:True
+[\"Step 2: Breaking down $36$ is easy since it's a perfect square ($6^2$). So, we have $36 = 6^2$.\n        \n        Step 3: Now let's look at the term with the variable, which is $-4x^2$. We can factor out the coefficient of the variable\", 77, 0.09177284785830597]
+Path: Node4Node7" color=red shape=box]
+	Node4 -> Node8 [label=Node4Node8]
+	Node8 [label="V:10, H:10, Flag:True
+[\"Let's first look at $36$. It can be factored as $36=2^3 \\times 3$ because 2 multiplied by itself three times equals 8, and 8 multiplied by 3 is equal to 24. So\", 62, 0.5271236379267995]
+Path: Node4Node8" color=red shape=box]
+	Node4 -> Node9 [label=Node4Node9]
+	Node9 [label="V:10, H:10, Flag:True
+['2nd step: Factor out the greatest common factor (GCF) from $36$ which is 12. So, we have $12(3)$. Now, we need to find the GCF', 47, 0.20378010903590993]
+Path: Node4Node9" color=red shape=box]
+}

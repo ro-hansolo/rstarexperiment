@@ -1,0 +1,370 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Luke is spending time at the beach building sandcastles. He eventually notices that each level of a sandcastle will have half the square footage as the level below it. If he makes a 4 leveled sandcastle where the top level has a square footage of 16, what is the average square footage of a level? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:5, H:9, Flag:False
+[\"1. First, let's determine the total square footage for all levels combined. Since each level has half the area of the one below it, we can use this relationship to find the square footage of other levels.\n   2. The top level has a square footage of 16. To find the square footage of the\", 67, 0.24230210558062382]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:5, H:9, Flag:False
+[\"1. First, let's find out how many times each level's area is reduced compared to the one below it. We know that each level will have half the square footage as the level below it.\n\n2. Let's denote the square footage of the first level as 'A'. Since the second level has half\", 68, 0.4477229544949678]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:6, H:9, Flag:False
+[\"1. First, let's identify the question we are trying to answer: The average square footage of a level in a 4-leveled sandcastle where each level has half the area compared to the level below it with the topmost level having an area of 16 sq ft.\n\n2. Next, understand that Luke builds the castle going from the bottom up; therefore, the levels have progress\", 84, 0.8873267311004894]
+Path: StartNode2" color=black shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:9, H:10, Flag:True
+[\"1. We know Luke's tallest level (level 4) has a square footage of 16 units. This is the highest and largest level in his sandcastle.\n        2. According to the given rule, each successive level will have half\", 54, 0.7935444095699352]
+Path: StartNode3" color=red shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:3, H:8, Flag:False
+[\"1. First, let's determine the total square footage of all levels combined. Since each level has half the area of the one below it, we can use this relationship to find the square footage for each level.\n   2. The top level has a square footage of 16. We know that the next level will have half the size, so its square footage is 16 / 2 = 8.\n   3. Continue this process for all levels:\n       -\", 102, 0.026828106294890297]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:4, H:9, Flag:False
+[\"1. First, let's understand the relationship between levels and their respective square footages. Each level will have half the area of the one below it. This means that for every level, the square footage decreases by 50% in comparison to the previous level.\n        2. Now, we know that Luke has built a 4-leveled sandcastle with the top level having a square footage of 16. We need to find\", 93, 0.3916081343105766]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:6, H:9, Flag:False
+[\"1. We know that the top level has a square footage of 16.\n        2. Each level's square footage will be half of the one below it.\n        3. To find the total square footage for all levels, we need to add up the square footage of each level from\", 62, 0.1455117491280108]
+Path: StartNode6" color=black shape=box]
+	Node4 -> Node7 [label=Node4Node7]
+	Node7 [label="V:1, H:8, Flag:False
+['Level 2: 8 / 2 = 4\n         Level 3: 4 / 2 = 2\n         Level 4 (bottom): 2 / 2 = 1\n   4. Now, add up', 50, 0.3987618712611166]
+Path: Node4Node7" color=black shape=box]
+	Node4 -> Node8 [label=Node4Node8]
+	Node8 [label="V:1, H:8, Flag:False
+['Level 1: 8 (half of 16)\n         Level 2: 4 (half of 8)\n         Level 3: 2 (half of 4)\n         Level 4: 1 (half of 2)\n   4. Now, add up the square footage for all levels to find the total area: 16 +', 80, 0.513397639377254]
+Path: Node4Node8" color=black shape=box]
+	Node4 -> Node9 [label=Node4Node9]
+	Node9 [label="V:1, H:8, Flag:False
+['Level 2: 8 / 2 = 4\n         Level 3: 4 / 2 = 2\n         Level 4: 2 / 2 = 1\n   4. Now, add up the square footage of each level to find the total area for all levels combined: 16 + 8 +', 71, 0.28042899394238996]
+Path: Node4Node9" color=black shape=box]
+	Node4 -> Node10 [label=Node4Node10]
+	Node10 [label="V:5, H:8, Flag:False
+['Level 2: 8 / 2 = 4\n         Level 3: 4 / 2 = 2\n         Level 4: 2 / 2 = 1\n   4. Now, add up the square footage of each level to find the total area: 16 + 8 + 4 + 2 + 1', 75, 0.26646385983533094]
+Path: Node4Node10" color=black shape=box]
+	Node4 -> Node11 [label=Node4Node11]
+	Node11 [label="V:5, H:8, Flag:True
+['4th level: 8 / 2 = 4\n       -\n        3rd level: 4 / 2 = 2\n       -\n        2nd level: 2 / 2 = 1\n       -\n        1st level: 1 / 2 = 0.5 (rounded)\n   4. Now, we can add up all the square footage to find the total for all levels: 16 + 8 + 4 + 2 + 1', 106, 0.6478419488885032]
+Path: Node4Node11" color=red shape=box]
+	Node4 -> Node12 [label=Node4Node12]
+	Node12 [label="V:2, H:8, Flag:False
+['Level 1 (top) = 16\n         Level 2 = 8\n         Level 3 = 4\n         Level 4 = 2\n   4. Now, add the square footage of all levels together to find the total', 52, 0.2837581036489346]
+Path: Node4Node12" color=black shape=box]
+	Node4 -> Node13 [label=Node4Node13]
+	Node13 [label="V:1, H:5, Flag:False
+[\"Level 2: Square footage is 8 / 2 = 4\n         Level 3: Square footage is 4 / 2 = 2\n         Level 4 (bottom level): Square footage is 2 / 2 = 1\n   4. Now, we have the square footage for each level. To find the average square footage of a level, we can add all levels' square footages together\", 87, 0.6201802490955138]
+Path: Node4Node13" color=black shape=box]
+	Node13 -> Node14 [label=Node13Node14]
+	Node14 [label="V:5, H:2, Flag:True
+[\"16 + 8 + 4 + 2 + 1 = 31 (Total square footage)\n   5. Divide the total by the number of levels (which is 5).\n        Average square footage per level = Total square footage / Number of levels\n           Average square footage per level = 31 / 5 = 6.2\n\nSo, the average square footage for a single level in Luke's four-level sandcastle is approximately 6.2.\", 106, 0.8277609030849974]
+Path: Node13Node14" color=red shape=box]
+	Node13 -> Node15 [label=Node13Node15]
+	Node15 [label="V:5, H:2, Flag:True
+[\"16 + 8 + 4 + 2 + 1 = 31\n   5. Finally, divide the total square footage by the number of levels (which is 5 in this case) to get the average:\n        Average square footage per level = Total square footage / Number of levels = 31 / 5 = 6.2\n\nThe average square footage of a level for Luke's 4-leveled sandcastle is approximately 6.2 square feet.\", 119, 0.26260374197041825]
+Path: Node13Node15" color=red shape=box]
+	Node13 -> Node16 [label=Node13Node16]
+	Node16 [label="V:5, H:2, Flag:True
+[\"16 + 8 + 4 + 2 + 1 = 31\n   5. Divide the sum by the total number of levels (in this case, there are 5 levels)\n          Average square footage per level = Total / Number of levels = 31 / 5 = 6.2\n\nSo, the average square footage of a level for Luke's 4-leveled sandcastle is approximately 6.2.\", 115, 0.8955507608432302]
+Path: Node13Node16" color=red shape=box]
+	Node13 -> Node17 [label=Node13Node17]
+	Node17 [label="V:3, H:2, Flag:True
+['16 + 8 + 4 + 2 + 1 = 31\n   5. Finally, divide the total sum by the number of levels (which is 5) to get the average:\n        Average square footage per level = Total Sum / Number of Levels = 31 / 5', 66, 0.4807384566447366]
+Path: Node13Node17" color=red shape=box]
+	Node13 -> Node18 [label=Node13Node18]
+	Node18 [label="V:2, H:2, Flag:True
+['and then divide that sum by the total number of levels (4 in this case).\n   5. Summing up the square footage: 16 (top level) + 8 (level 2) + 4 (level 3) + 2 (level 4) = 3', 62, 0.6335250372511846]
+Path: Node13Node18" color=red shape=box]
+	Node13 -> Node19 [label=Node13Node19]
+	Node19 [label="V:5, H:2, Flag:True
+['16 + 8 + 4 + 2 + 1 = 31\n   5. Finally, divide the total sum by the number of levels (5) to get the average square footage per level:', 46, 0.7169016510478656]
+Path: Node13Node19" color=red shape=box]
+	Node13 -> Node20 [label=Node13Node20]
+	Node20 [label="V:5, H:2, Flag:True
+[\"16 + 8 + 4 + 2 + 1 = 31\n   5. Finally, to get the average, divide the total by the number of levels (which is 5 in this case)\n      Average square footage per level = Total / Number of levels = 31 / 5 = 6.2\n\nThe average square footage of a level for Luke's 4-leveled sandcastle is approximately 6.2 square feet.\", 114, 0.08904511720605868]
+Path: Node13Node20" color=red shape=box]
+	Node7 -> Node21 [label=Node7Node21]
+	Node21 [label="V:6, H:2, Flag:True
+['16 + 8 + 4 + 2 + 1 = 31\n   5. The total square footage of all levels combined is 31.\n   6. To find the average square footage per level, we need to divide the total by the number of levels:\n        Average square footage per level = Total square footage / Number of levels', 76, 0.06649534610237995]
+Path: Node7Node21" color=red shape=box]
+	Node7 -> Node22 [label=Node7Node22]
+	Node22 [label="V:6, H:1, Flag:True
+['16 + 8 + 4 + 2 + 1 = 31\n   5. The total square footage of all levels combined is 31.\n   6. To find the average square footage per level, we need to divide the total by the number of levels:\n       Average = Total Square Footage / Number of Levels\n       Average = 31 / 4\n   7. Finally, calculate the result:\n       Average =', 97, 0.08905765755146156]
+Path: Node7Node22" color=red shape=box]
+	Node7 -> Node23 [label=Node7Node23]
+	Node23 [label="V:6, H:2, Flag:True
+['16 + 8 + 4 + 2 + 1 = 31\n   5. The total square footage of all levels combined is 31.\n   6. To find the average square footage per level, we need to divide the total by the number of levels:\n        Average square footage per level = Total square footage / Number of levels\n        Average square footage per', 81, 0.02399305054141132]
+Path: Node7Node23" color=red shape=box]
+	Node7 -> Node24 [label=Node7Node24]
+	Node24 [label="V:6, H:2, Flag:True
+['16 + 8 + 4 + 2 + 1 = 31\n   5. The total square footage of all levels combined is 31.\n   6. To find the average square footage per level, we need to divide the total square footage by the number of levels:\n        Average square footage per level = Total square footage / Number of levels\n        Average', 80, 0.34752785285954535]
+Path: Node7Node24" color=red shape=box]
+	Node7 -> Node25 [label=Node7Node25]
+	Node25 [label="V:4, H:0, Flag:True
+['16 + 8 + 4 + 2 + 1 = 31 square footage levels combined\n   5. Divide the total square footage by the number of levels to get the average square footage per level:\n        31 / 4 (levels) = 7', 60, 0.9962399429871667]
+Path: Node7Node25" color=green shape=box]
+	Node7 -> Node26 [label=Node7Node26]
+	Node26 [label="V:2, H:0, Flag:True
+['16 + 8 + 4 + 2 + 1 = 31\n   5. The total square footage of all levels combined is 31.\n   6. To find the average square footage per level, we need to divide the total by the number of levels (which is 4).\n   7. Average square footage per level = Total square footage / Number of levels = 31 / 4 = 7.75', 95, 0.009630649786909973]
+Path: Node7Node26" color=green shape=box]
+	Node7 -> Node27 [label=Node7Node27]
+	Node27 [label="V:2, H:0, Flag:True
+['16 + 8 + 4 + 2 + 1 = 31\n   5. The total square footage of all levels combined is 31.\n   6. To find the average square footage per level, we need to divide the total by the number of levels:\n       Average = Total / Number', 67, 0.41313405242773393]
+Path: Node7Node27" color=green shape=box]
+	Node8 -> Node28 [label=Node8Node28]
+	Node28 [label="V:5, H:9, Flag:True
+[\"8 + 4 + 2 + 1 = 31.\n   5. Finally, to find the average square footage per level, divide the total area by the number of levels: 31 / 4 = 7.75.\n   6. The average square footage of a level in Luke's sandcastle is approximately 7.75.\", 119, 0.07622705103651328]
+Path: Node8Node28" color=red shape=box]
+	Node8 -> Node29 [label=Node8Node29]
+	Node29 [label="V:5, H:9, Flag:True
+[\"8 + 4 + 2 + 1 = 31\n   5. To find the average square footage per level, we simply divide the total area by the number of levels (which is 4 in this case): 31 / 4 = 7.75\n   6. So, the average square footage of a level for Luke's sandcastle is approximately 7.75 square feet.\", 117, 0.28863711773473155]
+Path: Node8Node29" color=red shape=box]
+	Node8 -> Node30 [label=Node8Node30]
+	Node30 [label="V:5, H:9, Flag:True
+['8 + 4 + 2 + 1 = 31\n   5. Finally, divide the total area by the number of levels to get the average square footage per level: 31 / 4 = 7.75\n   6. The average square footage of', 59, 0.3435819898382728]
+Path: Node8Node30" color=red shape=box]
+	Node8 -> Node31 [label=Node8Node31]
+	Node31 [label="V:5, H:9, Flag:True
+[\"8 + 4 + 2 + 1 = 31\n   5. To calculate the average square footage per level, we'll divide the total area by the number of levels (which is 4 in this case): 31 / 4 = 7.75\n   6. The average square footage of a level for Luke's sandcastle is approximately 7.75 square\", 85, 0.38982501785775636]
+Path: Node8Node31" color=red shape=box]
+	Node8 -> Node32 [label=Node8Node32]
+	Node32 [label="V:5, H:9, Flag:True
+['8 + 4 + 2 + 1 = 31 square feet.\n   5. Finally, divide the total area by the number of levels to find the average square footage per level: 31 / 4 = 7.75 square feet.\n   The', 59, 0.55217099941525]
+Path: Node8Node32" color=red shape=box]
+	Node8 -> Node33 [label=Node8Node33]
+	Node33 [label="V:6, H:9, Flag:True
+['8 + 4 + 2 + 1 = 31.\n   5. To find the average square footage per level, divide the total area by the number of levels (4): 31 / 4 = 7.7', 51, 0.4836545756707704]
+Path: Node8Node33" color=red shape=box]
+	Node8 -> Node34 [label=Node8Node34]
+	Node34 [label="V:5, H:9, Flag:True
+['8 + 4 + 2 + 1 = 31.\n   5. Finally, divide this total by the number of levels (4 in this case) to get the average square footage per level: 31 / 4 = 7.75. The average square footage for a level', 64, 0.49717430480945335]
+Path: Node8Node34" color=red shape=box]
+	Node9 -> Node35 [label=Node9Node35]
+	Node35 [label="V:1, H:1, Flag:False
+['4 + 2 + 1 = 31\n   5. Finally, calculate the average by dividing the total square footage by the number of levels (which is 4 in this case):\n       Average = Total Area / Number of Levels = 31 / 4 = 7.75\n\nSo the average square footage for each level is approximately 7.75.', 87, 0.9107637085072128]
+Path: Node9Node35" color=black shape=box]
+	Node9 -> Node36 [label=Node9Node36]
+	Node36 [label="V:1, H:1, Flag:False
+['4 + 2 + 1 = 31\n   5. Finally, divide the total area by the number of levels (which is 4) to get the average square footage per level:', 42, 0.04803109613924261]
+Path: Node9Node36" color=black shape=box]
+	Node9 -> Node37 [label=Node9Node37]
+	Node37 [label="V:1, H:1, Flag:False
+[\"4 + 2 + 1 = 31 (these are the values from top to bottom).\n   5. To find the average square footage for a single level, we need to divide the total square footage by the number of levels: 31 / 4 = 7.75.\n   6. Therefore, the average square footage of a level in Luke's sandcastle is approximately 7.75.\", 99, 0.47087738627509135]
+Path: Node9Node37" color=black shape=box]
+	Node9 -> Node38 [label=Node9Node38]
+	Node38 [label="V:9, H:9, Flag:True
+[\"4 + 2 + 1 = 31 square feet.\n   5. To find the average square footage per level, we simply divide the sum by the number of levels (which is 5): 31 / 5 = 6.2.\n   6. The average square footage of a level in Luke's sandcastle is approximately 6.2 square feet.\", 99, 0.999111788349218]
+Path: Node9Node38" color=red shape=box]
+	Node9 -> Node39 [label=Node9Node39]
+	Node39 [label="V:1, H:1, Flag:False
+['4 + 2 + 1 = 31\n   5. To get the average square footage per level, simply divide the total square footage by the number of levels (which is 4): 31 / 4 = 7.75\n\nSo, on average each level has a square footage of 7.75.', 103, 0.9071619289690637]
+Path: Node9Node39" color=black shape=box]
+	Node9 -> Node40 [label=Node9Node40]
+	Node40 [label="V:1, H:1, Flag:False
+[\"4 + 2 + 1 = 31\n   5. Finally, divide the total area by the number of levels (which is 4) to find the average square footage per level: 31 / 4 = 7.75\n   6. The average square footage of a level in Luke's sandcastle is approximately 7.75.\", 99, 0.33296848563791637]
+Path: Node9Node40" color=black shape=box]
+	Node9 -> Node41 [label=Node9Node41]
+	Node41 [label="V:9, H:9, Flag:True
+[\"4 + 2 + 1 = 31.\n   5. To get the average square footage of a single level, we'll divide the total area by the number of levels (which is 5 in this case). So, the average square footage per level is\", 58, 0.6510125753822006]
+Path: Node9Node41" color=red shape=box]
+	Node35 -> Node42 [label=Node35Node42]
+	Node42 [label="V:5, H:2, Flag:True
+['', 77, 0.8309549236364954]
+Path: Node35Node42" color=red shape=box]
+	Node35 -> Node43 [label=Node35Node43]
+	Node43 [label="V:5, H:2, Flag:True
+['', 89, 0.28008195615844356]
+Path: Node35Node43" color=red shape=box]
+	Node35 -> Node44 [label=Node35Node44]
+	Node44 [label="V:5, H:2, Flag:True
+['', 100, 0.041623105621210965]
+Path: Node35Node44" color=red shape=box]
+	Node35 -> Node45 [label=Node35Node45]
+	Node45 [label="V:5, H:2, Flag:True
+['', 116, 0.09859546681671039]
+Path: Node35Node45" color=red shape=box]
+	Node35 -> Node46 [label=Node35Node46]
+	Node46 [label="V:5, H:2, Flag:True
+['', 76, 0.4256745878164139]
+Path: Node35Node46" color=red shape=box]
+	Node35 -> Node47 [label=Node35Node47]
+	Node47 [label="V:5, H:2, Flag:True
+['', 96, 0.6537634210918913]
+Path: Node35Node47" color=red shape=box]
+	Node35 -> Node48 [label=Node35Node48]
+	Node48 [label="V:5, H:2, Flag:True
+['', 118, 0.09003299366105766]
+Path: Node35Node48" color=red shape=box]
+	Node36 -> Node49 [label=Node36Node49]
+	Node49 [label="V:2, H:2, Flag:True
+[\"Average square footage = Total area / Number of levels = 31 / 4 = 7.75\n   6. The average square footage of a level in Luke's four-leveled sandcastle is approximately 7.75.\", 68, 0.4725887085235795]
+Path: Node36Node49" color=red shape=box]
+	Node36 -> Node50 [label=Node36Node50]
+	Node50 [label="V:2, H:2, Flag:True
+[\"Average square footage per level = Total area / Number of levels = 31 / 4 = 7.75\n\nThe average square footage of a level in Luke's sandcastle is approximately 7.75.\", 49, 0.3711401590951774]
+Path: Node36Node50" color=red shape=box]
+	Node36 -> Node51 [label=Node36Node51]
+	Node51 [label="V:2, H:2, Flag:True
+[\"Average square footage = Total area / Number of levels\n         Average square footage = 31 / 4 = 7.75\n\nSo, the average square footage of a level in Luke's 4-leveled sandcastle is approximately 7.75 sq ft.\", 69, 0.92251108562083]
+Path: Node36Node51" color=red shape=box]
+	Node36 -> Node52 [label=Node36Node52]
+	Node52 [label="V:2, H:2, Flag:True
+['Average Square Footage per Level = Total Area / Number of Levels = 31 / 4 = 7.75\n\nThe average square footage of a level in this 4-leveled sandcastle is approximately 7.75.', 112, 0.5824233503195986]
+Path: Node36Node52" color=red shape=box]
+	Node36 -> Node53 [label=Node36Node53]
+	Node53 [label="V:2, H:2, Flag:True
+['Average square footage = Total area / Number of levels = 31 / 4 = 7.75\n   6. The average square footage of a level in this sandcastle is approximately 7.75 units.', 53, 0.7020470552036882]
+Path: Node36Node53" color=red shape=box]
+	Node36 -> Node54 [label=Node36Node54]
+	Node54 [label="V:2, H:2, Flag:True
+['Average square footage = Total area / Number of levels = 31 / 4 = 7.75\n\nSo, the average square footage for each level of a sandcastle in this scenario is approximately 7.75 square feet.', 106, 0.5694227889531641]
+Path: Node36Node54" color=red shape=box]
+	Node36 -> Node55 [label=Node36Node55]
+	Node55 [label="V:2, H:2, Flag:True
+[\"Average square footage per level = Total area / Number of levels = 31 / 4 = 7.75\n\nSo, the average square footage of a level in Luke's four-tiered sandcastle is approximately 7.75 square feet.\", 57, 0.7163980421931742]
+Path: Node36Node55" color=red shape=box]
+	Node37 -> Node56 [label=Node37Node56]
+	Node56 [label="V:9, H:10, Flag:True
+['Note that this is an approximation because the calculations are based on the given sizes and do not account for potential rounding errors or other irregularities that might occur while building the sandcastles.', 107, 0.6484808267494785]
+Path: Node37Node56" color=red shape=box]
+	Node37 -> Node57 [label=Node37Node57]
+	Node57 [label="V:9, H:10, Flag:True
+['This result means that if you were to add up all the areas of each level and divide by the total number of levels, the resulting value would be roughly equal to the average area per level for this specific sandcastle design.', 67, 0.6736339066065421]
+Path: Node37Node57" color=red shape=box]
+	Node37 -> Node58 [label=Node37Node58]
+	Node58 [label="V:9, H:10, Flag:True
+['Note that averaging does not account for the distribution of values or the actual shape of the sandcastles; this method only provides a rough estimate based on the given information.', 68, 0.7447310553065896]
+Path: Node37Node58" color=red shape=box]
+	Node37 -> Node59 [label=Node37Node59]
+	Node59 [label="V:9, H:10, Flag:True
+['Note that this calculation assumes perfect symmetry and equal sizes for each level, which might not be the case in real life.', 88, 0.10152930707120134]
+Path: Node37Node59" color=red shape=box]
+	Node37 -> Node60 [label=Node37Node60]
+	Node60 [label="V:9, H:10, Flag:True
+['Note that this calculation assumes perfect halving of area for each level and does not account for any potential variations or imperfections in the actual construction process.', 109, 0.09453110114807195]
+Path: Node37Node60" color=red shape=box]
+	Node37 -> Node61 [label=Node37Node61]
+	Node61 [label="V:9, H:10, Flag:True
+['', 102, 0.27394507622281505]
+Path: Node37Node61" color=red shape=box]
+	Node37 -> Node62 [label=Node37Node62]
+	Node62 [label="V:9, H:10, Flag:True
+['Note that the exact value may vary slightly due to rounding errors and approximations.', 117, 0.4016620682060651]
+Path: Node37Node62" color=red shape=box]
+	Node39 -> Node63 [label=Node39Node63]
+	Node63 [label="V:10, H:10, Flag:True
+['', 96, 0.8142972615674913]
+Path: Node39Node63" color=red shape=box]
+	Node39 -> Node64 [label=Node39Node64]
+	Node64 [label="V:10, H:10, Flag:True
+['', 80, 0.537401372200792]
+Path: Node39Node64" color=red shape=box]
+	Node39 -> Node65 [label=Node39Node65]
+	Node65 [label="V:10, H:10, Flag:True
+['', 94, 0.20039667867497857]
+Path: Node39Node65" color=red shape=box]
+	Node39 -> Node66 [label=Node39Node66]
+	Node66 [label="V:10, H:10, Flag:True
+['', 93, 0.7721926224590333]
+Path: Node39Node66" color=red shape=box]
+	Node39 -> Node67 [label=Node39Node67]
+	Node67 [label="V:10, H:10, Flag:True
+['', 56, 0.6862585448902264]
+Path: Node39Node67" color=red shape=box]
+	Node39 -> Node68 [label=Node39Node68]
+	Node68 [label="V:10, H:10, Flag:True
+['', 83, 0.45119395419831365]
+Path: Node39Node68" color=red shape=box]
+	Node39 -> Node69 [label=Node39Node69]
+	Node69 [label="V:10, H:10, Flag:True
+['', 91, 0.21330283662480598]
+Path: Node39Node69" color=red shape=box]
+	Node40 -> Node70 [label=Node40Node70]
+	Node70 [label="V:5, H:2, Flag:True
+['Note that this calculation assumes perfect halving of area for each level, which may not be entirely accurate due to the nature of building sandcastles.', 83, 0.14521370619263707]
+Path: Node40Node70" color=red shape=box]
+	Node40 -> Node71 [label=Node40Node71]
+	Node71 [label="V:5, H:2, Flag:True
+['Please note that this calculation assumes the same thickness for each layer, which may not be true for real sandcastles.', 88, 0.6129214477893536]
+Path: Node40Node71" color=red shape=box]
+	Node40 -> Node72 [label=Node40Node72]
+	Node72 [label="V:5, H:2, Flag:True
+['', 99, 0.20511234216489616]
+Path: Node40Node72" color=red shape=box]
+	Node40 -> Node73 [label=Node40Node73]
+	Node73 [label="V:5, H:2, Flag:True
+['Note that this calculation assumes perfect halving of area for each level, which may not be entirely accurate due to the nature of building sandcastles.', 107, 0.03337261099871969]
+Path: Node40Node73" color=red shape=box]
+	Node40 -> Node74 [label=Node40Node74]
+	Node74 [label="V:5, H:2, Flag:True
+['', 47, 0.34954589199652786]
+Path: Node40Node74" color=red shape=box]
+	Node40 -> Node75 [label=Node40Node75]
+	Node75 [label="V:5, H:2, Flag:True
+['Note that we can also approach this problem using mathematical formulas and exponential functions if preferred.', 80, 0.9802383399900703]
+Path: Node40Node75" color=red shape=box]
+	Node40 -> Node76 [label=Node40Node76]
+	Node76 [label="V:5, H:2, Flag:True
+['', 71, 0.044182226635469224]
+Path: Node40Node76" color=red shape=box]
+	Node5 -> Node77 [label=Node5Node77]
+	Node77 [label="V:2, H:7, Flag:False
+[\"3. To calculate the average square footage, we'll add up all levels' square footages and then divide them by the total number of levels (which is 4 in this case).\n\n           So, the equation to calculate the average will be: (square footage of level\", 59, 0.9847015011100849]
+Path: Node5Node77" color=black shape=box]
+	Node5 -> Node78 [label=Node5Node78]
+	Node78 [label="V:1, H:2, Flag:False
+[\"3. The average square footage for each level. To do this, we'll take the total square footage and divide it by the number of levels (4 in this case).\n        4. Total square footage = Sum of the square footages of all levels. Since it decreases by 50% with each step, we can write this as a geometric series: 16 + 8 + 4 + 2 = 30 units of square footage\n         5. Now, to find the average, we'll\", 110, 0.8528087346776232]
+Path: Node5Node78" color=black shape=box]
+	Node5 -> Node79 [label=Node5Node79]
+	Node79 [label="V:2, H:5, Flag:False
+[\"3. To calculate the average square footage per level, we'll first determine the total square footage for all levels and then divide it by the number of levels (4).\n        Total square footage = Square footage of level 1 + Square footage of level 2 + Square footage of level 3 + Square footage of level 4\n        4. Level 1 has half the square footage of level 2, which is\", 88, 0.24624693078934057]
+Path: Node5Node79" color=black shape=box]
+	Node5 -> Node80 [label=Node5Node80]
+	Node80 [label="V:2, H:6, Flag:False
+[\"3. The average square footage for each level. To do this, we can calculate the total square footage and then divide it by the number of levels (which is 4 in this case).\n        4. Let's start with the top level having a square footage of 16. We know that every level has half the area of the one below it. So, for the second level, we can calculate its square footage as 16 /\", 93, 0.0907615689403719]
+Path: Node5Node80" color=black shape=box]
+	Node5 -> Node81 [label=Node5Node81]
+	Node81 [label="V:4, H:7, Flag:False
+[\"3. To calculate the average square footage per level, we will add up all the levels' square footages and then divide by the total number of levels (which is 4 in this case).\n        4. Let's denote the square footage for each level as follows: Level 1 - x, Level 2 - x/2, Level 3 - x/4, Level 4 - x/8\n        5. We know that Level 4 has a square footage of 16 and it is x\", 108, 0.39133309042171505]
+Path: Node5Node81" color=black shape=box]
+	Node5 -> Node82 [label=Node5Node82]
+	Node82 [label="V:3, H:8, Flag:False
+[\"3. The average square footage of a single level. To do this, we can add up all the levels' square footages and then divide it by the total number of levels (which is 4).\n        4. To calculate each level's square footage, let's use the relationship from step 1 that every level has half the area of the one below it. We start with a base value for the first level which we assign as 16 (the top level's\", 101, 0.5735859227012537]
+Path: Node5Node82" color=black shape=box]
+	Node5 -> Node83 [label=Node5Node83]
+	Node83 [label="V:2, H:6, Flag:False
+[\"3. The average square footage for each level. To do this, we can calculate the total square footage of all levels and then divide it by the number of levels (which is 4).\n        4. Let's start with the top level, which has a square footage of 16. We need to find the square footage\", 69, 0.05004732533084255]
+Path: Node5Node83" color=black shape=box]
+	Node78 -> Node84 [label=Node78Node84]
+	Node84 [label="V:1, H:1, Flag:False
+['6. Calculate the average square footage per level by dividing the total square footage by the number of levels. Average square footage per level = Total square footage / Number of levels = 30 / 4 =', 44, 0.9140653776566332]
+Path: Node78Node84" color=black shape=box]
+	Node78 -> Node85 [label=Node78Node85]
+	Node85 [label="V:2, H:2, Flag:False
+[\"divide the total square footage by the number of levels (which is 4): Average square footage per level = Total square footage / Number of levels\n              Average square footage per level = 30 / 4 = 7.5 units\n          6. Finally, Luke's average square footage per level for his 4-leveled sandcastle is approximately 7.5 units.\", 101, 0.9029375259544666]
+Path: Node78Node85" color=black shape=box]
+	Node78 -> Node86 [label=Node78Node86]
+	Node86 [label="V:0, H:1, Flag:False
+[\"divide the total square footage by the number of levels: Average square footage per level = Total square footage / Number of levels = 30 / 4 = 7.5 units of square footage\n        So, the average square footage for each level in Luke's sandcastle is\", 58, 0.2647697556274019]
+Path: Node78Node86" color=black shape=box]
+	Node78 -> Node87 [label=Node78Node87]
+	Node87 [label="V:0, H:0, Flag:False
+[\"divide the total square footage by the number of levels: Average square footage per level = Total square footage / Number of levels = 30 / 4 = 7.5 units of square footage\n        So, the average square footage of a level in Luke's sandcastle is approximately 7.5 units.\", 66, 0.15908251452463706]
+Path: Node78Node87" color=green shape=box]
+	Node78 -> Node88 [label=Node78Node88]
+	Node88 [label="V:0, H:0, Flag:False
+[\"divide the total square footage by the number of levels: Average square footage per level = Total square footage / Number of levels = 30 / 4 = 7.5 units of square footage\n        So, the average square footage for each level in Luke's sandcastle is approximately 7.5 units.\", 83, 0.08573976320542154]
+Path: Node78Node88" color=green shape=box]
+	Node78 -> Node89 [label=Node78Node89]
+	Node89 [label="V:0, H:0, Flag:False
+[\"6. Calculate the total number of levels (4)\n        7. Divide the total square footage by the total number of levels: Average square footage per level = Total square footage / Total number of levels = 30 / 4 = 7.5 units of square footage\n        So, the average square footage of a level in Luke's sandcastle is 7.5 units of area.\", 105, 0.8403348596859808]
+Path: Node78Node89" color=green shape=box]
+	Node78 -> Node90 [label=Node78Node90]
+	Node90 [label="V:0, H:0, Flag:False
+[\"divide the total square footage by the number of levels: Average square footage per level = Total square footage / Number of levels = 30 / 4 = 7.5 units of square footage per level\n        So, the average square footage for each level in Luke's sandcastle is approximately 7.5 units.\", 97, 0.2931869925438365]
+Path: Node78Node90" color=green shape=box]
+}

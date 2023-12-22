@@ -1,0 +1,22 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, we need to find the number of boys since there are twice as many boys as girls. So, we multiply the number of girls by 2: 60 * 2 = 120 boys.
+        2. Now we have the total number of students, which is both girls and boys combined: 60 girls + 120 boys = 180 students.
+        3. Finally, to find out how",Node0,1,2,1,3,0.887515237553486,96,False
+" 1. We know the ratio of boys to girls is 2:1, which means for each girl, there are two boys (twice as many).
+        2. There are 60 girls at Dr. Wertz's school. To find the number of boys, multip",Node1,2,8,2,10,0.8080878210163176,60,False
+" 1. We know there are twice as many boys as girls. So, if there are 60 girls, there must be 2 * 60 = 120 boys at the school.
+        2. The total number of students is the sum of both genders, which is 60 (girls) + 120 (boys) = 180",Node3,1,1,1,2,0.14577339255867283,81,False
+" 1. We know there are twice as many boys as girls. So, if there are 60 girls, there must be 2 * 60 = 120 boys at the school.",Node4,1,4,1,5,0.015275967389310585,44,False
+" 1. We know there are twice as many boys as girls. So, if there are 60 girls, there must be 2 * 60 = 120 boys at the school.
+        2. The total number of students is the sum of both genders, which is 60 (girls) + 120",Node5,1,3,1,4,0.08281419534343348,73,False
+" 1. We know there are twice as many boys as girls. So, if there are 60 girls, then there will be 2 * 60 = 120 boys.
+        2. The total number of students is the sum of both genders, which is 60 (girls) + 120 (boys) = 180 students in total.
+        3. There are 5 students per teacher. To find out how many teachers are needed to accommodate all these students,",Node6,1,1,1,2,0.34983626526141454,109,False
+" 1. We know there are twice as many boys as girls. So, if there are 60 girls, there must be 2 * 60 = 120 boys at the school.
+        2. The total number of students is the sum of both genders, which is 60 (girls) + 120 (boys) = 180 3. Every teacher is assigned to take care of 5 students each. To find out how many teachers are needed for all 180 students, we can divide the number of students by the number of students per teacher. So, 180 (total students) / 5 (students per teacher) = 36
+        4. There are 36 teachers required at Dr. W",Node7,0,1,1,2,0.9740645150573338,84,False
+" 1. We know there are twice as many boys as girls. So, if there are 60 girls, there must be 2 * 60 = 120 boys at the school.
+        2. The total number of students is the sum of both genders, which is 60 (girls) + 120 (boys) = 180 3. There are 5 students per teacher. To find out how many teachers are needed to teach all these students, we need to divide the total number of students by the number of students per teacher: 1",Node8,1,3,2,5,0.3000529843248717,43,False
+" 1. We know there are twice as many boys as girls. So, if there are 60 girls, there must be 2 * 60 = 120 boys at the school.
+        2. The total number of students is the sum of both genders, which is 60 (girls) + 120 (boys) = 180 3. Each teacher has 5 students to take care of. To find out how many teachers are needed, we need to divide the total number of students by the number of students per teacher. So, 180 students / 5 students per teacher = 36 teachers
+        Therefore, there are 36 teachers at Dr. Wertz's school.",Node9,0,0,1,1,0.603285040790687,100,False

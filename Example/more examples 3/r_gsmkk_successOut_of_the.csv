@@ -1,0 +1,37 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, let's find out how many girls there are. Since there are 200 students and 2/5 are boys, we can calculate the number of boys by multiplying the total number of students by 2/5: 200 * (2/5) = 80 boys.
+        2. Now, subtract the number of boys from the total number of students to find out how many girls there are: 200 - 80 = 120 girls.
+        3. We",Node0,1,4,1,5,0.17172690060930607,115,False
+" 1. Firstly, let's find out how many boys there are among the 200 Grade 5 students. Since 2/5 are boys, we multiply the total number of students (200) by the fraction of boys (2/5). This gives us: 200 * (2/5) = 80",Node1,2,6,2,8,0.752822603100102,75,False
+" 1. Let's first find out how many boys there are among the 200 students. Since 2/5 are boys, we multiply the total number of students (200) by the fraction of boys (2/5).
+            Number of boys = 200 * (2/5)",Node3,2,6,2,8,0.9783191462128616,68,False
+" 1. Let's break down the given information into smaller parts.
+          - Total students = 200
+          - Boys = 2/5 * 200 = 80 boys (since 2/5 of them are boys)
+          - Girls = 200 - 80 = 120 girls (because there are only 200 and",Node5,1,4,1,5,0.5544503145964322,83,False
+" 1. First, let's find out how many girls there are. Since there are 200 students and 2/5 are boys, we can calculate the number of boys by multiplying the total number of students by 2/5: 200 * (2/5) = 80 boys.
+        2. Now, subtract the number of boys from the total number of students to find out how many girls there are: 200 - 80 = 120 girls.
+        3. We 4. We know that 2/3 of the girls are in the girl scout. To find the number of those girls, we can multiply the total number of girls by 2/3: 120",Node7,2,7,3,10,0.7027234845639219,46,False
+" 1. First, let's find out how many girls there are. Since there are 200 students and 2/5 are boys, we can calculate the number of boys by multiplying the total number of students by 2/5: 200 * (2/5) = 80 boys.
+        2. Now, subtract the number of boys from the total number of students to find out how many girls there are: 200 - 80 = 120 girls.
+        3. We 4. We know that 2/3 of the girls are in the girl scout, so let's calculate the number of girls who are in the girl scout by multiplying the total number of girls (120) by 2/3: 120 * (2/3) = 80 girls.
+        5. Finally, to find out how many girls are not in the girl scout",Node8,2,3,3,6,0.7240448815087406,89,False
+" 1. First, let's find out how many girls there are. Since there are 200 students and 2/5 are boys, we can calculate the number of boys by multiplying the total number of students by 2/5: 200 * (2/5) = 80 boys.
+        2. Now, subtract the number of boys from the total number of students to find out how many girls there are: 200 - 80 = 120 girls.
+        3. We 4. know that 2/3 of the girls are in the girl scout, so we can calculate the number of girls in the girl scout by multiplying the total number of girls by 2/3: 120 * (2/3) = 80 girls in the girl scout.",Node9,1,6,2,8,0.12009255228448312,68,False
+" 1. First, let's find out how many girls there are. Since there are 200 students and 2/5 are boys, we can calculate the number of boys by multiplying the total number of students by 2/5: 200 * (2/5) = 80 boys.
+        2. Now, subtract the number of boys from the total number of students to find out how many girls there are: 200 - 80 = 120 girls.
+        3. We 4. Finally, we know that 2/3 of the girls are in the girl scout. To calculate this percentage, multiply it by the total number of girls: (2/3) * 120 = 80 girls in the girl scout.
+        5. To find out how many girls are not in the girl scout, subtract the number of girls who are in the girl scout from",Node10,1,3,2,5,0.6031903573927493,89,False
+" 1. First, let's find out how many girls there are. Since there are 200 students and 2/5 are boys, we can calculate the number of boys by multiplying the total number of students by 2/5: 200 * (2/5) = 80 boys.
+        2. Now, subtract the number of boys from the total number of students to find out how many girls there are: 200 - 80 = 120 girls.
+        3. We 4. know that 2/3 of the girls are in the girl scout. To find this fraction, we multiply the number of girls by 2/3: 120 * (2/3) = 80 girls in the girl scout.
+        5. Finally, to find out how many girls are not in the girl scout, subtract the",Node12,1,3,2,5,0.11966424480240956,80,False
+" 1. First, let's find out how many girls there are. Since there are 200 students and 2/5 are boys, we can calculate the number of boys by multiplying the total number of students by 2/5: 200 * (2/5) = 80 boys.
+        2. Now, subtract the number of boys from the total number of students to find out how many girls there are: 200 - 80 = 120 girls.
+        3. We 4. We know that 2/3 of the girls are in the girl scout. To calculate the number of girls in the girl scout, we multiply the total number of girls by this fraction: 120 * (2/3) = 80 girls in the girl scout.
+        5. Finally, to find out how many girls are not in the girl scout, subtract the number of girls in the girl scout from the total number of girls: 120 - 80 =",Node13,1,2,2,4,0.2367489211151439,112,False
+" 1. First, let's find out how many girls there are. Since there are 200 students and 2/5 are boys, we can calculate the number of boys by multiplying the total number of students by 2/5: 200 * (2/5) = 80 boys.
+        2. Now, subtract the number of boys from the total number of students to find out how many girls there are: 200 - 80 = 120 girls.
+        3. We 4. We know that 2/3 of the girls are in the girl scout. To calculate the number of girls in the girl scout, we multiply the total number of girls by this fraction: 120 * (2/3) = 80 girls in the girl scout.
+        5. Finally, to find out how many girls are not in the girl scout, subtract the number of girls in the girl scout from the total number of girls: 120 - 80 = 40 girls not in the girl scout.",Node14,0,0,2,2,0.9806756338664002,108,False

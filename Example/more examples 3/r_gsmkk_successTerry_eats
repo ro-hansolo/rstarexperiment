@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Terry eats 2 yogurts a day.  They are currently on sale at 4 yogurts for $5.00.  How much does he spend on yogurt over 30 days? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:2, H:6, Flag:False
+['1. We need to find out how many yogurts Terry wants per day and the total number of days.\n        2. Terry eats 2 yogurts a day, so in 30 days he will eat 2 * 30 = 60 yogurts in total.\n        3. The', 71, 0.6397305722653375]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:10, H:10, Flag:True
+[\"1. First, let's determine how many yogurts Terry needs to buy in a day. He eats 2 yogurts daily and the sale offers 4 yogurts for $5.00. So, he will need to buy (2 - 4) = -2 additional yogurts from the sale to have enough for his daily consumption.\n        2. Now that we know Terry needs to buy an extra -2 yogurts per day, let's calculate how much he spends on these additional y\", 117, 0.04711149294213113]
+Path: StartNode1" color=red shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:10, H:10, Flag:True
+[\"1. Let's first determine the cost per yogurt Terry needs to buy daily.\n           Since there are 2 yogurts for him and they are on sale at a rate of 4 yogurts for $5.00, we can divide the total cost ($5.00) by the number of yogurts in the sale (4).\n           2 yogurts needed / 4 yogurts in sale = 0.5 yogurts per dollar spent.\n           So, each y\", 116, 0.4583401437925484]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:0, H:6, Flag:False
+[\"1. First, let's determine the cost of one yogurt when they are on sale. Since there are 4 yogurts for $5.00, we can divide the total amount by the number of yogurts to find the individual cost. So, $5.00 / 4 = $1.25 per yogurt.\n        2. Now that we know the cost of one yogurt\", 93, 0.5126159313641048]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:1, H:8, Flag:False
+[\"1. First, let's determine the cost per yogurt when they are on sale. To do this, we divide the total cost by the number of yogurts in the package. So, $5.00 / 4 yog\", 53, 0.12256807063786379]
+Path: StartNode4" color=black shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:10, H:10, Flag:True
+[\"1. First, let's determine how many yogurts Terry needs to buy in total each day. He eats 2 yogurts per day and the sale is for 4 yogurts at a time. So, he will need to buy (2 yogurts/day) / (4 yogurts/pack) = 0.5 packs of yogurt\", 86, 0.28260700602263245]
+Path: StartNode5" color=red shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:0, H:6, Flag:False
+[\"1. First, let's determine the cost of one yogurt when they are on sale. To do this, divide the total cost by the number of yogurts in the pack. So, $5.00 / 4 = $1.25 per yogurt.\n        2. Next, we need to find out how many yogurts Terry eats daily. He eats 2 yogurts a day.\n        3. Now, let's calculate the total number of yogurts he consumes\", 117, 0.1417915624886138]
+Path: StartNode6" color=black shape=box]
+	Node3 -> Node7 [label=Node3Node7]
+	Node7 [label="V:3, H:5, Flag:False
+[\"3. Terry eats 2 yogurts a day. We need to calculate the total number of days for 30 days. To do this, multiply 2 (the number of yogurts Terry eats per day) by 30 (the number of days). So, 2 * 30 = 60.\n        4. Finally, let's calculate the total amount Terry spends on yogurt over these 30\", 99, 0.7498087734554795]
+Path: Node3Node7" color=black shape=box]
+	Node3 -> Node8 [label=Node3Node8]
+	Node8 [label="V:3, H:5, Flag:False
+['3. Terry eats 2 yogurts a day. To calculate how much he spends on yogurt in a month, we need to multiply the number of yogurts he eats daily by the cost per yogurt. So, 2 yogurts * $1.25', 67, 0.012046011313366356]
+Path: Node3Node8" color=black shape=box]
+	Node3 -> Node9 [label=Node3Node9]
+	Node9 [label="V:3, H:5, Flag:False
+['3. Terry eats 2 yogurts a day. To calculate how much he spends on yogurt in 30 days, we need to multiply the number of yogurts per day by the cost of each yogurt and then by the number of days (30). So, 2 yogurts/day * $1.', 78, 0.4512175905942243]
+Path: Node3Node9" color=black shape=box]
+	Node3 -> Node10 [label=Node3Node10]
+	Node10 [label="V:3, H:5, Flag:False
+['3. Terry eats 2 yogurts a day. To calculate how much he spends on yogurt in a month, which has 30 days, we need to multiply the number of yogurts he eats daily by the cost per yogurt and then multiply that result by the total number of days in a month (30). So, 2 yogurts * $1.25 per y', 94, 0.09226859091601958]
+Path: Node3Node10" color=black shape=box]
+	Node3 -> Node11 [label=Node3Node11]
+	Node11 [label="V:4, H:6, Flag:False
+['3. Terry eats 2 yogurts a day, so we can calculate how many yogurts he consumes in total over 30 days by multiplying the number of yogurts per day by the number of days.', 52, 0.47450572275966485]
+Path: Node3Node11" color=black shape=box]
+	Node3 -> Node12 [label=Node3Node12]
+	Node12 [label="V:4, H:6, Flag:False
+['3. Terry eats 2 yogurts a day. To calculate how much he spends on yogurt in 30 days, we need to multiply the number of yogurts eaten daily by the cost per yogurt and', 53, 0.28308399856300526]
+Path: Node3Node12" color=black shape=box]
+	Node3 -> Node13 [label=Node3Node13]
+	Node13 [label="V:2, H:4, Flag:False
+['3. We need to calculate how many yogurts Terry consumes in a day (which is 2).\n        4. Then, multiply the number of yogurts he eats daily by the cost per yogurt ($1.25) to find the total cost for one day. So, 2 yogurts * $1.25 = $2.50 per day.\n        5. Finally, we need to calculate the cost over 30 days. To do this,', 110, 0.39044661386071144]
+Path: Node3Node13" color=black shape=box]
+	Node6 -> Node14 [label=Node6Node14]
+	Node14 [label="V:1, H:2, Flag:False
+['30 days * 2 yogurts per day = 60 yogurts over 30 days.\n        4. Finally, multiply the cost per yogurt by the total number of yogurts to find out how much Terry spends on yogurt during', 62, 0.7968563774023608]
+Path: Node6Node14" color=black shape=box]
+	Node6 -> Node15 [label=Node6Node15]
+	Node15 [label="V:1, H:2, Flag:False
+['30 days * 2 yogurts per day = 60 yogurts in 30 days.\n        4. Finally, we can determine the amount Terry spends on yogurt over those 30 days by multiplying the number of yogurts he consumes', 63, 0.42970627772948566]
+Path: Node6Node15" color=black shape=box]
+	Node6 -> Node16 [label=Node6Node16]
+	Node16 [label="V:1, H:2, Flag:False
+[\"over 30 days. To do this, multiply the number of yogurts per day by the number of days in those 30 days (30). So, 2 yogurts/day * 30 days = 60 yogurts in total.\n        4. Finally, let's calculate the cost of all these yogur\", 80, 0.8558185303178938]
+Path: Node6Node16" color=black shape=box]
+	Node6 -> Node17 [label=Node6Node17]
+	Node17 [label="V:9, H:0, Flag:True
+['3 yogurts per day * 30 days = 90 yogurts in total over 30 days.\n        4. Finally, multiply the cost per yogurt by the total number of yogurts to find out how much money Terry spends on yogurt over those 30 days. So, $1.25 * 90 = $112.50.\n        Over 30 days, Terry spends $112.50 on yog', 112, 0.45643175409023407]
+Path: Node6Node17" color=green shape=box]
+	Node6 -> Node18 [label=Node6Node18]
+	Node18 [label="V:1, H:2, Flag:False
+['30 days * 2 yogurts per day = 60 yogurts in 30 days.\n        4. Finally, multiply the cost per yogurt by', 41, 0.07843467992911612]
+Path: Node6Node18" color=black shape=box]
+	Node6 -> Node19 [label=Node6Node19]
+	Node19 [label="V:0, H:0, Flag:False
+['30 days * 2 yogurts per day = 60 yogurts in total for 30 days.\n        4. Finally, multiply the cost per yogurt by the total number of yogurts Terry eats in a month to find the total spending on yogurt over 30 days. So, 60 yogurts * $1.25 per yogurt = $75.00.', 99, 0.3392152793326706]
+Path: Node6Node19" color=green shape=box]
+	Node6 -> Node20 [label=Node6Node20]
+	Node20 [label="V:0, H:0, Flag:False
+['30 days * 2 yogurts per day = 60 yogurts in 30 days.\n        4. Finally, multiply the cost per yogurt by the total number of yogurts Terry eats to find out how much he spends on yogurt over 30 days. So, 60 yogurts * $1.25 per yogurt = $75.00', 96, 0.0950501648365063]
+Path: Node6Node20" color=green shape=box]
+}

@@ -1,0 +1,21 @@
+continuation,Node Path,V Score,H Score,G Score,F Score,Temperature,Max Tokens,Wrong Solution Flag
+" 1. First, we need to determine how many points Mike scored in the second half of his game. We know that he scored 4 points in the first 20 minutes and then scored 25% more than that during the next 20 minutes. To find this additional amount of points, multiply the initial points by 1.25 (since 25% is equal to 0.25*100).
+            Additional points = 4 * 1.25 =",Node1,3,7,3,10,0.5958828627830052,106,False
+" 1. We know that Mike plays ping pong for 40 minutes and divides this into two equal parts: 20 minutes each. He scores 4 points in the first part of 20 minutes.
+        2. In the second part, he scores an additional 25% more points than what he scored in the first 20 minutes (which is 4 points). To find this extra number of",Node2,3,9,3,12,0.8790518040722612,89,False
+" 1. First, let's find out how many points Mike scored in the second 20-minute period. We know that he scored 4 points in the first 20 minutes and we want to increase this by 25%. To do so, multiply the initial score (4) by the percentage increase (25%).
+        (4 * 0.25) = 1
+        2. Now, add the new points from the second period to his total points after",Node3,4,7,4,11,0.21025306083622375,104,False
+" 1. First, let's identify the key information given and what we need to find out. We are looking for the total number of points Mike scored throughout the whole game. We know that he played for 40 minutes, split into two 20-minute segments. He scored 4 points in the first segment and an additional number of points in the second segment equal to 25% more than the initial amount (4 points).
+        2. Now, let's calculate the additional points Mike scored during the second part of his game. To",Node4,3,9,3,12,0.818411691205176,115,False
+" 1. Understand the given information: Mike plays ping pong for 40 minutes and scores points in two different time intervals. He scored 4 points in the first half (20 minutes) and scored an additional 25% more points during the second half (also 20 minutes).
+        2. Calculate the points scored in the second half: Since he scored a 25% increase, we need to multiply his initial score by this percentage. So, 4",Node5,3,9,3,12,0.8456242512351515,103,False
+" 1. We need to determine the number of points Mike scored in the second half (20 minutes).
+        2. He scored 4 points in the first half.
+        3. In the second half, he scores 25% more points than what he scored during the first half. So, we calculate 25% of the first half's points: (25/100) * 4 = 1 point.
+        4. Add this to his initial score from the first half",Node6,2,6,2,8,0.5966645663241437,107,False
+" 1. We need to determine the number of points Mike scored in the second half (20 minutes).
+        2. He scored 4 points in the first half.
+        3. In the second half, he scores 25% more points than what he scored during the first half. So, we calculate 25% of the first half's points: (25/100) * 4 = 1 point.
+        4. Add this to his initial score from the first half 5. 4 points (first half) + 1 point (increase in second half) = 5 points in the second half.
+        6. Now, we have the total number of points he scored in both halves: 4 points (first half) + 5 points (second half) = 9 points.",Node8,0,0,2,2,0.34285258978316013,93,False

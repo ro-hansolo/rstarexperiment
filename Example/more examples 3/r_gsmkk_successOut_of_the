@@ -1,0 +1,90 @@
+// RStarSearch
+digraph {
+	graph [rankdir=LR]
+	Start [label="User: Out of the 200 Grade 5 students, 2/5 are boys and 2/3 of the girls are in the girl scout. How many girls are not in the girl scout? Start of Search
+Path: Start" color=black shape=box]
+	Start -> Node0 [label=StartNode0]
+	Node0 [label="V:1, H:4, Flag:False
+[\"1. First, let's find out how many girls there are. Since there are 200 students and 2/5 are boys, we can calculate the number of boys by multiplying the total number of students by 2/5: 200 * (2/5) = 80 boys.\n        2. Now, subtract the number of boys from the total number of students to find out how many girls there are: 200 - 80 = 120 girls.\n        3. We\", 115, 0.17172690060930607]
+Path: StartNode0" color=black shape=box]
+	Start -> Node1 [label=StartNode1]
+	Node1 [label="V:2, H:6, Flag:False
+[\"1. Firstly, let's find out how many boys there are among the 200 Grade 5 students. Since 2/5 are boys, we multiply the total number of students (200) by the fraction of boys (2/5). This gives us: 200 * (2/5) = 80\", 75, 0.752822603100102]
+Path: StartNode1" color=black shape=box]
+	Start -> Node2 [label=StartNode2]
+	Node2 [label="V:10, H:10, Flag:True
+[\"1. First, let's find out how many total girls there are. We know that 200 students have 2/5 as boys, which means 4/5 of them are girls (since 1 - 2/5 = 3/5). So, there are 200 * (4/5) =\", 73, 0.155231783172474]
+Path: StartNode2" color=red shape=box]
+	Start -> Node3 [label=StartNode3]
+	Node3 [label="V:2, H:6, Flag:False
+[\"1. Let's first find out how many boys there are among the 200 students. Since 2/5 are boys, we multiply the total number of students (200) by the fraction of boys (2/5).\n            Number of boys = 200 * (2/5)\", 68, 0.9783191462128616]
+Path: StartNode3" color=black shape=box]
+	Start -> Node4 [label=StartNode4]
+	Node4 [label="V:9, H:10, Flag:True
+[\"1. First, let's find out how many girls there are. To do this, we need to subtract the number of boys from the total students, since there are only girls left after considering boys. There are 2/5 boys, and 200 students in total, so there are 200 * (1 - 2/\", 74, 0.733804178337239]
+Path: StartNode4" color=red shape=box]
+	Start -> Node5 [label=StartNode5]
+	Node5 [label="V:1, H:4, Flag:False
+[\"1. Let's break down the given information into smaller parts.\n          - Total students = 200\n          - Boys = 2/5 * 200 = 80 boys (since 2/5 of them are boys)\n          - Girls = 200 - 80 = 120 girls (because there are only 200 and\", 83, 0.5544503145964322]
+Path: StartNode5" color=black shape=box]
+	Start -> Node6 [label=StartNode6]
+	Node6 [label="V:0, H:10, Flag:True
+[\"1. First, let's find out how many boys there are among the 200 students. We know that 2/5 of them are boys, so we can calculate this as\", 40, 0.0669300326641672]
+Path: StartNode6" color=red shape=box]
+	Node0 -> Node7 [label=Node0Node7]
+	Node7 [label="V:2, H:7, Flag:False
+['4. We know that 2/3 of the girls are in the girl scout. To find the number of those girls, we can multiply the total number of girls by 2/3: 120', 46, 0.7027234845639219]
+Path: Node0Node7" color=black shape=box]
+	Node0 -> Node8 [label=Node0Node8]
+	Node8 [label="V:2, H:3, Flag:False
+[\"4. We know that 2/3 of the girls are in the girl scout, so let's calculate the number of girls who are in the girl scout by multiplying the total number of girls (120) by 2/3: 120 * (2/3) = 80 girls.\n        5. Finally, to find out how many girls are not in the girl scout\", 89, 0.7240448815087406]
+Path: Node0Node8" color=black shape=box]
+	Node0 -> Node9 [label=Node0Node9]
+	Node9 [label="V:1, H:6, Flag:False
+['4. know that 2/3 of the girls are in the girl scout, so we can calculate the number of girls in the girl scout by multiplying the total number of girls by 2/3: 120 * (2/3) = 80 girls in the girl scout.', 68, 0.12009255228448312]
+Path: Node0Node9" color=black shape=box]
+	Node0 -> Node10 [label=Node0Node10]
+	Node10 [label="V:1, H:3, Flag:False
+['4. Finally, we know that 2/3 of the girls are in the girl scout. To calculate this percentage, multiply it by the total number of girls: (2/3) * 120 = 80 girls in the girl scout.\n        5. To find out how many girls are not in the girl scout, subtract the number of girls who are in the girl scout from', 89, 0.6031903573927493]
+Path: Node0Node10" color=black shape=box]
+	Node0 -> Node11 [label=Node0Node11]
+	Node11 [label="V:5, H:6, Flag:True
+['4. know that 2/3 of the girls are in the girl scout, so we can calculate how many girls are not in the girl scout by multiplying the total number of girls (120) by 2/3: 120 * (2/3) = 80 girls.\n        Finally, there are 8', 75, 0.9687618915982159]
+Path: Node0Node11" color=red shape=box]
+	Node0 -> Node12 [label=Node0Node12]
+	Node12 [label="V:1, H:3, Flag:False
+['4. know that 2/3 of the girls are in the girl scout. To find this fraction, we multiply the number of girls by 2/3: 120 * (2/3) = 80 girls in the girl scout.\n        5. Finally, to find out how many girls are not in the girl scout, subtract the', 80, 0.11966424480240956]
+Path: Node0Node12" color=black shape=box]
+	Node0 -> Node13 [label=Node0Node13]
+	Node13 [label="V:1, H:2, Flag:False
+['4. We know that 2/3 of the girls are in the girl scout. To calculate the number of girls in the girl scout, we multiply the total number of girls by this fraction: 120 * (2/3) = 80 girls in the girl scout.\n        5. Finally, to find out how many girls are not in the girl scout, subtract the number of girls in the girl scout from the total number of girls: 120 - 80 =', 112, 0.2367489211151439]
+Path: Node0Node13" color=black shape=box]
+	Node13 -> Node14 [label=Node13Node14]
+	Node14 [label="V:0, H:0, Flag:False
+['40 girls not in the girl scout.', 108, 0.9806756338664002]
+Path: Node13Node14" color=green shape=box]
+	Node13 -> Node15 [label=Node13Node15]
+	Node15 [label="V:0, H:0, Flag:False
+['40 girls who are not in the girl scout.', 56, 0.850710936153241]
+Path: Node13Node15" color=green shape=box]
+	Node13 -> Node16 [label=Node13Node16]
+	Node16 [label="V:0, H:0, Flag:False
+['40 girls who are not in the girl scout.', 55, 0.04719399377020739]
+Path: Node13Node16" color=green shape=box]
+	Node13 -> Node17 [label=Node13Node17]
+	Node17 [label="V:0, H:0, Flag:False
+['40 girls who are not in the girl scout.', 76, 0.4834392877297017]
+Path: Node13Node17" color=green shape=box]
+	Node13 -> Node18 [label=Node13Node18]
+	Node18 [label="V:5, H:0, Flag:True
+['20 girls are not in the girl scout.', 105, 0.9618124331288667]
+Path: Node13Node18" color=green shape=box]
+	Node13 -> Node19 [label=Node13Node19]
+	Node19 [label="V:0, H:0, Flag:False
+['40 girls not in the girl scout.', 91, 0.5773057186754254]
+Path: Node13Node19" color=green shape=box]
+	Node13 -> Node20 [label=Node13Node20]
+	Node20 [label="V:0, H:0, Flag:False
+['40 girls who are not in the girl scout.', 107, 0.039845676749597714]
+Path: Node13Node20" color=green shape=box]
+}
